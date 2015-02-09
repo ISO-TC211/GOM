@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19107/2003/GeometricPrimitive" uri="iso19107GeometricPrimitive.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/orphansTemplatesUsed" uri="file:/C:/isotc211_GOM_harmonizedOntology/Orphans/orphTemplatesUsed.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/orphansNew" uri="file:/C:/isotc211_GOM_harmonizedOntology/Orphans/orphNew.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19111/2007/Datums" uri="file:/C:/isotc211_GOM_harmonizedOntology/19111/2007/iso19111Datums.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19111/2007/CoordinateSystems" uri="file:/C:/isotc211_GOM_harmonizedOntology/19111/2007/iso19111CoordinateSystems.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19111/2007/ReferenceSystems" uri="file:/C:/isotc211_GOM_harmonizedOntology/19111/2007/iso19111ReferenceSystems.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/Names" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103Names.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19111/2007/IdentifiedObjects" uri="file:/C:/isotc211_GOM_harmonizedOntology/19111/2007/iso19111IdentifiedObjects.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19111/2007/CoordinateOperations" uri="file:/C:/isotc211_GOM_harmonizedOntology/19111/2007/iso19111CoordinateOperations.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems" uri="file:/C:/isotc211_GOM_harmonizedOntology/19111/2007/iso19111CoordinateReferenceSystems.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/Enumerations" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103Enumerations.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103UnitsOfMeasure.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/Numerics" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103Numerics.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/orphansOrphans" uri="file:/C:/isotc211_GOM_harmonizedOntology/Orphans/orphOrphans.owl"/>
+    <group id="Folder Repository, directory=file:/C:/isotc211_GOM_harmonizedOntology/19107/2003/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/CoordinateGeometry" uri="iso19107CoordinateGeometry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/GeometricAggregates" uri="iso19107GeometricAggregates.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/GeometricComplex" uri="iso19107GeometricComplex.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="duplicate:http://def.isotc211.org/iso19107/2003/GeometricPrimitive" uri="iso19107GeometricPrimitive.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="duplicate:http://def.isotc211.org/iso19107/2003/GeometricPrimitive" uri="tmp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/Geometry" uri="iso19107Geometry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/GeometryRoot" uri="iso19107GeometryRoot.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/SpatialSchema" uri="ISO19107_2003SpatialSchema.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/TopologicalComplex" uri="iso19107TopologicalComplex.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/TopologicalPrimitive" uri="iso19107TopologicalPrimitive.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/Topology" uri="iso19107Topology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423269197135" name="http://def.isotc211.org/iso19107/2003/TopologyRoot" uri="iso19107TopologyRoot.owl"/>
+    </group>
+</catalog>
