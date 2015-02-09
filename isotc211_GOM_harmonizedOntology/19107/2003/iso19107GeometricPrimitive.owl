@@ -1,0 +1,757 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_530 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19103_539 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19103_537 "http://def.isotc211.org/iso19103/2005/Enumerations#" >
+  <!ENTITY iso19107_544 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19107_546 "http://def.isotc211.org/iso19107/2003/GeometricComplex#" >
+  <!ENTITY iso19107_548 "http://def.isotc211.org/iso19107/2003/GeometryRoot#" >
+  <!ENTITY iso19107 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
+  <!ENTITY iso19107Code "http://def.isotc211.org/iso19107/2003/GeometricPrimitive/code/">
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xml:base="http://def.isotc211.org/iso19107/2003/GeometricPrimitive"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_530="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19103_539="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19103_537="http://def.isotc211.org/iso19103/2005/Enumerations#"
+  xmlns:iso19107_544="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19107_546="http://def.isotc211.org/iso19107/2003/GeometricComplex#"
+  xmlns:iso19107_548="http://def.isotc211.org/iso19107/2003/GeometryRoot#"
+  xmlns:iso19107="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xmlns:iso19107Code="http://def.isotc211.org/iso19107/2003/GeometricPrimitive/code/">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19107/2003/GeometricPrimitive">
+    <rdfs:label>ISO 19107:2003 Geometric primitive</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19107/ed-1/en/</dct:source>
+    <owl:versionInfo>2003-05-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Enumerations"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricComplex"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometryRoot"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19107;Bearing">
+    <rdfs:label>Bearing</rdfs:label>
+    <skos:definition>Bearing is a data type used to represent direction in the coordinate reference system. In a 2D coordinate reference system, this can be accomplished using a _angle measured from true north_ or a 2D vector point in that direction.  In a 3D coordinate reference system, two angles or any 3D vector is possible.  If both a set of angles and a vector are given, then they shall be consistent with one another. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>-- at least one value is not NULL</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;Bearing.angle"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;Bearing.angle"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;Angle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;Bearing.direction"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;Bearing.direction"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Curve">
+    <rdfs:label>GM_Curve</rdfs:label>
+    <skos:definition>GM_Curve (Figure 11) is a descendent subtype of GM_Primitive through GM_OrientablePrimitive. It is the basis for 1-dimensional geometry. A curve is a continuous image of an open interval and so could be written as a parameterized function such as c(t):(a, b)_En where _t_ is a real parameter and En is Euclidean space of dimension n (usually 2 or 3, as determined by the coordinate reference system). Any other parameterization that results in the same image curve, traced in the same direction, such as any linear shifts and positive scales such as e(t) .eq. c(a + t(b-a)):(0,1) _En, is an equivalent representation of the same curve. For the sake of simplicity, GM_Curves should be parameterized by arc length, so that the parameterization operation inherited from GM_GenericCurve (see 6.4.7) will be valid for parameters between 0 and the length of the curve. Curves are continuous, connected, and have a measurable length in terms of the coordinate system. The orientation of the curve is determined by this parameterization, and is consistent with the tangent function, which approximates the derivative function of the parameterization and shall always point in the _forward_ direction. The parameterization of the reversal of the curve defined by c(t):(a, b)_En would be defined by a function of the form s(t) .eq. c(a + b - t):(a, b)_En.A curve is composed of one or more curve segments. Each curve segment within a curve may be defined using a different interpolation method. The curve segments are connected to one another, with the end point of each segment except the last being the start point of the next segment in the segment list.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_OrientableCurve"/>
+    <rdfs:subClassOf rdf:resource="&iso19107_544;GM_GenericCurve"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Curve.segment"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Curve.segment"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_CurveSegment"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_CurveBoundary">
+    <rdfs:label>GM_CurveBoundary</rdfs:label>
+    <skos:definition>The boundary of GM_Curves shall be represented as GM_CurveBoundary.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_PrimitiveBoundary"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveBoundary.startPoint"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveBoundary.startPoint"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Point"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveBoundary.endPoint"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveBoundary.endPoint"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Point"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_CurveSegment">
+    <rdfs:label>GM_CurveSegment</rdfs:label>
+    <skos:definition>GM_CurveSegment defines a homogeneous segment of a GM_Curve. Each GM_CurveSegment shall be in, at most, one GM_Curve.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19107_544;GM_GenericCurve"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.interpolation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.interpolation"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_CurveInterpolation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.numDerivativesAtStart"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.numDerivativesAtStart"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.numDerivativesAtEnd"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.numDerivativesAtEnd"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.numDerivativeInterior"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_CurveSegment.numDerivativeInterior"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_OrientableCurve">
+    <rdfs:label>GM_OrientableCurve</rdfs:label>
+    <skos:definition>GM_OrientableCurve consists of a curve and an orientation inherited from GM_OrientablePrimitive. If the orientation is _+_, then the GM_OrientableCurve is a GM_Curve. If the orientation is _-_, then the GM_OrientableCurve is related to another GM_Curve with a parameterization that reverses the sense of the curve traversal.GM_OrientableCurve:{Orientation .eq. _+_ implies primitive .eq. self};{Orientation .eq. _-_ implies primitive.parameterization(length()-s) .eq. parameterization(s)};</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>primitive.isTypeOf(GM_Curve)</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_OrientablePrimitive">
+    <rdfs:label>GM_OrientablePrimitive</rdfs:label>
+    <skos:definition>An orientable primitives (Figure 10) are those that can be mirrored into new geometric objects in terms of their internal local coordinate systems (manifold charts). For curves, the orientation reflects the direction in which the curve is traversed, that is, the sense of its parameterization. When used as boundary curves, the surface being bounded is to the _left_ of the oriented curve. For surfaces, the orientation reflects from which direction the local coordinate system can be viewed as right handed, the _top_ or the surface being the direction of a completing z-axis that would form a right-handed system. When used as a boundary surface, the bounded solid is _below_ the surface. The orientation of points and solids has no immediate geometric interpretation in 3-dimensional space.GM_OrientablePrimitive objects are essentially references to geometric primitives that carry an _orientation_ reversal flag (either _+_ or _-_) that determines whether this primitive agrees or disagrees with the orientation of the referenced object. NOTE There are several reasons for subclassing the _positive_ primitives under the orientable primitives. First is a matter of the semantics of subclassing. Subclassing is assumed to be a _is type of_ hierarchy. In the view used, the _positive_ primitive is simply the orientable one with the positive orientation. If the opposite view were taken, and orientable primitives were subclassed under the _positive_ primitive, then by subclassing logic, the _negative_ primitive would have to hold the same sort of geometric description that the _positive_ primitive does. The only viable solution would be to separate _negative_ primitives under the geometric root as being some sort of reference to their opposite. This adds a great deal of complexity to the subclassing tree.  To minimize the number of objects and to bypass this logical complexity, positively oriented primitives are self-referential (are instances of the corresponding primitive subtype) while negatively oriented primitives are not. Orientable primitives are often denoted by a sign (for the orientation) and a base geometry (curve or surface). The sign datatype is defined in ISO 19103. If _c_ is a curve, then _.lt.+, c.gt._ is its positive orientable curve and _.lt.-, c.gt._ is its negative orientable curve. In most cases, leaving out the syntax for record _.lt. , .gt._ does not lead to confusion, so _.lt.+, c.gt._ may be written as _+c_ or simply _c_, and _.lt.-, c.gt._ as _-c_. Curve space arithmetic can be performed if the curves align properly, so that:For c, d : GM_OrientableCurves such that c.endPoint .eq. d.startPoint then( c + d ) .eq..eq.: GM_CompositeCurve .eq. .lt. c, d .gt.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <iso19150-2:constraint>(orientation .eq. "+") .eq.  (primitive .eq. self )</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_Primitive"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_OrientablePrimitive.orientation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_OrientablePrimitive.orientation"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_537;Sign"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_OrientablePrimitive.primitive"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_OrientablePrimitive.primitive"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_OrientableSurface">
+    <rdfs:label>GM_OrientableSurface</rdfs:label>
+    <skos:definition>GM_OrientableSurface consists of a surface and an orientation inherited from GM_OrientablePrimitive. If the orientation is _+_", then the GM_OrientableSurface is a GM_Surface. If the orientation is _-_, then the GM_OrientableSurface is a reference to a GM_Surface with an upNormal that reverses the direction for this GM_OrientableSurface, the sense of _the top of the surface_ (see 6.4.33.2).GM_OrientableSurface:{Orientation .eq. _+_ implies primitive .eq. self};{(Orientation .eq. _-_ and TransfiniteSet::contains(p : DirectPosition))   implies (primitive.upNormal(p) .eq. - self.upNormal(p))};</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>primitive.isTypeOf(GM_Surface)</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Point">
+    <rdfs:label>GM_Point</rdfs:label>
+    <skos:definition>GM_Point (Figure 9) is the basic data type for a geometric object consisting of one and only one point. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_Primitive"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Point.position"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Point.position"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_544;DirectPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Primitive">
+    <rdfs:label>GM_Primitive</rdfs:label>
+    <skos:definition>GM_Primitive (Figure 8) is the abstract root class of the geometric primitives. Its main purpose is to define the basic _boundary_ operation that ties the primitives in each dimension together. A geometric primitive (GM_Primitive) is a geometric object that is not decomposed further into other primitives in the system. This includes curves and surfaces, even though they are composed of curve segments and surface patches, respectively. This composition is a strong aggregation: curve segments and surface patches cannot exist outside the context of a primitive.NOTE Most geometric primitives are decomposable infinitely many times. Adding a centre point to a line may split that line into two separate lines. A new curve drawn across a surface may divide that surface into two parts, each of which is a surface. This is the reason that the normal definition of primitive as _non-decomposable_ is not plausible in a geometry model - the only non-decomposable object in geometry is a point.Any geometric object that is used to describe a feature is a collection of geometric primitives. A collection of geometric primitives may or may not be a geometric complex. Geometric complexes have additional properties such as closure by boundary operations and mutually exclusive component parts.GM_Primitive and GM_Complex share most semantics, in the meaning of operations, attributes and associations. There is an exception in that a GM_Primitive shall not contain its boundary (except in the trivial case of GM_Point where the boundary is empty), while a GM_Complex shall contain its boundary in all cases. This means that if an instantiated object implements GM_Object operations both as GM_Primitive and as a GM_Complex, the semantics of each set theoretic operation is determined by the its name resolution. Specifically, for a particular object such as GM_CompositeCurve, GM_Primitive::contains (returns FALSE for end points) is different from GM_Complex::contains (returns TRUE for end points). Further, if that object is cast as a GM_Primitive value and as a GM_Complex value, then the two values need not be equal as GM_Objects.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <iso19150-2:constraint>dimension() .gt..eq.  cotainedPrimitive.dimension()</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107_548;GM_Object"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Primitive.proxy"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Primitive.proxy"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Primitive.containingPrimitive"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Primitive.containedPrimitive"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Primitive.complex"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_546;GM_Complex"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_PrimitiveBoundary">
+    <rdfs:label>GM_PrimitiveBoundary</rdfs:label>
+    <skos:definition>The abstract class GM_Primitive boundary is the root for the various return types of the boundary operator for subtypes of GM_Primitive. Since points have no boundary, no special subclass is needed for their boundary.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19107_548;GM_Boundary"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Ring">
+    <rdfs:label>GM_Ring</rdfs:label>
+    <skos:definition>A GM_Ring is used to represent a single connected component of a GM_SurfaceBoundary. It consists of a number of references to GM_OrientableCurves connected in a cycle (an object whose boundary is empty). A GM_Ring is structurally similar to a GM_CompositeCurve in that the endPoint of each GM_OrientedCurve OrientableCurve in the sequence is the startPoint of the next GM_ OrientableCurve in the Sequence. Since the sequence is circular, there is no exception to this rule. Each ring, like all boundaries is a cycle and each ring is simple.GM_Ring:{isSimple() .eq. TRUE}{isCycle() .eq. TRUE}NOTE Even though each GM_Ring is simple, the boundary need not be simple. The easiest case of this is where one of the interior rings of a surface is tangent to its exterior ring. Implementations may enforce stronger restrictions on the interaction of boundary elements.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>isSimple() .eq. TRUE</iso19150-2:constraint>
+    <iso19150-2:constraint>isSimple() .eq. TRUE</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107_546;GM_CompositeCurve"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Shell">
+    <rdfs:label>GM_Shell</rdfs:label>
+    <skos:definition>A GM_Shell is used to represent a single connected component of a GM_SolidBoundary. It consists of a number of references to GM_OrientableSurfaces connected in a topological cycle (an object whose boundary is empty). Unlike a GM_Ring, a GM_Shell's elements have no natural sort order. Like GM_Rings, GM_Shells are simple.GM_Shell:{isSimple() .eq. TRUE}</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>isSimple() .eq. TRUE</iso19150-2:constraint>
+    <iso19150-2:constraint>isSimple() .eq. TRUE</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107_546;GM_CompositeSurface"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Solid">
+    <rdfs:label>GM_Solid</rdfs:label>
+    <skos:definition>GM_Solid (Figure 13), a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_Primitive"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_SolidBoundary">
+    <rdfs:label>GM_SolidBoundary</rdfs:label>
+    <skos:definition>The boundary of GM_Solids shall be represented as GM_SolidBoundary.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_PrimitiveBoundary"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SolidBoundary.exterior"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SolidBoundary.exterior"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Shell"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SolidBoundary.interior"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Shell"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Surface">
+    <rdfs:label>GM_Surface</rdfs:label>
+    <skos:definition>GM_Surface (Figure 12) a subclass of GM_Primitive and is the basis for 2-dimensional geometry. Unorientable surfaces such as the Mobius band are not allowed. The orientation of a surface chooses an _up_ direction through the choice of the upward normal, which, if the surface is not a cycle, is the side of the surface from which the exterior boundary appears counterclockwise. Reversal of the surface orientation reverses the curve orientation of each boundary component, and interchanges the conceptual _up_ and _down_ direction of the surface. If the surface is the boundary of a solid, the _up_ direction is usually outward. For closed surfaces, which have no boundary, the up direction is that of the surface patches, which must be consistent with one another. Its included GM_SurfacePatches describe the interior structure of a GM_Surface.NOTE Other than the restriction on orientability, no other _validity_ condition is required for GM_Surface.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_OrientableSurface"/>
+    <rdfs:subClassOf rdf:resource="&iso19107_544;GM_GenericSurface"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Surface.patch"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Surface.patch"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_SurfacePatch"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_SurfaceBoundary">
+    <rdfs:label>GM_SurfaceBoundary</rdfs:label>
+    <skos:definition>The boundary of GM_Surfaces shall be represented as GM_SurfaceBoundary.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107;GM_PrimitiveBoundary"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SurfaceBoundary.exterior"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SurfaceBoundary.exterior"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Ring"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SurfaceBoundary.interior"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_Ring"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_SurfacePatch">
+    <rdfs:label>GM_SurfacePatch</rdfs:label>
+    <skos:definition>GM_SurfacePatch (Figure 20) defines a homogeneous portion of a GM_Surface. The multiplicity of the association _Segmentation_ (Figure 12) specifies that each GM_SurfacePatch shall be in at most one GM_Surface.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19107_544;GM_GenericSurface"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SurfacePatch.interpolation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SurfacePatch.interpolation"/>
+        <owl:allValuesFrom rdf:resource="&iso19107;GM_SurfaceInterpolation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SurfacePatch.numDerivativesOnBoundary"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_SurfacePatch.numDerivativesOnBoundary"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19107;Bearing.angle">
+    <rdfs:label>angle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;Bearing"/>
+    <rdfs:range rdf:resource="&iso19103_530;Angle"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;Bearing.direction">
+    <rdfs:label>direction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;Bearing"/>
+    <rdfs:range rdf:resource="&iso19103_539;Vector"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_CurveSegment.interpolation">
+    <rdfs:label>interpolation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_CurveSegment"/>
+    <rdfs:range rdf:resource="&iso19107;GM_CurveInterpolation"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19107;GM_CurveSegment.numDerivativesAtStart">
+    <rdfs:label>numDerivativesAtStart</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_CurveSegment"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19107;GM_CurveSegment.numDerivativesAtEnd">
+    <rdfs:label>numDerivativesAtEnd</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_CurveSegment"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19107;GM_CurveSegment.numDerivativeInterior">
+    <rdfs:label>numDerivativeInterior</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_CurveSegment"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19107;GM_OrientablePrimitive.orientation">
+    <rdfs:label>orientation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+    <rdfs:range rdf:resource="&iso19103_537;Sign"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Point.position">
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_Point"/>
+    <rdfs:range rdf:resource="&iso19107_544;DirectPosition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_SurfacePatch.interpolation">
+    <rdfs:label>interpolation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_SurfacePatch"/>
+    <rdfs:range rdf:resource="&iso19107;GM_SurfaceInterpolation"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19107;GM_SurfacePatch.numDerivativesOnBoundary">
+    <rdfs:label>numDerivativesOnBoundary</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_SurfacePatch"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Curve.segment">
+    <rdfs:label>segment</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Segmentation</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Curve"/>
+    <rdfs:range rdf:resource="&iso19107;GM_CurveSegment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_CurveBoundary.startPoint">
+    <rdfs:label>startPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_CurveBoundary"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Point"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_CurveBoundary.endPoint">
+    <rdfs:label>endPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19107;GM_CurveBoundary"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Point"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Primitive.proxy">
+    <rdfs:label>proxy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Oriented</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Primitive"/>
+    <rdfs:range rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_OrientablePrimitive.primitive">
+    <rdfs:label>primitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Oriented</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Primitive"/>
+    <owl:inverseOf rdf:resource="&iso19107;GM_Primitive.proxy"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Primitive.proxy">
+    <rdfs:label>proxy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Oriented</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Primitive"/>
+    <rdfs:range rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_OrientablePrimitive.primitive">
+    <rdfs:label>primitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Oriented</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_OrientablePrimitive"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Primitive"/>
+    <owl:inverseOf rdf:resource="&iso19107;GM_Primitive.proxy"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Primitive.containingPrimitive">
+    <rdfs:label>containingPrimitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Interior to</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Primitive"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Primitive"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Primitive.containedPrimitive">
+    <rdfs:label>containedPrimitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Interior to</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Primitive"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Primitive"/>
+    <owl:inverseOf rdf:resource="&iso19107;GM_Primitive.containingPrimitive"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Primitive.complex">
+    <rdfs:label>complex</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Complex</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Primitive"/>
+    <rdfs:range rdf:resource="&iso19107_546;GM_Complex"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_SolidBoundary.exterior">
+    <rdfs:label>exterior</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19107;GM_SolidBoundary"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Shell"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_SolidBoundary.interior">
+    <rdfs:label>interior</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19107;GM_SolidBoundary"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Shell"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Surface.patch">
+    <rdfs:label>patch</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Segmentation</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Surface"/>
+    <rdfs:range rdf:resource="&iso19107;GM_SurfacePatch"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_SurfaceBoundary.exterior">
+    <rdfs:label>exterior</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19107;GM_SurfaceBoundary"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Ring"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_SurfaceBoundary.interior">
+    <rdfs:label>interior</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19107;GM_SurfaceBoundary"/>
+    <rdfs:range rdf:resource="&iso19107;GM_Ring"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="&iso19107;GM_CurveInterpolation">
+    <rdfs:label>GM_CurveInterpolation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19107Code;GM_CurveInterpolation">
+    <skos:prefLabel>GM_CurveInterpolation - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19107;GM_CurveInterpolation"/>
+  </skos:ConceptScheme>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/linear">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>linear</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/geodesic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geodesic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/circularArc3Points">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>circularArc3Points</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/circularArc2PointWithBulge">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>circularArc2PointWithBulge</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/elliptical">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>elliptical</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/clothoid">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>clothoid</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/conic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>conic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/polynomialSpline">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>polynomialSpline</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/cubicSpline">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>cubicSpline</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <iso19107:GM_CurveInterpolation rdf:about="&iso19107Code;GM_CurveInterpolation/rationalSpline">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rationalSpline</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_CurveInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_CurveInterpolation>
+  <skos:Collection rdf:about="&iso19107Code;GM_CurveInterpolationCollection">
+    <skos:prefLabel>interpolation - Concepts</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/linear"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/geodesic"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/circularArc3Points"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/circularArc2PointWithBulge"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/elliptical"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/clothoid"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/conic"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/polynomialSpline"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/cubicSpline"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/rationalSpline"/>
+    </skos:members>
+  </skos:Collection>
+  <owl:Class rdf:about="&iso19107;GM_SurfaceInterpolation">
+    <rdfs:label>GM_SurfaceInterpolation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19107Code;GM_SurfaceInterpolation">
+    <skos:prefLabel>GM_SurfaceInterpolation - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19107;GM_SurfaceInterpolation"/>
+  </skos:ConceptScheme>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/none">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>none</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/planar">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>planar</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/spherical">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>spherical</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/elliptical">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>elliptical</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/conic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>conic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/tin">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>tin</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/parametricCurve">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>parametricCurve</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/polynomialSpline">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>polynomialSpline</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/rationalSpline">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rationalSpline</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <iso19107:GM_SurfaceInterpolation rdf:about="&iso19107Code;GM_SurfaceInterpolation/triangulatedSpline">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>triangulatedSpline</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19107Code;GM_SurfaceInterpolation"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+  </iso19107:GM_SurfaceInterpolation>
+  <skos:Collection rdf:about="&iso19107Code;GM_SurfaceInterpolationCollection">
+    <skos:prefLabel>interpolation - Concepts</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/none"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/planar"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/spherical"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/elliptical"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/conic"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/tin"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/parametricCurve"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/polynomialSpline"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/rationalSpline"/>
+      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/triangulatedSpline"/>
+    </skos:members>
+  </skos:Collection>
+</rdf:RDF>
+
