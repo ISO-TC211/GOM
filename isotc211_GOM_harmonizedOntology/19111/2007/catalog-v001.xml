@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/Numerics" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103Numerics.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/Truth" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103Truth.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103UnitsOfMeasure.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/Names" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103Names.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19107/2003/GeometryRoot" uri="file:/C:/isotc211_GOM_harmonizedOntology/19107/2003/iso19107GeometryRoot.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19115/2003/ExtentInformation" uri="file:/C:/isotc211_GOM_harmonizedOntology/19115/2003/iso19115ExtentInformation.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/DateAndTime" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103DateAndTime.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19103/2005/Text" uri="file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/iso19103Text.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/CoordinateOperations" uri="iso19111CoordinateOperations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems" uri="iso19111CoordinateReferenceSystems.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/CoordinateSystems" uri="iso19111CoordinateSystems.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/Datums" uri="iso19111Datums.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/IdentifiedObjects" uri="iso19111IdentifiedObjects.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/ReferenceSystems" uri="iso19111ReferenceSystems.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/ReferencingByCoordinates" uri="ISO19111_2007ReferencingByCoordinates.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1422288642488" name="http://def.isotc211.org/iso19111/2007/TemporalReferenceSystems" uri="iso19111TemporalReferenceSystems.owl"/>
+    </group>
+</catalog>
