@@ -1,0 +1,821 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_613 "http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19115_606 "http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#" >
+  <!ENTITY iso19103_534 "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#" >
+  <!ENTITY iso19103_530 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19115_604 "http://def.isotc211.org/iso19115/2003/MaintenanceInformation#" >
+  <!ENTITY iso19115_612 "http://def.isotc211.org/iso19115/2003/ExtentInformation#" >
+  <!ENTITY iso19115_601 "http://def.isotc211.org/iso19115/2003/IdentificationInformation#" >
+  <!ENTITY iso19115 "http://def.isotc211.org/iso19115/2003/DataQualityInformation#" >
+  <!ENTITY iso19115Code "http://def.isotc211.org/iso19115/2003/DataQualityInformation/code/">
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19115/2003/DataQualityInformation#"
+  xml:base="http://def.isotc211.org/iso19115/2003/DataQualityInformation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_613="http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19115_606="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#"
+  xmlns:iso19103_534="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#"
+  xmlns:iso19103_530="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19115_604="http://def.isotc211.org/iso19115/2003/MaintenanceInformation#"
+  xmlns:iso19115_612="http://def.isotc211.org/iso19115/2003/ExtentInformation#"
+  xmlns:iso19115_601="http://def.isotc211.org/iso19115/2003/IdentificationInformation#"
+  xmlns:iso19115="http://def.isotc211.org/iso19115/2003/DataQualityInformation#"
+  xmlns:iso19115Code="http://def.isotc211.org/iso19115/2003/DataQualityInformation/code/">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19115/2003/DataQualityInformation">
+    <rdfs:label>ISO 19115:2003 Data quality information</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19115/ed-1/en/</dct:source>
+    <owl:versionInfo>2003-05-0</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/MaintenanceInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/ExtentInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/IdentificationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19115;DQ_AbsoluteExternalPositionalAccuracy">
+    <rdfs:label>DQ_AbsoluteExternalPositionalAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_PositionalAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_AccuracyOfATimeMeasurement">
+    <rdfs:label>DQ_AccuracyOfATimeMeasurement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_TemporalAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_Completeness">
+    <rdfs:label>DQ_Completeness</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Element"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_CompletenessCommission">
+    <rdfs:label>DQ_CompletenessCommission</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Completeness"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_CompletenessOmission">
+    <rdfs:label>DQ_CompletenessOmission</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Completeness"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_ConceptualConsistency">
+    <rdfs:label>DQ_ConceptualConsistency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_LogicalConsistency"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_ConformanceResult">
+    <rdfs:label>DQ_ConformanceResult</rdfs:label>
+    <skos:definition>quantitative_result from Quality Proceduresrenamed to remove implied use limitiation.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Result"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_ConformanceResult.specification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_ConformanceResult.specification"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_613;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_ConformanceResult.explanation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_ConformanceResult.explanation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_ConformanceResult.pass"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_ConformanceResult.pass"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_DataQuality">
+    <rdfs:label>DQ_DataQuality</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_DataQuality.scope"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_DataQuality.scope"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;DQ_Scope"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_DataQuality.lineage"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_DataQuality.lineage"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;LI_Lineage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_DataQuality.report"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;DQ_Element"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_DomainConsistency">
+    <rdfs:label>DQ_DomainConsistency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_LogicalConsistency"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_Element">
+    <rdfs:label>DQ_Element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.nameOfMeasure"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.measureIdentification"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.measureIdentification"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_606;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.measureDescription"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.measureDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.evaluationMethodType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.evaluationMethodType"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;DQ_EvaluationMethodTypeCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.evaluationMethodDescription"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.evaluationMethodDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.evaluationProcedure"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.evaluationProcedure"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_613;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.dateTime"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.result"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.result"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Element.result"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;DQ_Result"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_FormatConsistency">
+    <rdfs:label>DQ_FormatConsistency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_LogicalConsistency"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_GriddedDataPositionalAccuracy">
+    <rdfs:label>DQ_GriddedDataPositionalAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_PositionalAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_LogicalConsistency">
+    <rdfs:label>DQ_LogicalConsistency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Element"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_NonQuantitativeAttributeAccuracy">
+    <rdfs:label>DQ_NonQuantitativeAttributeAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_ThematicAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_PositionalAccuracy">
+    <rdfs:label>DQ_PositionalAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Element"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_QuantitativeAttributeAccuracy">
+    <rdfs:label>DQ_QuantitativeAttributeAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_ThematicAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_QuantitativeResult">
+    <rdfs:label>DQ_QuantitativeResult</rdfs:label>
+    <skos:definition>Quantitative_conformance_measure from Quality Procedures. Renamed to remove implied use limitationOCL-- result is type specified by valueDomainresult.tupleType .eq. valueDomain</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Result"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.valueType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.valueType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.valueUnit"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.valueUnit"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.errorStatistic"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.errorStatistic"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.value"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_QuantitativeResult.value"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_RelativeInternalPositionalAccuracy">
+    <rdfs:label>DQ_RelativeInternalPositionalAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_PositionalAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_Result">
+    <rdfs:label>DQ_Result</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_Scope">
+    <rdfs:label>DQ_Scope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Scope.level"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Scope.level"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_604;MD_ScopeCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Scope.extent"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Scope.extent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_612;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;DQ_Scope.levelDescription"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_604;MD_ScopeDescription"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_TemporalAccuracy">
+    <rdfs:label>DQ_TemporalAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Element"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_TemporalConsistency">
+    <rdfs:label>DQ_TemporalConsistency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_TemporalAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_TemporalValidity">
+    <rdfs:label>DQ_TemporalValidity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_TemporalAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_ThematicAccuracy">
+    <rdfs:label>DQ_ThematicAccuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_Element"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_ThematicClassificationCorrectness">
+    <rdfs:label>DQ_ThematicClassificationCorrectness</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_ThematicAccuracy"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;DQ_TopologicalConsistency">
+    <rdfs:label>DQ_TopologicalConsistency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115;DQ_LogicalConsistency"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;LI_Lineage">
+    <rdfs:label>LI_Lineage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Lineage.statement"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Lineage.statement"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Lineage.processStep"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;LI_ProcessStep"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Lineage.source"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;LI_Source"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;LI_ProcessStep">
+    <rdfs:label>LI_ProcessStep</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.rationale"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.rationale"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.dateTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.dateTime"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.processor"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_613;CI_ResponsibleParty"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_ProcessStep.source"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;LI_Source"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;LI_Source">
+    <rdfs:label>LI_Source</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.scaleDenominator"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.scaleDenominator"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_601;MD_RepresentativeFraction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.sourceReferenceSystem"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.sourceReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_606;MD_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.sourceCitation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.sourceCitation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_613;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.sourceExtent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_612;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;LI_Source.sourceStep"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;LI_ProcessStep"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_ConformanceResult.specification">
+    <rdfs:label>specification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_ConformanceResult"/>
+    <rdfs:range rdf:resource="&iso19115_613;CI_Citation"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;DQ_ConformanceResult.explanation">
+    <rdfs:label>explanation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_ConformanceResult"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;DQ_ConformanceResult.pass">
+    <rdfs:label>pass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_ConformanceResult"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_DataQuality.scope">
+    <rdfs:label>scope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_DataQuality"/>
+    <rdfs:range rdf:resource="&iso19115;DQ_Scope"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;DQ_Element.nameOfMeasure">
+    <rdfs:label>nameOfMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_Element.measureIdentification">
+    <rdfs:label>measureIdentification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19115_606;MD_Identifier"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;DQ_Element.measureDescription">
+    <rdfs:label>measureDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_Element.evaluationMethodType">
+    <rdfs:label>evaluationMethodType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19115;DQ_EvaluationMethodTypeCode"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;DQ_Element.evaluationMethodDescription">
+    <rdfs:label>evaluationMethodDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_Element.evaluationProcedure">
+    <rdfs:label>evaluationProcedure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19115_613;CI_Citation"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;DQ_Element.dateTime">
+    <rdfs:label>dateTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_Element.result">
+    <rdfs:label>result</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19115;DQ_Result"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_QuantitativeResult.valueType">
+    <rdfs:label>valueType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_QuantitativeResult"/>
+    <rdfs:range rdf:resource="&iso19103_534;RecordType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_QuantitativeResult.valueUnit">
+    <rdfs:label>valueUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_QuantitativeResult"/>
+    <rdfs:range rdf:resource="&iso19103_530;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;DQ_QuantitativeResult.errorStatistic">
+    <rdfs:label>errorStatistic</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_QuantitativeResult"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_QuantitativeResult.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_QuantitativeResult"/>
+    <rdfs:range rdf:resource="&iso19103_534;Record"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_Scope.level">
+    <rdfs:label>level</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Scope"/>
+    <rdfs:range rdf:resource="&iso19115_604;MD_ScopeCode"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_Scope.extent">
+    <rdfs:label>extent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Scope"/>
+    <rdfs:range rdf:resource="&iso19115_612;EX_Extent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_Scope.levelDescription">
+    <rdfs:label>levelDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;DQ_Scope"/>
+    <rdfs:range rdf:resource="&iso19115_604;MD_ScopeDescription"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;LI_Lineage.statement">
+    <rdfs:label>statement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_Lineage"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;LI_ProcessStep.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_ProcessStep"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;LI_ProcessStep.rationale">
+    <rdfs:label>rationale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_ProcessStep"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;LI_ProcessStep.dateTime">
+    <rdfs:label>dateTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_ProcessStep"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_ProcessStep.processor">
+    <rdfs:label>processor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_ProcessStep"/>
+    <rdfs:range rdf:resource="&iso19115_613;CI_ResponsibleParty"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;LI_Source.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_Source"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_Source.scaleDenominator">
+    <rdfs:label>scaleDenominator</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_Source"/>
+    <rdfs:range rdf:resource="&iso19115_601;MD_RepresentativeFraction"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_Source.sourceReferenceSystem">
+    <rdfs:label>sourceReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_Source"/>
+    <rdfs:range rdf:resource="&iso19115_606;MD_ReferenceSystem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_Source.sourceCitation">
+    <rdfs:label>sourceCitation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_Source"/>
+    <rdfs:range rdf:resource="&iso19115_613;CI_Citation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_Source.sourceExtent">
+    <rdfs:label>sourceExtent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_Source"/>
+    <rdfs:range rdf:resource="&iso19115_612;EX_Extent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_DataQuality.lineage">
+    <rdfs:label>lineage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;DQ_DataQuality"/>
+    <rdfs:range rdf:resource="&iso19115;LI_Lineage"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;DQ_DataQuality.report">
+    <rdfs:label>report</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;DQ_DataQuality"/>
+    <rdfs:range rdf:resource="&iso19115;DQ_Element"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_Lineage.processStep">
+    <rdfs:label>processStep</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;LI_Lineage"/>
+    <rdfs:range rdf:resource="&iso19115;LI_ProcessStep"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_Lineage.source">
+    <rdfs:label>source</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;LI_Lineage"/>
+    <rdfs:range rdf:resource="&iso19115;LI_Source"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_Source.sourceStep">
+    <rdfs:label>sourceStep</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_Source"/>
+    <rdfs:range rdf:resource="&iso19115;LI_ProcessStep"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;LI_ProcessStep.source">
+    <rdfs:label>source</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;LI_ProcessStep"/>
+    <rdfs:range rdf:resource="&iso19115;LI_Source"/>
+    <owl:inverseOf rdf:resource="&iso19115;LI_Source.sourceStep"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="&iso19115;DQ_EvaluationMethodTypeCode">
+    <rdfs:label>DQ_EvaluationMethodTypeCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;DQ_EvaluationMethodTypeCode">
+    <skos:prefLabel>DQ_EvaluationMethodTypeCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;DQ_EvaluationMethodTypeCode"/>
+  </skos:ConceptScheme>
+  <iso19115:DQ_EvaluationMethodTypeCode rdf:about="&iso19115Code;DQ_EvaluationMethodTypeCode/directInternal">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>directInternal</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:DQ_EvaluationMethodTypeCode>
+  <iso19115:DQ_EvaluationMethodTypeCode rdf:about="&iso19115Code;DQ_EvaluationMethodTypeCode/directExternal">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>directExternal</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:DQ_EvaluationMethodTypeCode>
+  <iso19115:DQ_EvaluationMethodTypeCode rdf:about="&iso19115Code;DQ_EvaluationMethodTypeCode/indirect">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>indirect</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:DQ_EvaluationMethodTypeCode>
+  <skos:Collection rdf:about="&iso19115Code;DQ_EvaluationMethodTypeCodeCollection">
+    <skos:prefLabel>DQ_EvaluationMethodTypeCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/directInternal"/>
+      <skos:Concept rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/directExternal"/>
+      <skos:Concept rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/indirect"/>
+    </skos:members>
+  </skos:Collection>
+</rdf:RDF>
+

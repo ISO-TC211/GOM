@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_613 "http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY orph_239 "http://def.isotc211.org/orphansOrphans#" >
+  <!ENTITY iso19115 "http://def.isotc211.org/iso19115/2003/ApplicationSchemaInformation#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19115/2003/ApplicationSchemaInformation#"
+  xml:base="http://def.isotc211.org/iso19115/2003/ApplicationSchemaInformation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_613="http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation#"
+  xmlns:orph_239="http://def.isotc211.org/orphansOrphans#"
+  xmlns:iso19115="http://def.isotc211.org/iso19115/2003/ApplicationSchemaInformation#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19115/2003/ApplicationSchemaInformation">
+    <rdfs:label>ISO 19115:2003 Application schema information</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19115/ed-1/en/</dct:source>
+    <owl:versionInfo>2003-05-0</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/orphansOrphans"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19115;MD_ApplicationSchemaInformation">
+    <rdfs:label>MD_ApplicationSchemaInformation</rdfs:label>
+    <skos:definition>Information about the application schema used to build the dataset</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_613;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.schemaLanguage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.schemaLanguage"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.constraintLanguage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.constraintLanguage"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.schemaAscii"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.schemaAscii"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.graphicsFile"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.graphicsFile"/>
+        <owl:allValuesFrom rdf:resource="&orph_239;Binary"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.softwareDevelopmentFile"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.softwareDevelopmentFile"/>
+        <owl:allValuesFrom rdf:resource="&orph_239;Binary"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.softwareDevelopmentFileFormat"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_ApplicationSchemaInformation.softwareDevelopmentFileFormat"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_ApplicationSchemaInformation.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_ApplicationSchemaInformation"/>
+    <rdfs:range rdf:resource="&iso19115_613;CI_Citation"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_ApplicationSchemaInformation.schemaLanguage">
+    <rdfs:label>schemaLanguage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_ApplicationSchemaInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_ApplicationSchemaInformation.constraintLanguage">
+    <rdfs:label>constraintLanguage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_ApplicationSchemaInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_ApplicationSchemaInformation.schemaAscii">
+    <rdfs:label>schemaAscii</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_ApplicationSchemaInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_ApplicationSchemaInformation.graphicsFile">
+    <rdfs:label>graphicsFile</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_ApplicationSchemaInformation"/>
+    <rdfs:range rdf:resource="&orph_239;Binary"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_ApplicationSchemaInformation.softwareDevelopmentFile">
+    <rdfs:label>softwareDevelopmentFile</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_ApplicationSchemaInformation"/>
+    <rdfs:range rdf:resource="&orph_239;Binary"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_ApplicationSchemaInformation.softwareDevelopmentFileFormat">
+    <rdfs:label>softwareDevelopmentFileFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_ApplicationSchemaInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
