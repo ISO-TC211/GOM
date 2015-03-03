@@ -698,7 +698,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
   </iso19103:MeasureType>
   <skos:Collection rdf:about="&iso19103Code;MeasureTypeCollection">
-    <skos:prefLabel>uom - Concepts</skos:prefLabel>
+    <skos:prefLabel>MeasureType - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19103Code;MeasureType/area"/>
       <skos:Concept rdf:resource="&iso19103Code;MeasureType/length"/>
@@ -769,7 +769,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
   </iso19103:StandardUnits>
   <skos:Collection rdf:about="&iso19103Code;StandardUnitsCollection">
-    <skos:prefLabel>factor - Concepts</skos:prefLabel>
+    <skos:prefLabel>StandardUnits - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19103Code;StandardUnits/meter"/>
       <skos:Concept rdf:resource="&iso19103Code;StandardUnits/second"/>
@@ -811,7 +811,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
   </iso19103:UnitsList>
   <skos:Collection rdf:about="&iso19103Code;UnitsListCollection">
-    <skos:prefLabel>time - Concepts</skos:prefLabel>
+    <skos:prefLabel>UnitsList - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19103Code;UnitsList/foot"/>
       <skos:Concept rdf:resource="&iso19103Code;UnitsList/squareFoot"/>

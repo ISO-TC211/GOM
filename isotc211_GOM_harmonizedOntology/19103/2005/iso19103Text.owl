@@ -152,7 +152,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
   </iso19103:CharacterSetCode>
   <skos:Collection rdf:about="&iso19103Code;CharacterSetCodeCollection">
-    <skos:prefLabel>characterSet - Concepts</skos:prefLabel>
+    <skos:prefLabel>CharacterSetCode - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19103Code;CharacterSetCode/ISO10646-2"/>
       <skos:Concept rdf:resource="&iso19103Code;CharacterSetCode/ISO8859"/>
