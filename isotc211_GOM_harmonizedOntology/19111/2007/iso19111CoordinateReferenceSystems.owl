@@ -412,7 +412,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
   </iso19111:SC_DerivedCRSType>
   <skos:Collection rdf:about="&iso19111Code;SC_DerivedCRSTypeCollection">
-    <skos:prefLabel>north - Concepts</skos:prefLabel>
+    <skos:prefLabel>SC_DerivedCRSType - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19111Code;SC_DerivedCRSType/geodetic"/>
       <skos:Concept rdf:resource="&iso19111Code;SC_DerivedCRSType/vertical"/>

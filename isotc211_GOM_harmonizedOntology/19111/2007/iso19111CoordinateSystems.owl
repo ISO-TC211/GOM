@@ -674,7 +674,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
   </iso19111:CS_AxisDirection>
   <skos:Collection rdf:about="&iso19111Code;CS_AxisDirectionCollection">
-    <skos:prefLabel>axisAbbrev - Concepts</skos:prefLabel>
+    <skos:prefLabel>CS_AxisDirection - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/north"/>
       <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/northNorthEast"/>
@@ -778,7 +778,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
   </iso19111:CS_RangeMeaning>
   <skos:Collection rdf:about="&iso19111Code;CS_RangeMeaningCollection">
-    <skos:prefLabel>anchorDefinition - Concepts</skos:prefLabel>
+    <skos:prefLabel>CS_RangeMeaning - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19111Code;CS_RangeMeaning/exact"/>
       <skos:Concept rdf:resource="&iso19111Code;CS_RangeMeaning/wraparound"/>
