@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_622 "http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#" >
+  <!ENTITY iso19115 "http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19115Code "http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation/code/">
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#"
+  xml:base="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_622="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#"
+  xmlns:iso19115="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19115Code="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation/code/">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation">
+    <rdfs:label>ISO 19115:2006 Citation and responsible party information</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19115/ed-1/en/</dct:source>
+    <owl:versionInfo>2006-07-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19115;CI_Address">
+    <rdfs:label>CI_Address</rdfs:label>
+    <skos:definition>Location of the responsible individual or organisation</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.deliveryPoint"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.city"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.city"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.administrativeArea"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.administrativeArea"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.postalCode"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.postalCode"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.country"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.country"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Address.electronicMailAddress"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;CI_Citation">
+    <rdfs:label>CI_Citation</rdfs:label>
+    <skos:definition>Standardized resource reference</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.title"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.title"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.alternateTitle"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.date"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.date"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_Date"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.edition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.edition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.editionDate"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.editionDate"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.identifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_622;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.citedResponsibleParty"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_ResponsibleParty"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.presentationForm"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_PresentationFormCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.series"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.series"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_Series"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.otherCitationDetails"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.otherCitationDetails"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.collectiveTitle"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.collectiveTitle"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.ISBN"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.ISBN"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.ISSN"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Citation.ISSN"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;CI_Contact">
+    <rdfs:label>CI_Contact</rdfs:label>
+    <skos:definition>Information required enabling contact with the  responsible person and.sl.or organisation</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.phone"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.phone"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_Telephone"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.address"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.address"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_Address"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.onlineResource"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.onlineResource"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_OnlineResource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.hoursOfService"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.hoursOfService"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.contactInstructions"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Contact.contactInstructions"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;CI_Date">
+    <rdfs:label>CI_Date</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Date.date"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Date.date"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Date.dateType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Date.dateType"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_DateTypeCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;CI_OnlineResource">
+    <rdfs:label>CI_OnlineResource</rdfs:label>
+    <skos:definition>Information about online sources from which the dataset, specification, or community profile name and extended metadata elements can be obtained.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.linkage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.linkage"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;URL"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.protocol"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.protocol"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.applicationProfile"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.applicationProfile"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.name"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.function"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_OnlineResource.function"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_OnLineFunctionCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;CI_ResponsibleParty">
+    <rdfs:label>CI_ResponsibleParty</rdfs:label>
+    <skos:definition>Identification of, and means of communication with, person(s) and organisations associated with the dataset</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.individualName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.individualName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.organisationName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.organisationName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.positionName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.positionName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.contactInfo"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.contactInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_Contact"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.role"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_ResponsibleParty.role"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;CI_RoleCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;CI_Series">
+    <rdfs:label>CI_Series</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Series.name"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Series.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Series.issueIdentification"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Series.issueIdentification"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Series.page"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Series.page"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;CI_Telephone">
+    <rdfs:label>CI_Telephone</rdfs:label>
+    <skos:definition>Telephone numbers for contacting the responsible individual or organisation</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Telephone.voice"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;CI_Telephone.facsimile"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;URL">
+    <rdfs:label>URL</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Address.deliveryPoint">
+    <rdfs:label>deliveryPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Address"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Address.city">
+    <rdfs:label>city</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Address"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Address.administrativeArea">
+    <rdfs:label>administrativeArea</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Address"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Address.postalCode">
+    <rdfs:label>postalCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Address"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Address.country">
+    <rdfs:label>country</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Address"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Address.electronicMailAddress">
+    <rdfs:label>electronicMailAddress</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Address"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.title">
+    <rdfs:label>title</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.alternateTitle">
+    <rdfs:label>alternateTitle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Citation.date">
+    <rdfs:label>date</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&iso19115;CI_Date"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.edition">
+    <rdfs:label>edition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.editionDate">
+    <rdfs:label>editionDate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Citation.identifier">
+    <rdfs:label>identifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&iso19115_622;MD_Identifier"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Citation.citedResponsibleParty">
+    <rdfs:label>citedResponsibleParty</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&iso19115;CI_ResponsibleParty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Citation.presentationForm">
+    <rdfs:label>presentationForm</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&iso19115;CI_PresentationFormCode"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Citation.series">
+    <rdfs:label>series</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&iso19115;CI_Series"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.otherCitationDetails">
+    <rdfs:label>otherCitationDetails</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.collectiveTitle">
+    <rdfs:label>collectiveTitle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.ISBN">
+    <rdfs:label>ISBN</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Citation.ISSN">
+    <rdfs:label>ISSN</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Citation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Contact.phone">
+    <rdfs:label>phone</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Contact"/>
+    <rdfs:range rdf:resource="&iso19115;CI_Telephone"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Contact.address">
+    <rdfs:label>address</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Contact"/>
+    <rdfs:range rdf:resource="&iso19115;CI_Address"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Contact.onlineResource">
+    <rdfs:label>onlineResource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Contact"/>
+    <rdfs:range rdf:resource="&iso19115;CI_OnlineResource"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Contact.hoursOfService">
+    <rdfs:label>hoursOfService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Contact"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Contact.contactInstructions">
+    <rdfs:label>contactInstructions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Contact"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Date.date">
+    <rdfs:label>date</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Date"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_Date.dateType">
+    <rdfs:label>dateType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Date"/>
+    <rdfs:range rdf:resource="&iso19115;CI_DateTypeCode"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_OnlineResource.linkage">
+    <rdfs:label>linkage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_OnlineResource"/>
+    <rdfs:range rdf:resource="&iso19115;URL"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_OnlineResource.protocol">
+    <rdfs:label>protocol</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_OnlineResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_OnlineResource.applicationProfile">
+    <rdfs:label>applicationProfile</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_OnlineResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_OnlineResource.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_OnlineResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_OnlineResource.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_OnlineResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_OnlineResource.function">
+    <rdfs:label>function</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_OnlineResource"/>
+    <rdfs:range rdf:resource="&iso19115;CI_OnLineFunctionCode"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_ResponsibleParty.individualName">
+    <rdfs:label>individualName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_ResponsibleParty"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_ResponsibleParty.organisationName">
+    <rdfs:label>organisationName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_ResponsibleParty"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_ResponsibleParty.positionName">
+    <rdfs:label>positionName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_ResponsibleParty"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_ResponsibleParty.contactInfo">
+    <rdfs:label>contactInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_ResponsibleParty"/>
+    <rdfs:range rdf:resource="&iso19115;CI_Contact"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;CI_ResponsibleParty.role">
+    <rdfs:label>role</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_ResponsibleParty"/>
+    <rdfs:range rdf:resource="&iso19115;CI_RoleCode"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Series.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Series"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Series.issueIdentification">
+    <rdfs:label>issueIdentification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Series"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Series.page">
+    <rdfs:label>page</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Series"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Telephone.voice">
+    <rdfs:label>voice</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Telephone"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;CI_Telephone.facsimile">
+    <rdfs:label>facsimile</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;CI_Telephone"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="&iso19115;CI_DateTypeCode">
+    <rdfs:label>CI_DateTypeCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;CI_DateTypeCode">
+    <skos:prefLabel>CI_DateTypeCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;CI_DateTypeCode"/>
+  </skos:ConceptScheme>
+  <iso19115:CI_DateTypeCode rdf:about="&iso19115Code;CI_DateTypeCode/creation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>creation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_DateTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_DateTypeCode>
+  <iso19115:CI_DateTypeCode rdf:about="&iso19115Code;CI_DateTypeCode/publication">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>publication</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_DateTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_DateTypeCode>
+  <iso19115:CI_DateTypeCode rdf:about="&iso19115Code;CI_DateTypeCode/revision">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>revision</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_DateTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_DateTypeCode>
+  <skos:Collection rdf:about="&iso19115Code;CI_DateTypeCodeCollection">
+    <skos:prefLabel>CI_DateTypeCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115Code;CI_DateTypeCode/creation"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_DateTypeCode/publication"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_DateTypeCode/revision"/>
+    </skos:members>
+  </skos:Collection>
+  <owl:Class rdf:about="&iso19115;CI_OnLineFunctionCode">
+    <rdfs:label>CI_OnLineFunctionCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;CI_OnLineFunctionCode">
+    <skos:prefLabel>CI_OnLineFunctionCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;CI_OnLineFunctionCode"/>
+  </skos:ConceptScheme>
+  <iso19115:CI_OnLineFunctionCode rdf:about="&iso19115Code;CI_OnLineFunctionCode/download">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>download</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_OnLineFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_OnLineFunctionCode>
+  <iso19115:CI_OnLineFunctionCode rdf:about="&iso19115Code;CI_OnLineFunctionCode/information">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>information</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_OnLineFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_OnLineFunctionCode>
+  <iso19115:CI_OnLineFunctionCode rdf:about="&iso19115Code;CI_OnLineFunctionCode/offlineAccess">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>offlineAccess</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_OnLineFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_OnLineFunctionCode>
+  <iso19115:CI_OnLineFunctionCode rdf:about="&iso19115Code;CI_OnLineFunctionCode/order">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>order</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_OnLineFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_OnLineFunctionCode>
+  <iso19115:CI_OnLineFunctionCode rdf:about="&iso19115Code;CI_OnLineFunctionCode/search">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>search</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_OnLineFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_OnLineFunctionCode>
+  <skos:Collection rdf:about="&iso19115Code;CI_OnLineFunctionCodeCollection">
+    <skos:prefLabel>CI_OnLineFunctionCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115Code;CI_OnLineFunctionCode/download"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_OnLineFunctionCode/information"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_OnLineFunctionCode/offlineAccess"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_OnLineFunctionCode/order"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_OnLineFunctionCode/search"/>
+    </skos:members>
+  </skos:Collection>
+  <owl:Class rdf:about="&iso19115;CI_PresentationFormCode">
+    <rdfs:label>CI_PresentationFormCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;CI_PresentationFormCode">
+    <skos:prefLabel>CI_PresentationFormCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;CI_PresentationFormCode"/>
+  </skos:ConceptScheme>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/documentDigital">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>documentDigital</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/documentHardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>documentHardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/imageDigital">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageDigital</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/imageHardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageHardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/mapDigital">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>mapDigital</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/mapHardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>mapHardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/modelDigital">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>modelDigital</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/modelHardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>modelHardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/profileDigital">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>profileDigital</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/profileHardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>profileHardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/tableDigital">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>tableDigital</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/tableHardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>tableHardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/videoDigital">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>videoDigital</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <iso19115:CI_PresentationFormCode rdf:about="&iso19115Code;CI_PresentationFormCode/videoHardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>videoHardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_PresentationFormCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_PresentationFormCode>
+  <skos:Collection rdf:about="&iso19115Code;CI_PresentationFormCodeCollection">
+    <skos:prefLabel>CI_PresentationFormCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/documentDigital"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/documentHardcopy"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/imageDigital"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/imageHardcopy"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/mapDigital"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/mapHardcopy"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/modelDigital"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/modelHardcopy"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/profileDigital"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/profileHardcopy"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/tableDigital"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/tableHardcopy"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/videoDigital"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_PresentationFormCode/videoHardcopy"/>
+    </skos:members>
+  </skos:Collection>
+  <owl:Class rdf:about="&iso19115;CI_RoleCode">
+    <rdfs:label>CI_RoleCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;CI_RoleCode">
+    <skos:prefLabel>CI_RoleCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;CI_RoleCode"/>
+  </skos:ConceptScheme>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/resourceProvider">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>resourceProvider</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/custodian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>custodian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/owner">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>owner</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/user">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>user</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/distributor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>distributor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/originator">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>originator</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/pointOfContact">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>pointOfContact</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/principalInvestigator">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>principalInvestigator</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/processor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>processor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/publisher">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>publisher</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <iso19115:CI_RoleCode rdf:about="&iso19115Code;CI_RoleCode/author">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>author</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;CI_RoleCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:CI_RoleCode>
+  <skos:Collection rdf:about="&iso19115Code;CI_RoleCodeCollection">
+    <skos:prefLabel>CI_RoleCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/resourceProvider"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/custodian"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/owner"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/user"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/distributor"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/originator"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/pointOfContact"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/principalInvestigator"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/processor"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/publisher"/>
+      <skos:Concept rdf:resource="&iso19115Code;CI_RoleCode/author"/>
+    </skos:members>
+  </skos:Collection>
+</rdf:RDF>
+

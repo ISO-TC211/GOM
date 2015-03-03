@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/ApplicationSchemaInformation" uri="iso19115ApplicationSchemaInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation" uri="iso19115CitationAndResponsiblePartyInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/ConstraintInformation" uri="iso19115ConstraintInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/ContentInformation" uri="iso19115ContentInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/DataQualityInformation" uri="iso19115DataQualityInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/DistributionInformation" uri="iso19115DistributionInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/ExtentInformation" uri="iso19115ExtentInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/IdentificationInformation" uri="iso19115IdentificationInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/MaintenanceInformation" uri="iso19115MaintenanceInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/MetadataApplicationInformation" uri="iso19115MetadataApplicationInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation" uri="iso19115MetadataEntitySetInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/MetadataExtensionInformation" uri="iso19115MetadataExtensionInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/Metadata_Corrigendum_" uri="ISO19115_2006Metadata_Corrigendum_.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/PortrayalCatalogueInformation" uri="iso19115PortrayalCatalogueInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation" uri="iso19115ReferenceSystemInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1425354721579" name="http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation" uri="iso19115SpatialRepresentationInformation.owl"/>
+    </group>
+</catalog>

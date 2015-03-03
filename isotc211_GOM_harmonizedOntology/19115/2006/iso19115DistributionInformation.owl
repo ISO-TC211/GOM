@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_629 "http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19115 "http://def.isotc211.org/iso19115/2006/DistributionInformation#" >
+  <!ENTITY iso19115Code "http://def.isotc211.org/iso19115/2006/DistributionInformation/code/">
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19115/2006/DistributionInformation#"
+  xml:base="http://def.isotc211.org/iso19115/2006/DistributionInformation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_629="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19115="http://def.isotc211.org/iso19115/2006/DistributionInformation#"
+  xmlns:iso19115Code="http://def.isotc211.org/iso19115/2006/DistributionInformation/code/">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19115/2006/DistributionInformation">
+    <rdfs:label>ISO 19115:2006 Distribution information</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19115/ed-1/en/</dct:source>
+    <owl:versionInfo>2006-07-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19115;MD_DigitalTransferOptions">
+    <rdfs:label>MD_DigitalTransferOptions</rdfs:label>
+    <skos:definition>Technical means and media by which a dataset is obtained from the distributor</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_DigitalTransferOptions.unitsOfDistribution"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_DigitalTransferOptions.unitsOfDistribution"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_DigitalTransferOptions.transferSize"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_DigitalTransferOptions.transferSize"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_DigitalTransferOptions.onLine"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_629;CI_OnlineResource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_DigitalTransferOptions.offLine"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_DigitalTransferOptions.offLine"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_Medium"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;MD_Distribution">
+    <rdfs:label>MD_Distribution</rdfs:label>
+    <skos:definition>Information about the distributor of and options for obtaining the dataset</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distribution.distributionFormat"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_Format"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distribution.distributor"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_Distributor"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distribution.transferOptions"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;MD_Distributor">
+    <rdfs:label>MD_Distributor</rdfs:label>
+    <skos:definition>Information about the distributor</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distributor.distributorContact"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distributor.distributorContact"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_629;CI_ResponsibleParty"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distributor.distributorTransferOptions"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distributor.distributorFormat"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_Format"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Distributor.distributionOrderProcess"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_StandardOrderProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;MD_Format">
+    <rdfs:label>MD_Format</rdfs:label>
+    <skos:definition>Description of the form of the data to be distributed</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.version"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.version"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.amendmentNumber"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.amendmentNumber"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.specification"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.specification"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.fileDecompressionTechnique"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.fileDecompressionTechnique"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Format.formatDistributor"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_Distributor"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;MD_Medium">
+    <rdfs:label>MD_Medium</rdfs:label>
+    <skos:definition>Information about the media on which the data can be distributed</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.name"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_MediumNameCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.density"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.densityUnits"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.densityUnits"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.volumes"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.volumes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.mediumFormat"/>
+        <owl:allValuesFrom rdf:resource="&iso19115;MD_MediumFormatCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.mediumNote"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_Medium.mediumNote"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115;MD_StandardOrderProcess">
+    <rdfs:label>MD_StandardOrderProcess</rdfs:label>
+    <skos:definition>Common ways in which the dataset may be obtained or received, and related instructions and fee information</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.fees"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.fees"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.plannedAvailableDateTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.plannedAvailableDateTime"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.orderingInstructions"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.orderingInstructions"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.turnaround"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115;MD_StandardOrderProcess.turnaround"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_DigitalTransferOptions.unitsOfDistribution">
+    <rdfs:label>unitsOfDistribution</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_DigitalTransferOptions.transferSize">
+    <rdfs:label>transferSize</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_DigitalTransferOptions.onLine">
+    <rdfs:label>onLine</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+    <rdfs:range rdf:resource="&iso19115_629;CI_OnlineResource"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_DigitalTransferOptions.offLine">
+    <rdfs:label>offLine</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+    <rdfs:range rdf:resource="&iso19115;MD_Medium"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Distributor.distributorContact">
+    <rdfs:label>distributorContact</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Distributor"/>
+    <rdfs:range rdf:resource="&iso19115_629;CI_ResponsibleParty"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Format.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Format"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Format.version">
+    <rdfs:label>version</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Format"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Format.amendmentNumber">
+    <rdfs:label>amendmentNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Format"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Format.specification">
+    <rdfs:label>specification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Format"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Format.fileDecompressionTechnique">
+    <rdfs:label>fileDecompressionTechnique</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Format"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Medium.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Medium"/>
+    <rdfs:range rdf:resource="&iso19115;MD_MediumNameCode"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Medium.density">
+    <rdfs:label>density</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Medium"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Medium.densityUnits">
+    <rdfs:label>densityUnits</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Medium"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Medium.volumes">
+    <rdfs:label>volumes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Medium"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Medium.mediumFormat">
+    <rdfs:label>mediumFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Medium"/>
+    <rdfs:range rdf:resource="&iso19115;MD_MediumFormatCode"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_Medium.mediumNote">
+    <rdfs:label>mediumNote</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Medium"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_StandardOrderProcess.fees">
+    <rdfs:label>fees</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_StandardOrderProcess"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_StandardOrderProcess.plannedAvailableDateTime">
+    <rdfs:label>plannedAvailableDateTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_StandardOrderProcess"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_StandardOrderProcess.orderingInstructions">
+    <rdfs:label>orderingInstructions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_StandardOrderProcess"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115;MD_StandardOrderProcess.turnaround">
+    <rdfs:label>turnaround</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_StandardOrderProcess"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Distribution.distributionFormat">
+    <rdfs:label>distributionFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;MD_Distribution"/>
+    <rdfs:range rdf:resource="&iso19115;MD_Format"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Distribution.distributor">
+    <rdfs:label>distributor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;MD_Distribution"/>
+    <rdfs:range rdf:resource="&iso19115;MD_Distributor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Distribution.transferOptions">
+    <rdfs:label>transferOptions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;MD_Distribution"/>
+    <rdfs:range rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Distributor.distributorTransferOptions">
+    <rdfs:label>distributorTransferOptions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;MD_Distributor"/>
+    <rdfs:range rdf:resource="&iso19115;MD_DigitalTransferOptions"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Distributor.distributorFormat">
+    <rdfs:label>distributorFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Distributor"/>
+    <rdfs:range rdf:resource="&iso19115;MD_Format"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Format.formatDistributor">
+    <rdfs:label>formatDistributor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115;MD_Format"/>
+    <rdfs:range rdf:resource="&iso19115;MD_Distributor"/>
+    <owl:inverseOf rdf:resource="&iso19115;MD_Distributor.distributorFormat"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115;MD_Distributor.distributionOrderProcess">
+    <rdfs:label>distributionOrderProcess</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115;MD_Distributor"/>
+    <rdfs:range rdf:resource="&iso19115;MD_StandardOrderProcess"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="&iso19115;MD_DistributionUnits">
+    <rdfs:label>MD_DistributionUnits</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;MD_DistributionUnits">
+    <skos:prefLabel>MD_DistributionUnits - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;MD_DistributionUnits"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19115Code;MD_DistributionUnitsCollection">
+    <skos:prefLabel>MD_DistributionUnits - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+  <owl:Class rdf:about="&iso19115;MD_MediumFormatCode">
+    <rdfs:label>MD_MediumFormatCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;MD_MediumFormatCode">
+    <skos:prefLabel>MD_MediumFormatCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;MD_MediumFormatCode"/>
+  </skos:ConceptScheme>
+  <iso19115:MD_MediumFormatCode rdf:about="&iso19115Code;MD_MediumFormatCode/cpio">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>cpio</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumFormatCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumFormatCode>
+  <iso19115:MD_MediumFormatCode rdf:about="&iso19115Code;MD_MediumFormatCode/tar">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>tar</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumFormatCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumFormatCode>
+  <iso19115:MD_MediumFormatCode rdf:about="&iso19115Code;MD_MediumFormatCode/highSierra">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>highSierra</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumFormatCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumFormatCode>
+  <iso19115:MD_MediumFormatCode rdf:about="&iso19115Code;MD_MediumFormatCode/iso9660">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>iso9660</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumFormatCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumFormatCode>
+  <iso19115:MD_MediumFormatCode rdf:about="&iso19115Code;MD_MediumFormatCode/iso9660RockRidge">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>iso9660RockRidge</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumFormatCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumFormatCode>
+  <iso19115:MD_MediumFormatCode rdf:about="&iso19115Code;MD_MediumFormatCode/iso9660AppleHFS">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>iso9660AppleHFS</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumFormatCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumFormatCode>
+  <skos:Collection rdf:about="&iso19115Code;MD_MediumFormatCodeCollection">
+    <skos:prefLabel>MD_MediumFormatCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/cpio"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/tar"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/highSierra"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660RockRidge"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660AppleHFS"/>
+    </skos:members>
+  </skos:Collection>
+  <owl:Class rdf:about="&iso19115;MD_MediumNameCode">
+    <rdfs:label>MD_MediumNameCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115Code;MD_MediumNameCode">
+    <skos:prefLabel>MD_MediumNameCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115;MD_MediumNameCode"/>
+  </skos:ConceptScheme>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/cdRom">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>cdRom</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/dvd">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>dvd</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/dvdRom">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>dvdRom</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/3halfInchFloppy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>3halfInchFloppy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/5quarterInchFloppy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>5quarterInchFloppy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/7trackTape">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>7trackTape</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/9trackTape">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>9trackTape</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/3480Cartridge">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>3480Cartridge</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/3490Cartridge">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>3490Cartridge</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/3580Cartridge">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>3580Cartridge</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/4mmCartridgeTape">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>4mmCartridgeTape</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/8mmCartridgeTape">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>8mmCartridgeTape</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/1quarterInchCartridgeTape">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>1quarterInchCartridgeTape</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/digitalLinearTape">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>digitalLinearTape</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/onLine">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>onLine</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/satellite">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>satellite</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/telephoneLink">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>telephoneLink</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <iso19115:MD_MediumNameCode rdf:about="&iso19115Code;MD_MediumNameCode/hardcopy">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>hardcopy</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115Code;MD_MediumNameCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115:MD_MediumNameCode>
+  <skos:Collection rdf:about="&iso19115Code;MD_MediumNameCodeCollection">
+    <skos:prefLabel>MD_MediumNameCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/cdRom"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/dvd"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/dvdRom"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3halfInchFloppy"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/5quarterInchFloppy"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/7trackTape"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/9trackTape"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3480Cartridge"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3490Cartridge"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3580Cartridge"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/4mmCartridgeTape"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/8mmCartridgeTape"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/1quarterInchCartridgeTape"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/digitalLinearTape"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/onLine"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/satellite"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/telephoneLink"/>
+      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/hardcopy"/>
+    </skos:members>
+  </skos:Collection>
+</rdf:RDF>
+
