@@ -1579,7 +1579,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
   </iso19107:GM_BSplineSurfaceForm>
   <skos:Collection rdf:about="&iso19107Code;GM_BSplineSurfaceFormCollection">
-    <skos:prefLabel>refLocation - Concepts</skos:prefLabel>
+    <skos:prefLabel>GM_BSplineSurfaceForm - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/planar"/>
       <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/cylindrical"/>
@@ -1618,7 +1618,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
   </iso19107:GM_KnotType>
   <skos:Collection rdf:about="&iso19107Code;GM_KnotTypeCollection">
-    <skos:prefLabel>controlPoint - Concepts</skos:prefLabel>
+    <skos:prefLabel>GM_KnotType - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19107Code;GM_KnotType/uniform"/>
       <skos:Concept rdf:resource="&iso19107Code;GM_KnotType/quasiUniform"/>
@@ -1679,7 +1679,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
   </iso19107:GM_SplineCurveForm>
   <skos:Collection rdf:about="&iso19107Code;GM_SplineCurveFormCollection">
-    <skos:prefLabel>stopLines - Concepts</skos:prefLabel>
+    <skos:prefLabel>GM_SplineCurveForm - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19107Code;GM_SplineCurveForm/polylineForm"/>
       <skos:Concept rdf:resource="&iso19107Code;GM_SplineCurveForm/circularArc"/>

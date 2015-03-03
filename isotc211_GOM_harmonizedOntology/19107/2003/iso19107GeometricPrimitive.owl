@@ -654,7 +654,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
   </iso19107:GM_CurveInterpolation>
   <skos:Collection rdf:about="&iso19107Code;GM_CurveInterpolationCollection">
-    <skos:prefLabel>interpolation - Concepts</skos:prefLabel>
+    <skos:prefLabel>GM_CurveInterpolation - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/linear"/>
       <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/geodesic"/>
@@ -739,7 +739,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
   </iso19107:GM_SurfaceInterpolation>
   <skos:Collection rdf:about="&iso19107Code;GM_SurfaceInterpolationCollection">
-    <skos:prefLabel>interpolation - Concepts</skos:prefLabel>
+    <skos:prefLabel>GM_SurfaceInterpolation - Collection</skos:prefLabel>
     <skos:members rdf:parseType="Collection">
       <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/none"/>
       <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/planar"/>
