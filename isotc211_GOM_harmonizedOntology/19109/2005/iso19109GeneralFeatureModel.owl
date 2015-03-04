@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_533 "http://def.isotc211.org/iso19103/2005/Names#" >
+  <!ENTITY iso19103_538 "http://def.isotc211.org/iso19103/2005/Multiplicities#" >
+  <!ENTITY orph_239 "http://def.isotc211.org/orphansOrphans#" >
+  <!ENTITY iso19115_916 "http://def.isotc211.org/iso19115/2006/MetadataApplicationInformation#" >
+  <!ENTITY iso19109 "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#"
+  xml:base="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_533="http://def.isotc211.org/iso19103/2005/Names#"
+  xmlns:iso19103_538="http://def.isotc211.org/iso19103/2005/Multiplicities#"
+  xmlns:orph_239="http://def.isotc211.org/orphansOrphans#"
+  xmlns:iso19115_916="http://def.isotc211.org/iso19115/2006/MetadataApplicationInformation#"
+  xmlns:iso19109="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel">
+    <rdfs:label>ISO 19109:2005 General Feature Model</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19109/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-06-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Multiplicities"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/orphansOrphans"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/MetadataApplicationInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19109;GF_AggregationType">
+    <rdfs:label>GF_AggregationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AssociationType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_AssociationRole">
+    <rdfs:label>GF_AssociationRole</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_PropertyType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationRole.valueType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationRole.valueType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;TypeName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationRole.cardinality"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationRole.cardinality"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_538;Multiplicity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_AssociationType">
+    <rdfs:label>GF_AssociationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationType.theGF_Operation"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_Operation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationType.includes"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationType.includes"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationType.roleName"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AssociationType.roleName"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AssociationRole"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_AttributeType">
+    <rdfs:label>GF_AttributeType</rdfs:label>
+    <skos:definition>feature attribute characteristic of a featureNOTE: A feature attribute has a name, a data type, and a value domain associated to it.  A feature attribute for a feature instance also has an attribute value taken from the value domain.  EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' which belongs to the data type 'text'.  A feature attribute named 'length' may have an attribute value '82.4' which belongs to the data type 'real'.[Victoria Terminology Harmonization Meeting]</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_PropertyType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.valueType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.valueType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;TypeName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.valueDomain"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.valueDomain"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.cardinality"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.cardinality"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_538;Multiplicity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.characterizeBy"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AttributeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.characterize"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_AttributeType.characterize"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AttributeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_Constraint">
+    <rdfs:label>GF_Constraint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Constraint.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Constraint.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_CycleType">
+    <rdfs:label>GF_CycleType</rdfs:label>
+    <skos:definition>The interval at which an event or state recurs.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_TemporalAttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_EventType">
+    <rdfs:label>GF_EventType</rdfs:label>
+    <skos:definition>A temporal attribute that describes an action that takes place at an instant.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_TemporalAttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;FeatureType">
+    <rdfs:label>FeatureType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;FeatureType.featureType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;FeatureType.featureType"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;SetOfTypes">
+    <rdfs:label>SetOfTypes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;SetOfTypes.setOfTypes"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;SetOfTypes.setOfTypes"/>
+        <owl:allValuesFrom rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;Feature">
+    <rdfs:label>Feature</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;Feature.feature"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;Feature.feature"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;SetOfFeature">
+    <rdfs:label>SetOfFeature</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;SetOfFeature.setOfFeature"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;SetOfFeature.setOfFeature"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_916;DS_DataSet"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_FeatureType">
+    <rdfs:label>GF_FeatureType</rdfs:label>
+    <skos:definition>feature: abstraction of real world phenomena NOTE: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant.[Victoria Terminology Harmonization Meeting]This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.typeName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.typeName"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;LocalName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.definition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.isAbstract"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.isAbstract"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.linkBetween"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AssociationType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.theGF_InheritanceRelation"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_InheritanceRelation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.theGF_InheritanceRelation"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_InheritanceRelation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.constrainedBy"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_Constraint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_FeatureType.carrierOfCharacteristics"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_PropertyType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_InheritanceRelation">
+    <rdfs:label>GF_InheritanceRelation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.name"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.uniqueInstance"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.uniqueInstance"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.subtype"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.subtype"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.supertype"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_InheritanceRelation.supertype"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_LocationalAttributeType">
+    <rdfs:label>GF_LocationalAttributeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_MetaDataAttributeType">
+    <rdfs:label>GF_MetaDataAttributeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_Operation">
+    <rdfs:label>GF_Operation</rdfs:label>
+    <skos:definition>feature operation or class operationoperation associated to a particular class or set of classes of feature</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_PropertyType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Operation.signature"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Operation.signature"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Operation.dependsOn"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AssociationType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Operation.observesValuesOf"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AttributeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Operation.triggeredByValuesOf"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AttributeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_Operation.affectsValuesOf"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_AttributeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_PropertyType">
+    <rdfs:label>GF_PropertyType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_PropertyType.memberName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_PropertyType.memberName"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;LocalName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_PropertyType.definition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_PropertyType.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_PropertyType.theGF_FeatureType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_PropertyType.theGF_FeatureType"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19109;GF_PropertyType.constrainedBy"/>
+        <owl:allValuesFrom rdf:resource="&iso19109;GF_Constraint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_QualityAttributeType">
+    <rdfs:label>GF_QualityAttributeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_MetaDataAttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_SpatialAssociationType">
+    <rdfs:label>GF_SpatialAssociationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AssociationType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_SpatialAttributeType">
+    <rdfs:label>GF_SpatialAttributeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_StateType">
+    <rdfs:label>GF_StateType</rdfs:label>
+    <skos:definition>A temporal attribute that describes a condition that persists for a period.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_TemporalAttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_TemporalAssociationType">
+    <rdfs:label>GF_TemporalAssociationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AssociationType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_TemporalAttributeType">
+    <rdfs:label>GF_TemporalAttributeType</rdfs:label>
+    <skos:definition>An attribute that takes a value in the temporal domain.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19109;GF_ThematicAttributeType">
+    <rdfs:label>GF_ThematicAttributeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AssociationRole.valueType">
+    <rdfs:label>valueType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_AssociationRole"/>
+    <rdfs:range rdf:resource="&iso19103_533;TypeName"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AssociationRole.cardinality">
+    <rdfs:label>cardinality</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_AssociationRole"/>
+    <rdfs:range rdf:resource="&iso19103_538;Multiplicity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AttributeType.valueType">
+    <rdfs:label>valueType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_AttributeType"/>
+    <rdfs:range rdf:resource="&iso19103_533;TypeName"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_AttributeType.valueDomain">
+    <rdfs:label>valueDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_AttributeType"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AttributeType.cardinality">
+    <rdfs:label>cardinality</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_AttributeType"/>
+    <rdfs:range rdf:resource="&iso19103_538;Multiplicity"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_Constraint.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_Constraint"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;FeatureType.featureType">
+    <skos:prefLabel>featureType</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;FeatureType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_FeatureType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;SetOfTypes.setOfTypes">
+    <skos:prefLabel>setOfTypes</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;SetOfTypes"/>
+    <rdfs:range rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;Feature.feature">
+    <skos:prefLabel>feature</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;Feature"/>
+    <rdfs:range rdf:resource="&iso19103_533;GenericName"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;SetOfFeature.setOfFeature">
+    <skos:prefLabel>setOfFeature</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;SetOfFeature"/>
+    <rdfs:range rdf:resource="&iso19115_916;DS_DataSet"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_FeatureType.typeName">
+    <rdfs:label>typeName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&iso19103_533;LocalName"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_FeatureType.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_FeatureType.isAbstract">
+    <rdfs:label>isAbstract</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_InheritanceRelation.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_InheritanceRelation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_InheritanceRelation.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_InheritanceRelation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_InheritanceRelation.uniqueInstance">
+    <rdfs:label>uniqueInstance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_InheritanceRelation"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_Operation.signature">
+    <rdfs:label>signature</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_Operation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_PropertyType.memberName">
+    <rdfs:label>memberName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_PropertyType"/>
+    <rdfs:range rdf:resource="&iso19103_533;LocalName"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19109;GF_PropertyType.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_PropertyType"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_Operation.dependsOn">
+    <rdfs:label>dependsOn</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_Operation"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AssociationType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AssociationType.theGF_Operation">
+    <rdfs:label>theGF_Operation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_AssociationType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_Operation"/>
+    <owl:inverseOf rdf:resource="&iso19109;GF_Operation.dependsOn"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_FeatureType.linkBetween">
+    <rdfs:label>linkBetween</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AssociationType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AssociationType.includes">
+    <rdfs:label>includes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_AssociationType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_FeatureType"/>
+    <owl:inverseOf rdf:resource="&iso19109;GF_FeatureType.linkBetween"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AssociationType.roleName">
+    <rdfs:label>roleName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Role</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19109;GF_AssociationType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AssociationRole"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AttributeType.characterizeBy">
+    <rdfs:label>characterizeBy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>AttributeOfAttribute</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19109;GF_AttributeType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_AttributeType.characterize">
+    <rdfs:label>characterize</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>AttributeOfAttribute</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19109;GF_AttributeType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AttributeType"/>
+    <owl:inverseOf rdf:resource="&iso19109;GF_AttributeType.characterizeBy"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_InheritanceRelation.subtype">
+    <rdfs:label>subtype</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Specialization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19109;GF_InheritanceRelation"/>
+    <rdfs:range rdf:resource="&iso19109;GF_FeatureType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_FeatureType.theGF_InheritanceRelation">
+    <rdfs:label>theGF_InheritanceRelation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Specialization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_InheritanceRelation"/>
+    <owl:inverseOf rdf:resource="&iso19109;GF_InheritanceRelation.subtype"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_FeatureType.theGF_InheritanceRelation">
+    <rdfs:label>theGF_InheritanceRelation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Generalization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_InheritanceRelation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_InheritanceRelation.supertype">
+    <rdfs:label>supertype</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Generalization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19109;GF_InheritanceRelation"/>
+    <rdfs:range rdf:resource="&iso19109;GF_FeatureType"/>
+    <owl:inverseOf rdf:resource="&iso19109;GF_FeatureType.theGF_InheritanceRelation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_FeatureType.constrainedBy">
+    <rdfs:label>constrainedBy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_Constraint"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_PropertyType.theGF_FeatureType">
+    <rdfs:label>theGF_FeatureType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19109;GF_PropertyType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_FeatureType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_FeatureType.carrierOfCharacteristics">
+    <rdfs:label>carrierOfCharacteristics</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_FeatureType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_PropertyType"/>
+    <owl:inverseOf rdf:resource="&iso19109;GF_PropertyType.theGF_FeatureType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_Operation.observesValuesOf">
+    <rdfs:label>observesValuesOf</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_Operation"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_Operation.triggeredByValuesOf">
+    <rdfs:label>triggeredByValuesOf</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_Operation"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_Operation.affectsValuesOf">
+    <rdfs:label>affectsValuesOf</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_Operation"/>
+    <rdfs:range rdf:resource="&iso19109;GF_AttributeType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19109;GF_PropertyType.constrainedBy">
+    <rdfs:label>constrainedBy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19109;GF_PropertyType"/>
+    <rdfs:range rdf:resource="&iso19109;GF_Constraint"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="&iso19109;GF_FeatureDomain">
+    <rdfs:label>GF_FeatureDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19109;FeatureType"/>
+          <owl:Class rdf:about="&iso19109;SetOfTypes"/>
+          <owl:Class rdf:about="&iso19109;Feature"/>
+          <owl:Class rdf:about="&iso19109;SetOfFeature"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+</rdf:RDF>
+
