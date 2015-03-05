@@ -44,6 +44,10 @@
     <rdfs:label>Bag.lt.T.gt.</rdfs:label>
     <rdfs:isDefinedBy></rdfs:isDefinedBy>
   </owl:Class>
+  <owl:Class rdf:about="&orph;Binary">
+    <rdfs:label>Binary</rdfs:label>
+    <rdfs:isDefinedBy></rdfs:isDefinedBy>
+  </owl:Class>
   <owl:Class rdf:about="&orph;Distance,TM_GeometricPrimitive[1..*]">
     <rdfs:label>Distance, TM_GeometricPrimitive[1..*]</rdfs:label>
     <rdfs:isDefinedBy></rdfs:isDefinedBy>
