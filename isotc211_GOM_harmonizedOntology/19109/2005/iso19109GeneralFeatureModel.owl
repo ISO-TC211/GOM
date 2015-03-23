@@ -199,66 +199,66 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf rdf:resource="&iso19109;GF_TemporalAttributeType"/>
   </owl:Class>
-  <owl:Class rdf:about="&iso19109;FeatureType">
+  <owl:Class rdf:about="&iso19109;uFeatureType">
     <rdfs:label>FeatureType</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;FeatureType.featureType"/>
+        <owl:onProperty rdf:resource="&iso19109;uFeatureType.featureType"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;FeatureType.featureType"/>
+        <owl:onProperty rdf:resource="&iso19109;uFeatureType.featureType"/>
         <owl:allValuesFrom rdf:resource="&iso19109;GF_FeatureType"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19109;SetOfTypes">
+  <owl:Class rdf:about="&iso19109;uSetOfTypes">
     <rdfs:label>SetOfTypes</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;SetOfTypes.setOfTypes"/>
+        <owl:onProperty rdf:resource="&iso19109;uSetOfTypes.setOfTypes"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;SetOfTypes.setOfTypes"/>
+        <owl:onProperty rdf:resource="&iso19109;uSetOfTypes.setOfTypes"/>
         <owl:allValuesFrom rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19109;Feature">
+  <owl:Class rdf:about="&iso19109;uFeature">
     <rdfs:label>Feature</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;Feature.feature"/>
+        <owl:onProperty rdf:resource="&iso19109;uFeature.feature"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;Feature.feature"/>
+        <owl:onProperty rdf:resource="&iso19109;uFeature.feature"/>
         <owl:allValuesFrom rdf:resource="&iso19103_533;GenericName"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19109;SetOfFeature">
+  <owl:Class rdf:about="&iso19109;uSetOfFeature">
     <rdfs:label>SetOfFeature</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;SetOfFeature.setOfFeature"/>
+        <owl:onProperty rdf:resource="&iso19109;uSetOfFeature.setOfFeature"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19109;SetOfFeature.setOfFeature"/>
+        <owl:onProperty rdf:resource="&iso19109;uSetOfFeature.setOfFeature"/>
         <owl:allValuesFrom rdf:resource="&iso19115_916;DS_DataSet"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -569,28 +569,28 @@
     <rdfs:domain rdf:resource="&iso19109;GF_Constraint"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="&iso19109;FeatureType.featureType">
+  <owl:ObjectProperty rdf:about="&iso19109;uFeatureType.featureType">
     <skos:prefLabel>featureType</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19109;FeatureType"/>
+    <rdfs:domain rdf:resource="&iso19109;uFeatureType"/>
     <rdfs:range rdf:resource="&iso19109;GF_FeatureType"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19109;SetOfTypes.setOfTypes">
+  <owl:ObjectProperty rdf:about="&iso19109;SuetOfTypes.setOfTypes">
     <skos:prefLabel>setOfTypes</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19109;SetOfTypes"/>
+    <rdfs:domain rdf:resource="&iso19109;uSetOfTypes"/>
     <rdfs:range rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19109;Feature.feature">
+  <owl:ObjectProperty rdf:about="&iso19109;uFeature.feature">
     <skos:prefLabel>feature</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19109;Feature"/>
+    <rdfs:domain rdf:resource="&iso19109;uFeature"/>
     <rdfs:range rdf:resource="&iso19103_533;GenericName"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19109;SetOfFeature.setOfFeature">
+  <owl:ObjectProperty rdf:about="&iso19109;uSetOfFeature.setOfFeature">
     <skos:prefLabel>setOfFeature</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19109/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19109;SetOfFeature"/>
+    <rdfs:domain rdf:resource="&iso19109;uSetOfFeature"/>
     <rdfs:range rdf:resource="&iso19115_916;DS_DataSet"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="&iso19109;GF_FeatureType.typeName">
@@ -776,10 +776,10 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19109;FeatureType"/>
-          <owl:Class rdf:about="&iso19109;SetOfTypes"/>
-          <owl:Class rdf:about="&iso19109;Feature"/>
-          <owl:Class rdf:about="&iso19109;SetOfFeature"/>
+          <owl:Class rdf:about="&iso19109;uFeatureType"/>
+          <owl:Class rdf:about="&iso19109;uSetOfTypes"/>
+          <owl:Class rdf:about="&iso19109;uFeature"/>
+          <owl:Class rdf:about="&iso19109;uSetOfFeature"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>
