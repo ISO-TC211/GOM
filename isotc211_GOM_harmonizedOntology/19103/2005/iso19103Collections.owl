@@ -54,34 +54,34 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf rdf:resource="&iso19103;Sequence"/>
   </owl:Class>
-  <owl:Class rdf:about="&iso19103;AsNumber">
+  <owl:Class rdf:about="&iso19103;uAsNumber">
     <rdfs:label>AsNumber</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19103;AsNumber.asNumber"/>
+        <owl:onProperty rdf:resource="&iso19103;uAsNumber.asNumber"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19103;AsNumber.asNumber"/>
+        <owl:onProperty rdf:resource="&iso19103;uAsNumber.asNumber"/>
         <owl:allValuesFrom rdf:resource="&iso19103_539;Number"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19103;AsCharacter">
+  <owl:Class rdf:about="&iso19103;uAsCharacter">
     <rdfs:label>AsCharacter</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19103;AsCharacter.asCharacter"/>
+        <owl:onProperty rdf:resource="&iso19103;uAsCharacter.asCharacter"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19103;AsCharacter.asCharacter"/>
+        <owl:onProperty rdf:resource="&iso19103;uAsCharacter.asCharacter"/>
         <owl:allValuesFrom rdf:resource="&xsd;string"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -227,16 +227,16 @@
     <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
     <iso19150-2:constraint>parameterized: T:Type</iso19150-2:constraint>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="&iso19103;AsNumber.asNumber">
+  <owl:ObjectProperty rdf:about="&iso19103;uAsNumber.asNumber">
     <skos:prefLabel>asNumber</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19103;AsNumber"/>
+    <rdfs:domain rdf:resource="&iso19103;uAsNumber"/>
     <rdfs:range rdf:resource="&iso19103_539;Number"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19103;AsCharacter.asCharacter">
+  <owl:DatatypeProperty rdf:about="&iso19103;uAsCharacter.asCharacter">
     <rdfs:label>asCharacter</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19103;AsCharacter"/>
+    <rdfs:domain rdf:resource="&iso19103;uAsCharacter"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="&iso19103;KeyValuePair.key">
@@ -303,8 +303,8 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19103;AsNumber"/>
-          <owl:Class rdf:about="&iso19103;AsCharacter"/>
+          <owl:Class rdf:about="&iso19103;uAsNumber"/>
+          <owl:Class rdf:about="&iso19103;uAsCharacter"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>
