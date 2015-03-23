@@ -106,104 +106,104 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;Attributes">
+  <owl:Class rdf:about="&iso19115;uAttributes">
     <rdfs:label>Attributes</rdfs:label>
     <skos:definition>Attributes to which the information applies</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Attributes.attributes"/>
+        <owl:onProperty rdf:resource="&iso19115;uAttributes.attributes"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Attributes.attributes"/>
+        <owl:onProperty rdf:resource="&iso19115;uAttributes.attributes"/>
         <owl:allValuesFrom rdf:resource="&orph_239;Set.lt.GF_AttributeType.gt."/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;Features">
+  <owl:Class rdf:about="&iso19115;uFeatures">
     <rdfs:label>Features</rdfs:label>
     <skos:definition>Features to which the information applies</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Features.features"/>
+        <owl:onProperty rdf:resource="&iso19115;uFeatures.features"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Features.features"/>
+        <owl:onProperty rdf:resource="&iso19115;uFeatures.features"/>
         <owl:allValuesFrom rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;FeatureInstances">
+  <owl:Class rdf:about="&iso19115;uFeatureInstances">
     <rdfs:label>FeatureInstances</rdfs:label>
     <skos:definition>Feature instances to which the information applies</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;FeatureInstances.featureInstances"/>
+        <owl:onProperty rdf:resource="&iso19115;uFeatureInstances.featureInstances"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;FeatureInstances.featureInstances"/>
+        <owl:onProperty rdf:resource="&iso19115;uFeatureInstances.featureInstances"/>
         <owl:allValuesFrom rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;AttributeInstances">
+  <owl:Class rdf:about="&iso19115;uAttributeInstances">
     <rdfs:label>AttributeInstances</rdfs:label>
     <skos:definition>Attribute instances to which the information applies</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;AttributeInstances.attributeInstances"/>
+        <owl:onProperty rdf:resource="&iso19115;uAttributeInstances.attributeInstances"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;AttributeInstances.attributeInstances"/>
+        <owl:onProperty rdf:resource="&iso19115;uAttributeInstances.attributeInstances"/>
         <owl:allValuesFrom rdf:resource="&orph_239;Set.lt.GF_AttributeType.gt."/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;Dataset">
+  <owl:Class rdf:about="&iso19115;uDataset">
     <rdfs:label>Dataset</rdfs:label>
     <skos:definition>Feature collection to which the information applies</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Dataset.dataset"/>
+        <owl:onProperty rdf:resource="&iso19115;uDataset.dataset"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Dataset.dataset"/>
+        <owl:onProperty rdf:resource="&iso19115;uDataset.dataset"/>
         <owl:allValuesFrom rdf:resource="&xsd;string"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;Other">
+  <owl:Class rdf:about="&iso19115;uOther">
     <rdfs:label>Other</rdfs:label>
     <skos:definition>Class of information that does not fall into the other categories</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Other.other"/>
+        <owl:onProperty rdf:resource="&iso19115;uOther.other"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Other.other"/>
+        <owl:onProperty rdf:resource="&iso19115;uOther.other"/>
         <owl:allValuesFrom rdf:resource="&xsd;string"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -250,40 +250,40 @@
     <rdfs:domain rdf:resource="&iso19115;MD_MaintenanceInformation"/>
     <rdfs:range rdf:resource="&iso19115_613;CI_ResponsibleParty"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19115;Attributes.attributes">
+  <owl:ObjectProperty rdf:about="&iso19115;uAttributes.attributes">
     <skos:prefLabel>attributes</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;Attributes"/>
+    <rdfs:domain rdf:resource="&iso19115;uAttributes"/>
     <rdfs:range rdf:resource="&orph_239;Set.lt.GF_AttributeType.gt."/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19115;Features.features">
+  <owl:ObjectProperty rdf:about="&iso19115;uFeatures.features">
     <skos:prefLabel>features</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;Features"/>
+    <rdfs:domain rdf:resource="&iso19115;uFeatures"/>
     <rdfs:range rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19115;FeatureInstances.featureInstances">
+  <owl:ObjectProperty rdf:about="&iso19115;uFeatureInstances.featureInstances">
     <skos:prefLabel>featureInstances</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;FeatureInstances"/>
+    <rdfs:domain rdf:resource="&iso19115;uFeatureInstances"/>
     <rdfs:range rdf:resource="&orph_239;Set.lt.GF_FeatureType.gt."/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19115;AttributeInstances.attributeInstances">
+  <owl:ObjectProperty rdf:about="&iso19115;uAttributeInstances.attributeInstances">
     <skos:prefLabel>attributeInstances</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;AttributeInstances"/>
+    <rdfs:domain rdf:resource="&iso19115;uAttributeInstances"/>
     <rdfs:range rdf:resource="&orph_239;Set.lt.GF_AttributeType.gt."/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19115;Dataset.dataset">
+  <owl:DatatypeProperty rdf:about="&iso19115;uDataset.dataset">
     <rdfs:label>dataset</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;Dataset"/>
+    <rdfs:domain rdf:resource="&iso19115;uDataset"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="&iso19115;Other.other">
+  <owl:DatatypeProperty rdf:about="&iso19115;uOther.other">
     <rdfs:label>other</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;Other"/>
+    <rdfs:domain rdf:resource="&iso19115;uOther"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </owl:DatatypeProperty>
   <owl:Class rdf:about="&iso19115;MD_MaintenanceFrequencyCode">
@@ -519,12 +519,12 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19115;Attributes"/>
-          <owl:Class rdf:about="&iso19115;Features"/>
-          <owl:Class rdf:about="&iso19115;FeatureInstances"/>
-          <owl:Class rdf:about="&iso19115;AttributeInstances"/>
-          <owl:Class rdf:about="&iso19115;Dataset"/>
-          <owl:Class rdf:about="&iso19115;Other"/>
+          <owl:Class rdf:about="&iso19115;uAttributes"/>
+          <owl:Class rdf:about="&iso19115;uFeatures"/>
+          <owl:Class rdf:about="&iso19115;uFeatureInstances"/>
+          <owl:Class rdf:about="&iso19115;uAttributeInstances"/>
+          <owl:Class rdf:about="&iso19115;uDataset"/>
+          <owl:Class rdf:about="&iso19115;uOther"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>

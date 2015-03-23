@@ -380,34 +380,34 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;EquivalentScale">
+  <owl:Class rdf:about="&iso19115;uEquivalentScale">
     <rdfs:label>EquivalentScale</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;EquivalentScale.equivalentScale"/>
+        <owl:onProperty rdf:resource="&iso19115;uEquivalentScale.equivalentScale"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;EquivalentScale.equivalentScale"/>
+        <owl:onProperty rdf:resource="&iso19115;uEquivalentScale.equivalentScale"/>
         <owl:allValuesFrom rdf:resource="&iso19115;MD_RepresentativeFraction"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19115;Distance">
+  <owl:Class rdf:about="&iso19115;uDistance">
     <rdfs:label>Distance</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Distance.distance"/>
+        <owl:onProperty rdf:resource="&iso19115;uDistance.distance"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19115;Distance.distance"/>
+        <owl:onProperty rdf:resource="&iso19115;uDistance.distance"/>
         <owl:allValuesFrom rdf:resource="&iso19103_530;Distance"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -622,16 +622,16 @@
     <rdfs:domain rdf:resource="&iso19115;MD_RepresentativeFraction"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="&iso19115;EquivalentScale.equivalentScale">
+  <owl:ObjectProperty rdf:about="&iso19115;uEquivalentScale.equivalentScale">
     <skos:prefLabel>equivalentScale</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;EquivalentScale"/>
+    <rdfs:domain rdf:resource="&iso19115;uEquivalentScale"/>
     <rdfs:range rdf:resource="&iso19115;MD_RepresentativeFraction"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19115;Distance.distance">
+  <owl:ObjectProperty rdf:about="&iso19115;uDistance.distance">
     <skos:prefLabel>distance</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19115;Distance"/>
+    <rdfs:domain rdf:resource="&iso19115;uDistance"/>
     <rdfs:range rdf:resource="&iso19103_530;Distance"/>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="&iso19115;MD_Usage.specificUsage">
@@ -1215,8 +1215,8 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19115;EquivalentScale"/>
-          <owl:Class rdf:about="&iso19115;Distance"/>
+          <owl:Class rdf:about="&iso19115;uEquivalentScale"/>
+          <owl:Class rdf:about="&iso19115;uDistance"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>
