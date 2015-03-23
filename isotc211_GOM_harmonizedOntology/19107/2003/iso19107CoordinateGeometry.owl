@@ -905,34 +905,34 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19107;Direct">
+  <owl:Class rdf:about="&iso19107;uDirect">
     <rdfs:label>Direct</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19107;Direct.direct"/>
+        <owl:onProperty rdf:resource="&iso19107;uDirect.direct"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19107;Direct.direct"/>
+        <owl:onProperty rdf:resource="&iso19107;uDirect.direct"/>
         <owl:allValuesFrom rdf:resource="&iso19107;DirectPosition"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19107;Indirect">
+  <owl:Class rdf:about="&iso19107;uIndirect">
     <rdfs:label>Indirect</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19107;Indirect.indirect"/>
+        <owl:onProperty rdf:resource="&iso19107;uIndirect.indirect"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19107;Indirect.indirect"/>
+        <owl:onProperty rdf:resource="&iso19107;uIndirect.indirect"/>
         <owl:allValuesFrom rdf:resource="&iso19107;GM_PointRef"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -1359,16 +1359,16 @@
     <rdfs:domain rdf:resource="&iso19107;GM_PolynomialSpline"/>
     <rdfs:range rdf:resource="&orph_239;Sequence.lt.Vector.gt."/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19107;Direct.direct">
+  <owl:ObjectProperty rdf:about="&iso19107;uDirect.direct">
     <skos:prefLabel>direct</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19107;Direct"/>
+    <rdfs:domain rdf:resource="&iso19107;uDirect"/>
     <rdfs:range rdf:resource="&iso19107;DirectPosition"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19107;Indirect.indirect">
+  <owl:ObjectProperty rdf:about="&iso19107;uIndirect.indirect">
     <skos:prefLabel>indirect</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19107;Indirect"/>
+    <rdfs:domain rdf:resource="&iso19107;uIndirect"/>
     <rdfs:range rdf:resource="&iso19107;GM_PointRef"/>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="&iso19107;GM_SplineCurve.degree">
@@ -1632,8 +1632,8 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19107;Direct"/>
-          <owl:Class rdf:about="&iso19107;Indirect"/>
+          <owl:Class rdf:about="&iso19107;uDirect"/>
+          <owl:Class rdf:about="&iso19107;uIndirect"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>
