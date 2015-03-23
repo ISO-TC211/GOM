@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19107_544 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19115_606 "http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#" >
+  <!ENTITY iso19115_920 "http://def.isotc211.org/iso19115/2006/DataQualityInformation#" >
+  <!ENTITY iso19115_922 "http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#" >
+  <!ENTITY iso19130_690 "http://def.isotc211.org/iso19130/2010/GroundControl#" >
+  <!ENTITY iso19115-2_898 "http://def.isotc211.org/19115/-2/2009/AcquisitionInformation-Imagery#" >
+  <!ENTITY iso19115-2 "http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#"
+  xml:base="http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19107_544="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19115_606="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#"
+  xmlns:iso19115_920="http://def.isotc211.org/iso19115/2006/DataQualityInformation#"
+  xmlns:iso19115_922="http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#"
+  xmlns:iso19130_690="http://def.isotc211.org/iso19130/2010/GroundControl#"
+  xmlns:iso19115-2_898="http://def.isotc211.org/19115/-2/2009/AcquisitionInformation-Imagery#"
+  xmlns:iso19115-2="http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery">
+    <rdfs:label>ISO 19115-2:2009 Spatial representation information - Imagery</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19115/-2/ed-1/en/</dct:source>
+    <owl:versionInfo>2009-02-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/DataQualityInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19130/2010/GroundControl"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/19115/-2/2009/AcquisitionInformation-Imagery"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19115-2;MI_GCP">
+    <rdfs:label>MI_GCP</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCP.geographicCoordinates"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCP.geographicCoordinates"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_544;DirectPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCP.accuracyReport"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_920;DQ_Element"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115-2;MI_GCPCollection">
+    <rdfs:label>MI_GCPCollection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115-2;MI_GeolocationInformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.collectionIdentification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.collectionIdentification"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.collectionName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.collectionName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.coordinateReferenceSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.coordinateReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_606;MD_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.gcp"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GCPCollection.gcp"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-2;MI_GCP"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115-2;MI_GeolocationInformation">
+    <rdfs:label>MI_GeolocationInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_GeolocationInformation.qualityInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_920;DQ_DataQuality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115-2;MI_Georectified">
+    <rdfs:label>MI_Georectified</rdfs:label>
+    <skos:definition>Description: extends georectified grid description to include associated checkpointsshortName: IGeorect</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115_922;MD_Georectified"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_Georectified.geolocationIdentification"/>
+        <owl:allValuesFrom rdf:resource="&iso19130_690;SD_GCPCollection"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_Georectified.checkPoint"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-2;MI_GCP"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19115-2;MI_Georeferenceable">
+    <rdfs:label>MI_Georeferenceable</rdfs:label>
+    <skos:definition>Description: Description of information provided in metadata that allows the geographic or map location raster points to be locatedFGDC: Georeferencing_DescriptionshortName: IGeoref</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115_922;MD_Georeferenceable"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_Georeferenceable.platformParameters"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_Georeferenceable.platformParameters"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-2_898;MI_Platform"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_Georeferenceable.geolocationInformation"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-2;MI_Georeferenceable.geolocationInformation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-2;MI_GeolocationInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_GCP.geographicCoordinates">
+    <rdfs:label>geographicCoordinates</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_GCP"/>
+    <rdfs:range rdf:resource="&iso19107_544;DirectPosition"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115-2;MI_GCPCollection.collectionIdentification">
+    <rdfs:label>collectionIdentification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_GCPCollection"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19115-2;MI_GCPCollection.collectionName">
+    <rdfs:label>collectionName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_GCPCollection"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_GCPCollection.coordinateReferenceSystem">
+    <rdfs:label>coordinateReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_GCPCollection"/>
+    <rdfs:range rdf:resource="&iso19115_606;MD_ReferenceSystem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_GCP.accuracyReport">
+    <rdfs:label>accuracyReport</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_GCP"/>
+    <rdfs:range rdf:resource="&iso19115_920;DQ_Element"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_GCPCollection.gcp">
+    <rdfs:label>gcp</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_GCPCollection"/>
+    <rdfs:range rdf:resource="&iso19115-2;MI_GCP"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_GeolocationInformation.qualityInfo">
+    <rdfs:label>qualityInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_GeolocationInformation"/>
+    <rdfs:range rdf:resource="&iso19115_920;DQ_DataQuality"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_Georectified.geolocationIdentification">
+    <rdfs:label>geolocationIdentification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_Georectified"/>
+    <rdfs:range rdf:resource="&iso19130_690;SD_GCPCollection"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_Georectified.checkPoint">
+    <rdfs:label>checkPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_Georectified"/>
+    <rdfs:range rdf:resource="&iso19115-2;MI_GCP"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_Georeferenceable.platformParameters">
+    <rdfs:label>platformParameters</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_Georeferenceable"/>
+    <rdfs:range rdf:resource="&iso19115-2_898;MI_Platform"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19115-2;MI_Georeferenceable.geolocationInformation">
+    <rdfs:label>geolocationInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-2;MI_Georeferenceable"/>
+    <rdfs:range rdf:resource="&iso19115-2;MI_GeolocationInformation"/>
+  </owl:ObjectProperty>
+</rdf:RDF>
+
