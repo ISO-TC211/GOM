@@ -144,53 +144,53 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;InverseFlattening">
+  <owl:Class rdf:about="&iso19111;uInverseFlattening">
     <rdfs:label>InverseFlattening</rdfs:label>
     <skos:definition>Inverse flattening value of the ellipsoid. </skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;InverseFlattening.inverseFlattening"/>
+        <owl:onProperty rdf:resource="&iso19111;uInverseFlattening.inverseFlattening"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;InverseFlattening.inverseFlattening"/>
+        <owl:onProperty rdf:resource="&iso19111;uInverseFlattening.inverseFlattening"/>
         <owl:allValuesFrom rdf:resource="&iso19103_530;Scale"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;SemiMinorAxis">
+  <owl:Class rdf:about="&iso19111;uSemiMinorAxis">
     <rdfs:label>SemiMinorAxis</rdfs:label>
     <skos:definition>Length of the semi-minor axis of the ellipsoid. </skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;SemiMinorAxis.semiMinorAxis"/>
+        <owl:onProperty rdf:resource="&iso19111;uSemiMinorAxis.semiMinorAxis"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;SemiMinorAxis.semiMinorAxis"/>
+        <owl:onProperty rdf:resource="&iso19111;uSemiMinorAxis.semiMinorAxis"/>
         <owl:allValuesFrom rdf:resource="&iso19103_530;Length"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;IsSphere">
+  <owl:Class rdf:about="&iso19111;uIsSphere">
     <rdfs:label>IsSphere</rdfs:label>
     <skos:definition>The ellipsoid is degenerate and is actually a sphere. The sphere is completely defined by the semi-major axis, which is the radius of the sphere. This attribute this has the value "true" if the figure is a sphere.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;IsSphere.isSphere"/>
+        <owl:onProperty rdf:resource="&iso19111;uIsSphere.isSphere"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;IsSphere.isSphere"/>
+        <owl:onProperty rdf:resource="&iso19111;uIsSphere.isSphere"/>
         <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -249,22 +249,22 @@
     <rdfs:domain rdf:resource="&iso19111;CD_PrimeMeridian"/>
     <rdfs:range rdf:resource="&iso19103_530;Angle"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19111;InverseFlattening.inverseFlattening">
+  <owl:ObjectProperty rdf:about="&iso19111;uInverseFlattening.inverseFlattening">
     <skos:prefLabel>inverseFlattening</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;InverseFlattening"/>
+    <rdfs:domain rdf:resource="&iso19111;uInverseFlattening"/>
     <rdfs:range rdf:resource="&iso19103_530;Scale"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19111;SemiMinorAxis.semiMinorAxis">
+  <owl:ObjectProperty rdf:about="&iso19111;uSemiMinorAxis.semiMinorAxis">
     <skos:prefLabel>semiMinorAxis</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;SemiMinorAxis"/>
+    <rdfs:domain rdf:resource="&iso19111;uSemiMinorAxis"/>
     <rdfs:range rdf:resource="&iso19103_530;Length"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19111;IsSphere.isSphere">
+  <owl:DatatypeProperty rdf:about="&iso19111;uIsSphere.isSphere">
     <rdfs:label>isSphere</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;IsSphere"/>
+    <rdfs:domain rdf:resource="&iso19111;uIsSphere"/>
     <rdfs:range rdf:resource="&xsd;boolean"/>
   </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="&iso19111;CD_GeodeticDatum.primeMeridian">
@@ -317,9 +317,9 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19111;InverseFlattening"/>
-          <owl:Class rdf:about="&iso19111;SemiMinorAxis"/>
-          <owl:Class rdf:about="&iso19111;IsSphere"/>
+          <owl:Class rdf:about="&iso19111;uInverseFlattening"/>
+          <owl:Class rdf:about="&iso19111;uSemiMinorAxis"/>
+          <owl:Class rdf:about="&iso19111;uIsSphere"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>

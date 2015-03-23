@@ -129,36 +129,36 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;Formula">
+  <owl:Class rdf:about="&iso19111;uFormula">
     <rdfs:label>Formula</rdfs:label>
     <skos:definition>Formula(s) or procedure used by this operation method.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;Formula.formula"/>
+        <owl:onProperty rdf:resource="&iso19111;uFormula.formula"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;Formula.formula"/>
+        <owl:onProperty rdf:resource="&iso19111;uFormula.formula"/>
         <owl:allValuesFrom rdf:resource="&xsd;string"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;FormulaCitation">
+  <owl:Class rdf:about="&iso19111;uFormulaCitation">
     <rdfs:label>FormulaCitation</rdfs:label>
     <skos:definition>Reference to a publication giving the formula(s) or procedure used by the coordinate operation method.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;FormulaCitation.formulaCitation"/>
+        <owl:onProperty rdf:resource="&iso19111;uFormulaCitation.formulaCitation"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;FormulaCitation.formulaCitation"/>
+        <owl:onProperty rdf:resource="&iso19111;uFormulaCitation.formulaCitation"/>
         <owl:allValuesFrom rdf:resource="&iso19115_613;CI_Citation"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -260,138 +260,138 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;Value">
+  <owl:Class rdf:about="&iso19111;uValue">
     <rdfs:label>Value</rdfs:label>
     <skos:definition>Numeric value of the coordinate operation parameter with its associated unit.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;Value.value"/>
+        <owl:onProperty rdf:resource="&iso19111;uValue.value"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;Value.value"/>
+        <owl:onProperty rdf:resource="&iso19111;uValue.value"/>
         <owl:allValuesFrom rdf:resource="&iso19103_948;Measure"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;StringValue">
+  <owl:Class rdf:about="&iso19111;uStringValue">
     <rdfs:label>StringValue</rdfs:label>
     <skos:definition>String value of a coordinate operation parameter. A string value does not have an associated unit.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;StringValue.stringValue"/>
+        <owl:onProperty rdf:resource="&iso19111;uStringValue.stringValue"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;StringValue.stringValue"/>
+        <owl:onProperty rdf:resource="&iso19111;uStringValue.stringValue"/>
         <owl:allValuesFrom rdf:resource="&xsd;string"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;IntegerValue">
+  <owl:Class rdf:about="&iso19111;uIntegerValue">
     <rdfs:label>IntegerValue</rdfs:label>
     <skos:definition>Positive integer value of a coordinate operation parameter, usually used for a count. An integer value does not have an associated unit.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;IntegerValue.integerValue"/>
+        <owl:onProperty rdf:resource="&iso19111;uIntegerValue.integerValue"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;IntegerValue.integerValue"/>
+        <owl:onProperty rdf:resource="&iso19111;uIntegerValue.integerValue"/>
         <owl:allValuesFrom rdf:resource="&xsd;integer"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;BooleanValue">
+  <owl:Class rdf:about="&iso19111;uBooleanValue">
     <rdfs:label>BooleanValue</rdfs:label>
     <skos:definition>Boolean value of a coordinate operation parameter. A Boolean value does not have an associated unit.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;BooleanValue.booleanValue"/>
+        <owl:onProperty rdf:resource="&iso19111;uBooleanValue.booleanValue"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;BooleanValue.booleanValue"/>
+        <owl:onProperty rdf:resource="&iso19111;uBooleanValue.booleanValue"/>
         <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;ValueList">
+  <owl:Class rdf:about="&iso19111;uValueList">
     <rdfs:label>ValueList</rdfs:label>
     <skos:definition>Ordered collection, i.e. sequence, of two or more numeric values of a coordinate operation parameter list, where each value has the same associated unit.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;ValueList.valueList"/>
+        <owl:onProperty rdf:resource="&iso19111;uValueList.valueList"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;ValueList.valueList"/>
+        <owl:onProperty rdf:resource="&iso19111;uValueList.valueList"/>
         <owl:allValuesFrom rdf:resource="&orph_239;Sequence.lt.Measure.gt."/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;IntegerValueList">
+  <owl:Class rdf:about="&iso19111;uIntegerValueList">
     <rdfs:label>IntegerValueList</rdfs:label>
     <skos:definition>Ordered collection, i.e. sequence, of two or more integer values of a coordinate operation parameter list, usually used for counts. These integer values do not have an associated unit.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;IntegerValueList.integerValueList"/>
+        <owl:onProperty rdf:resource="&iso19111;uIntegerValueList.integerValueList"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;IntegerValueList.integerValueList"/>
+        <owl:onProperty rdf:resource="&iso19111;uIntegerValueList.integerValueList"/>
         <owl:allValuesFrom rdf:resource="&orph_239;Sequence.lt.Integer.gt."/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;ValueFile">
+  <owl:Class rdf:about="&iso19111;uValueFile">
     <rdfs:label>ValueFile</rdfs:label>
     <skos:definition>Reference to a file or a part of a file containing one or more parameter values. When referencing a part of a file, that file shall contain multiple identified parts, such as an XML encoded document. Furthermore, the referenced file or part of a file can reference another part of the same or different files, as allowed in XML documents.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;ValueFile.valueFile"/>
+        <owl:onProperty rdf:resource="&iso19111;uValueFile.valueFile"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;ValueFile.valueFile"/>
+        <owl:onProperty rdf:resource="&iso19111;uValueFile.valueFile"/>
         <owl:allValuesFrom rdf:resource="&xsd;string"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19111;ValueFileCitation">
+  <owl:Class rdf:about="&iso19111;uValueFileCitation">
     <rdfs:label>ValueFileCitation</rdfs:label>
     <skos:definition>Citation for a reference to a file or a part of a file containing one or more parameter values. When referencing a part of a file, that file shall contain multiple identified parts, such as an XML encoded document. Furthermore, the referenced file or part of a file can reference another part of the same or different files, as allowed in XML documents.</skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;ValueFileCitation.valueFileCitation"/>
+        <owl:onProperty rdf:resource="&iso19111;uValueFileCitation.valueFileCitation"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19111;ValueFileCitation.valueFileCitation"/>
+        <owl:onProperty rdf:resource="&iso19111;uValueFileCitation.valueFileCitation"/>
         <owl:allValuesFrom rdf:resource="&iso19115_613;CI_Citation"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -493,16 +493,16 @@
     <rdfs:domain rdf:resource="&iso19111;CC_CoordinateOperation"/>
     <rdfs:range rdf:resource="&iso19115_934;DQ_PositionalAccuracy"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19111;Formula.formula">
+  <owl:DatatypeProperty rdf:about="&iso19111;uFormula.formula">
     <rdfs:label>formula</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;Formula"/>
+    <rdfs:domain rdf:resource="&iso19111;uFormula"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="&iso19111;FormulaCitation.formulaCitation">
+  <owl:ObjectProperty rdf:about="&iso19111;uFormulaCitation.formulaCitation">
     <skos:prefLabel>formulaCitation</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;FormulaCitation"/>
+    <rdfs:domain rdf:resource="&iso19111;uFormulaCitation"/>
     <rdfs:range rdf:resource="&iso19115_613;CI_Citation"/>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="&iso19111;CC_GeneralOperationParameter.minimumOccurs">
@@ -541,52 +541,52 @@
     <rdfs:domain rdf:resource="&iso19111;CC_OperationParameterValue"/>
     <rdfs:range rdf:resource="&iso19111;CC_ParameterValue"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19111;Value.value">
+  <owl:ObjectProperty rdf:about="&iso19111;uValue.value">
     <skos:prefLabel>value</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;Value"/>
+    <rdfs:domain rdf:resource="&iso19111;uValue"/>
     <rdfs:range rdf:resource="&iso19103_948;Measure"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19111;StringValue.stringValue">
+  <owl:DatatypeProperty rdf:about="&iso19111;uStringValue.stringValue">
     <rdfs:label>stringValue</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;StringValue"/>
+    <rdfs:domain rdf:resource="&iso19111;uStringValue"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="&iso19111;IntegerValue.integerValue">
+  <owl:DatatypeProperty rdf:about="&iso19111;uIntegerValue.integerValue">
     <rdfs:label>integerValue</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;IntegerValue"/>
+    <rdfs:domain rdf:resource="&iso19111;uIntegerValue"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="&iso19111;BooleanValue.booleanValue">
+  <owl:DatatypeProperty rdf:about="&iso19111;uBooleanValue.booleanValue">
     <rdfs:label>booleanValue</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;BooleanValue"/>
+    <rdfs:domain rdf:resource="&iso19111;uBooleanValue"/>
     <rdfs:range rdf:resource="&xsd;boolean"/>
   </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="&iso19111;ValueList.valueList">
+  <owl:ObjectProperty rdf:about="&iso19111;uValueList.valueList">
     <skos:prefLabel>valueList</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;ValueList"/>
+    <rdfs:domain rdf:resource="&iso19111;uValueList"/>
     <rdfs:range rdf:resource="&orph_239;Sequence.lt.Measure.gt."/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="&iso19111;IntegerValueList.integerValueList">
+  <owl:ObjectProperty rdf:about="&iso19111;uIntegerValueList.integerValueList">
     <skos:prefLabel>integerValueList</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;IntegerValueList"/>
+    <rdfs:domain rdf:resource="&iso19111;uIntegerValueList"/>
     <rdfs:range rdf:resource="&orph_239;Sequence.lt.Integer.gt."/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19111;ValueFile.valueFile">
+  <owl:DatatypeProperty rdf:about="&iso19111;uValueFile.valueFile">
     <rdfs:label>valueFile</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;ValueFile"/>
+    <rdfs:domain rdf:resource="&iso19111;uValueFile"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="&iso19111;ValueFileCitation.valueFileCitation">
+  <owl:ObjectProperty rdf:about="&iso19111;uValueFileCitation.valueFileCitation">
     <skos:prefLabel>valueFileCitation</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19111;ValueFileCitation"/>
+    <rdfs:domain rdf:resource="&iso19111;uValueFileCitation"/>
     <rdfs:range rdf:resource="&iso19115_613;CI_Citation"/>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="&iso19111;CC_Transformation.operationVersion">
@@ -674,8 +674,8 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19111;Formula"/>
-          <owl:Class rdf:about="&iso19111;FormulaCitation"/>
+          <owl:Class rdf:about="&iso19111;uFormula"/>
+          <owl:Class rdf:about="&iso19111;uFormulaCitation"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -687,14 +687,14 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19111;Value"/>
-          <owl:Class rdf:about="&iso19111;StringValue"/>
-          <owl:Class rdf:about="&iso19111;IntegerValue"/>
-          <owl:Class rdf:about="&iso19111;BooleanValue"/>
-          <owl:Class rdf:about="&iso19111;ValueList"/>
-          <owl:Class rdf:about="&iso19111;IntegerValueList"/>
-          <owl:Class rdf:about="&iso19111;ValueFile"/>
-          <owl:Class rdf:about="&iso19111;ValueFileCitation"/>
+          <owl:Class rdf:about="&iso19111;uValue"/>
+          <owl:Class rdf:about="&iso19111;uStringValue"/>
+          <owl:Class rdf:about="&iso19111;uIntegerValue"/>
+          <owl:Class rdf:about="&iso19111;uBooleanValue"/>
+          <owl:Class rdf:about="&iso19111;uValueList"/>
+          <owl:Class rdf:about="&iso19111;uIntegerValueList"/>
+          <owl:Class rdf:about="&iso19111;uValueFile"/>
+          <owl:Class rdf:about="&iso19111;uValueFileCitation"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>
