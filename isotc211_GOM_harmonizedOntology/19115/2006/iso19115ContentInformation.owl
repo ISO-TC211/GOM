@@ -40,9 +40,9 @@
     <rdfs:label>ISO 19115:2006 Content information</rdfs:label>
     <dct:source>http://standards.iso.org/iso/19115/ed-1/en/</dct:source>
     <owl:versionInfo>2006-07-01</owl:versionInfo>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/-->
     <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
