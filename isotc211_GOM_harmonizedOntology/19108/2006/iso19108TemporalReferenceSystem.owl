@@ -431,66 +431,66 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19108;AnyOther">
+  <owl:Class rdf:about="&iso19108;uAnyOther">
     <rdfs:label>AnyOther</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;AnyOther.anyOther"/>
+        <owl:onProperty rdf:resource="&iso19108;uAnyOther.anyOther"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;AnyOther.anyOther"/>
+        <owl:onProperty rdf:resource="&iso19108;uAnyOther.anyOther"/>
         <owl:allValuesFrom rdf:resource="&iso19108;TM_TemporalPosition"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19108;Date8601">
+  <owl:Class rdf:about="&iso19108;uDate8601">
     <rdfs:label>Date8601</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;Date8601.date8601"/>
+        <owl:onProperty rdf:resource="&iso19108;uDate8601.date8601"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;Date8601.date8601"/>
+        <owl:onProperty rdf:resource="&iso19108;uDate8601.date8601"/>
         <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19108;Time8601">
+  <owl:Class rdf:about="&iso19108;uTime8601">
     <rdfs:label>Time8601</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;Time8601.time8601"/>
+        <owl:onProperty rdf:resource="&iso19108;uTime8601.time8601"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;Time8601.time8601"/>
+        <owl:onProperty rdf:resource="&iso19108;uTime8601.time8601"/>
         <owl:allValuesFrom rdf:resource="&iso19103_530;Time"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="&iso19108;DateTime8601">
+  <owl:Class rdf:about="&iso19108;uDateTime8601">
     <rdfs:label>DateTime8601</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;DateTime8601.dateTime8601"/>
+        <owl:onProperty rdf:resource="&iso19108;uDateTime8601.dateTime8601"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19108;DateTime8601.dateTime8601"/>
+        <owl:onProperty rdf:resource="&iso19108;uDateTime8601.dateTime8601"/>
         <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -649,28 +649,28 @@
     <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
     <rdfs:range rdf:resource="&xsd;dateTime"/>
   </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="&iso19108;AnyOther.anyOther">
+  <owl:ObjectProperty rdf:about="&iso19108;uAnyOther.anyOther">
     <skos:prefLabel>anyOther</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19108;AnyOther"/>
+    <rdfs:domain rdf:resource="&iso19108;uAnyOther"/>
     <rdfs:range rdf:resource="&iso19108;TM_TemporalPosition"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19108;Date8601.date8601">
+  <owl:DatatypeProperty rdf:about="&iso19108;uDate8601.date8601">
     <rdfs:label>date8601</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19108;Date8601"/>
+    <rdfs:domain rdf:resource="&iso19108;uDate8601"/>
     <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
   </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="&iso19108;Time8601.time8601">
+  <owl:ObjectProperty rdf:about="&iso19108;uTime8601.time8601">
     <skos:prefLabel>time8601</skos:prefLabel>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19108;Time8601"/>
+    <rdfs:domain rdf:resource="&iso19108;uTime8601"/>
     <rdfs:range rdf:resource="&iso19103_530;Time"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="&iso19108;DateTime8601.dateTime8601">
+  <owl:DatatypeProperty rdf:about="&iso19108;uDateTime8601.dateTime8601">
     <rdfs:label>dateTime8601</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="&iso19108;DateTime8601"/>
+    <rdfs:domain rdf:resource="&iso19108;uDateTime8601"/>
     <rdfs:range rdf:resource="&xsd;dateTime"/>
   </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="&iso19108;TM_ReferenceSystem.name">
@@ -814,10 +814,10 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="&iso19108;AnyOther"/>
-          <owl:Class rdf:about="&iso19108;Date8601"/>
-          <owl:Class rdf:about="&iso19108;Time8601"/>
-          <owl:Class rdf:about="&iso19108;DateTime8601"/>
+          <owl:Class rdf:about="&iso19108;uAnyOther"/>
+          <owl:Class rdf:about="&iso19108;uDate8601"/>
+          <owl:Class rdf:about="&iso19108;uTime8601"/>
+          <owl:Class rdf:about="&iso19108;uDateTime8601"/>
         </owl:unionOf>
       </owl:Class>
     </owl:equivalentClass>
