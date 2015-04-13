@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1428953313849" name="http://def.isotc211.org/iso19116/2004/PositioningServiceModel" uri="iso19116PositioningServiceModel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1428953313849" name="http://def.isotc211.org/iso19116/2004/PositioningServices" uri="ISO19116_2004PositioningServices.owl"/>
+    </group>
+</catalog>
