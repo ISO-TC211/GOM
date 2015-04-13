@@ -1,0 +1,887 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_533 "http://def.isotc211.org/iso19103/2005/Names#" >
+  <!ENTITY iso19115-1_1189 "http://def.isotc211.org/iso19115/-1/2014/CommonClasses#" >
+  <!ENTITY iso19115-1_1194 "http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19139_705 "http://def.isotc211.org/iso19139/2007/Catalogues#" >
+  <!ENTITY iso19135_703 "http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#" >
+  <!ENTITY iso19157 "http://def.isotc211.org/iso19157/2013/DataQualityMeasures#" >
+  <!ENTITY iso19157Code "http://def.isotc211.org/iso19157/2013/DataQualityMeasures/code/">
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19157/2013/DataQualityMeasures#"
+  xml:base="http://def.isotc211.org/iso19157/2013/DataQualityMeasures"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_533="http://def.isotc211.org/iso19103/2005/Names#"
+  xmlns:iso19115-1_1189="http://def.isotc211.org/iso19115/-1/2014/CommonClasses#"
+  xmlns:iso19115-1_1194="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19139_705="http://def.isotc211.org/iso19139/2007/Catalogues#"
+  xmlns:iso19135_703="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#"
+  xmlns:iso19157="http://def.isotc211.org/iso19157/2013/DataQualityMeasures#"
+  xmlns:iso19157Code="http://def.isotc211.org/iso19157/2013/DataQualityMeasures/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19157:2013 Data quality measures -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19157/2013/DataQualityMeasures">
+    <rdfs:label>ISO 19157:2013 Data quality measures</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19157/ed-1/en/</dct:source>
+    <owl:versionInfo>2013</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CommonClasses"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19139/2007/Catalogues"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: DQM_BasicMeasure -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_BasicMeasure">
+    <rdfs:label>DQM_BasicMeasure</rdfs:label>
+    <skos:definition>data quality basic measure</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>valueType shall be one of the data types defined in ISO.sl.TS 19103</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.definition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.example"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.example"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Description"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.valueType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_BasicMeasure.valueType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;TypeName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: DQM_Description -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_Description">
+    <rdfs:label>DQM_Description</rdfs:label>
+    <skos:definition>data quality measure description</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Description.textDescription"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Description.textDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Description.extendedDescription"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Description.extendedDescription"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1189;MD_BrowseGraphic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: DQM_Measure -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_Measure">
+    <rdfs:label>DQM_Measure</rdfs:label>
+    <skos:definition>Data quality measure</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>valueType shall be one of the data types defined in ISO.sl.TS 19103</iso19150-2:constraint>
+    <iso19150-2:constraint>valueType shall be one of the data types defined in ISO.sl.TS 19103</iso19150-2:constraint>
+    <iso19150-2:constraint>valueType shall be one of the data types defined in ISO.sl.TS 19103</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.measureIdentifier"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.measureIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1189;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.alias"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.elementName"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.elementName"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;TypeName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.definition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.description"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Description"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.valueType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.valueType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;TypeName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.valueStructure"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.valueStructure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_ValueStructure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.example"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Description"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.parameter"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Parameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.basicMeasure"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.basicMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_BasicMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Measure.sourceReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_SourceReference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: DQM_MeasureCatalogue -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_MeasureCatalogue">
+    <rdfs:label>DQM_MeasureCatalogue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19139_705;CT_Catalogue"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_MeasureCatalogue.qualityMeasure"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_MeasureCatalogue.qualityMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_MeasureCatalogue.parameter"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Parameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_MeasureCatalogue.basicMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_BasicMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_MeasureCatalogue.definitionSource"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_SourceReference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: DQM_Parameter -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_Parameter">
+    <rdfs:label>DQM_Parameter</rdfs:label>
+    <skos:definition>data quality parameter</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>valueType shall be one of the data types defined in ISO.sl.TS 19103</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.definition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.description"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Description"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.valueType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.valueType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;TypeName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.valueStructure"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_Parameter.valueStructure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_ValueStructure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQM_RegisteredDataQualityBasicMeasure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_RegisteredDataQualityBasicMeasure">
+    <rdfs:label>DQM_RegisteredDataQualityBasicMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_703;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_RegisteredDataQualityBasicMeasure.basicMeasure"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_RegisteredDataQualityBasicMeasure.basicMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_BasicMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQM_RegisteredDataQualityMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_RegisteredDataQualityMeasure">
+    <rdfs:label>DQM_RegisteredDataQualityMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_703;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_RegisteredDataQualityMeasure.qualityMeasure"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_RegisteredDataQualityMeasure.qualityMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQM_RegisteredDataQualityParameter -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_RegisteredDataQualityParameter">
+    <rdfs:label>DQM_RegisteredDataQualityParameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_703;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_RegisteredDataQualityParameter.parameter"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_RegisteredDataQualityParameter.parameter"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQM_Parameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: DQM_SourceReference -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_SourceReference">
+    <rdfs:label>DQM_SourceReference</rdfs:label>
+    <skos:definition>reference to the source of the data quality measure</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_SourceReference.citation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQM_SourceReference.citation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1194;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_BasicMeasure.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_BasicMeasure.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_BasicMeasure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_BasicMeasure.definition -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_BasicMeasure.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_BasicMeasure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_BasicMeasure.example -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_BasicMeasure.example">
+    <rdfs:label>example</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_BasicMeasure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Description"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_BasicMeasure.valueType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_BasicMeasure.valueType">
+    <rdfs:label>valueType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_BasicMeasure"/>
+    <rdfs:range rdf:resource="&iso19103_533;TypeName"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_Description.textDescription -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_Description.textDescription">
+    <rdfs:label>textDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Description"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Description.extendedDescription -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Description.extendedDescription">
+    <rdfs:label>extendedDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Description"/>
+    <rdfs:range rdf:resource="&iso19115-1_1189;MD_BrowseGraphic"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.measureIdentifier -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.measureIdentifier">
+    <rdfs:label>measureIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19115-1_1189;MD_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_Measure.name -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_Measure.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_Measure.alias -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_Measure.alias">
+    <rdfs:label>alias</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.elementName -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.elementName">
+    <rdfs:label>elementName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>The value of  elementName shall be the TypeName of a data quality element specified in this International Standard</iso19150-2:constraint>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19103_533;TypeName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_Measure.definition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_Measure.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Description"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.valueType -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.valueType">
+    <rdfs:label>valueType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19103_533;TypeName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.valueStructure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.valueStructure">
+    <rdfs:label>valueStructure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_ValueStructure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.example -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.example">
+    <rdfs:label>example</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Description"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_Parameter.name -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_Parameter.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Parameter"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQM_Parameter.definition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQM_Parameter.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Parameter"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Parameter.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Parameter.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Parameter"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Description"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Parameter.valueType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Parameter.valueType">
+    <rdfs:label>valueType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Parameter"/>
+    <rdfs:range rdf:resource="&iso19103_533;TypeName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Parameter.valueStructure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Parameter.valueStructure">
+    <rdfs:label>valueStructure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Parameter"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_ValueStructure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_SourceReference.citation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_SourceReference.citation">
+    <rdfs:label>citation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_SourceReference"/>
+    <rdfs:range rdf:resource="&iso19115-1_1194;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.basicMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.basicMeasure">
+    <rdfs:label>basicMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_BasicMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.qualityMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.qualityMeasure">
+    <rdfs:label>qualityMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Measure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.parameter -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.parameter">
+    <rdfs:label>parameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Parameter"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.basicMeasure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.basicMeasure">
+    <rdfs:label>basicMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_BasicMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_Measure.sourceReference -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_Measure.sourceReference">
+    <rdfs:label>sourceReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_Measure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_SourceReference"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.qualityMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.qualityMeasure">
+    <rdfs:label>qualityMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Measure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.parameter -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.parameter">
+    <rdfs:label>parameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Parameter"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.basicMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.basicMeasure">
+    <rdfs:label>basicMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_BasicMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.definitionSource -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.definitionSource">
+    <rdfs:label>definitionSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_SourceReference"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.parameter -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.parameter">
+    <rdfs:label>parameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Parameter"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_RegisteredDataQualityBasicMeasure.basicMeasure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_RegisteredDataQualityBasicMeasure.basicMeasure">
+    <rdfs:label>basicMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQM_RegisteredDataQualityBasicMeasure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_BasicMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_RegisteredDataQualityMeasure.qualityMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_RegisteredDataQualityMeasure.qualityMeasure">
+    <rdfs:label>qualityMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQM_RegisteredDataQualityMeasure"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Measure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_RegisteredDataQualityParameter.parameter -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_RegisteredDataQualityParameter.parameter">
+    <rdfs:label>parameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQM_RegisteredDataQualityParameter"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_Parameter"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQM_MeasureCatalogue.definitionSource -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQM_MeasureCatalogue.definitionSource">
+    <rdfs:label>definitionSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQM_MeasureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19157;DQM_SourceReference"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: DQM_ValueStructure -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQM_ValueStructure">
+    <rdfs:label>DQM_ValueStructure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19157Code;DQM_ValueStructure">
+    <skos:prefLabel>DQM_ValueStructure - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19157;DQM_ValueStructure"/>
+  </skos:ConceptScheme>
+  <iso19157:DQM_ValueStructure rdf:about="&iso19157Code;DQM_ValueStructure/bag">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>bag</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19157Code;DQM_ValueStructure"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+  </iso19157:DQM_ValueStructure>
+  <iso19157:DQM_ValueStructure rdf:about="&iso19157Code;DQM_ValueStructure/set">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>set</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19157Code;DQM_ValueStructure"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+  </iso19157:DQM_ValueStructure>
+  <iso19157:DQM_ValueStructure rdf:about="&iso19157Code;DQM_ValueStructure/sequence">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>sequence</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19157Code;DQM_ValueStructure"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+  </iso19157:DQM_ValueStructure>
+  <iso19157:DQM_ValueStructure rdf:about="&iso19157Code;DQM_ValueStructure/table">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>table</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19157Code;DQM_ValueStructure"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+  </iso19157:DQM_ValueStructure>
+  <iso19157:DQM_ValueStructure rdf:about="&iso19157Code;DQM_ValueStructure/matrix">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>matrix</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19157Code;DQM_ValueStructure"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+  </iso19157:DQM_ValueStructure>
+  <iso19157:DQM_ValueStructure rdf:about="&iso19157Code;DQM_ValueStructure/coverage">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coverage</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19157Code;DQM_ValueStructure"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+  </iso19157:DQM_ValueStructure>
+  <skos:Collection rdf:about="&iso19157Code;DQM_ValueStructureCollection">
+    <skos:prefLabel>DQM_ValueStructure - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/bag"/>
+      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/set"/>
+      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/sequence"/>
+      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/table"/>
+      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/matrix"/>
+      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/coverage"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+

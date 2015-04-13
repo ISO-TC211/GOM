@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115-1_1189 "http://def.isotc211.org/iso19115/-1/2014/CommonClasses#" >
+  <!ENTITY iso19115-1_1194 "http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19157_1165 "http://def.isotc211.org/iso19157/2013/DataQualityResult#" >
+  <!ENTITY iso19157_1167 "http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#" >
+  <!ENTITY iso19157 "http://def.isotc211.org/iso19157/2013/DataQuality#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19157/2013/DataQuality#"
+  xml:base="http://def.isotc211.org/iso19157/2013/DataQuality"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115-1_1189="http://def.isotc211.org/iso19115/-1/2014/CommonClasses#"
+  xmlns:iso19115-1_1194="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19157_1165="http://def.isotc211.org/iso19157/2013/DataQualityResult#"
+  xmlns:iso19157_1167="http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#"
+  xmlns:iso19157="http://def.isotc211.org/iso19157/2013/DataQuality#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19157:2013 Data quality -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19157/2013/DataQuality">
+    <rdfs:label>ISO 19157:2013 Data quality</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19157/ed-1/en/</dct:source>
+    <owl:versionInfo>2013</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQualityResult"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQualityEvaluation"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CommonClasses"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/-->
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_AbsoluteExternalPositionalAccuracy -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_AbsoluteExternalPositionalAccuracy">
+    <rdfs:label>DQ_AbsoluteExternalPositionalAccuracy</rdfs:label>
+    <skos:definition>closeness of reported coordinate values to values accepted as or being true</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_PositionalAccuracy"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_AccuracyOfATimeMeasurement -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_AccuracyOfATimeMeasurement">
+    <rdfs:label>DQ_AccuracyOfATimeMeasurement</rdfs:label>
+    <skos:definition>correctness of the temporal references of an item (reporting of error in time measurement)</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_TemporalQuality"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: DQ_Completeness -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_Completeness">
+    <rdfs:label>DQ_Completeness</rdfs:label>
+    <skos:definition>presence and absence of features, their attributes and their relationships</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Element"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_CompletenessCommission -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_CompletenessCommission">
+    <rdfs:label>DQ_CompletenessCommission</rdfs:label>
+    <skos:definition>excess data present in the dataset, as described by the scope</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Completeness"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_CompletenessOmission -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_CompletenessOmission">
+    <rdfs:label>DQ_CompletenessOmission</rdfs:label>
+    <skos:definition>data absent from the dataset, as described by the scope</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Completeness"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_ConceptualConsistency -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_ConceptualConsistency">
+    <rdfs:label>DQ_ConceptualConsistency</rdfs:label>
+    <skos:definition>adherence to rules of the conceptual schema</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_LogicalConsistency"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: DQ_DataInspection -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_DataInspection">
+    <rdfs:label>DQ_DataInspection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157_1167;DQ_EvaluationMethod"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: DQ_DataQuality -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_DataQuality">
+    <rdfs:label>DQ_DataQuality</rdfs:label>
+    <skos:definition>quality information for the data specified by a data quality scope </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_DataQuality.scope"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_DataQuality.scope"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1189;MD_Scope"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_DataQuality.report"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_DataQuality.report"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQ_Element"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_DataQuality.standaloneQualityReport"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_DataQuality.standaloneQualityReport"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_DomainConsistency -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_DomainConsistency">
+    <rdfs:label>DQ_DomainConsistency</rdfs:label>
+    <skos:definition>adherence of values to the value domains</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_LogicalConsistency"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: DQ_Element -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_Element">
+    <rdfs:label>DQ_Element</rdfs:label>
+    <skos:definition>aspect of quantitative quality information</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.standaloneQualityReportDetails"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.standaloneQualityReportDetails"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.evaluationMethod"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.evaluationMethod"/>
+        <owl:allValuesFrom rdf:resource="&iso19157_1167;DQ_EvaluationMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.derivedElement"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQ_Element"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.result"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.result"/>
+        <owl:allValuesFrom rdf:resource="&iso19157_1165;DQ_Result"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.measure"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Element.measure"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQ_MeasureReference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_FormatConsistency -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_FormatConsistency">
+    <rdfs:label>DQ_FormatConsistency</rdfs:label>
+    <skos:definition>degree to which data is stored in accordance with the physical structure of the dataset, as described by the scope</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_LogicalConsistency"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_GriddedDataPositionalAccuracy -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_GriddedDataPositionalAccuracy">
+    <rdfs:label>DQ_GriddedDataPositionalAccuracy</rdfs:label>
+    <skos:definition>closeness of gridded data position values to values accepted as or being true</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_PositionalAccuracy"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_LogicalConsistency -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_LogicalConsistency">
+    <rdfs:label>DQ_LogicalConsistency</rdfs:label>
+    <skos:definition>degree of adherence to logical rules of data structure, attribution and relationships (data structure can be conceptual, logical or physical)</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Element"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_MeasureReference -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_MeasureReference">
+    <rdfs:label>DQ_MeasureReference</rdfs:label>
+    <skos:definition>reference to the measure used</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>If measureIdentification is not provided, then nameOfMeasure shall be provided</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_MeasureReference.measureIdentification"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_MeasureReference.measureIdentification"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1189;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_MeasureReference.nameOfMeasure"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_MeasureReference.measureDescription"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_MeasureReference.measureDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_NonQuantitativeAttributeCorrectness -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_NonQuantitativeAttributeCorrectness">
+    <rdfs:label>DQ_NonQuantitativeAttributeCorrectness</rdfs:label>
+    <skos:definition>correctness of non-quantitative attributes</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_ThematicAccuracy"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_PositionalAccuracy -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_PositionalAccuracy">
+    <rdfs:label>DQ_PositionalAccuracy</rdfs:label>
+    <skos:definition>accuracy of the position of features</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Element"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_QuantitativeAttributeAccuracy -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_QuantitativeAttributeAccuracy">
+    <rdfs:label>DQ_QuantitativeAttributeAccuracy</rdfs:label>
+    <skos:definition>accuracy of quantitative attributes </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_ThematicAccuracy"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_RelativeInternalPositionalAccuracy -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_RelativeInternalPositionalAccuracy">
+    <rdfs:label>DQ_RelativeInternalPositionalAccuracy</rdfs:label>
+    <skos:definition>closeness of the relative positions of features in the scope to their respective relative positions accepted as or being true</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_PositionalAccuracy"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_StandaloneQualityReportInformation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_StandaloneQualityReportInformation">
+    <rdfs:label>DQ_StandaloneQualityReportInformation</rdfs:label>
+    <skos:definition>reference to an external standalone quality report</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation.reportReference"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation.reportReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1194;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation.abstract"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation.abstract"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation.elementReport"/>
+        <owl:allValuesFrom rdf:resource="&iso19157;DQ_Element"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_TemporalConsistency -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_TemporalConsistency">
+    <rdfs:label>DQ_TemporalConsistency</rdfs:label>
+    <skos:definition>correctness of ordered events or sequences, if reported</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_TemporalQuality"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: DQ_TemporalQuality -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_TemporalQuality">
+    <rdfs:label>DQ_TemporalQuality</rdfs:label>
+    <skos:definition>accuracy of the temporal attributes and temporal relationships of features</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Element"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_TemporalValidity -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_TemporalValidity">
+    <rdfs:label>DQ_TemporalValidity</rdfs:label>
+    <skos:definition>validity of data specified by the scope with respect to time</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_TemporalQuality"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_ThematicAccuracy -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_ThematicAccuracy">
+    <rdfs:label>DQ_ThematicAccuracy</rdfs:label>
+    <skos:definition>accuracy of quantitative attributes and the correctness of non-quantitative attributes and of the classifications of features and their relationships</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Element"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_ThematicClassificationCorrectness -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_ThematicClassificationCorrectness">
+    <rdfs:label>DQ_ThematicClassificationCorrectness</rdfs:label>
+    <skos:definition>comparison of the classes assigned to features or their attributes to a universe of discourse</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_ThematicAccuracy"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_TopologicalConsistency -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_TopologicalConsistency">
+    <rdfs:label>DQ_TopologicalConsistency</rdfs:label>
+    <skos:definition>correctness of the explicitly encoded topological characteristics of the dataset as described by the scope</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_LogicalConsistency"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_UsabilityElement -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_UsabilityElement">
+    <rdfs:label>DQ_UsabilityElement</rdfs:label>
+    <skos:definition>degree of adherence of a dataset to a specific set of requirements</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Element"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_DataQuality.scope -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_DataQuality.scope">
+    <rdfs:label>scope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_DataQuality"/>
+    <rdfs:range rdf:resource="&iso19115-1_1189;MD_Scope"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQ_Element.standaloneQualityReportDetails -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQ_Element.standaloneQualityReportDetails">
+    <rdfs:label>standaloneQualityReportDetails</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_Element"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_MeasureReference.measureIdentification -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_MeasureReference.measureIdentification">
+    <rdfs:label>measureIdentification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_MeasureReference"/>
+    <rdfs:range rdf:resource="&iso19115-1_1189;MD_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQ_MeasureReference.nameOfMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQ_MeasureReference.nameOfMeasure">
+    <rdfs:label>nameOfMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_MeasureReference"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQ_MeasureReference.measureDescription -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQ_MeasureReference.measureDescription">
+    <rdfs:label>measureDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_MeasureReference"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_StandaloneQualityReportInformation.reportReference -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_StandaloneQualityReportInformation.reportReference">
+    <rdfs:label>reportReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation"/>
+    <rdfs:range rdf:resource="&iso19115-1_1194;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DQ_StandaloneQualityReportInformation.abstract -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19157;DQ_StandaloneQualityReportInformation.abstract">
+    <rdfs:label>abstract</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_DataQuality.report -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_DataQuality.report">
+    <rdfs:label>report</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQ_DataQuality"/>
+    <rdfs:range rdf:resource="&iso19157;DQ_Element"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_DataQuality.standaloneQualityReport -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_DataQuality.standaloneQualityReport">
+    <rdfs:label>standaloneQualityReport</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQ_DataQuality"/>
+    <rdfs:range rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_Element.evaluationMethod -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_Element.evaluationMethod">
+    <rdfs:label>evaluationMethod</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19157_1167;DQ_EvaluationMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_Element.derivedElement -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_Element.derivedElement">
+    <rdfs:label>derivedElement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19157;DQ_Element"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_Element.result -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_Element.result">
+    <rdfs:label>result</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19157_1165;DQ_Result"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_Element.measure -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_Element.measure">
+    <rdfs:label>measure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQ_Element"/>
+    <rdfs:range rdf:resource="&iso19157;DQ_MeasureReference"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_StandaloneQualityReportInformation.elementReport -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_StandaloneQualityReportInformation.elementReport">
+    <rdfs:label>elementReport</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19157;DQ_StandaloneQualityReportInformation"/>
+    <rdfs:range rdf:resource="&iso19157;DQ_Element"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
