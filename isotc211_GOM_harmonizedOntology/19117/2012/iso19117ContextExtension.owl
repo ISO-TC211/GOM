@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_534 "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#" >
+  <!ENTITY iso19117_1378 "http://def.isotc211.org/iso19117/2012/PortrayalFunction#" >
+  <!ENTITY iso19117_1380 "http://def.isotc211.org/iso19117/2012/PortrayalCatalogue#" >
+  <!ENTITY iso19117 "http://def.isotc211.org/iso19117/2012/ContextExtension#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19117ContextExtension.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL    -->
+  <!-- Generator version: 2.4                          -->
+  <!-- File date:         15-4-2015                    -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19117/2012/ContextExtension#"
+  xml:base="http://def.isotc211.org/iso19117/2012/ContextExtension"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_534="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#"
+  xmlns:iso19117_1378="http://def.isotc211.org/iso19117/2012/PortrayalFunction#"
+  xmlns:iso19117_1380="http://def.isotc211.org/iso19117/2012/PortrayalCatalogue#"
+  xmlns:iso19117="http://def.isotc211.org/iso19117/2012/ContextExtension#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19117:2012 Context Extension -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19117/2012/ContextExtension">
+    <rdfs:label>ISO 19117:2012 Context Extension</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19117/ed-2/en/</dct:source>
+    <owl:versionInfo>2012</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/PortrayalFunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/PortrayalCatalogue"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_PortrayalCatalogueWithContext -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_PortrayalCatalogueWithContext">
+    <rdfs:label>PF_PortrayalCatalogueWithContext</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19117_1380;PF_PortrayalCatalogue"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogueWithContext.contextSpecification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogueWithContext.contextSpecification"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_PortrayalContextSpecification"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_PortrayalFunctionSetWithContext -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_PortrayalFunctionSetWithContext">
+    <rdfs:label>PF_PortrayalFunctionSetWithContext</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19117_1378;PF_PortrayalFunctionSet"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalFunctionSetWithContext.inputContextModel"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalFunctionSetWithContext.inputContextModel"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_PortrayalContextSpecification"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_PortrayalFunctionContextualParameterList -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_PortrayalFunctionContextualParameterList">
+    <rdfs:label>PF_PortrayalFunctionContextualParameterList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19117_1378;PF_PortrayalFunctionParameterList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalFunctionContextualParameterList.context"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalFunctionContextualParameterList.context"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_PortrayalContext"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_PortrayalContextSpecification -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_PortrayalContextSpecification">
+    <rdfs:label>PF_PortrayalContextSpecification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalContextSpecification.contextSpecification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalContextSpecification.contextSpecification"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: PF_PortrayalContext -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_PortrayalContext">
+    <rdfs:label>PF_PortrayalContext</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalContext.context"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalContext.context"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalFunctionContextualParameterList.context -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalFunctionContextualParameterList.context">
+    <rdfs:label>context</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalFunctionContextualParameterList"/>
+    <rdfs:range rdf:resource="&iso19117;PF_PortrayalContext"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalContextSpecification.contextSpecification -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalContextSpecification.contextSpecification">
+    <rdfs:label>contextSpecification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalContextSpecification"/>
+    <rdfs:range rdf:resource="&iso19103_534;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalContext.context -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalContext.context">
+    <rdfs:label>context</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalContext"/>
+    <rdfs:range rdf:resource="&iso19103_534;Record"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalCatalogueWithContext.contextSpecification -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalCatalogueWithContext.contextSpecification">
+    <rdfs:label>contextSpecification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalCatalogueWithContext"/>
+    <rdfs:range rdf:resource="&iso19117;PF_PortrayalContextSpecification"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalFunctionSetWithContext.inputContextModel -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalFunctionSetWithContext.inputContextModel">
+    <rdfs:label>inputContextModel</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalFunctionSetWithContext"/>
+    <rdfs:range rdf:resource="&iso19117;PF_PortrayalContextSpecification"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

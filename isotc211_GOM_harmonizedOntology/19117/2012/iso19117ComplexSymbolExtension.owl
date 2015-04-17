@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_530 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19117_1384 "http://def.isotc211.org/iso19117/2012/CompoundSymbolExtension#" >
+  <!ENTITY iso19103_539 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19117_1379 "http://def.isotc211.org/iso19117/2012/Symbol#" >
+  <!ENTITY iso19117 "http://def.isotc211.org/iso19117/2012/ComplexSymbolExtension#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19117ComplexSymbolExtension.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL          -->
+  <!-- Generator version: 2.4                                -->
+  <!-- File date:         15-4-2015                          -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19117/2012/ComplexSymbolExtension#"
+  xml:base="http://def.isotc211.org/iso19117/2012/ComplexSymbolExtension"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_530="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19117_1384="http://def.isotc211.org/iso19117/2012/CompoundSymbolExtension#"
+  xmlns:iso19103_539="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19117_1379="http://def.isotc211.org/iso19117/2012/Symbol#"
+  xmlns:iso19117="http://def.isotc211.org/iso19117/2012/ComplexSymbolExtension#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19117:2012 Complex Symbol Extension -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19117/2012/ComplexSymbolExtension">
+    <rdfs:label>ISO 19117:2012 Complex Symbol Extension</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19117/ed-2/en/</dct:source>
+    <owl:versionInfo>2012</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/CompoundSymbolExtension"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/Symbol"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: SY_RepeatedPointSymbolLineStyle -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;SY_RepeatedPointSymbolLineStyle">
+    <rdfs:label>SY_RepeatedPointSymbolLineStyle</rdfs:label>
+    <skos:definition>SY_PointSymbolLineStyle is a pattern of repeated point symbols along the path of the line style. The symbol is repeated at regular intervals and may have a masking, which masks out the underlying superstyle around the point symbol. For the point symbol not to be rendered at the unit length intervals but offset a line style transformation may be used.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19117_1379;SY_LineComponent"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.unitLength"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.unitLength"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;Length"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.masking"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.masking"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;Length"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.placement"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.placement"/>
+        <owl:allValuesFrom rdf:resource="&iso19117_1384;SY_RelativePlacement"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.orientation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.orientation"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;Angle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.patternIcon"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle.patternIcon"/>
+        <owl:allValuesFrom rdf:resource="&iso19117_1379;SY_PointComponent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: SY_HatchFill -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;SY_HatchFill">
+    <rdfs:label>SY_HatchFill</rdfs:label>
+    <skos:definition>SY_HatchFill is a hatch fill created by filling an area with repeated application of a line style, applied in a specified direction, spaced evenly over a fill area, space with a specified interval.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>interval.dimension.eq.2</iso19150-2:constraint>
+    <iso19150-2:constraint>interval.dimension.eq.2</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19117_1379;SY_AreaComponent"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_HatchFill.direction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_HatchFill.direction"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_HatchFill.interval"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_HatchFill.interval"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_HatchFill.hatchElement"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_HatchFill.hatchElement"/>
+        <owl:allValuesFrom rdf:resource="&iso19117_1379;SY_LineComponent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: SY_PatternFill -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;SY_PatternFill">
+    <rdfs:label>SY_PatternFill</rdfs:label>
+    <skos:definition>SY_PatternFill is a fill created by filling an area with repeated application of point symbol tiles.  The tiles are applied regularly at intervals defined by two vectors.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>tileOffset.dimension.eq.2</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19117_1379;SY_AreaComponent"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_PatternFill.tileOffset"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_PatternFill.tileOffset"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_PatternFill.patternIcon"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;SY_PatternFill.patternIcon"/>
+        <owl:allValuesFrom rdf:resource="&iso19117_1379;SY_PointComponent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_RepeatedPointSymbolLineStyle.unitLength -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_RepeatedPointSymbolLineStyle.unitLength">
+    <rdfs:label>unitLength</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle"/>
+    <rdfs:range rdf:resource="&iso19103_530;Length"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_RepeatedPointSymbolLineStyle.masking -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_RepeatedPointSymbolLineStyle.masking">
+    <rdfs:label>masking</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle"/>
+    <rdfs:range rdf:resource="&iso19103_530;Length"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_RepeatedPointSymbolLineStyle.placement -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_RepeatedPointSymbolLineStyle.placement">
+    <rdfs:label>placement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle"/>
+    <rdfs:range rdf:resource="&iso19117_1384;SY_RelativePlacement"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_RepeatedPointSymbolLineStyle.orientation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_RepeatedPointSymbolLineStyle.orientation">
+    <rdfs:label>orientation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle"/>
+    <rdfs:range rdf:resource="&iso19103_530;Angle"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_HatchFill.direction -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_HatchFill.direction">
+    <rdfs:label>direction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;SY_HatchFill"/>
+    <rdfs:range rdf:resource="&iso19103_539;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_HatchFill.interval -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_HatchFill.interval">
+    <rdfs:label>interval</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;SY_HatchFill"/>
+    <rdfs:range rdf:resource="&iso19103_539;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_PatternFill.tileOffset -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_PatternFill.tileOffset">
+    <rdfs:label>tileOffset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;SY_PatternFill"/>
+    <rdfs:range rdf:resource="&iso19103_539;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_RepeatedPointSymbolLineStyle.patternIcon -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_RepeatedPointSymbolLineStyle.patternIcon">
+    <rdfs:label>patternIcon</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;SY_RepeatedPointSymbolLineStyle"/>
+    <rdfs:range rdf:resource="&iso19117_1379;SY_PointComponent"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_HatchFill.hatchElement -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_HatchFill.hatchElement">
+    <rdfs:label>hatchElement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;SY_HatchFill"/>
+    <rdfs:range rdf:resource="&iso19117_1379;SY_LineComponent"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SY_PatternFill.patternIcon -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;SY_PatternFill.patternIcon">
+    <rdfs:label>patternIcon</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;SY_PatternFill"/>
+    <rdfs:range rdf:resource="&iso19117_1379;SY_PointComponent"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

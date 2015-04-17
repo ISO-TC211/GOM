@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_534 "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#" >
+  <!ENTITY iso19117_1383 "http://def.isotc211.org/iso19117/2012/ContextExtension#" >
+  <!ENTITY iso19117_1378 "http://def.isotc211.org/iso19117/2012/PortrayalFunction#" >
+  <!ENTITY iso19117_1382 "http://def.isotc211.org/iso19117/2012/ConditionalFunctionExtension#" >
+  <!ENTITY iso19117_1387 "http://def.isotc211.org/iso19117/2012/SymbolParameterExtension#" >
+  <!ENTITY iso19110_559 "http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#" >
+  <!ENTITY iso19117 "http://def.isotc211.org/iso19117/2012/FunctionSymbolParameterExtension#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19117FunctionSymbolParameterExtension.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL                    -->
+  <!-- Generator version: 2.4                                          -->
+  <!-- File date:         15-4-2015                                    -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19117/2012/FunctionSymbolParameterExtension#"
+  xml:base="http://def.isotc211.org/iso19117/2012/FunctionSymbolParameterExtension"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_534="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#"
+  xmlns:iso19117_1383="http://def.isotc211.org/iso19117/2012/ContextExtension#"
+  xmlns:iso19117_1378="http://def.isotc211.org/iso19117/2012/PortrayalFunction#"
+  xmlns:iso19117_1382="http://def.isotc211.org/iso19117/2012/ConditionalFunctionExtension#"
+  xmlns:iso19117_1387="http://def.isotc211.org/iso19117/2012/SymbolParameterExtension#"
+  xmlns:iso19110_559="http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#"
+  xmlns:iso19117="http://def.isotc211.org/iso19117/2012/FunctionSymbolParameterExtension#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19117:2012 Function Symbol Parameter Extension -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19117/2012/FunctionSymbolParameterExtension">
+    <rdfs:label>ISO 19117:2012 Function Symbol Parameter Extension</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19117/ed-2/en/</dct:source>
+    <owl:versionInfo>2012</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/ContextExtension"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/PortrayalFunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/ConditionalFunctionExtension"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2012/SymbolParameterExtension"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_ParameterizedFeaturePortrayalFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_ParameterizedFeaturePortrayalFunction">
+    <rdfs:label>PF_ParameterizedFeaturePortrayalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19117_1378;PF_FeaturePortrayalFunction"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ParameterizedFeaturePortrayalFunction.mapping"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_ParameterizedSymbolAttributeFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_ParameterizedSymbolAttributeFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_ParameterizedSymbolAttributeFunction">
+    <rdfs:label>PF_ParameterizedSymbolAttributeFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ParameterizedSymbolAttributeFunction.featureProperty"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_559;FC_PropertyType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ParameterizedSymbolAttributeFunction.property"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ParameterizedSymbolAttributeFunction.property"/>
+        <owl:allValuesFrom rdf:resource="&iso19117_1387;SY_SymbolParameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_SimpleParameterizedFeaturePortrayalFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_SimpleParameterizedFeaturePortrayalFunction">
+    <rdfs:label>PF_SimpleParameterizedFeaturePortrayalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19117;PF_ParameterizedFeaturePortrayalFunction"/>
+    <rdfs:subClassOf rdf:resource="&iso19117_1378;PF_SimpleFeaturePortrayalFunction"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_ConditionalParameterizedFeaturePortrayalFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_ConditionalParameterizedFeaturePortrayalFunction">
+    <rdfs:label>PF_ConditionalParameterizedFeaturePortrayalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19117;PF_ParameterizedFeaturePortrayalFunction"/>
+    <rdfs:subClassOf rdf:resource="&iso19117_1382;PF_ConditionalFeaturePortrayalFunction"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_SymbolAttributeFunctionParameterList -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_SymbolAttributeFunctionParameterList">
+    <rdfs:label>PF_SymbolAttributeFunctionParameterList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_SymbolAttributeFunctionParameterList.featurePropertyValue"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;Any"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_SymbolAttributeFunctionContextualParameterList -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_SymbolAttributeFunctionContextualParameterList">
+    <rdfs:label>PF_SymbolAttributeFunctionContextualParameterList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19117;PF_SymbolAttributeFunctionParameterList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_SymbolAttributeFunctionContextualParameterList.context"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_SymbolAttributeFunctionContextualParameterList.context"/>
+        <owl:allValuesFrom rdf:resource="&iso19117_1383;PF_PortrayalContext"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_SymbolAttributeFunctionParameterList.featurePropertyValue -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_SymbolAttributeFunctionParameterList.featurePropertyValue">
+    <rdfs:label>featurePropertyValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_SymbolAttributeFunctionParameterList"/>
+    <rdfs:range rdf:resource="&iso19103_534;Any"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_SymbolAttributeFunctionContextualParameterList.context -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_SymbolAttributeFunctionContextualParameterList.context">
+    <rdfs:label>context</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_SymbolAttributeFunctionContextualParameterList"/>
+    <rdfs:range rdf:resource="&iso19117_1383;PF_PortrayalContext"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_ParameterizedFeaturePortrayalFunction.mapping -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_ParameterizedFeaturePortrayalFunction.mapping">
+    <rdfs:label>mapping</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_ParameterizedFeaturePortrayalFunction"/>
+    <rdfs:range rdf:resource="&iso19117;PF_ParameterizedSymbolAttributeFunction"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_ParameterizedSymbolAttributeFunction.featureProperty -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_ParameterizedSymbolAttributeFunction.featureProperty">
+    <rdfs:label>featureProperty</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_ParameterizedSymbolAttributeFunction"/>
+    <rdfs:range rdf:resource="&iso19110_559;FC_PropertyType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_ParameterizedSymbolAttributeFunction.property -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_ParameterizedSymbolAttributeFunction.property">
+    <rdfs:label>property</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_ParameterizedSymbolAttributeFunction"/>
+    <rdfs:range rdf:resource="&iso19117_1387;SY_SymbolParameter"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/ComplexSymbolExtension" uri="iso19117ComplexSymbolExtension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/CompoundSymbolExtension" uri="iso19117CompoundSymbolExtension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/ConditionalFunctionExtension" uri="iso19117ConditionalFunctionExtension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/ContextExtension" uri="iso19117ContextExtension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/FunctionSymbolParameterExtension" uri="iso19117FunctionSymbolParameterExtension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/Portrayal" uri="ISO19117_2012Portrayal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/PortrayalCatalogue" uri="iso19117PortrayalCatalogue.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/PortrayalCore" uri="iso19117PortrayalCore.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/PortrayalExtensions" uri="iso19117PortrayalExtensions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/PortrayalFunction" uri="iso19117PortrayalFunction.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/ReusableSymbolComponentExtension" uri="iso19117ReusableSymbolComponentExtension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/Symbol" uri="iso19117Symbol.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429295677973" name="http://def.isotc211.org/iso19117/2012/SymbolParameterExtension" uri="iso19117SymbolParameterExtension.owl"/>
+    </group>
+</catalog>
