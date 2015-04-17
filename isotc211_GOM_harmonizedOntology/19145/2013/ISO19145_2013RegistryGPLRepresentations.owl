@@ -1,0 +1,766 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_1273 "http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19115_1262 "http://def.isotc211.org/iso19115/2006/ConstraintInformation#" >
+  <!ENTITY iso19103_534 "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#" >
+  <!ENTITY iso19115_1180 "http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#" >
+  <!ENTITY iso19115_1266 "http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#" >
+  <!ENTITY iso19135_1286 "http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#" >
+  <!ENTITY iso19145 "http://def.isotc211.org/iso19145/2013/RegistryGPLRepresentations#" >
+  <!ENTITY iso19145Code "http://def.isotc211.org/iso19145/2013/ISO19145:2013RegistryGPLRepresentations/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         ISO19145_2013RegistryGPLRepresentations.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL                   -->
+  <!-- Generator version: 2.4                                         -->
+  <!-- File date:         14-4-2015                                   -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19145/2013/RegistryGPLRepresentations#"
+  xml:base="http://def.isotc211.org/iso19145/2013/RegistryGPLRepresentations"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_1273="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19115_1262="http://def.isotc211.org/iso19115/2006/ConstraintInformation#"
+  xmlns:iso19103_534="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#"
+  xmlns:iso19115_1180="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#"
+  xmlns:iso19115_1266="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#"
+  xmlns:iso19135_1286="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#"
+  xmlns:iso19145="http://def.isotc211.org/iso19145/2013/RegistryGPLRepresentations#"
+  xmlns:iso19145Code="http://def.isotc211.org/iso19145/2013/RegistryGPLRepresentations/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19145:2013 ISO 19145:2013 Registry GPL representations -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19145/2013/RegistryGPLRepresentations">
+    <rdfs:label>ISO 19145:2013 ISO 19145:2013 Registry GPL representations</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19145/ed-1/en/</dct:source>
+    <owl:versionInfo>2013</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ConstraintInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: GPLR_Compression -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_Compression">
+    <rdfs:label>GPLR_Compression</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Compression.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Compression.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1273;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Compression.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Compression.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Compression.version"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Compression.version"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_Version"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Compression.compressionService"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1273;CI_OnlineResource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: GPLR_ConversionService -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_ConversionService">
+    <rdfs:label>GPLR_ConversionService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.uniformResourceIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1273;CI_OnlineResource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.conversionType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.conversionType"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_ConversionType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.outFormat"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.outFormat"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_Item"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.invocationInterface"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_ConversionService.invocationInterface"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_Interface"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: GPLR_CRSSupport -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_CRSSupport">
+    <rdfs:label>GPLR_CRSSupport</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>crs -.gt.isEmpty() .eq. false implies supported .eq. true</iso19150-2:constraint>
+    <iso19150-2:constraint>crs -.gt.isEmpty() .eq. false implies supported .eq. true</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_CRSSupport.supported"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_CRSSupport.supported"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_CRSSupport.fixed"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_CRSSupport.fixed"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_CRSSupport.crs"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1266;MD_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: GPLR_Interface -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_Interface">
+    <rdfs:label>GPLR_Interface</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Interface.method"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Interface.method"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_Method"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: GPLR_Item -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_Item">
+    <rdfs:label>GPLR_Item</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>count(self.legalConstraints.accessConstraints) .gt..eq. 1</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.gplrID"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.gplrID"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.specificationName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.specificationName"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1273;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.version"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.version"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_Version"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.legalConstraints"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1262;MD_LegalConstraints"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_RepresentationType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.compressionTechnique"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.compressionTechnique"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_Compression"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.crsSupport"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.crsSupport"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_CRSSupport"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Item.converter"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_ConversionService"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: GPLR_Method -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_Method">
+    <rdfs:label>GPLR_Method</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Method.invocationName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Method.invocationName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Method.parameters"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Method.returnValues"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: GPLR_Register -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_Register">
+    <rdfs:label>GPLR_Register</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>count(self.version +self.dateOfLastChange) .gt..eq. 1</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_Register"/>
+     <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Register.containedItem"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Register.containedItem"/>
+        <owl:allValuesFrom rdf:resource="&iso19145;GPLR_Item"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: GPLR_Version -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_Version">
+    <rdfs:label>GPLR_Version</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_Version"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Version.amendmentNumber"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19145;GPLR_Version.amendmentNumber"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Compression.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Compression.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Compression"/>
+    <rdfs:range rdf:resource="&iso19115_1273;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_Compression.description -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_Compression.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Compression"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Compression.version -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Compression.version">
+    <rdfs:label>version</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Compression"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_Version"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Compression.compressionService -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Compression.compressionService">
+    <rdfs:label>compressionService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Compression"/>
+    <rdfs:range rdf:resource="&iso19115_1273;CI_OnlineResource"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_ConversionService.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_ConversionService.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_ConversionService"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_ConversionService.description -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_ConversionService.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_ConversionService"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_ConversionService.uniformResourceIdentifier -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_ConversionService.uniformResourceIdentifier">
+    <rdfs:label>uniformResourceIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_ConversionService"/>
+    <rdfs:range rdf:resource="&iso19115_1273;CI_OnlineResource"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_ConversionService.conversionType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_ConversionService.conversionType">
+    <rdfs:label>conversionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_ConversionService"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_ConversionType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_CRSSupport.supported -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_CRSSupport.supported">
+    <rdfs:label>supported</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_CRSSupport"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_CRSSupport.fixed -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_CRSSupport.fixed">
+    <rdfs:label>fixed</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_CRSSupport"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_Item.gplrID -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_Item.gplrID">
+    <rdfs:label>gplrID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Item.specificationName -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Item.specificationName">
+    <rdfs:label>specificationName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&iso19115_1273;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Item.version -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Item.version">
+    <rdfs:label>version</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_Version"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Item.legalConstraints -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Item.legalConstraints">
+    <rdfs:label>legalConstraints</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&iso19115_1262;MD_LegalConstraints"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Item.type -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Item.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_RepresentationType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_Method.invocationName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_Method.invocationName">
+    <rdfs:label>invocationName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Method"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Method.parameters -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Method.parameters">
+    <rdfs:label>parameters</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Method"/>
+    <rdfs:range rdf:resource="&iso19103_534;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Method.returnValues -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Method.returnValues">
+    <rdfs:label>returnValues</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Method"/>
+    <rdfs:range rdf:resource="&iso19103_534;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GPLR_Version.amendmentNumber -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19145;GPLR_Version.amendmentNumber">
+    <rdfs:label>amendmentNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Version"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_ConversionService.outFormat -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_ConversionService.outFormat">
+    <rdfs:label>outFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_ConversionService"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_Item"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_ConversionService.invocationInterface -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_ConversionService.invocationInterface">
+    <rdfs:label>invocationInterface</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_ConversionService"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_Interface"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_CRSSupport.crs -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_CRSSupport.crs">
+    <rdfs:label>crs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_CRSSupport"/>
+    <rdfs:range rdf:resource="&iso19115_1266;MD_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Interface.method -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Interface.method">
+    <rdfs:label>method</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Interface"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_Method"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Item.compressionTechnique -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Item.compressionTechnique">
+    <rdfs:label>compressionTechnique</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_Compression"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Item.crsSupport -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Item.crsSupport">
+    <rdfs:label>crsSupport</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_CRSSupport"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Item.converter -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Item.converter">
+    <rdfs:label>converter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Item"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_ConversionService"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GPLR_Register.containedItem -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19145;GPLR_Register.containedItem">
+    <rdfs:label>containedItem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19145;GPLR_Register"/>
+    <rdfs:range rdf:resource="&iso19145;GPLR_Item"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GPLR_ConversionType -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_ConversionType">
+    <rdfs:label>GPLR_ConversionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19145Code;GPLR_ConversionType">
+    <skos:prefLabel>GPLR_ConversionType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19145;GPLR_ConversionType"/>
+  </skos:ConceptScheme>
+  <iso19145:GPLR_ConversionType rdf:about="&iso19145Code;GPLR_ConversionType/static">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>static</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19145Code;GPLR_ConversionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+  </iso19145:GPLR_ConversionType>
+  <iso19145:GPLR_ConversionType rdf:about="&iso19145Code;GPLR_ConversionType/dynamic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>dynamic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19145Code;GPLR_ConversionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+  </iso19145:GPLR_ConversionType>
+  <skos:Collection rdf:about="&iso19145Code;GPLR_ConversionTypeCollection">
+    <skos:prefLabel>GPLR_ConversionType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19145Code;GPLR_ConversionType/static"/>
+      <skos:Concept rdf:resource="&iso19145Code;GPLR_ConversionType/dynamic"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GPLR_RepresentationType -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19145;GPLR_RepresentationType">
+    <rdfs:label>GPLR_RepresentationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19145Code;GPLR_RepresentationType">
+    <skos:prefLabel>GPLR_RepresentationType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19145;GPLR_RepresentationType"/>
+  </skos:ConceptScheme>
+  <iso19145:GPLR_RepresentationType rdf:about="&iso19145Code;GPLR_RepresentationType/text">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>text</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19145Code;GPLR_RepresentationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+  </iso19145:GPLR_RepresentationType>
+  <iso19145:GPLR_RepresentationType rdf:about="&iso19145Code;GPLR_RepresentationType/binary">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>binary</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19145Code;GPLR_RepresentationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+  </iso19145:GPLR_RepresentationType>
+  <iso19145:GPLR_RepresentationType rdf:about="&iso19145Code;GPLR_RepresentationType/XML">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>XML</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19145Code;GPLR_RepresentationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19145/ed-1/en/</rdfs:isDefinedBy>
+  </iso19145:GPLR_RepresentationType>
+  <skos:Collection rdf:about="&iso19145Code;GPLR_RepresentationTypeCollection">
+    <skos:prefLabel>GPLR_RepresentationType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19145Code;GPLR_RepresentationType/text"/>
+      <skos:Concept rdf:resource="&iso19145Code;GPLR_RepresentationType/binary"/>
+      <skos:Concept rdf:resource="&iso19145Code;GPLR_RepresentationType/XML"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
