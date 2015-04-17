@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso00639 "http://def.isotc211.org/iso00639/-2/LanguageCodes#" >
+  <!ENTITY iso00639Code "http://def.isotc211.org/iso00639/-2/ISO00639LanguageCodes/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         ISO00639LanguageCodes.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.4                       -->
+  <!-- File date:         15-4-2015                 -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso00639/-2/LanguageCodes#"
+  xml:base="http://def.isotc211.org/iso00639/-2/LanguageCodes"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso00639="http://def.isotc211.org/iso00639/-2/LanguageCodes#"
+  xmlns:iso00639Code="http://def.isotc211.org/iso00639/-2/LanguageCodes/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 00639 ISO 00639 Language Codes -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso00639/-2/LanguageCodes">
+    <rdfs:label>ISO 00639 ISO 00639 Language Codes</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/639/-2/ed-1/en/</dct:source>
+    <owl:versionInfo></owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Codelist: LanguageCode -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso00639;LanguageCode">
+    <rdfs:label>LanguageCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso00639Code;LanguageCode">
+    <skos:prefLabel>LanguageCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso00639;LanguageCode"/>
+  </skos:ConceptScheme>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Afrikaans">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Afrikaans</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Albanian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Albanian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Arabic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Arabic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Basque">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Basque</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Belarusian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Belarusian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Bulgarian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Bulgarian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Catalan">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Catalan</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Chinese">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Chinese</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Croatian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Croatian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Czech">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Czech</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Danish">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Danish</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Dutch">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Dutch</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/English">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>English</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Estonian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Estonian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Faeroese">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Faeroese</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/French">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>French</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/French(Canadian)">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>French(Canadian)</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Finnish">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Finnish</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/German">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>German</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Greek">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Greek</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Hawaian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Hawaian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Hebrew">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Hebrew</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Hungarian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Hungarian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Icelandic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Icelandic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Indonesian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Indonesian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Italian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Italian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Japanese">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Japanese</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Korean">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Korean</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Latvian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Latvian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Lithuanian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Lithuanian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Malaysian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Malaysian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Norwegian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Norwegian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Polish">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Polish</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Portuguese">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Portuguese</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Romanian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Romanian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Russian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Russian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Serbian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Serbian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Slovak">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Slovak</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Slovenian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Slovenian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Spanish">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Spanish</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Swahili">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Swahili</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Swedish">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Swedish</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Turkish">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Turkish</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <iso00639:LanguageCode rdf:about="&iso00639Code;LanguageCode/Ukranian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Ukranian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso00639Code;LanguageCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/639/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso00639:LanguageCode>
+  <skos:Collection rdf:about="&iso00639Code;LanguageCodeCollection">
+    <skos:prefLabel>LanguageCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Afrikaans"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Albanian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Arabic"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Basque"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Belarusian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Bulgarian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Catalan"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Chinese"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Croatian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Czech"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Danish"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Dutch"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/English"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Estonian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Faeroese"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/French"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/French(Canadian)"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Finnish"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/German"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Greek"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Hawaian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Hebrew"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Hungarian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Icelandic"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Indonesian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Italian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Japanese"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Korean"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Latvian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Lithuanian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Malaysian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Norwegian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Polish"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Portuguese"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Romanian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Russian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Serbian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Slovak"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Slovenian"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Spanish"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Swahili"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Swedish"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Turkish"/>
+      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Ukranian"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
