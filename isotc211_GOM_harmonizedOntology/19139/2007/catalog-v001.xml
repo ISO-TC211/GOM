@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19111/2007/CoordinateSystems" uri="file:/C:/isotc211_GOM_harmonizedOntology/19111/2007/iso19111CoordinateSystems.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/CRSCatalogue" uri="iso19139CRSCatalogue.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/Catalogues" uri="iso19139Catalogues.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/CodelistCatalogue" uri="iso19139CodelistCatalogue.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability" uri="iso19139CulturalAndLinguisticAdapdability.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/Metadata-BasedTransfersOfGeospatialInformation" uri="iso19139Metadata-BasedTransfersOfGeospatialInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/Metadata-XMLImplementation" uri="ISO19139_2007Metadata-XMLImplementation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/UoMCatalogue" uri="iso19139UoMCatalogue.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429557739684" name="http://def.isotc211.org/iso19139/2007/WebEnvironment" uri="iso19139WebEnvironment.owl"/>
+    </group>
+</catalog>
