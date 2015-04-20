@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19131_124 "http://def.isotc211.org/iso19131/2007/SpecificationPortrayalInformation#" >
+  <!ENTITY iso19131_126 "http://def.isotc211.org/iso19131/2007/SpecificationScopes#" >
+  <!ENTITY iso19131_119 "http://def.isotc211.org/iso19131/2007/SpecificationDataCaptureInformation#" >
+  <!ENTITY iso19131_121 "http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation#" >
+  <!ENTITY iso19131_125 "http://def.isotc211.org/iso19131/2007/SpecificationReferenceSystem#" >
+  <!ENTITY iso19131_120 "http://def.isotc211.org/iso19131/2007/SpecificationDataQualityRequirement#" >
+  <!ENTITY iso19131_122 "http://def.isotc211.org/iso19131/2007/SpecificationIdentification#" >
+  <!ENTITY iso19131_123 "http://def.isotc211.org/iso19131/2007/SpecificationMaintenanceInformation#" >
+  <!ENTITY iso19131_116 "http://def.isotc211.org/iso19131/2007/SpecificationContentAndStructure#" >
+  <!ENTITY iso19131_115 "http://def.isotc211.org/iso19131/2007/SpecificationAdditionalInformation#" >
+  <!ENTITY iso19131 "http://def.isotc211.org/iso19131/2007/DPS#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19131DPS.owl           -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.4                       -->
+  <!-- File date:         20-4-2015                 -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19131/2007/DPS#"
+  xml:base="http://def.isotc211.org/iso19131/2007/DPS"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19131_124="http://def.isotc211.org/iso19131/2007/SpecificationPortrayalInformation#"
+  xmlns:iso19131_126="http://def.isotc211.org/iso19131/2007/SpecificationScopes#"
+  xmlns:iso19131_119="http://def.isotc211.org/iso19131/2007/SpecificationDataCaptureInformation#"
+  xmlns:iso19131_121="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation#"
+  xmlns:iso19131_125="http://def.isotc211.org/iso19131/2007/SpecificationReferenceSystem#"
+  xmlns:iso19131_120="http://def.isotc211.org/iso19131/2007/SpecificationDataQualityRequirement#"
+  xmlns:iso19131_122="http://def.isotc211.org/iso19131/2007/SpecificationIdentification#"
+  xmlns:iso19131_123="http://def.isotc211.org/iso19131/2007/SpecificationMaintenanceInformation#"
+  xmlns:iso19131_116="http://def.isotc211.org/iso19131/2007/SpecificationContentAndStructure#"
+  xmlns:iso19131_115="http://def.isotc211.org/iso19131/2007/SpecificationAdditionalInformation#"
+  xmlns:iso19131="http://def.isotc211.org/iso19131/2007/DPS#">
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19131:2007 DPS -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19131/2007/DPS">
+    <rdfs:label>ISO 19131:2007 DPS</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19131/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-04-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationPortrayalInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationScopes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationDataCaptureInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationReferenceSystem"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationDataQualityRequirement"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationIdentification"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationMaintenanceInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationContentAndStructure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationAdditionalInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++-->
+  <!-- Class: DPS -->
+  <!--++++++++++++-->
+  <owl:Class rdf:about="&iso19131;DPS">
+    <rdfs:label>DPS</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.portrayal"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.portrayal"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_124;DPS_PortrayalInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.metadata"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.metadata"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_126;DPS_Metadata"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.capture"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.capture"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_119;DPS_DataCaptureInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.delivery"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.delivery"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_121;DPS_DeliveryInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.rs"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.rs"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_125;DPS_ReferenceSystemInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.quality"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.quality"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_120;DPS_DataQualityInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.identification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.identification"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_122;DPS_IdentificationInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.maintenance"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.maintenance"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_123;DPS_MaintenanceInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.content"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.content"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_116;DPS_ContentAndStructureInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.additionalInformation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS.additionalInformation"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_115;DPS_AdditionalInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.portrayal -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.portrayal">
+    <rdfs:label>portrayal</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_124;DPS_PortrayalInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.metadata -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.metadata">
+    <rdfs:label>metadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_126;DPS_Metadata"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.capture -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.capture">
+    <rdfs:label>capture</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_119;DPS_DataCaptureInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.delivery -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.delivery">
+    <rdfs:label>delivery</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_121;DPS_DeliveryInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.rs -->
+  <!--++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.rs">
+    <rdfs:label>rs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_125;DPS_ReferenceSystemInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.quality -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.quality">
+    <rdfs:label>quality</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_120;DPS_DataQualityInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.identification -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.identification">
+    <rdfs:label>identification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_122;DPS_IdentificationInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.maintenance -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.maintenance">
+    <rdfs:label>maintenance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_123;DPS_MaintenanceInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.content -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.content">
+    <rdfs:label>content</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_116;DPS_ContentAndStructureInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS.additionalInformation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS.additionalInformation">
+    <rdfs:label>additionalInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS"/>
+    <rdfs:range rdf:resource="&iso19131_115;DPS_AdditionalInformation"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
