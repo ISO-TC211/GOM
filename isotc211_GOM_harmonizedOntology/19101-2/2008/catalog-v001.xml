@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1432576640787" name="http://def.isotc211.org/iso19101/-2/2008/DecisionSupport" uri="iso19101-2DecisionSupport.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432576640787" name="http://def.isotc211.org/iso19101/-2/2008/ImageClassificationAndUnderstanding" uri="iso19101-2ImageClassificationAndUnderstanding.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432576640787" name="http://def.isotc211.org/iso19101/-2/2008/ImageInformation" uri="iso19101-2ImageInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432576640787" name="http://def.isotc211.org/iso19101/-2/2008/ImageKnowledgeBase" uri="iso19101-2ImageKnowledgeBase.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432576640787" name="http://def.isotc211.org/iso19101/-2/2008/ImageryKnowledge" uri="iso19101-2ImageryKnowledge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432576640787" name="http://def.isotc211.org/iso19101/-2/2008/ImageryReference" uri="ISO19101-2_2008ImageryReference.owl"/>
+    </group>
+</catalog>
