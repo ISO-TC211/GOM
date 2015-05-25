@@ -1,0 +1,931 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_1464 "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#" >
+  <!ENTITY iso19115_1840 "http://def.isotc211.org/iso19115/2006/ExtentInformation#" >
+  <!ENTITY iso19123_1720 "http://def.isotc211.org/iso19123/2005/SegmentedCurve#" >
+  <!ENTITY iso19123_1714 "http://def.isotc211.org/iso19123/2005/CoverageCore#" >
+  <!ENTITY iso19107_547 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
+  <!ENTITY iso19107_544 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19123_1715 "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#" >
+  <!ENTITY iso19109_1010 "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#" >
+  <!ENTITY iso19123_1717 "http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#" >
+  <!ENTITY iso19123_1719 "http://def.isotc211.org/iso19123/2005/TIN#" >
+  <!ENTITY iso19129 "http://def.isotc211.org/iso19129/2009/IGCDFramework#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19129IGCDFramework.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         25-5-2015                 -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19129/2009/IGCDFramework#"
+  xml:base="http://def.isotc211.org/iso19129/2009/IGCDFramework"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_1464="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#"
+  xmlns:iso19115_1840="http://def.isotc211.org/iso19115/2006/ExtentInformation#"
+  xmlns:iso19123_1720="http://def.isotc211.org/iso19123/2005/SegmentedCurve#"
+  xmlns:iso19123_1714="http://def.isotc211.org/iso19123/2005/CoverageCore#"
+  xmlns:iso19107_547="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xmlns:iso19107_544="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19123_1715="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#"
+  xmlns:iso19109_1010="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#"
+  xmlns:iso19123_1717="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#"
+  xmlns:iso19123_1719="http://def.isotc211.org/iso19123/2005/TIN#"
+  xmlns:iso19129="http://def.isotc211.org/iso19129/2009/IGCDFramework#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19129:2009 IGCD Framework -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19129/2009/IGCDFramework">
+    <rdfs:label>ISO 19129:2009 IGCD Framework</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19129/ed-1/en/</dct:source>
+    <!--owl:versionInfo>2009-04-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ExtentInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/SegmentedCurve"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/CoverageCore"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricPrimitive"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/DiscreteCoverages"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/TIN"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: IF_AquisitionMetadata -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_AquisitionMetadata">
+    <rdfs:label>IF_AquisitionMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: IF_CellValuePair -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_CellValuePair">
+    <rdfs:label>IF_CellValuePair</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1715;CV_SurfaceValuePair"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_CellValuePair.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_CellValuePair.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19129;IF_Surface"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_CellValuePair.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_CellValuePair.value"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: IF_ClassificationAttributeType -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_ClassificationAttributeType">
+    <rdfs:label>IF_ClassificationAttributeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19109_1010;GF_AttributeType"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: IF_Collection -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_Collection">
+    <rdfs:label>IF_Collection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Collection.describes"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Collection.describes"/>
+        <owl:allValuesFrom rdf:resource="&iso19129;IF_CollectionMetadata"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: IF_CollectionMetadata -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_CollectionMetadata">
+    <rdfs:label>IF_CollectionMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_CollectionMetadata.has"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_CollectionMetadata.has"/>
+        <owl:allValuesFrom rdf:resource="&iso19129;IF_Collection"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: IF_CoverageData -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_CoverageData">
+    <rdfs:label>IF_CoverageData</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: IF_DataSet -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_DataSet">
+    <rdfs:label>IF_DataSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: IF_DiscoveryMetadata -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_DiscoveryMetadata">
+    <rdfs:label>IF_DiscoveryMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: IF_DiscretePointCoverage -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_DiscretePointCoverage">
+    <rdfs:label>IF_DiscretePointCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1715;CV_DiscretePointCoverage"/>
+    <rdfs:subClassOf rdf:resource="&iso19129;IF_CoverageData"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscretePointCoverage.domainExtent"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscretePointCoverage.domainExtent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1840;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscretePointCoverage.rangeType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscretePointCoverage.rangeType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: IF_DiscreteSurfaceGridCoverage -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_DiscreteSurfaceGridCoverage">
+    <rdfs:label>IF_DiscreteSurfaceGridCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1715;CV_DiscreteSurfaceCoverage"/>
+    <rdfs:subClassOf rdf:resource="&iso19129;IF_CoverageData"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage.domainExtent"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage.domainExtent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1840;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage.rangeType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage.rangeType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage.commonPointRule"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage.commonPointRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: IF_Feature -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_Feature">
+    <rdfs:label>IF_Feature</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Feature.theCV_DiscretePointCoverage"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1715;CV_DiscretePointCoverage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Feature.theCV_DiscreteGridPointCoverage"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1715;CV_DiscreteGridPointCoverage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: IF_GridCoverage -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_GridCoverage">
+    <rdfs:label>IF_GridCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19129;IF_CoverageData"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: IF_QuadGriddedData -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_QuadGriddedData">
+    <rdfs:label>IF_QuadGriddedData</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19129;IF_GridCoverage"/>
+    <rdfs:subClassOf rdf:resource="&iso19123_1717;CV_ContinuousQuadrilateralGridCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.domainExtent"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.domainExtent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1840;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.rangeType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.rangeType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.commonPointRule"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.commonPointRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.interpolationType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.interpolationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1714;CV_InterpolationMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.interpolationParametersType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_QuadGriddedData.interpolationParametersType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: IF_QualityMetadata -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_QualityMetadata">
+    <rdfs:label>IF_QualityMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: IF_RiemannGriddedData -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_RiemannGriddedData">
+    <rdfs:label>IF_RiemannGriddedData</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19129;IF_GridCoverage"/>
+    <rdfs:subClassOf rdf:resource="&iso19123_1717;CV_ContinuousQuadrilateralGridCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.domainExtent"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.domainExtent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1840;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.rangeType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.rangeType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.commonPointRule"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.commonPointRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.interpolationType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.interpolationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1714;CV_InterpolationMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.interpolationParametersType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_RiemannGriddedData.interpolationParametersType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: IF_StructuralMetadata -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_StructuralMetadata">
+    <rdfs:label>IF_StructuralMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: IF_Surface -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_Surface">
+    <rdfs:label>IF_Surface</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1717;CV_GridCell"/>
+    <rdfs:subClassOf rdf:resource="&iso19123_1717;CV_GridCell"/>
+    <rdfs:subClassOf rdf:resource="&iso19107_544;GM_Polygon"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.interpolation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.interpolation"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_547;GM_SurfaceInterpolation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.numDerivativesOnBoundary"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.numDerivativesOnBoundary"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.boundary"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.boundary"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_547;GM_SurfaceBoundary"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.spanningSurface"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_Surface.spanningSurface"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_547;GM_Surface"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: IF_Tiling -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_Tiling">
+    <rdfs:label>IF_Tiling</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: IF_TINCoverage -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_TINCoverage">
+    <rdfs:label>IF_TINCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1719;CV_TINCoverage"/>
+    <rdfs:subClassOf rdf:resource="&iso19129;IF_CoverageData"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.domainExtent"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.domainExtent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1840;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.rangeType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.rangeType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.commonPointRule"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.commonPointRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.interpolationParametersType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.interpolationParametersType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_544;GM_Tin"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.interpolationType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19129;IF_TINCoverage.interpolationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1714;CV_InterpolationMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: IF_Transmittal -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19129;IF_Transmittal">
+    <rdfs:label>IF_Transmittal</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_CellValuePair.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_CellValuePair.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_CellValuePair"/>
+    <rdfs:range rdf:resource="&iso19129;IF_Surface"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_CellValuePair.value -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_CellValuePair.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_CellValuePair"/>
+    <rdfs:range rdf:resource="&iso19103_1464;Record"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_DiscretePointCoverage.domainExtent -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_DiscretePointCoverage.domainExtent">
+    <rdfs:label>domainExtent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_DiscretePointCoverage"/>
+    <rdfs:range rdf:resource="&iso19115_1840;EX_Extent"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_DiscretePointCoverage.rangeType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_DiscretePointCoverage.rangeType">
+    <rdfs:label>rangeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_DiscretePointCoverage"/>
+    <rdfs:range rdf:resource="&iso19103_1464;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_DiscreteSurfaceGridCoverage.domainExtent -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_DiscreteSurfaceGridCoverage.domainExtent">
+    <rdfs:label>domainExtent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage"/>
+    <rdfs:range rdf:resource="&iso19115_1840;EX_Extent"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_DiscreteSurfaceGridCoverage.rangeType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_DiscreteSurfaceGridCoverage.rangeType">
+    <rdfs:label>rangeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage"/>
+    <rdfs:range rdf:resource="&iso19103_1464;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_DiscreteSurfaceGridCoverage.commonPointRule -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_DiscreteSurfaceGridCoverage.commonPointRule">
+    <rdfs:label>commonPointRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_DiscreteSurfaceGridCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_QuadGriddedData.domainExtent -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_QuadGriddedData.domainExtent">
+    <rdfs:label>domainExtent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_QuadGriddedData"/>
+    <rdfs:range rdf:resource="&iso19115_1840;EX_Extent"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_QuadGriddedData.rangeType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_QuadGriddedData.rangeType">
+    <rdfs:label>rangeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_QuadGriddedData"/>
+    <rdfs:range rdf:resource="&iso19103_1464;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_QuadGriddedData.commonPointRule -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_QuadGriddedData.commonPointRule">
+    <rdfs:label>commonPointRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_QuadGriddedData"/>
+    <rdfs:range rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_QuadGriddedData.interpolationType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_QuadGriddedData.interpolationType">
+    <rdfs:label>interpolationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_QuadGriddedData"/>
+    <rdfs:range rdf:resource="&iso19123_1714;CV_InterpolationMethod"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_QuadGriddedData.interpolationParametersType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_QuadGriddedData.interpolationParametersType">
+    <rdfs:label>interpolationParametersType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_QuadGriddedData"/>
+    <rdfs:range rdf:resource="&iso19103_1464;Record"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_RiemannGriddedData.domainExtent -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_RiemannGriddedData.domainExtent">
+    <rdfs:label>domainExtent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_RiemannGriddedData"/>
+    <rdfs:range rdf:resource="&iso19115_1840;EX_Extent"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_RiemannGriddedData.rangeType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_RiemannGriddedData.rangeType">
+    <rdfs:label>rangeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_RiemannGriddedData"/>
+    <rdfs:range rdf:resource="&iso19103_1464;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_RiemannGriddedData.commonPointRule -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_RiemannGriddedData.commonPointRule">
+    <rdfs:label>commonPointRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_RiemannGriddedData"/>
+    <rdfs:range rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_RiemannGriddedData.interpolationType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_RiemannGriddedData.interpolationType">
+    <rdfs:label>interpolationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_RiemannGriddedData"/>
+    <rdfs:range rdf:resource="&iso19123_1714;CV_InterpolationMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_RiemannGriddedData.interpolationParametersType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_RiemannGriddedData.interpolationParametersType">
+    <rdfs:label>interpolationParametersType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_RiemannGriddedData"/>
+    <rdfs:range rdf:resource="&iso19103_1464;Record"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_Surface.interpolation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_Surface.interpolation">
+    <rdfs:label>interpolation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_Surface"/>
+    <rdfs:range rdf:resource="&iso19107_547;GM_SurfaceInterpolation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: IF_Surface.numDerivativesOnBoundary -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19129;IF_Surface.numDerivativesOnBoundary">
+    <rdfs:label>numDerivativesOnBoundary</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_Surface"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_Surface.boundary -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_Surface.boundary">
+    <rdfs:label>boundary</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_Surface"/>
+    <rdfs:range rdf:resource="&iso19107_547;GM_SurfaceBoundary"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_Surface.spanningSurface -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_Surface.spanningSurface">
+    <rdfs:label>spanningSurface</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_Surface"/>
+    <rdfs:range rdf:resource="&iso19107_547;GM_Surface"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_TINCoverage.domainExtent -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_TINCoverage.domainExtent">
+    <rdfs:label>domainExtent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19115_1840;EX_Extent"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_TINCoverage.rangeType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_TINCoverage.rangeType">
+    <rdfs:label>rangeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19103_1464;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_TINCoverage.commonPointRule -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_TINCoverage.commonPointRule">
+    <rdfs:label>commonPointRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1720;CV_CommonPointRule"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_TINCoverage.interpolationParametersType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_TINCoverage.interpolationParametersType">
+    <rdfs:label>interpolationParametersType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19103_1464;Record"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_TINCoverage.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_TINCoverage.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19107_544;GM_Tin"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_TINCoverage.interpolationType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_TINCoverage.interpolationType">
+    <rdfs:label>interpolationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1714;CV_InterpolationMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_Collection.describes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_Collection.describes">
+    <rdfs:label>describes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_Collection"/>
+    <rdfs:range rdf:resource="&iso19129;IF_CollectionMetadata"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_CollectionMetadata.has -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_CollectionMetadata.has">
+    <rdfs:label>has</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19129;IF_CollectionMetadata"/>
+    <rdfs:range rdf:resource="&iso19129;IF_Collection"/>
+    <owl:inverseOf rdf:resource="&iso19129;IF_Collection.describes"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_Feature.theCV_DiscretePointCoverage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_Feature.theCV_DiscretePointCoverage">
+    <rdfs:label>theCV_DiscretePointCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>spatial position and value attribute</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19129;IF_Feature"/>
+    <rdfs:range rdf:resource="&iso19123_1715;CV_DiscretePointCoverage"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: IF_Feature.theCV_DiscreteGridPointCoverage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19129;IF_Feature.theCV_DiscreteGridPointCoverage">
+    <rdfs:label>theCV_DiscreteGridPointCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19129/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Spatial Position and value of feature</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19129;IF_Feature"/>
+    <rdfs:range rdf:resource="&iso19123_1715;CV_DiscreteGridPointCoverage"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
