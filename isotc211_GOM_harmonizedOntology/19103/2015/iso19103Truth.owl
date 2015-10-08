@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103 "http://def.isotc211.org/iso19103/2015/Truth#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19103Truth.owl         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         8-10-2015                 -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19103/2015/Truth#"
+  xml:base="http://def.isotc211.org/iso19103/2015/Truth"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103="http://def.isotc211.org/iso19103/2015/Truth#">
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19103:2015 Truth -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19103/2015/Truth">
+    <rdfs:label>ISO 19103:2015 Truth</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19103/ed-2/en/</dct:source>
+    <owl:versionInfo>2015</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: ContinuousTruth -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;ContinuousTruth">
+    <rdfs:label>ContinuousTruth</rdfs:label>
+    <skos:definition>Any of the interpretations of truth as a continuous range of possible values, usually expressed as a measure.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Truth"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: DiscreteTruth -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;DiscreteTruth">
+    <rdfs:label>DiscreteTruth</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Truth"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: Probability -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Probability">
+    <rdfs:label>Probability</rdfs:label>
+    <skos:definition>Continuous truth as a probability. The value (between 0.0 and 1.0) is a measure of belief (in the single occurrence case), or a measure of the distribution of occurrences (in the set case). The fine details of the semantics is the scope of probability and statistics, and the reader is directed towards his text of choice. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;ContinuousTruth"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Probability.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Probability.value"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Truth -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Truth">
+    <rdfs:label>Truth</rdfs:label>
+    <skos:definition>The root or truth classification trees. The only constant between the subclasses here is that 1.0 is TRUE, and 0.0 is FALSE. This makes Probability work nicely. Other algebraic tricks may be more appropriate to other version of .gu.truth calculus.gu., but for consistency sake, this value mapping should always be available. For example, the following semantic mappings to simple Booleans always work:{truthValue() .gt. 0} .eq. possibly true{truthValue() .eq. 0} .eq. never true{truthValue() .lt. 1} .eq. possibly false{truthValue() .eq. 1} .eq. never false{truthValue() .lt. 1}AND{truthValue() .gt. 0} .eq. uncertain</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Probability.value -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19103;Probability.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Probability"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Enumeration: Boolean -->
+  <!--++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19103;Boolean">
+    <rdfs:label>Boolean</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19103;DiscreteTruth"/>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">true</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">false</rdf:first>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Enumeration: Logical -->
+  <!--++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19103;Logical">
+    <rdfs:label>Logical</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19103;DiscreteTruth"/>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">TRUE</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">FALSE</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">MAYBE</rdf:first>
+                    <rdf:rest rdf:resource="&rdf;nil"/>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+
