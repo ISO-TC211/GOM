@@ -1,0 +1,602 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115-1_2358 "http://def.isotc211.org/iso19115/-1/2014/CommonClasses#" >
+  <!ENTITY iso19115-1_2360 "http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#" >
+  <!ENTITY iso19115-1_2363 "http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19115-1_2362 "http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#" >
+  <!ENTITY iso19115-1_2364 "http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#" >
+  <!ENTITY iso19115-1_2365 "http://def.isotc211.org/iso19115/-1/2014/ContentInformation#" >
+  <!ENTITY iso19115-1_2366 "http://def.isotc211.org/iso19115/-1/2014/LineageInformation#" >
+  <!ENTITY iso19115-1_2367 "http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#" >
+  <!ENTITY iso19115-1_2369 "http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#" >
+  <!ENTITY iso19115-1_2370 "http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#" >
+  <!ENTITY iso19115-1_2371 "http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#" >
+  <!ENTITY iso19115-1_2374 "http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#" >
+  <!ENTITY iso19115-1_2376 "http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#" >
+  <!ENTITY iso19115-1_2373 "http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#" >
+  <!ENTITY iso19157_1164 "http://def.isotc211.org/iso19157/2013/DataQuality#" >
+  <!ENTITY iso19115-1_2375 "http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#" >
+  <!ENTITY iso19115-1 "http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19115-1MetadataInformation.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL         -->
+  <!-- Generator version: 2.5                               -->
+  <!-- File date:         9-10-2015                         -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#"
+  xml:base="http://def.isotc211.org/iso19115/-1/2014/MetadataInformation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115-1_2358="http://def.isotc211.org/iso19115/-1/2014/CommonClasses#"
+  xmlns:iso19115-1_2360="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#"
+  xmlns:iso19115-1_2363="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19115-1_2362="http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#"
+  xmlns:iso19115-1_2364="http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#"
+  xmlns:iso19115-1_2365="http://def.isotc211.org/iso19115/-1/2014/ContentInformation#"
+  xmlns:iso19115-1_2366="http://def.isotc211.org/iso19115/-1/2014/LineageInformation#"
+  xmlns:iso19115-1_2367="http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#"
+  xmlns:iso19115-1_2369="http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#"
+  xmlns:iso19115-1_2370="http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#"
+  xmlns:iso19115-1_2371="http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#"
+  xmlns:iso19115-1_2374="http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#"
+  xmlns:iso19115-1_2376="http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#"
+  xmlns:iso19115-1_2373="http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#"
+  xmlns:iso19157_1164="http://def.isotc211.org/iso19157/2013/DataQuality#"
+  xmlns:iso19115-1_2375="http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#"
+  xmlns:iso19115-1="http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19115-1:2014 Metadata Information -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19115/-1/2014/MetadataInformation">
+    <rdfs:label>ISO 19115-1:2014 Metadata Information</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19115/-1/ed-1/en/</dct:source>
+    <owl:versionInfo>2014</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CommonClasses"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/ContentInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/LineageInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/DistributionInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQuality"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: MD_Metadata -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_Metadata">
+    <rdfs:label>MD_Metadata</rdfs:label>
+    <skos:definition>root entity which defines metadata about a resource or resources</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>count (MD_Metadata.parentMetadata) .gt. 0 when there is an higher level object</iso19150-2:constraint>
+    <iso19150-2:constraint>count (MD_Metadata.parentMetadata) .gt. 0 when there is an higher level object</iso19150-2:constraint>
+    <iso19150-2:constraint>count (MD_Metadata.parentMetadata) .gt. 0 when there is an higher level object</iso19150-2:constraint>
+    <iso19150-2:constraint>count (MD_Metadata.parentMetadata) .gt. 0 when there is an higher level object</iso19150-2:constraint>
+    <iso19150-2:constraint>count (MD_Metadata.parentMetadata) .gt. 0 when there is an higher level object</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataIdentifier"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.defaultLocale"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.defaultLocale"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2360;PT_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.parentMetadata"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.parentMetadata"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.contact"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.contact"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_Responsibility"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.dateInfo"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.dateInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_Date"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataStandard"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataProfile"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.alternativeMetadataReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.otherLocale"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2360;PT_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataLinkage"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_OnlineResource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.portrayalCatalogueInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2374;MD_PortrayalCatalogueReference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.spatialRepresentationInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2376;MD_SpatialRepresentation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataExtensionInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2373;MD_MetadataExtensionInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.dataQualityInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19157_1164;DQ_DataQuality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.referenceSystemInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2375;MD_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataScope"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1;MD_MetadataScope"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.describes"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2371;DS_Resource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataMaintenance"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataMaintenance"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2370;MD_MaintenanceInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.identificationInfo"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.identificationInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2369;MD_Identification"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.distributionInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2367;MD_Distribution"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.resourceLineage"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2366;LI_Lineage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.contentInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2365;MD_ContentInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.metadataConstraints"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2364;MD_Constraints"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Metadata.applicationSchemaInfo"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2362;MD_ApplicationSchemaInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: MD_MetadataScope -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_MetadataScope">
+    <rdfs:label>MD_MetadataScope</rdfs:label>
+    <skos:definition>information about the scope of the resource</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>name is mandatory if resourceScope not equal to .gu.dataset.gu.</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_MetadataScope.resourceScope"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_MetadataScope.resourceScope"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2358;MD_ScopeCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_MetadataScope.name"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_MetadataScope.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataIdentifier -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataIdentifier">
+    <rdfs:label>metadataIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.defaultLocale -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.defaultLocale">
+    <rdfs:label>defaultLocale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2360;PT_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.parentMetadata -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.parentMetadata">
+    <rdfs:label>parentMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.contact -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.contact">
+    <rdfs:label>contact</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_Responsibility"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.dateInfo -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.dateInfo">
+    <rdfs:label>dateInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_Date"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataStandard -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataStandard">
+    <rdfs:label>metadataStandard</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataProfile -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataProfile">
+    <rdfs:label>metadataProfile</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.alternativeMetadataReference -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.alternativeMetadataReference">
+    <rdfs:label>alternativeMetadataReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.otherLocale -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.otherLocale">
+    <rdfs:label>otherLocale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2360;PT_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataLinkage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataLinkage">
+    <rdfs:label>metadataLinkage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_OnlineResource"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_MetadataScope.resourceScope -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_MetadataScope.resourceScope">
+    <rdfs:label>resourceScope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>name is mandatory if resourceScope not equal .gu.dataset.gu.</iso19150-2:constraint>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_MetadataScope"/>
+    <rdfs:range rdf:resource="&iso19115-1_2358;MD_ScopeCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_MetadataScope.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_MetadataScope.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_MetadataScope"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.portrayalCatalogueInfo -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.portrayalCatalogueInfo">
+    <rdfs:label>portrayalCatalogueInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2374;MD_PortrayalCatalogueReference"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.spatialRepresentationInfo -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.spatialRepresentationInfo">
+    <rdfs:label>spatialRepresentationInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2376;MD_SpatialRepresentation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataExtensionInfo -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataExtensionInfo">
+    <rdfs:label>metadataExtensionInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2373;MD_MetadataExtensionInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.dataQualityInfo -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.dataQualityInfo">
+    <rdfs:label>dataQualityInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19157_1164;DQ_DataQuality"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.referenceSystemInfo -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.referenceSystemInfo">
+    <rdfs:label>referenceSystemInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2375;MD_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataScope -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataScope">
+    <rdfs:label>metadataScope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1;MD_MetadataScope"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.describes -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.describes">
+    <rdfs:label>describes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2371;DS_Resource"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataMaintenance -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataMaintenance">
+    <rdfs:label>metadataMaintenance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2370;MD_MaintenanceInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.identificationInfo -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.identificationInfo">
+    <rdfs:label>identificationInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2369;MD_Identification"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.distributionInfo -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.distributionInfo">
+    <rdfs:label>distributionInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2367;MD_Distribution"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.resourceLineage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.resourceLineage">
+    <rdfs:label>resourceLineage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2366;LI_Lineage"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.contentInfo -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.contentInfo">
+    <rdfs:label>contentInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2365;MD_ContentInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.metadataConstraints -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.metadataConstraints">
+    <rdfs:label>metadataConstraints</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2364;MD_Constraints"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Metadata.applicationSchemaInfo -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Metadata.applicationSchemaInfo">
+    <rdfs:label>applicationSchemaInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Metadata"/>
+    <rdfs:range rdf:resource="&iso19115-1_2362;MD_ApplicationSchemaInformation"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

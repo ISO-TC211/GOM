@@ -1,0 +1,1252 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_2179 "http://def.isotc211.org/iso19103/2015/MeasureTypes#" >
+  <!ENTITY iso19103_2176 "http://def.isotc211.org/iso19103/2015/RecordTypes#" >
+  <!ENTITY iso19115-1_2358 "http://def.isotc211.org/iso19115/-1/2014/CommonClasses#" >
+  <!ENTITY iso19110_2259 "http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#" >
+  <!ENTITY iso19115-1_2360 "http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#" >
+  <!ENTITY iso19115-1_2363 "http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19103_2174 "http://def.isotc211.org/iso19103/2015/NameTypes#" >
+  <!ENTITY iso19115-1 "http://def.isotc211.org/iso19115/-1/2014/ContentInformation#" >
+  <!ENTITY iso19115-1Code "http://def.isotc211.org/iso19115/-1/2014/ContentInformation/code/">
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19115-1ContentInformation.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL        -->
+  <!-- Generator version: 2.5                              -->
+  <!-- File date:         9-10-2015                        -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19115/-1/2014/ContentInformation#"
+  xml:base="http://def.isotc211.org/iso19115/-1/2014/ContentInformation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_2179="http://def.isotc211.org/iso19103/2015/MeasureTypes#"
+  xmlns:iso19103_2176="http://def.isotc211.org/iso19103/2015/RecordTypes#"
+  xmlns:iso19115-1_2358="http://def.isotc211.org/iso19115/-1/2014/CommonClasses#"
+  xmlns:iso19110_2259="http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#"
+  xmlns:iso19115-1_2360="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#"
+  xmlns:iso19115-1_2363="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19103_2174="http://def.isotc211.org/iso19103/2015/NameTypes#"
+  xmlns:iso19115-1="http://def.isotc211.org/iso19115/-1/2014/ContentInformation#"
+  xmlns:iso19115-1Code="http://def.isotc211.org/iso19115/-1/2014/ContentInformation/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19115-1:2014 Content information -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19115/-1/2014/ContentInformation">
+    <rdfs:label>ISO 19115-1:2014 Content information</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19115/-1/ed-1/en/</dct:source>
+    <owl:versionInfo>2014</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/MeasureTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/RecordTypes"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CommonClasses"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/NameTypes"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: MD_AttributeGroup -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_AttributeGroup">
+    <rdfs:label>MD_AttributeGroup</rdfs:label>
+    <skos:definition>Information about contentType for groups of attributes for a specific MD_RangeDimension</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_AttributeGroup.contentType"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_AttributeGroup.contentType"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1;MD_CoverageContentTypeCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_AttributeGroup.attribute"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1;MD_RangeDimension"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: MD_Band -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_Band">
+    <rdfs:label>MD_Band</rdfs:label>
+    <skos:definition>range of wavelengths in the electromagnetic spectrum</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>if count (boundMax + boundMin) .gt.0 then boundUnits is mandatory</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.boundMax"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.boundMax"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.boundMin"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.boundMin"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.boundUnits"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.boundUnits"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2179;UomLength"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.peakResponse"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.peakResponse"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.toneGradation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_Band.toneGradation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: MD_ContentInformation -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_ContentInformation">
+    <rdfs:label>MD_ContentInformation</rdfs:label>
+    <skos:definition>description of the content of a resource</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: MD_CoverageDescription -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_CoverageDescription">
+    <rdfs:label>MD_CoverageDescription</rdfs:label>
+    <skos:definition>details about the content of a resource</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115-1;MD_ContentInformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_CoverageDescription.attributeDescription"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_CoverageDescription.attributeDescription"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2176;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_CoverageDescription.processingLevelCode"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_CoverageDescription.processingLevelCode"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_CoverageDescription.attributeGroup"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1;MD_AttributeGroup"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: MD_FeatureCatalogue -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_FeatureCatalogue">
+    <rdfs:label>MD_FeatureCatalogue</rdfs:label>
+    <skos:definition>a catalogue of feature types</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115-1;MD_ContentInformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogue.featureCatalogue"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogue.featureCatalogue"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_2259;FC_FeatureCatalogue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: MD_FeatureCatalogueDescription -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_FeatureCatalogueDescription">
+    <rdfs:label>MD_FeatureCatalogueDescription</rdfs:label>
+    <skos:definition>information identifying the feature catalogue or the conceptual schema</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>if Feature Catalogue not included with resource and MD_FeatureCatalogue not provided then featureCatalogueCitation .gt. 0</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19115-1;MD_ContentInformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription.complianceCode"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription.complianceCode"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription.locale"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2360;PT_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription.includedWithDataset"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription.includedWithDataset"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription.featureTypes"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1;MD_FeatureTypeInfo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription.featureCatalogueCitation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2363;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: MD_FeatureTypeInfo -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_FeatureTypeInfo">
+    <rdfs:label>MD_FeatureTypeInfo</rdfs:label>
+    <skos:definition>Information about the occurring feature type</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureTypeInfo.featureTypeName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureTypeInfo.featureTypeName"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2174;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureTypeInfo.featureInstanceCount"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_FeatureTypeInfo.featureInstanceCount"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: MD_ImageDescription -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_ImageDescription">
+    <rdfs:label>MD_ImageDescription</rdfs:label>
+    <skos:definition>information about an image's suitability for use</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115-1;MD_CoverageDescription"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.illuminationElevationAngle"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.illuminationElevationAngle"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.illuminationAzimuthAngle"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.illuminationAzimuthAngle"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.imagingCondition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.imagingCondition"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1;MD_ImagingConditionCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.imageQualityCode"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.imageQualityCode"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.cloudCoverPercentage"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.cloudCoverPercentage"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.compressionGenerationQuantity"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.compressionGenerationQuantity"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.triangulationIndicator"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.triangulationIndicator"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.radiometricCalibrationDataAvailability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.radiometricCalibrationDataAvailability"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.cameraCalibrationInformationAvailability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.cameraCalibrationInformationAvailability"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.filmDistortionInformationAvailability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.filmDistortionInformationAvailability"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.lensDistortionInformationAvailability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_ImageDescription.lensDistortionInformationAvailability"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: MD_RangeDimension -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_RangeDimension">
+    <rdfs:label>MD_RangeDimension</rdfs:label>
+    <skos:definition>information on the range of attribute values</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_RangeDimension.sequenceIdentifier"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_RangeDimension.sequenceIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2174;MemberName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_RangeDimension.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_RangeDimension.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_RangeDimension.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: MD_SampleDimension -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_SampleDimension">
+    <rdfs:label>MD_SampleDimension</rdfs:label>
+    <skos:definition>the characteristics of each dimension (layer) included in the resource</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>if count (maxValue + minValue + meanValue) .gt. 0 then units is mandatory</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19115-1;MD_RangeDimension"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.maxValue"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.maxValue"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.minValue"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.minValue"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.units"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.units"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2179;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.scaleFactor"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.scaleFactor"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.offset"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.offset"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.meanValue"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.meanValue"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.numberOfValues"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.numberOfValues"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.standardDeviation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.standardDeviation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.otherPropertyType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.otherPropertyType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2176;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.otherProperty"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.otherProperty"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2176;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.bitsPerValue"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19115-1;MD_SampleDimension.bitsPerValue"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_AttributeGroup.contentType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_AttributeGroup.contentType">
+    <rdfs:label>contentType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_AttributeGroup"/>
+    <rdfs:range rdf:resource="&iso19115-1;MD_CoverageContentTypeCode"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_Band.boundMax -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_Band.boundMax">
+    <rdfs:label>boundMax</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Band"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_Band.boundMin -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_Band.boundMin">
+    <rdfs:label>boundMin</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Band"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_Band.boundUnits -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_Band.boundUnits">
+    <rdfs:label>boundUnits</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Band"/>
+    <rdfs:range rdf:resource="&iso19103_2179;UomLength"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_Band.peakResponse -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_Band.peakResponse">
+    <rdfs:label>peakResponse</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Band"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_Band.toneGradation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_Band.toneGradation">
+    <rdfs:label>toneGradation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_Band"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_CoverageDescription.attributeDescription -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_CoverageDescription.attributeDescription">
+    <rdfs:label>attributeDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_CoverageDescription"/>
+    <rdfs:range rdf:resource="&iso19103_2176;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_CoverageDescription.processingLevelCode -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_CoverageDescription.processingLevelCode">
+    <rdfs:label>processingLevelCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_CoverageDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_FeatureCatalogue.featureCatalogue -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_FeatureCatalogue.featureCatalogue">
+    <rdfs:label>featureCatalogue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19110_2259;FC_FeatureCatalogue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_FeatureCatalogueDescription.complianceCode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_FeatureCatalogueDescription.complianceCode">
+    <rdfs:label>complianceCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_FeatureCatalogueDescription.locale -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_FeatureCatalogueDescription.locale">
+    <rdfs:label>locale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1_2360;PT_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_FeatureCatalogueDescription.includedWithDataset -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_FeatureCatalogueDescription.includedWithDataset">
+    <rdfs:label>includedWithDataset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_FeatureCatalogueDescription.featureTypes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_FeatureCatalogueDescription.featureTypes">
+    <rdfs:label>featureTypes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1;MD_FeatureTypeInfo"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_FeatureCatalogueDescription.featureCatalogueCitation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_FeatureCatalogueDescription.featureCatalogueCitation">
+    <rdfs:label>featureCatalogueCitation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureCatalogueDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1_2363;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_FeatureTypeInfo.featureTypeName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_FeatureTypeInfo.featureTypeName">
+    <rdfs:label>featureTypeName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureTypeInfo"/>
+    <rdfs:range rdf:resource="&iso19103_2174;GenericName"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_FeatureTypeInfo.featureInstanceCount -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_FeatureTypeInfo.featureInstanceCount">
+    <rdfs:label>featureInstanceCount</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_FeatureTypeInfo"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.illuminationElevationAngle -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.illuminationElevationAngle">
+    <rdfs:label>illuminationElevationAngle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.illuminationAzimuthAngle -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.illuminationAzimuthAngle">
+    <rdfs:label>illuminationAzimuthAngle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_ImageDescription.imagingCondition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_ImageDescription.imagingCondition">
+    <rdfs:label>imagingCondition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1;MD_ImagingConditionCode"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_ImageDescription.imageQualityCode -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_ImageDescription.imageQualityCode">
+    <rdfs:label>imageQualityCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.cloudCoverPercentage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.cloudCoverPercentage">
+    <rdfs:label>cloudCoverPercentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.compressionGenerationQuantity -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.compressionGenerationQuantity">
+    <rdfs:label>compressionGenerationQuantity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.triangulationIndicator -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.triangulationIndicator">
+    <rdfs:label>triangulationIndicator</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.radiometricCalibrationDataAvailability -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.radiometricCalibrationDataAvailability">
+    <rdfs:label>radiometricCalibrationDataAvailability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.cameraCalibrationInformationAvailability -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.cameraCalibrationInformationAvailability">
+    <rdfs:label>cameraCalibrationInformationAvailability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.filmDistortionInformationAvailability -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.filmDistortionInformationAvailability">
+    <rdfs:label>filmDistortionInformationAvailability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_ImageDescription.lensDistortionInformationAvailability -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_ImageDescription.lensDistortionInformationAvailability">
+    <rdfs:label>lensDistortionInformationAvailability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_ImageDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_RangeDimension.sequenceIdentifier -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_RangeDimension.sequenceIdentifier">
+    <rdfs:label>sequenceIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_RangeDimension"/>
+    <rdfs:range rdf:resource="&iso19103_2174;MemberName"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_RangeDimension.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_RangeDimension.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_RangeDimension"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_RangeDimension.name -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_RangeDimension.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_RangeDimension"/>
+    <rdfs:range rdf:resource="&iso19115-1_2358;MD_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.maxValue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.maxValue">
+    <rdfs:label>maxValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.minValue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.minValue">
+    <rdfs:label>minValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_SampleDimension.units -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_SampleDimension.units">
+    <rdfs:label>units</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&iso19103_2179;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.scaleFactor -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.scaleFactor">
+    <rdfs:label>scaleFactor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.offset -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.offset">
+    <rdfs:label>offset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.meanValue -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.meanValue">
+    <rdfs:label>meanValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.numberOfValues -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.numberOfValues">
+    <rdfs:label>numberOfValues</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.standardDeviation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.standardDeviation">
+    <rdfs:label>standardDeviation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_SampleDimension.otherPropertyType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_SampleDimension.otherPropertyType">
+    <rdfs:label>otherPropertyType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&iso19103_2176;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_SampleDimension.otherProperty -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_SampleDimension.otherProperty">
+    <rdfs:label>otherProperty</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&iso19103_2176;Record"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MD_SampleDimension.bitsPerValue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19115-1;MD_SampleDimension.bitsPerValue">
+    <rdfs:label>bitsPerValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_SampleDimension"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_AttributeGroup.attribute -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_AttributeGroup.attribute">
+    <rdfs:label>attribute</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_AttributeGroup"/>
+    <rdfs:range rdf:resource="&iso19115-1;MD_RangeDimension"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MD_CoverageDescription.attributeGroup -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19115-1;MD_CoverageDescription.attributeGroup">
+    <rdfs:label>attributeGroup</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19115-1;MD_CoverageDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1;MD_AttributeGroup"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: MD_CoverageContentTypeCode -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_CoverageContentTypeCode">
+    <rdfs:label>MD_CoverageContentTypeCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode">
+    <skos:prefLabel>MD_CoverageContentTypeCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115-1;MD_CoverageContentTypeCode"/>
+  </skos:ConceptScheme>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/image">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>image</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/thematicClassification">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>thematicClassification</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/physicalMeasurement">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>physicalMeasurement</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/auxilliaryInformation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>auxilliaryInformation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/qualityInformation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>qualityInformation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/referenceInformation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>referenceInformation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/modelResult">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>modelResult</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <iso19115-1:MD_CoverageContentTypeCode rdf:about="&iso19115-1Code;MD_CoverageContentTypeCode/coordinate">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coordinate</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_CoverageContentTypeCode>
+  <skos:Collection rdf:about="&iso19115-1Code;MD_CoverageContentTypeCodeCollection">
+    <skos:prefLabel>MD_CoverageContentTypeCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/image"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/thematicClassification"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/physicalMeasurement"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/auxilliaryInformation"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/qualityInformation"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/referenceInformation"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/modelResult"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_CoverageContentTypeCode/coordinate"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: MD_ImagingConditionCode -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19115-1;MD_ImagingConditionCode">
+    <rdfs:label>MD_ImagingConditionCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19115-1Code;MD_ImagingConditionCode">
+    <skos:prefLabel>MD_ImagingConditionCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19115-1;MD_ImagingConditionCode"/>
+  </skos:ConceptScheme>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/blurredImage">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>blurredImage</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/cloud">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>cloud</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/degradingObliquity">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>degradingObliquity</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/fog">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>fog</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/heavySmokeOrDust">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>heavySmokeOrDust</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/night">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>night</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/rain">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rain</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/semiDarkness">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>semiDarkness</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/shadow">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>shadow</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/snow">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>snow</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <iso19115-1:MD_ImagingConditionCode rdf:about="&iso19115-1Code;MD_ImagingConditionCode/terrainMasking">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>terrainMasking</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19115-1Code;MD_ImagingConditionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19115-1:MD_ImagingConditionCode>
+  <skos:Collection rdf:about="&iso19115-1Code;MD_ImagingConditionCodeCollection">
+    <skos:prefLabel>MD_ImagingConditionCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/blurredImage"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/cloud"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/degradingObliquity"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/fog"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/heavySmokeOrDust"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/night"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/rain"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/semiDarkness"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/shadow"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/snow"/>
+      <skos:Concept rdf:resource="&iso19115-1Code;MD_ImagingConditionCode/terrainMasking"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
