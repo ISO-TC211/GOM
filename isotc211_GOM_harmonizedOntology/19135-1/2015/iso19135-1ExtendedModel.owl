@@ -1,0 +1,1732 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_2450 "http://def.isotc211.org/iso19103/2015/WebEnvironment#" >
+  <!ENTITY orph_1287 "http://def.isotc211.org/orphansOrphans#" >
+  <!ENTITY iso19115-1_2380 "http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#" >
+  <!ENTITY iso19135-1_2479 "http://def.isotc211.org/iso19135/-1/2015/CoreModel#" >
+  <!ENTITY iso19115-1_2383 "http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19135-1_2481 "http://def.isotc211.org/iso19135/-1/2015/Hierachical#" >
+  <!ENTITY iso19135-1 "http://def.isotc211.org/iso19135/-1/2015/ExtendedModel#" >
+  <!ENTITY iso19135-1Code "http://def.isotc211.org/iso19135/-1/2015/ExtendedModel/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19135-1ExtendedModel.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL   -->
+  <!-- Generator version: 2.5                         -->
+  <!-- File date:         14-10-2015                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel#"
+  xml:base="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_2450="http://def.isotc211.org/iso19103/2015/WebEnvironment#"
+  xmlns:orph_1287="http://def.isotc211.org/orphansOrphans#"
+  xmlns:iso19115-1_2380="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#"
+  xmlns:iso19135-1_2479="http://def.isotc211.org/iso19135/-1/2015/CoreModel#"
+  xmlns:iso19115-1_2383="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19135-1_2481="http://def.isotc211.org/iso19135/-1/2015/Hierachical#"
+  xmlns:iso19135-1="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel#"
+  xmlns:iso19135-1Code="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19135-1:2015 ExtendedModel -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel">
+    <rdfs:label>ISO 19135-1:2015 ExtendedModel</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19135/-2/ed-1/en/</dct:source>
+    <owl:versionInfo>2015-10-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/WebEnvironment"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/orphansOrphans"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19135/-1/2015/CoreModel"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19135/-1/2015/Hierachical"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_AdditionInformation -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_AdditionInformation">
+    <rdfs:label>RE_AdditionInformation</rdfs:label>
+    <skos:definition>The subclass RE_AdditionInformation contains management information about a proposal to add an item to a register.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AdditionInformation.item"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AdditionInformation.item"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_RegisterItem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: RE_Register -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_Register">
+    <rdfs:label>RE_Register</rdfs:label>
+    <skos:definition>The class .gu.RE_Register.gu. specifies information about the register itself. It is a subtype of the Register class in the core profile.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>count(self.version +self.dateOfLastChange) .gt..eq. 1</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_2479;Register"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.contentSummary"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.contentSummary"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.uniformResourceIdentifier"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.uniformResourceIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2450;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.operatingLanguage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.operatingLanguage"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.alternativeLanguages"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.alternativeLanguages"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.RE_Locale.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Register.citation"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_ReferenceSource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: RE_RegisterItem -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_RegisterItem">
+    <rdfs:label>RE_RegisterItem</rdfs:label>
+    <skos:definition>The class .gu.RE_RegisterItem.gu. specifies elements of information to be recorded for each item held in a register.. The technical standard that specified an item class may specify additional elements to be recorded.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>status .eq. #superseded or status .eq. #retired implies dateAmended -.gt. notEmpty</iso19150-2:constraint>
+    <iso19150-2:constraint>status .eq. #superseded or status .eq. #retired implies dateAmended -.gt. notEmpty</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_2479;RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.definition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.alternativeExpressions"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.alternativeExpressions"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.RE_AlternativeExpression.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.dateAccepted"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.dateAccepted"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.dateAmended"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.dateAmended"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.fieldOfApplication"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.fieldOfApplication"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.RE_FieldOfApplication.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.amendmentInformation"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_AmendmentInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.clarificationInformation"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_ClarificationInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.additionInformation"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.additionInformation"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_AdditionInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.specificationLineage"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Reference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.specificationSource"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterItem.specificationSource"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Reference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: RE_ItemClass -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_ItemClass">
+    <rdfs:label>RE_ItemClass</rdfs:label>
+    <skos:definition>RE_ItemClass  is a description of a class of geographic information items specified in a technical standard. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_2479;ItemClass"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ItemClass.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ItemClass.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ItemClass.alternativeName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ItemClass.alternativeName"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.RE_AlternativeName.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ItemClass.technicalStandard"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ItemClass.technicalStandard"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2383;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_AmendmentInformation -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_AmendmentInformation">
+    <rdfs:label>RE_AmendmentInformation</rdfs:label>
+    <skos:definition>The subclass RE_AmendmentInformation contains management information about a proposal to amend an item in a register. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AmendmentInformation.amendmentType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AmendmentInformation.amendmentType"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_AmendmentType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AmendmentInformation.item"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AmendmentInformation.item"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_RegisterItem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_ClarificationInformation -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_ClarificationInformation">
+    <rdfs:label>RE_ClarificationInformation</rdfs:label>
+    <skos:definition>The subclass RE_ClarificationInformation contains management information about a proposal to clarify an item in a register.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ClarificationInformation.proposedChange"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ClarificationInformation.proposedChange"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ClarificationInformation.item"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ClarificationInformation.item"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_RegisterItem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_ProposalManagementInformation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_ProposalManagementInformation">
+    <rdfs:label>RE_ProposalManagementInformation</rdfs:label>
+    <skos:definition>The class RE_ProposalManagementInformation specifies elements of management information to be recorded for each proposal to add or modify a register item.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <iso19150-2:constraint>status .lt..gt. #pending implies disposition
+-.gt. notEmpty</iso19150-2:constraint>
+    <iso19150-2:constraint>status .lt..gt. #pending implies disposition
+-.gt. notEmpty</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.dateProposed"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.dateProposed"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.justification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.justification"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.status"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.status"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_DecisionStatus"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.disposition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.disposition"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Disposition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.dateDisposed"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.dateDisposed"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.controlBodyDecisionEvent"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.controlBodyDecisionEvent"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.controlBodyNotes"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.controlBodyNotes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.registerManagerNotes"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.registerManagerNotes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.sponsor"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ProposalManagementInformation.sponsor"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_RegisterStakeholder"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: RE_Reference -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_Reference">
+    <rdfs:label>RE_Reference</rdfs:label>
+    <skos:definition>The class RE_Reference specifies information about the source and.sl.or lineage of a specific RE_RegisterItem  derived from an external document or register. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.itemIdentifierAtSource"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.itemIdentifierAtSource"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.similarity"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.similarity"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_SimilarityToSource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.referenceText"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.referenceText"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.notes"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.notes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.sourceCitation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.sourceCitation"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_ReferenceSource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.item"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_RegisterItem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.specifiedItem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Reference.specifiedItem"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_RegisterItem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: RE_ReferenceSource -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_ReferenceSource">
+    <rdfs:label>RE_ReferenceSource</rdfs:label>
+    <skos:definition>The class RE_ReferenceSource specifies information about the source of RE_RegisterItem specifications taken from an external document or register.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ReferenceSource.citation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ReferenceSource.citation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2383;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ReferenceSource.register"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ReferenceSource.register"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Register"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ReferenceSource.itemReference"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_ReferenceSource.itemReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Reference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_RegisterStakeholder -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_RegisterStakeholder">
+    <rdfs:label>RE_RegisterStakeholder</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_2479;RegisterStakeholder"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterStakeholder.proposalInformation"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_RegisterStakeholder.proposalInformation"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_SubregisterDescription -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_SubregisterDescription">
+    <rdfs:label>RE_SubregisterDescription</rdfs:label>
+    <skos:definition>RE_SubregisterDescription is a subclass of SubregisterDescription that is used  in the principal register of a hierarchical register to describe additional information for each of the affiliated subregisters. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_2481;SubregisterDescription"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_SubregisterDescription.uniformResourceIdentifier"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_SubregisterDescription.uniformResourceIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2450;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_SubregisterDescription.operatingLanguage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_SubregisterDescription.operatingLanguage"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_AlternativeExpression -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_AlternativeExpression">
+    <rdfs:label>RE_AlternativeExpression</rdfs:label>
+    <skos:definition>The class RE_AlternativeExpression is a data type used to provide information about a register item in an alternative language. Subclasses of RE_AlternativeExpression may be specified in order to add additional attributes appropriate for particular item classes.EXAMPLE  A specification for a metadata element register could identify a subclass of RE_AlternativeExpression that would include the data dictionary fields specified in ISO 19115-1(obligation.sl.condition, data type, and domain) as additional attributes.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.definition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.fieldOfApplication"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.fieldOfApplication"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.RE_FieldOfApplication.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.locale"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeExpression.locale"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: RE_AlternativeName -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_AlternativeName">
+    <rdfs:label>RE_AlternativeName</rdfs:label>
+    <skos:definition>The class RE_AlternativeName is a data type used to provide the name of an item class in an alternative language.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeName.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeName.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeName.locale"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_AlternativeName.locale"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: RE_FieldOfApplication -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_FieldOfApplication">
+    <rdfs:label>RE_FieldOfApplication</rdfs:label>
+    <skos:definition>RE_FieldOfApplication  is a data type used to provide information about a use for a register item. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_FieldOfApplication.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_FieldOfApplication.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_FieldOfApplication.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_FieldOfApplication.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: RE_Locale -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_Locale">
+    <rdfs:label>RE_Locale</rdfs:label>
+    <skos:definition>The class .gu.RE_Locale.gu. provides information about languages used in a register.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.country"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.country"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.language"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.language"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2380;LanguageCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.characterEncoding"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.characterEncoding"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2380;MD_CharacterSetCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.expression"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1;RE_AlternativeExpression"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.citation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19135-1;RE_Locale.citation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2383;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_Register.name -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_Register.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Register"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_Register.contentSummary -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_Register.contentSummary">
+    <rdfs:label>contentSummary</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Register"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Register.uniformResourceIdentifier -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Register.uniformResourceIdentifier">
+    <rdfs:label>uniformResourceIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Register"/>
+    <rdfs:range rdf:resource="&iso19103_2450;URI"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Register.operatingLanguage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Register.operatingLanguage">
+    <rdfs:label>operatingLanguage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Register"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Register.alternativeLanguages -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Register.alternativeLanguages">
+    <rdfs:label>alternativeLanguages</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Register"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.RE_Locale.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_RegisterItem.name -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_RegisterItem.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_RegisterItem.definition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_RegisterItem.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterItem.alternativeExpressions -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterItem.alternativeExpressions">
+    <rdfs:label>alternativeExpressions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.RE_AlternativeExpression.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_RegisterItem.dateAccepted -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_RegisterItem.dateAccepted">
+    <rdfs:label>dateAccepted</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_RegisterItem.dateAmended -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_RegisterItem.dateAmended">
+    <rdfs:label>dateAmended</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_RegisterItem.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_RegisterItem.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterItem.fieldOfApplication -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterItem.fieldOfApplication">
+    <rdfs:label>fieldOfApplication</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.RE_FieldOfApplication.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ItemClass.name -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ItemClass.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ItemClass"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ItemClass.alternativeName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ItemClass.alternativeName">
+    <rdfs:label>alternativeName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ItemClass"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.RE_AlternativeName.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_AmendmentInformation.amendmentType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_AmendmentInformation.amendmentType">
+    <rdfs:label>amendmentType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AmendmentInformation"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_AmendmentType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ClarificationInformation.proposedChange -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ClarificationInformation.proposedChange">
+    <rdfs:label>proposedChange</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ClarificationInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ProposalManagementInformation.dateProposed -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.dateProposed">
+    <rdfs:label>dateProposed</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ProposalManagementInformation.justification -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.justification">
+    <rdfs:label>justification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ProposalManagementInformation.status -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.status">
+    <rdfs:label>status</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_DecisionStatus"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ProposalManagementInformation.disposition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.disposition">
+    <rdfs:label>disposition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Disposition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ProposalManagementInformation.dateDisposed -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.dateDisposed">
+    <rdfs:label>dateDisposed</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ProposalManagementInformation.controlBodyDecisionEvent -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.controlBodyDecisionEvent">
+    <rdfs:label>controlBodyDecisionEvent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ProposalManagementInformation.controlBodyNotes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.controlBodyNotes">
+    <rdfs:label>controlBodyNotes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_ProposalManagementInformation.registerManagerNotes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.registerManagerNotes">
+    <rdfs:label>registerManagerNotes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_Reference.itemIdentifierAtSource -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_Reference.itemIdentifierAtSource">
+    <rdfs:label>itemIdentifierAtSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Reference"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Reference.similarity -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Reference.similarity">
+    <rdfs:label>similarity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Reference"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_SimilarityToSource"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_Reference.referenceText -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_Reference.referenceText">
+    <rdfs:label>referenceText</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Reference"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_Reference.notes -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_Reference.notes">
+    <rdfs:label>notes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Reference"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_SubregisterDescription.uniformResourceIdentifier -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_SubregisterDescription.uniformResourceIdentifier">
+    <rdfs:label>uniformResourceIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_SubregisterDescription"/>
+    <rdfs:range rdf:resource="&iso19103_2450;URI"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_SubregisterDescription.operatingLanguage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_SubregisterDescription.operatingLanguage">
+    <rdfs:label>operatingLanguage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_SubregisterDescription"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_AlternativeExpression.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_AlternativeExpression.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AlternativeExpression"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_AlternativeExpression.definition -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_AlternativeExpression.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AlternativeExpression"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_AlternativeExpression.description -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_AlternativeExpression.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AlternativeExpression"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_AlternativeExpression.fieldOfApplication -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_AlternativeExpression.fieldOfApplication">
+    <rdfs:label>fieldOfApplication</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AlternativeExpression"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.RE_FieldOfApplication.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_AlternativeName.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_AlternativeName.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AlternativeName"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_FieldOfApplication.name -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_FieldOfApplication.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_FieldOfApplication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_FieldOfApplication.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_FieldOfApplication.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_FieldOfApplication"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_Locale.name -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_Locale.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Locale"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RE_Locale.country -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19135-1;RE_Locale.country">
+    <rdfs:label>country</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Locale"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Locale.language -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Locale.language">
+    <rdfs:label>language</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Locale"/>
+    <rdfs:range rdf:resource="&iso19115-1_2380;LanguageCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Locale.characterEncoding -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Locale.characterEncoding">
+    <rdfs:label>characterEncoding</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Locale"/>
+    <rdfs:range rdf:resource="&iso19115-1_2380;MD_CharacterSetCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterItem.additionInformation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterItem.additionInformation">
+    <rdfs:label>additionInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_AdditionInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_AdditionInformation.item -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_AdditionInformation.item">
+    <rdfs:label>item</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AdditionInformation"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_RegisterItem.additionInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Register.citation -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Register.citation">
+    <rdfs:label>citation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Reference</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Register"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_ReferenceSource"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ReferenceSource.register -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ReferenceSource.register">
+    <rdfs:label>register</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Reference</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ReferenceSource"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Register"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_Register.citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterItem.amendmentInformation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterItem.amendmentInformation">
+    <rdfs:label>amendmentInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Amendment</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_AmendmentInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_AmendmentInformation.item -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_AmendmentInformation.item">
+    <rdfs:label>item</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Amendment</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AmendmentInformation"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_RegisterItem.amendmentInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterItem.clarificationInformation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterItem.clarificationInformation">
+    <rdfs:label>clarificationInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Clarification</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_ClarificationInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ClarificationInformation.item -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ClarificationInformation.item">
+    <rdfs:label>item</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Clarification</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ClarificationInformation"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_RegisterItem.clarificationInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterItem.specificationLineage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterItem.specificationLineage">
+    <rdfs:label>specificationLineage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Lineage</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Reference"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Reference.item -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Reference.item">
+    <rdfs:label>item</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Lineage</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Reference"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_RegisterItem.specificationLineage"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterItem.specificationSource -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterItem.specificationSource">
+    <rdfs:label>specificationSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Source</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Reference"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Reference.specifiedItem -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Reference.specifiedItem">
+    <rdfs:label>specifiedItem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Source</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Reference"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_RegisterItem"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_RegisterItem.specificationSource"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ItemClass.technicalStandard -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ItemClass.technicalStandard">
+    <rdfs:label>technicalStandard</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ItemClass"/>
+    <rdfs:range rdf:resource="&iso19115-1_2383;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_RegisterStakeholder.proposalInformation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_RegisterStakeholder.proposalInformation">
+    <rdfs:label>proposalInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Proposal</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_RegisterStakeholder"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ProposalManagementInformation.sponsor -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ProposalManagementInformation.sponsor">
+    <rdfs:label>sponsor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Proposal</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ProposalManagementInformation"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_RegisterStakeholder"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_RegisterStakeholder.proposalInformation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Reference.sourceCitation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Reference.sourceCitation">
+    <rdfs:label>sourceCitation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>SourceReference</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Reference"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_ReferenceSource"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ReferenceSource.itemReference -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ReferenceSource.itemReference">
+    <rdfs:label>itemReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>SourceReference</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ReferenceSource"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Reference"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_Reference.sourceCitation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_ReferenceSource.citation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_ReferenceSource.citation">
+    <rdfs:label>citation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_ReferenceSource"/>
+    <rdfs:range rdf:resource="&iso19115-1_2383;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_AlternativeExpression.locale -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_AlternativeExpression.locale">
+    <rdfs:label>locale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Milieu</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AlternativeExpression"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Locale.expression -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Locale.expression">
+    <rdfs:label>expression</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Milieu</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Locale"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_AlternativeExpression"/>
+    <owl:inverseOf rdf:resource="&iso19135-1;RE_AlternativeExpression.locale"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_AlternativeName.locale -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_AlternativeName.locale">
+    <rdfs:label>locale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Language</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_AlternativeName"/>
+    <rdfs:range rdf:resource="&iso19135-1;RE_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RE_Locale.citation -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19135-1;RE_Locale.citation">
+    <rdfs:label>citation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19135-1;RE_Locale"/>
+    <rdfs:range rdf:resource="&iso19115-1_2383;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: RE_SimilarityToSource -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19135-1;RE_SimilarityToSource">
+    <rdfs:label>RE_SimilarityToSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19135-1Code;RE_SimilarityToSource">
+    <skos:prefLabel>RE_SimilarityToSource - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19135-1;RE_SimilarityToSource"/>
+  </skos:ConceptScheme>
+  <iso19135-1:RE_SimilarityToSource rdf:about="&iso19135-1Code;RE_SimilarityToSource/identical">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>identical</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19135-1Code;RE_SimilarityToSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19135-1:RE_SimilarityToSource>
+  <iso19135-1:RE_SimilarityToSource rdf:about="&iso19135-1Code;RE_SimilarityToSource/restyled">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>restyled</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19135-1Code;RE_SimilarityToSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19135-1:RE_SimilarityToSource>
+  <iso19135-1:RE_SimilarityToSource rdf:about="&iso19135-1Code;RE_SimilarityToSource/contextAdded">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>contextAdded</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19135-1Code;RE_SimilarityToSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19135-1:RE_SimilarityToSource>
+  <iso19135-1:RE_SimilarityToSource rdf:about="&iso19135-1Code;RE_SimilarityToSource/generalization">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>generalization</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19135-1Code;RE_SimilarityToSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19135-1:RE_SimilarityToSource>
+  <iso19135-1:RE_SimilarityToSource rdf:about="&iso19135-1Code;RE_SimilarityToSource/specialization">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>specialization</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19135-1Code;RE_SimilarityToSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19135-1:RE_SimilarityToSource>
+  <iso19135-1:RE_SimilarityToSource rdf:about="&iso19135-1Code;RE_SimilarityToSource/unspecified">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>unspecified</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19135-1Code;RE_SimilarityToSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19135-1:RE_SimilarityToSource>
+  <skos:Collection rdf:about="&iso19135-1Code;RE_SimilarityToSourceCollection">
+    <skos:prefLabel>RE_SimilarityToSource - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/identical"/>
+      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/restyled"/>
+      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/contextAdded"/>
+      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/generalization"/>
+      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/specialization"/>
+      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/unspecified"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Enumeration: RE_DecisionStatus -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19135-1;RE_DecisionStatus">
+    <rdfs:label>RE_DecisionStatus</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">pending</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">tentative</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">final</rdf:first>
+                    <rdf:rest rdf:resource="&rdf;nil"/>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Enumeration: RE_AmendmentType -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19135-1;RE_AmendmentType">
+    <rdfs:label>RE_AmendmentType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">supersession</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">retirement</rdf:first>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Enumeration: RE_Disposition -->
+  <!--+++++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19135-1;RE_Disposition">
+    <rdfs:label>RE_Disposition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19135/-2/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">withdrawn</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">accepted</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">notAccepted</rdf:first>
+                    <rdf:rest rdf:resource="&rdf;nil"/>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+
