@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19107_2210 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
+  <!ENTITY iso19133_1707 "http://def.isotc211.org/iso19133/2005/LinearReferenceSystems#" >
+  <!ENTITY iso19103_1469 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19108_892 "http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#" >
+  <!ENTITY orph_1287 "http://def.isotc211.org/orphansOrphans#" >
+  <!ENTITY iso19107_2211 "http://def.isotc211.org/iso19107/2003/GeometryRoot#" >
+  <!ENTITY iso19141 "http://def.isotc211.org/iso19141/2008/GeometryTypes#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19141GeometryTypes.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         17-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19141/2008/GeometryTypes#"
+  xml:base="http://def.isotc211.org/iso19141/2008/GeometryTypes"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19107_2210="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xmlns:iso19133_1707="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems#"
+  xmlns:iso19103_1469="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19108_892="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#"
+  xmlns:orph_1287="http://def.isotc211.org/orphansOrphans#"
+  xmlns:iso19107_2211="http://def.isotc211.org/iso19107/2003/GeometryRoot#"
+  xmlns:iso19141="http://def.isotc211.org/iso19141/2008/GeometryTypes#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19141:2008 Geometry Types -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19141/2008/GeometryTypes">
+    <rdfs:label>ISO 19141:2008 Geometry Types</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19141/ed-1/en/</dct:source>
+    <owl:versionInfo>2008-06-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricPrimitive"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/orphansOrphans"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometryRoot"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: MF_MeasureFunction -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19141;MF_MeasureFunction">
+    <rdfs:label>MF_MeasureFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.graphOfMeasure"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.graphOfMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.graphOfOffset"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.graphOfOffset"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.graphOfSecondaryOffsets"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.graphOfSecondaryOffsets"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1707;LR_Element"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.range"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_MeasureFunction.range"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1707;LR_LinearReferenceMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: MF_OneParamGeometry -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19141;MF_OneParamGeometry">
+    <rdfs:label>MF_OneParamGeometry</rdfs:label>
+    <skos:definition>A one parameter set of geometries is a function f from an interval t [a, b] such that f(t) is a geometry and for each point P f(a) there is a one parameter set of points (called the trajectory of P) P(t) : [a, b] .r. P(t) such that P(t) f(t). A leaf of a one parameter set of geometries is the geometry f(t) at a particular value of the parameter. The set of geometries forms a prism that is the set of points in the union of the geometries (or the union of the trajectories).  The type .gu.MF_OneParamGeometry.gu. acts as the root classifier for all geometric object classified as one parameter sets of geometric objects. As a one-paramter set, they have .gu.leaf.gu. projections ( for each parameter value.  As geometric objects they act as the infinite union of all their .gu.leaf.gu. (cross sections for each parameter value).</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107_2211;GM_Object"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_OneParamGeometry.beginDomain"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_OneParamGeometry.beginDomain"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1469;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_OneParamGeometry.endDomain"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_OneParamGeometry.endDomain"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1469;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: MF_PositionExpression -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19141;MF_PositionExpression">
+    <rdfs:label>MF_PositionExpression</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1707;LR_PositionExpression"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_PositionExpression.secondaryOffset"/>
+        <owl:allValuesFrom rdf:resource="&iso19141;MF_SecondaryOffset"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: MF_SecondaryOffset -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19141;MF_SecondaryOffset">
+    <rdfs:label>MF_SecondaryOffset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_SecondaryOffset.offsetVector"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_SecondaryOffset.offsetVector"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1469;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: MF_TemporalGeometry -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19141;MF_TemporalGeometry">
+    <rdfs:label>MF_TemporalGeometry</rdfs:label>
+    <skos:definition>MF_TemporalGeometry is a specialization of MF_OneParamGeometry in which the parameter is time as expressed by TM_Coordinate.  TM_Coordinate is specified in ISO 19108; it expresses time as a multiple of a single unit of measure such as year, day, or second.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19141;MF_OneParamGeometry"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: MF_TemporalTrajectory -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19141;MF_TemporalTrajectory">
+    <rdfs:label>MF_TemporalTrajectory</rdfs:label>
+    <skos:definition>OCL::MF_TemporalTrajectory:[MF_TemporalGeometry::leafGeometry(t).isTypeOf (GM_Point) ANDMF_TemporalGeometry::leafGeometry(t).position() .eq.  MF_Trajectory::leaf(t)]</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19141;MF_Trajectory"/>
+    <rdfs:subClassOf rdf:resource="&iso19141;MF_TemporalGeometry"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.beginDomain"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.beginDomain"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_892;TM_Coordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.endDomain"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.endDomain"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_892;TM_Coordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToPoint"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToPoint"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToVelocity"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToVelocity"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToAcceleration"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToAcceleration"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToDistance"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToDistance"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToCumulativeDistance"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_TemporalTrajectory.graphTimeToCumulativeDistance"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: MF_Trajectory -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19141;MF_Trajectory">
+    <rdfs:label>MF_Trajectory</rdfs:label>
+    <skos:definition>An .gu.MF_Trajectory.gu. is a one-parameter geometry whose cross section is a point. OCL::MF_TrajectoryleafGeometry(m).position .eq. leaf(m)</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19141;MF_OneParamGeometry"/>
+    <rdfs:subClassOf rdf:resource="&iso19107_2210;GM_Curve"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.pathGeometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.pathGeometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.graphParameterToPoint"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.graphParameterToPoint"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.graphParameterToMeasure"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.graphParameterToMeasure"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.MF_MeasureFunction.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.beginDomain"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.beginDomain"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1469;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.endDomain"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19141;MF_Trajectory.endDomain"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1469;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_MeasureFunction.graphOfMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_MeasureFunction.graphOfMeasure">
+    <rdfs:label>graphOfMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_MeasureFunction"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_MeasureFunction.graphOfOffset -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_MeasureFunction.graphOfOffset">
+    <rdfs:label>graphOfOffset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_MeasureFunction"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_MeasureFunction.graphOfSecondaryOffsets -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_MeasureFunction.graphOfSecondaryOffsets">
+    <rdfs:label>graphOfSecondaryOffsets</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_MeasureFunction"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_MeasureFunction.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_MeasureFunction.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_MeasureFunction"/>
+    <rdfs:range rdf:resource="&iso19133_1707;LR_Element"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_MeasureFunction.range -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_MeasureFunction.range">
+    <rdfs:label>range</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_MeasureFunction"/>
+    <rdfs:range rdf:resource="&iso19133_1707;LR_LinearReferenceMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_OneParamGeometry.beginDomain -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_OneParamGeometry.beginDomain">
+    <rdfs:label>beginDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_OneParamGeometry"/>
+    <rdfs:range rdf:resource="&iso19103_1469;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_OneParamGeometry.endDomain -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_OneParamGeometry.endDomain">
+    <rdfs:label>endDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_OneParamGeometry"/>
+    <rdfs:range rdf:resource="&iso19103_1469;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_SecondaryOffset.offsetVector -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_SecondaryOffset.offsetVector">
+    <rdfs:label>offsetVector</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_SecondaryOffset"/>
+    <rdfs:range rdf:resource="&iso19103_1469;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_TemporalTrajectory.beginDomain -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_TemporalTrajectory.beginDomain">
+    <rdfs:label>beginDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_TemporalTrajectory"/>
+    <rdfs:range rdf:resource="&iso19108_892;TM_Coordinate"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_TemporalTrajectory.endDomain -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_TemporalTrajectory.endDomain">
+    <rdfs:label>endDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_TemporalTrajectory"/>
+    <rdfs:range rdf:resource="&iso19108_892;TM_Coordinate"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_TemporalTrajectory.graphTimeToPoint -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_TemporalTrajectory.graphTimeToPoint">
+    <rdfs:label>graphTimeToPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_TemporalTrajectory"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_TemporalTrajectory.graphTimeToVelocity -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_TemporalTrajectory.graphTimeToVelocity">
+    <rdfs:label>graphTimeToVelocity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_TemporalTrajectory"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_TemporalTrajectory.graphTimeToAcceleration -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_TemporalTrajectory.graphTimeToAcceleration">
+    <rdfs:label>graphTimeToAcceleration</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_TemporalTrajectory"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_TemporalTrajectory.graphTimeToDistance -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_TemporalTrajectory.graphTimeToDistance">
+    <rdfs:label>graphTimeToDistance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_TemporalTrajectory"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_TemporalTrajectory.graphTimeToCumulativeDistance -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_TemporalTrajectory.graphTimeToCumulativeDistance">
+    <rdfs:label>graphTimeToCumulativeDistance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_TemporalTrajectory"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_Trajectory.pathGeometry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_Trajectory.pathGeometry">
+    <rdfs:label>pathGeometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_Trajectory"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_Trajectory.graphParameterToPoint -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_Trajectory.graphParameterToPoint">
+    <rdfs:label>graphParameterToPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_Trajectory"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_Trajectory.graphParameterToMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_Trajectory.graphParameterToMeasure">
+    <rdfs:label>graphParameterToMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_Trajectory"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.MF_MeasureFunction.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_Trajectory.beginDomain -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_Trajectory.beginDomain">
+    <rdfs:label>beginDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_Trajectory"/>
+    <rdfs:range rdf:resource="&iso19103_1469;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_Trajectory.endDomain -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_Trajectory.endDomain">
+    <rdfs:label>endDomain</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19141;MF_Trajectory"/>
+    <rdfs:range rdf:resource="&iso19103_1469;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MF_PositionExpression.secondaryOffset -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19141;MF_PositionExpression.secondaryOffset">
+    <rdfs:label>secondaryOffset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19141/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19141;MF_PositionExpression"/>
+    <rdfs:range rdf:resource="&iso19141;MF_SecondaryOffset"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
