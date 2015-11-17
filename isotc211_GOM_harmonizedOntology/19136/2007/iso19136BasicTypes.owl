@@ -1,0 +1,1039 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY orph_1287 "http://def.isotc211.org/orphansOrphans#" >
+  <!ENTITY iso19103_1470 "http://def.isotc211.org/iso19103/2005/Text#" >
+  <!ENTITY iso19103_1469 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19103_1460 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19136 "http://def.isotc211.org/iso19136/2007/BasicTypes#" >
+  <!ENTITY iso19136Code "http://def.isotc211.org/iso19136/2007/BasicTypes/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19136BasicTypes.owl    -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         17-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19136/2007/BasicTypes#"
+  xml:base="http://def.isotc211.org/iso19136/2007/BasicTypes"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:orph_1287="http://def.isotc211.org/orphansOrphans#"
+  xmlns:iso19103_1470="http://def.isotc211.org/iso19103/2005/Text#"
+  xmlns:iso19103_1469="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19103_1460="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19136="http://def.isotc211.org/iso19136/2007/BasicTypes#"
+  xmlns:iso19136Code="http://def.isotc211.org/iso19136/2007/BasicTypes/code/">
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19136:2007 basicTypes -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19136/2007/BasicTypes">
+    <rdfs:label>ISO 19136:2007 basicTypes</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19136/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-09-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/orphansOrphans"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Text"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: booleanList -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;booleanList">
+    <rdfs:label>booleanList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;booleanList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;booleanList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.Boolean.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: Value (Boolean) -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uValueBoolean">
+    <rdfs:label>Value_Boolean</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueBoolean.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueBoolean.value"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: NilReason -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uNilReason">
+    <rdfs:label>NilReason_union</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uNilReason.nilReason"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uNilReason.nilReason"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;NilReason"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: booleanOrNilReasonList -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;booleanOrNilReasonList">
+    <rdfs:label>booleanOrNilReasonList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;booleanOrNilReasonList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;booleanOrNilReasonList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.booleanOrNilReason.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++-->
+  <!-- Class: Code -->
+  <!--+++++++++++++-->
+  <owl:Class rdf:about="&iso19136;Code">
+    <rdfs:label>Code</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19103_1470;CharacterString"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Code.codespace"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Code.codespace"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: CodeList -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;CodeList">
+    <rdfs:label>CodeList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;NameList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;CodeList.codeSpace"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;CodeList.codeSpace"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: CodeOrNilReasonList -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;CodeOrNilReasonList">
+    <rdfs:label>CodeOrNilReasonList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;NameOrNilReasonList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;CodeOrNilReasonList.codeSpace"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;CodeOrNilReasonList.codeSpace"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: Coordinates -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;Coordinates">
+    <rdfs:label>Coordinates</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19103_1470;CharacterString"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Coordinates.decimal"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Coordinates.decimal"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Coordinates.cs"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Coordinates.cs"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Coordinates.ts"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Coordinates.ts"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: doubleList -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;doubleList">
+    <rdfs:label>doubleList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;doubleList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;doubleList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.Real.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: Value (Double) -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uValueDouble">
+    <rdfs:label>Value_Double</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueDouble.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueDouble.value"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: doubleOrNilReasonList -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;doubleOrNilReasonList">
+    <rdfs:label>doubleOrNilReasonList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;doubleOrNilReasonList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;doubleOrNilReasonList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.doubleOrNilReason.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: integerList -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;integerList">
+    <rdfs:label>integerList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;integerList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;integerList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.Integer.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: Value (Integer) -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uValueInteger">
+    <rdfs:label>Value_Integer</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueInteger.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueInteger.value"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: integerOrNilReasonList -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;integerOrNilReasonList">
+    <rdfs:label>integerOrNilReasonList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;integerOrNilReasonList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;integerOrNilReasonList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.integerOrNilReason.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: MeasureList -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;MeasureList">
+    <rdfs:label>MeasureList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;doubleList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;MeasureList.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;MeasureList.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: Value (Measure) -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uValueMeasure">
+    <rdfs:label>Value_Measure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueMeasure.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueMeasure.value"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: MeasureOrNilReasonList -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;MeasureOrNilReasonList">
+    <rdfs:label>MeasureOrNilReasonList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;doubleOrNilReasonList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;MeasureOrNilReasonList.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;MeasureOrNilReasonList.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: NameList -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;NameList">
+    <rdfs:label>NameList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;NameList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;NameList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.GenericName.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: Value (CharacterString) -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uValueCharacterString">
+    <rdfs:label>Value_CharacterString</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueCharacterString.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uValueCharacterString.value"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: NameOrNilReasonList -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;NameOrNilReasonList">
+    <rdfs:label>NameOrNilReasonList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;NameOrNilReasonList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;NameOrNilReasonList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.NameOrNilReason.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: NCNameList -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;NCNameList">
+    <rdfs:label>NCNameList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;NameList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;NCNameList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;NCNameList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.LocalName.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: NilReasonEnumeration -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uNilReasonEnumeration">
+    <rdfs:label>NilReasonEnumeration</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uNilReasonEnumeration.NilReasonEnumeration"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uNilReasonEnumeration.NilReasonEnumeration"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;NilReasonEnumeration"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++-->
+  <!-- Class: URI -->
+  <!--++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uURI">
+    <rdfs:label>URI</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uURI.URI"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uURI.URI"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: PositiveInteger -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;PositiveInteger">
+    <rdfs:label>PositiveInteger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19103_1469;Integer"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: QNameList -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;QNameList">
+    <rdfs:label>QNameList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;NameList"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;QNameList.list"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;QNameList.list"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.ScopedName.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++-->
+  <!-- Class: URI -->
+  <!--++++++++++++-->
+  <owl:Class rdf:about="&iso19136;URI">
+    <rdfs:label>URI</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19103_1470;CharacterString"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: booleanList.list -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;booleanList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;booleanList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.Boolean.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: value (Boolean) -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;uValueBoolean.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uValueBoolean"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: nilReason -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uNilReason.nilReason">
+    <skos:prefLabel>nilReason</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uNilReason"/>
+    <rdfs:range rdf:resource="&iso19136;NilReason"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: booleanOrNilReasonList.list -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;booleanOrNilReasonList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;booleanOrNilReasonList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.booleanOrNilReason.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Code.codespace -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;Code.codespace">
+    <rdfs:label>codespace</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Code"/>
+    <rdfs:range rdf:resource="&iso19136;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CodeList.codeSpace -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;CodeList.codeSpace">
+    <rdfs:label>codeSpace</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;CodeList"/>
+    <rdfs:range rdf:resource="&iso19136;URI"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CodeOrNilReasonList.codeSpace -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;CodeOrNilReasonList.codeSpace">
+    <rdfs:label>codeSpace</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;CodeOrNilReasonList"/>
+    <rdfs:range rdf:resource="&iso19136;URI"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Coordinates.decimal -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;Coordinates.decimal">
+    <rdfs:label>decimal</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Coordinates"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Coordinates.cs -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;Coordinates.cs">
+    <rdfs:label>cs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Coordinates"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Coordinates.ts -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;Coordinates.ts">
+    <rdfs:label>ts</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Coordinates"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: doubleList.list -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;doubleList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;doubleList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.Real.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: value (Double) -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;uValueDouble.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uValueDouble"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: doubleOrNilReasonList.list -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;doubleOrNilReasonList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;doubleOrNilReasonList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.doubleOrNilReason.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: integerList.list -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;integerList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;integerList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.Integer.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: value (Integer) -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;uValueInteger.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uValueInteger"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: integerOrNilReasonList.list -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;integerOrNilReasonList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;integerOrNilReasonList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.integerOrNilReason.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MeasureList.uom -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;MeasureList.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;MeasureList"/>
+    <rdfs:range rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: value (Measure) -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uValueMeasure.value">
+    <skos:prefLabel>value</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uValueMeasure"/>
+    <rdfs:range rdf:resource="&iso19103_1460;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MeasureOrNilReasonList.uom -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;MeasureOrNilReasonList.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;MeasureOrNilReasonList"/>
+    <rdfs:range rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NameList.list -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;NameList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;NameList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.GenericName.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: value (CharacterString) -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;uValueCharacterString.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uValueCharacterString"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NameOrNilReasonList.list -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;NameOrNilReasonList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;NameOrNilReasonList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.NameOrNilReason.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NCNameList.list -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;NCNameList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;NCNameList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.LocalName.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NilReasonEnumeration -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uNilReasonEnumeration.NilReasonEnumeration">
+    <skos:prefLabel>NilReasonEnumeration</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uNilReasonEnumeration"/>
+    <rdfs:range rdf:resource="&iso19136;NilReasonEnumeration"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++-->
+  <!-- ObjectProperty: URI -->
+  <!--+++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uURI.URI">
+    <skos:prefLabel>URI</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uURI"/>
+    <rdfs:range rdf:resource="&iso19136;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: QNameList.list -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;QNameList.list">
+    <rdfs:label>list</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;QNameList"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.ScopedName.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: booleanOrNilReason -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;booleanOrNilReason">
+    <rdfs:label>booleanOrNilReason</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uValueBoolean"/>
+          <owl:Class rdf:about="&iso19136;uNilReason"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: doubleOrNilReason -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;doubleOrNilReason">
+    <rdfs:label>doubleOrNilReason</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uValueDouble"/>
+          <owl:Class rdf:about="&iso19136;uNilReason"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: integerOrNilReason -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;integerOrNilReason">
+    <rdfs:label>integerOrNilReason</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uValueInteger"/>
+          <owl:Class rdf:about="&iso19136;uNilReason"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: MeasureOrNilReason -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;MeasureOrNilReason">
+    <rdfs:label>MeasureOrNilReason</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uValueMeasure"/>
+          <owl:Class rdf:about="&iso19136;uNilReason"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NameOrNilReason -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;NameOrNilReason">
+    <rdfs:label>NameOrNilReason</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uValueCharacterString"/>
+          <owl:Class rdf:about="&iso19136;uNilReason"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: NilReason -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;NilReason">
+    <rdfs:label>NilReason</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uNilReasonEnumeration"/>
+          <owl:Class rdf:about="&iso19136;uURI"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: NilReasonEnumeration -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;NilReasonEnumeration">
+    <rdfs:label>NilReasonEnumeration</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19136Code;NilReasonEnumeration">
+    <skos:prefLabel>NilReasonEnumeration - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19136;NilReasonEnumeration"/>
+  </skos:ConceptScheme>
+  <iso19136:NilReasonEnumeration rdf:about="&iso19136Code;NilReasonEnumeration/inapplicable">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>inapplicable</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19136Code;NilReasonEnumeration"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+  </iso19136:NilReasonEnumeration>
+  <iso19136:NilReasonEnumeration rdf:about="&iso19136Code;NilReasonEnumeration/missing">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>missing</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19136Code;NilReasonEnumeration"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+  </iso19136:NilReasonEnumeration>
+  <iso19136:NilReasonEnumeration rdf:about="&iso19136Code;NilReasonEnumeration/template">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>template</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19136Code;NilReasonEnumeration"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+  </iso19136:NilReasonEnumeration>
+  <iso19136:NilReasonEnumeration rdf:about="&iso19136Code;NilReasonEnumeration/unknown">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>unknown</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19136Code;NilReasonEnumeration"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+  </iso19136:NilReasonEnumeration>
+  <iso19136:NilReasonEnumeration rdf:about="&iso19136Code;NilReasonEnumeration/withheld">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>withheld</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19136Code;NilReasonEnumeration"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+  </iso19136:NilReasonEnumeration>
+  <skos:Collection rdf:about="&iso19136Code;NilReasonEnumerationCollection">
+    <skos:prefLabel>NilReasonEnumeration - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/inapplicable"/>
+      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/missing"/>
+      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/template"/>
+      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/unknown"/>
+      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/withheld"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: stringOrNilReason -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;stringOrNilReason">
+    <rdfs:label>stringOrNilReason</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uValueCharacterString"/>
+          <owl:Class rdf:about="&iso19136;uNilReason"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Enumeration: Sign -->
+  <!--+++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19136;Sign">
+    <rdfs:label>Sign</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">"+"</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">"-"</rdf:first>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+

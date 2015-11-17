@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_1469 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19103_1463 "http://def.isotc211.org/iso19103/2005/Names#" >
+  <!ENTITY iso19136_1724 "http://def.isotc211.org/iso19136/2007/BasicTypes#" >
+  <!ENTITY iso19136 "http://def.isotc211.org/iso19136/2007/Direction#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19136Direction.owl     -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         17-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19136/2007/Direction#"
+  xml:base="http://def.isotc211.org/iso19136/2007/Direction"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_1469="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19103_1463="http://def.isotc211.org/iso19103/2005/Names#"
+  xmlns:iso19136_1724="http://def.isotc211.org/iso19136/2007/BasicTypes#"
+  xmlns:iso19136="http://def.isotc211.org/iso19136/2007/Direction#">
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19136:2007 direction -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19136/2007/Direction">
+    <rdfs:label>ISO 19136:2007 direction</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19136/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-09-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/BasicTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Vector -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uVector">
+    <rdfs:label>Vector</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uVector.vector"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uVector.vector"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1469;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: CompassPoint -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uCompassPoint">
+    <rdfs:label>CompassPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uCompassPoint.compassPoint"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uCompassPoint.compassPoint"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;CompassPoint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Keyword -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uKeyword">
+    <rdfs:label>Keyword</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uKeyword.keyword"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uKeyword.keyword"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1463;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: Description -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uDescription">
+    <rdfs:label>Description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uDescription.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uDescription.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: Reference -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uReference">
+    <rdfs:label>Reference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uReference.reference"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uReference.reference"/>
+        <owl:allValuesFrom rdf:resource="&iso19136_1724;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- ObjectProperty: vector -->
+  <!--++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uVector.vector">
+    <skos:prefLabel>vector</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uVector"/>
+    <rdfs:range rdf:resource="&iso19103_1469;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: compassPoint -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uCompassPoint.compassPoint">
+    <skos:prefLabel>compassPoint</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uCompassPoint"/>
+    <rdfs:range rdf:resource="&iso19136;CompassPoint"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- ObjectProperty: keyword -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uKeyword.keyword">
+    <skos:prefLabel>keyword</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uKeyword"/>
+    <rdfs:range rdf:resource="&iso19103_1463;GenericName"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: description -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;uDescription.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uDescription"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: reference -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uReference.reference">
+    <skos:prefLabel>reference</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uReference"/>
+    <rdfs:range rdf:resource="&iso19136_1724;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: Direction -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;Direction">
+    <rdfs:label>Direction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uVector"/>
+          <owl:Class rdf:about="&iso19136;uCompassPoint"/>
+          <owl:Class rdf:about="&iso19136;uKeyword"/>
+          <owl:Class rdf:about="&iso19136;uDescription"/>
+          <owl:Class rdf:about="&iso19136;uReference"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Enumeration: CompassPoint -->
+  <!--+++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19136;CompassPoint">
+    <rdfs:label>CompassPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">N</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">NNE</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">NE</rdf:first>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">ENE</rdf:first>
+                        <rdf:rest>
+                          <rdf:List>
+                            <rdf:first rdf:datatype="&xsd;string">E</rdf:first>
+                            <rdf:rest>
+                              <rdf:List>
+                                <rdf:first rdf:datatype="&xsd;string">ESE</rdf:first>
+                                <rdf:rest>
+                                  <rdf:List>
+                                    <rdf:first rdf:datatype="&xsd;string">SE</rdf:first>
+                                    <rdf:rest>
+                                      <rdf:List>
+                                        <rdf:first rdf:datatype="&xsd;string">SSE</rdf:first>
+                                        <rdf:rest>
+                                          <rdf:List>
+                                            <rdf:first rdf:datatype="&xsd;string">S</rdf:first>
+                                            <rdf:rest>
+                                              <rdf:List>
+                                                <rdf:first rdf:datatype="&xsd;string">SSW</rdf:first>
+                                                <rdf:rest>
+                                                  <rdf:List>
+                                                    <rdf:first rdf:datatype="&xsd;string">SW</rdf:first>
+                                                    <rdf:rest>
+                                                      <rdf:List>
+                                                        <rdf:first rdf:datatype="&xsd;string">WSW</rdf:first>
+                                                        <rdf:rest>
+                                                          <rdf:List>
+                                                            <rdf:first rdf:datatype="&xsd;string">W</rdf:first>
+                                                            <rdf:rest>
+                                                              <rdf:List>
+                                                                <rdf:first rdf:datatype="&xsd;string">WNW</rdf:first>
+                                                                <rdf:rest>
+                                                                  <rdf:List>
+                                                                    <rdf:first rdf:datatype="&xsd;string">NW</rdf:first>
+                                                                    <rdf:rest>
+                                                                      <rdf:List>
+                                                                        <rdf:first rdf:datatype="&xsd;string">NNW</rdf:first>
+                                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                      </rdf:List>
+                                                                    </rdf:rest>
+                                                                  </rdf:List>
+                                                                </rdf:rest>
+                                                              </rdf:List>
+                                                            </rdf:rest>
+                                                          </rdf:List>
+                                                        </rdf:rest>
+                                                      </rdf:List>
+                                                    </rdf:rest>
+                                                  </rdf:List>
+                                                </rdf:rest>
+                                              </rdf:List>
+                                            </rdf:rest>
+                                          </rdf:List>
+                                        </rdf:rest>
+                                      </rdf:List>
+                                    </rdf:rest>
+                                  </rdf:List>
+                                </rdf:rest>
+                              </rdf:List>
+                            </rdf:rest>
+                          </rdf:List>
+                        </rdf:rest>
+                      </rdf:List>
+                    </rdf:rest>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+

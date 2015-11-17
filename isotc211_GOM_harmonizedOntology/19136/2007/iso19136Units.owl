@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19136_1724 "http://def.isotc211.org/iso19136/2007/BasicTypes#" >
+  <!ENTITY iso19103_1460 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19103_1463 "http://def.isotc211.org/iso19103/2005/Names#" >
+  <!ENTITY iso19136_1728 "http://def.isotc211.org/iso19136/2007/Dictionary#" >
+  <!ENTITY iso19136 "http://def.isotc211.org/iso19136/2007/Units#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19136Units.owl         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         17-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19136/2007/Units#"
+  xml:base="http://def.isotc211.org/iso19136/2007/Units"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19136_1724="http://def.isotc211.org/iso19136/2007/BasicTypes#"
+  xmlns:iso19103_1460="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19103_1463="http://def.isotc211.org/iso19103/2005/Names#"
+  xmlns:iso19136_1728="http://def.isotc211.org/iso19136/2007/Dictionary#"
+  xmlns:iso19136="http://def.isotc211.org/iso19136/2007/Units#">
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19136:2007 units -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19136/2007/Units">
+    <rdfs:label>ISO 19136:2007 units</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19136/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-09-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/BasicTypes"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Dictionary"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: BaseUnit -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;BaseUnit">
+    <rdfs:label>BaseUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;UnitDefinition"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;BaseUnit.unitsSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;BaseUnit.unitsSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19136_1724;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: ConventionalUnit -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;ConventionalUnit">
+    <rdfs:label>ConventionalUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;UnitDefinition"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConventionalUnit.conversionToPreferredUnit"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConventionalUnit.conversionToPreferredUnit"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;ConversionToPreferredUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConventionalUnit.roughConversionToPreferredUnit"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConventionalUnit.roughConversionToPreferredUnit"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;ConversionToPreferredUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConventionalUnit.derivationUnitTerm"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;DerivationUnitTerm"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: ConversionToPreferredUnit -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;ConversionToPreferredUnit">
+    <rdfs:label>ConversionToPreferredUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConversionToPreferredUnit.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConversionToPreferredUnit.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConversionToPreferredUnit.factorOrFormula"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;ConversionToPreferredUnit.factorOrFormula"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;FactorOrFormula"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: DerivationUnitTerm -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;DerivationUnitTerm">
+    <rdfs:label>DerivationUnitTerm</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DerivationUnitTerm.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DerivationUnitTerm.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DerivationUnitTerm.exponent"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DerivationUnitTerm.exponent"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: DerivedUnit -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;DerivedUnit">
+    <rdfs:label>DerivedUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;UnitDefinition"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DerivedUnit.derivationUnitTerm"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DerivedUnit.derivationUnitTerm"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;DerivationUnitTerm"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Factor -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uFactor">
+    <rdfs:label>Factor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uFactor.factor"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uFactor.factor"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Formula -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;uFormula">
+    <rdfs:label>Formula</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uFormula.formula"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;uFormula.formula"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;Formula"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Formula -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;Formula">
+    <rdfs:label>Formula</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.a"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.a"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.b"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.b"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.c"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.c"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.d"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Formula.d"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: UnitDefinition -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;UnitDefinition">
+    <rdfs:label>UnitDefinition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136_1728;Definition"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;UnitDefinition.quantityType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;UnitDefinition.quantityType"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;UnitDefinition.quantityTypeReference"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;UnitDefinition.quantityTypeReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19136_1724;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;UnitDefinition.catalogSymbol"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;UnitDefinition.catalogSymbol"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1463;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: BaseUnit.unitsSystem -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;BaseUnit.unitsSystem">
+    <rdfs:label>unitsSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;BaseUnit"/>
+    <rdfs:range rdf:resource="&iso19136_1724;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ConventionalUnit.conversionToPreferredUnit -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;ConventionalUnit.conversionToPreferredUnit">
+    <rdfs:label>conversionToPreferredUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;ConventionalUnit"/>
+    <rdfs:range rdf:resource="&iso19136;ConversionToPreferredUnit"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ConventionalUnit.roughConversionToPreferredUnit -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;ConventionalUnit.roughConversionToPreferredUnit">
+    <rdfs:label>roughConversionToPreferredUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;ConventionalUnit"/>
+    <rdfs:range rdf:resource="&iso19136;ConversionToPreferredUnit"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ConventionalUnit.derivationUnitTerm -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;ConventionalUnit.derivationUnitTerm">
+    <rdfs:label>derivationUnitTerm</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;ConventionalUnit"/>
+    <rdfs:range rdf:resource="&iso19136;DerivationUnitTerm"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ConversionToPreferredUnit.uom -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;ConversionToPreferredUnit.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;ConversionToPreferredUnit"/>
+    <rdfs:range rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ConversionToPreferredUnit.factorOrFormula -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;ConversionToPreferredUnit.factorOrFormula">
+    <rdfs:label>factorOrFormula</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;ConversionToPreferredUnit"/>
+    <rdfs:range rdf:resource="&iso19136;FactorOrFormula"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DerivationUnitTerm.uom -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DerivationUnitTerm.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DerivationUnitTerm"/>
+    <rdfs:range rdf:resource="&iso19103_1460;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DerivationUnitTerm.exponent -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;DerivationUnitTerm.exponent">
+    <rdfs:label>exponent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DerivationUnitTerm"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DerivedUnit.derivationUnitTerm -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DerivedUnit.derivationUnitTerm">
+    <rdfs:label>derivationUnitTerm</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DerivedUnit"/>
+    <rdfs:range rdf:resource="&iso19136;DerivationUnitTerm"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: factor -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;uFactor.factor">
+    <rdfs:label>factor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uFactor"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- ObjectProperty: formula -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;uFormula.formula">
+    <skos:prefLabel>formula</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;uFormula"/>
+    <rdfs:range rdf:resource="&iso19136;Formula"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Formula.a -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;Formula.a">
+    <rdfs:label>a</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Formula"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Formula.b -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;Formula.b">
+    <rdfs:label>b</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Formula"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Formula.c -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;Formula.c">
+    <rdfs:label>c</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Formula"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Formula.d -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;Formula.d">
+    <rdfs:label>d</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Formula"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: UnitDefinition.quantityType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;UnitDefinition.quantityType">
+    <rdfs:label>quantityType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;UnitDefinition"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: UnitDefinition.quantityTypeReference -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;UnitDefinition.quantityTypeReference">
+    <rdfs:label>quantityTypeReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;UnitDefinition"/>
+    <rdfs:range rdf:resource="&iso19136_1724;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: UnitDefinition.catalogSymbol -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;UnitDefinition.catalogSymbol">
+    <rdfs:label>catalogSymbol</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;UnitDefinition"/>
+    <rdfs:range rdf:resource="&iso19103_1463;GenericName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: FactorOrFormula -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;FactorOrFormula">
+    <rdfs:label>FactorOrFormula</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19136;uFactor"/>
+          <owl:Class rdf:about="&iso19136;uFormula"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+</rdf:RDF>
+
