@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/BasicServices" uri="iso19132BasicServices.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement" uri="iso19132DigitalRightsManagement.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/GeomaticsServices" uri="iso19132GeomaticsServices.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/InformationServices" uri="iso19132InformationServices.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/LBSParticipants" uri="iso19132LBSParticipants.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/LBSReferenceModel" uri="ISO19132_2007LBSReferenceModel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/LBS_Services" uri="iso19132LBS_Services.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/MessageDataTypes" uri="iso19132MessageDataTypes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1448308002093" name="http://def.isotc211.org/iso19132/2007/SystemManagement" uri="iso19132SystemManagement.owl"/>
+    </group>
+</catalog>

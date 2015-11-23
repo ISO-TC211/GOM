@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19132_128 "http://def.isotc211.org/iso19132/2007/LBSParticipants#" >
+  <!ENTITY iso19132 "http://def.isotc211.org/iso19132/2007/DigitalRightsManagement#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19132DigitalRightsManagement.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL           -->
+  <!-- Generator version: 2.5                                 -->
+  <!-- File date:         23-11-2015                          -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement#"
+  xml:base="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19132_128="http://def.isotc211.org/iso19132/2007/LBSParticipants#"
+  xmlns:iso19132="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19132:2007 Digital Rights Management -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement">
+    <rdfs:label>ISO 19132:2007 Digital Rights Management</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19132/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-01-29</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/LBSParticipants"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: LBS_License -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_License">
+    <rdfs:label>LBS_License</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_License.right"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_License.right"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Right"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LBS_Resource -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Resource">
+    <rdfs:label>LBS_Resource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: LBS_Right -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Right">
+    <rdfs:label>LBS_Right</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Right.condition"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_RightsCondition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Right.subject"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Resource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Right.owner"/>
+        <owl:allValuesFrom rdf:resource="&iso19132_128;LBS_Participant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: LBS_RightsCondition -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_RightsCondition">
+    <rdfs:label>LBS_RightsCondition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_License.right -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_License.right">
+    <rdfs:label>right</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_License"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Right"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Right.condition -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Right.condition">
+    <rdfs:label>condition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Right"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_RightsCondition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Right.subject -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Right.subject">
+    <rdfs:label>subject</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Right"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Resource"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Right.owner -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Right.owner">
+    <rdfs:label>owner</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Right"/>
+    <rdfs:range rdf:resource="&iso19132_128;LBS_Participant"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19132 "http://def.isotc211.org/iso19132/2007/LBS_Services#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19132LBS_Services.owl  -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         23-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19132/2007/LBS_Services#"
+  xml:base="http://def.isotc211.org/iso19132/2007/LBS_Services"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19132="http://def.isotc211.org/iso19132/2007/LBS_Services#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19132:2007 LBS_Services -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19132/2007/LBS_Services">
+    <rdfs:label>ISO 19132:2007 LBS_Services</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19132/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-01-29</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/BasicServices"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/GeomaticsServices"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/InformationServices"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/SystemManagement"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+</rdf:RDF>
+

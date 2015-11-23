@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19132_131 "http://def.isotc211.org/iso19132/2007/DigitalRightsManagement#" >
+  <!ENTITY iso19132 "http://def.isotc211.org/iso19132/2007/BasicServices#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19132BasicServices.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         23-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19132/2007/BasicServices#"
+  xml:base="http://def.isotc211.org/iso19132/2007/BasicServices"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19132_131="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement#"
+  xmlns:iso19132="http://def.isotc211.org/iso19132/2007/BasicServices#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19132:2007 Basic Services -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19132/2007/BasicServices">
+    <rdfs:label>ISO 19132:2007 Basic Services</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19132/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-01-29</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LBS_Navigation -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Navigation">
+    <rdfs:label>LBS_Navigation</rdfs:label>
+    <skos:definition>The type .gu.LBS_Navigation.gu. is the basic navigation service interface. Navigation is the execution of a calculated route. Dynamic navigation is navigation where the route may be altered during its execution due to changed or changing circumstance. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19132_131;LBS_Resource"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: LBS_Routing -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Routing">
+    <rdfs:label>LBS_Routing</rdfs:label>
+    <skos:definition>The .gu.LBS_Routing.gu. service is functionality that finds optimal or near optimal routes meeting requested criteria. The specifics of the type of request that can be made, the type of cost functions that can be used, the types of constraints and preferences that can be specified would all be part of the registered metadata of the routing service. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19132_131;LBS_Resource"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LBS_Tracking -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Tracking">
+    <rdfs:label>LBS_Tracking</rdfs:label>
+    <skos:definition>The .gu.LBS_Tracking.gu. service checks the credentials of the requestor, and then, if appropriate, reports the position of the indicated user as per the triggers specified in the request. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19132_131;LBS_Resource"/>
+  </owl:Class>
+
+</rdf:RDF>
+
