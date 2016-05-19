@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY orph_1287 "http://def.isotc211.org/orphansOrphans#" >
+  <!ENTITY iso19123_2494 "http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#" >
+  <!ENTITY iso19115_3249 "http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19123_2492 "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#" >
+  <!ENTITY iso19115_3236 "http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#" >
+  <!ENTITY iso19135_1286 "http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#" >
+  <!ENTITY iso19115_3235 "http://def.isotc211.org/iso19115/2006/MetadataApplicationInformation#" >
+  <!ENTITY iso19144-1 "http://def.isotc211.org/iso19144/-1/2009/ClassificationSystems#" >
+  <!ENTITY iso19144-1Code "http://def.isotc211.org/iso19144/-1/2009/ISO19144-1:2009ClassificationSystems/code/">
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         ISO19144-1_2009ClassificationSystems.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL                -->
+  <!-- Generator version: 2.5                                      -->
+  <!-- File date:         11-4-2016                                -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19144/-1/2009/ClassificationSystems#"
+  xml:base="http://def.isotc211.org/iso19144/-1/2009/ClassificationSystems"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:orph_1287="http://def.isotc211.org/orphansOrphans#"
+  xmlns:iso19123_2494="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#"
+  xmlns:iso19115_3249="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19123_2492="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#"
+  xmlns:iso19115_3236="http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#"
+  xmlns:iso19135_1286="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#"
+  xmlns:iso19115_3235="http://def.isotc211.org/iso19115/2006/MetadataApplicationInformation#"
+  xmlns:iso19144-1="http://def.isotc211.org/iso19144/-1/2009/ClassificationSystems#"
+  xmlns:iso19144-1Code="http://def.isotc211.org/iso19144/-1/2009/ClassificationSystems/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19144-1:2009 ISO 19144-1:2009 Classification Systems -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19144/-1/2009/ClassificationSystems">
+    <rdfs:label>ISO 19144-1:2009 ISO 19144-1:2009 Classification Systems</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19144/-1/ed-1/en/</dct:source>
+    <owl:versionInfo>2009-08-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/orphansOrphans"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/DiscreteCoverages"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/MetadataApplicationInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CL_ClassificationCollection -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_ClassificationCollection">
+    <rdfs:label>CL_ClassificationCollection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationCollection.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationCollection.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_2492;CV_SurfaceValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationCollection.theMD_Metadata"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_3236;MD_Metadata"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationCollection.theCL_DataSet"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-1;CL_DataSet"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CL_ClassificationLegendClass -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_ClassificationLegendClass">
+    <rdfs:label>CL_ClassificationLegendClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <!--rdfs:subClassOf rdf:resource="&iso19135-1_2879;RE_ItemClass"/-->
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_ItemClass"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CL_ClassificationLegendItem -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_ClassificationLegendItem">
+    <rdfs:label>CL_ClassificationLegendItem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <!--rdfs:subClassOf rdf:resource="&iso19135-1_2879;RE_RegisterItem"/-->
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationLegendItem.code"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationLegendItem.code"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationLegendItem.alphaCode"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CL_ClassificationRegister -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_ClassificationRegister">
+    <rdfs:label>CL_ClassificationRegister</rdfs:label>
+    <skos:definition>The class LC_LCMLRegister specifies information about the register itself. It is a subclass of the class RE_Register which is defined in ISO 19135. It inherits 6 attributes from ISO 19135. Two of the attributes are specialized. The other attributes are taken directly from ISO 19135.ISO 19135 specifies that the attribute .lt.i.gt.name.lt..sl.i.gt. shall be a character string that is used to uniquely identify a register within the set of registers maintained by the register owner.  In the case the LCML register shall be called:.gu.Land Cover Meta Language Register.gu..ISO 19135 specifies that the attribute.lt.i.gt. contentSummary.lt..sl.i.gt. shall be a character string containing a general statement of the purpose for which items in the register are made, including any limits to the scope of the register, and the types of applications for which the items are intended. In the case the LCML register .lt.i.gt.contentSummary.lt..sl.i.gt. shall be contain:.gu.Register of LCML metaclasses used to extend the LCML metaclasses LC_ElementCharacteristic and LC_ClassCharacteristic and the extension only of LC_Element .gu..</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <!--rdfs:subClassOf rdf:resource="&iso19135-1_2879;RE_Register"/-->
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_Register"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRegister.scopeSet"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRegister.scopeSet"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.CharacterString.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRegister.fieldOfApplication"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRegister.fieldOfApplication"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Set.lt.RE_FieldOfApplication.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRegister.functionalLanguage"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRegister.functionalLanguage"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CL_ClassificationRuleClass -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_ClassificationRuleClass">
+    <rdfs:label>CL_ClassificationRuleClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <!--rdfs:subClassOf rdf:resource="&iso19135-1_2879;RE_ItemClass"/-->
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_ItemClass"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CL_ClassificationRuleItem -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_ClassificationRuleItem">
+    <rdfs:label>CL_ClassificationRuleItem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <!--rdfs:subClassOf rdf:resource="&iso19135-1_2879;RE_RegisterItem"/-->
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRuleItem.code"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRuleItem.code"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassificationRuleItem.alphaCode"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: CL_ClassifiedSurface -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_ClassifiedSurface">
+    <rdfs:label>CL_ClassifiedSurface</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_2492;CV_DiscreteSurfaceCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassifiedSurface.tessellationGeometry"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassifiedSurface.tessellationGeometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-1;CL_TessellationGeometry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassifiedSurface.sequenceRule"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_ClassifiedSurface.sequenceRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_2494;CV_SequenceRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: CL_DataSet -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_DataSet">
+    <rdfs:label>CL_DataSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19115_3235;DS_DataSet"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_DataSet.has"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_DataSet.has"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_3236;MD_Metadata"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_DataSet.theCL_ClassificationCollection"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-1;CL_ClassificationCollection"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: CL_FeatureTypeReference -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_FeatureTypeReference">
+    <rdfs:label>CL_FeatureTypeReference</rdfs:label>
+    <skos:definition>A CL_Legend Class is implemented by a reference to a catalogue of legend classes through a CL_FeatureTypeReference. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-1;CL_LegendClass"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_FeatureTypeReference.identifier"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_FeatureTypeReference.identifier"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_FeatureTypeReference.sourceCitation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_FeatureTypeReference.sourceCitation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_3249;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: CL_LegendClass -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_LegendClass">
+    <rdfs:label>CL_LegendClass</rdfs:label>
+    <skos:definition>A CL_LegendClass is a metaclass that is a subtype of the general GF_AttributeType metaclass from the GeneralFeatureModel of ISO 19109. It is implemented by a reference to a catalogue of legend classes through a CL_FeatureTypeReference. Feature attribute metadata may be associated with a legend class. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <!--rdfs:subClassOf rdf:resource="&undefined_2980;AttributeType"/-->
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-1;CL_LegendClass.theMD_Metadata"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_3236;MD_Metadata"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_ClassificationCollection.theMD_Metadata -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_ClassificationCollection.theMD_Metadata">
+    <rdfs:label>theMD_Metadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationCollection"/>
+    <rdfs:range rdf:resource="&iso19115_3236;MD_Metadata"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_ClassificationCollection.theCL_DataSet -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_ClassificationCollection.theCL_DataSet">
+    <rdfs:label>theCL_DataSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationCollection"/>
+    <rdfs:range rdf:resource="&iso19144-1;CL_DataSet"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CL_ClassificationLegendItem.code -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-1;CL_ClassificationLegendItem.code">
+    <rdfs:label>code</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationLegendItem"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CL_ClassificationLegendItem.alphaCode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-1;CL_ClassificationLegendItem.alphaCode">
+    <rdfs:label>alphaCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationLegendItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_ClassificationRegister.scopeSet -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_ClassificationRegister.scopeSet">
+    <rdfs:label>scopeSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationRegister"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.CharacterString.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_ClassificationRegister.fieldOfApplication -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_ClassificationRegister.fieldOfApplication">
+    <rdfs:label>fieldOfApplication</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationRegister"/>
+    <rdfs:range rdf:resource="&orph_1287;Set.lt.RE_FieldOfApplication.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CL_ClassificationRegister.functionalLanguage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-1;CL_ClassificationRegister.functionalLanguage">
+    <rdfs:label>functionalLanguage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationRegister"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CL_ClassificationRuleItem.code -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-1;CL_ClassificationRuleItem.code">
+    <rdfs:label>code</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationRuleItem"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CL_ClassificationRuleItem.alphaCode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-1;CL_ClassificationRuleItem.alphaCode">
+    <rdfs:label>alphaCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationRuleItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_ClassifiedSurface.tessellationGeometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_ClassifiedSurface.tessellationGeometry">
+    <rdfs:label>tessellationGeometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassifiedSurface"/>
+    <rdfs:range rdf:resource="&iso19144-1;CL_TessellationGeometry"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_ClassifiedSurface.sequenceRule -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_ClassifiedSurface.sequenceRule">
+    <rdfs:label>sequenceRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassifiedSurface"/>
+    <rdfs:range rdf:resource="&iso19123_2494;CV_SequenceRule"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_DataSet.theCL_ClassificationCollection -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_DataSet.theCL_ClassificationCollection">
+    <rdfs:label>theCL_DataSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_DataSet"/>
+    <rdfs:range rdf:resource="&iso19144-1;CL_ClassificationCollection"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CL_FeatureTypeReference.identifier -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-1;CL_FeatureTypeReference.identifier">
+    <rdfs:label>identifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_FeatureTypeReference"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_FeatureTypeReference.sourceCitation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_FeatureTypeReference.sourceCitation">
+    <rdfs:label>sourceCitation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_FeatureTypeReference"/>
+    <rdfs:range rdf:resource="&iso19115_3249;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_LegendClass.theMD_Metadata -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_LegendClass.theMD_Metadata">
+    <rdfs:label>theMD_Metadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_LegendClass"/>
+    <rdfs:range rdf:resource="&iso19115_3236;MD_Metadata"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_ClassificationCollection.element -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_ClassificationCollection.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Coverage Function</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_ClassificationCollection"/>
+    <rdfs:range rdf:resource="&iso19123_2492;CV_SurfaceValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CL_DataSet.has -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-1;CL_DataSet.has">
+    <rdfs:label>has</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-1;CL_DataSet"/>
+    <rdfs:range rdf:resource="&iso19115_3236;MD_Metadata"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: CL_TessellationGeometry -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-1;CL_TessellationGeometry">
+    <rdfs:label>CL_TessellationGeometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-1Code;CL_TessellationGeometry">
+    <skos:prefLabel>CL_TessellationGeometry - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-1;CL_TessellationGeometry"/>
+  </skos:ConceptScheme>
+  <iso19144-1:CL_TessellationGeometry rdf:about="&iso19144-1Code;CL_TessellationGeometry/quadrilateralgrid">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>quadrilateralgrid</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-1Code;CL_TessellationGeometry"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-1:CL_TessellationGeometry>
+  <iso19144-1:CL_TessellationGeometry rdf:about="&iso19144-1Code;CL_TessellationGeometry/hexagonalgrid">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>hexagonalgrid</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-1Code;CL_TessellationGeometry"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-1:CL_TessellationGeometry>
+  <iso19144-1:CL_TessellationGeometry rdf:about="&iso19144-1Code;CL_TessellationGeometry/TIN">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>TIN</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-1Code;CL_TessellationGeometry"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-1:CL_TessellationGeometry>
+  <iso19144-1:CL_TessellationGeometry rdf:about="&iso19144-1Code;CL_TessellationGeometry/polygonnetwork">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>polygonnetwork</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-1Code;CL_TessellationGeometry"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-1:CL_TessellationGeometry>
+  <iso19144-1:CL_TessellationGeometry rdf:about="&iso19144-1Code;CL_TessellationGeometry/Thiessenpolygonnetwork">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Thiessenpolygonnetwork</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-1Code;CL_TessellationGeometry"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-1:CL_TessellationGeometry>
+  <skos:Collection rdf:about="&iso19144-1Code;CL_TessellationGeometryCollection">
+    <skos:prefLabel>CL_TessellationGeometry - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/quadrilateralgrid"/>
+      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/hexagonalgrid"/>
+      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/TIN"/>
+      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/polygonnetwork"/>
+      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/Thiessenpolygonnetwork"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
