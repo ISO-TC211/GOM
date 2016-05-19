@@ -1,0 +1,2190 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19144-2_722 "http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes#" >
+  <!ENTITY iso19144-2 "http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics#" >
+  <!ENTITY iso19144-2Code "http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19144-2LC_ElementCharacteristics.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL               -->
+  <!-- Generator version: 2.5                                     -->
+  <!-- File date:         12-4-2016                               -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics#"
+  xml:base="http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19144-2_722="http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes#"
+  xmlns:iso19144-2="http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics#"
+  xmlns:iso19144-2Code="http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19144-2:2012 LC_ElementCharacteristics -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics">
+    <rdfs:label>ISO 19144-2:2012 LC_ElementCharacteristics</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19144/-2/ed-1/en/</dct:source>
+    <owl:versionInfo>2012-07-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_AllometricMeasurements -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_AllometricMeasurements">
+    <rdfs:label>LC_AllometricMeasurements</rdfs:label>
+    <skos:definition>The LC_AllometricMeasurement component is a subtype of LC_GrowthFormCharacteristic. It has two optional attributes .lt.i.gt.trunkDiameter.lt..sl.i.gt. and .lt.i.gt.crownDiameter.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.trunkDiameter.lt..sl.i.gt. are described by the values object LC_PermittedPositiveRealValue. The permitted values of the attribute .lt.i.gt.crownDiameter.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to it s a number of measurement characteristics to the growth form to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_AllometricMeasurements.trunkDiameter"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_AllometricMeasurements.trunkDiameter"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_AllometricMeasurements.crownDiameter"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_AllometricMeasurements.crownDiameter"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LC_Aquaculture -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Aquaculture">
+    <rdfs:label>LC_Aquaculture</rdfs:label>
+    <skos:definition>The LC_ConstructionStatus component metalanguage object is a subtype of LC_ArtificialSurfaceCharacteristic component. It has one optional attribute type. The permitted values of the attribute type are described by the code list LC_AquacultureType. The component LC_Aquaculture may be used to refine the metaobject LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_WaterAndAssociatedSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Aquaculture.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Aquaculture.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_AquacultureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: LC_Artificiality -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Artificiality">
+    <rdfs:label>LC_Artificiality</rdfs:label>
+    <skos:definition>The LC_Artificiality component metalanguage object is a subtype of LC_WaterAndAssociatedSurfacesCharacteristic component. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_ArtificialityType. The component LC_Artificiality may be used to refine the metalanguage object LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_WaterAndAssociatedSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Artificiality.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Artificiality.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_ArtificialityType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ArtificialSurfaceCharacteristic -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ArtificialSurfaceCharacteristic">
+    <rdfs:label>LC_ArtificialSurfaceCharacteristic</rdfs:label>
+    <skos:definition>The LC_ArtificialSurfaceCharacteristic component is a subtype of LC_LandCoverElementCharacteristic. This component may be used to refine the metalanguage object corresponding to an LC_Element object with respect to an artificial surface characteristic to permit the generation of a more specific land cover feature class in a land cover classification system.It has two subtypes LC_ConstructionStatus and LC_ConstructionUse. The component LC_ArtificialSurfaceCharacteristic may be used to refine the metalanguage object LC_ArtificialSurfaceElement to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_LandCoverElementCharacteristic"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ArtificialSurfaceDamage -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ArtificialSurfaceDamage">
+    <rdfs:label>LC_ArtificialSurfaceDamage</rdfs:label>
+    <skos:definition>The LC_ArtificialSurfaceDamage component is a subtype of LC_ArtificialSurfaceCharacteristic. It has two attributes, .lt.i.gt.percentage.lt..sl.i.gt. and.lt.i.gt. .lt..sl.i.gt.optionally d.lt.i.gt.amageType.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.percentage.lt..sl.i.gt. are described by the value object LC_PermittedPercentageValue. The permitted values of the attribute .lt.i.gt.damageType.lt..sl.i.gt. are described by the enumerated value object LC_ArtificialDamageType. This component may be used to refine the metalanguage object corresponding to an LC_ArtificialSurfaceCharacteristic object with respect to water stress to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_ArtificialSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ArtificialSurfaceDamage.percentage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ArtificialSurfaceDamage.percentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ArtificialSurfaceDamage.damageType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ArtificialSurfaceDamage.damageType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_ArtificialityType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LC_BurntStatus -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_BurntStatus">
+    <rdfs:label>LC_BurntStatus</rdfs:label>
+    <skos:definition>The LC_BurntStatus component is a subtype of LC_GrowthFormCharacteristic. It has one optional attribute .lt.i.gt.percentage.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.percentage.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. This attribute describes the percentage of each group of plants which have been affected by fire to an extent that they are no longer able to regenerate. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to burnt status to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_BurntStatus.percentage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_BurntStatus.percentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ConstructionStatus -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ConstructionStatus">
+    <rdfs:label>LC_ConstructionStatus</rdfs:label>
+    <skos:definition>The LC_ConstructionStatus component metalanguage object is a subtype of LC_ArtificialSurfaceCharacteristic. It has two optional attributes .lt.i.gt.age.lt..sl.i.gt. and .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.age.lt..sl.i.gt. are described by the values object LC_PermittedPosRealValue. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_ConstructionStatusType. This component may be used to refine the metalanguage object corresponding to an LC_ArtificialSurfaceCharacteristic class to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_ArtificialSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ConstructionStatus.age"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ConstructionStatus.age"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ConstructionStatus.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ConstructionStatus.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_ConstructionStatusType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: LC_CropFertilization -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_CropFertilization">
+    <rdfs:label>LC_CropFertilization</rdfs:label>
+    <skos:definition>The LC_CropFertilization metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has two optional attributes .lt.i.gt.frequency.lt..sl.i.gt. and .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.frequency.lt..sl.i.gt. are described by the values object LC_PermittedPosIntegerValue. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_CropFertilizationType. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropFertilization.frequency"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropFertilization.frequency"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropFertilization.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropFertilization.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_CropFertilizationType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_CropGrowingParameter -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_CropGrowingParameter">
+    <rdfs:label>LC_CropGrowingParameter</rdfs:label>
+    <skos:definition>The LC_CropGrowingParameter component metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has three optional attributes .lt.i.gt.seedingTime.lt..sl.i.gt., .lt.i.gt.growingLength.lt..sl.i.gt. and .lt.i.gt.overlapGrowing.lt..sl.i.gt. and a component LC_OverlapGrowingToReferenceCrop. The permitted values of the attribute .lt.i.gt.seedingTime.lt..sl.i.gt. are described by the value object LC_PermittedPosIntegerValue. The permitted values of the attributes .lt.i.gt.growingLength.lt..sl.i.gt. are described by the value object LC_PosIntegerRange. The permitted values of the attribute .lt.i.gt.overlapGrowing.lt..sl.i.gt. are described by the value object LC_PermittedPercentageValue. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropGrowingParameter.seedingTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropGrowingParameter.seedingTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropGrowingParameter.growingLength"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropGrowingParameter.growingLength"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerRange"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropGrowingParameter.overlapGrowing"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropGrowingParameter.overlapGrowing"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropGrowingParameter.theLC_OverlapGrowingToReferenceCrop"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_OverlapGrowingToReferenceCrop"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LC_CropYield -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_CropYield">
+    <rdfs:label>LC_CropYield</rdfs:label>
+    <skos:definition>The LC_CropYield component metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has one parameter .lt.i.gt.yield.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.yield.lt..sl.i.gt. are described by the values object LC_PermittedPosRealValue. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropYield.yield"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_CropYield.yield"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_CultivatedAndManagedVegetation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_CultivatedAndManagedVegetation">
+    <rdfs:label>LC_CultivatedAndManagedVegetation</rdfs:label>
+    <skos:definition>The LC_CultivatedAndManagedVegetation component is a subtype of LC_VegetationArtificiality. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormAge object with respect to the artificiality of a specific vegetative layer to permit the generation of a more specific land cover feature class in an LCCS.CultivatedAndManagedVegetation has eleven subtypes LC_UrbanPark, LC_CropYield, LC_Plantation, LC_CropGrowingParameter, LC_PlantSpreadingGeometry, LC_WaterSupplyPeriod, LC_FieldSize, LC_MechanicalErosionControl, LC_PestControl, LC_CropFertilization and LC_Ploughing.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_VegetationArtificiality"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: LC_DeadStatus -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_DeadStatus">
+    <rdfs:label>LC_DeadStatus</rdfs:label>
+    <skos:definition>The LC_DeadStatus component is a subtype of LC_GrowthFormCharacteristic. It has one optional attribute .lt.i.gt.percentage.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.percentage.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. This attribute describes the percentage of a growth form which has died. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to dead status to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_DeadStatus.percentage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_DeadStatus.percentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: LC_EvenAge -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_EvenAge">
+    <rdfs:label>LC_EvenAge</rdfs:label>
+    <skos:definition>The LC_EvenAge component is a subtype of LC_GrowthFormAge. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormAge object with respect to the age of a specific vegetative layer, where there is an even age within the growth form strata, to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormAge"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LC_FieldSize -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_FieldSize">
+    <rdfs:label>LC_FieldSize</rdfs:label>
+    <skos:definition>The LC_FieldSize metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has one attribute .lt.i.gt.size.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.size.lt..sl.i.gt. are described by the values object LC_PermittedPositiveRealValue. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_FieldSize.size"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_FieldSize.size"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: LC_FloristicAspects -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_FloristicAspects">
+    <rdfs:label>LC_FloristicAspects</rdfs:label>
+    <skos:definition>The LC_FloristicAspect component is a subtype of LC_GrowthFormCharacteristic. It has one optional attribute .lt.i.gt.speciesName.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.speciesName.lt..sl.i.gt. are described by the code list LC_SpeciesName. The species name is derived from a single plan or the dominant or most frequent species in a group of plants. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to its floristic aspect to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_FloristicAspects.speciesName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_FloristicAspects.speciesName"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_SpeciesName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_FloristicAspects.theLC_NameAttributionCriteria"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_FloristicAspects.theLC_NameAttributionCriteria"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_NameAttributionCriteria"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ForestPlantation -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ForestPlantation">
+    <rdfs:label>LC_ForestPlantation</rdfs:label>
+    <skos:definition>The LC_ForestPlantation component metalanguage object is a subtype of LC_Plantation. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object, by indicating that it is forest plantation, to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_Plantation"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: LC_Grazing -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Grazing">
+    <rdfs:label>LC_Grazing</rdfs:label>
+    <skos:definition>The LC_Grazing component is a subtype of LC_GrowthFormCharacteristic. It has two attributes, .lt.i.gt.intensity.lt..sl.i.gt. and optionally .lt.i.gt.animalType.lt..sl.i.gt.. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to the grazing of a specific vegetative layer, to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Grazing.animalType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Grazing.animalType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_GrazingAnimalType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Grazing.intensity"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Grazing.intensity"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_GroupOfPlantSpecies -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GroupOfPlantSpecies">
+    <rdfs:label>LC_GroupOfPlantSpecies</rdfs:label>
+    <skos:definition>The LC_GroupOfPlantSpecies component metalanguage object is a subtype of LC_NameAttributionCriteria. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_GroupPlantSpeciesType.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_NameAttributionCriteria"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GroupOfPlantSpecies.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GroupOfPlantSpecies.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_GroupOfPlantSpecies"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: LC_GrowthFormAge -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GrowthFormAge">
+    <rdfs:label>LC_GrowthFormAge</rdfs:label>
+    <skos:definition>The LC_GrowthFormAge component is a subtype of LC_GrowthFormCharacteristic. It has one optional attribute .lt.i.gt.age.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.age.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. It also has two subtypes LC_EvenAge and LC_UnevenAge. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic class with respect to the age of a specific vegetative layer to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GrowthFormAge.age"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GrowthFormAge.age"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_GrowthFormCharacteristic -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GrowthFormCharacteristic">
+    <rdfs:label>LC_GrowthFormCharacteristic</rdfs:label>
+    <skos:definition>The LC_GrowthFormCharacteristic component is a subtype of LC_LandCoverElementCharacteristic. The growth form characteristic allows certain morphological features in common for a group of plants to be specified. This component may be used to refine the metalanguage object corresponding to an LC_Element object with respect to growth form to permit the generation of a more specific land cover feature class in an LCCS.The component LC_GrowthFormCharacteristic is related to the LC_VegetationElement metalanguage object by the relation .lt.i.gt.growthFormCharacteristics.lt..sl.i.gt.. The component LC_GrowthFormCharacteristic may be used to refine the metalanguage object LC_VegetationElement or any of its subtypes to permit the generation of a more specific land cover feature class in an LCCS. It has nine subtypes LC_FloristicAspects, LC_AllometricMeasurements, LC_GrowthFormAge, LC_TreeAreaManagementPractise, LC_BurntStatus, LC_DeadStatus, LC_WaterStress, LC_GrowthFormIllness, and LC_VegetationArtificiality.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_LandCoverElementCharacteristic"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: LC_GrowthFormIllness -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GrowthFormIllness">
+    <rdfs:label>LC_GrowthFormIllness</rdfs:label>
+    <skos:definition>The LC_GrowthFormIllness component is a subtype of LC_GrowthFormCharacteristic. It has two attributes .lt.i.gt.percentage.lt..sl.i.gt. and optionally .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.percentage.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_GrowthFormIllnessType. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to growth form illness to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GrowthFormIllness.percentage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GrowthFormIllness.percentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GrowthFormIllness.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GrowthFormIllness.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_GrowthFormIllnessType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LC_IceCategory -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_IceCategory">
+    <rdfs:label>LC_IceCategory</rdfs:label>
+    <skos:definition>The LC_IceCategory component metalanguage object is a subtype of LC_WaterAndAssociatedSurfacesCharacteristic component. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_IceType. The component LC_IceCategory may be used to refine the metalanguage object LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_WaterAndAssociatedSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_IceCategory.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_IceCategory.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_IceCategoryType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_LandCoverElementCharacteristic -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_LandCoverElementCharacteristic">
+    <rdfs:label>LC_LandCoverElementCharacteristic</rdfs:label>
+    <skos:definition>Additional information may be provided to further refine the individual elements that are assembled to generate an LC_LandCover class within the LCML by the use of Element Characteristics. An element characteristic is distinct from a class characteristic in that it applies to a specific LC_Element. Element characteristics may be applied to specific elements or there may be general elements defined related to the generic class LC_Element. The use of characteristics in the LCML is optional.The component LC_LandCoverElementCharacteristic is related to LC_Element by the relation .lt.i.gt.characteristic.lt..sl.i.gt.. It has three subtypes LC_GrowthFormCharacteristic, LC_ArtificialSurfaceCharacteristic, and LC_WaterAndAssociatedSurfaceCharacteristic. A constraint limits the application of a specific characteristic to either an element or a whole class. That is, the same characteristic can not be applied at two level of the metalanguage hierarchy at the same time.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_MechanicalErosionControl -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_MechanicalErosionControl">
+    <rdfs:label>LC_MechanicalErosionControl</rdfs:label>
+    <skos:definition>The LC_MechanicalErosionControl metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code listLC_MechanicalErosionControlType. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_MechanicalErosionControl.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_MechanicalErosionControl.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_MechanicalErosionControlType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: LC_Mowing -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Mowing">
+    <rdfs:label>LC_Mowing</rdfs:label>
+    <skos:definition>The LC_Mowing component is a subtype of LC_GrowthFormCharacteristic. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to the mowing of a specific vegetative layer, to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_NameAttributionCriteria -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_NameAttributionCriteria">
+    <rdfs:label>LC_NameAttributionCriteria</rdfs:label>
+    <skos:definition>The LC_NameAttrubutionCriteria metalaqnguage object is a component of LC_FloristicAspects through the relationship .lt.i.gt.nameAttributionCriteria.lt..sl.i.gt. and has two subtypes LC_SinglePlantSpecies and LC_GroupOfPlantSpecies. These two subtypes correspond to the two cases where a floristic name is derived from a single plant species or a group of plant species. This component may be used to refine the metalanguage object corresponding to an LC_floristicAspects object with respect to species name to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_NaturalOrSeminaturalVegetation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_NaturalOrSeminaturalVegetation">
+    <rdfs:label>LC_NaturalOrSeminaturalVegetation</rdfs:label>
+    <skos:definition>The LC_NaturalOrSeminaturalVegetation component is a subtype of LC_VegetationArtificiality. It has one optional attribute .lt.i.gt.macropattern.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.macropattern.lt..sl.i.gt. are described by the code list LC_Macropattern. This component may be used to refine the metalanguage object corresponding to an LC_VegetationArtificiality object with respect to the artificiality of a specific vegetative layer to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_VegetationArtificiality"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_NaturalSurfaceCharacteristic -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_NaturalSurfaceCharacteristic">
+    <rdfs:label>LC_NaturalSurfaceCharacteristic</rdfs:label>
+    <skos:definition>The LC_NaturalSurfaceCharacteristic component is a subtype of LC_LandCoverElementCharacteristic. This component may be used to refine the metalanguage object corresponding to an LC_Element object with respect to an natural surface characteristic to permit the generation of a more specific land cover feature class in a land cover classification system. At the metalanguage level this class is empty but may be extended by registration.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_LandCoverElementCharacteristic"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_OrchardAndOtherPlantation -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_OrchardAndOtherPlantation">
+    <rdfs:label>LC_OrchardAndOtherPlantation</rdfs:label>
+    <skos:definition>The LC_OrchardAndOtherPlantation component metalanguage object is a subtype of LC_Plantation. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object, by indicating that it is orchard or other plantation, to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_Plantation"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_OverlapGrowingToReferenceCrop -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_OverlapGrowingToReferenceCrop">
+    <rdfs:label>LC_OverlapGrowingToReferenceCrop</rdfs:label>
+    <skos:definition>The component LC_OverlapGrowingToReferenceCrop is related to LC_CropGrowingParameter class by the relation .lt.i.gt.overlapGrowing.lt..sl.i.gt.. It has one optional attributes .lt.i.gt.growingPeriodPercentage.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.growingPeriodPercentag.lt..sl.i.gt. are described by the value object LC_PermittedPercentageValue. The component LC_OverlapGrowingToReferenceCrop may be used to refine the metalanguage object LC_CropGrowingParameter to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_OverlapGrowingToReferenceCrop.growingPeriodPercentage"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_OverlapGrowingToReferenceCrop.growingPeriodPercentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LC_PestControl -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_PestControl">
+    <rdfs:label>LC_PestControl</rdfs:label>
+    <skos:definition>The LC_PestControl metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has two optional attributes .lt.i.gt.frequency.lt..sl.i.gt. and .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.frequency.lt..sl.i.gt. are described by the values object LC_PermittedPosIntegerValue. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_PestControlType. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_PestControl.frequency"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_PestControl.frequency"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_PestControl.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_PestControl.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_PestControlType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: LC_Plantation -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Plantation">
+    <rdfs:label>LC_Plantation</rdfs:label>
+    <skos:definition>The LC_Plantation component metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has two subtypes LC_ForestPlantation and LC_OrchardAndOtherPlantation. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_PlantSpreadingGeometry -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_PlantSpreadingGeometry">
+    <rdfs:label>LC_PlantSpreadingGeometry</rdfs:label>
+    <skos:definition>The LC_PlantSpreadingGeometry metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_PlantSpreadingGeometryType. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_PlantSpreadingGeometry.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_PlantSpreadingGeometry.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_PlantSpreadingGeometryType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LC_Ploughing -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Ploughing">
+    <rdfs:label>LC_Ploughing</rdfs:label>
+    <skos:definition>The LC_Ploughing metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has two optional attributes .lt.i.gt.frequency.lt..sl.i.gt. and .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.frequency.lt..sl.i.gt. are described by the values object LC_PermittedPosIntegerValue. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the enumerated values object LC_PloughingType. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Ploughing.frequency"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Ploughing.frequency"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Ploughing.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_Ploughing.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_PloughingType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_SinglePlantSpecies -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SinglePlantSpecies">
+    <rdfs:label>LC_SinglePlantSpecies</rdfs:label>
+    <skos:definition>The LC_SinglePlantSpecies component metalanguage object is a subtype of LC_NameAttributionCriteria. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_SinglePlantSpeciesType.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_NameAttributionCriteria"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SinglePlantSpecies.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SinglePlantSpecies.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_SinglePlantSpecies"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: LC_SnowCategory -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SnowCategory">
+    <rdfs:label>LC_SnowCategory</rdfs:label>
+    <skos:definition>The LC_SnowCategory component metalanguage object is a subtype of LC_WaterAndAssociatedSurfacesCharacteristic component. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_SnowType. The component LC_SnowCategory may be used to refine the metalanguage object LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_WaterAndAssociatedSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SnowCategory.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SnowCategory.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_SnowType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_TreeAreaManagementPractices -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_TreeAreaManagementPractices">
+    <rdfs:label>LC_TreeAreaManagementPractices</rdfs:label>
+    <skos:definition>The LC_TreeAreaManagementPractise component is a subtype of LC_GrowthFormCharacteristic. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_TreeAreaManagementPracticesType. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to tree management practises to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TreeAreaManagementPractices.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TreeAreaManagementPractices.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_TreeAreaManagementPracticesType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LC_UnevenAge -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_UnevenAge">
+    <rdfs:label>LC_UnevenAge</rdfs:label>
+    <skos:definition>The LC_UnevenAge component is a subtype of LC_GrowthFormCharacteristic. It has one optional attribute .lt.i.gt.percentage.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.percentage.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. This attribute describes the percentage of each group of plants having the same age. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormAge class with respect to the age of a specific vegetative layer to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormAge"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_UnevenAge.percentage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_UnevenAge.percentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LC_UrbanPark -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_UrbanPark">
+    <rdfs:label>LC_UrbanPark</rdfs:label>
+    <skos:definition>The LC_UrbanPark component metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object, by indicating that it is an urban park, to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+  </owl:Class>
+
+  <!--+++++++++++++++-->
+  <!-- Class: LC_Use -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Use">
+    <rdfs:label>LC_Use</rdfs:label>
+    <skos:definition>The LC_Use component is a subtype of LC_ArtificialSurfaceCharacteristic. The different ways of describing use are user defined. Attributes may be established through registration. This component may be used to refine the metalanguage object corresponding to an entire LC_ArtificialSurfaceCharacteristic object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_ArtificialSurfaceCharacteristic"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_VegetationArtificiality -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_VegetationArtificiality">
+    <rdfs:label>LC_VegetationArtificiality</rdfs:label>
+    <skos:definition>The LC_VegetationArtificiality component is a subtype of LC_GrowthFormCharacteristic. It has two subtypes LC_NaturalOrSeminaturalVegetation and LC_CultivatedAndManagedVegetation. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to the artificiality of a specific vegetative layer to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: LC_VegetationDamage -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_VegetationDamage">
+    <rdfs:label>LC_VegetationDamage</rdfs:label>
+    <skos:definition>The LC_VegetationDamage component is a subtype of LC_GrowthFormCharacteristic. It has two attributes, .lt.i.gt.percentage.lt..sl.i.gt. and.lt.i.gt. .lt..sl.i.gt.optionally d.lt.i.gt.amageType.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.percentage.lt..sl.i.gt. are described by the value object LC_PermittedPercentageValue. The permitted values of the attribute .lt.i.gt.damageType.lt..sl.i.gt. are described by the enumerated value object LC_VegetationDamageType. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to water stress to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_VegetationDamage.percentage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_VegetationDamage.percentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_VegetationDamage.damageType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_VegetationDamage.damageType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_VegetationDamageType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_WaterAndAssociatedSurfaceCharacteristic -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_WaterAndAssociatedSurfaceCharacteristic">
+    <rdfs:label>LC_WaterAndAssociatedSurfaceCharacteristic</rdfs:label>
+    <skos:definition>The LC_WaterAndAssociatedSurfaceCharacteristic component is a subtype of LC_LandCoverElementCharacteristic. The LC_WaterAndAssociatedSurfacesCharacteristic metalanguage object is a component related to the LC_WaterBodyAndAssociatedSurfaceElement metalanguage object by the relation .lt.i.gt.waterBodyAndAssociatedSurfaceCharacteristic.lt..sl.i.gt.. It has six subtypes; .lt.i.gt.LC_Aquaculture, LC_Artificiality, LC_WaterSalinity, LC_SnowCategory, LC_IceCategory.lt..sl.i.gt. and LC_WaterChemistry. The component LC_WaterAndAssociatedSurfaceCharacteristic may be used to refine the metalanguage object LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in a land cover classification system. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_LandCoverElementCharacteristic"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: LC_WaterChemistry -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_WaterChemistry">
+    <rdfs:label>LC_WaterChemistry</rdfs:label>
+    <skos:definition>The LC_WaterChemistry component is a subtype of LC_WaterAndAssociatedSurfacesCharacteristic. It has one attribute; .lt.i.gt.nutrientLevel.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.nutrientLevel.lt..sl.i.gt..are described by the value object LC_NutrientLevel. This component may be used to refine the LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_WaterAndAssociatedSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterChemistry.nutrientLevel"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterChemistry.nutrientLevel"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_NutrientLevel"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: LC_WaterSalinity -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_WaterSalinity">
+    <rdfs:label>LC_WaterSalinity</rdfs:label>
+    <skos:definition>The LC_WaterSalinity component metalanguage object is a subtype of LC_WaterAndAssociatedSurfacesCharacteristic component. It has one optional attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_WaterSalinityType. The component LC_WaterSalinity may be used to refine the metalanguage object LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_WaterAndAssociatedSurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSalinity.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSalinity.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_WaterSalinityType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LC_WaterStress -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_WaterStress">
+    <rdfs:label>LC_WaterStress</rdfs:label>
+    <skos:definition>The LC_WaterStress component is a subtype of LC_GrowthFormCharacteristic. It has one optional attribute .lt.i.gt.percentage.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.percentage.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. This attribute describes the percentage of plants that are water stressed. This component may be used to refine the metalanguage object corresponding to an LC_GrowthFormCharacteristic object with respect to water stress to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_GrowthFormCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterStress.percentage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterStress.percentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: LC_WaterSupplyPeriod -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_WaterSupplyPeriod">
+    <rdfs:label>LC_WaterSupplyPeriod</rdfs:label>
+    <skos:definition>The LC_WaterSupplyPeriod metalanguage object is a subtype of LC_CultivatedAndManagedVegetation. It has four optional attributes .lt.i.gt.rainfedPercentage.lt..sl.i.gt., .lt.i.gt.postfloodingPercentage.lt..sl.i.gt., .lt.i.gt.irrigationPercentage.lt..sl.i.gt., and .lt.i.gt.irrigationType.lt..sl.i.gt.. The permitted values of the attributes .lt.i.gt.rainfedPercentage.lt..sl.i.gt., .lt.i.gt.postfloodingPercentage.lt..sl.i.gt., and .lt.i.gt.irrigationPercentage.lt..sl.i.gt. are described by the values object LC_PermittedPercentageValue. The permitted values of the attribute type are described by the code list LC_IrrigationType. This component may be used to refine the metalanguage object corresponding to an LC_CultivatedAndManagedVegetation object to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_CultivatedAndManagedVegetation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.rainfedPercentage"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.rainfedPercentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.postfloodingPercentage"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.postfloodingPercentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.irrigationPercentage"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.irrigationPercentage"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.irrigationType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_WaterSupplyPeriod.irrigationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_IrrigationType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_AllometricMeasurements.trunkDiameter -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_AllometricMeasurements.trunkDiameter">
+    <rdfs:label>trunkDiameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_AllometricMeasurements"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_AllometricMeasurements.crownDiameter -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_AllometricMeasurements.crownDiameter">
+    <rdfs:label>crownDiameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_AllometricMeasurements"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_Aquaculture.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_Aquaculture.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_Aquaculture"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_AquacultureType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_ArtificialSurfaceDamage.percentage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_ArtificialSurfaceDamage.percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ArtificialSurfaceDamage"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_ArtificialSurfaceDamage.damageType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_ArtificialSurfaceDamage.damageType">
+    <rdfs:label>damageType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ArtificialSurfaceDamage"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_ArtificialityType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_Artificiality.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_Artificiality.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_Artificiality"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_ArtificialityType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_BurntStatus.percentage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_BurntStatus.percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_BurntStatus"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_ConstructionStatus.age -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_ConstructionStatus.age">
+    <rdfs:label>age</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ConstructionStatus"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_ConstructionStatus.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_ConstructionStatus.age">
+    <rdfs:label>age</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ConstructionStatus"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_ConstructionStatusType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_CropFertilization.frequency -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_CropFertilization.frequency">
+    <rdfs:label>frequency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_CropFertilization"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_CropFertilization.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_CropFertilization.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_CropFertilization"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_CropFertilizationType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_CropGrowingParameter.seedingTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_CropGrowingParameter.seedingTime">
+    <rdfs:label>seedingTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_CropGrowingParameter"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_CropGrowingParameter.growingLength -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_CropGrowingParameter.growingLength">
+    <rdfs:label>growingLength</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_CropGrowingParameter"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerRange"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_CropGrowingParameter.overlapGrowing -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_CropGrowingParameter.overlapGrowing">
+    <rdfs:label>overlapGrowing</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_CropGrowingParameter"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_CropGrowingParameter.theLC_OverlapGrowingToReferenceCrop -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_CropGrowingParameter.theLC_OverlapGrowingToReferenceCrop">
+    <rdfs:label>theLC_OverlapGrowingToReferenceCrop</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_CropGrowingParameter"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_OverlapGrowingToReferenceCrop"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_CropYield.yield -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_CropYield.yield">
+    <rdfs:label>yield</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_CropYield"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_DeadStatus.percentage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_DeadStatus.percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_DeadStatus"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_FieldSize.size -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_FieldSize.size">
+    <rdfs:label>size</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_FieldSize"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_FloristicAspects.speciesName -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_FloristicAspects.speciesName">
+    <rdfs:label>speciesName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_FloristicAspects"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_SpeciesName"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_FloristicAspects.theLC_NameAttributionCriteria -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_FloristicAspects.theLC_NameAttributionCriteria">
+    <rdfs:label>theLC_NameAttributionCriteria</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_FloristicAspects"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_NameAttributionCriteria"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_Grazing.animalType -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_Grazing.animalType">
+    <rdfs:label>animalType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_Grazing"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_GrazingAnimalType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_Grazing.intensity -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_Grazing.intensity">
+    <rdfs:label>intensity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_Grazing"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_GroupOfPlantSpecies.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_GroupOfPlantSpecies.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_GroupOfPlantSpecies"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_GroupOfPlantSpecies"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_GrowthFormAge.age -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_GrowthFormAge.age">
+    <rdfs:label>age</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_GrowthFormAge"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosRealValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_GrowthFormIllness.percentage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_GrowthFormIllness.percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_GrowthFormIllness"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_GrowthFormIllness.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_GrowthFormIllness.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_GrowthFormIllness"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_GrowthFormIllnessType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_IceCategory.type -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_IceCategory.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_IceCategory"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_IceCategoryType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_MechanicalErosionControl.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_MechanicalErosionControl.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_MechanicalErosionControl"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_MechanicalErosionControlType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_OverlapGrowingToReferenceCrop.growingPeriodPercentage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_OverlapGrowingToReferenceCrop.growingPeriodPercentage">
+    <rdfs:label>growingPeriodPercentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_OverlapGrowingToReferenceCrop"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_PestControl.frequency -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_PestControl.frequency">
+    <rdfs:label>frequency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_PestControl"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_PestControl.type -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_PestControl.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_PestControl"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_PestControlType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_PlantSpreadingGeometry.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_PlantSpreadingGeometry.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_PlantSpreadingGeometry"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_PlantSpreadingGeometryType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_Ploughing.frequency -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_Ploughing.frequency">
+    <rdfs:label>frequency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_Ploughing"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPosIntegerValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_Ploughing.type -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_Ploughing.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_Ploughing"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_PloughingType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_SinglePlantSpecies.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_SinglePlantSpecies.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_SinglePlantSpecies"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_SinglePlantSpecies"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_SnowCategory.type -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_SnowCategory.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_SnowCategory"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_SnowType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_TreeAreaManagementPractices.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_TreeAreaManagementPractices.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_TreeAreaManagementPractices"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_TreeAreaManagementPracticesType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_UnevenAge.percentage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_UnevenAge.percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_UnevenAge"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_VegetationDamage.percentage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_VegetationDamage.percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_VegetationDamage"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_VegetationDamage.damageType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_VegetationDamage.damageType">
+    <rdfs:label>damageType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_VegetationDamage"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_VegetationDamageType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_WaterChemistry.nutrientLevel -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_WaterChemistry.nutrientLevel">
+    <rdfs:label>nutrientLevel</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_WaterChemistry"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_NutrientLevel"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_WaterSalinity.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_WaterSalinity.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_WaterSalinity"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_WaterSalinityType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_WaterStress.percentage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_WaterStress.percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_WaterStress"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_WaterSupplyPeriod.rainfedPercentage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_WaterSupplyPeriod.rainfedPercentage">
+    <rdfs:label>rainfedPercentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_WaterSupplyPeriod"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_WaterSupplyPeriod.postfloodingPercentage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_WaterSupplyPeriod.postfloodingPercentage">
+    <rdfs:label>postfloodingPercentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_WaterSupplyPeriod"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_WaterSupplyPeriod.irrigationPercentage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_WaterSupplyPeriod.irrigationPercentage">
+    <rdfs:label>irrigationPercentage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_WaterSupplyPeriod"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_WaterSupplyPeriod.irrigationType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_WaterSupplyPeriod.irrigationType">
+    <rdfs:label>irrigationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_WaterSupplyPeriod"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_IrrigationType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_AquacultureType -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_AquacultureType">
+    <rdfs:label>LC_AquacultureType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_AquacultureType">
+    <skos:prefLabel>LC_AquacultureType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_AquacultureType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_AquacultureTypeCollection">
+    <skos:prefLabel>LC_AquacultureType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_ArtificialDamageType -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ArtificialDamageType">
+    <rdfs:label>LC_ArtificialDamageType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_ArtificialDamageType">
+    <skos:prefLabel>LC_ArtificialDamageType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_ArtificialDamageType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_ArtificialDamageTypeCollection">
+    <skos:prefLabel>LC_AquacultureType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_ArtificialityType -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ArtificialityType">
+    <rdfs:label>LC_ArtificialityType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_ArtificialityType">
+    <skos:prefLabel>LC_ArtificialityType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_ArtificialityType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_ArtificialityType rdf:about="&iso19144-2Code;LC_ArtificialityType/natural">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>natural</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ArtificialityType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ArtificialityType>
+  <iso19144-2:LC_ArtificialityType rdf:about="&iso19144-2Code;LC_ArtificialityType/artificial">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>artificial</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ArtificialityType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ArtificialityType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_ArtificialityTypeCollection">
+    <skos:prefLabel>LC_ArtificialityType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ArtificialityType/natural"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ArtificialityType/artificial"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_ConstructionStatusType -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ConstructionStatusType">
+    <rdfs:label>LC_ConstructionStatusType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_ConstructionStatusType">
+    <skos:prefLabel>LC_ConstructionStatusType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_ConstructionStatusType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_ConstructionStatusType rdf:about="&iso19144-2Code;LC_ConstructionStatusType/finished">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>finished</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ConstructionStatusType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ConstructionStatusType>
+  <iso19144-2:LC_ConstructionStatusType rdf:about="&iso19144-2Code;LC_ConstructionStatusType/in_progress">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>in_progress</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ConstructionStatusType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ConstructionStatusType>
+  <iso19144-2:LC_ConstructionStatusType rdf:about="&iso19144-2Code;LC_ConstructionStatusType/abandoned">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>abandoned</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ConstructionStatusType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ConstructionStatusType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_ConstructionStatusTypeCollection">
+    <skos:prefLabel>LC_ConstructionStatusType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/finished"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/in_progress"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/abandoned"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_CropFertilizationType -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_CropFertilizationType">
+    <rdfs:label>LC_CropFertilizationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_CropFertilizationType">
+    <skos:prefLabel>LC_CropFertilizationType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_CropFertilizationType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_CropFertilizationType rdf:about="&iso19144-2Code;LC_CropFertilizationType/organic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>organic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_CropFertilizationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_CropFertilizationType>
+  <iso19144-2:LC_CropFertilizationType rdf:about="&iso19144-2Code;LC_CropFertilizationType/inorganic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>inorganic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_CropFertilizationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_CropFertilizationType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_CropFertilizationTypeCollection">
+    <skos:prefLabel>LC_CropFertilizationType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_CropFertilizationType/organic"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_CropFertilizationType/inorganic"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_GrazingAnimalType -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GrazingAnimalType">
+    <rdfs:label>LC_GrazingAnimalType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_GrazingAnimalType">
+    <skos:prefLabel>LC_GrazingAnimalType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_GrazingAnimalType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_GrazingAnimalType">
+    <skos:prefLabel>LC_AquacultureType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_GroupOfPlantSpeciesType -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GroupOfPlantSpeciesType">
+    <rdfs:label>LC_GroupOfPlantSpeciesType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_GroupOfPlantSpeciesType">
+    <skos:prefLabel>LC_GroupOfPlantSpeciesType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_GroupOfPlantSpeciesType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_GroupOfPlantSpeciesType rdf:about="&iso19144-2Code;LC_GroupOfPlantSpeciesType/statisticallyDerivedPlantGroup">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>statisticallyDerivedPlantGroup</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_GroupOfPlantSpeciesType>
+  <iso19144-2:LC_GroupOfPlantSpeciesType rdf:about="&iso19144-2Code;LC_GroupOfPlantSpeciesType/NonStatisticallyDerivedPlantGroup">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>NonStatisticallyDerivedPlantGroup</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_GroupOfPlantSpeciesType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_GroupOfPlantSpeciesTypeCollection">
+    <skos:prefLabel>LC_GroupOfPlantSpeciesType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType/statisticallyDerivedPlantGroup"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType/NonStatisticallyDerivedPlantGroup"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_GrowthFormIllnessType -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GrowthFormIllnessType">
+    <rdfs:label>LC_GrowthFormIllnessType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_GrowthFormIllnessType">
+    <skos:prefLabel>LC_GrowthFormIllnessType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_GrowthFormIllnessType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_GrowthFormIllnessTypeCollection">
+    <skos:prefLabel>LC_GrowthFormIllnessType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Codelist: LC_IceType -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_IceType">
+    <rdfs:label>LC_IceType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_IceType">
+    <skos:prefLabel>LC_IceType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_IceType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_IceTypeCollection">
+    <skos:prefLabel>LC_IceType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_IrrigationType -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_IrrigationType">
+    <rdfs:label>LC_IrrigationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_IrrigationType">
+    <skos:prefLabel>LC_IrrigationType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_IrrigationType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_IrrigationType rdf:about="&iso19144-2Code;LC_IrrigationType/surface">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>surface</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_IrrigationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_IrrigationType>
+  <iso19144-2:LC_IrrigationType rdf:about="&iso19144-2Code;LC_IrrigationType/sprinkler">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>sprinkler</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_IrrigationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_IrrigationType>
+  <iso19144-2:LC_IrrigationType rdf:about="&iso19144-2Code;LC_IrrigationType/drip">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>drip</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_IrrigationType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_IrrigationType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_IrrigationTypeCollection">
+    <skos:prefLabel>LC_IrrigationType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_IrrigationType/surface"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_IrrigationType/sprinkler"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_IrrigationType/drip"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_MechanicalErosionControlType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_MechanicalErosionControlType">
+    <rdfs:label>LC_MechanicalErosionControlType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_MechanicalErosionControlType">
+    <skos:prefLabel>LC_MechanicalErosionControlType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_MechanicalErosionControlType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_MechanicalErosionControlType rdf:about="&iso19144-2Code;LC_MechanicalErosionControlType/contourPloughing">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>contourPloughing</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_MechanicalErosionControlType>
+  <iso19144-2:LC_MechanicalErosionControlType rdf:about="&iso19144-2Code;LC_MechanicalErosionControlType/terracing">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>terracing</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_MechanicalErosionControlType>
+  <iso19144-2:LC_MechanicalErosionControlType rdf:about="&iso19144-2Code;LC_MechanicalErosionControlType/windBreak">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>windBreak</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_MechanicalErosionControlType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_MechanicalErosionControlTypeCollection">
+    <skos:prefLabel>LC_MechanicalErosionControlType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/contourPloughing"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/terracing"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/windBreak"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_NutrientLevel -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_NutrientLevel">
+    <rdfs:label>LC_NutrientLevel</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_NutrientLevel">
+    <skos:prefLabel>LC_NutrientLevel - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_NutrientLevel"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_NutrientLevel rdf:about="&iso19144-2Code;LC_NutrientLevel/oligotrophic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>oligotrophic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_NutrientLevel"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_NutrientLevel>
+  <iso19144-2:LC_NutrientLevel rdf:about="&iso19144-2Code;LC_NutrientLevel/mesotrophic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>mesotrophic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_NutrientLevel"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_NutrientLevel>
+  <iso19144-2:LC_NutrientLevel rdf:about="&iso19144-2Code;LC_NutrientLevel/eutrophic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>eutrophic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_NutrientLevel"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_NutrientLevel>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_NutrientLevelCollection">
+    <skos:prefLabel>LC_NutrientLevel - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_NutrientLevel/oligotrophic"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_NutrientLevel/mesotrophic"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_NutrientLevel/eutrophic"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_PestControlType -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_PestControlType">
+    <rdfs:label>LC_PestControlType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_PestControlType">
+    <skos:prefLabel>LC_PestControlType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_PestControlType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_PestControlType rdf:about="&iso19144-2Code;LC_PestControlType/organic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>organic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_PestControlType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_PestControlType>
+  <iso19144-2:LC_PestControlType rdf:about="&iso19144-2Code;LC_PestControlType/inorganic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>inorganic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_PestControlType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_PestControlType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_PestControlTypeCollection">
+    <skos:prefLabel>LC_PestControlType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_PestControlType/organic"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_PestControlType/inorganic"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_PlantSpreadingGeometryType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_PlantSpreadingGeometryType">
+    <rdfs:label>LC_PlantSpreadingGeometryType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_PlantSpreadingGeometryType">
+    <skos:prefLabel>LC_PlantSpreadingGeometryType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_PlantSpreadingGeometryType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_PlantSpreadingGeometryType rdf:about="&iso19144-2Code;LC_PlantSpreadingGeometryType/regular">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>regular</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_PlantSpreadingGeometryType>
+  <iso19144-2:LC_PlantSpreadingGeometryType rdf:about="&iso19144-2Code;LC_PlantSpreadingGeometryType/irregular">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>irregular</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_PlantSpreadingGeometryType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_PlantSpreadingGeometryTypeCollection">
+    <skos:prefLabel>LC_PlantSpreadingGeometryType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType/regular"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType/irregular"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_PloughingType -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_PloughingType">
+    <rdfs:label>LC_PloughingType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_PloughingType">
+    <skos:prefLabel>LC_PloughingType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_PloughingType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_PloughingType rdf:about="&iso19144-2Code;LC_PloughingType/manual">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>manual</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_PloughingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_PloughingType>
+  <iso19144-2:LC_PloughingType rdf:about="&iso19144-2Code;LC_PloughingType/manual.sl.animal">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>manual.sl.animal</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_PloughingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_PloughingType>
+  <iso19144-2:LC_PloughingType rdf:about="&iso19144-2Code;LC_PloughingType/mechanical">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>mechanical</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_PloughingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_PloughingType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_PloughingTypeCollection">
+    <skos:prefLabel>LC_PloughingType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_PloughingType/manual"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_PloughingType/manual.sl.animal"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_PloughingType/mechanical"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_SinglePlantSpeciesType -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SinglePlantSpeciesType">
+    <rdfs:label>LC_SinglePlantSpeciesType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_SinglePlantSpeciesType">
+    <skos:prefLabel>LC_SinglePlantSpeciesType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_SinglePlantSpeciesType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_SinglePlantSpeciesType rdf:about="&iso19144-2Code;LC_SinglePlantSpeciesType/dominant">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>dominant</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_SinglePlantSpeciesType>
+  <iso19144-2:LC_SinglePlantSpeciesType rdf:about="&iso19144-2Code;LC_SinglePlantSpeciesType/mostFrequent">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>mostFrequent</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_SinglePlantSpeciesType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_SinglePlantSpeciesTypeCollection">
+    <skos:prefLabel>LC_SinglePlantSpeciesType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType/dominant"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType/mostFrequent"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Codelist: LC_SnowType -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SnowType">
+    <rdfs:label>LC_SnowType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_SnowType">
+    <skos:prefLabel>LC_SnowType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_SnowType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_SnowTypeCollection">
+    <skos:prefLabel>LC_SnowType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_SpeciesName -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SpeciesName">
+    <rdfs:label>LC_SpeciesName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_SpeciesName">
+    <skos:prefLabel>LC_SpeciesName - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_SpeciesName"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_SpeciesNameCollection">
+    <skos:prefLabel>LC_SpeciesName - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_TreeAreaManagementPracticesType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_TreeAreaManagementPracticesType">
+    <rdfs:label>LC_TreeAreaManagementPracticesType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_TreeAreaManagementPracticesType">
+    <skos:prefLabel>LC_TreeAreaManagementPracticesType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_TreeAreaManagementPracticesType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_TreeAreaManagementPracticesType rdf:about="&iso19144-2Code;LC_TreeAreaManagementPracticesType/evenAgedManagement">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>evenAgedManagement</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_TreeAreaManagementPracticesType>
+  <iso19144-2:LC_TreeAreaManagementPracticesType rdf:about="&iso19144-2Code;LC_TreeAreaManagementPracticesType/clearcutting">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>clearcutting</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_TreeAreaManagementPracticesType>
+  <iso19144-2:LC_TreeAreaManagementPracticesType rdf:about="&iso19144-2Code;LC_TreeAreaManagementPracticesType/seedTreeHarvesting">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>seedTreeHarvesting</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_TreeAreaManagementPracticesType>
+  <iso19144-2:LC_TreeAreaManagementPracticesType rdf:about="&iso19144-2Code;LC_TreeAreaManagementPracticesType/unevenAgedManagement">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>unevenAgedManagement</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_TreeAreaManagementPracticesType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_TreeAreaManagementPracticesTypeCollection">
+    <skos:prefLabel>LC_TreeAreaManagementPracticesType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/evenAgedManagement"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/clearcutting"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/seedTreeHarvesting"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/unevenAgedManagement"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_VegetationDamageType -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_VegetationDamageType">
+    <rdfs:label>LC_VegetationDamageType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_VegetationDamageType">
+    <skos:prefLabel>LC_VegetationDamageType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_VegetationDamageType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_VegetationDamageType">
+    <skos:prefLabel>LC_VegetationDamageType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_WaterSalinityType -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_WaterSalinityType">
+    <rdfs:label>LC_WaterSalinityType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_WaterSalinityType">
+    <skos:prefLabel>LC_WaterSalinityType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_WaterSalinityType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_WaterSalinityType rdf:about="&iso19144-2Code;LC_WaterSalinityType/fresh">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>fresh</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_WaterSalinityType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_WaterSalinityType>
+  <iso19144-2:LC_WaterSalinityType rdf:about="&iso19144-2Code;LC_WaterSalinityType/brackish">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>brackish</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_WaterSalinityType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_WaterSalinityType>
+  <iso19144-2:LC_WaterSalinityType rdf:about="&iso19144-2Code;LC_WaterSalinityType/saline">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>saline</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_WaterSalinityType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_WaterSalinityType>
+  <iso19144-2:LC_WaterSalinityType rdf:about="&iso19144-2Code;LC_WaterSalinityType/brine">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>brine</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_WaterSalinityType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_WaterSalinityType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_WaterSalinityTypeCollection">
+    <skos:prefLabel>LC_WaterSalinityType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/fresh"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/brackish"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/saline"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/brine"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+

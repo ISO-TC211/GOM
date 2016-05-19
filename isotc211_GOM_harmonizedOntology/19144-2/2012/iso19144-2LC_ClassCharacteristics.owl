@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19144-2_722 "http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes#" >
+  <!ENTITY iso19144-2_717 "http://def.isotc211.org/iso19144/-2/2012/LC_LandCoverClassStructure#" >
+  <!ENTITY iso19144-2 "http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics#" >
+  <!ENTITY iso19144-2Code "http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19144-2LC_ClassCharacteristics.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL             -->
+  <!-- Generator version: 2.5                                   -->
+  <!-- File date:         12-4-2016                             -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics#"
+  xml:base="http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19144-2_722="http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes#"
+  xmlns:iso19144-2_717="http://def.isotc211.org/iso19144/-2/2012/LC_LandCoverClassStructure#"
+  xmlns:iso19144-2="http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics#"
+  xmlns:iso19144-2Code="http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19144-2:2012 LC_ClassCharacteristics -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics">
+    <rdfs:label>ISO 19144-2:2012 LC_ClassCharacteristics</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19144/-2/ed-1/en/</dct:source>
+    <owl:versionInfo>2012-07-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19144/-2/2012/LC_LandCoverClassStructure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: LC_Climate -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_Climate">
+    <rdfs:label>LC_Climate</rdfs:label>
+    <skos:definition>The LC_Climate component is a subtype of LC_ClassCharacteristic. Climate is the state, including a statistical description, of the climate system. The different methods of describing climate are user defined. At the metalanguage level this list is empty, but it may be populated through registration. This component may be used to refine the metalanguage object corresponding to an entire LC_LandCover class with respect to climate to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2_717;LC_ClassCharacteristic"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_GeographicalAspects -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GeographicalAspects">
+    <rdfs:label>LC_GeographicalAspects</rdfs:label>
+    <skos:definition>The LC_GeographicalAspects component is a subtype of LC_ClassCharacteristic. It has one attribute .lt.i.gt.geoType.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.geoType.lt..sl.i.gt. is described by the code list LC_GeoType. This component may be used to refine the metalanguage object corresponding to an entire LC_LandCover class with respect to the geographic aspect to permit the generation of a more specific land cover feature class in a land cover classification system. The LC_GeographicAspect component describes the characteristics of a particular class that have a well known geographic type that is not land cover specific.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2_717;LC_ClassCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GeographicalAspects.geoType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_GeographicalAspects.geoType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_GeoType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: LC_LandForm -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_LandForm">
+    <rdfs:label>LC_LandForm</rdfs:label>
+    <skos:definition>The LC_LandForm component is a subtype of LC_ClassCharacteristic. It has one attribute .lt.i.gt.type.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.type.lt..sl.i.gt. are described by the code list LC_LandFormType. This component may be used to refine the metaobject corresponding to an entire LC_LandCover class with respect to land form to permit the generation of a more specific land cover feature class in an LCCS.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2_717;LC_ClassCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_LandForm.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_LandForm.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_LandformType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_RocksSurfaceCharacteristic -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_RocksSurfaceCharacteristic">
+    <rdfs:label>LC_RocksSurfaceCharacteristic</rdfs:label>
+    <skos:definition>The LC_RocksSurfaceCharacteristic metalanguage object is a subtype of LC_SurfaceCharacteristic. It has two optional attributes, .lt.i.gt.rockType.lt..sl.i.gt. and .lt.i.gt.rockAgeType.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.rockType.lt..sl.i.gt. are described by the code list LC_RockType. The permitted values of the attribute .lt.i.gt.rockAgeType.lt..sl.i.gt. are described by the code list LC_RockAgeType. This component may be used to refine the LC_LandCoverDescriptor metalanguage object corresponding to an entire LC_LandCoverClass with respect to rocks and hardpan surface characteristics to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_SurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_RocksSurfaceCharacteristic.rockType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_RocksSurfaceCharacteristic.rockType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_RockType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_RocksSurfaceCharacteristic.rockAgeType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_RocksSurfaceCharacteristic.rockAgeType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_RockAgeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_SoilSandDepositsSurfaceCharacteristic -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic">
+    <rdfs:label>LC_SoilSandDepositsSurfaceCharacteristic</rdfs:label>
+    <skos:definition>The LC_SoilSandDepositsSurfaceCharacteristic metalanguage object is a subtype of LC_SurfaceCharacteristic. It has three optional attributes: .lt.i.gt.soilType,.lt..sl.i.gt. .lt.i.gt.erosionType .lt..sl.i.gt.and.lt.i.gt. sedimentationType.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.soilType.lt..sl.i.gt. are described by the code list LC_SoilType. The permitted values of the attribute .lt.i.gt.erosionType.lt..sl.i.gt. are described by the code list LC_ErosionType. The permitted values of the attribute .lt.i.gt.sedimentationType.lt..sl.i.gt. are described by the code list LC_SedimentationType. This component may be used to refine the LC_LandCoverDescriptor metalanguage object corresponding to an entire LC_LandCoverClass with respect to unconsolidated surface characteristics to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2;LC_SurfaceCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.soilType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.soilType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_SoilType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.erosionType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.erosionType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_ErosionType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.sedimentationType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.sedimentationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_SedimentationType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_SurfaceCharacteristic -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SurfaceCharacteristic">
+    <rdfs:label>LC_SurfaceCharacteristic</rdfs:label>
+    <skos:definition>The LC_SurfaceCharacteristic component is a subtype of LC_ClassCharacteristic. It has two subtypes, .lt.i.gt.LC_RocksCharacteristic.lt..sl.i.gt. and.lt.i.gt. .lt..sl.i.gt..lt.i.gt.LC_UnconsolidatedSedimentsCharacteristic.lt..sl.i.gt..</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2_717;LC_ClassCharacteristic"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_TopographicalAspects -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_TopographicalAspects">
+    <rdfs:label>LC_TopographicalAspects</rdfs:label>
+    <skos:definition>The LC_TopographicalAspects component is a subtype of LC_ClassCharacteristic. It has three optional attributes; .lt.i.gt.altitude.lt..sl.i.gt., .lt.i.gt.slope.lt..sl.i.gt. and .lt.i.gt.slopeExposition.lt..sl.i.gt.. The permitted values of the attribute .lt.i.gt.altitude.lt..sl.i.gt. are described by the value object LC_PermittedRealValue. The permitted values of the attribute .lt.i.gt.slope.lt..sl.i.gt. are described by the value object LC_PermittedPercentageValue. The permitted values of the attribute .lt.i.gt.slopeExposition.lt..sl.i.gt. are described by the code list LC_SlopeExposition. This component may be used to refine the LC_LandCoverDescriptor metalanguage object corresponding to an entire LC_LandCoverClass with respect to topographical aspects to permit the generation of a more specific land cover feature class in a land cover classification system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19144-2_717;LC_ClassCharacteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TopographicalAspects.altitude"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TopographicalAspects.altitude"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedRealValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TopographicalAspects.slope"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TopographicalAspects.slope"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TopographicalAspects.slopeExposition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_TopographicalAspects.slopeExposition"/>
+        <owl:allValuesFrom rdf:resource="&iso19144-2;LC_SlopeExposition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_GeographicalAspects.geoType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_GeographicalAspects.geoType">
+    <rdfs:label>geoType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_GeographicalAspects"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_GeoType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_LandForm.type -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_LandForm.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_LandForm"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_LandformType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_RocksSurfaceCharacteristic.rockType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_RocksSurfaceCharacteristic.rockType">
+    <rdfs:label>rockType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_RocksSurfaceCharacteristic"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_RockType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_RocksSurfaceCharacteristic.rockAgeType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_RocksSurfaceCharacteristic.rockAgeType">
+    <rdfs:label>rockAgeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_RocksSurfaceCharacteristic"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_RockAgeType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_SoilSandDepositsSurfaceCharacteristic.soilType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.soilType">
+    <rdfs:label>soilType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_SoilType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_SoilSandDepositsSurfaceCharacteristic.erosionType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.erosionType">
+    <rdfs:label>erosionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_ErosionType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_SoilSandDepositsSurfaceCharacteristic.sedimentationType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic.sedimentationType">
+    <rdfs:label>sedimentationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_SoilSandDepositsSurfaceCharacteristic"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_SedimentationType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_TopographicalAspects.altitude -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_TopographicalAspects.altitude">
+    <rdfs:label>altitude</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_TopographicalAspects"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedRealValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_TopographicalAspects.slope -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_TopographicalAspects.slope">
+    <rdfs:label>slope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_TopographicalAspects"/>
+    <rdfs:range rdf:resource="&iso19144-2_722;LC_PermittedPercentageValue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LC_TopographicalAspects.slopeExposition -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_TopographicalAspects.slopeExposition">
+    <rdfs:label>slopeExposition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_TopographicalAspects"/>
+    <rdfs:range rdf:resource="&iso19144-2;LC_SlopeExposition"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_ErosionType -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ErosionType">
+    <rdfs:label>LC_ErosionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_ErosionType">
+    <skos:prefLabel>LC_ErosionType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_ErosionType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_ErosionType rdf:about="&iso19144-2Code;LC_ErosionType/waterErosionSheet">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>waterErosionSheet</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ErosionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ErosionType>
+  <iso19144-2:LC_ErosionType rdf:about="&iso19144-2Code;LC_ErosionType/waterErosionRill">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>waterErosionRill</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ErosionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ErosionType>
+  <iso19144-2:LC_ErosionType rdf:about="&iso19144-2Code;LC_ErosionType/waterErosionGully">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>waterErosionGully</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ErosionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ErosionType>
+  <iso19144-2:LC_ErosionType rdf:about="&iso19144-2Code;LC_ErosionType/gravityErosion">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>gravityErosion</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ErosionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ErosionType>
+  <iso19144-2:LC_ErosionType rdf:about="&iso19144-2Code;LC_ErosionType/iceErosion">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>iceErosion</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_ErosionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_ErosionType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_ErosionTypeCollection">
+    <skos:prefLabel>LC_ErosionType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionSheet"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionRill"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionGully"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/gravityErosion"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/iceErosion"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Codelist: LC_GeoType -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_GeoType">
+    <rdfs:label>LC_GeoType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_GeoType">
+    <skos:prefLabel>LC_GeoType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_GeoType"/>
+  </skos:ConceptScheme>
+  <iso19144-2:LC_GeoType rdf:about="&iso19144-2Code;LC_GeoType/beach">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>beach</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_GeoType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_GeoType>
+  <iso19144-2:LC_GeoType rdf:about="&iso19144-2Code;LC_GeoType/bay">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>bay</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_GeoType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_GeoType>
+  <iso19144-2:LC_GeoType rdf:about="&iso19144-2Code;LC_GeoType/estuary">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>estuary</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_GeoType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_GeoType>
+  <iso19144-2:LC_GeoType rdf:about="&iso19144-2Code;LC_GeoType/shore">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>shore</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19144-2Code;LC_GeoType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+  </iso19144-2:LC_GeoType>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_GeoTypeCollection">
+    <skos:prefLabel>LC_GeoType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/beach"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/bay"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/estuary"/>
+      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/shore"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_LandformType -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_LandformType">
+    <rdfs:label>LC_LandformType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_LandformType">
+    <skos:prefLabel>LC_LandformType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_LandformType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_LandformTypeCollection">
+    <skos:prefLabel>LC_LandformType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_RockAgeType -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_RockAgeType">
+    <rdfs:label>LC_RockAgeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_RockAgeType">
+    <skos:prefLabel>LC_RockAgeType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_RockAgeType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_RockAgeTypeCollection">
+    <skos:prefLabel>LC_RockAgeType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Codelist: LC_RockType -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_RockType">
+    <rdfs:label>LC_RockType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_RockType">
+    <skos:prefLabel>LC_RockType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_RockType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_RockTypeCollection">
+    <skos:prefLabel>LC_RockType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_SedimentationType -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SedimentationType">
+    <rdfs:label>LC_SedimentationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_SedimentationType">
+    <skos:prefLabel>LC_SedimentationType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_SedimentationType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_SedimentationTypeCollection">
+    <skos:prefLabel>LC_SedimentationType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: LC_SlopeExposition -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SlopeExposition">
+    <rdfs:label>LC_SlopeExposition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_SlopeExposition">
+    <skos:prefLabel>LC_SlopeExposition - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_SlopeExposition"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_SlopeExpositionCollection">
+    <skos:prefLabel>LC_SlopeExposition - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Codelist: LC_SoilType -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_SoilType">
+    <rdfs:label>LC_SoilType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19144-2Code;LC_SoilType">
+    <skos:prefLabel>LC_SoilType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19144-2;LC_SoilType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_SoilTypeCollection">
+    <skos:prefLabel>LC_SoilType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
