@@ -1,0 +1,217 @@
+@base          <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals> .
+@prefix swon:  <http://uispin.org/swon#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix spr:   <http://spinrdf.org/spr#> .
+@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix spl:   <http://spinrdf.org/spl#> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix tbi:   <http://tbi.topbraid.org/tbi#> .
+@prefix spif:  <http://spinrdf.org/spif#> .
+@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
+@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix pf:    <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix jfn:   <java:com.hp.hpl.jena.sparql.function.library.> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix spra:  <http://spinrdf.org/spra#> .
+@prefix common: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix constraint: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix spin:  <http://spinrdf.org/spin#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix connectset-templates: <http://tbi.topbraidlive.org/system/connectset-templates#> .
+@prefix ui:    <http://uispin.org/ui#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix fc:    <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix orph_1287: <http://def.isotc211.org/orphansOrphans#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix shaclify: <http://topbraid.org/shacl/shaclify#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix metextinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix afn:   <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
+@prefix raci:  <http://topbraid.org/raci#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
+@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
+@prefix metadata: <http://topbraid.org/metadata#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix tops:  <http://www.topbraid.org/tops#> .
+@prefix sm:    <http://topbraid.org/sparqlmotion#> .
+@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix sp:    <http://spinrdf.org/sp#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/> .
+@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix lineage: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix iso19108_891: <http://def.isotc211.org/iso19108/2006/TemporalObjects#> .
+@prefix iso19139_709: <http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix iso19111_1300: <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix uix:   <http://topbraidlive.org/uix#> .
+@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix iso19103_2176: <http://def.isotc211.org/iso19103/2015/RecordTypes#> .
+@prefix iso19103_2174: <http://def.isotc211.org/iso19103/2015/NameTypes#> .
+@prefix iso03166_66: <http://def.isotc211.org/iso03166/-1/CountryCodes#> .
+@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+@prefix iso19115-1_2364: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix iso19115-1_2375: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix iso19115-1_2374: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19115-1_2368: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix iso19115-1_2369: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix iso19115-1_2366: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix iso19103_2178: <http://def.isotc211.org/iso19103/2015/WebEnvironment#> .
+@prefix iso19115-1_2367: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix iso19103_2179: <http://def.isotc211.org/iso19103/2015/MeasureTypes#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iso19157_1164: <http://def.isotc211.org/iso19157/2013/DataQuality#> .
+@prefix iso19115-1_2371: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix iso19115-1_2360: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix iso19115-1_2370: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix iso19115-1_2359: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix sml:   <http://topbraid.org/sparqlmotionlib#> .
+@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix iso19103_2168: <http://def.isotc211.org/iso19103/2015/DateAndTime#> .
+@prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix smf:   <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix html:  <http://uispin.org/html#> .
+@prefix swa:   <http://topbraid.org/swa#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/enumeration>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "enumeration" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "enumeration" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/integer>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "integer" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "integer" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/class>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "class" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "class" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/abstractClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "abstractClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "abstractClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/typeClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "typeClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "typeClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/codelistElement>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "codelistElement" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "codelistElement" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/metaClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "metaClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "metaClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/datatypeClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "datatypeClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "datatypeClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/specifiedClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "specifiedClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "specifiedClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/aggregateClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "aggregateClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "aggregateClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/unionClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "unionClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "unionClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/association>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "association" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "association" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/codelist>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "codelist" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "codelist" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/interfaceClass>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "interfaceClass" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "interfaceClass" .
+
+<MetadataExtensionInformation/code/MD_DatatypeCode/characterString>
+        a                 iso19115-1_2373:MD_DatatypeCode , skos:Concept ;
+        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:label        "characterString" ;
+        skos:inScheme     iso19115-1Code:MD_DatatypeCode ;
+        skos:prefLabel    "characterString" .
