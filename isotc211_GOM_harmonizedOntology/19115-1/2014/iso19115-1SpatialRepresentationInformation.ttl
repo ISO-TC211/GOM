@@ -769,6 +769,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "topological complex without any specified geometric realisation"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "abstract" ;
 .
@@ -776,6 +777,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "2-dimensional topological complex that is planar NOTE A 2-dimensional topological complex is commonly called “full topology” in a cartographic 2D environment."^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "fullPlanarGraph" ;
 .
@@ -783,6 +785,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "1-dimensional topological complex that is isomorphic to a subset of a surface NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "fullSurfaceGraph" ;
 .
@@ -790,6 +793,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "complete coverage of a 3D Euclidean coordinate space"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "fullTopology3D" ;
 .
@@ -797,6 +801,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "geometry objects without any additional structure which describes topology"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "geometryOnly" ;
 .
@@ -804,6 +809,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "1-dimensional topological complex that is planar NOTE A planar graph is a graph that can be drawn in a plane in such a way that no two edges intersect except at a vertex."^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "planarGraph" ;
 .
@@ -811,6 +817,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "1-dimensional topological complex that is isomorphic to a subset of a surface NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "surfaceGraph" ;
 .
@@ -818,6 +825,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "1-dimensional topological complex – commonly called “chain-node” topology"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "topology1D" ;
 .
@@ -825,6 +833,7 @@ iso19115-1Code:MD_TopologyLevelCode
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "3-dimensional topological complex NOTE A topological complex is a collection of topological primitives that are closed under the boundary operations."^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "topology3D" ;
 .

@@ -1084,6 +1084,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "online email service provided"^^xsd:string ;
   skos:editorialNote "online email service provided"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
   skos:prefLabel "emailService" ;
@@ -1564,6 +1565,7 @@ iso19115-1Code:CI_RoleCode
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_RoleCode/sponsor>
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
+  rdfs:comment "This definition sounds like an 'advocate'. Elsewhere the term'sponsor' is used more for customer or client (e.g. see definition of MD_ProgressCode/accepted)"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
   skos:definition "party who speaks for the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;

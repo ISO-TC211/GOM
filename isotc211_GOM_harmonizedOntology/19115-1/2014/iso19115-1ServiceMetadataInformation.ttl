@@ -594,6 +594,7 @@ iso19115-1Code:DCPList
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "Simple Object Access Protocol"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "SOAP" ;
 .
@@ -675,6 +676,7 @@ iso19115-1Code:SV_CouplingType
   rdf:type iso19115-1:SV_CouplingType ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described"^^xsd:string ;
   skos:inScheme iso19115-1Code:SV_CouplingType ;
   skos:prefLabel "loose" ;
 .
@@ -682,6 +684,7 @@ iso19115-1Code:SV_CouplingType
   rdf:type iso19115-1:SV_CouplingType ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances"^^xsd:string ;
   skos:inScheme iso19115-1Code:SV_CouplingType ;
   skos:prefLabel "mixed" ;
 .
@@ -689,6 +692,7 @@ iso19115-1Code:SV_CouplingType
   rdf:type iso19115-1:SV_CouplingType ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described"^^xsd:string ;
   skos:inScheme iso19115-1Code:SV_CouplingType ;
   skos:prefLabel "tight" ;
 .

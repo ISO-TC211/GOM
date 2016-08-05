@@ -1164,6 +1164,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "process of testing to discover or demonstrate something"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
   skos:prefLabel "trialprocess of testing to discover or demonstrate something"^^xsd:string ;
 .
@@ -1404,7 +1405,9 @@ iso19115-1Code:MD_ProgressCode
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_ProgressCode/accepted>
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
+  rdfs:comment "Is this definition consistent with definition of 'sponsor' in roles - which is more like an advocate, rather than customer."^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "agreed to by sponsor"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "accepted" ;
 .
@@ -1412,6 +1415,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "has been completed"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "completed" ;
 .
@@ -1419,6 +1423,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "resource superseded and will become obsolete, use only for historical purposes"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "deprecated" ;
 .
@@ -1426,6 +1431,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "progress concluded and no changes will be accepted"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "final" ;
 .
@@ -1433,6 +1439,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "stored in an offline storage facility"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "historicalArchive" ;
 .
@@ -1440,6 +1447,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "rejected by sponsor"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "notAccepted" ;
 .
@@ -1447,6 +1455,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "no longer relevant"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "obsolete" ;
 .
@@ -1454,6 +1463,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "continually being updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "onGoing" ;
 .
@@ -1461,6 +1471,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "committed to, but not yet addressed"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "pending" ;
 .
@@ -1468,6 +1479,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "fixed date has been established upon or by which the resource will be created or updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "planned" ;
 .
@@ -1475,6 +1487,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "suggested that development needs to be undertaken"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "proposed" ;
 .
@@ -1482,6 +1495,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "needs to be generated or updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "required" ;
 .
@@ -1489,6 +1503,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "item is no longer recommended for use. It has not been superseded by another item"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "retired" ;
 .
@@ -1496,6 +1511,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "replaced by new"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "superseded" ;
 .
@@ -1503,6 +1519,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "provisional changes likely before resource becomes final or complete"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "tentative" ;
 .
@@ -1510,6 +1527,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "currently in the process of being created"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "underDevelopment" ;
 .
@@ -1517,6 +1535,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "acceptable under specific conditions"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "valid" ;
 .
@@ -1524,6 +1543,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "removed from consideration"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
   skos:prefLabel "withdrawn" ;
 .
@@ -1597,6 +1617,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "grid data are used to represent geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
   skos:prefLabel "grid" ;
 .
@@ -1604,6 +1625,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "three-dimensional view formed by the intersecting homologous rays of an overlapping pair of images"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
   skos:prefLabel "stereoModel" ;
 .
@@ -1611,6 +1633,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "textual or tabular data are used to represent geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
   skos:prefLabel "textTable" ;
 .
@@ -1618,6 +1641,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "triangulated irregular network"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
   skos:prefLabel "tin" ;
 .
@@ -1625,6 +1649,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "vector data are used to represent geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
   skos:prefLabel "vector" ;
 .
@@ -1632,6 +1657,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "scene from a video recording"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
   skos:prefLabel "video" ;
 .

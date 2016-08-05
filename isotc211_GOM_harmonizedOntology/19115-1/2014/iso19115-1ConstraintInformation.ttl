@@ -413,6 +413,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "not available to the public NOTE Contains information that could be prejudicial to a commercial, industrial, or national interest."^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "confidential" ;
 .
@@ -420,6 +421,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "exclusive right to the publication, production, or sale of the rights to a literary, dramatic, musical, or artistic work, or to the use of a commercial print or label, granted by law for a specified period of time to an author, composer, artist, distributor"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "copyright" ;
 .
@@ -427,6 +429,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "with trust"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "in-confidence" ;
 .
@@ -434,6 +437,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "rights to financial benefit from and control of distribution of non-tangible property that is a result of creativity"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "intellectualPropertyRights" ;
 .
@@ -441,6 +445,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "formal permission to do something"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "licence" ;
 .
@@ -448,6 +453,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "formal permission required for a person or an entity to commercialize or distribute the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "licenceDistributor" ;
 .
@@ -455,6 +461,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "formal permission required for a person or an entity to use the resource and that may differ from the person that orders or purchases it"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "licenceEndUser" ;
 .
@@ -462,6 +469,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "formal permission not required to use the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "licenceUnrestricted" ;
 .
@@ -469,6 +477,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "limitation not listed"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "otherRestrictions" ;
 .
@@ -476,6 +485,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "government has granted exclusive right to make, sell, use or license an invention or discovery"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "patent" ;
 .
@@ -483,6 +493,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "produced or sold information awaiting a patent"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "patentPending" ;
 .
@@ -490,6 +501,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "protects rights of individual or organisations from observation, intrusion, or attention of others"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "private" ;
 .
@@ -497,6 +509,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "withheld from general circulation or disclosure"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "restricted" ;
 .
@@ -504,6 +517,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "although unclassified, requires strict controls over its distribution."^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "sensitiveButUnclassified" ;
 .
@@ -511,6 +525,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "prescribed by law"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "statutory" ;
 .
@@ -518,6 +533,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "a name, symbol, or other device identifying a product, officially registered and legally restricted to the use of the owner or manufacturer"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "trademark" ;
 .
@@ -525,6 +541,7 @@ iso19115-1Code:MD_RestrictionCode
   rdf:type iso19115-1:MD_RestrictionCode ;
   rdf:type skos:Concept ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "no constraints exist"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_RestrictionCode ;
   skos:prefLabel "unrestricted" ;
 .
