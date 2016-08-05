@@ -1,0 +1,587 @@
+# baseURI: http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation
+# imports: http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation
+# imports: http://def.isotc211.org/iso19115/-1/2014/CommonClasses
+# imports: http://def.isotc211.org/iso19150/-2/2012/base
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/> .
+@prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation>
+  rdf:type owl:Ontology ;
+  dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "ISO 19115-1:2014 Constraint information" ;
+  owl:imports <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation> ;
+  owl:imports <http://def.isotc211.org/iso19115/-1/2014/CommonClasses> ;
+  owl:imports <http://def.isotc211.org/iso19150/-2/2012/base> ;
+  owl:versionInfo "2014" ;
+.
+iso19115-1:MD_ClassificationCode
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_ClassificationCode" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:MD_Constraints
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_Constraints" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Citation ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.reference> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Responsibility ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.responsibleParty> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2358:MD_BrowseGraphic ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.graphic> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2358:MD_Scope ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.constraintApplicationScope> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_Releasability ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.releasability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.useLimitation> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.constraintApplicationScope> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.releasability> ;
+    ] ;
+  skos:definition "restrictions on the access and use of a resource or metadata" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.constraintApplicationScope>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Constraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "constraintApplicationScope" ;
+  rdfs:range iso19115-1_2358:MD_Scope ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.graphic>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Constraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "graphic" ;
+  rdfs:range iso19115-1_2358:MD_BrowseGraphic ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.reference>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Constraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "reference" ;
+  rdfs:range iso19115-1_2363:CI_Citation ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.releasability>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Constraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "releasability" ;
+  rdfs:range iso19115-1:MD_Releasability ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.responsibleParty>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Constraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "responsibleParty" ;
+  rdfs:range iso19115-1_2363:CI_Responsibility ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Constraints.useLimitation>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Constraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "useLimitation" ;
+  rdfs:range xsd:string ;
+.
+iso19115-1:MD_LegalConstraints
+  rdf:type owl:Class ;
+  iso19150-2:constraint "otherConstraints: only documented if accessConstraints or useConstraints .eq. .gu.otherRestrictions.gu." ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_LegalConstraints" ;
+  rdfs:subClassOf iso19115-1:MD_Constraints ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_RestrictionCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_LegalConstraints.accessConstraints> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_RestrictionCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_LegalConstraints.useConstraints> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_LegalConstraints.otherConstraints> ;
+    ] ;
+  skos:definition "restrictions and legal prerequisites for accessing and using the resource or metadata" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_LegalConstraints.accessConstraints>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_LegalConstraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "accessConstraints" ;
+  rdfs:range iso19115-1:MD_RestrictionCode ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_LegalConstraints.otherConstraints>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_LegalConstraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "otherConstraints" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_LegalConstraints.useConstraints>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_LegalConstraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "useConstraints" ;
+  rdfs:range iso19115-1:MD_RestrictionCode ;
+.
+iso19115-1:MD_Releasability
+  rdf:type owl:Class ;
+  iso19150-2:constraint "count (addressee + statement) .gt. 0" ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_Releasability" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Responsibility ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Releasability.addressee> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_RestrictionCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Releasability.disseminationConstraints> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Releasability.statement> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Releasability.statement> ;
+    ] ;
+  skos:definition "information about resource release constraints" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Releasability.addressee>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Releasability ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "addressee" ;
+  rdfs:range iso19115-1_2363:CI_Responsibility ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Releasability.disseminationConstraints>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Releasability ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "disseminationConstraints" ;
+  rdfs:range iso19115-1:MD_RestrictionCode ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_Releasability.statement>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Releasability ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "statement" ;
+  rdfs:range xsd:string ;
+.
+iso19115-1:MD_RestrictionCode
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_RestrictionCode" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:MD_SecurityConstraints
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_SecurityConstraints" ;
+  rdfs:subClassOf iso19115-1:MD_Constraints ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_ClassificationCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.classification> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.classificationSystem> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.handlingDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.userNote> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.classification> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.classificationSystem> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.handlingDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.userNote> ;
+    ] ;
+  skos:definition "handling restrictions imposed on the resource or metadata for national security or similar security concerns" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.classification>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_SecurityConstraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "classification" ;
+  rdfs:range iso19115-1:MD_ClassificationCode ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.classificationSystem>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_SecurityConstraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "classificationSystem" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.handlingDescription>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_SecurityConstraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "handlingDescription" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_SecurityConstraints.userNote>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_SecurityConstraints ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "userNote" ;
+  rdfs:range xsd:string ;
+.
+iso19115-1Code:MD_ClassificationCode
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:MD_ClassificationCode ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "MD_ClassificationCode - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/confidential>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "available for someone who can be entrusted with information"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "confidential" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/forOfficialUseOnly>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "unclassified information that is to be used only for official purposes determined by the designating body"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "forOfficialUseOnly" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/limitedDistribution>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "desimination limited by designating body"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "limitedDistribution" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/protected>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "compromise of the information could cause damage"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "protected" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/restricted>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "not for general disclosure"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "restricted" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/secret>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "kept or meant to be kept private, unknown, or hidden from all but a select group of people"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "secret" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/sensitiveButUnclassified>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:altLabel "SBU"^^xsd:string ;
+  skos:definition "although unclassified, requires strict controls over its distribution"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "sensitiveButUnclassified" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/topSecret>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "of the highest secrecy"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "topSecret" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/unclassified>
+  rdf:type iso19115-1:MD_ClassificationCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "available for general disclosure"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_ClassificationCode ;
+  skos:prefLabel "unclassified" ;
+.
+iso19115-1Code:MD_ClassificationCodeCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "MD_ClassificationCode - Collection" ;
+.
+iso19115-1Code:MD_RestrictionCode
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:MD_RestrictionCode ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "MD_RestrictionCode - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/confidential>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "confidential" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/copyright>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "copyright" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/in-confidence>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "in-confidence" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/intellectualPropertyRights>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "intellectualPropertyRights" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/licence>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "licence" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/licenceDistributor>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "licenceDistributor" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/licenceEndUser>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "licenceEndUser" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/licenceUnrestricted>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "licenceUnrestricted" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/otherRestrictions>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "otherRestrictions" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/patent>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "patent" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/patentPending>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "patentPending" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/private>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "private" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/restricted>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "restricted" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/sensitiveButUnclassified>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "sensitiveButUnclassified" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/statutory>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "statutory" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/trademark>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "trademark" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/unrestricted>
+  rdf:type iso19115-1:MD_RestrictionCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_RestrictionCode ;
+  skos:prefLabel "unrestricted" ;
+.
+iso19115-1Code:MD_RestrictionCodeCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "MD_RestrictionCode - Collection" ;
+.

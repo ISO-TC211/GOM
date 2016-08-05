@@ -1,0 +1,35 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation> a owl:Ontology;
+   rdfs:label "ISO 19115-1:2014 Portrayal catalogue information";
+   dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   owl:imports <http://def.isotc211.org/iso19150/-2/2012/base>,
+     <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation>;
+   owl:versionInfo "2014" .
+
+iso19115-1:MD_PortrayalCatalogueReference a owl:Class;
+   rdfs:label "MD_PortrayalCatalogueReference";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:minCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:MD_PortrayalCatalogueReference.portrayalCatalogueCitation
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1_2363:CI_Citation;
+     owl:onProperty iso19115-1:MD_PortrayalCatalogueReference.portrayalCatalogueCitation
+   ];
+   skos:definition "information identifying the portrayal catalogue used" .
+
+iso19115-1:MD_PortrayalCatalogueReference.portrayalCatalogueCitation a owl:ObjectProperty;
+   rdfs:label "portrayalCatalogueCitation";
+   rdfs:domain iso19115-1:MD_PortrayalCatalogueReference;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1_2363:CI_Citation .

@@ -1,0 +1,232 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/> .
+@prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation> a owl:Ontology;
+   rdfs:label "ISO 19115-1:2014 Reference system information";
+   dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   owl:imports <http://def.isotc211.org/iso19150/-2/2012/base>,
+     <http://def.isotc211.org/iso19115/-1/2014/CommonClasses>;
+   owl:versionInfo "2014" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringParametric> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundEngineeringParametric" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringParametricTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundEngineeringParametricTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundEngineeringTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringVertical> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundEngineeringVertical" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringVerticalTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundEngineeringVerticalTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DParametric> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundGeographic2DParametric" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DParametricTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundGeographic2DParametricTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundGeographic2DTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DVertical> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundGeographic2DVertical" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DVerticalTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundGeographic2DVerticalTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic3DTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundGeographic3DTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjected2DParametric> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundProjected2DParametric" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjected2DParametricTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundProjected2DParametricTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjectedTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundProjectedTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjectedVertical> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundProjectedVertical" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjectedVerticalTemporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "compoundProjectedVerticalTemporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/engineering> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "engineering" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/engineeringDesign> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "engineeringDesign" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/engineeringImage> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "engineeringImage" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geodeticGeocentric> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "geodeticGeocentric" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geodeticGeographic2D> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "geodeticGeographic2D" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geodeticGeographic3D> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "geodeticGeographic3D" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geographicIdentifier> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "geographicIdentifier" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/linear> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "linear" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/parametric> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "parametric" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/projected> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "projected" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/temporal> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "temporal" .
+
+<http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/vertical> a iso19115-1:MD_ReferenceSystemTypeCode,
+     skos:Concept;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:inScheme iso19115-1Code:MD_ReferenceSystemTypeCode;
+   skos:prefLabel "vertical" .
+
+iso19115-1Code:MD_ReferenceSystemTypeCodeCollection a skos:Collection;
+   skos:members ([ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept] [ a skos:Concept]);
+   skos:prefLabel "MD_ReferenceSystemTypeCode - Collection" .
+
+iso19115-1:MD_ReferenceSystem a owl:Class;
+   rdfs:label "MD_ReferenceSystem";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1_2358:MD_Identifier;
+     owl:onProperty iso19115-1:MD_ReferenceSystem.referenceSystemIdentifier
+   ],  [
+     a owl:Restriction;
+     owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:MD_ReferenceSystem.referenceSystemIdentifier
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:MD_ReferenceSystemTypeCode;
+     owl:onProperty iso19115-1:MD_ReferenceSystem.referenceSystemType
+   ],  [
+     a owl:Restriction;
+     owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:MD_ReferenceSystem.referenceSystemType
+   ];
+   skos:definition "information about the reference system" .
+
+iso19115-1:MD_ReferenceSystem.referenceSystemIdentifier a owl:ObjectProperty;
+   rdfs:label "referenceSystemIdentifier";
+   rdfs:domain iso19115-1:MD_ReferenceSystem;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1_2358:MD_Identifier .
+
+iso19115-1:MD_ReferenceSystem.referenceSystemType a owl:ObjectProperty;
+   rdfs:label "referenceSystemType";
+   rdfs:domain iso19115-1:MD_ReferenceSystem;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:MD_ReferenceSystemTypeCode .
+
+iso19115-1Code:MD_ReferenceSystemTypeCode a skos:ConceptScheme;
+   dct:isFormatOf iso19115-1:MD_ReferenceSystemTypeCode;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:prefLabel "MD_ReferenceSystemTypeCode - ConceptScheme" .
+
+iso19115-1:MD_ReferenceSystemTypeCode a owl:Class;
+   rdfs:label "MD_ReferenceSystemTypeCode";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf skos:Concept .

@@ -1,0 +1,228 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
+@prefix iso03166_66: <http://def.isotc211.org/iso03166/-1/CountryCodes#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation/code/> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation> a owl:Ontology;
+   rdfs:label "ISO 19115-1:2014 Language-characterset localization information";
+   dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   owl:imports <http://def.isotc211.org/iso19150/-2/2012/base>,
+     <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation>;
+   owl:versionInfo "2014" .
+
+iso19115-1Code:CountryCode a skos:ConceptScheme;
+   dct:isFormatOf iso19115-1:CountryCode;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:prefLabel "CountryCode - ConceptScheme" .
+
+iso19115-1Code:CountryCodeCollection a skos:Collection;
+   skos:members ();
+   skos:prefLabel "CountryCode - Collection" .
+
+iso19115-1Code:LanguageCode a skos:ConceptScheme;
+   dct:isFormatOf iso19115-1:LanguageCode;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:prefLabel "LanguageCode - ConceptScheme" .
+
+iso19115-1Code:LanguageCodeCollection a skos:Collection;
+   skos:members ();
+   skos:prefLabel "LanguageCode - Collection" .
+
+iso19115-1Code:MD_CharacterSetCode a skos:ConceptScheme;
+   dct:isFormatOf iso19115-1:MD_CharacterSetCode;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   skos:prefLabel "MD_CharacterSetCode - ConceptScheme" .
+
+iso19115-1Code:MD_CharacterSetCodeCollection a skos:Collection;
+   skos:members ();
+   skos:prefLabel "MD_CharacterSetCode - Collection" .
+
+iso19115-1:CountryCode a owl:Class;
+   rdfs:label "CountryCode";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf skos:Concept .
+
+iso19115-1:LanguageCode a owl:Class;
+   rdfs:label "LanguageCode";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf skos:Concept .
+
+iso19115-1:PT_FreeText a owl:Class;
+   rdfs:label "PT_FreeText";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:minCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_FreeText.textGroup
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:LocalisedCharacterString;
+     owl:onProperty iso19115-1:PT_FreeText.textGroup
+   ];
+   skos:definition "multi-language free text data typeNOTE A metadata element who s data type is CharacterString and domain is free text can be alternatively expressed using the PT_FreeText subtype of CharacterString. A free text instance acts as a normal character string except that it handles complementary translations of the character string value in different locales." .
+
+iso19115-1:LocalisedCharacterString.locale a owl:ObjectProperty;
+   rdfs:label "locale";
+   rdfs:domain iso19115-1:LocalisedCharacterString;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:PT_Locale .
+
+iso19115-1:PT_FreeText.textGroup a owl:ObjectProperty;
+   rdfs:label "textGroup";
+   iso19150-2:aggregationType "partOfSharedAggregation";
+   rdfs:domain iso19115-1:PT_FreeText;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:LocalisedCharacterString .
+
+iso19115-1:PT_Locale.characterEncoding a owl:ObjectProperty;
+   rdfs:label "characterEncoding";
+   rdfs:domain iso19115-1:PT_Locale;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:MD_CharacterSetCode .
+
+iso19115-1:PT_Locale.country a owl:ObjectProperty;
+   rdfs:label "country";
+   rdfs:domain iso19115-1:PT_Locale;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso03166_66:CountryCode .
+
+iso19115-1:PT_Locale.language a owl:ObjectProperty;
+   rdfs:label "language";
+   rdfs:domain iso19115-1:PT_Locale;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso00639_65:LanguageCode .
+
+iso19115-1:PT_LocaleContainer.date a owl:ObjectProperty;
+   rdfs:label "date";
+   rdfs:domain iso19115-1:PT_LocaleContainer;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1_2363:CI_Date .
+
+iso19115-1:PT_LocaleContainer.description a owl:DatatypeProperty;
+   rdfs:label "description";
+   rdfs:domain iso19115-1:PT_LocaleContainer;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range xsd:string .
+
+iso19115-1:PT_LocaleContainer.locale a owl:ObjectProperty;
+   rdfs:label "locale";
+   rdfs:domain iso19115-1:PT_LocaleContainer;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:PT_Locale .
+
+iso19115-1:PT_LocaleContainer.localisedString a owl:ObjectProperty;
+   rdfs:label "localisedString";
+   iso19150-2:aggregationType "partOfSharedAggregation";
+   rdfs:domain iso19115-1:PT_LocaleContainer;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:LocalisedCharacterString .
+
+iso19115-1:PT_LocaleContainer.responsibleParty a owl:ObjectProperty;
+   rdfs:label "responsibleParty";
+   rdfs:domain iso19115-1:PT_LocaleContainer;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1_2363:CI_Responsibility .
+
+iso19115-1:MD_CharacterSetCode a owl:Class;
+   rdfs:label "MD_CharacterSetCode";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf skos:Concept .
+
+iso19115-1:LocalisedCharacterString a owl:Class;
+   rdfs:label "LocalisedCharacterString";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:cardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:LocalisedCharacterString.locale
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:PT_Locale;
+     owl:onProperty iso19115-1:LocalisedCharacterString.locale
+   ];
+   skos:definition "expression of a free text in a given locale" .
+
+iso19115-1:PT_LocaleContainer a owl:Class;
+   rdfs:label "PT_LocaleContainer";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:LocalisedCharacterString;
+     owl:onProperty iso19115-1:PT_LocaleContainer.localisedString
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom xsd:string;
+     owl:onProperty iso19115-1:PT_LocaleContainer.description
+   ],
+     iso19115-1:PT_Locale,  [
+     a owl:Restriction;
+     owl:cardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_LocaleContainer.description
+   ],  [
+     a owl:Restriction;
+     owl:minCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_LocaleContainer.localisedString
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1_2363:CI_Date;
+     owl:onProperty iso19115-1:PT_LocaleContainer.date
+   ],  [
+     a owl:Restriction;
+     owl:minCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_LocaleContainer.responsibleParty
+   ],  [
+     a owl:Restriction;
+     owl:minCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_LocaleContainer.date
+   ],  [
+     a owl:Restriction;
+     owl:cardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_LocaleContainer.locale
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1_2363:CI_Responsibility;
+     owl:onProperty iso19115-1:PT_LocaleContainer.responsibleParty
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:PT_Locale;
+     owl:onProperty iso19115-1:PT_LocaleContainer.locale
+   ];
+   skos:definition "container of localised character strings. It provides a means to isolate the localised strings related to a given locale." .
+
+iso19115-1:PT_Locale a owl:Class;
+   rdfs:label "PT_Locale";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_Locale.country
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso03166_66:CountryCode;
+     owl:onProperty iso19115-1:PT_Locale.country
+   ],  [
+     a owl:Restriction;
+     owl:cardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_Locale.language
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso00639_65:LanguageCode;
+     owl:onProperty iso19115-1:PT_Locale.language
+   ],  [
+     a owl:Restriction;
+     owl:cardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:PT_Locale.characterEncoding
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:MD_CharacterSetCode;
+     owl:onProperty iso19115-1:PT_Locale.characterEncoding
+   ];
+   skos:definition "description of a locale" .

@@ -1,0 +1,123 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation> a owl:Ontology;
+   rdfs:label "ISO 19115-1:2014 Metadata application information";
+   dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   owl:imports <http://def.isotc211.org/iso19150/-2/2012/base>,
+     <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation>;
+   owl:versionInfo "2014" .
+
+iso19115-1:DS_DataSet a owl:Class;
+   rdfs:label "DS_DataSet";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Resource;
+   skos:definition "identifiable collection of data" .
+
+iso19115-1:DS_Initiative a owl:Class;
+   rdfs:label "DS_Initiative";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Aggregate;
+   skos:definition "collection of associated resources related by their participation in a common initiative" .
+
+iso19115-1:DS_OtherAggregate a owl:Class;
+   rdfs:label "DS_OtherAggregate";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Aggregate;
+   skos:definition "collection of resource associated through inspecified means" .
+
+iso19115-1:DS_Platform a owl:Class;
+   rdfs:label "DS_Platform";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Series;
+   skos:definition "collection of associated resources produced from the same sensor platform" .
+
+iso19115-1:DS_ProductionSeries a owl:Class;
+   rdfs:label "DS_ProductionSeries";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Series;
+   skos:definition "collection of associated resources produced to the same production specification" .
+
+iso19115-1:DS_Sensor a owl:Class;
+   rdfs:label "DS_Sensor";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Series;
+   skos:definition "collection of associated resources produced by the same sensor" .
+
+iso19115-1:DS_StereoMate a owl:Class;
+   rdfs:label "DS_StereoMate";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" .
+
+iso19115-1:SV_Service a owl:Class;
+   rdfs:label "SV_Service";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Resource;
+   skos:definition "capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behavior" .
+
+iso19115-1:DS_Aggregate.composedOf a owl:ObjectProperty;
+   rdfs:label "composedOf";
+   rdfs:domain iso19115-1:DS_Aggregate;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:DS_Resource;
+   owl:inverseOf iso19115-1:DS_Resource.partOf .
+
+iso19115-1:DS_Resource.has a owl:ObjectProperty;
+   rdfs:label "has";
+   rdfs:domain iso19115-1:DS_Resource;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1_2372:MD_Metadata .
+
+iso19115-1:DS_Resource.partOf a owl:ObjectProperty;
+   rdfs:label "partOf";
+   iso19150-2:aggregationType "partOfSharedAggregation";
+   rdfs:domain iso19115-1:DS_Resource;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:range iso19115-1:DS_Aggregate .
+
+iso19115-1:DS_Series a owl:Class;
+   rdfs:label "DS_Series";
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf iso19115-1:DS_Aggregate;
+   skos:definition "collection of resource related by a common heritage adhering to a common specification" .
+
+iso19115-1:DS_Aggregate a owl:Class;
+   rdfs:label "DS_Aggregate";
+   iso19150-2:isAbstract true;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:DS_Resource;
+     owl:onProperty iso19115-1:DS_Aggregate.composedOf
+   ],
+     iso19115-1:DS_Resource,  [
+     a owl:Restriction;
+     owl:minCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:DS_Aggregate.composedOf
+   ];
+   skos:definition "collection of resources" .
+
+iso19115-1:DS_Resource a owl:Class;
+   rdfs:label "DS_Resource";
+   iso19150-2:isAbstract true;
+   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/";
+   rdfs:subClassOf [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1_2372:MD_Metadata;
+     owl:onProperty iso19115-1:DS_Resource.has
+   ],  [
+     a owl:Restriction;
+     owl:allValuesFrom iso19115-1:DS_Aggregate;
+     owl:onProperty iso19115-1:DS_Resource.partOf
+   ],  [
+     a owl:Restriction;
+     owl:minCardinality "1"^^xsd:nonNegativeInteger;
+     owl:onProperty iso19115-1:DS_Resource.has
+   ];
+   skos:definition "an identifiable asset or means that fulfils a requirement" .

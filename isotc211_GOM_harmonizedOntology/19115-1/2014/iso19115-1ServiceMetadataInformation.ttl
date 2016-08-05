@@ -1,0 +1,709 @@
+# baseURI: http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation
+# imports: http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation
+# imports: http://def.isotc211.org/iso19115/-1/2014/DistributionInformation
+# imports: http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation
+# imports: http://def.isotc211.org/iso19150/-2/2012/base
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso19103_2174: <http://def.isotc211.org/iso19103/2015/NameTypes#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19115-1_2367: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix iso19115-1_2369: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation>
+  rdf:type owl:Ontology ;
+  dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "ISO 19115-1:2014 Service metadata information" ;
+  owl:imports <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation> ;
+  owl:imports <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation> ;
+  owl:imports <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation> ;
+  owl:imports <http://def.isotc211.org/iso19150/-2/2012/base> ;
+  owl:versionInfo "2014" ;
+.
+iso19115-1:DCPList
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "DCPList" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:SV_CoupledResource
+  rdf:type owl:Class ;
+  iso19150-2:constraint "If resourceReference used then count (resource) .eq. 0" ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SV_CoupledResource" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19103_2174:ScopedName ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.scopedName> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Citation ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.resourceReference> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2369:MD_DataIdentification ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.resource> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_OperationMetadata ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.operation> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.operation> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.scopedName> ;
+    ] ;
+  skos:definition "links a given operationName (mandatory attribute of SV_OperationMetadata) with a data set identified by an 'identifier'" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.operation>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_CoupledResource ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "operation" ;
+  rdfs:range iso19115-1:SV_OperationMetadata ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.resource>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_CoupledResource ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "resource" ;
+  rdfs:range iso19115-1_2369:MD_DataIdentification ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.resourceReference>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_CoupledResource ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "resourceReference" ;
+  rdfs:range iso19115-1_2363:CI_Citation ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_CoupledResource.scopedName>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_CoupledResource ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "scopedName" ;
+  rdfs:range iso19103_2174:ScopedName ;
+.
+iso19115-1:SV_CouplingType
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SV_CouplingType" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:SV_OperationChainMetadata
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SV_OperationChainMetadata" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_OperationMetadata ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.operation> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.description> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.name> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.name> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.description> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.operation> ;
+    ] ;
+  skos:definition "Operation Chain Information" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.description>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_OperationChainMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "description" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.name>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_OperationChainMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "name" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationChainMetadata.operation>
+  rdf:type owl:ObjectProperty ;
+  iso19150-2:aggregationType "partOfSharedAggregation" ;
+  iso19150-2:associationName "Chaining Metadata" ;
+  rdfs:domain iso19115-1:SV_OperationChainMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "operation" ;
+  rdfs:range iso19115-1:SV_OperationMetadata ;
+.
+iso19115-1:SV_OperationMetadata
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SV_OperationMetadata" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_OnlineResource ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.connectPoint> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:DCPList ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.distributedComputingPlatform> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_OperationMetadata ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.dependsOn> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_Parameter ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.parameter> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.invocationName> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.operationDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.operationName> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.operationName> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.invocationName> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.operationDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.connectPoint> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.distributedComputingPlatform> ;
+    ] ;
+  skos:definition "describes the signature of one and only one method provided by the service" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.connectPoint>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_OperationMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "connectPoint" ;
+  rdfs:range iso19115-1_2363:CI_OnlineResource ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.dependsOn>
+  rdf:type owl:ObjectProperty ;
+  iso19150-2:aggregationType "partOfSharedAggregation" ;
+  iso19150-2:associationName "Dependencies" ;
+  rdfs:domain iso19115-1:SV_OperationMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "dependsOn" ;
+  rdfs:range iso19115-1:SV_OperationMetadata ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.distributedComputingPlatform>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_OperationMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "distributedComputingPlatform" ;
+  rdfs:range iso19115-1:DCPList ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.invocationName>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_OperationMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "invocationName" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.operationDescription>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_OperationMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "operationDescription" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.operationName>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_OperationMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "operationName" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_OperationMetadata.parameter>
+  rdf:type owl:ObjectProperty ;
+  iso19150-2:aggregationType "partOfCompositeAggregation" ;
+  rdfs:domain iso19115-1:SV_OperationMetadata ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "parameter" ;
+  rdfs:range iso19115-1:SV_Parameter ;
+.
+iso19115-1:SV_Parameter
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SV_Parameter" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19103_2174:MemberName ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.name> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_ParameterDirection ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.direction> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:boolean ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.optionality> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:boolean ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.repeatability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.description> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.direction> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.name> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.optionality> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.repeatability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.description> ;
+    ] ;
+  skos:definition "parameter information" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.description>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_Parameter ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "description" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.direction>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_Parameter ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "direction" ;
+  rdfs:range iso19115-1:SV_ParameterDirection ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.name>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_Parameter ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "name" ;
+  rdfs:range iso19103_2174:MemberName ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.optionality>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_Parameter ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "optionality" ;
+  rdfs:range xsd:boolean ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_Parameter.repeatability>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_Parameter ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "repeatability" ;
+  rdfs:range xsd:boolean ;
+.
+iso19115-1:SV_ParameterDirection
+  rdf:type rdfs:Datatype ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SV_ParameterDirection" ;
+  owl:equivalentClass [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "in"
+          "out"
+          "in/out"
+        ) ;
+    ] ;
+.
+iso19115-1:SV_ServiceIdentification
+  rdf:type owl:Class ;
+  iso19150-2:constraint "If operatesOn used count (operatedDataset) .eq. 0" ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SV_ServiceIdentification" ;
+  rdfs:subClassOf iso19115-1_2369:MD_Identification ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19103_2174:GenericName ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.serviceType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Citation ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.operatedDataset> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Citation ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.profile> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Citation ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.serviceStandard> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2367:MD_StandardOrderProcess ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.accessProperties> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2369:MD_DataIdentification ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.operatesOn> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_CoupledResource ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.coupledResource> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_CouplingType ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.couplingType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_OperationChainMetadata ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.containsChain> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:SV_OperationMetadata ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.containsOperations> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.serviceTypeVersion> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.serviceType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.accessProperties> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.couplingType> ;
+    ] ;
+  skos:definition "identification of capabilities which a service provider makes available to a service user through a set of interfaces that define a behaviour - See ISO 19119 for further information" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.accessProperties>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "accessProperties" ;
+  rdfs:range iso19115-1_2367:MD_StandardOrderProcess ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.containsChain>
+  rdf:type owl:ObjectProperty ;
+  iso19150-2:aggregationType "partOfSharedAggregation" ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "containsChain" ;
+  rdfs:range iso19115-1:SV_OperationChainMetadata ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.containsOperations>
+  rdf:type owl:ObjectProperty ;
+  iso19150-2:aggregationType "partOfSharedAggregation" ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "containsOperations" ;
+  rdfs:range iso19115-1:SV_OperationMetadata ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.coupledResource>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "coupledResource" ;
+  rdfs:range iso19115-1:SV_CoupledResource ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.couplingType>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "couplingType" ;
+  rdfs:range iso19115-1:SV_CouplingType ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.operatedDataset>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "operatedDataset" ;
+  rdfs:range iso19115-1_2363:CI_Citation ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.operatesOn>
+  rdf:type owl:ObjectProperty ;
+  iso19150-2:aggregationType "partOfSharedAggregation" ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "operatesOn" ;
+  rdfs:range iso19115-1_2369:MD_DataIdentification ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.profile>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "profile" ;
+  rdfs:range iso19115-1_2363:CI_Citation ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.serviceStandard>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "serviceStandard" ;
+  rdfs:range iso19115-1_2363:CI_Citation ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.serviceType>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "serviceType" ;
+  rdfs:range iso19103_2174:GenericName ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#SV_ServiceIdentification.serviceTypeVersion>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:SV_ServiceIdentification ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "serviceTypeVersion" ;
+  rdfs:range xsd:string ;
+.
+iso19115-1Code:DCPList
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:DCPList ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "DCPList - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/COM>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "Component Object Model"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "COM" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/CORBA>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "Common Object Request Broker Architecture"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "CORBA" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/FTP>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "File Transfer Protocol"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "FTP" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/HTTP>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "HyperText Transfer Protocol"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "HTTP" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/JAVA>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "Object-oriented programming language"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "JAVA" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/SOAP>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "SOAP" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/SQL>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "Structured Query Language"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "SQL" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/XML>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "Extensible Markup Language"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "XML" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/Z3950>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "ISO 23950"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "Z3950" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/webServices>
+  rdf:type iso19115-1:DCPList ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "Web service"^^xsd:string ;
+  skos:inScheme iso19115-1Code:DCPList ;
+  skos:prefLabel "webServices" ;
+.
+iso19115-1Code:DCPListCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "DCPList - Collection" ;
+.
+iso19115-1Code:SV_CouplingType
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:SV_CouplingType ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "SV_CouplingType - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/SV_CouplingType/loose>
+  rdf:type iso19115-1:SV_CouplingType ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:SV_CouplingType ;
+  skos:prefLabel "loose" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/SV_CouplingType/mixed>
+  rdf:type iso19115-1:SV_CouplingType ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:SV_CouplingType ;
+  skos:prefLabel "mixed" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/SV_CouplingType/tight>
+  rdf:type iso19115-1:SV_CouplingType ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:SV_CouplingType ;
+  skos:prefLabel "tight" ;
+.
+iso19115-1Code:SV_CouplingTypeCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "SV_CouplingType - Collection" ;
+.

@@ -1,0 +1,863 @@
+# baseURI: http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation
+# imports: http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation
+# imports: http://def.isotc211.org/iso19150/-2/2012/base
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso19103_2176: <http://def.isotc211.org/iso19103/2015/RecordTypes#> .
+@prefix iso19103_2179: <http://def.isotc211.org/iso19103/2015/MeasureTypes#> .
+@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation>
+  rdf:type owl:Ontology ;
+  dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "ISO 19115-1:2014 Spatial representation information" ;
+  owl:imports <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation> ;
+  owl:imports <http://def.isotc211.org/iso19150/-2/2012/base> ;
+  owl:versionInfo "2014" ;
+.
+iso19115-1:MD_CellGeometryCode
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_CellGeometryCode" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:MD_Dimension
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_Dimension" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19103_2179:Measure ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.resolution> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_DimensionNameTypeCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionName> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:integer ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionSize> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionTitle> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionName> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionSize> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionTitle> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.resolution> ;
+    ] ;
+  skos:definition "axis properties" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionDescription>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Dimension ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "dimensionDescription" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionName>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Dimension ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "dimensionName" ;
+  rdfs:range iso19115-1:MD_DimensionNameTypeCode ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionSize>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Dimension ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "dimensionSize" ;
+  rdfs:range xsd:integer ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.dimensionTitle>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Dimension ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "dimensionTitle" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Dimension.resolution>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Dimension ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "resolution" ;
+  rdfs:range iso19103_2179:Measure ;
+.
+iso19115-1:MD_DimensionNameTypeCode
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_DimensionNameTypeCode" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:MD_GeometricObjectTypeCode
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_GeometricObjectTypeCode" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:MD_GeometricObjects
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_GeometricObjects" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_GeometricObjectTypeCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GeometricObjects.geometricObjectType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:integer ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GeometricObjects.geometricObjectCount> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GeometricObjects.geometricObjectType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GeometricObjects.geometricObjectCount> ;
+    ] ;
+  skos:definition "number of objects, listed by geometric object type, used in the dataset" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GeometricObjects.geometricObjectCount>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_GeometricObjects ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "geometricObjectCount" ;
+  rdfs:range xsd:integer ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GeometricObjects.geometricObjectType>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_GeometricObjects ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "geometricObjectType" ;
+  rdfs:range iso19115-1:MD_GeometricObjectTypeCode ;
+.
+iso19115-1:MD_Georectified
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_Georectified" ;
+  rdfs:subClassOf iso19115-1:MD_GridSpatialRepresentation ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19107_2210:GM_Point ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.centrePoint> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19107_2210:GM_Point ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.cornerPoints> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_PixelOrientationCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.pointInPixel> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:boolean ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.checkPointAvailability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.checkPointDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.transformationDimensionDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.transformationDimensionMapping> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.checkPointAvailability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.pointInPixel> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.centrePoint> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.checkPointDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.transformationDimensionDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "2"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.transformationDimensionMapping> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "4"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.cornerPoints> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "2"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.cornerPoints> ;
+    ] ;
+  skos:definition "grid whose cells are regularly spaced in a geographic (i.e., lat .sl. long) or map coordinate system defined in the Spatial Referencing System (SRS) so that any cell in the grid can be geolocated given its grid coordinate and the grid origin, cell spacing, and orientation" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.centrePoint>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Georectified ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "centrePoint" ;
+  rdfs:range iso19107_2210:GM_Point ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.checkPointAvailability>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Georectified ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "checkPointAvailability" ;
+  rdfs:range xsd:boolean ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.checkPointDescription>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Georectified ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "checkPointDescription" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.cornerPoints>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Georectified ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "cornerPoints" ;
+  rdfs:range iso19107_2210:GM_Point ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.pointInPixel>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Georectified ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "pointInPixel" ;
+  rdfs:range iso19115-1:MD_PixelOrientationCode ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.transformationDimensionDescription>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Georectified ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "transformationDimensionDescription" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georectified.transformationDimensionMapping>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Georectified ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "transformationDimensionMapping" ;
+  rdfs:range xsd:string ;
+.
+iso19115-1:MD_Georeferenceable
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_Georeferenceable" ;
+  rdfs:subClassOf iso19115-1:MD_GridSpatialRepresentation ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19103_2176:Record ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.georeferencedParameters> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1_2363:CI_Citation ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.parameterCitation> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:boolean ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.controlPointAvailability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:boolean ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.orientationParameterAvailability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.orientationParameterDescription> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.controlPointAvailability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.georeferencedParameters> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.orientationParameterAvailability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.orientationParameterDescription> ;
+    ] ;
+  skos:definition "grid with cells irregularly spaced in any given geographic.sl.map projection coordinate system, whose individual cells can be geolocated using geolocation information supplied with the data but cannot be geolocated from the grid properties alone" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.controlPointAvailability>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Georeferenceable ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "controlPointAvailability" ;
+  rdfs:range xsd:boolean ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.georeferencedParameters>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Georeferenceable ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "georeferencedParameters" ;
+  rdfs:range iso19103_2176:Record ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.orientationParameterAvailability>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Georeferenceable ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "orientationParameterAvailability" ;
+  rdfs:range xsd:boolean ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.orientationParameterDescription>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_Georeferenceable ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "orientationParameterDescription" ;
+  rdfs:range xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_Georeferenceable.parameterCitation>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_Georeferenceable ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "parameterCitation" ;
+  rdfs:range iso19115-1_2363:CI_Citation ;
+.
+iso19115-1:MD_GridSpatialRepresentation
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_GridSpatialRepresentation" ;
+  rdfs:subClassOf iso19115-1:MD_SpatialRepresentation ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_CellGeometryCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.cellGeometry> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_Dimension ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.axisDimensionProperties> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:boolean ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.transformationParameterAvailability> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:integer ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.numberOfDimensions> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.cellGeometry> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.numberOfDimensions> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.transformationParameterAvailability> ;
+    ] ;
+  skos:definition "information about grid spatial objects in the resource" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.axisDimensionProperties>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_GridSpatialRepresentation ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "axisDimensionProperties" ;
+  rdfs:range iso19115-1:MD_Dimension ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.cellGeometry>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_GridSpatialRepresentation ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "cellGeometry" ;
+  rdfs:range iso19115-1:MD_CellGeometryCode ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.numberOfDimensions>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_GridSpatialRepresentation ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "numberOfDimensions" ;
+  rdfs:range xsd:integer ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_GridSpatialRepresentation.transformationParameterAvailability>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain iso19115-1:MD_GridSpatialRepresentation ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "transformationParameterAvailability" ;
+  rdfs:range xsd:boolean ;
+.
+iso19115-1:MD_PixelOrientationCode
+  rdf:type rdfs:Datatype ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_PixelOrientationCode" ;
+  owl:equivalentClass [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "centre"
+          "lowerLeft"
+          "lowerRight"
+          "upperRight"
+          "upperLeft"
+        ) ;
+    ] ;
+.
+iso19115-1:MD_SpatialRepresentation
+  rdf:type owl:Class ;
+  iso19150-2:isAbstract "true"^^xsd:boolean ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_SpatialRepresentation" ;
+  skos:definition "digital mechanism used to represent spatial information" ;
+.
+iso19115-1:MD_TopologyLevelCode
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_TopologyLevelCode" ;
+  rdfs:subClassOf skos:Concept ;
+.
+iso19115-1:MD_VectorSpatialRepresentation
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD_VectorSpatialRepresentation" ;
+  rdfs:subClassOf iso19115-1:MD_SpatialRepresentation ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_GeometricObjects ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_VectorSpatialRepresentation.geometricObjects> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom iso19115-1:MD_TopologyLevelCode ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_VectorSpatialRepresentation.topologyLevel> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_VectorSpatialRepresentation.topologyLevel> ;
+    ] ;
+  skos:definition "information about the vector spatial objects in the resource" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_VectorSpatialRepresentation.geometricObjects>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_VectorSpatialRepresentation ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "geometricObjects" ;
+  rdfs:range iso19115-1:MD_GeometricObjects ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#MD_VectorSpatialRepresentation.topologyLevel>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain iso19115-1:MD_VectorSpatialRepresentation ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "topologyLevel" ;
+  rdfs:range iso19115-1:MD_TopologyLevelCode ;
+.
+iso19115-1Code:MD_CellGeometryCode
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:MD_CellGeometryCode ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "MD_CellGeometryCode - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/area>
+  rdf:type iso19115-1:MD_CellGeometryCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "each cell represents an area"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
+  skos:prefLabel "area" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/point>
+  rdf:type iso19115-1:MD_CellGeometryCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "each cell represents a point"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
+  skos:prefLabel "point" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/stratum>
+  rdf:type iso19115-1:MD_CellGeometryCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "height range for a single point vertical profile"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
+  skos:prefLabel "stratum" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/voxel>
+  rdf:type iso19115-1:MD_CellGeometryCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "each cell represents a volumetric measurement on a regular grid in three dimensional space"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
+  skos:prefLabel "voxel" ;
+.
+iso19115-1Code:MD_CellGeometryCodeCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "MD_CellGeometryCode - Collection" ;
+.
+iso19115-1Code:MD_DimensionNameTypeCode
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:MD_DimensionNameTypeCode ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "MD_DimensionNameTypeCode - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/column>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "abscissa (x) axis"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "column" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/crossTrack>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "perpendicular to the direction of motion of the scan point"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "crossTrack" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/line>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "scan line of a sensor"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "line" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/row>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "ordinate (y) axis"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "row" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/sample>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "element along a scan line"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "sample" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/time>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "duration"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "time" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/track>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "along the direction of motion of the scan point"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "track" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/vertical>
+  rdf:type iso19115-1:MD_DimensionNameTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "vertical (z) axis"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
+  skos:prefLabel "vertical" ;
+.
+iso19115-1Code:MD_DimensionNameTypeCodeCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "MD_DimensionNameTypeCode - Collection" ;
+.
+iso19115-1Code:MD_GeometricObjectTypeCode
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:MD_GeometricObjectTypeCode ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "MD_GeometricObjectTypeCode - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/complex>
+  rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "set of geometric primitives such that their boundaries can be represented as a union of other primitives"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
+  skos:prefLabel "complex" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/composite>
+  rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "connected set of curves, solids or surfaces"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
+  skos:prefLabel "composite" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/curve>
+  rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "continuous image of a line"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
+  skos:prefLabel "curve" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/point>
+  rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "zero-dimensional geometric primitive, representing a position but not having an extent"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
+  skos:prefLabel "point" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/solid>
+  rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
+  skos:prefLabel "solid" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/surface>
+  rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:definition "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane"^^xsd:string ;
+  skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
+  skos:prefLabel "surface" ;
+.
+iso19115-1Code:MD_GeometricObjectTypeCodeCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "MD_GeometricObjectTypeCode - Collection" ;
+.
+iso19115-1Code:MD_TopologyLevelCode
+  rdf:type skos:ConceptScheme ;
+  dct:isFormatOf iso19115-1:MD_TopologyLevelCode ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:prefLabel "MD_TopologyLevelCode - ConceptScheme" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/abstract>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "abstract" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/fullPlanarGraph>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "fullPlanarGraph" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/fullSurfaceGraph>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "fullSurfaceGraph" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/fullTopology3D>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "fullTopology3D" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/geometryOnly>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "geometryOnly" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/planarGraph>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "planarGraph" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/surfaceGraph>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "surfaceGraph" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/topology1D>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "topology1D" ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/topology3D>
+  rdf:type iso19115-1:MD_TopologyLevelCode ;
+  rdf:type skos:Concept ;
+  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
+  skos:prefLabel "topology3D" ;
+.
+iso19115-1Code:MD_TopologyLevelCodeCollection
+  rdf:type skos:Collection ;
+  skos:members (
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+      [
+        rdf:type skos:Concept ;
+      ]
+    ) ;
+  skos:prefLabel "MD_TopologyLevelCode - Collection" ;
+.
