@@ -422,7 +422,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/aggregate>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to an aggregate resource"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "aggregate" ;
   skos:definition "information applies to an aggregate resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "aggregate" ;
@@ -430,7 +432,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/application>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information resource hosted on a specific set of hardware and accessible over a network"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "application" ;
   skos:definition "information resource hosted on a specific set of hardware and accessible over a network"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "application" ;
@@ -438,7 +442,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/attribute>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to the attribute value"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "attribute" ;
   skos:definition "information applies to the attribute value"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "attribute" ;
@@ -446,7 +452,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/attributeType>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to the characteristic of a feature"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "attribute Type" ;
   skos:definition "information applies to the characteristic of a feature"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "attributeType" ;
@@ -454,7 +462,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/collection>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to an unstructured set"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "collection" ;
   skos:definition "information applies to an unstructured set"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "collection" ;
@@ -462,7 +472,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/collectionHardware>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to the collection hardware class"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "collection Hardware" ;
   skos:definition "information applies to the collection hardware class"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "collectionHardware" ;
@@ -470,7 +482,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/collectionSession>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to the collection session"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "collection Session" ;
   skos:definition "information applies to the collection session"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "collectionSession" ;
@@ -478,7 +492,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/coverage>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a coverage"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "coverage" ;
   skos:definition "information applies to a coverage"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "coverage" ;
@@ -486,7 +502,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/dataset>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to the dataset"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "dataset" ;
   skos:definition "information applies to the dataset"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "dataset" ;
@@ -494,7 +512,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/dimensionGroup>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a dimension group"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "dimension Group" ;
   skos:definition "information applies to a dimension group"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "dimensionGroup" ;
@@ -502,7 +522,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/document>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a document"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "document" ;
   skos:definition "information applies to a document"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "document" ;
@@ -510,7 +532,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/feature>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a feature"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "feature" ;
   skos:definition "information applies to a feature"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "feature" ;
@@ -518,7 +542,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/featureType>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a feature type"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "feature Type" ;
   skos:definition "information applies to a feature type"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "featureType" ;
@@ -526,7 +552,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/fieldSession>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a field session"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "field Session" ;
   skos:definition "information applies to a field session"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "fieldSession" ;
@@ -534,7 +562,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/initiative>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to an initiative"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "initiative" ;
   skos:definition "information applies to an initiative"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "initiative" ;
@@ -542,7 +572,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/metadata>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to metadata"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "metadata" ;
   skos:definition "information applies to metadata"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "metadata" ;
@@ -550,7 +582,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/model>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a copy or imitation of an existing or hypothetical object"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "model" ;
   skos:definition "information applies to a copy or imitation of an existing or hypothetical object"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "model" ;
@@ -558,7 +592,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/nonGeographicDataset>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to non-geographic data"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "non Geographic Dataset" ;
   skos:definition "information applies to non-geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "nonGeographicDataset" ;
@@ -566,7 +602,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/product>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "metadata describing an ISO 19131 data product specification"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "product" ;
   skos:definition "metadata describing an ISO 19131 data product specification"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "product" ;
@@ -574,7 +612,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/propertyType>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a property type"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "property Type" ;
   skos:definition "information applies to a property type"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "propertyType" ;
@@ -582,7 +622,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/repository>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a repository"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "repository" ;
   skos:definition "information applies to a repository"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "repository" ;
@@ -590,7 +632,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/sample>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a sample"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "sample" ;
   skos:definition "information applies to a sample"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "sample" ;
@@ -598,7 +642,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/series>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to the series"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "series" ;
   skos:definition "information applies to the series"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "series" ;
@@ -606,7 +652,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/service>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "service" ;
   skos:definition "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "service" ;
@@ -614,7 +662,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/software>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a computer program or routine"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "software" ;
   skos:definition "information applies to a computer program or routine"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "software" ;
@@ -622,7 +672,9 @@ iso19115-1Code:MD_ScopeCode
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/tile>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
+  dct:description "information applies to a tile, a spatial subset of geographic data"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "tile" ;
   skos:definition "information applies to a tile, a spatial subset of geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
   skos:prefLabel "tile" ;

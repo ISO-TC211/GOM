@@ -27,48 +27,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode>
-  skos:definition "identification of when a given event occurred"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_OnLineFunctionCode>
-  skos:definition "function performed by the resource"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode>
-  skos:definition "mode in which the data are represented"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_RoleCode>
-  skos:definition "function performed by the responsible party"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_TelephoneTypeCode>
-  skos:definition "type of telephone"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode>
-  skos:definition "name of the handling restrictions on the resource"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/ContentInformation/code/MD_CoverageContentTypeCode>
-  skos:definition "specific type of information represented in the cell"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/ContentInformation/code/MD_ImagingConditionCode>
-  skos:definition "code which indicates conditions which may affect the image"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode>
-  skos:definition "method used to write to the medium"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/DS_AssociationTypeCode>
-  skos:definition "justification for the correlation of two resources"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/DS_InitiativeTypeCode>
-  skos:definition "type of aggregation activity in which resources are related"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_KeywordTypeCode>
-  skos:definition "methods used to group similar keywords"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_ProgressCode>
-  skos:definition "status of the resource"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode>
-  skos:definition "frequency with which modifications and deletions are made to the data after it is first produced"^^xsd:string ;
-.
 <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals>
   rdf:type owl:Ontology ;
   dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
@@ -94,19 +52,4 @@
   owl:imports <http://def.isotc211.org/iso19150/-2/2012/base> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:versionInfo "2014" ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_DatatypeCode>
-  skos:definition "datatype of element or entity"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList>
-  skos:definition "class of information to which the referencing entity applies"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode>
-  skos:definition "code indicating the geometry represented by the grid cell value"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode>
-  skos:definition "name of the dimension"^^xsd:string ;
-.
-<http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode>
-  skos:definition "name of point or vector objects used to locate zero-, one-, two-, or three-dimensional spatial locations in the dataset"^^xsd:string ;
 .

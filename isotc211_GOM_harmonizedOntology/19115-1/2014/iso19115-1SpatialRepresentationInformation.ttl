@@ -527,14 +527,19 @@ iso19115-1:MD_VectorSpatialRepresentation
 .
 iso19115-1Code:MD_CellGeometryCode
   rdf:type skos:ConceptScheme ;
+  dct:description "code indicating the geometry represented by the grid cell value"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_CellGeometryCode ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD Cell Geometry Code - Concept Scheme" ;
+  skos:definition "code indicating the geometry represented by the grid cell value"^^xsd:string ;
   skos:prefLabel "MD_CellGeometryCode - ConceptScheme" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/area>
   rdf:type iso19115-1:MD_CellGeometryCode ;
   rdf:type skos:Concept ;
+  dct:description "each cell represents an area"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "area" ;
   skos:definition "each cell represents an area"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
   skos:prefLabel "area" ;
@@ -542,7 +547,9 @@ iso19115-1Code:MD_CellGeometryCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/point>
   rdf:type iso19115-1:MD_CellGeometryCode ;
   rdf:type skos:Concept ;
+  dct:description "each cell represents a point"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "point" ;
   skos:definition "each cell represents a point"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
   skos:prefLabel "point" ;
@@ -550,7 +557,9 @@ iso19115-1Code:MD_CellGeometryCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/stratum>
   rdf:type iso19115-1:MD_CellGeometryCode ;
   rdf:type skos:Concept ;
+  dct:description "height range for a single point vertical profile"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "stratum" ;
   skos:definition "height range for a single point vertical profile"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
   skos:prefLabel "stratum" ;
@@ -558,7 +567,9 @@ iso19115-1Code:MD_CellGeometryCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_CellGeometryCode/voxel>
   rdf:type iso19115-1:MD_CellGeometryCode ;
   rdf:type skos:Concept ;
+  dct:description "each cell represents a volumetric measurement on a regular grid in three dimensional space"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "voxel" ;
   skos:definition "each cell represents a volumetric measurement on a regular grid in three dimensional space"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CellGeometryCode ;
   skos:prefLabel "voxel" ;
@@ -583,14 +594,19 @@ iso19115-1Code:MD_CellGeometryCodeCollection
 .
 iso19115-1Code:MD_DimensionNameTypeCode
   rdf:type skos:ConceptScheme ;
+  dct:description "name of the dimension"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_DimensionNameTypeCode ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD Dimension Name Type Code - Concept Scheme" ;
+  skos:definition "name of the dimension"^^xsd:string ;
   skos:prefLabel "MD_DimensionNameTypeCode - ConceptScheme" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/column>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "abscissa (x) axis"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "column" ;
   skos:definition "abscissa (x) axis"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "column" ;
@@ -598,7 +614,9 @@ iso19115-1Code:MD_DimensionNameTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/crossTrack>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "perpendicular to the direction of motion of the scan point"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "cross Track" ;
   skos:definition "perpendicular to the direction of motion of the scan point"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "crossTrack" ;
@@ -606,7 +624,9 @@ iso19115-1Code:MD_DimensionNameTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/line>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "scan line of a sensor"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "line" ;
   skos:definition "scan line of a sensor"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "line" ;
@@ -614,7 +634,9 @@ iso19115-1Code:MD_DimensionNameTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/row>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "ordinate (y) axis"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "row" ;
   skos:definition "ordinate (y) axis"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "row" ;
@@ -622,7 +644,9 @@ iso19115-1Code:MD_DimensionNameTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/sample>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "element along a scan line"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "sample" ;
   skos:definition "element along a scan line"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "sample" ;
@@ -630,7 +654,9 @@ iso19115-1Code:MD_DimensionNameTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/time>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "duration"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "time" ;
   skos:definition "duration"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "time" ;
@@ -638,7 +664,9 @@ iso19115-1Code:MD_DimensionNameTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/track>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "along the direction of motion of the scan point"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "track" ;
   skos:definition "along the direction of motion of the scan point"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "track" ;
@@ -646,7 +674,9 @@ iso19115-1Code:MD_DimensionNameTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/vertical>
   rdf:type iso19115-1:MD_DimensionNameTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "vertical (z) axis"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "vertical" ;
   skos:definition "vertical (z) axis"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DimensionNameTypeCode ;
   skos:prefLabel "vertical" ;
@@ -683,14 +713,19 @@ iso19115-1Code:MD_DimensionNameTypeCodeCollection
 .
 iso19115-1Code:MD_GeometricObjectTypeCode
   rdf:type skos:ConceptScheme ;
+  dct:description "name of point or vector objects used to locate zero-, one-, two-, or three-dimensional spatial locations in the dataset"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_GeometricObjectTypeCode ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD Geometric Object Type Code - Concept Scheme" ;
+  skos:definition "name of point or vector objects used to locate zero-, one-, two-, or three-dimensional spatial locations in the dataset"^^xsd:string ;
   skos:prefLabel "MD_GeometricObjectTypeCode - ConceptScheme" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/complex>
   rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "set of geometric primitives such that their boundaries can be represented as a union of other primitives"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "complex" ;
   skos:definition "set of geometric primitives such that their boundaries can be represented as a union of other primitives"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
   skos:prefLabel "complex" ;
@@ -698,7 +733,9 @@ iso19115-1Code:MD_GeometricObjectTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/composite>
   rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "connected set of curves, solids or surfaces"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "composite" ;
   skos:definition "connected set of curves, solids or surfaces"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
   skos:prefLabel "composite" ;
@@ -706,7 +743,9 @@ iso19115-1Code:MD_GeometricObjectTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/curve>
   rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "continuous image of a line"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "curve" ;
   skos:definition "continuous image of a line"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
   skos:prefLabel "curve" ;
@@ -714,7 +753,9 @@ iso19115-1Code:MD_GeometricObjectTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/point>
   rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "zero-dimensional geometric primitive, representing a position but not having an extent"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "point" ;
   skos:definition "zero-dimensional geometric primitive, representing a position but not having an extent"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
   skos:prefLabel "point" ;
@@ -722,7 +763,9 @@ iso19115-1Code:MD_GeometricObjectTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/solid>
   rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "solid" ;
   skos:definition "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
   skos:prefLabel "solid" ;
@@ -730,7 +773,9 @@ iso19115-1Code:MD_GeometricObjectTypeCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/surface>
   rdf:type iso19115-1:MD_GeometricObjectTypeCode ;
   rdf:type skos:Concept ;
+  dct:description "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "surface" ;
   skos:definition "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_GeometricObjectTypeCode ;
   skos:prefLabel "surface" ;
@@ -768,7 +813,9 @@ iso19115-1Code:MD_TopologyLevelCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/abstract>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description "topological complex without any specified geometric realisation"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "abstract" ;
   skos:definition "topological complex without any specified geometric realisation"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "abstract" ;
@@ -776,23 +823,33 @@ iso19115-1Code:MD_TopologyLevelCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/fullPlanarGraph>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description """2-dimensional topological complex that is planar 
+NOTE A 2-dimensional topological complex is commonly called “full topology” in a cartographic 2D environment."""^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-  skos:definition "2-dimensional topological complex that is planar NOTE A 2-dimensional topological complex is commonly called “full topology” in a cartographic 2D environment."^^xsd:string ;
+  rdfs:label "full Planar Graph" ;
+  skos:definition """2-dimensional topological complex that is planar 
+NOTE A 2-dimensional topological complex is commonly called “full topology” in a cartographic 2D environment."""^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "fullPlanarGraph" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/fullSurfaceGraph>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description """1-dimensional topological complex that is isomorphic to a subset of a surface 
+NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."""^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-  skos:definition "1-dimensional topological complex that is isomorphic to a subset of a surface NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."^^xsd:string ;
+  rdfs:label "full Surface Graph" ;
+  skos:definition """1-dimensional topological complex that is isomorphic to a subset of a surface 
+NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."""^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "fullSurfaceGraph" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/fullTopology3D>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description "complete coverage of a 3D Euclidean coordinate space"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "full Topology 3D" ;
   skos:definition "complete coverage of a 3D Euclidean coordinate space"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "fullTopology3D" ;
@@ -800,7 +857,9 @@ iso19115-1Code:MD_TopologyLevelCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/geometryOnly>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description "geometry objects without any additional structure which describes topology"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "geometry Only" ;
   skos:definition "geometry objects without any additional structure which describes topology"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "geometryOnly" ;
@@ -808,23 +867,33 @@ iso19115-1Code:MD_TopologyLevelCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/planarGraph>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description """1-dimensional topological complex that is planar 
+NOTE A planar graph is a graph that can be drawn in a plane in such a way that no two edges intersect except at a vertex."""^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-  skos:definition "1-dimensional topological complex that is planar NOTE A planar graph is a graph that can be drawn in a plane in such a way that no two edges intersect except at a vertex."^^xsd:string ;
+  rdfs:label "planar Graph" ;
+  skos:definition """1-dimensional topological complex that is planar 
+NOTE A planar graph is a graph that can be drawn in a plane in such a way that no two edges intersect except at a vertex."""^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "planarGraph" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/surfaceGraph>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description """1-dimensional topological complex that is isomorphic to a subset of a surface 
+NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."""^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-  skos:definition "1-dimensional topological complex that is isomorphic to a subset of a surface NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."^^xsd:string ;
+  rdfs:label "surface Graph" ;
+  skos:definition """1-dimensional topological complex that is isomorphic to a subset of a surface 
+NOTE A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another."""^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "surfaceGraph" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/topology1D>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description "1-dimensional topological complex – commonly called “chain-node” topology"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "topology 1D" ;
   skos:definition "1-dimensional topological complex – commonly called “chain-node” topology"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "topology1D" ;
@@ -832,8 +901,12 @@ iso19115-1Code:MD_TopologyLevelCode
 <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation/code/MD_TopologyLevelCode/topology3D>
   rdf:type iso19115-1:MD_TopologyLevelCode ;
   rdf:type skos:Concept ;
+  dct:description """3-dimensional topological complex 
+NOTE A topological complex is a collection of topological primitives that are closed under the boundary operations."""^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-  skos:definition "3-dimensional topological complex NOTE A topological complex is a collection of topological primitives that are closed under the boundary operations."^^xsd:string ;
+  rdfs:label "topology 3D" ;
+  skos:definition """3-dimensional topological complex 
+NOTE A topological complex is a collection of topological primitives that are closed under the boundary operations."""^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_TopologyLevelCode ;
   skos:prefLabel "topology3D" ;
 .

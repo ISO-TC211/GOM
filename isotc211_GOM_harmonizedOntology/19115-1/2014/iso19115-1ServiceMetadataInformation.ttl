@@ -546,14 +546,19 @@ iso19115-1:SV_ServiceIdentification
 .
 iso19115-1Code:DCPList
   rdf:type skos:ConceptScheme ;
+  dct:description "class of information to which the referencing entity applies"^^xsd:string ;
   dct:isFormatOf iso19115-1:DCPList ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "DCP List - Concept Scheme" ;
+  skos:definition "class of information to which the referencing entity applies"^^xsd:string ;
   skos:prefLabel "DCPList - ConceptScheme" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/COM>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "Component Object Model"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "COM" ;
   skos:definition "Component Object Model"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "COM" ;
@@ -561,7 +566,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/CORBA>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "Common Object Request Broker Architecture"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "CORBA" ;
   skos:definition "Common Object Request Broker Architecture"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "CORBA" ;
@@ -569,7 +576,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/FTP>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "File Transfer Protocol"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "FTP" ;
   skos:definition "File Transfer Protocol"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "FTP" ;
@@ -577,7 +586,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/HTTP>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "HyperText Transfer Protocol"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "HTTP" ;
   skos:definition "HyperText Transfer Protocol"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "HTTP" ;
@@ -585,7 +596,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/JAVA>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "Object-oriented programming language"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "JAVA" ;
   skos:definition "Object-oriented programming language"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "JAVA" ;
@@ -593,7 +606,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/SOAP>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "Simple Object Access Protocol"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SOAP" ;
   skos:definition "Simple Object Access Protocol"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "SOAP" ;
@@ -601,7 +616,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/SQL>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "Structured Query Language"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "SQL" ;
   skos:definition "Structured Query Language"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "SQL" ;
@@ -609,7 +626,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/XML>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "Extensible Markup Language"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "XML" ;
   skos:definition "Extensible Markup Language"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "XML" ;
@@ -617,7 +636,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/Z3950>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "ISO 23950"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "Z39.50" ;
   skos:definition "ISO 23950"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "Z3950" ;
@@ -625,7 +646,9 @@ iso19115-1Code:DCPList
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/DCPList/webServices>
   rdf:type iso19115-1:DCPList ;
   rdf:type skos:Concept ;
+  dct:description "Web service"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "web Services" ;
   skos:definition "Web service"^^xsd:string ;
   skos:inScheme iso19115-1Code:DCPList ;
   skos:prefLabel "webServices" ;
@@ -675,7 +698,9 @@ iso19115-1Code:SV_CouplingType
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/SV_CouplingType/loose>
   rdf:type iso19115-1:SV_CouplingType ;
   rdf:type skos:Concept ;
+  dct:description "service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "loose" ;
   skos:definition "service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described"^^xsd:string ;
   skos:inScheme iso19115-1Code:SV_CouplingType ;
   skos:prefLabel "loose" ;
@@ -683,7 +708,9 @@ iso19115-1Code:SV_CouplingType
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/SV_CouplingType/mixed>
   rdf:type iso19115-1:SV_CouplingType ;
   rdf:type skos:Concept ;
+  dct:description "service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "mixed" ;
   skos:definition "service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances"^^xsd:string ;
   skos:inScheme iso19115-1Code:SV_CouplingType ;
   skos:prefLabel "mixed" ;
@@ -691,7 +718,9 @@ iso19115-1Code:SV_CouplingType
 <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation/code/SV_CouplingType/tight>
   rdf:type iso19115-1:SV_CouplingType ;
   rdf:type skos:Concept ;
+  dct:description "service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "tight" ;
   skos:definition "service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described"^^xsd:string ;
   skos:inScheme iso19115-1Code:SV_CouplingType ;
   skos:prefLabel "tight" ;

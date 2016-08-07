@@ -561,14 +561,19 @@ iso19115-1:MD_StandardOrderProcess
 .
 iso19115-1Code:MD_MediumFormatCode
   rdf:type skos:ConceptScheme ;
+  dct:description "method used to write to the medium"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_MediumFormatCode ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "MD Medium Format Code - Concept Scheme" ;
+  skos:definition "method used to write to the medium"^^xsd:string ;
   skos:prefLabel "MD_MediumFormatCode - ConceptScheme" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode/cpio>
   rdf:type iso19115-1:MD_MediumFormatCode ;
   rdf:type skos:Concept ;
+  dct:description "Copy In / Out (UNIX file format and command)"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "cpio" ;
   skos:definition "Copy In / Out (UNIX file format and command)"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MediumFormatCode ;
   skos:prefLabel "cpio" ;
@@ -576,7 +581,9 @@ iso19115-1Code:MD_MediumFormatCode
 <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode/highSierra>
   rdf:type iso19115-1:MD_MediumFormatCode ;
   rdf:type skos:Concept ;
+  dct:description "high sierra file system"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "high Sierra" ;
   skos:definition "high sierra file system"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MediumFormatCode ;
   skos:prefLabel "highSierra" ;
@@ -584,7 +591,9 @@ iso19115-1Code:MD_MediumFormatCode
 <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode/iso9660>
   rdf:type iso19115-1:MD_MediumFormatCode ;
   rdf:type skos:Concept ;
+  dct:description "information processing – volume and file structure of CD-ROM"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "iso9660" ;
   skos:definition "information processing – volume and file structure of CD-ROM"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MediumFormatCode ;
   skos:prefLabel "iso9660" ;
@@ -592,7 +601,9 @@ iso19115-1Code:MD_MediumFormatCode
 <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode/iso9660AppleHFS>
   rdf:type iso19115-1:MD_MediumFormatCode ;
   rdf:type skos:Concept ;
+  dct:description "hierarchical file system (Macintosh)"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "iso9660 Apple HFS" ;
   skos:definition "hierarchical file system (Macintosh)"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MediumFormatCode ;
   skos:prefLabel "iso9660AppleHFS" ;
@@ -600,7 +611,9 @@ iso19115-1Code:MD_MediumFormatCode
 <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode/iso9660RockRidge>
   rdf:type iso19115-1:MD_MediumFormatCode ;
   rdf:type skos:Concept ;
+  dct:description "rock ridge interchange protocol (UNIX)"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "iso9660 RockRidge" ;
   skos:definition "rock ridge interchange protocol (UNIX)"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MediumFormatCode ;
   skos:prefLabel "iso9660RockRidge" ;
@@ -608,7 +621,9 @@ iso19115-1Code:MD_MediumFormatCode
 <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode/tar>
   rdf:type iso19115-1:MD_MediumFormatCode ;
   rdf:type skos:Concept ;
+  dct:description "Tape Archive"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "tar" ;
   skos:definition "Tape Archive"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MediumFormatCode ;
   skos:prefLabel "tar" ;
@@ -616,7 +631,9 @@ iso19115-1Code:MD_MediumFormatCode
 <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation/code/MD_MediumFormatCode/udf>
   rdf:type iso19115-1:MD_MediumFormatCode ;
   rdf:type skos:Concept ;
+  dct:description "universal disk format"^^xsd:string ;
   rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:label "udf" ;
   skos:definition "universal disk format"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MediumFormatCode ;
   skos:prefLabel "udf" ;
