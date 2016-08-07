@@ -1,0 +1,49 @@
+# baseURI: http://example.org/MD_ObligationCode
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix MD_ObligationCode: <http://example.org/MD_ObligationCode#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_ObligationCode>
+  rdf:type skos:ConceptScheme ;
+  dct:description "obligation of the element or entity"^^xsd:string ;
+  rdfs:label "MD Obligation Code"^^xsd:string ;
+  skos:definition "obligation of the element or entity"^^xsd:string ;
+  skos:hasTopConcept <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_ObligationCode/conditional> ;
+  skos:hasTopConcept <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_ObligationCode/mandatory> ;
+  skos:hasTopConcept <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_ObligationCode/optional> ;
+  skos:prefLabel "MD_ObligationCode"^^xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_ObligationCode/conditional>
+  rdf:type skos:Concept ;
+  dct:description "element is required when a specific condition is met"^^xsd:string ;
+  rdfs:label "conditional"^^xsd:string ;
+  skos:definition "element is required when a specific condition is met"^^xsd:string ;
+  skos:prefLabel "conditional"^^xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_ObligationCode/mandatory>
+  rdf:type skos:Concept ;
+  dct:description "element is always required"^^xsd:string ;
+  rdfs:label "mandatory"^^xsd:string ;
+  skos:definition "element is always required"^^xsd:string ;
+  skos:prefLabel "mandatory"^^xsd:string ;
+.
+<http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/MD_ObligationCode/optional>
+  rdf:type skos:Concept ;
+  dct:description "element is not required"^^xsd:string ;
+  rdfs:label "optional"^^xsd:string ;
+  skos:definition "element is not required"^^xsd:string ;
+  skos:prefLabel "optional"^^xsd:string ;
+.
+<http://example.org/MD_ObligationCode>
+  rdf:type owl:Ontology ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.

@@ -1,0 +1,339 @@
+# baseURI: http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix common: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix constraint: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix crs: <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix fc: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
+@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix lineage: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rs: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix service: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sr: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+@prefix topic: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_TopicCategoryCode>
+  rdf:type skos:ConceptScheme ;
+  dct:description "high-level geographic data thematic classification to assist in the grouping and search of available geographic data sets NOTE 1 Can be used to group keywords as well. Listed examples are not exhaustive. NOTE 2 It is understood there are overlaps between general categories and the user is encouraged to select the one most appropriate." ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "MD Topic Category Code" ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  skos:definition "high-level geographic data thematic classification to assist in the grouping and search of available geographic data sets NOTE 1 Can be used to group keywords as well. Listed examples are not exhaustive. NOTE 2 It is understood there are overlaps between general categories and the user is encouraged to select the one most appropriate." ;
+  skos:prefLabel "MD_TopicCategoryCode" ;
+.
+topic:biota
+  rdf:type skos:Concept ;
+  dct:description """flora and/or fauna in natural environment 
+
+EXAMPLES Wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "biota" ;
+  skos:definition """flora and/or fauna in natural environment 
+
+EXAMPLES Wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat."""^^xsd:string ;
+  skos:example "biological sciences"^^xsd:string ;
+  skos:example "ecology"^^xsd:string ;
+  skos:example "habitat"^^xsd:string ;
+  skos:example "sealife"^^xsd:string ;
+  skos:example "vegetation"^^xsd:string ;
+  skos:example "wetlands"^^xsd:string ;
+  skos:example "wilderness"^^xsd:string ;
+  skos:example "wildlife"^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "biota" ;
+.
+topic:boundaries
+  rdf:type skos:Concept ;
+  dct:description """legal land descriptions, maritime boundaries 
+
+EXAMPLES Political and administrative boundaries, territorial seas, EEZ, port security zones."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "boundaries" ;
+  skos:definition """legal land descriptions, maritime boundaries 
+
+EXAMPLES Political and administrative boundaries, territorial seas, EEZ, port security zones."""^^xsd:string ;
+  skos:example "Political and administrative boundaries, territorial seas, EEZ, port security zones."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "boundaries" ;
+.
+topic:climatologyMeteorologyAtmosphere
+  rdf:type skos:Concept ;
+  dct:description """processes and phenomena of the atmosphere 
+
+EXAMPLES Cloud cover, weather, climate, atmospheric conditions, climate change, precipitation."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "climatology Meteorology Atmosphere" ;
+  skos:definition """processes and phenomena of the atmosphere 
+
+EXAMPLES Cloud cover, weather, climate, atmospheric conditions, climate change, precipitation."""^^xsd:string ;
+  skos:example "Cloud cover, weather, climate, atmospheric conditions, climate change, precipitation."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "climatologyMeteorologyAtmosphere" ;
+.
+topic:disaster
+  rdf:type skos:Concept ;
+  dct:description """information related to disasters 
+
+EXAMPLES Site of the disaster, evacuation zone, disaster-prevention facility, disaster relief activities."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "disaster" ;
+  skos:definition """information related to disasters 
+
+EXAMPLES Site of the disaster, evacuation zone, disaster-prevention facility, disaster relief activities."""^^xsd:string ;
+  skos:example "Site of the disaster, evacuation zone, disaster-prevention facility, disaster relief activities."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "disaster" ;
+.
+topic:economy
+  rdf:type skos:Concept ;
+  dct:description """economic activities, conditions and employment 
+
+EXAMPLES Production, labour, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "economy" ;
+  skos:definition """economic activities, conditions and employment 
+
+EXAMPLES Production, labour, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas."""^^xsd:string ;
+  skos:example "Production, labour, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "economy" ;
+.
+topic:elevation
+  rdf:type skos:Concept ;
+  dct:description """height above or below a vertical datum 
+
+EXAMPLES Altitude, bathymetry, digital elevation models, slope, derived products."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "elevation" ;
+  skos:definition """height above or below a vertical datum 
+
+EXAMPLES Altitude, bathymetry, digital elevation models, slope, derived products."""^^xsd:string ;
+  skos:example "Altitude, bathymetry, digital elevation models, slope, derived products."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "elevation" ;
+.
+topic:environment
+  rdf:type skos:Concept ;
+  dct:description """environmental resources, protection and conservation 
+
+EXAMPLES Environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "environment" ;
+  skos:definition """environmental resources, protection and conservation 
+
+EXAMPLES Environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape."""^^xsd:string ;
+  skos:example "Environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "environment" ;
+.
+topic:extraTerrestrial
+  rdf:type skos:Concept ;
+  dct:description "region more than 100 km above the surface of the Earth." ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "extra Terrestrial" ;
+  skos:definition "region more than 100 km above the surface of the Earth." ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "extraTerrestrial" ;
+.
+topic:farming
+  rdf:type skos:Concept ;
+  dct:description """rearing of animals and/or cultivation of plants 
+
+EXAMPLES Agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "farming" ;
+  skos:definition """rearing of animals and/or cultivation of plants 
+
+EXAMPLES Agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock."""^^xsd:string ;
+  skos:example "Agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "farming" ;
+.
+topic:geoscientificInformation
+  rdf:type skos:Concept ;
+  dct:description """information pertaining to earth sciences 
+
+EXAMPLES Geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the earth’s rocks, risks of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrogeology, erosion."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "geoscientific Information" ;
+  skos:definition """information pertaining to earth sciences 
+
+EXAMPLES Geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the earth’s rocks, risks of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrogeology, erosion."""^^xsd:string ;
+  skos:example "Geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the earth’s rocks, risks of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrogeology, erosion."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "geoscientificInformation" ;
+.
+topic:health
+  rdf:type skos:Concept ;
+  dct:description """health, health services, human ecology, and safety 
+
+EXAMPLES Disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "health" ;
+  skos:definition """health, health services, human ecology, and safety 
+
+EXAMPLES Disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services."""^^xsd:string ;
+  skos:example "Disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "health" ;
+.
+topic:imageryBaseMapsEarthCover
+  rdf:type skos:Concept ;
+  dct:description """base maps 
+
+EXAMPLES Land cover, topographic maps, imagery, unclassified images, annotations."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "imagery Base Maps Earth Cover" ;
+  skos:definition """base maps 
+
+EXAMPLES Land cover, topographic maps, imagery, unclassified images, annotations."""^^xsd:string ;
+  skos:example "Land cover, topographic maps, imagery, unclassified images, annotations."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "imageryBaseMapsEarthCover" ;
+.
+topic:inlandWaters
+  rdf:type skos:Concept ;
+  dct:description """inland water features, drainage systems and their characteristics 
+
+EXAMPLES Rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrologic information."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "inland Waters" ;
+  skos:definition """inland water features, drainage systems and their characteristics 
+
+EXAMPLES Rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrologic information."""^^xsd:string ;
+  skos:example "Rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrologic information."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "inlandWaters" ;
+.
+topic:intelligenceMilitary
+  rdf:type skos:Concept ;
+  dct:description """military bases, structures, activities 
+
+EXAMPLES Barracks, training grounds, military transportation, information collection."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "intelligence Military" ;
+  skos:definition """military bases, structures, activities 
+
+EXAMPLES Barracks, training grounds, military transportation, information collection."""^^xsd:string ;
+  skos:example "Barracks, training grounds, military transportation, information collection."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "intelligenceMilitary" ;
+.
+topic:location
+  rdf:type skos:Concept ;
+  dct:description """positional information and services 
+
+EXAMPLES Addresses, geodetic networks, control points, postal zones and services, place names."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "location" ;
+  skos:definition """positional information and services 
+
+EXAMPLES Addresses, geodetic networks, control points, postal zones and services, place names."""^^xsd:string ;
+  skos:example "Addresses, geodetic networks, control points, postal zones and services, place names."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "location" ;
+.
+topic:oceans
+  rdf:type skos:Concept ;
+  dct:description """features and characteristics of salt water bodies (excluding inland waters) 
+
+EXAMPLES Tides, tsunamis, coastal information, reefs."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "oceans" ;
+  skos:definition """features and characteristics of salt water bodies (excluding inland waters) 
+
+EXAMPLES Tides, tsunamis, coastal information, reefs."""^^xsd:string ;
+  skos:example "Tides, tsunamis, coastal information, reefs."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "oceans" ;
+.
+topic:planningCadastre
+  rdf:type skos:Concept ;
+  dct:description """information used for appropriate actions for future use of the land 
+
+EXAMPLES Land use maps, zoning maps, cadastral surveys, land ownership."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "planning Cadastre" ;
+  skos:definition """information used for appropriate actions for future use of the land 
+
+EXAMPLES Land use maps, zoning maps, cadastral surveys, land ownership."""^^xsd:string ;
+  skos:example "Land use maps, zoning maps, cadastral surveys, land ownership."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "planningCadastre" ;
+.
+topic:society
+  rdf:type skos:Concept ;
+  dct:description """characteristics of society and cultures 
+
+EXAMPLES Settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "society" ;
+  skos:definition """characteristics of society and cultures 
+
+EXAMPLES Settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information."""^^xsd:string ;
+  skos:example "Settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "society" ;
+.
+topic:structure
+  rdf:type skos:Concept ;
+  dct:description """man-made construction 
+
+EXAMPLES Buildings, museums, churches, factories, housing, monuments, shops, towers."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "structure" ;
+  skos:definition """man-made construction 
+
+EXAMPLES Buildings, museums, churches, factories, housing, monuments, shops, towers."""^^xsd:string ;
+  skos:example "Buildings, museums, churches, factories, housing, monuments, shops, towers."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "structure" ;
+.
+topic:transportation
+  rdf:type skos:Concept ;
+  dct:description """means and aids for conveying persons and/or goods 
+
+EXAMPLES Roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "transportation" ;
+  skos:definition """means and aids for conveying persons and/or goods 
+
+EXAMPLES Roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways."""^^xsd:string ;
+  skos:example "Roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "transportation" ;
+.
+topic:utilitiesCommunication
+  rdf:type skos:Concept ;
+  dct:description """energy, water and waste systems and communications infrastructure and services 
+
+EXAMPLES Hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks."""^^xsd:string ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "utilities Communication" ;
+  skos:definition """energy, water and waste systems and communications infrastructure and services 
+
+EXAMPLES Hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks."""^^xsd:string ;
+  skos:example "Hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks."^^xsd:string ;
+  skos:inScheme <file:///C:/Users/cox075/dev/isotc211-owl/isotc211_GOM_harmonizedOntology/19115-1/2014/codes/IdentificationInformation/code/MD_TopicCategoryCode> ;
+  skos:prefLabel "utilitiesCommunication" ;
+.
