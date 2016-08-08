@@ -33,7 +33,7 @@
 .
 iso19115-1:MD_AttributeGroup
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_AttributeGroup" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -56,21 +56,21 @@ iso19115-1:MD_AttributeGroup
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_AttributeGroup ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "attribute" ;
   rdfs:range iso19115-1:MD_RangeDimension ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_AttributeGroup.contentType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_AttributeGroup ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "contentType" ;
   rdfs:range iso19115-1:MD_CoverageContentTypeCode ;
 .
 iso19115-1:MD_Band
   rdf:type owl:Class ;
   iso19150-2:constraint "if count (boundMax + boundMin) .gt.0 then boundUnits is mandatory" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_Band" ;
   rdfs:subClassOf iso19115-1:MD_SampleDimension ;
   rdfs:subClassOf [
@@ -128,54 +128,54 @@ iso19115-1:MD_Band
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_Band.boundMax>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Band ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "boundMax" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_Band.boundMin>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Band ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "boundMin" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_Band.boundUnits>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Band ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "boundUnits" ;
   rdfs:range iso19103_2179:UomLength ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_Band.peakResponse>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Band ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "peakResponse" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_Band.toneGradation>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Band ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "toneGradation" ;
   rdfs:range xsd:integer ;
 .
 iso19115-1:MD_ContentInformation
   rdf:type owl:Class ;
   iso19150-2:isAbstract "true"^^xsd:boolean ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ContentInformation" ;
   skos:definition "description of the content of a resource" ;
 .
 iso19115-1:MD_CoverageContentTypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_CoverageContentTypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_CoverageDescription
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_CoverageDescription" ;
   rdfs:subClassOf iso19115-1:MD_ContentInformation ;
   rdfs:subClassOf [
@@ -208,7 +208,7 @@ iso19115-1:MD_CoverageDescription
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_CoverageDescription.attributeDescription>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_CoverageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "attributeDescription" ;
   rdfs:range iso19103_2176:RecordType ;
 .
@@ -216,20 +216,20 @@ iso19115-1:MD_CoverageDescription
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_CoverageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "attributeGroup" ;
   rdfs:range iso19115-1:MD_AttributeGroup ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_CoverageDescription.processingLevelCode>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_CoverageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "processingLevelCode" ;
   rdfs:range iso19115-1_2358:MD_Identifier ;
 .
 iso19115-1:MD_FeatureCatalogue
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_FeatureCatalogue" ;
   rdfs:subClassOf iso19115-1:MD_ContentInformation ;
   rdfs:subClassOf [
@@ -247,14 +247,14 @@ iso19115-1:MD_FeatureCatalogue
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureCatalogue.featureCatalogue>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_FeatureCatalogue ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "featureCatalogue" ;
   rdfs:range iso19110_2259:FC_FeatureCatalogue ;
 .
 iso19115-1:MD_FeatureCatalogueDescription
   rdf:type owl:Class ;
   iso19150-2:constraint "if Feature Catalogue not included with resource and MD_FeatureCatalogue not provided then featureCatalogueCitation .gt. 0" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_FeatureCatalogueDescription" ;
   rdfs:subClassOf iso19115-1:MD_ContentInformation ;
   rdfs:subClassOf [
@@ -297,41 +297,41 @@ iso19115-1:MD_FeatureCatalogueDescription
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureCatalogueDescription.complianceCode>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_FeatureCatalogueDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "complianceCode" ;
   rdfs:range xsd:boolean ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureCatalogueDescription.featureCatalogueCitation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_FeatureCatalogueDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "featureCatalogueCitation" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureCatalogueDescription.featureTypes>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_FeatureCatalogueDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "featureTypes" ;
   rdfs:range iso19115-1:MD_FeatureTypeInfo ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureCatalogueDescription.includedWithDataset>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_FeatureCatalogueDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "includedWithDataset" ;
   rdfs:range xsd:boolean ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureCatalogueDescription.locale>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_FeatureCatalogueDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "locale" ;
   rdfs:range iso19115-1_2360:PT_Locale ;
 .
 iso19115-1:MD_FeatureTypeInfo
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_FeatureTypeInfo" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -358,20 +358,20 @@ iso19115-1:MD_FeatureTypeInfo
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureTypeInfo.featureInstanceCount>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_FeatureTypeInfo ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "featureInstanceCount" ;
   rdfs:range xsd:integer ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_FeatureTypeInfo.featureTypeName>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_FeatureTypeInfo ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "featureTypeName" ;
   rdfs:range iso19103_2174:GenericName ;
 .
 iso19115-1:MD_ImageDescription
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ImageDescription" ;
   rdfs:subClassOf iso19115-1:MD_CoverageDescription ;
   rdfs:subClassOf [
@@ -489,89 +489,89 @@ iso19115-1:MD_ImageDescription
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.cameraCalibrationInformationAvailability>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "cameraCalibrationInformationAvailability" ;
   rdfs:range xsd:boolean ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.cloudCoverPercentage>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "cloudCoverPercentage" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.compressionGenerationQuantity>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "compressionGenerationQuantity" ;
   rdfs:range xsd:integer ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.filmDistortionInformationAvailability>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "filmDistortionInformationAvailability" ;
   rdfs:range xsd:boolean ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.illuminationAzimuthAngle>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "illuminationAzimuthAngle" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.illuminationElevationAngle>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "illuminationElevationAngle" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.imageQualityCode>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "imageQualityCode" ;
   rdfs:range iso19115-1_2358:MD_Identifier ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.imagingCondition>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "imagingCondition" ;
   rdfs:range iso19115-1:MD_ImagingConditionCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.lensDistortionInformationAvailability>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "lensDistortionInformationAvailability" ;
   rdfs:range xsd:boolean ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.radiometricCalibrationDataAvailability>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "radiometricCalibrationDataAvailability" ;
   rdfs:range xsd:boolean ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_ImageDescription.triangulationIndicator>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ImageDescription ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "triangulationIndicator" ;
   rdfs:range xsd:boolean ;
 .
 iso19115-1:MD_ImagingConditionCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ImagingConditionCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_RangeDimension
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_RangeDimension" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -603,28 +603,28 @@ iso19115-1:MD_RangeDimension
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_RangeDimension.description>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_RangeDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "description" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_RangeDimension.name>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_RangeDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "name" ;
   rdfs:range iso19115-1_2358:MD_Identifier ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_RangeDimension.sequenceIdentifier>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_RangeDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "sequenceIdentifier" ;
   rdfs:range iso19103_2174:MemberName ;
 .
 iso19115-1:MD_SampleDimension
   rdf:type owl:Class ;
   iso19150-2:constraint "if count (maxValue + minValue + meanValue) .gt. 0 then units is mandatory" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_SampleDimension" ;
   rdfs:subClassOf iso19115-1:MD_RangeDimension ;
   rdfs:subClassOf [
@@ -742,77 +742,77 @@ iso19115-1:MD_SampleDimension
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.bitsPerValue>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "bitsPerValue" ;
   rdfs:range xsd:integer ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.maxValue>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "maxValue" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.meanValue>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "meanValue" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.minValue>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "minValue" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.numberOfValues>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "numberOfValues" ;
   rdfs:range xsd:integer ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.offset>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "offset" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.otherProperty>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "otherProperty" ;
   rdfs:range iso19103_2176:Record ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.otherPropertyType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "otherPropertyType" ;
   rdfs:range iso19103_2176:RecordType ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.scaleFactor>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "scaleFactor" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.standardDeviation>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "standardDeviation" ;
   rdfs:range xsd:double ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#MD_SampleDimension.units>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_SampleDimension ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "units" ;
   rdfs:range iso19103_2179:UnitOfMeasure ;
 .
@@ -820,7 +820,7 @@ iso19115-1Code:MD_CoverageContentTypeCode
   rdf:type skos:ConceptScheme ;
   dct:description "specific type of information represented in the cell"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_CoverageContentTypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD Coverage Content Type Code - Concept Scheme" ;
   skos:definition "specific type of information represented in the cell"^^xsd:string ;
   skos:prefLabel "MD_CoverageContentTypeCode - ConceptScheme" ;
@@ -831,7 +831,7 @@ iso19115-1Code:MD_CoverageContentTypeCode
   dct:description """calculation of the primary physicalMeasurement coverages in the dataset
 
 EXAMPLE Grid of aerosol optical thickness used in the calculation of a sea surface temperature product."""^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "auxilliary Information" ;
   skos:definition """calculation of the primary physicalMeasurement coverages in the dataset
 
@@ -843,7 +843,7 @@ EXAMPLE Grid of aerosol optical thickness used in the calculation of a sea surfa
   rdf:type iso19115-1:MD_CoverageContentTypeCode ;
   rdf:type skos:Concept ;
   dct:description "data used to provide coordinate axis values"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "coordinate" ;
   skos:definition "data used to provide coordinate axis values"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CoverageContentTypeCode ;
@@ -853,7 +853,7 @@ EXAMPLE Grid of aerosol optical thickness used in the calculation of a sea surfa
   rdf:type iso19115-1:MD_CoverageContentTypeCode ;
   rdf:type skos:Concept ;
   dct:description "meaningful numerical representation of a physical parameter that is not the actual value of the physical parameter"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "image" ;
   skos:definition "meaningful numerical representation of a physical parameter that is not the actual value of the physical parameter"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CoverageContentTypeCode ;
@@ -863,7 +863,7 @@ EXAMPLE Grid of aerosol optical thickness used in the calculation of a sea surfa
   rdf:type iso19115-1:MD_CoverageContentTypeCode ;
   rdf:type skos:Concept ;
   dct:description "resources with values that are calculated using a model rather than being observed or calculated from observations"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "model Result" ;
   skos:definition "resources with values that are calculated using a model rather than being observed or calculated from observations"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CoverageContentTypeCode ;
@@ -873,7 +873,7 @@ EXAMPLE Grid of aerosol optical thickness used in the calculation of a sea surfa
   rdf:type iso19115-1:MD_CoverageContentTypeCode ;
   rdf:type skos:Concept ;
   dct:description "value in physical units of the quantity being measured"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "physical Measurement" ;
   skos:definition "value in physical units of the quantity being measured"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CoverageContentTypeCode ;
@@ -884,7 +884,7 @@ EXAMPLE Grid of aerosol optical thickness used in the calculation of a sea surfa
   rdf:type skos:Concept ;
   dct:description """data used to characterize the quality of the physicalMeasurement coverages in the dataset.
 NOTE Typically included in a gmi:QE_CoverageResult."""^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "quality Information" ;
   skos:definition """data used to characterize the quality of the physicalMeasurement coverages in the dataset.
 NOTE Typically included in a gmi:QE_CoverageResult."""^^xsd:string ;
@@ -896,7 +896,7 @@ NOTE Typically included in a gmi:QE_CoverageResult."""^^xsd:string ;
   rdf:type skos:Concept ;
   dct:description """reference information used to support the calculation or use of the physicalMeasurement coverages in the dataset
 EXAMPLE Grids of latitude/longitude used to geolocate the physical measurements."""^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "reference Information" ;
   skos:definition """reference information used to support the calculation or use of the physicalMeasurement coverages in the dataset
 EXAMPLE Grids of latitude/longitude used to geolocate the physical measurements."""^^xsd:string ;
@@ -907,7 +907,7 @@ EXAMPLE Grids of latitude/longitude used to geolocate the physical measurements.
   rdf:type iso19115-1:MD_CoverageContentTypeCode ;
   rdf:type skos:Concept ;
   dct:description "code value with no quantitative meaning, used to represent a physical quantity"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "thematic Classification" ;
   skos:definition "code value with no quantitative meaning, used to represent a physical quantity"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_CoverageContentTypeCode ;
@@ -947,7 +947,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type skos:ConceptScheme ;
   dct:description "code which indicates conditions which may affect the image"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_ImagingConditionCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD Imaging Condition Code - Concept Scheme" ;
   skos:definition "code which indicates conditions which may affect the image"^^xsd:string ;
   skos:prefLabel "MD_ImagingConditionCode - ConceptScheme" ;
@@ -956,7 +956,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "portion of the image is blurred"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "blurred Image" ;
   skos:definition "portion of the image is blurred"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -966,7 +966,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "portion of the image is partially obscured by cloud cover"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "cloud" ;
   skos:definition "portion of the image is partially obscured by cloud cover"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -976,7 +976,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "acute angle between the plane of the ecliptic (the plane of the Earth’s orbit) and the plane of the celestial equator"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "degrading Obliquity" ;
   skos:definition "acute angle between the plane of the ecliptic (the plane of the Earth’s orbit) and the plane of the celestial equator"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -986,7 +986,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "portion of the image is partially obscured by fog"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "fog" ;
   skos:definition "portion of the image is partially obscured by fog"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -996,7 +996,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "portion of the image is partially obscured by heavy smoke or dust"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "heavy Smoke Or Dust" ;
   skos:definition "portion of the image is partially obscured by heavy smoke or dust"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -1006,7 +1006,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "image was taken at night"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "night" ;
   skos:definition "image was taken at night"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -1016,7 +1016,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "image was taken during rainfall"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "rain" ;
   skos:definition "image was taken during rainfall"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -1026,7 +1026,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "image was taken during semi-dark conditions – twilight conditions"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "semi Darkness" ;
   skos:definition "image was taken during semi-dark conditions – twilight conditions"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -1036,7 +1036,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "portion of the image is obscured by shadow"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "shadow" ;
   skos:definition "portion of the image is obscured by shadow"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -1046,7 +1046,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "portion of the image is obscured by snow"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "snow" ;
   skos:definition "portion of the image is obscured by snow"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;
@@ -1056,7 +1056,7 @@ iso19115-1Code:MD_ImagingConditionCode
   rdf:type iso19115-1:MD_ImagingConditionCode ;
   rdf:type skos:Concept ;
   dct:description "the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "terrain Masking" ;
   skos:definition "the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ImagingConditionCode ;

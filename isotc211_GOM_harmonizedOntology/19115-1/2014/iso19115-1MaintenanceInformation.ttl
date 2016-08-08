@@ -27,14 +27,14 @@
 .
 iso19115-1:MD_MaintenanceFrequencyCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_MaintenanceFrequencyCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_MaintenanceInformation
   rdf:type owl:Class ;
   iso19150-2:constraint "count (maintenanceAndUpdateFrequency + userDefinedMaintenanceFrequency) .gt.0 " ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_MaintenanceInformation" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -81,42 +81,42 @@ iso19115-1:MD_MaintenanceInformation
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceInformation.contact>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_MaintenanceInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "contact" ;
   rdfs:range iso19115-1_2363:CI_Responsibility ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceInformation.maintenanceAndUpdateFrequency>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_MaintenanceInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "maintenanceAndUpdateFrequency" ;
   rdfs:range iso19115-1:MD_MaintenanceFrequencyCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceInformation.maintenanceDate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_MaintenanceInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "maintenanceDate" ;
   rdfs:range iso19115-1_2363:CI_Date ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceInformation.maintenanceNote>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_MaintenanceInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "maintenanceNote" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceInformation.maintenanceScope>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_MaintenanceInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "maintenanceScope" ;
   rdfs:range iso19115-1_2358:MD_Scope ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceInformation.userDefinedMaintenanceFrequency>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_MaintenanceInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "userDefinedMaintenanceFrequency" ;
   rdfs:range iso19108_891:TM_PeriodDuration ;
 .
@@ -124,7 +124,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type skos:ConceptScheme ;
   dct:description "frequency with which modifications and deletions are made to the data after it is first produced"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_MaintenanceFrequencyCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD Maintenance Frequency Code - Concept Scheme" ;
   skos:definition "frequency with which modifications and deletions are made to the data after it is first produced"^^xsd:string ;
   skos:prefLabel "MD_MaintenanceFrequencyCode - ConceptScheme" ;
@@ -133,7 +133,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated every year"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "annually" ;
   skos:definition "resource is updated every year"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -143,7 +143,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated as deemed necessary"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "as Needed" ;
   skos:definition "resource is updated as deemed necessary"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -153,7 +153,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated twice each year"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "biannually" ;
   skos:definition "resource is updated twice each year"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -163,7 +163,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated every 2 years"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "biennially" ;
   skos:definition "resource is updated every 2 years"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -173,7 +173,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is repeatedly and frequently updated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "continual" ;
   skos:definition "resource is repeatedly and frequently updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -183,7 +183,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated each day"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "daily" ;
   skos:definition "resource is updated each day"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -193,7 +193,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated every two weeks"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "fortnightly" ;
   skos:definition "resource is updated every two weeks"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -203,7 +203,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated in intervals that are uneven in duration"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "irregular" ;
   skos:definition "resource is updated in intervals that are uneven in duration"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -213,7 +213,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated each month"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "monthly" ;
   skos:definition "resource is updated each month"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -223,7 +223,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "there are no plans to update the data"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "not Planned" ;
   skos:definition "there are no plans to update the data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -233,7 +233,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated at regular intervals"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "periodic" ;
   skos:definition "resource is updated at regular intervals"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -243,7 +243,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated every three months"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "quarterly" ;
   skos:definition "resource is updated every three months"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -253,7 +253,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource updated twice monthly"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "semimonthly" ;
   skos:definition "resource updated twice monthly"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -263,7 +263,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "frequency of maintenance for the data is not known"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "unknown" ;
   skos:definition "frequency of maintenance for the data is not known"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;
@@ -273,7 +273,7 @@ iso19115-1Code:MD_MaintenanceFrequencyCode
   rdf:type iso19115-1:MD_MaintenanceFrequencyCode ;
   rdf:type skos:Concept ;
   dct:description "resource is updated on a weekly basis"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "weekly" ;
   skos:definition "resource is updated on a weekly basis"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_MaintenanceFrequencyCode ;

@@ -29,7 +29,7 @@
 .
 iso19115-1:MD_BrowseGraphic
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_BrowseGraphic" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -76,41 +76,41 @@ iso19115-1:MD_BrowseGraphic
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_BrowseGraphic.fileDescription>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_BrowseGraphic ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "fileDescription" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_BrowseGraphic.fileName>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_BrowseGraphic ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "fileName" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_BrowseGraphic.fileType>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_BrowseGraphic ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "fileType" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_BrowseGraphic.imageConstraints>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_BrowseGraphic ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "imageConstraints" ;
   rdfs:range iso19115-1_2364:MD_Constraints ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_BrowseGraphic.linkage>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_BrowseGraphic ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "linkage" ;
   rdfs:range iso19115-1_2363:CI_OnlineResource ;
 .
 iso19115-1:MD_Identifier
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_Identifier" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -167,41 +167,41 @@ iso19115-1:MD_Identifier
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Identifier.authority>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identifier ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "authority" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Identifier.code>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Identifier ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "code" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Identifier.codeSpace>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Identifier ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "codeSpace" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Identifier.description>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Identifier ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "description" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Identifier.version>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Identifier ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "version" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:MD_Scope
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_Scope" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -228,33 +228,33 @@ iso19115-1:MD_Scope
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Scope.extent>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Scope ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "extent" ;
   rdfs:range iso19115-1_2368:EX_Extent ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Scope.level>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Scope ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "level" ;
   rdfs:range iso19115-1:MD_ScopeCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Scope.levelDescription>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Scope ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "levelDescription" ;
   rdfs:range iso19115-1:MD_ScopeDescription ;
 .
 iso19115-1:MD_ScopeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ScopeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_ScopeDescription
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ScopeDescription" ;
   owl:equivalentClass [
       rdf:type owl:Class ;
@@ -271,13 +271,13 @@ iso19115-1:MD_ScopeDescription
 .
 iso19115-1:URI
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "URI" ;
   skos:definition "Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource " ;
 .
 iso19115-1:uAttributeInstances
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "AttributeInstances" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -294,13 +294,13 @@ iso19115-1:uAttributeInstances
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#uAttributeInstances.attributeInstances>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uAttributeInstances ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range <http://def.isotc211.org/orphansOrphans#Set.lt.CharacterString.gt.> ;
   skos:prefLabel "attributeInstances" ;
 .
 iso19115-1:uAttributes
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "Attributes" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -317,13 +317,13 @@ iso19115-1:uAttributes
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#uAttributes.attributes>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uAttributes ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range <http://def.isotc211.org/orphansOrphans#Set.lt.CharacterString.gt.> ;
   skos:prefLabel "attributes" ;
 .
 iso19115-1:uDataset
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "Dataset" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -340,13 +340,13 @@ iso19115-1:uDataset
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#uDataset.dataset>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:uDataset ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "dataset" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:uFeatureInstances
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "FeatureInstances" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -363,13 +363,13 @@ iso19115-1:uFeatureInstances
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#uFeatureInstances.featureInstances>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uFeatureInstances ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range <http://def.isotc211.org/orphansOrphans#Set.lt.CharacterString.gt.> ;
   skos:prefLabel "featureInstances" ;
 .
 iso19115-1:uFeatures
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "Features" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -386,13 +386,13 @@ iso19115-1:uFeatures
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#uFeatures.features>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uFeatures ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range <http://def.isotc211.org/orphansOrphans#Set.lt.CharacterString.gt.> ;
   skos:prefLabel "features" ;
 .
 iso19115-1:uOther
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "Other" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -409,21 +409,24 @@ iso19115-1:uOther
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#uOther.other>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:uOther ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "other" ;
   rdfs:range xsd:string ;
 .
 iso19115-1Code:MD_ScopeCode
   rdf:type skos:ConceptScheme ;
+  dct:description "class of information to which the referencing entity applies"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_ScopeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "MD Scope Code - Concept Scheme" ;
+  skos:definition "class of information to which the referencing entity applies"^^xsd:string ;
   skos:prefLabel "MD_ScopeCode - ConceptScheme" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/aggregate>
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to an aggregate resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "aggregate" ;
   skos:definition "information applies to an aggregate resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -433,7 +436,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information resource hosted on a specific set of hardware and accessible over a network"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "application" ;
   skos:definition "information resource hosted on a specific set of hardware and accessible over a network"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -443,7 +446,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to the attribute value"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "attribute" ;
   skos:definition "information applies to the attribute value"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -453,7 +456,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to the characteristic of a feature"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "attribute Type" ;
   skos:definition "information applies to the characteristic of a feature"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -463,7 +466,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to an unstructured set"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "collection" ;
   skos:definition "information applies to an unstructured set"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -473,7 +476,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to the collection hardware class"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "collection Hardware" ;
   skos:definition "information applies to the collection hardware class"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -483,7 +486,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to the collection session"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "collection Session" ;
   skos:definition "information applies to the collection session"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -493,7 +496,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a coverage"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "coverage" ;
   skos:definition "information applies to a coverage"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -503,7 +506,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to the dataset"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "dataset" ;
   skos:definition "information applies to the dataset"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -513,7 +516,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a dimension group"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "dimension Group" ;
   skos:definition "information applies to a dimension group"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -523,7 +526,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a document"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "document" ;
   skos:definition "information applies to a document"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -533,7 +536,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a feature"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "feature" ;
   skos:definition "information applies to a feature"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -543,7 +546,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a feature type"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "feature Type" ;
   skos:definition "information applies to a feature type"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -553,7 +556,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a field session"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "field Session" ;
   skos:definition "information applies to a field session"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -563,7 +566,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to an initiative"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "initiative" ;
   skos:definition "information applies to an initiative"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -573,7 +576,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to metadata"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "metadata" ;
   skos:definition "information applies to metadata"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -583,7 +586,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a copy or imitation of an existing or hypothetical object"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "model" ;
   skos:definition "information applies to a copy or imitation of an existing or hypothetical object"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -593,7 +596,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to non-geographic data"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "non Geographic Dataset" ;
   skos:definition "information applies to non-geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -603,7 +606,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "metadata describing an ISO 19131 data product specification"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "product" ;
   skos:definition "metadata describing an ISO 19131 data product specification"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -613,7 +616,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a property type"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "property Type" ;
   skos:definition "information applies to a property type"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -623,7 +626,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a repository"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "repository" ;
   skos:definition "information applies to a repository"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -633,7 +636,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a sample"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "sample" ;
   skos:definition "information applies to a sample"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -643,7 +646,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to the series"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "series" ;
   skos:definition "information applies to the series"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -653,7 +656,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "service" ;
   skos:definition "information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -663,7 +666,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a computer program or routine"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "software" ;
   skos:definition "information applies to a computer program or routine"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;
@@ -673,7 +676,7 @@ iso19115-1Code:MD_ScopeCode
   rdf:type iso19115-1:MD_ScopeCode ;
   rdf:type skos:Concept ;
   dct:description "information applies to a tile, a spatial subset of geographic data"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "tile" ;
   skos:definition "information applies to a tile, a spatial subset of geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ScopeCode ;

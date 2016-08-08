@@ -45,20 +45,20 @@
 .
 iso19115-1:DS_AssociationTypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "DS_AssociationTypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:DS_InitiativeTypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "DS_InitiativeTypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_AssociatedResource
   rdf:type owl:Class ;
   iso19150-2:constraint "count of (name + metadataReference) .gt. 0" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_AssociatedResource" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -105,35 +105,35 @@ iso19115-1:MD_AssociatedResource
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_AssociatedResource.associationType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_AssociatedResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "associationType" ;
   rdfs:range iso19115-1:DS_AssociationTypeCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_AssociatedResource.initiativeType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_AssociatedResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "initiativeType" ;
   rdfs:range iso19115-1:DS_InitiativeTypeCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_AssociatedResource.metadataReference>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_AssociatedResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "metadataReference" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_AssociatedResource.name>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_AssociatedResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "name" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 iso19115-1:MD_DataIdentification
   rdf:type owl:Class ;
   iso19150-2:constraint "defaultLocale.PT_Locale.characterEncoding default value is UTF-8" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_DataIdentification" ;
   rdfs:subClassOf iso19115-1:MD_Identification ;
   rdfs:subClassOf [
@@ -176,28 +176,28 @@ iso19115-1:MD_DataIdentification
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_DataIdentification.defaultLocale>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_DataIdentification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "defaultLocale" ;
   rdfs:range iso19115-1_2360:PT_Locale ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_DataIdentification.environmentDescription>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_DataIdentification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "environmentDescription" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_DataIdentification.otherLocale>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_DataIdentification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "otherLocale" ;
   rdfs:range iso19139_709:PT_Locale ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_DataIdentification.supplementalInformation>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_DataIdentification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "supplementalInformation" ;
   rdfs:range xsd:string ;
 .
@@ -205,7 +205,7 @@ iso19115-1:MD_Identification
   rdf:type owl:Class ;
   iso19150-2:constraint "(MD_Metadata.metadataScope.MD_Scope.resourceScope) .eq. ('dataset' or 'series') implies topicCategory is mandatory" ;
   iso19150-2:isAbstract "true"^^xsd:boolean ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_Identification" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -332,14 +332,14 @@ iso19115-1:MD_Identification
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.abstract>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "abstract" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.additionalDocumentation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "additionalDocumentation" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
@@ -347,21 +347,21 @@ iso19115-1:MD_Identification
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "associatedResource" ;
   rdfs:range iso19115-1:MD_AssociatedResource ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.citation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "citation" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.credit>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "credit" ;
   rdfs:range xsd:string ;
 .
@@ -369,14 +369,14 @@ iso19115-1:MD_Identification
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "descriptiveKeywords" ;
   rdfs:range iso19115-1:MD_Keywords ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.extent>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "extent" ;
   rdfs:range iso19115-1_2368:EX_Extent ;
 .
@@ -384,28 +384,28 @@ iso19115-1:MD_Identification
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "graphicOverview" ;
   rdfs:range iso19115-1_2358:MD_BrowseGraphic ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.pointOfContact>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "pointOfContact" ;
   rdfs:range iso19115-1_2363:CI_Responsibility ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.processingLevel>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "processingLevel" ;
   rdfs:range iso19115-1_2358:MD_Identifier ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.purpose>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "purpose" ;
   rdfs:range xsd:string ;
 .
@@ -413,7 +413,7 @@ iso19115-1:MD_Identification
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "resourceConstraints" ;
   rdfs:range iso19115-1_2364:MD_Constraints ;
 .
@@ -421,7 +421,7 @@ iso19115-1:MD_Identification
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "resourceFormat" ;
   rdfs:range iso19115-1_2367:MD_Format ;
 .
@@ -429,7 +429,7 @@ iso19115-1:MD_Identification
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "resourceMaintenance" ;
   rdfs:range iso19115-1_2370:MD_MaintenanceInformation ;
 .
@@ -437,48 +437,48 @@ iso19115-1:MD_Identification
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "resourceSpecificUsage" ;
   rdfs:range iso19115-1:MD_Usage ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.spatialRepresentationType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "spatialRepresentationType" ;
   rdfs:range iso19115-1:MD_SpatialRepresentationTypeCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.spatialResolution>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "spatialResolution" ;
   rdfs:range iso19115-1:MD_Resolution ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.status>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "status" ;
   rdfs:range iso19115-1:MD_ProgressCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.temporalResolution>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "temporalResolution" ;
   rdfs:range iso19108_891:TM_Duration ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Identification.topicCategory>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Identification ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "topicCategory" ;
   rdfs:range iso19115-1:MD_TopicCategoryCode ;
 .
 iso19115-1:MD_KeywordClass
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_KeywordClass" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -515,34 +515,34 @@ iso19115-1:MD_KeywordClass
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_KeywordClass.className>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_KeywordClass ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "className" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_KeywordClass.conceptIdentifier>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_KeywordClass ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "conceptIdentifier" ;
   rdfs:range iso19103_2178:URI ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_KeywordClass.ontology>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_KeywordClass ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "ontology" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 iso19115-1:MD_KeywordTypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_KeywordTypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_Keywords
   rdf:type owl:Class ;
   iso19150-2:constraint "When the resource described is a service, one instance of MD_Keyword shall refer to the service taxonomy defined in ISO 19119" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_Keywords" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -589,7 +589,7 @@ iso19115-1:MD_Keywords
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Keywords.keyword>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Keywords ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "keyword" ;
   rdfs:range xsd:string ;
 .
@@ -597,7 +597,7 @@ iso19115-1:MD_Keywords
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_Keywords ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "keywordClass" ;
   rdfs:range iso19115-1:MD_KeywordClass ;
 .
@@ -605,26 +605,26 @@ iso19115-1:MD_Keywords
   rdf:type owl:ObjectProperty ;
   iso19150-2:constraint "When the resource described is a service, one instance of MD_Keyword shall refer to the service taxonomy defined in the International Standard ISO 19119, part 8.3)" ;
   rdfs:domain iso19115-1:MD_Keywords ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "thesaurusName" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Keywords.type>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Keywords ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "type" ;
   rdfs:range iso19115-1:MD_KeywordTypeCode ;
 .
 iso19115-1:MD_ProgressCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ProgressCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_RepresentativeFraction
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_RepresentativeFraction" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -646,7 +646,7 @@ iso19115-1:MD_RepresentativeFraction
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_RepresentativeFraction.denominator>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_RepresentativeFraction ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "denominator" ;
   rdfs:range xsd:integer ;
 .
@@ -654,13 +654,13 @@ iso19115-1:MD_RepresentativeFraction
   rdf:type owl:ObjectProperty ;
   iso19150-2:associationName "/Scale" ;
   rdfs:domain iso19115-1:MD_RepresentativeFraction ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "equivalentScale" ;
   rdfs:range iso19103_2179:Scale ;
 .
 iso19115-1:MD_Resolution
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_Resolution" ;
   owl:equivalentClass [
       rdf:type owl:Class ;
@@ -676,13 +676,13 @@ iso19115-1:MD_Resolution
 .
 iso19115-1:MD_SpatialRepresentationTypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_SpatialRepresentationTypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_TopicCategoryCode
   rdf:type rdfs:Datatype ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_TopicCategoryCode" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:equivalentClass [
@@ -717,7 +717,7 @@ NOTE 2 It is understood there are overlaps between general categories and the us
 .
 iso19115-1:MD_Usage
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_Usage" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -774,55 +774,55 @@ iso19115-1:MD_Usage
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Usage.additionalDocumentation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Usage ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "additionalDocumentation" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Usage.identifiedIssues>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Usage ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "identifiedIssues" ;
   rdfs:range iso19115-1_2363:CI_Citation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Usage.response>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Usage ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "response" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Usage.specificUsage>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Usage ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "specificUsage" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Usage.usageDateTime>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Usage ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "usageDateTime" ;
   rdfs:range iso19108_891:TM_Primitive ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Usage.userContactInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_Usage ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "userContactInfo" ;
   rdfs:range iso19115-1_2363:CI_Responsibility ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_Usage.userDeterminedLimitations>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_Usage ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "userDeterminedLimitations" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:uAngularDistance
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "AngularDistance" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -839,13 +839,13 @@ iso19115-1:uAngularDistance
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#uAngularDistance.angularDistance>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uAngularDistance ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range iso19103_2179:Angle ;
   skos:prefLabel "angularDistance" ;
 .
 iso19115-1:uDistance
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "Distance" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -862,13 +862,13 @@ iso19115-1:uDistance
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#uDistance.distance>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uDistance ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range iso19103_2179:Distance ;
   skos:prefLabel "distance" ;
 .
 iso19115-1:uEquivalentScale
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "EquivalentScale" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -885,13 +885,13 @@ iso19115-1:uEquivalentScale
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#uEquivalentScale.equivalentScale>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uEquivalentScale ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range iso19115-1:MD_RepresentativeFraction ;
   skos:prefLabel "equivalentScale" ;
 .
 iso19115-1:uLevelOfDetail
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "LevelOfDetail" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -908,13 +908,13 @@ iso19115-1:uLevelOfDetail
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#uLevelOfDetail.levelOfDetail>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:uLevelOfDetail ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "levelOfDetail" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:uVertical
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "Vertical" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -931,7 +931,7 @@ iso19115-1:uVertical
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#uVertical.vertical>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:uVertical ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:range iso19103_2179:Distance ;
   skos:prefLabel "vertical" ;
 .
@@ -939,7 +939,7 @@ iso19115-1Code:DS_AssociationTypeCode
   rdf:type skos:ConceptScheme ;
   dct:description "justification for the correlation of two resources"^^xsd:string ;
   dct:isFormatOf iso19115-1:DS_AssociationTypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "DS Association Type Code - Concept Scheme" ;
   skos:definition "justification for the correlation of two resources"^^xsd:string ;
   skos:prefLabel "DS_AssociationTypeCode - ConceptScheme" ;
@@ -949,7 +949,7 @@ iso19115-1Code:DS_AssociationTypeCode
   rdf:type skos:Concept ;
   dct:description """common title for a collection of resources
 NOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."""^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "collective Title" ;
   skos:definition """common title for a collection of resources
 NOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."""^^xsd:string ;
@@ -960,7 +960,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "reference from one resource to another"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "cross Reference" ;
   skos:definition "reference from one resource to another"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_AssociationTypeCode ;
@@ -970,7 +970,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "associated through a dependency"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "dependency" ;
   skos:definition "associated through a dependency"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_AssociationTypeCode ;
@@ -980,7 +980,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "reference to resources that are parts of this resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "is Composed Of" ;
   skos:definition "reference to resources that are parts of this resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_AssociationTypeCode ;
@@ -990,7 +990,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "reference to a master resource of which this one is a part"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "larger Work Citation" ;
   skos:definition "reference to a master resource of which this one is a part"^^xsd:string ;
   skos:prefLabel "largerWorkCitation" ;
@@ -999,7 +999,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "part of same structured set of data held in a computer"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "part Of Seamless Database" ;
   skos:definition "part of same structured set of data held in a computer"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_AssociationTypeCode ;
@@ -1009,7 +1009,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "resource is a revision of associated resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "revision Of" ;
   skos:definition "resource is a revision of associated resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_AssociationTypeCode ;
@@ -1019,7 +1019,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "series" ;
   skos:definition "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_AssociationTypeCode ;
@@ -1029,7 +1029,7 @@ NOTE Title identifies elements of a series collectively, combined with informati
   rdf:type iso19115-1:DS_AssociationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "stereo Mate" ;
   skos:definition "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_AssociationTypeCode ;
@@ -1072,7 +1072,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type skos:ConceptScheme ;
   dct:description "type of aggregation activity in which resources are related"^^xsd:string ;
   dct:isFormatOf iso19115-1:DS_InitiativeTypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "DS Initiative Type Code - Concept Scheme" ;
   skos:definition "type of aggregation activity in which resources are related"^^xsd:string ;
   skos:prefLabel "DS_InitiativeTypeCode - ConceptScheme" ;
@@ -1081,7 +1081,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "series of organized planned actions"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "campaign" ;
   skos:definition "series of organized planned actions"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1091,7 +1091,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "accumulation of resources assembled for a specific purpose"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "collection" ;
   skos:definition "accumulation of resources assembled for a specific purpose"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1101,7 +1101,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "specific performance of a function or group of functions"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "exercise" ;
   skos:definition "specific performance of a function or group of functions"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1111,7 +1111,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "process designed to find if something is effective or valid"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "experiment" ;
   skos:definition "process designed to find if something is effective or valid"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1121,7 +1121,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "search or systematic inquiry"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "investigation" ;
   skos:definition "search or systematic inquiry"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1131,7 +1131,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "specific operation of a data collection system"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "mission" ;
   skos:definition "specific operation of a data collection system"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1141,7 +1141,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "action that is part of a series of actions"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "operation" ;
   skos:definition "action that is part of a series of actions"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1151,7 +1151,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "vehicle or other support base that holds a sensor"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "platform" ;
   skos:definition "vehicle or other support base that holds a sensor"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1161,7 +1161,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "method of doing something involving a number of steps"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "process" ;
   skos:definition "method of doing something involving a number of steps"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1171,7 +1171,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "specific planned activity"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "program" ;
   skos:definition "specific planned activity"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1181,7 +1181,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "organized undertaking, research, or development"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "project" ;
   skos:definition "organized undertaking, research, or development"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1191,7 +1191,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "device or piece of equipment which detects or records"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "sensor" ;
   skos:definition "device or piece of equipment which detects or records"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1201,7 +1201,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "examination or investigation"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "study" ;
   skos:definition "examination or investigation"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1211,7 +1211,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "piece of work"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "task" ;
   skos:definition "piece of work"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1221,7 +1221,7 @@ iso19115-1Code:DS_InitiativeTypeCode
   rdf:type iso19115-1:DS_InitiativeTypeCode ;
   rdf:type skos:Concept ;
   dct:description "process of testing to discover or demonstrate something"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "trialprocess of testing to discover or demonstrate something"^^xsd:string ;
   skos:definition "process of testing to discover or demonstrate something"^^xsd:string ;
   skos:inScheme iso19115-1Code:DS_InitiativeTypeCode ;
@@ -1282,7 +1282,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type skos:ConceptScheme ;
   dct:description "methods used to group similar keywords"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_KeywordTypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD Keyword Type Code - Concept Scheme" ;
   skos:definition "methods used to group similar keywords"^^xsd:string ;
   skos:prefLabel "MD_KeywordTypeCode - ConceptScheme" ;
@@ -1291,7 +1291,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a repository or archive that manages and distributes data"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "data Centre" ;
   skos:definition "keyword identifies a repository or archive that manages and distributes data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1301,7 +1301,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a branch of instruction or specialized learning"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "discipline" ;
   skos:definition "keyword identifies a branch of instruction or specialized learning"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1311,7 +1311,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a resource containing or about a collection of feature instances with common characteristics"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "feature Type" ;
   skos:definition "keyword identifies a resource containing or about a collection of feature instances with common characteristics"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1321,7 +1321,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a device used to measure or compare physical properties"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "instrument" ;
   skos:definition "keyword identifies a device used to measure or compare physical properties"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1331,7 +1331,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a location"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "place" ;
   skos:definition "keyword identifies a location"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1341,7 +1341,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a structure upon which an instrument is mounted"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "platform" ;
   skos:definition "keyword identifies a structure upon which an instrument is mounted"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1351,7 +1351,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a series of actions or natural occurrences"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "process" ;
   skos:definition "keyword identifies a series of actions or natural occurrences"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1361,7 +1361,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a type of product"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "product" ;
   skos:definition "keyword identifies a type of product"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1371,7 +1371,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies an endeavour undertaken to create or modify a product or service"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "project" ;
   skos:definition "keyword identifies an endeavour undertaken to create or modify a product or service"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1381,7 +1381,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies an activity carried out by one party for the benefit of another"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "service" ;
   skos:definition "keyword identifies an activity carried out by one party for the benefit of another"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1391,7 +1391,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies the layer(s) of any deposited substance or levels within an ordered system"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "stratum" ;
   skos:definition "keyword identifies the layer(s) of any deposited substance or levels within an ordered system"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1401,7 +1401,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "refinement of a topic category for the purpose of geographic data classification"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "sub Topic Category" ;
   skos:definition "refinement of a topic category for the purpose of geographic data classification"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1411,7 +1411,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a taxonomy of the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "taxon" ;
   skos:definition "keyword identifies a taxonomy of the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1421,7 +1421,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a time period related to the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "temporal" ;
   skos:definition "keyword identifies a time period related to the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1431,7 +1431,7 @@ iso19115-1Code:MD_KeywordTypeCode
   rdf:type iso19115-1:MD_KeywordTypeCode ;
   rdf:type skos:Concept ;
   dct:description "keyword identifies a particular subject or topic"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "theme" ;
   skos:definition "keyword identifies a particular subject or topic"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_KeywordTypeCode ;
@@ -1492,7 +1492,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type skos:ConceptScheme ;
   dct:description "status of the resource"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_ProgressCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD Progress Code - Concept Scheme" ;
   skos:definition "status of the resource"^^xsd:string ;
   skos:prefLabel "MD_ProgressCode - ConceptScheme" ;
@@ -1502,7 +1502,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type skos:Concept ;
   dct:description "agreed to by sponsor"^^xsd:string ;
   rdfs:comment "Is this definition consistent with definition of 'sponsor' in roles - which is more like an advocate, rather than customer."^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "accepted" ;
   skos:definition "agreed to by sponsor"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1512,7 +1512,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "has been completed"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "completed" ;
   skos:definition "has been completed"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1522,7 +1522,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "resource superseded and will become obsolete, use only for historical purposes"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "deprecated" ;
   skos:definition "resource superseded and will become obsolete, use only for historical purposes"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1532,7 +1532,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "progress concluded and no changes will be accepted"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "final" ;
   skos:definition "progress concluded and no changes will be accepted"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1542,7 +1542,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "stored in an offline storage facility"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "historical Archive" ;
   skos:definition "stored in an offline storage facility"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1552,7 +1552,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "rejected by sponsor"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "not Accepted" ;
   skos:definition "rejected by sponsor"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1562,7 +1562,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "no longer relevant"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "obsolete" ;
   skos:definition "no longer relevant"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1572,7 +1572,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "continually being updated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "on Going" ;
   skos:definition "continually being updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1582,7 +1582,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "committed to, but not yet addressed"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "pending" ;
   skos:definition "committed to, but not yet addressed"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1592,7 +1592,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "fixed date has been established upon or by which the resource will be created or updated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "planned" ;
   skos:definition "fixed date has been established upon or by which the resource will be created or updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1602,7 +1602,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "suggested that development needs to be undertaken"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "proposed" ;
   skos:definition "suggested that development needs to be undertaken"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1612,7 +1612,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "needs to be generated or updated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "required" ;
   skos:definition "needs to be generated or updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1622,7 +1622,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "item is no longer recommended for use. It has not been superseded by another item"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "retired" ;
   skos:definition "item is no longer recommended for use. It has not been superseded by another item"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1632,7 +1632,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "replaced by new"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "superseded" ;
   skos:definition "replaced by new"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1642,7 +1642,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "provisional changes likely before resource becomes final or complete"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "tentative" ;
   skos:definition "provisional changes likely before resource becomes final or complete"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1652,7 +1652,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "currently in the process of being created"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "under Development" ;
   skos:definition "currently in the process of being created"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1662,7 +1662,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "acceptable under specific conditions"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "valid" ;
   skos:definition "acceptable under specific conditions"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1672,7 +1672,7 @@ iso19115-1Code:MD_ProgressCode
   rdf:type iso19115-1:MD_ProgressCode ;
   rdf:type skos:Concept ;
   dct:description "removed from consideration"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "withdrawn" ;
   skos:definition "removed from consideration"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_ProgressCode ;
@@ -1740,15 +1740,18 @@ iso19115-1Code:MD_ProgressCodeCollection
 .
 iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type skos:ConceptScheme ;
+  dct:description "method used to represent geographic information in the resource"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_SpatialRepresentationTypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+  rdfs:label "MD Spatial Representation Type Code - Concept Scheme" ;
+  skos:definition "method used to represent geographic information in the resource"^^xsd:string ;
   skos:prefLabel "MD_SpatialRepresentationTypeCode - ConceptScheme" ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_SpatialRepresentationTypeCode/grid>
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "grid data are used to represent geographic data"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "grid" ;
   skos:definition "grid data are used to represent geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
@@ -1758,7 +1761,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "three-dimensional view formed by the intersecting homologous rays of an overlapping pair of images"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "stereo Model" ;
   skos:definition "three-dimensional view formed by the intersecting homologous rays of an overlapping pair of images"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
@@ -1768,7 +1771,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "textual or tabular data are used to represent geographic data"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "text Table" ;
   skos:definition "textual or tabular data are used to represent geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
@@ -1778,7 +1781,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "triangulated irregular network"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "tin" ;
   skos:definition "triangulated irregular network"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
@@ -1788,7 +1791,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "vector data are used to represent geographic data"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "vector" ;
   skos:definition "vector data are used to represent geographic data"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;
@@ -1798,7 +1801,7 @@ iso19115-1Code:MD_SpatialRepresentationTypeCode
   rdf:type iso19115-1:MD_SpatialRepresentationTypeCode ;
   rdf:type skos:Concept ;
   dct:description "scene from a video recording"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "video" ;
   skos:definition "scene from a video recording"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_SpatialRepresentationTypeCode ;

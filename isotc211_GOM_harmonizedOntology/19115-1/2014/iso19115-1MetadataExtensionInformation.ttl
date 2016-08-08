@@ -23,14 +23,14 @@
 .
 iso19115-1:MD_DatatypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_DatatypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:MD_ExtendedElementInformation
   rdf:type owl:Class ;
   iso19150-2:constraint "if obligation .eq. conditional then condition is mandatory" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ExtendedElementInformation" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -167,97 +167,97 @@ iso19115-1:MD_ExtendedElementInformation
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.code>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "code" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.conceptName>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "conceptName" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.condition>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "condition" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.dataType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "dataType" ;
   rdfs:range iso19115-1:MD_DatatypeCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.definition>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "definition" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.domainValue>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "domainValue" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.maximumOccurrence>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "maximumOccurrence" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.name>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "name" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.obligation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "obligation" ;
   rdfs:range iso19115-1:MD_ObligationCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.parentEntity>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "parentEntity" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.rationale>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "rationale" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.rule>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "rule" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_ExtendedElementInformation.source>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_ExtendedElementInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "source" ;
   rdfs:range iso19115-1_2363:CI_Responsibility ;
 .
 iso19115-1:MD_MetadataExtensionInformation
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_MetadataExtensionInformation" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -275,20 +275,20 @@ iso19115-1:MD_MetadataExtensionInformation
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:MD_MetadataExtensionInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "extendedElementInformation" ;
   rdfs:range iso19115-1:MD_ExtendedElementInformation ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#MD_MetadataExtensionInformation.extensionOnLineResource>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:MD_MetadataExtensionInformation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "extensionOnLineResource" ;
   rdfs:range iso19115-1_2363:CI_OnlineResource ;
 .
 iso19115-1:MD_ObligationCode
   rdf:type rdfs:Datatype ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD_ObligationCode" ;
   owl:equivalentClass [
       rdf:type rdfs:Datatype ;
@@ -303,7 +303,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type skos:ConceptScheme ;
   dct:description "datatype of element or entity"^^xsd:string ;
   dct:isFormatOf iso19115-1:MD_DatatypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "MD Datatype Code - Concept Scheme" ;
   skos:definition "datatype of element or entity"^^xsd:string ;
   skos:prefLabel "MD_DatatypeCode - ConceptScheme" ;
@@ -312,7 +312,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "class that cannot be directly instantiated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "abstract Class" ;
   skos:definition "class that cannot be directly instantiated"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -322,7 +322,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "class that is composed of classes it is connected to by an aggregate relationship"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "aggregate Class" ;
   skos:definition "class that is composed of classes it is connected to by an aggregate relationship"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -332,7 +332,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "semantic relationship between two classes that involves connections among their instances"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "association" ;
   skos:definition "semantic relationship between two classes that involves connections among their instances"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -342,7 +342,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "textual information"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "character String" ;
   skos:definition "textual information"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -352,7 +352,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "descriptor of a set of objects that share the same attributes, operations, methods, relationships, and behaviour"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "class" ;
   skos:definition "descriptor of a set of objects that share the same attributes, operations, methods, relationships, and behaviour"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -362,7 +362,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "flexible enumeration useful for expressing a long list of values, can be extended"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "codelist" ;
   skos:definition "flexible enumeration useful for expressing a long list of values, can be extended"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -372,7 +372,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "permissible value for a codelist or enumeration"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "codelist Element" ;
   skos:definition "permissible value for a codelist or enumeration"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -382,7 +382,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "class with few or no operations whose primary purpose is to hold the abstract state of another class for transmittal, storage, encoding or persistent storage"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "datatype Class" ;
   skos:definition "class with few or no operations whose primary purpose is to hold the abstract state of another class for transmittal, storage, encoding or persistent storage"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -392,7 +392,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "data type whose instances form a list of named literal values, not extendable"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "enumeration" ;
   skos:definition "data type whose instances form a list of named literal values, not extendable"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -402,7 +402,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "numerical field"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "integer" ;
   skos:definition "numerical field"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -412,7 +412,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "named set of operations that characterize the behaviour of an element"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "interface Class" ;
   skos:definition "named set of operations that characterize the behaviour of an element"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -422,7 +422,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "class whose instances are classes"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "meta Class" ;
   skos:definition "class whose instances are classes"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -432,7 +432,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "subclass that may be substituted for its superclass"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "specified Class" ;
   skos:definition "subclass that may be substituted for its superclass"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -442,7 +442,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "class used for specification of a domain of instances (objects), together with the operations applicable to the objects. A type may have attributes and associations"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "type Class" ;
   skos:definition "class used for specification of a domain of instances (objects), together with the operations applicable to the objects. A type may have attributes and associations"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;
@@ -452,7 +452,7 @@ iso19115-1Code:MD_DatatypeCode
   rdf:type iso19115-1:MD_DatatypeCode ;
   rdf:type skos:Concept ;
   dct:description "class describing a selection of one of the specified types"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "union Class" ;
   skos:definition "class describing a selection of one of the specified types"^^xsd:string ;
   skos:inScheme iso19115-1Code:MD_DatatypeCode ;

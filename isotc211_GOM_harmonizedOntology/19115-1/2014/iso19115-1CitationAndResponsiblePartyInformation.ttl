@@ -26,7 +26,7 @@
 .
 iso19115-1:CI_Address
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Address" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -83,48 +83,48 @@ iso19115-1:CI_Address
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Address.administrativeArea>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Address ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "administrativeArea" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Address.city>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Address ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "city" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Address.country>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Address ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "country" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Address.deliveryPoint>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Address ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "deliveryPoint" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Address.electronicMailAddress>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Address ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "electronicMailAddress" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Address.postalCode>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Address ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "postalCode" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:CI_Citation
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Citation" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -231,104 +231,104 @@ iso19115-1:CI_Citation
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.ISBN>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "ISBN" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.ISSN>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "ISSN" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.alternateTitle>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "alternateTitle" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.citedResponsibleParty>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "citedResponsibleParty" ;
   rdfs:range iso19115-1:CI_Responsibility ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.date>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "date" ;
   rdfs:range iso19115-1:CI_Date ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.edition>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "edition" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.editionDate>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "editionDate" ;
   rdfs:range xsd:dateTime ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.graphic>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "graphic" ;
   rdfs:range iso19115-1_2358:MD_BrowseGraphic ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.identifier>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "identifier" ;
   rdfs:range iso19115-1_2358:MD_Identifier ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.onlineResource>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "onlineResource" ;
   rdfs:range iso19115-1:CI_OnlineResource ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.otherCitationDetails>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "otherCitationDetails" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.presentationForm>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "presentationForm" ;
   rdfs:range iso19115-1:CI_PresentationFormCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.series>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "series" ;
   rdfs:range iso19115-1:CI_Series ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation.title>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Citation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "title" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:CI_Contact
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Contact" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -375,48 +375,48 @@ iso19115-1:CI_Contact
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Contact.address>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Contact ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "address" ;
   rdfs:range iso19115-1:CI_Address ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Contact.contactInstructions>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Contact ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "contactInstructions" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Contact.contactType>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Contact ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "contactType" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Contact.hoursOfService>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Contact ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "hoursOfService" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Contact.onlineResource>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Contact ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "onlineResource" ;
   rdfs:range iso19115-1:CI_OnlineResource ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Contact.phone>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Contact ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "phone" ;
   rdfs:range iso19115-1:CI_Telephone ;
 .
 iso19115-1:CI_Date
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Date" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -443,27 +443,27 @@ iso19115-1:CI_Date
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Date.date>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Date ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "date" ;
   rdfs:range xsd:dateTime ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Date.dateType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Date ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "dateType" ;
   rdfs:range iso19115-1:CI_DateTypeCode ;
 .
 iso19115-1:CI_DateTypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_DateTypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:CI_Individual
   rdf:type owl:Class ;
   iso19150-2:constraint "count (name + positionName) .gt. 0" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Individual" ;
   rdfs:subClassOf iso19115-1:CI_Party ;
   rdfs:subClassOf [
@@ -481,19 +481,19 @@ iso19115-1:CI_Individual
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Individual.positionName>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Individual ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "positionName" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:CI_OnLineFunctionCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_OnLineFunctionCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:CI_OnlineResource
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_OnlineResource" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -570,56 +570,56 @@ iso19115-1:CI_OnlineResource
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_OnlineResource.applicationProfile>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_OnlineResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "applicationProfile" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_OnlineResource.description>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_OnlineResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "description" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_OnlineResource.function>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_OnlineResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "function" ;
   rdfs:range iso19115-1:CI_OnLineFunctionCode ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_OnlineResource.linkage>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_OnlineResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "linkage" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_OnlineResource.name>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_OnlineResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "name" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_OnlineResource.protocol>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_OnlineResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "protocol" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_OnlineResource.protocolRequest>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_OnlineResource ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "protocolRequest" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:CI_Organisation
   rdf:type owl:Class ;
   iso19150-2:constraint "count (name + logo) .gt. 0" ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Organisation" ;
   rdfs:subClassOf iso19115-1:CI_Party ;
   rdfs:subClassOf [
@@ -638,21 +638,21 @@ iso19115-1:CI_Organisation
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:CI_Organisation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "individual" ;
   rdfs:range iso19115-1:CI_Individual ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Organisation.logo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Organisation ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "logo" ;
   rdfs:range iso19115-1_2358:MD_BrowseGraphic ;
 .
 iso19115-1:CI_Party
   rdf:type owl:Class ;
   iso19150-2:isAbstract "true"^^xsd:boolean ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Party" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -674,26 +674,26 @@ iso19115-1:CI_Party
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Party.contactInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Party ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "contactInfo" ;
   rdfs:range iso19115-1:CI_Contact ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Party.name>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Party ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "name" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:CI_PresentationFormCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_PresentationFormCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:CI_Responsibility
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Responsibility" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -725,7 +725,7 @@ iso19115-1:CI_Responsibility
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Responsibility.extent>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Responsibility ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "extent" ;
   rdfs:range iso19115-1_2368:EX_Extent ;
 .
@@ -733,26 +733,26 @@ iso19115-1:CI_Responsibility
   rdf:type owl:ObjectProperty ;
   iso19150-2:aggregationType "partOfSharedAggregation" ;
   rdfs:domain iso19115-1:CI_Responsibility ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "party" ;
   rdfs:range iso19115-1:CI_Party ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Responsibility.role>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Responsibility ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "role" ;
   rdfs:range iso19115-1:CI_RoleCode ;
 .
 iso19115-1:CI_RoleCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_RoleCode" ;
   rdfs:subClassOf skos:Concept ;
 .
 iso19115-1:CI_Series
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Series" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -789,27 +789,27 @@ iso19115-1:CI_Series
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Series.issueIdentification>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Series ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "issueIdentification" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Series.name>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Series ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "name" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Series.page>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Series ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "page" ;
   rdfs:range xsd:string ;
 .
 iso19115-1:CI_Telephone
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_Telephone" ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -836,20 +836,20 @@ iso19115-1:CI_Telephone
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Telephone.number>
   rdf:type owl:DatatypeProperty ;
   rdfs:domain iso19115-1:CI_Telephone ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "number" ;
   rdfs:range xsd:string ;
 .
 <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Telephone.numberType>
   rdf:type owl:ObjectProperty ;
   rdfs:domain iso19115-1:CI_Telephone ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "numberType" ;
   rdfs:range iso19115-1:CI_TelephoneTypeCode ;
 .
 iso19115-1:CI_TelephoneTypeCode
   rdf:type owl:Class ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI_TelephoneTypeCode" ;
   rdfs:subClassOf skos:Concept ;
 .
@@ -857,7 +857,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type skos:ConceptScheme ;
   dct:description "identification of when a given event occurred"^^xsd:string ;
   dct:isFormatOf iso19115-1:CI_DateTypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI Date Type Code - Concept Scheme" ;
   skos:definition "identification of when a given event occurred"^^xsd:string ;
   skos:prefLabel "CI_DateTypeCode - ConceptScheme" ;
@@ -866,7 +866,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource was adopted"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "adopted" ;
   skos:definition "date identifies when resource was adopted"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -876,7 +876,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when the resource was brought into existence"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "creation" ;
   skos:definition "date identifies when the resource was brought into existence"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -886,7 +886,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource was deprecated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "deprecated" ;
   skos:definition "date identifies when resource was deprecated"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -896,7 +896,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when an instance of the resource was distributed"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "distribution" ;
   skos:definition "date identifies when an instance of the resource was distributed"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -906,7 +906,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource expires"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "expiry" ;
   skos:definition "date identifies when resource expires"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -916,7 +916,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource became in force"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "in Force" ;
   skos:definition "date identifies when resource became in force"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -926,7 +926,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource was last reviewed"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "last Revision" ;
   skos:definition "date identifies when resource was last reviewed"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -936,7 +936,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource was last updated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "last Update" ;
   skos:definition "date identifies when resource was last updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -946,7 +946,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource will be next updated"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "next Update" ;
   skos:definition "date identifies when resource will be next updated"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -956,7 +956,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when the resource was issued"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "publication" ;
   skos:definition "date identifies when the resource was issued"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -966,7 +966,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "the date that the resource shall be released for public access"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "released" ;
   skos:definition "the date that the resource shall be released for public access"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -976,7 +976,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when the resource was examined or re-examined and improved or amended"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "revision" ;
   skos:definition "date identifies when the resource was examined or re-examined and improved or amended"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -986,7 +986,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource was superseded or replaced by another resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "superseded" ;
   skos:definition "date identifies when resource was superseded or replaced by another resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -996,7 +996,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "date identifies when resource became not available or obtainable"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "unavailable" ;
   skos:definition "date identifies when resource became not available or obtainable"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -1007,7 +1007,7 @@ iso19115-1Code:CI_DateTypeCode
   rdf:type skos:Concept ;
   dct:description """time at which the data are considered to become valid.
 NOTE: There could be quite a delay between creation and validity begins"""^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "validity Begins" ;
   skos:definition """time at which the data are considered to become valid.
 NOTE: There could be quite a delay between creation and validity begins"""^^xsd:string ;
@@ -1018,7 +1018,7 @@ NOTE: There could be quite a delay between creation and validity begins"""^^xsd:
   rdf:type iso19115-1:CI_DateTypeCode ;
   rdf:type skos:Concept ;
   dct:description "time at which the data are no longer considered to be valid"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "validity Expires" ;
   skos:definition "time at which the data are no longer considered to be valid"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_DateTypeCode ;
@@ -1082,7 +1082,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type skos:ConceptScheme ;
   dct:description "function performed by the resource"^^xsd:string ;
   dct:isFormatOf iso19115-1:CI_OnLineFunctionCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI On Line Function Code - Concept Scheme" ;
   skos:definition "function performed by the resource"^^xsd:string ;
   skos:prefLabel "CI_OnLineFunctionCode - ConceptScheme" ;
@@ -1091,7 +1091,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "browse graphic provided"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "browse Graphic" ;
   skos:definition "browse graphic provided"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1101,7 +1101,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online browsing provided"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "browsing" ;
   skos:definition "online browsing provided"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1111,7 +1111,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "complete metadata provided"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "complete metadata"^^xsd:string ;
   skos:definition "complete metadata provided"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1121,7 +1121,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online instructions for transferring data from one storage device or system to another"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "download" ;
   skos:definition "online instructions for transferring data from one storage device or system to another"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1131,7 +1131,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online email service provided"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "email Service" ;
   skos:definition "online email service provided"^^xsd:string ;
   skos:editorialNote "online email service provided"^^xsd:string ;
@@ -1142,7 +1142,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online file access provided"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "file Access" ;
   skos:definition "online file access provided"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1152,7 +1152,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online information about the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "information" ;
   skos:definition "online information about the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1162,7 +1162,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online instructions for requesting the resource from the provider"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "offline Access" ;
   skos:definition "online instructions for requesting the resource from the provider"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1172,7 +1172,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online order process for obtaining the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "order" ;
   skos:definition "online order process for obtaining the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1182,7 +1182,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online search interface for seeking out information about the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "search" ;
   skos:definition "online search interface for seeking out information about the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1192,7 +1192,7 @@ iso19115-1Code:CI_OnLineFunctionCode
   rdf:type iso19115-1:CI_OnLineFunctionCode ;
   rdf:type skos:Concept ;
   dct:description "online resource upload capability provided"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "upload" ;
   skos:definition "online resource upload capability provided"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_OnLineFunctionCode ;
@@ -1241,7 +1241,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type skos:ConceptScheme ;
   dct:description "mode in which the data are represented"^^xsd:string ;
   dct:isFormatOf iso19115-1:CI_PresentationFormCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI Presentation Form Code - Concept Scheme" ;
   skos:definition "mode in which the data are represented"^^xsd:string ;
   skos:prefLabel "CI_PresentationFormCode - ConceptScheme" ;
@@ -1250,7 +1250,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "digital audio recording"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "audio Digital" ;
   skos:definition "digital audio recording"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1260,7 +1260,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "audio recording delivered by analog media, such as a magnetic tape"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "audio Hardcopy" ;
   skos:definition "audio recording delivered by analog media, such as a magnetic tape"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1270,7 +1270,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "diagram Digital" ;
   skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1280,7 +1280,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "diagram Hardcopy" ;
   skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1290,7 +1290,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "digital representation of a primarily textual item (can contain illustrations also)"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "document Digital" ;
   skos:definition "digital representation of a primarily textual item (can contain illustrations also)"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1300,7 +1300,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "document Hardcopy" ;
   skos:definition "representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1310,7 +1310,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "image Digital" ;
   skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1320,7 +1320,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "image Hardcopy" ;
   skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1330,7 +1330,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "map represented in raster or vector form"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "map Digital" ;
   skos:definition "map represented in raster or vector form"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1340,7 +1340,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "map printed on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "map Hardcopy" ;
   skos:definition "map printed on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1350,7 +1350,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "multi-dimensional digital representation of a feature, process, etc."^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "model Digital" ;
   skos:definition "multi-dimensional digital representation of a feature, process, etc."^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1360,7 +1360,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "3-dimensional, physical model"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "model Hardcopy" ;
   skos:definition "3-dimensional, physical model"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1370,7 +1370,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "information representation using simultaneously various digital modes for text, sound, image"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "multimedia Digital" ;
   skos:definition "information representation using simultaneously various digital modes for text, sound, image"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1380,7 +1380,7 @@ iso19115-1Code:CI_PresentationFormCode
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "information representation using simultaneously various analog modes for text, sound, image"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "multimedia Hardcopy" ;
   skos:definition "information representation using simultaneously various analog modes for text, sound, image"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1392,7 +1392,7 @@ iso19115-1Code:CI_PresentationFormCode
   dct:description """a physical object
 
 EXAMPLE Rock or mineral sample, microscope slide."""^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "physical Object" ;
   skos:definition """a physical object
 
@@ -1404,7 +1404,7 @@ EXAMPLE Rock or mineral sample, microscope slide."""^^xsd:string ;
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "vertical cross-section in digital form"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "profile Digital" ;
   skos:definition "vertical cross-section in digital form"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1414,7 +1414,7 @@ EXAMPLE Rock or mineral sample, microscope slide."""^^xsd:string ;
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "vertical cross-section printed on paper, etc."^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "profile Hardcopy" ;
   skos:definition "vertical cross-section printed on paper, etc."^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1424,7 +1424,7 @@ EXAMPLE Rock or mineral sample, microscope slide."""^^xsd:string ;
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "digital representation of facts or figures systematically displayed, especially in columns"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "table Digital" ;
   skos:definition "digital representation of facts or figures systematically displayed, especially in columns"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1434,7 +1434,7 @@ EXAMPLE Rock or mineral sample, microscope slide."""^^xsd:string ;
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "table Hardcopy" ;
   skos:definition "representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1444,7 +1444,7 @@ EXAMPLE Rock or mineral sample, microscope slide."""^^xsd:string ;
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "digital video recording"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "video Digital" ;
   skos:definition "digital video recording"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1454,7 +1454,7 @@ EXAMPLE Rock or mineral sample, microscope slide."""^^xsd:string ;
   rdf:type iso19115-1:CI_PresentationFormCode ;
   rdf:type skos:Concept ;
   dct:description "video recording on film"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "video Hardcopy" ;
   skos:definition "video recording on film"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_PresentationFormCode ;
@@ -1533,7 +1533,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type skos:ConceptScheme ;
   dct:description "function performed by the responsible party"^^xsd:string ;
   dct:isFormatOf iso19115-1:CI_RoleCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI Role Code - Concept Scheme" ;
   skos:definition "function performed by the responsible party"^^xsd:string ;
   skos:prefLabel "CI_RoleCode - ConceptScheme" ;
@@ -1542,7 +1542,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who authored the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "author" ;
   skos:definition "party who authored the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1552,7 +1552,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who jointly authors the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "co Author" ;
   skos:definition "party who jointly authors the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1562,7 +1562,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who assists with the generation of the resource other than the principal investigator"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "collaborator" ;
   skos:definition "party who assists with the generation of the resource other than the principal investigator"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1572,7 +1572,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party contributing to the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "contributor" ;
   skos:definition "party contributing to the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1582,7 +1582,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "custodian" ;
   skos:definition "party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1592,7 +1592,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who distributes the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "distributor" ;
   skos:definition "party who distributes the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1602,7 +1602,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who reviewed or modified the resource to improve the content"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "editor" ;
   skos:definition "party who reviewed or modified the resource to improve the content"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1612,7 +1612,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party providing monetary support for the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "funder" ;
   skos:definition "party providing monetary support for the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1622,7 +1622,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "a class of entity that mediates access to the resource and for whom the resource is intended or useful"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "mediator" ;
   skos:definition "a class of entity that mediates access to the resource and for whom the resource is intended or useful"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1632,7 +1632,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who created the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "originator" ;
   skos:definition "party who created the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1642,7 +1642,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party that owns the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "owner" ;
   skos:definition "party that owns the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1652,7 +1652,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who can be contacted for acquiring knowledge about or acquisition of the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "point Of Contact" ;
   skos:definition "party who can be contacted for acquiring knowledge about or acquisition of the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1662,7 +1662,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "key party responsible for gathering information and conducting research"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "principal Investigator" ;
   skos:definition "key party responsible for gathering information and conducting research"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1672,7 +1672,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who has processed the data in a manner such that the resource has been modified"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "processor" ;
   skos:definition "party who has processed the data in a manner such that the resource has been modified"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1682,7 +1682,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who published the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "publisher" ;
   skos:definition "party who published the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1692,7 +1692,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party that supplies the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "resource Provider" ;
   skos:definition "party that supplies the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1702,7 +1702,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party owning or managing rights over the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "rights Holder" ;
   skos:definition "party owning or managing rights over the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1713,7 +1713,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type skos:Concept ;
   dct:description "party who speaks for the resource"^^xsd:string ;
   rdfs:comment "This definition sounds like an 'advocate'. Elsewhere the term'sponsor' is used more for customer or client (e.g. see definition of MD_ProgressCode/accepted)"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "sponsor" ;
   skos:definition "party who speaks for the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1723,7 +1723,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who has an interest in the resource or the use of the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "stakeholder" ;
   skos:definition "party who has an interest in the resource or the use of the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1733,7 +1733,7 @@ iso19115-1Code:CI_RoleCode
   rdf:type iso19115-1:CI_RoleCode ;
   rdf:type skos:Concept ;
   dct:description "party who uses the resource"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "user" ;
   skos:definition "party who uses the resource"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_RoleCode ;
@@ -1809,7 +1809,7 @@ iso19115-1Code:CI_TelephoneTypeCode
   rdf:type skos:ConceptScheme ;
   dct:description "type of telephone"^^xsd:string ;
   dct:isFormatOf iso19115-1:CI_TelephoneTypeCode ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "CI Telephone Type Code - Concept Scheme" ;
   skos:definition "type of telephone"^^xsd:string ;
   skos:prefLabel "CI_TelephoneTypeCode - ConceptScheme" ;
@@ -1818,7 +1818,7 @@ iso19115-1Code:CI_TelephoneTypeCode
   rdf:type iso19115-1:CI_TelephoneTypeCode ;
   rdf:type skos:Concept ;
   dct:description "telephone provides facsimile service"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "facsimile" ;
   skos:altLabel "fax"^^xsd:string ;
   skos:definition "telephone provides facsimile service"^^xsd:string ;
@@ -1829,7 +1829,7 @@ iso19115-1Code:CI_TelephoneTypeCode
   rdf:type iso19115-1:CI_TelephoneTypeCode ;
   rdf:type skos:Concept ;
   dct:description "telephone provides sms service"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "sms" ;
   skos:definition "telephone provides sms service"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_TelephoneTypeCode ;
@@ -1839,7 +1839,7 @@ iso19115-1Code:CI_TelephoneTypeCode
   rdf:type iso19115-1:CI_TelephoneTypeCode ;
   rdf:type skos:Concept ;
   dct:description "telephone provides voice service"^^xsd:string ;
-  rdfs:isDefinedBy "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+  rdfs:isDefinedBy <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
   rdfs:label "voice" ;
   skos:definition "telephone provides voice service"^^xsd:string ;
   skos:inScheme iso19115-1Code:CI_TelephoneTypeCode ;
