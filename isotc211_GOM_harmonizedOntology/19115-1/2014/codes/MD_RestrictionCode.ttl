@@ -1,0 +1,220 @@
+@base          <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals> .
+
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:    <http://purl.org/linked-data/registry#>.
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix common: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix constraint: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix fc:    <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
+@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix lineage: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix service: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#> . 
+@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+
+@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
+@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
+@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/> .
+@prefix iso19108_891: <http://def.isotc211.org/iso19108/2006/TemporalObjects#> .
+@prefix iso19139_709: <http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19111_1300: <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix iso19103_2176: <http://def.isotc211.org/iso19103/2015/RecordTypes#> .
+@prefix iso19103_2174: <http://def.isotc211.org/iso19103/2015/NameTypes#> .
+@prefix iso03166_66: <http://def.isotc211.org/iso03166/-1/CountryCodes#> .
+@prefix iso19115-1_2364: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+@prefix iso19115-1_2375: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix iso19115-1_2374: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix iso19115-1_2368: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix iso19115-1_2369: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix iso19115-1_2366: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix iso19103_2178: <http://def.isotc211.org/iso19103/2015/WebEnvironment#> .
+@prefix iso19115-1_2367: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix iso19103_2179: <http://def.isotc211.org/iso19103/2015/MeasureTypes#> .
+@prefix iso19157_1164: <http://def.isotc211.org/iso19157/2013/DataQuality#> .
+@prefix iso19115-1_2371: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix iso19115-1_2360: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix iso19115-1_2370: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+
+
+<ConstraintInformation/code/MD_RestrictionCode/private>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "private" ;
+        dct:description   "protects rights of individual or organisations from observation, intrusion, or attention of others"^^xsd:string ;
+        skos:definition   "protects rights of individual or organisations from observation, intrusion, or attention of others"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "private" .
+
+<ConstraintInformation/code/MD_RestrictionCode/intellectualPropertyRights>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "intellectual Property Rights" ;
+        dct:description   "rights to financial benefit from and control of distribution of non-tangible property that is a result of creativity"^^xsd:string ;
+        skos:definition   "rights to financial benefit from and control of distribution of non-tangible property that is a result of creativity"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "intellectualPropertyRights" .
+
+<ConstraintInformation/code/MD_RestrictionCode/licenceDistributor>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "licence Distributor" ;
+        dct:description   "formal permission required for a person or an entity to commercialize or distribute the resource"^^xsd:string ;
+        skos:definition   "formal permission required for a person or an entity to commercialize or distribute the resource"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "licenceDistributor" .
+
+<ConstraintInformation/code/MD_RestrictionCode/confidential>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "confidential" ;
+        dct:description   "not available to the public \r\nNOTE Contains information that could be prejudicial to a commercial, industrial, or national interest."^^xsd:string ;
+        skos:definition   "not available to the public \r\nNOTE Contains information that could be prejudicial to a commercial, industrial, or national interest."^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "confidential" .
+
+<ConstraintInformation/code/MD_RestrictionCode/in-confidence>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "in-confidence" ;
+        dct:description   "with trust"^^xsd:string ;
+        skos:definition   "with trust"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "in-confidence" .
+
+<ConstraintInformation/code/MD_RestrictionCode/patentPending>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "patent Pending" ;
+        dct:description   "produced or sold information awaiting a patent"^^xsd:string ;
+        skos:definition   "produced or sold information awaiting a patent"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "patentPending" .
+
+<ConstraintInformation/code/MD_RestrictionCode/patent>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "patent" ;
+        dct:description   "government has granted exclusive right to make, sell, use or license an invention or discovery"^^xsd:string ;
+        skos:definition   "government has granted exclusive right to make, sell, use or license an invention or discovery"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "patent" .
+
+<ConstraintInformation/code/MD_RestrictionCode/trademark>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "trademark" ;
+        dct:description   "a name, symbol, or other device identifying a product, officially registered and legally restricted to the use of the owner or manufacturer"^^xsd:string ;
+        skos:definition   "a name, symbol, or other device identifying a product, officially registered and legally restricted to the use of the owner or manufacturer"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "trademark" .
+
+<ConstraintInformation/code/MD_RestrictionCode/unrestricted>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "unrestricted" ;
+        dct:description   "no constraints exist"^^xsd:string ;
+        skos:definition   "no constraints exist"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "unrestricted" .
+
+<ConstraintInformation/code/MD_RestrictionCode/sensitiveButUnclassified>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "sensitive But Unclassified" ;
+        dct:description   "although unclassified, requires strict controls over its distribution."^^xsd:string ;
+        skos:definition   "although unclassified, requires strict controls over its distribution."^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "sensitiveButUnclassified" .
+
+<ConstraintInformation/code/MD_RestrictionCode/otherRestrictions>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "other Restrictions" ;
+        dct:description   "limitation not listed"^^xsd:string ;
+        skos:definition   "limitation not listed"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "otherRestrictions" .
+
+<ConstraintInformation/code/MD_RestrictionCode/licenceEndUser>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "licence End User" ;
+        dct:description   "formal permission required for a person or an entity to use the resource and that may differ from the person that orders or purchases it"^^xsd:string ;
+        skos:definition   "formal permission required for a person or an entity to use the resource and that may differ from the person that orders or purchases it"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "licenceEndUser" .
+
+<ConstraintInformation/code/MD_RestrictionCode/statutory>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "statutory" ;
+        dct:description   "prescribed by law"^^xsd:string ;
+        skos:definition   "prescribed by law"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "statutory" .
+
+<ConstraintInformation/code/MD_RestrictionCode/copyright>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "copyright" ;
+        dct:description   "exclusive right to the publication, production, or sale of the rights to a literary, dramatic, musical, or artistic work, or to the use of a commercial print or label, granted by law for a specified period of time to an author, composer, artist, distributor"^^xsd:string ;
+        skos:definition   "exclusive right to the publication, production, or sale of the rights to a literary, dramatic, musical, or artistic work, or to the use of a commercial print or label, granted by law for a specified period of time to an author, composer, artist, distributor"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "copyright" .
+
+<ConstraintInformation/code/MD_RestrictionCode/licence>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "licence" ;
+        dct:description   "formal permission to do something"^^xsd:string ;
+        skos:definition   "formal permission to do something"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "licence" .
+
+<ConstraintInformation/code/MD_RestrictionCode/restricted>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "restricted" ;
+        dct:description   "withheld from general circulation or disclosure"^^xsd:string ;
+        skos:definition   "withheld from general circulation or disclosure"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "restricted" .
+
+<ConstraintInformation/code/MD_RestrictionCode/licenceUnrestricted>
+        a                 iso19115-1_2364:MD_RestrictionCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "licence Unrestricted" ;
+        dct:description   "formal permission not required to use the resource"^^xsd:string ;
+        skos:definition   "formal permission not required to use the resource"^^xsd:string ;
+        skos:inScheme     <ConstraintInformation/code/MD_RestrictionCode> ;
+        skos:prefLabel    "licenceUnrestricted" .

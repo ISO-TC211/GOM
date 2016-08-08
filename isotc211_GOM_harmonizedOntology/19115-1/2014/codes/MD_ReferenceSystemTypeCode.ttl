@@ -1,308 +1,318 @@
 @base          <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals> .
-@prefix swon:  <http://uispin.org/swon#> .
-@prefix evnui: <http://evn.topbraidlive.org/ui#> .
-@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
-@prefix spr:   <http://spinrdf.org/spr#> .
-@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
-@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
-@prefix teamwork: <http://topbraid.org/teamwork#> .
-@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
-@prefix spl:   <http://spinrdf.org/spl#> .
-@prefix search: <http://topbraid.org/search#> .
-@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
-@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
-@prefix tbi:   <http://tbi.topbraid.org/tbi#> .
-@prefix spif:  <http://spinrdf.org/spif#> .
-@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
-@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
-@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
-@prefix pf:    <http://jena.hpl.hp.com/ARQ/property#> .
-@prefix jfn:   <java:com.hp.hpl.jena.sparql.function.library.> .
-@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix crosswalk: <http://topbraid.org/crosswalk#> .
-@prefix spra:  <http://spinrdf.org/spra#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:    <http://purl.org/linked-data/registry#>.
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
 @prefix common: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
 @prefix constraint: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
-@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
-@prefix spin:  <http://spinrdf.org/spin#> .
-@prefix swaeditor: <http://topbraid.org/swaeditor#> .
-@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
-@prefix connectset-templates: <http://tbi.topbraidlive.org/system/connectset-templates#> .
-@prefix ui:    <http://uispin.org/ui#> .
-@prefix backspin: <http://topbraid.org/backspin#> .
-@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
-@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
 @prefix fc:    <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
-@prefix orph_1287: <http://def.isotc211.org/orphansOrphans#> .
-@prefix sharepoint: <http://topbraid.org/sharepoint#> .
-@prefix shaclify: <http://topbraid.org/shacl/shaclify#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix metextinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
-@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
-@prefix afn:   <http://jena.hpl.hp.com/ARQ/function#> .
-@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
-@prefix raci:  <http://topbraid.org/raci#> .
-@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
-@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
-@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
-@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
-@prefix metadata: <http://topbraid.org/metadata#> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
-@prefix tops:  <http://www.topbraid.org/tops#> .
-@prefix sm:    <http://topbraid.org/sparqlmotion#> .
-@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
-@prefix sp:    <http://spinrdf.org/sp#> .
-@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/> .
-@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
-@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
+@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
 @prefix lineage: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix service: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#> . 
+@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+
+@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
+@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
+@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/> .
 @prefix iso19108_891: <http://def.isotc211.org/iso19108/2006/TemporalObjects#> .
 @prefix iso19139_709: <http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#> .
-@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
-@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
 @prefix iso19111_1300: <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
-@prefix uix:   <http://topbraidlive.org/uix#> .
-@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
-@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
-@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
 @prefix iso19103_2176: <http://def.isotc211.org/iso19103/2015/RecordTypes#> .
 @prefix iso19103_2174: <http://def.isotc211.org/iso19103/2015/NameTypes#> .
 @prefix iso03166_66: <http://def.isotc211.org/iso03166/-1/CountryCodes#> .
-@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
 @prefix iso19115-1_2364: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
-@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
 @prefix iso19115-1_2375: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
-@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
 @prefix iso19115-1_2374: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
-@prefix swaclasses: <http://topbraid.org/swaclasses#> .
-@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
 @prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
 @prefix iso19115-1_2368: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
 @prefix iso19115-1_2369: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
 @prefix iso19115-1_2366: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
 @prefix iso19103_2178: <http://def.isotc211.org/iso19103/2015/WebEnvironment#> .
 @prefix iso19115-1_2367: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
 @prefix iso19103_2179: <http://def.isotc211.org/iso19103/2015/MeasureTypes#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix iso19157_1164: <http://def.isotc211.org/iso19157/2013/DataQuality#> .
 @prefix iso19115-1_2371: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
-@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
-@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
 @prefix iso19115-1_2360: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
 @prefix iso19115-1_2370: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
-@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
-@prefix iso19115-1_2359: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
-@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
-@prefix sml:   <http://topbraid.org/sparqlmotionlib#> .
-@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
-@prefix tasks: <http://topbraid.org/tasks#> .
-@prefix iso19103_2168: <http://def.isotc211.org/iso19103/2015/DateAndTime#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
 @prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
-@prefix tables: <http://topbraid.org/tables#> .
-@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
-@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
-@prefix dct:   <http://purl.org/dc/terms/> .
-@prefix smf:   <http://topbraid.org/sparqlmotionfunctions#> .
-@prefix html:  <http://uispin.org/html#> .
-@prefix swa:   <http://topbraid.org/swa#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/parametric>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "parametric" ;
+        dct:description   "coordinate reference system based on a parametric datum (datum describing the relationship of a parametric coordinate system to an object) \r\n\r\nEXAMPLE pressure"^^xsd:string ;
+        skos:definition   "coordinate reference system based on a parametric datum (datum describing the relationship of a parametric coordinate system to an object) \r\n\r\nEXAMPLE pressure"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "parametric" .
 
-<ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geodeticGeographic3D>
-        a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "geodeticGeographic3D" ;
-        skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
-        skos:prefLabel    "geodeticGeographic3D" .
-
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/vertical>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "vertical" ;
+        dct:description   "one-dimensional coordinate reference system based on a vertical datum (datum describing the relation of gravity-related heights or depths to the Earth) \r\n\r\nEXAMPLE [gravity-related] height or depth"^^xsd:string ;
+        skos:definition   "one-dimensional coordinate reference system based on a vertical datum (datum describing the relation of gravity-related heights or depths to the Earth) \r\n\r\nEXAMPLE [gravity-related] height or depth"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "vertical" .
 
+<ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geodeticGeographic3D>
+        a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "geodetic Geographic 3D" ;
+        dct:description   "geodetic CRS having an ellipsoidal 3D coordinate system \r\n\r\nEXAMPLE latitude, longitude, ellipsoidal height"^^xsd:string ;
+        skos:definition   "geodetic CRS having an ellipsoidal 3D coordinate system \r\n\r\nEXAMPLE latitude, longitude, ellipsoidal height"^^xsd:string ;
+        skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
+        skos:prefLabel    "geodeticGeographic3D" .
+
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic3DTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundGeographic3DTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Geographic 3D Temporal" ;
+        dct:description   "compound spatio-temporal coordinate reference system containing a 3 dimensional geographic and a temporal coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, ellipsoidal height, time"^^xsd:string ;
+        skos:definition   "compound spatio-temporal coordinate reference system containing a 3 dimensional geographic and a temporal coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, ellipsoidal height, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundGeographic3DTemporal" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjectedVertical>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundProjectedVertical" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Projected Vertical" ;
+        dct:description   "compound spatial reference system containing a horizontal projected coordinate reference system and a vertical coordinate reference system \r\n\r\nEXAMPLE easting, northing, [gravity-related] height or depth"^^xsd:string ;
+        skos:definition   "compound spatial reference system containing a horizontal projected coordinate reference system and a vertical coordinate reference system \r\n\r\nEXAMPLE easting, northing, [gravity-related] height or depth"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundProjectedVertical" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringVertical>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundEngineeringVertical" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Engineering Vertical" ;
+        dct:description   "compound spatial reference system containing a horizontal engineering coordinate reference system and a vertical coordinate reference system \r\n\r\nEXAMPLE [local] x, y, height"^^xsd:string ;
+        skos:definition   "compound spatial reference system containing a horizontal engineering coordinate reference system and a vertical coordinate reference system \r\n\r\nEXAMPLE [local] x, y, height"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundEngineeringVertical" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/linear>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "linear" ;
+        dct:description   "reference system that identifies a location by reference to a segment of a linear geographic feature and distance along that segment from a given point \r\n\r\nEXAMPLE x km along road"^^xsd:string ;
+        skos:definition   "reference system that identifies a location by reference to a segment of a linear geographic feature and distance along that segment from a given point \r\n\r\nEXAMPLE x km along road"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "linear" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringParametric>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundEngineeringParametric" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Engineering Parametric" ;
+        dct:description   "compound spatio-parametric coordinate reference system containing an engineering coordinate reference system and a parametric reference system \r\n\r\nEXAMPLE [local] x, y, pressure"^^xsd:string ;
+        skos:definition   "compound spatio-parametric coordinate reference system containing an engineering coordinate reference system and a parametric reference system \r\n\r\nEXAMPLE [local] x, y, pressure"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundEngineeringParametric" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geodeticGeographic2D>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "geodeticGeographic2D" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "geodetic Geographic 2D" ;
+        dct:description   "geodetic CRS having an ellipsoidal 2D coordinate system \r\n\r\nEXAMPLE latitude, longitude"^^xsd:string ;
+        skos:definition   "geodetic CRS having an ellipsoidal 2D coordinate system \r\n\r\nEXAMPLE latitude, longitude"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "geodeticGeographic2D" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DVerticalTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundGeographic2DVerticalTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Geographic 2D Vertical Temporal" ;
+        dct:description   "compound spatio-temporal coordinate reference system containing a 2 dimensional geographic horizontal, a vertical, and a temporal coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, height, time"^^xsd:string ;
+        skos:definition   "compound spatio-temporal coordinate reference system containing a 2 dimensional geographic horizontal, a vertical, and a temporal coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, height, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundGeographic2DVerticalTemporal" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/engineeringDesign>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "engineeringDesign" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "engineering Design" ;
+        dct:description   "engineering coordinate reference system in which the base representation of a moving object is specified \r\n\r\nEXAMPLE [local] x,y"^^xsd:string ;
+        skos:definition   "engineering coordinate reference system in which the base representation of a moving object is specified \r\n\r\nEXAMPLE [local] x,y"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "engineeringDesign" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringParametricTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundEngineeringParametricTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Engineering Parametric Temporal" ;
+        dct:description   "compound spatio-parametric-temporal coordinate reference system containing an engineering, a parametric, and a temporal coordinate reference system \r\n\r\nEXAMPLE [local] x, y, pressure, time"^^xsd:string ;
+        skos:definition   "compound spatio-parametric-temporal coordinate reference system containing an engineering, a parametric, and a temporal coordinate reference system \r\n\r\nEXAMPLE [local] x, y, pressure, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundEngineeringParametricTemporal" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/engineering>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "engineering" ;
+        dct:description   "coordinate reference system based on an engineering datum (datum describing the relationship of a coordinate system to a local reference) \r\n\r\nEXAMPLE [local] x,y"^^xsd:string ;
+        skos:definition   "coordinate reference system based on an engineering datum (datum describing the relationship of a coordinate system to a local reference) \r\n\r\nEXAMPLE [local] x,y"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "engineering" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjected2DParametric>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundProjected2DParametric" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Projected 2D Parametric" ;
+        dct:description   "compound spatio-parametric coordinate reference system containing a projected horizontal coordinate reference system and a parametric reference system \r\n\r\nEXAMPLE easting, northing, density"^^xsd:string ;
+        skos:definition   "compound spatio-parametric coordinate reference system containing a projected horizontal coordinate reference system and a parametric reference system \r\n\r\nEXAMPLE easting, northing, density"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundProjected2DParametric" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geographicIdentifier>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "geographicIdentifier" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "geographic Identifier" ;
+        dct:description   "spatial reference in the form of a label or code that identifies a location \r\n\r\nEXAMPLE post code"^^xsd:string ;
+        skos:definition   "spatial reference in the form of a label or code that identifies a location \r\n\r\nEXAMPLE post code"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "geographicIdentifier" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/temporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "temporal" ;
+        dct:description   "reference system against which time is measured \r\n\r\nEXAMPLE time"^^xsd:string ;
+        skos:definition   "reference system against which time is measured \r\n\r\nEXAMPLE time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "temporal" .
 
+<ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjectedTemporal>
+        a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Projected Temporal" ;
+        dct:description   "compound spatio-temporal coordinate reference system containing a projected horizontal and a temporal coordinate reference system \r\n\r\nEXAMPLE easting, northing, time"^^xsd:string ;
+        skos:definition   "compound spatio-temporal coordinate reference system containing a projected horizontal and a temporal coordinate reference system \r\n\r\nEXAMPLE easting, northing, time"^^xsd:string ;
+        skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
+        skos:prefLabel    "compoundProjectedTemporal" .
+
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DParametricTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundGeographic2DParametricTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Geographic 2D Parametric Temporal" ;
+        dct:description   "compound spatio-parametric-temporal coordinate reference system containing a 2 dimensional geographic horizontal, a parametric and a temporal coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, pressure, time"^^xsd:string ;
+        skos:definition   "compound spatio-parametric-temporal coordinate reference system containing a 2 dimensional geographic horizontal, a parametric and a temporal coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, pressure, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundGeographic2DParametricTemporal" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundEngineeringTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Engineering Temporal" ;
+        dct:description   "compound spatio-temporal coordinate reference system containing an engineering and a temporal coordinate reference system \r\n\r\nEXAMPLE [local] x, y, time"^^xsd:string ;
+        skos:definition   "compound spatio-temporal coordinate reference system containing an engineering and a temporal coordinate reference system \r\n\r\nEXAMPLE [local] x, y, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundEngineeringTemporal" .
 
-<ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjectedTemporal>
-        a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundProjectedTemporal" ;
-        skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
-        skos:prefLabel    "compoundProjectedTemporal" .
-
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DVertical>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundGeographic2DVertical" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Geographic 2D Vertical" ;
+        dct:description   "compound coordinate reference system in which one constituent coordinate reference system is a horizontal geodetic coordinate reference system and one is a vertical coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, [gravity-related] height or depth"^^xsd:string ;
+        skos:definition   "compound coordinate reference system in which one constituent coordinate reference system is a horizontal geodetic coordinate reference system and one is a vertical coordinate reference system \r\n\r\nEXAMPLE latitude, longitude, [gravity-related] height or depth"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundGeographic2DVertical" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/projected>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "projected" ;
+        dct:description   "coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection \r\n\r\nEXAMPLE easting, northing"^^xsd:string ;
+        skos:definition   "coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection \r\n\r\nEXAMPLE easting, northing"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "projected" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundEngineeringVerticalTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundEngineeringVerticalTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Engineering Vertical Temporal" ;
+        dct:description   "compound spatio-temporal coordinate reference system containing an engineering, a vertical, and a temporal coordinate reference system \r\n\r\nEXAMPLE [local] x, y, height, time"^^xsd:string ;
+        skos:definition   "compound spatio-temporal coordinate reference system containing an engineering, a vertical, and a temporal coordinate reference system \r\n\r\nEXAMPLE [local] x, y, height, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundEngineeringVerticalTemporal" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjectedVerticalTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundProjectedVerticalTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Projected Vertical Temporal" ;
+        dct:description   "compound spatio-temporal coordinate reference system containing a projected horizontal, a vertical, and a temporal coordinate reference system \r\n\r\nEXAMPLE easting, northing, height, time"^^xsd:string ;
+        skos:definition   "compound spatio-temporal coordinate reference system containing a projected horizontal, a vertical, and a temporal coordinate reference system \r\n\r\nEXAMPLE easting, northing, height, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundProjectedVerticalTemporal" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundGeographic2DTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Geographic 2D Temporal" ;
+        dct:description   "compound spatio-temporal coordinate reference system containing a 2 dimensional geographic horizontal coordinate reference system and a temporal reference system \r\n\r\nEXAMPLE latitude, longitude, time"^^xsd:string ;
+        skos:definition   "compound spatio-temporal coordinate reference system containing a 2 dimensional geographic horizontal coordinate reference system and a temporal reference system \r\n\r\nEXAMPLE latitude, longitude, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundGeographic2DTemporal" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/geodeticGeocentric>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "geodeticGeocentric" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "geodetic Geocentric" ;
+        dct:description   "geodetic CRS having a Cartesian 3D coordinate system \r\n\r\nEXAMPLE [geocentric] X,Y,Z"^^xsd:string ;
+        skos:definition   "geodetic CRS having a Cartesian 3D coordinate system \r\n\r\nEXAMPLE [geocentric] X,Y,Z"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "geodeticGeocentric" .
 
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundGeographic2DParametric>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundGeographic2DParametric" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Geographic 2D Parametric" ;
+        dct:description   "compound spatio-parametric coordinate reference system containing a 2 dimensional geographic horizontal coordinate reference system and a parametric reference system \r\n\r\nEXAMPLE latitude, longitude, pressure"^^xsd:string ;
+        skos:definition   "compound spatio-parametric coordinate reference system containing a 2 dimensional geographic horizontal coordinate reference system and a parametric reference system \r\n\r\nEXAMPLE latitude, longitude, pressure"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundGeographic2DParametric" .
 
-<ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/engineeringImage>
-        a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "engineeringImage" ;
-        skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
-        skos:prefLabel    "engineeringImage" .
-
 <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/compoundProjected2DParametricTemporal>
         a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "compoundProjected2DParametricTemporal" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "compound Projected 2D Parametric Temporal" ;
+        dct:description   "compound spatio-parametric-temporal coordinate reference system containing a projected horizontal, a parametric, and a temporal coordinate reference system \r\n\r\nEXAMPLE easting, northing, density, time"^^xsd:string ;
+        skos:definition   "compound spatio-parametric-temporal coordinate reference system containing a projected horizontal, a parametric, and a temporal coordinate reference system \r\n\r\nEXAMPLE easting, northing, density, time"^^xsd:string ;
         skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
         skos:prefLabel    "compoundProjected2DParametricTemporal" .
+
+<ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/engineeringImage>
+        a                 iso19115-1_2375:MD_ReferenceSystemTypeCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "engineering Image" ;
+        dct:description   "coordinate reference system based on an image datum (engineering datum which defines the relationship of a coordinate system to an image) \r\n\r\nEXAMPLE row, column"^^xsd:string ;
+        skos:definition   "coordinate reference system based on an image datum (engineering datum which defines the relationship of a coordinate system to an image) \r\n\r\nEXAMPLE row, column"^^xsd:string ;
+        skos:inScheme     <ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode> ;
+        skos:prefLabel    "engineeringImage" .

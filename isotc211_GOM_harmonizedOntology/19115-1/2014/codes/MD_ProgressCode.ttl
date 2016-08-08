@@ -1,0 +1,229 @@
+@base          <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:    <http://purl.org/linked-data/registry#>.
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix common: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix constraint: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix fc:    <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
+@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix lineage: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix service: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#> . 
+@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+
+@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
+@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
+@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/> .
+@prefix iso19108_891: <http://def.isotc211.org/iso19108/2006/TemporalObjects#> .
+@prefix iso19139_709: <http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19111_1300: <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix iso19103_2176: <http://def.isotc211.org/iso19103/2015/RecordTypes#> .
+@prefix iso19103_2174: <http://def.isotc211.org/iso19103/2015/NameTypes#> .
+@prefix iso03166_66: <http://def.isotc211.org/iso03166/-1/CountryCodes#> .
+@prefix iso19115-1_2364: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+@prefix iso19115-1_2375: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix iso19115-1_2374: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix iso19115-1_2368: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix iso19115-1_2369: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix iso19115-1_2366: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix iso19103_2178: <http://def.isotc211.org/iso19103/2015/WebEnvironment#> .
+@prefix iso19115-1_2367: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix iso19103_2179: <http://def.isotc211.org/iso19103/2015/MeasureTypes#> .
+@prefix iso19157_1164: <http://def.isotc211.org/iso19157/2013/DataQuality#> .
+@prefix iso19115-1_2371: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix iso19115-1_2360: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix iso19115-1_2370: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+
+
+<IdentificationInformation/code/MD_ProgressCode/valid>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "valid" ;
+        dct:description   "acceptable under specific conditions"^^xsd:string ;
+        skos:definition   "acceptable under specific conditions"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "valid" .
+
+<IdentificationInformation/code/MD_ProgressCode/notAccepted>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "not Accepted" ;
+        dct:description   "rejected by sponsor"^^xsd:string ;
+        skos:definition   "rejected by sponsor"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "notAccepted" .
+
+<IdentificationInformation/code/MD_ProgressCode/onGoing>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "on Going" ;
+        dct:description   "continually being updated"^^xsd:string ;
+        skos:definition   "continually being updated"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "onGoing" .
+
+<IdentificationInformation/code/MD_ProgressCode/obsolete>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "obsolete" ;
+        dct:description   "no longer relevant"^^xsd:string ;
+        skos:definition   "no longer relevant"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "obsolete" .
+
+<IdentificationInformation/code/MD_ProgressCode/accepted>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:comment      "Is this definition consistent with definition of 'sponsor' in roles - which is more like an advocate, rather than customer."^^xsd:string ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "accepted" ;
+        dct:description   "agreed to by sponsor"^^xsd:string ;
+        skos:definition   "agreed to by sponsor"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "accepted" .
+
+<IdentificationInformation/code/MD_ProgressCode/planned>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "planned" ;
+        dct:description   "fixed date has been established upon or by which the resource will be created or updated"^^xsd:string ;
+        skos:definition   "fixed date has been established upon or by which the resource will be created or updated"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "planned" .
+
+<IdentificationInformation/code/MD_ProgressCode/withdrawn>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "withdrawn" ;
+        dct:description   "removed from consideration"^^xsd:string ;
+        skos:definition   "removed from consideration"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "withdrawn" .
+
+<IdentificationInformation/code/MD_ProgressCode/required>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "required" ;
+        dct:description   "needs to be generated or updated"^^xsd:string ;
+        skos:definition   "needs to be generated or updated"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "required" .
+
+<IdentificationInformation/code/MD_ProgressCode/pending>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "pending" ;
+        dct:description   "committed to, but not yet addressed"^^xsd:string ;
+        skos:definition   "committed to, but not yet addressed"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "pending" .
+
+<IdentificationInformation/code/MD_ProgressCode/proposed>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "proposed" ;
+        dct:description   "suggested that development needs to be undertaken"^^xsd:string ;
+        skos:definition   "suggested that development needs to be undertaken"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "proposed" .
+
+<IdentificationInformation/code/MD_ProgressCode/superseded>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "superseded" ;
+        dct:description   "replaced by new"^^xsd:string ;
+        skos:definition   "replaced by new"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "superseded" .
+
+<IdentificationInformation/code/MD_ProgressCode/deprecated>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "deprecated" ;
+        dct:description   "resource superseded and will become obsolete, use only for historical purposes"^^xsd:string ;
+        skos:definition   "resource superseded and will become obsolete, use only for historical purposes"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "deprecated" .
+
+<IdentificationInformation/code/MD_ProgressCode/underDevelopment>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "under Development" ;
+        dct:description   "currently in the process of being created"^^xsd:string ;
+        skos:definition   "currently in the process of being created"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "underDevelopment" .
+
+<IdentificationInformation/code/MD_ProgressCode/historicalArchive>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "historical Archive" ;
+        dct:description   "stored in an offline storage facility"^^xsd:string ;
+        skos:definition   "stored in an offline storage facility"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "historicalArchive" .
+
+<IdentificationInformation/code/MD_ProgressCode/tentative>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "tentative" ;
+        dct:description   "provisional changes likely before resource becomes final or complete"^^xsd:string ;
+        skos:definition   "provisional changes likely before resource becomes final or complete"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "tentative" .
+
+<IdentificationInformation/code/MD_ProgressCode/final>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "final" ;
+        dct:description   "progress concluded and no changes will be accepted"^^xsd:string ;
+        skos:definition   "progress concluded and no changes will be accepted"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "final" .
+
+<IdentificationInformation/code/MD_ProgressCode/completed>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "completed" ;
+        dct:description   "has been completed"^^xsd:string ;
+        skos:definition   "has been completed"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "completed" .
+
+<IdentificationInformation/code/MD_ProgressCode/retired>
+        a                 iso19115-1_2369:MD_ProgressCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "retired" ;
+        dct:description   "item is no longer recommended for use. It has not been superseded by another item"^^xsd:string ;
+        skos:definition   "item is no longer recommended for use. It has not been superseded by another item"^^xsd:string ;
+        skos:inScheme     <IdentificationInformation/code/MD_ProgressCode> ;
+        skos:prefLabel    "retired" .

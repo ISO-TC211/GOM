@@ -1,217 +1,201 @@
 @base          <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals> .
-@prefix swon:  <http://uispin.org/swon#> .
-@prefix evnui: <http://evn.topbraidlive.org/ui#> .
-@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
-@prefix spr:   <http://spinrdf.org/spr#> .
-@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
-@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
-@prefix teamwork: <http://topbraid.org/teamwork#> .
-@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
-@prefix spl:   <http://spinrdf.org/spl#> .
-@prefix search: <http://topbraid.org/search#> .
-@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
-@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
-@prefix tbi:   <http://tbi.topbraid.org/tbi#> .
-@prefix spif:  <http://spinrdf.org/spif#> .
-@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
-@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
-@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
-@prefix pf:    <http://jena.hpl.hp.com/ARQ/property#> .
-@prefix jfn:   <java:com.hp.hpl.jena.sparql.function.library.> .
-@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix crosswalk: <http://topbraid.org/crosswalk#> .
-@prefix spra:  <http://spinrdf.org/spra#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:    <http://purl.org/linked-data/registry#>.
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
 @prefix common: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
 @prefix constraint: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
-@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
-@prefix spin:  <http://spinrdf.org/spin#> .
-@prefix swaeditor: <http://topbraid.org/swaeditor#> .
-@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
-@prefix connectset-templates: <http://tbi.topbraidlive.org/system/connectset-templates#> .
-@prefix ui:    <http://uispin.org/ui#> .
-@prefix backspin: <http://topbraid.org/backspin#> .
-@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
-@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
 @prefix fc:    <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
-@prefix orph_1287: <http://def.isotc211.org/orphansOrphans#> .
-@prefix sharepoint: <http://topbraid.org/sharepoint#> .
-@prefix shaclify: <http://topbraid.org/shacl/shaclify#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix metextinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
-@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
-@prefix afn:   <http://jena.hpl.hp.com/ARQ/function#> .
-@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
-@prefix raci:  <http://topbraid.org/raci#> .
-@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
-@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
-@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
-@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
-@prefix metadata: <http://topbraid.org/metadata#> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
-@prefix tops:  <http://www.topbraid.org/tops#> .
-@prefix sm:    <http://topbraid.org/sparqlmotion#> .
-@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
-@prefix sp:    <http://spinrdf.org/sp#> .
-@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation/code/> .
-@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
-@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
+@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
 @prefix lineage: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix service: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#> . 
+@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+
+@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
+@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
+@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/> .
 @prefix iso19108_891: <http://def.isotc211.org/iso19108/2006/TemporalObjects#> .
 @prefix iso19139_709: <http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#> .
-@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
-@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
 @prefix iso19111_1300: <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
-@prefix uix:   <http://topbraidlive.org/uix#> .
-@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
-@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
-@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
 @prefix iso19103_2176: <http://def.isotc211.org/iso19103/2015/RecordTypes#> .
 @prefix iso19103_2174: <http://def.isotc211.org/iso19103/2015/NameTypes#> .
 @prefix iso03166_66: <http://def.isotc211.org/iso03166/-1/CountryCodes#> .
-@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
 @prefix iso19115-1_2364: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
-@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
 @prefix iso19115-1_2375: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
-@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
 @prefix iso19115-1_2374: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
-@prefix swaclasses: <http://topbraid.org/swaclasses#> .
-@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
 @prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
 @prefix iso19115-1_2368: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
 @prefix iso19115-1_2369: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
 @prefix iso19115-1_2366: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
 @prefix iso19103_2178: <http://def.isotc211.org/iso19103/2015/WebEnvironment#> .
 @prefix iso19115-1_2367: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
 @prefix iso19103_2179: <http://def.isotc211.org/iso19103/2015/MeasureTypes#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix iso19157_1164: <http://def.isotc211.org/iso19157/2013/DataQuality#> .
 @prefix iso19115-1_2371: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
-@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
-@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
 @prefix iso19115-1_2360: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
 @prefix iso19115-1_2370: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
-@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
-@prefix iso19115-1_2359: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
-@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
-@prefix sml:   <http://topbraid.org/sparqlmotionlib#> .
-@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
-@prefix tasks: <http://topbraid.org/tasks#> .
-@prefix iso19103_2168: <http://def.isotc211.org/iso19103/2015/DateAndTime#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
 @prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
-@prefix tables: <http://topbraid.org/tables#> .
-@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
-@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
-@prefix dct:   <http://purl.org/dc/terms/> .
-@prefix smf:   <http://topbraid.org/sparqlmotionfunctions#> .
-@prefix html:  <http://uispin.org/html#> .
-@prefix swa:   <http://topbraid.org/swa#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/quarterly>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "quarterly" ;
+        dct:description   "resource is updated every three months"^^xsd:string ;
+        skos:definition   "resource is updated every three months"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "quarterly" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/biannually>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "biannually" ;
+        dct:description   "resource is updated twice each year"^^xsd:string ;
+        skos:definition   "resource is updated twice each year"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "biannually" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/semimonthly>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "semimonthly" ;
+        dct:description   "resource updated twice monthly"^^xsd:string ;
+        skos:definition   "resource updated twice monthly"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "semimonthly" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/biennially>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "biennially" ;
+        dct:description   "resource is updated every 2 years"^^xsd:string ;
+        skos:definition   "resource is updated every 2 years"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "biennially" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/continual>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "continual" ;
+        dct:description   "resource is repeatedly and frequently updated"^^xsd:string ;
+        skos:definition   "resource is repeatedly and frequently updated"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "continual" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/irregular>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "irregular" ;
+        dct:description   "resource is updated in intervals that are uneven in duration"^^xsd:string ;
+        skos:definition   "resource is updated in intervals that are uneven in duration"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "irregular" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/unknown>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "unknown" ;
+        dct:description   "frequency of maintenance for the data is not known"^^xsd:string ;
+        skos:definition   "frequency of maintenance for the data is not known"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "unknown" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/monthly>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "monthly" ;
+        dct:description   "resource is updated each month"^^xsd:string ;
+        skos:definition   "resource is updated each month"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "monthly" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/annually>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "annually" ;
+        dct:description   "resource is updated every year"^^xsd:string ;
+        skos:definition   "resource is updated every year"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "annually" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/fortnightly>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "fortnightly" ;
+        dct:description   "resource is updated every two weeks"^^xsd:string ;
+        skos:definition   "resource is updated every two weeks"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "fortnightly" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/asNeeded>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "asNeeded" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "as Needed" ;
+        dct:description   "resource is updated as deemed necessary"^^xsd:string ;
+        skos:definition   "resource is updated as deemed necessary"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "asNeeded" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/daily>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "daily" ;
+        dct:description   "resource is updated each day"^^xsd:string ;
+        skos:definition   "resource is updated each day"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "daily" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/notPlanned>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
-        rdfs:label        "notPlanned" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "not Planned" ;
+        dct:description   "there are no plans to update the data"^^xsd:string ;
+        skos:definition   "there are no plans to update the data"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "notPlanned" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/weekly>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "weekly" ;
+        dct:description   "resource is updated on a weekly basis"^^xsd:string ;
+        skos:definition   "resource is updated on a weekly basis"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "weekly" .
 
 <MaintenanceInformation/code/MD_MaintenanceFrequencyCode/periodic>
         a                 iso19115-1_2370:MD_MaintenanceFrequencyCode , skos:Concept ;
-        rdfs:isDefinedBy  "http://standards.iso.org/iso/19115/-1/ed-1/en/" ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
         rdfs:label        "periodic" ;
+        dct:description   "resource is updated at regular intervals"^^xsd:string ;
+        skos:definition   "resource is updated at regular intervals"^^xsd:string ;
         skos:inScheme     <MaintenanceInformation/code/MD_MaintenanceFrequencyCode> ;
         skos:prefLabel    "periodic" .

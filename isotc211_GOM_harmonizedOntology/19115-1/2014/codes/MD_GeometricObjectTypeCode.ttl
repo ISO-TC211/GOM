@@ -65,74 +65,56 @@
 @prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
 
 
-<IdentificationInformation/code/DS_AssociationTypeCode/series>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/surface>
+        a                 iso19115-1_2376:MD_GeometricObjectTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "series" ;
-        dct:description   "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
-        skos:definition   "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "series" .
+        rdfs:label        "surface" ;
+        dct:description   "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane"^^xsd:string ;
+        skos:definition   "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode> ;
+        skos:prefLabel    "surface" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/isComposedOf>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/solid>
+        a                 iso19115-1_2376:MD_GeometricObjectTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "is Composed Of" ;
-        dct:description   "reference to resources that are parts of this resource"^^xsd:string ;
-        skos:definition   "reference to resources that are parts of this resource"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "isComposedOf" .
+        rdfs:label        "solid" ;
+        dct:description   "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space"^^xsd:string ;
+        skos:definition   "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode> ;
+        skos:prefLabel    "solid" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/dependency>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/composite>
+        a                 iso19115-1_2376:MD_GeometricObjectTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "dependency" ;
-        dct:description   "associated through a dependency"^^xsd:string ;
-        skos:definition   "associated through a dependency"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "dependency" .
+        rdfs:label        "composite" ;
+        dct:description   "connected set of curves, solids or surfaces"^^xsd:string ;
+        skos:definition   "connected set of curves, solids or surfaces"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode> ;
+        skos:prefLabel    "composite" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/partOfSeamlessDatabase>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/point>
+        a                 iso19115-1_2376:MD_GeometricObjectTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "part Of Seamless Database" ;
-        dct:description   "part of same structured set of data held in a computer"^^xsd:string ;
-        skos:definition   "part of same structured set of data held in a computer"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "partOfSeamlessDatabase" .
+        rdfs:label        "point" ;
+        dct:description   "zero-dimensional geometric primitive, representing a position but not having an extent"^^xsd:string ;
+        skos:definition   "zero-dimensional geometric primitive, representing a position but not having an extent"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode> ;
+        skos:prefLabel    "point" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/crossReference>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/complex>
+        a                 iso19115-1_2376:MD_GeometricObjectTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "cross Reference" ;
-        dct:description   "reference from one resource to another"^^xsd:string ;
-        skos:definition   "reference from one resource to another"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "crossReference" .
+        rdfs:label        "complex" ;
+        dct:description   "set of geometric primitives such that their boundaries can be represented as a union of other primitives"^^xsd:string ;
+        skos:definition   "set of geometric primitives such that their boundaries can be represented as a union of other primitives"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode> ;
+        skos:prefLabel    "complex" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/revisionOf>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/curve>
+        a                 iso19115-1_2376:MD_GeometricObjectTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "revision Of" ;
-        dct:description   "resource is a revision of associated resource"^^xsd:string ;
-        skos:definition   "resource is a revision of associated resource"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "revisionOf" .
-
-<IdentificationInformation/code/DS_AssociationTypeCode/collectiveTitle>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "collective Title" ;
-        dct:description   "common title for a collection of resources\r\nNOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."^^xsd:string ;
-        skos:definition   "common title for a collection of resources\r\nNOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "collectiveTitle" .
-
-<IdentificationInformation/code/DS_AssociationTypeCode/stereoMate>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "stereo Mate" ;
-        dct:description   "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
-        skos:definition   "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "stereoMate" .
+        rdfs:label        "curve" ;
+        dct:description   "continuous image of a line"^^xsd:string ;
+        skos:definition   "continuous image of a line"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode> ;
+        skos:prefLabel    "curve" .

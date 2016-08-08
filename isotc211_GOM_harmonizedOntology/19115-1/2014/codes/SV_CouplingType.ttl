@@ -65,74 +65,30 @@
 @prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
 
 
-<IdentificationInformation/code/DS_AssociationTypeCode/series>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "series" ;
-        dct:description   "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
-        skos:definition   "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "series" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/isComposedOf>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<ServiceMetadataInformation/code/SV_CouplingType/tight>
+        a                 <ServiceMetadataInformation#SV_CouplingType> , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "is Composed Of" ;
-        dct:description   "reference to resources that are parts of this resource"^^xsd:string ;
-        skos:definition   "reference to resources that are parts of this resource"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "isComposedOf" .
+        rdfs:label        "tight" ;
+        dct:description   "service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described"^^xsd:string ;
+        skos:definition   "service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described"^^xsd:string ;
+        skos:inScheme     <ServiceMetadataInformation/code/SV_CouplingType> ;
+        skos:prefLabel    "tight" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/dependency>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<ServiceMetadataInformation/code/SV_CouplingType/mixed>
+        a                 <ServiceMetadataInformation#SV_CouplingType> , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "dependency" ;
-        dct:description   "associated through a dependency"^^xsd:string ;
-        skos:definition   "associated through a dependency"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "dependency" .
+        rdfs:label        "mixed" ;
+        dct:description   "service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances"^^xsd:string ;
+        skos:definition   "service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances"^^xsd:string ;
+        skos:inScheme     <ServiceMetadataInformation/code/SV_CouplingType> ;
+        skos:prefLabel    "mixed" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/partOfSeamlessDatabase>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<ServiceMetadataInformation/code/SV_CouplingType/loose>
+        a                 <ServiceMetadataInformation#SV_CouplingType> , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "part Of Seamless Database" ;
-        dct:description   "part of same structured set of data held in a computer"^^xsd:string ;
-        skos:definition   "part of same structured set of data held in a computer"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "partOfSeamlessDatabase" .
-
-<IdentificationInformation/code/DS_AssociationTypeCode/crossReference>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "cross Reference" ;
-        dct:description   "reference from one resource to another"^^xsd:string ;
-        skos:definition   "reference from one resource to another"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "crossReference" .
-
-<IdentificationInformation/code/DS_AssociationTypeCode/revisionOf>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "revision Of" ;
-        dct:description   "resource is a revision of associated resource"^^xsd:string ;
-        skos:definition   "resource is a revision of associated resource"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "revisionOf" .
-
-<IdentificationInformation/code/DS_AssociationTypeCode/collectiveTitle>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "collective Title" ;
-        dct:description   "common title for a collection of resources\r\nNOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."^^xsd:string ;
-        skos:definition   "common title for a collection of resources\r\nNOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "collectiveTitle" .
-
-<IdentificationInformation/code/DS_AssociationTypeCode/stereoMate>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
-        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "stereo Mate" ;
-        dct:description   "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
-        skos:definition   "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "stereoMate" .
+        rdfs:label        "loose" ;
+        dct:description   "service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described"^^xsd:string ;
+        skos:definition   "service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described"^^xsd:string ;
+        skos:inScheme     <ServiceMetadataInformation/code/SV_CouplingType> ;
+        skos:prefLabel    "loose" .

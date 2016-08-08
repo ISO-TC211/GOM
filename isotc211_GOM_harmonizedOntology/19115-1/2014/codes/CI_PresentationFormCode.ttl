@@ -1,0 +1,255 @@
+@base          <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:    <http://purl.org/linked-data/registry#>.
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix application: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix citation: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix common: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+@prefix constraint: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix content: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix crs:   <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix distribution: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix extended: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#> .
+@prefix extent: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix fc:    <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix fundamentals: <http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals#> .
+@prefix identification: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix lineage: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix localization: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix maintenance: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix metapp: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix metext: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix metinf: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix portrayal: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix rs:    <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix service: <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#> . 
+@prefix sr:    <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+
+@prefix iso00639_65: <http://def.isotc211.org/iso00639/-2/LanguageCodes#> .
+@prefix iso19110_2259: <http://def.isotc211.org/iso19110/2005/MethodologyForFeatureCataloguing#> .
+@prefix iso19107_2211: <http://def.isotc211.org/iso19107/2003/GeometryRoot#> .
+@prefix iso19107_2210: <http://def.isotc211.org/iso19107/2003/GeometricPrimitive#> .
+@prefix iso19115-1Code: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/> .
+@prefix iso19108_891: <http://def.isotc211.org/iso19108/2006/TemporalObjects#> .
+@prefix iso19139_709: <http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#> .
+@prefix iso19115-1: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19111_1300: <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#> .
+@prefix iso19103_2176: <http://def.isotc211.org/iso19103/2015/RecordTypes#> .
+@prefix iso19103_2174: <http://def.isotc211.org/iso19103/2015/NameTypes#> .
+@prefix iso03166_66: <http://def.isotc211.org/iso03166/-1/CountryCodes#> .
+@prefix iso19115-1_2364: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#> .
+@prefix iso19115-1_2376: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#> .
+@prefix iso19115-1_2375: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#> .
+@prefix iso19115-1_2365: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#> .
+@prefix iso19115-1_2374: <http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation#> .
+@prefix iso19115-1_2362: <http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation#> .
+@prefix iso19115-1_2363: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#> .
+@prefix iso19115-1_2373: <http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation#> .
+@prefix iso19115-1_2368: <http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#> .
+@prefix iso19115-1_2369: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#> .
+@prefix iso19115-1_2366: <http://def.isotc211.org/iso19115/-1/2014/LineageInformation#> .
+@prefix iso19103_2178: <http://def.isotc211.org/iso19103/2015/WebEnvironment#> .
+@prefix iso19115-1_2367: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#> .
+@prefix iso19103_2179: <http://def.isotc211.org/iso19103/2015/MeasureTypes#> .
+@prefix iso19157_1164: <http://def.isotc211.org/iso19157/2013/DataQuality#> .
+@prefix iso19115-1_2371: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#> .
+@prefix iso19115-1_2360: <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#> .
+@prefix iso19115-1_2372: <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#> .
+@prefix iso19115-1_2370: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
+
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/videoHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "video Hardcopy" ;
+        dct:description   "video recording on film"^^xsd:string ;
+        skos:definition   "video recording on film"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "videoHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/documentHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "document Hardcopy" ;
+        dct:description   "representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media"^^xsd:string ;
+        skos:definition   "representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "documentHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/imageHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "image Hardcopy" ;
+        dct:description   "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
+        skos:definition   "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "imageHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/mapHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "map Hardcopy" ;
+        dct:description   "map printed on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
+        skos:definition   "map printed on paper, photographic material, or other media for use directly by the human user"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "mapHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/diagramHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "diagram Hardcopy" ;
+        dct:description   "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media"^^xsd:string ;
+        skos:definition   "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "diagramHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/audioDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "audio Digital" ;
+        dct:description   "digital audio recording"^^xsd:string ;
+        skos:definition   "digital audio recording"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "audioDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/audioHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "audio Hardcopy" ;
+        dct:description   "audio recording delivered by analog media, such as a magnetic tape"^^xsd:string ;
+        skos:definition   "audio recording delivered by analog media, such as a magnetic tape"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "audioHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/profileDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "profile Digital" ;
+        dct:description   "vertical cross-section in digital form"^^xsd:string ;
+        skos:definition   "vertical cross-section in digital form"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "profileDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/multimediaDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "multimedia Digital" ;
+        dct:description   "information representation using simultaneously various digital modes for text, sound, image"^^xsd:string ;
+        skos:definition   "information representation using simultaneously various digital modes for text, sound, image"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "multimediaDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/profileHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "profile Hardcopy" ;
+        dct:description   "vertical cross-section printed on paper, etc."^^xsd:string ;
+        skos:definition   "vertical cross-section printed on paper, etc."^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "profileHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/modelDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "model Digital" ;
+        dct:description   "multi-dimensional digital representation of a feature, process, etc."^^xsd:string ;
+        skos:definition   "multi-dimensional digital representation of a feature, process, etc."^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "modelDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/physicalObject>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "physical Object" ;
+        dct:description   "a physical object\r\n\r\nEXAMPLE Rock or mineral sample, microscope slide."^^xsd:string ;
+        skos:definition   "a physical object\r\n\r\nEXAMPLE Rock or mineral sample, microscope slide."^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "physicalObject" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/mapDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "map Digital" ;
+        dct:description   "map represented in raster or vector form"^^xsd:string ;
+        skos:definition   "map represented in raster or vector form"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "mapDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/videoDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "video Digital" ;
+        dct:description   "digital video recording"^^xsd:string ;
+        skos:definition   "digital video recording"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "videoDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/documentDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "document Digital" ;
+        dct:description   "digital representation of a primarily textual item (can contain illustrations also)"^^xsd:string ;
+        skos:definition   "digital representation of a primarily textual item (can contain illustrations also)"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "documentDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/tableDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "table Digital" ;
+        dct:description   "digital representation of facts or figures systematically displayed, especially in columns"^^xsd:string ;
+        skos:definition   "digital representation of facts or figures systematically displayed, especially in columns"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "tableDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/tableHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "table Hardcopy" ;
+        dct:description   "representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media"^^xsd:string ;
+        skos:definition   "representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "tableHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/multimediaHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "multimedia Hardcopy" ;
+        dct:description   "information representation using simultaneously various analog modes for text, sound, image"^^xsd:string ;
+        skos:definition   "information representation using simultaneously various analog modes for text, sound, image"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "multimediaHardcopy" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/diagramDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "diagram Digital" ;
+        dct:description   "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format"^^xsd:string ;
+        skos:definition   "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "diagramDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/imageDigital>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "image Digital" ;
+        dct:description   "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format"^^xsd:string ;
+        skos:definition   "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "imageDigital" .
+
+<CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/modelHardcopy>
+        a                 iso19115-1_2363:CI_PresentationFormCode , skos:Concept ;
+        rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
+        rdfs:label        "model Hardcopy" ;
+        dct:description   "3-dimensional, physical model"^^xsd:string ;
+        skos:definition   "3-dimensional, physical model"^^xsd:string ;
+        skos:inScheme     iso19115-1Code:CI_PresentationFormCode ;
+        skos:prefLabel    "modelHardcopy" .

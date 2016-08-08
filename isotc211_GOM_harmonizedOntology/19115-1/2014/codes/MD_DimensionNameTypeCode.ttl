@@ -65,74 +65,74 @@
 @prefix iso19115-1_2358: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#> .
 
 
-<IdentificationInformation/code/DS_AssociationTypeCode/series>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/sample>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "series" ;
-        dct:description   "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
-        skos:definition   "associated through a common heritage such as produced to a common product specification"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "series" .
+        rdfs:label        "sample" ;
+        dct:description   "element along a scan line"^^xsd:string ;
+        skos:definition   "element along a scan line"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "sample" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/isComposedOf>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/vertical>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "is Composed Of" ;
-        dct:description   "reference to resources that are parts of this resource"^^xsd:string ;
-        skos:definition   "reference to resources that are parts of this resource"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "isComposedOf" .
+        rdfs:label        "vertical" ;
+        dct:description   "vertical (z) axis"^^xsd:string ;
+        skos:definition   "vertical (z) axis"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "vertical" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/dependency>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/crossTrack>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "dependency" ;
-        dct:description   "associated through a dependency"^^xsd:string ;
-        skos:definition   "associated through a dependency"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "dependency" .
+        rdfs:label        "cross Track" ;
+        dct:description   "perpendicular to the direction of motion of the scan point"^^xsd:string ;
+        skos:definition   "perpendicular to the direction of motion of the scan point"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "crossTrack" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/partOfSeamlessDatabase>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/line>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "part Of Seamless Database" ;
-        dct:description   "part of same structured set of data held in a computer"^^xsd:string ;
-        skos:definition   "part of same structured set of data held in a computer"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "partOfSeamlessDatabase" .
+        rdfs:label        "line" ;
+        dct:description   "scan line of a sensor"^^xsd:string ;
+        skos:definition   "scan line of a sensor"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "line" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/crossReference>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/row>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "cross Reference" ;
-        dct:description   "reference from one resource to another"^^xsd:string ;
-        skos:definition   "reference from one resource to another"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "crossReference" .
+        rdfs:label        "row" ;
+        dct:description   "ordinate (y) axis"^^xsd:string ;
+        skos:definition   "ordinate (y) axis"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "row" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/revisionOf>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/track>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "revision Of" ;
-        dct:description   "resource is a revision of associated resource"^^xsd:string ;
-        skos:definition   "resource is a revision of associated resource"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "revisionOf" .
+        rdfs:label        "track" ;
+        dct:description   "along the direction of motion of the scan point"^^xsd:string ;
+        skos:definition   "along the direction of motion of the scan point"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "track" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/collectiveTitle>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/column>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "collective Title" ;
-        dct:description   "common title for a collection of resources\r\nNOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."^^xsd:string ;
-        skos:definition   "common title for a collection of resources\r\nNOTE Title identifies elements of a series collectively, combined with information about what volumes are available at the source cite."^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "collectiveTitle" .
+        rdfs:label        "column" ;
+        dct:description   "abscissa (x) axis"^^xsd:string ;
+        skos:definition   "abscissa (x) axis"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "column" .
 
-<IdentificationInformation/code/DS_AssociationTypeCode/stereoMate>
-        a                 iso19115-1_2369:DS_AssociationTypeCode , skos:Concept ;
+<SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/time>
+        a                 iso19115-1_2376:MD_DimensionNameTypeCode , skos:Concept ;
         rdfs:isDefinedBy  <http://standards.iso.org/iso/19115/-1/ed-1/en/> ;
-        rdfs:label        "stereo Mate" ;
-        dct:description   "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
-        skos:definition   "part of a set of imagery that when used together, provides three-dimensional images"^^xsd:string ;
-        skos:inScheme     <IdentificationInformation/code/DS_AssociationTypeCode> ;
-        skos:prefLabel    "stereoMate" .
+        rdfs:label        "time" ;
+        dct:description   "duration"^^xsd:string ;
+        skos:definition   "duration"^^xsd:string ;
+        skos:inScheme     <SpatialRepresentationInformation/code/MD_DimensionNameTypeCode> ;
+        skos:prefLabel    "time" .
