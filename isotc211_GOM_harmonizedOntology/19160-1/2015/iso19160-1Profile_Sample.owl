@@ -1,0 +1,599 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19160-1_1124 "http://def.isotc211.org/iso19160/-1/2015/ExternalClasses#" >
+  <!ENTITY iso19152_1250 "http://def.isotc211.org/iso19152/2012/SpatialUnit#" >
+  <!ENTITY iso19160-1_1127 "http://def.isotc211.org/iso19160/-1/2015/Address#" >
+  <!ENTITY iso19160-1 "http://def.isotc211.org/iso19160/-1/2015/Profile_Sample#" >
+  <!ENTITY iso19160-1Code "http://def.isotc211.org/iso19160/-1/2015/Profile_Sample/code/">
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19160-1Profile_Sample.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL    -->
+  <!-- Generator version: 2.5                          -->
+  <!-- File date:         2-11-2016                    -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19160/-1/2015/Profile_Sample#"
+  xml:base="http://def.isotc211.org/iso19160/-1/2015/Profile_Sample"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19160-1_1124="http://def.isotc211.org/iso19160/-1/2015/ExternalClasses#"
+  xmlns:iso19152_1250="http://def.isotc211.org/iso19152/2012/SpatialUnit#"
+  xmlns:iso19160-1_1127="http://def.isotc211.org/iso19160/-1/2015/Address#"
+  xmlns:iso19160-1="http://def.isotc211.org/iso19160/-1/2015/Profile_Sample#"
+  xmlns:iso19160-1Code="http://def.isotc211.org/iso19160/-1/2015/Profile_Sample/code/">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19160-1:2015 Profile_Sample -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19160/-1/2015/Profile_Sample">
+    <rdfs:label>ISO 19160-1:2015 Profile_Sample</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19160/-1/ed-1/en/</dct:source>
+    <owl:versionInfo>2015-12-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19160/-1/2015/ExternalClasses"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19152/2012/SpatialUnit"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19160/-1/2015/Address"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Address -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Address">
+    <rdfs:label>Address</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;Address"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;Address.landParcel"/>
+        <owl:allValuesFrom rdf:resource="&iso19152_1250;LA_SpatialUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;Address.employee"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1_1124;Employee"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;Address.business"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1_1124;BusinessRegister"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: AddressableObject -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressableObject">
+    <rdfs:label>AddressableObject</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>position is mandatory</iso19150-2:constraint>
+    <iso19150-2:constraint>position is mandatory</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;AddressableObject"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: AddressComponent -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressComponent">
+    <rdfs:label>AddressComponent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+    <iso19150-2:constraint>provenance out of scope</iso19150-2:constraint>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: CommercialBuilding -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;CommercialBuilding">
+    <rdfs:label>CommercialBuilding</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>type .eq. commercialBuilding</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressableObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;CommercialBuilding.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;CommercialBuilding.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: LandParcel -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;LandParcel">
+    <rdfs:label>LandParcel</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>type .eq. landParcel</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressableObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;LandParcel.landParcelIdentifier"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;LandParcel.landParcelIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: PlaceNameBoundary -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;PlaceNameBoundary">
+    <rdfs:label>PlaceNameBoundary</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>type .eq. placeNameBoundary</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;ReferenceObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PlaceNameBoundary.demarcationDate"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PlaceNameBoundary.demarcationDate"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: PostBox -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;PostBox">
+    <rdfs:label>PostBox</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>type .eq. postBox</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressableObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PostBox.depth"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PostBox.depth"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PostBox.height"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PostBox.height"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PostBox.width"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;PostBox.width"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: ResidentialDwelling -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;ResidentialDwelling">
+    <rdfs:label>ResidentialDwelling</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>type .eq. residentialDwelling</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressableObject"/>
+  </owl:Class>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Street -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Street">
+    <rdfs:label>Street</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>type .eq. street</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;ReferenceObject"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: ThoroughfareNameValue -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;ThoroughfareNameValue">
+    <rdfs:label>ThoroughfareNameValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.prefix"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.prefix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.suffix"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.suffix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareNameValue.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CommercialBuilding.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;CommercialBuilding.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;CommercialBuilding"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LandParcel.landParcelIdentifier -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;LandParcel.landParcelIdentifier">
+    <rdfs:label>landParcelIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;LandParcel"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PlaceNameBoundary.demarcationDate -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;PlaceNameBoundary.demarcationDate">
+    <rdfs:label>demarcationDate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;PlaceNameBoundary"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PostBox.depth -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;PostBox.depth">
+    <rdfs:label>depth</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;PostBox"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PostBox.height -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;PostBox.height">
+    <rdfs:label>height</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;PostBox"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PostBox.width -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;PostBox.width">
+    <rdfs:label>width</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;PostBox"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ThoroughfareNameValue.prefix -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;ThoroughfareNameValue.prefix">
+    <rdfs:label>prefix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareNameValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ThoroughfareNameValue.name -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;ThoroughfareNameValue.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareNameValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ThoroughfareNameValue.suffix -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;ThoroughfareNameValue.suffix">
+    <rdfs:label>suffix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareNameValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ThoroughfareNameValue.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;ThoroughfareNameValue.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareNameValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Address.landParcel -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;Address.landParcel">
+    <rdfs:label>landParcel</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;Address"/>
+    <rdfs:range rdf:resource="&iso19152_1250;LA_SpatialUnit"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Address.employee -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;Address.employee">
+    <rdfs:label>employee</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;Address"/>
+    <rdfs:range rdf:resource="&iso19160-1_1124;Employee"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Address.business -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;Address.business">
+    <rdfs:label>business</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;Address"/>
+    <rdfs:range rdf:resource="&iso19160-1_1124;BusinessRegister"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: AddressableObjectType -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressableObjectType">
+    <rdfs:label>AddressableObjectType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressableObjectType"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19160-1Code;AddressableObjectType">
+    <skos:prefLabel>AddressableObjectType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19160-1;AddressableObjectType"/>
+  </skos:ConceptScheme>
+  <iso19160-1:AddressableObjectType rdf:about="&iso19160-1Code;AddressableObjectType/commercialBuilding">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>commercialBuilding</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressableObjectType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressableObjectType>
+  <iso19160-1:AddressableObjectType rdf:about="&iso19160-1Code;AddressableObjectType/landParcel">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>landParcel</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressableObjectType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressableObjectType>
+  <iso19160-1:AddressableObjectType rdf:about="&iso19160-1Code;AddressableObjectType/postBox">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>postBox</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressableObjectType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressableObjectType>
+  <iso19160-1:AddressableObjectType rdf:about="&iso19160-1Code;AddressableObjectType/residentialDwelling">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>residentialDwelling</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressableObjectType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressableObjectType>
+  <skos:Collection rdf:about="&iso19160-1Code;AddressableObjectTypeCollection">
+    <skos:prefLabel>AddressableObjectType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/commercialBuilding"/>
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/landParcel"/>
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/postBox"/>
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/residentialDwelling"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Codelist: AddressClass -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressClass">
+    <rdfs:label>AddressClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressClass"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19160-1Code;AddressClass">
+    <skos:prefLabel>AddressClass - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19160-1;AddressClass"/>
+  </skos:ConceptScheme>
+  <iso19160-1:AddressClass rdf:about="&iso19160-1Code;AddressClass/streetAddress">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>streetAddress</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressClass"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressClass>
+  <iso19160-1:AddressClass rdf:about="&iso19160-1Code;AddressClass/boxAddress">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>boxAddress</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressClass"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressClass>
+  <skos:Collection rdf:about="&iso19160-1Code;AddressClassCollection">
+    <skos:prefLabel>AddressClass - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressClass/streetAddress"/>
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressClass/boxAddress"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: AddressComponentType -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressComponentType">
+    <rdfs:label>AddressComponentType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponentType"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19160-1Code;AddressComponentType">
+    <skos:prefLabel>AddressComponentType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19160-1;AddressComponentType"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19160-1Code;AddressComponentTypeCollection">
+    <skos:prefLabel>AddressComponentType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: AddressPositionType -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressPositionType">
+    <rdfs:label>AddressPositionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressPositionType"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19160-1Code;AddressPositionType">
+    <skos:prefLabel>AddressPositionType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19160-1;AddressPositionType"/>
+  </skos:ConceptScheme>
+  <iso19160-1:AddressPositionType rdf:about="&iso19160-1Code;AddressPositionType/entrance">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>entrance</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressPositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressPositionType>
+  <iso19160-1:AddressPositionType rdf:about="&iso19160-1Code;AddressPositionType/centroid">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>centroid</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressPositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressPositionType>
+  <skos:Collection rdf:about="&iso19160-1Code;AddressPositionTypeCollection">
+    <skos:prefLabel>AddressPositionType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/entrance"/>
+      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/centroid"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: ReferenceObjectType -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;ReferenceObjectType">
+    <rdfs:label>ReferenceObjectType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;ReferenceObjectType"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19160-1Code;ReferenceObjectType">
+    <skos:prefLabel>ReferenceObjectType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19160-1;ReferenceObjectType"/>
+  </skos:ConceptScheme>
+  <iso19160-1:ReferenceObjectType rdf:about="&iso19160-1Code;ReferenceObjectType/street">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>street</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;ReferenceObjectType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:ReferenceObjectType>
+  <iso19160-1:ReferenceObjectType rdf:about="&iso19160-1Code;ReferenceObjectType/placeNameBoundary">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>placeNameBoundary</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;ReferenceObjectType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:ReferenceObjectType>
+  <skos:Collection rdf:about="&iso19160-1Code;ReferenceObjectTypeCollection">
+    <skos:prefLabel>ReferenceObjectType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19160-1Code;ReferenceObjectType/street"/>
+      <skos:Concept rdf:resource="&iso19160-1Code;ReferenceObjectType/placeNameBoundary"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
