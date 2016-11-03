@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19156_1665 "http://def.isotc211.org/iso19156/2011/Observation#" >
+  <!ENTITY iso19103_333 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19156 "http://def.isotc211.org/iso19156/2011/Measurement#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19156Measurement.owl   -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         26-10-2016                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19156/2011/Measurement#"
+  xml:base="http://def.isotc211.org/iso19156/2011/Measurement"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19156_1665="http://def.isotc211.org/iso19156/2011/Observation#"
+  xmlns:iso19103_333="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19156="http://def.isotc211.org/iso19156/2011/Measurement#">
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19156:2011 measurement -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19156/2011/Measurement">
+    <rdfs:label>ISO 19156:2011 measurement</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19156/ed-1/en/</dct:source>
+    <owl:versionInfo>2011-12-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19156/2011/Observation"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: OM_Measurement -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;OM_Measurement">
+    <rdfs:label>OM_Measurement</rdfs:label>
+    <skos:definition>Example: A measurement of .gu.mass.gu. (property-type) of .gu.the seventh banana.gu. (feature-of-interest) using the .gu.kitchen scales.gu. (procedure) had the result .gu.150g.gu.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1665;OM_Observation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19156;OM_Measurement.result"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19156;OM_Measurement.result"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: OM_Measurement.result -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19156;OM_Measurement.result">
+    <rdfs:label>result</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Range</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19156;OM_Measurement"/>
+    <rdfs:range rdf:resource="&iso19103_333;Measure"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
