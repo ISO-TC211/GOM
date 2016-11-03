@@ -1,0 +1,586 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115-1_1505 "http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19135-1_1058 "http://def.isotc211.org/iso19135/-1/2015/ExtendedModel#" >
+  <!ENTITY iso19135-1_1057 "http://def.isotc211.org/iso19135/-1/2015/CoreModel#" >
+  <!ENTITY iso19104 "http://def.isotc211.org/iso19104/2015/TermRegister#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19104TermRegister.owl  -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         19-10-2016                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19104/2015/TermRegister#"
+  xml:base="http://def.isotc211.org/iso19104/2015/TermRegister"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115-1_1505="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19135-1_1058="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel#"
+  xmlns:iso19135-1_1057="http://def.isotc211.org/iso19135/-1/2015/CoreModel#"
+  xmlns:iso19104="http://def.isotc211.org/iso19104/2015/TermRegister#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19104:2015 TermRegister -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19104/2015/TermRegister">
+    <rdfs:label>ISO 19104:2015 TermRegister</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19104/ed-1/en/</dct:source>
+    <owl:versionInfo>2016-10-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19135/-1/2015/CoreModel"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Example -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;Example">
+    <rdfs:label>Example</rdfs:label>
+    <skos:definition>Model element for recording instances of the data category .gu.example.gu..</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;Example.example"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;Example.example"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;Example.termEntry"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;Example.termEntry"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;TermRegisterEntry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: NoteToEntry -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;NoteToEntry">
+    <rdfs:label>NoteToEntry</rdfs:label>
+    <skos:definition>Model element for recording instances of the data category .gu.note to entry.gu..</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;NoteToEntry.noteToEntry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;NoteToEntry.noteToEntry"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;NoteToEntry.termEntry"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;NoteToEntry.termEntry"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;TermRegisterEntry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: TermAddition -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;TermAddition">
+    <rdfs:label>TermAddition</rdfs:label>
+    <skos:definition>The class TermAddition is a subclass of RE_AdditionInformation (ISO 19135-1:2015, B.2.7.2). It specifies elements of management information to be recorded for each proposal to add a register item.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_1058;RE_AdditionInformation"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: TermAmendment -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;TermAmendment">
+    <rdfs:label>TermAmendment</rdfs:label>
+    <skos:definition>The class TermAmendment is a subclass of RE_AmendmentInformation (ISO 19135:2015, B.2.7.3). It specifies elements of management information to be recorded for each proposal to amend a register item.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_1058;RE_AmendmentInformation"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: TermClarification -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;TermClarification">
+    <rdfs:label>TermClarification</rdfs:label>
+    <skos:definition>The class TermClarification is a subclass of RE_ClarificationInformation (ISO 19135-1:2015, B.2.7.4). It specifies elements of management information to be recorded for each proposal to clarify a register item.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_1058;RE_ClarificationInformation"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: TermRegister -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;TermRegister">
+    <rdfs:label>TermRegister</rdfs:label>
+    <skos:definition>The class TermRegister is a subclass of RE_Register specified in ISO 19135-1:2015, B.2.2.2. It specifies information items for describing a terminology register or subregister.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_1058;RE_Register"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: TermRegisterEntry -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;TermRegisterEntry">
+    <rdfs:label>TermRegisterEntry</rdfs:label>
+    <skos:definition>The class TermRegisterEntry is a subclass of RE_RegisterItem (ISO 19135-1:2015, B.2.3.2). It specifies elements of information to be recorded for each terminological entry in a simple register, reference language subregister or submitted language subregister. TermRegisterEntry is not used to record entries in a principal register. Entries in a principal register are recorded using instances of TermSubregisterDescription as described in ISO 19104:2016, 10.5.14.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_1058;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.termClassification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.termClassification"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;TermClassification"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.termAbbreviation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.termAbbreviation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.symbol"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1505;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.nonVerbalRep"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1505;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.correspondence"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.correspondence"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;Correspondence"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.deprecatedEntry"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;TermRegisterEntry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.currentEntry"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.currentEntry"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;TermRegisterEntry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.admittedEntry"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;TermRegisterEntry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.preferredEntry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.preferredEntry"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;TermRegisterEntry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.example"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;Example"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermRegisterEntry.note"/>
+        <owl:allValuesFrom rdf:resource="&iso19104;NoteToEntry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: TermStakeholder -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;TermStakeholder">
+    <rdfs:label>TermStakeholder</rdfs:label>
+    <skos:definition>The class TermStakeholder is a subclass of RegisterStakeholder, specified in ISO 19135-1:2015, 7.3.2. It specifies information items for identifying the owner and manager of a terminology register or subregister. It also specifies information items for identifying each party that submits entries to that register or subregister.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_1057;RegisterStakeholder"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: TermSubregisterDescription -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19104;TermSubregisterDescription">
+    <rdfs:label>TermSubregisterDescription</rdfs:label>
+    <skos:definition>The class TermSubregisterDescription is a subclass of RE_SubregisterDescription [ISO 19135-1:2015, B.2.8.2]. It is used in a principal register to describe affiliated subregisters.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_1058;RE_SubregisterDescription"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermSubregisterDescription.contentSummary"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermSubregisterDescription.contentSummary"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermSubregisterDescription.reference"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermSubregisterDescription.reference"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermSubregisterDescription.alternativeLanguages"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19104;TermSubregisterDescription.alternativeLanguages"/>
+        <owl:allValuesFrom rdf:resource="&iso19135-1_1058;RE_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Example.example -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19104;Example.example">
+    <rdfs:label>example</rdfs:label>
+    <skos:definition>Description that illustrates the application of a concept.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;Example"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NoteToEntry.noteToEntry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19104;NoteToEntry.noteToEntry">
+    <rdfs:label>noteToEntry</rdfs:label>
+    <skos:definition>Description that elaborates the context, characteristics or application of a concept.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;NoteToEntry"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.termClassification -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.termClassification">
+    <rdfs:label>termClassification</rdfs:label>
+    <skos:definition>Classification of the term, represented as an instance of the enumeration TermClassification.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;TermClassification"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TermRegisterEntry.termAbbreviation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19104;TermRegisterEntry.termAbbreviation">
+    <rdfs:label>termAbbreviation</rdfs:label>
+    <skos:definition>.lt.i.gt.designation.lt..sl.i.gt. formed by omitting words or letters from a longer form.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.symbol -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.symbol">
+    <rdfs:label>symbol</rdfs:label>
+    <skos:definition>Reference to a resource containing a representation of the symbol.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19115-1_1505;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.nonVerbalRep -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.nonVerbalRep">
+    <rdfs:label>nonVerbalRep</rdfs:label>
+    <skos:definition>Reference to a resource containing the non-verbal representation, presented as an instance of CI_Citation (ISO 19115-1:2014, B.16).</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19115-1_1505;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.correspondence -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.correspondence">
+    <rdfs:label>correspondence</rdfs:label>
+    <skos:definition>Degree to which the technical content of a culturally and.sl.or linguistically adapted terminological entry corresponds to that of the entry in the reference language, represented as an instance of the enumeration Correspondence.Note to entry:	This attribute shall only be included if the terminological entry forms part of a submitted language subregister.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;Correspondence"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TermSubregisterDescription.contentSummary -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19104;TermSubregisterDescription.contentSummary">
+    <rdfs:label>contentSummary</rdfs:label>
+    <skos:definition>General statement of the purpose for which items in the subregister are made available to potential usersEXAMPLE	.gu.A compilation of terminological entries published in ISO.sl.TC 211-sponsored International Standards and Technical Specifications, presented in English for use by the geospatial community..gu.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermSubregisterDescription"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TermSubregisterDescription.reference -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19104;TermSubregisterDescription.reference">
+    <rdfs:label>reference</rdfs:label>
+    <skos:definition>Specifies whether the subregister is the reference language subregister</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermSubregisterDescription"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermSubregisterDescription.alternativeLanguages -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermSubregisterDescription.alternativeLanguages">
+    <rdfs:label>alternativeLanguages</rdfs:label>
+    <skos:definition>Summary of alternative locales used by items in a subregister, represented as instances of the class RE_Locale (ISO 19135-1:2015, B.2.2.3)</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19104;TermSubregisterDescription"/>
+    <rdfs:range rdf:resource="&iso19135-1_1058;RE_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.example -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.example">
+    <rdfs:label>example</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>HasExample</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;Example"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Example.termEntry -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;Example.termEntry">
+    <rdfs:label>termEntry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>HasExample</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;Example"/>
+    <rdfs:range rdf:resource="&iso19104;TermRegisterEntry"/>
+    <owl:inverseOf rdf:resource="&iso19104;TermRegisterEntry.example"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.note -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.note">
+    <rdfs:label>note</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>HasNote</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;NoteToEntry"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NoteToEntry.termEntry -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;NoteToEntry.termEntry">
+    <rdfs:label>termEntry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>HasNote</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;NoteToEntry"/>
+    <rdfs:range rdf:resource="&iso19104;TermRegisterEntry"/>
+    <owl:inverseOf rdf:resource="&iso19104;TermRegisterEntry.note"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.deprecatedEntry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.deprecatedEntry">
+    <rdfs:label>deprecatedEntry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Deprecated</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;TermRegisterEntry"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.currentEntry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.currentEntry">
+    <rdfs:label>currentEntry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Deprecated</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;TermRegisterEntry"/>
+    <owl:inverseOf rdf:resource="&iso19104;TermRegisterEntry.deprecatedEntry"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.admittedEntry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.admittedEntry">
+    <rdfs:label>admittedEntry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Admitted</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;TermRegisterEntry"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TermRegisterEntry.preferredEntry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19104;TermRegisterEntry.preferredEntry">
+    <rdfs:label>preferredEntry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Admitted</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19104;TermRegisterEntry"/>
+    <rdfs:range rdf:resource="&iso19104;TermRegisterEntry"/>
+    <owl:inverseOf rdf:resource="&iso19104;TermRegisterEntry.admittedEntry"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Enumeration: Correspondence -->
+  <!--+++++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19104;Correspondence">
+    <rdfs:label>Correspondence</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">identical</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">modified</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">notEquivalent</rdf:first>
+                    <rdf:rest rdf:resource="&rdf;nil"/>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Enumeration: TermClassification -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19104;TermClassification">
+    <rdfs:label>TermClassification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19104/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">preferred</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">admitted</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">deprecated</rdf:first>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">equivalent</rdf:first>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                      </rdf:List>
+                    </rdf:rest>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+
