@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19133_1927 "http://def.isotc211.org/iso19133/2005/NetworkModel#" >
+  <!ENTITY iso19133_1930 "http://def.isotc211.org/iso19133/2005/TurnAndJunction#" >
+  <!ENTITY iso19133_1926 "http://def.isotc211.org/iso19133/2005/Link#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/CombinedNetworks#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19133CombinedNetworks.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL    -->
+  <!-- Generator version: 2.5                          -->
+  <!-- File date:         14-11-2016                   -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/CombinedNetworks#"
+  xml:base="http://def.isotc211.org/iso19133/2005/CombinedNetworks"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19133_1927="http://def.isotc211.org/iso19133/2005/NetworkModel#"
+  xmlns:iso19133_1930="http://def.isotc211.org/iso19133/2005/TurnAndJunction#"
+  xmlns:iso19133_1926="http://def.isotc211.org/iso19133/2005/Link#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/CombinedNetworks#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Combined Networks -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/CombinedNetworks">
+    <rdfs:label>ISO 19133:2005 Combined Networks</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/TurnAndJunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Link"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: NT_CombinedNetwork -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_CombinedNetwork">
+    <rdfs:label>NT_CombinedNetwork</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1927;NT_Network"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_CombinedNetwork.componentNetworks"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_CombinedNetwork.componentNetworks"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1927;NT_Network"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_CombinedNetwork.transferLlink"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_TransferLink"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_CombinedNetwork.transferNode"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_TransferNode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: NT_Transfer -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_Transfer">
+    <rdfs:label>NT_Transfer</rdfs:label>
+    <skos:definition>A transfer is a turn that occurs at a transfer node and which has entry and exit links connected to separate component junctions</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1930;NT_Turn"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Transfer.junction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Transfer.junction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_TransferNode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NT_TransferLink -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_TransferLink">
+    <rdfs:label>NT_TransferLink</rdfs:label>
+    <skos:definition>A transfer link is a link in a combined network whose boundary nodes are in different component networks. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1926;NT_Link"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NT_TransferNode -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_TransferNode">
+    <rdfs:label>NT_TransferNode</rdfs:label>
+    <skos:definition>A transfer Node is a node in a combined network that is the union of several component  junctions. Its links and turns contain all the links and turns of the component junctions plus  transfers that move from a link in one component network to a link in one of the other component networks. The combined network can be recast (alternately represented) by a single network in which all component junctions of a single transfer node have been unioned into a single node (of type junction), whose links consist of all the component links and whose turns consist of all the component turns combined with the transfers.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1930;NT_Junction"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_TransferNode.componentJunction"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_TransferNode.componentJunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1930;NT_Junction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_TransferNode.turn"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_TransferNode.turn"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_Transfer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_CombinedNetwork.componentNetworks -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_CombinedNetwork.componentNetworks">
+    <rdfs:label>componentNetworks</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_CombinedNetwork"/>
+    <rdfs:range rdf:resource="&iso19133_1927;NT_Network"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_CombinedNetwork.transferLlink -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_CombinedNetwork.transferLlink">
+    <rdfs:label>transferLlink</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_CombinedNetwork"/>
+    <rdfs:range rdf:resource="&iso19133;NT_TransferLink"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_CombinedNetwork.transferNode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_CombinedNetwork.transferNode">
+    <rdfs:label>transferNode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_CombinedNetwork"/>
+    <rdfs:range rdf:resource="&iso19133;NT_TransferNode"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Transfer.junction -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Transfer.junction">
+    <rdfs:label>junction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_Transfer"/>
+    <rdfs:range rdf:resource="&iso19133;NT_TransferNode"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_TransferNode.turn -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_TransferNode.turn">
+    <rdfs:label>turn</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_TransferNode"/>
+    <rdfs:range rdf:resource="&iso19133;NT_Transfer"/>
+    <owl:inverseOf rdf:resource="&iso19133;NT_Transfer.junction"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_TransferNode.componentJunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_TransferNode.componentJunction">
+    <rdfs:label>componentJunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_TransferNode"/>
+    <rdfs:range rdf:resource="&iso19133_1930;NT_Junction"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

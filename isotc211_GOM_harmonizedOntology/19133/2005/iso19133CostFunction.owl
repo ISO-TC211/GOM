@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_333 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19103_342 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19133_1921 "http://def.isotc211.org/iso19133/2005/NavigationService#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/CostFunction#" >
+  <!ENTITY iso19133Code "http://def.isotc211.org/iso19133/2005/CostFunction/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19133CostFunction.owl  -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         14-11-2016                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/CostFunction#"
+  xml:base="http://def.isotc211.org/iso19133/2005/CostFunction"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_333="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19103_342="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19133_1921="http://def.isotc211.org/iso19133/2005/NavigationService#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/CostFunction#"
+  xmlns:iso19133Code="http://def.isotc211.org/iso19133/2005/CostFunction/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Cost Function -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/CostFunction">
+    <rdfs:label>ISO 19133:2005 Cost Function</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NavigationService"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: NS_CostElement -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_CostElement">
+    <rdfs:label>NS_CostElement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_CostFunction"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NS_CostFunction -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_CostFunction">
+    <rdfs:label>NS_CostFunction</rdfs:label>
+    <skos:definition>This class is used to represent functions for the calculation of a costs associated to the traversal of the various parts of a network.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunction.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunction.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunction.formula"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunction.formula"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunction.link"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunction.link"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1921;NS_CostedLink"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunction.turn"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1921;NS_CostedTurn"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: NS_CostFunctionTerm -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_CostFunctionTerm">
+    <rdfs:label>NS_CostFunctionTerm</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunctionTerm.unit"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunctionTerm.unit"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunctionTerm.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunctionTerm.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_CostElementType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunctionTerm.weight"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostFunctionTerm.weight"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_342;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: NS_Counts -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_Counts">
+    <rdfs:label>NS_Counts</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_CostElement"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: NS_Distance -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_Distance">
+    <rdfs:label>NS_Distance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_CostElement"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: NS_Fares -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_Fares">
+    <rdfs:label>NS_Fares</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_MonetaryCost"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NS_MonetaryCost -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_MonetaryCost">
+    <rdfs:label>NS_MonetaryCost</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_CostElement"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: NS_NumberManuevers -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_NumberManuevers">
+    <rdfs:label>NS_NumberManuevers</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_Counts"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: NS_NumberTransfers -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_NumberTransfers">
+    <rdfs:label>NS_NumberTransfers</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_Counts"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: NS_NumberTurns -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_NumberTurns">
+    <rdfs:label>NS_NumberTurns</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_Counts"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: NS_Time -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_Time">
+    <rdfs:label>NS_Time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_CostElement"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: NS_Tolls -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_Tolls">
+    <rdfs:label>NS_Tolls</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_MonetaryCost"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: NS_TravelTime -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_TravelTime">
+    <rdfs:label>NS_TravelTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_Time"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: NS_WaitingTime -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_WaitingTime">
+    <rdfs:label>NS_WaitingTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_Time"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NS_WeightedCost -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_WeightedCost">
+    <rdfs:label>NS_WeightedCost</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;NS_CostFunction"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_WeightedCost.targetUnit"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_WeightedCost.targetUnit"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_WeightedCost.term"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_WeightedCost.term"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_CostFunctionTerm"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_CostFunction.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_CostFunction.description">
+    <rdfs:label>description</rdfs:label>
+    <skos:definition>A general description of the cost function. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostFunction"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_CostFunction.formula -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_CostFunction.formula">
+    <rdfs:label>formula</rdfs:label>
+    <skos:definition>An algebraic formulae describing this cost. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostFunction"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostFunctionTerm.unit -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostFunctionTerm.unit">
+    <rdfs:label>unit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostFunctionTerm"/>
+    <rdfs:range rdf:resource="&iso19103_333;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostFunctionTerm.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostFunctionTerm.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostFunctionTerm"/>
+    <rdfs:range rdf:resource="&iso19133;NS_CostElementType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostFunctionTerm.weight -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostFunctionTerm.weight">
+    <rdfs:label>weight</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostFunctionTerm"/>
+    <rdfs:range rdf:resource="&iso19103_342;Number"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_WeightedCost.targetUnit -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_WeightedCost.targetUnit">
+    <rdfs:label>targetUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_WeightedCost"/>
+    <rdfs:range rdf:resource="&iso19103_333;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostFunction.link -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostFunction.link">
+    <rdfs:label>link</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Link Cost Function</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostFunction"/>
+    <rdfs:range rdf:resource="&iso19133_1921;NS_CostedLink"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostFunction.turn -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostFunction.turn">
+    <rdfs:label>turn</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Turn Cost Functions</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostFunction"/>
+    <rdfs:range rdf:resource="&iso19133_1921;NS_CostedTurn"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_WeightedCost.term -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_WeightedCost.term">
+    <rdfs:label>term</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NS_WeightedCost"/>
+    <rdfs:range rdf:resource="&iso19133;NS_CostFunctionTerm"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: NS_CostElementType -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_CostElementType">
+    <rdfs:label>NS_CostElementType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;NS_CostElementType">
+    <skos:prefLabel>NS_CostElementType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;NS_CostElementType"/>
+  </skos:ConceptScheme>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/time">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>time</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/waitingTime">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>waitingTime</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/travelTime">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>travelTime</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/currency">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>currency</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/tolls">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>tolls</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/fares">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>fares</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/counts">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>counts</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/turns">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>turns</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/transfers">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>transfers</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/manuevers">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>manuevers</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <iso19133:NS_CostElementType rdf:about="&iso19133Code;NS_CostElementType/distance">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>distance</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostElementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostElementType>
+  <skos:Collection rdf:about="&iso19133Code;NS_CostElementTypeCollection">
+    <skos:prefLabel>NS_CostElementType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/time"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/waitingTime"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/travelTime"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/currency"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/tolls"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/fares"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/counts"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/turns"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/transfers"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/manuevers"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/distance"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+

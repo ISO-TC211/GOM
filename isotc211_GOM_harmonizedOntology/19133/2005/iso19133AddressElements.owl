@@ -1,0 +1,933 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/AddressElements#" >
+  <!ENTITY iso19133Code "http://def.isotc211.org/iso19133/2005/AddressElements/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19133AddressElements.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL   -->
+  <!-- Generator version: 2.5                         -->
+  <!-- File date:         14-11-2016                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/AddressElements#"
+  xml:base="http://def.isotc211.org/iso19133/2005/AddressElements"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/AddressElements#"
+  xmlns:iso19133Code="http://def.isotc211.org/iso19133/2005/AddressElements/code/">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Address Elements -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/AddressElements">
+    <rdfs:label>ISO 19133:2005 Address Elements</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: AD_Addressee -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_Addressee">
+    <rdfs:label>AD_Addressee</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Addressee.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Addressee.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Addressee.prefix"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Addressee.prefix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Addressee.postfix"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Addressee.postfix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: AD_AddressElement -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_AddressElement">
+    <rdfs:label>AD_AddressElement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: AD_Building -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_Building">
+    <rdfs:label>AD_Building</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_StreetLocation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Building.number"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Building.number"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Building.subdivision"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Building.subdivision"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_NamedPlace"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Building.buildingName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Building.buildingName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: AD_ListNamedPlaces -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_ListNamedPlaces">
+    <rdfs:label>AD_ListNamedPlaces</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_ListNamedPlaces.name"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">9</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_ListNamedPlaces.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_NamedPlace"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: AD_NamedPlace -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_NamedPlace">
+    <rdfs:label>AD_NamedPlace</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.regionOrCountry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.regionOrCountry"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_RegionCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.level"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.level"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NamedPlace.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_NamedPlaceClassification"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: AD_NumberRange -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_NumberRange">
+    <rdfs:label>AD_NumberRange</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NumberRange.first"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NumberRange.first"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NumberRange.last"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_NumberRange.last"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: AD_PhoneNumber -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_PhoneNumber">
+    <rdfs:label>AD_PhoneNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_PhoneNumber.number"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_PhoneNumber.number"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: AD_PostalCode -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_PostalCode">
+    <rdfs:label>AD_PostalCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_PostalCode.code"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_PostalCode.code"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_PostalCode.addonCode"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_PostalCode.addonCode"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: AD_Street -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_Street">
+    <rdfs:label>AD_Street</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.directionalPrefix"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.directionalPrefix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.typePrefix"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.typePrefix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.officialName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.officialName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.trailingSpaces"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.trailingSpaces"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.typeSuffix"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.typeSuffix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.directionalSuffix"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.directionalSuffix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.muniQuadrant"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.muniQuadrant"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_MuniQuadrant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.postalCode"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_Street.postalCode"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_PostalCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: AD_StreetAddress -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_StreetAddress">
+    <rdfs:label>AD_StreetAddress</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_StreetAddress.location"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_StreetAddress.location"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_StreetLocation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_StreetAddress.street"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_StreetAddress.street"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_Street"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: AD_StreetIntersection -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_StreetIntersection">
+    <rdfs:label>AD_StreetIntersection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;AD_StreetIntersection.streets"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;AD_Street"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: AD_StreetLocation -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_StreetLocation">
+    <rdfs:label>AD_StreetLocation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19133;AD_AddressElement"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Addressee.name -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Addressee.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Addressee"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Addressee.prefix -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Addressee.prefix">
+    <rdfs:label>prefix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Addressee"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Addressee.postfix -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Addressee.postfix">
+    <rdfs:label>postfix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Addressee"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Building.number -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Building.number">
+    <rdfs:label>number</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Building"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_Building.subdivision -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_Building.subdivision">
+    <rdfs:label>subdivision</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Building"/>
+    <rdfs:range rdf:resource="&iso19133;AD_NamedPlace"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Building.buildingName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Building.buildingName">
+    <rdfs:label>buildingName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Building"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_ListNamedPlaces.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_ListNamedPlaces.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_ListNamedPlaces"/>
+    <rdfs:range rdf:resource="&iso19133;AD_NamedPlace"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_NamedPlace.name -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_NamedPlace.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_NamedPlace"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_NamedPlace.regionOrCountry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_NamedPlace.regionOrCountry">
+    <rdfs:label>regionOrCountry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_NamedPlace"/>
+    <rdfs:range rdf:resource="&iso19133;AD_RegionCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_NamedPlace.level -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_NamedPlace.level">
+    <rdfs:label>level</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_NamedPlace"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_NamedPlace.type -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_NamedPlace.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_NamedPlace"/>
+    <rdfs:range rdf:resource="&iso19133;AD_NamedPlaceClassification"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_NumberRange.first -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_NumberRange.first">
+    <rdfs:label>first</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_NumberRange"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_NumberRange.last -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_NumberRange.last">
+    <rdfs:label>last</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_NumberRange"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_PhoneNumber.number -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_PhoneNumber.number">
+    <rdfs:label>number</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_PhoneNumber"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_PostalCode.code -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_PostalCode.code">
+    <rdfs:label>code</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_PostalCode"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_PostalCode.addonCode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_PostalCode.addonCode">
+    <rdfs:label>addonCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_PostalCode"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Street.directionalPrefix -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Street.directionalPrefix">
+    <rdfs:label>directionalPrefix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Street.typePrefix -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Street.typePrefix">
+    <rdfs:label>typePrefix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Street.officialName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Street.officialName">
+    <rdfs:label>officialName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Street.trailingSpaces -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Street.trailingSpaces">
+    <rdfs:label>trailingSpaces</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Street.typeSuffix -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Street.typeSuffix">
+    <rdfs:label>typeSuffix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AD_Street.directionalSuffix -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;AD_Street.directionalSuffix">
+    <rdfs:label>directionalSuffix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_Street.muniQuadrant -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_Street.muniQuadrant">
+    <rdfs:label>muniQuadrant</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&iso19133;AD_MuniQuadrant"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_Street.postalCode -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_Street.postalCode">
+    <rdfs:label>postalCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_Street"/>
+    <rdfs:range rdf:resource="&iso19133;AD_PostalCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_StreetAddress.location -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_StreetAddress.location">
+    <rdfs:label>location</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_StreetAddress"/>
+    <rdfs:range rdf:resource="&iso19133;AD_StreetLocation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_StreetAddress.street -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_StreetAddress.street">
+    <rdfs:label>street</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_StreetAddress"/>
+    <rdfs:range rdf:resource="&iso19133;AD_Street"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AD_StreetIntersection.streets -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;AD_StreetIntersection.streets">
+    <rdfs:label>streets</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;AD_StreetIntersection"/>
+    <rdfs:range rdf:resource="&iso19133;AD_Street"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: AD_NamedPlaceClassification -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_NamedPlaceClassification">
+    <rdfs:label>AD_NamedPlaceClassification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;AD_NamedPlaceClassification">
+    <skos:prefLabel>AD_NamedPlaceClassification - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;AD_NamedPlaceClassification"/>
+  </skos:ConceptScheme>
+  <iso19133:AD_NamedPlaceClassification rdf:about="&iso19133Code;AD_NamedPlaceClassification/country">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>country</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_NamedPlaceClassification"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_NamedPlaceClassification>
+  <iso19133:AD_NamedPlaceClassification rdf:about="&iso19133Code;AD_NamedPlaceClassification/countrySubdividsion">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>countrySubdividsion</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_NamedPlaceClassification"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_NamedPlaceClassification>
+  <iso19133:AD_NamedPlaceClassification rdf:about="&iso19133Code;AD_NamedPlaceClassification/countrySecondarySubdivision">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>countrySecondarySubdivision</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_NamedPlaceClassification"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_NamedPlaceClassification>
+  <iso19133:AD_NamedPlaceClassification rdf:about="&iso19133Code;AD_NamedPlaceClassification/municipality">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>municipality</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_NamedPlaceClassification"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_NamedPlaceClassification>
+  <iso19133:AD_NamedPlaceClassification rdf:about="&iso19133Code;AD_NamedPlaceClassification/municipalitySubdivision">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>municipalitySubdivision</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_NamedPlaceClassification"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_NamedPlaceClassification>
+  <skos:Collection rdf:about="&iso19133Code;AD_NamedPlaceClassificationCollection">
+    <skos:prefLabel>AD_NamedPlaceClassification - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/country"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/countrySubdividsion"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/countrySecondarySubdivision"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/municipality"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/municipalitySubdivision"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Codelist: AD_RegionCode -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;AD_RegionCode">
+    <rdfs:label>AD_RegionCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;AD_RegionCode">
+    <skos:prefLabel>AD_RegionCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;AD_RegionCode"/>
+  </skos:ConceptScheme>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/AT">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>AT</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/BE">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>BE</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/CA">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>CA</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/ES">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>ES</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/GB">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>GB</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/US">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>US</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/VA">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>VA</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/US-VA">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>US-VA</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/CA-NB">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>CA-NB</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/CA-NT">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>CA-NT</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/CA-NU">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>CA-NU</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <iso19133:AD_RegionCode rdf:about="&iso19133Code;AD_RegionCode/...">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>...</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;AD_RegionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:AD_RegionCode>
+  <skos:Collection rdf:about="&iso19133Code;AD_RegionCodeCollection">
+    <skos:prefLabel>AD_RegionCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/AT"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/BE"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/ES"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/GB"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/US"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/VA"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/US-VA"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA-NB"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA-NT"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA-NU"/>
+      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/..."/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Enumeration: AD_MuniQuadrant -->
+  <!--++++++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19133;AD_MuniQuadrant">
+    <rdfs:label>AD_MuniQuadrant</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">NW</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">NE</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">SE</rdf:first>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">SW</rdf:first>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                      </rdf:List>
+                    </rdf:rest>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+

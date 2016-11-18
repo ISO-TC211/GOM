@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_336 "http://def.isotc211.org/iso19103/2005/Names#" >
+  <!ENTITY iso19103_333 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19133_1930 "http://def.isotc211.org/iso19133/2005/TurnAndJunction#" >
+  <!ENTITY iso19133_1926 "http://def.isotc211.org/iso19133/2005/Link#" >
+  <!ENTITY iso19133_1934 "http://def.isotc211.org/iso19133/2005/LinearReferenceSystems#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/NetworkPosition#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19133NetworkPosition.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL   -->
+  <!-- Generator version: 2.5                         -->
+  <!-- File date:         14-11-2016                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/NetworkPosition#"
+  xml:base="http://def.isotc211.org/iso19133/2005/NetworkPosition"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_336="http://def.isotc211.org/iso19103/2005/Names#"
+  xmlns:iso19103_333="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19133_1930="http://def.isotc211.org/iso19133/2005/TurnAndJunction#"
+  xmlns:iso19133_1926="http://def.isotc211.org/iso19133/2005/Link#"
+  xmlns:iso19133_1934="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/NetworkPosition#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Network Position -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/NetworkPosition">
+    <rdfs:label>ISO 19133:2005 Network Position</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/TurnAndJunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Link"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NT_LinkPosition -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_LinkPosition">
+    <rdfs:label>NT_LinkPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1934;LR_PositionExpression"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_LinkPosition.linkMeasure"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_LinkPosition.linkMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_336;MemberName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_LinkPosition.marker"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_LinkPosition.marker"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_LinkPosition.link"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_LinkPosition.link"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1926;NT_Link"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++-->
+  <!-- Class: Node -->
+  <!--+++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uNode">
+    <rdfs:label>Node</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uNode.node"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uNode.node"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1930;NT_Junction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LinkPosition -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uLinkPosition">
+    <rdfs:label>LinkPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uLinkPosition.linkPosition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uLinkPosition.linkPosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_LinkPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_LinkPosition.linkMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_LinkPosition.linkMeasure">
+    <rdfs:label>linkMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_LinkPosition"/>
+    <rdfs:range rdf:resource="&iso19103_336;MemberName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_LinkPosition.marker -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_LinkPosition.marker">
+    <rdfs:label>marker</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_LinkPosition"/>
+    <rdfs:range rdf:resource="&iso19103_333;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++-->
+  <!-- ObjectProperty: node -->
+  <!--++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uNode.node">
+    <skos:prefLabel>node</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uNode"/>
+    <rdfs:range rdf:resource="&iso19133_1930;NT_Junction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: linkPosition -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uLinkPosition.linkPosition">
+    <skos:prefLabel>linkPosition</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uLinkPosition"/>
+    <rdfs:range rdf:resource="&iso19133;NT_LinkPosition"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_LinkPosition.link -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_LinkPosition.link">
+    <rdfs:label>link</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_LinkPosition"/>
+    <rdfs:range rdf:resource="&iso19133_1926;NT_Link"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: NT_NetworkPosition -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_NetworkPosition">
+    <rdfs:label>NT_NetworkPosition</rdfs:label>
+    <skos:definition>This is a representation of a position with respect to a network.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19133;uNode"/>
+          <owl:Class rdf:about="&iso19133;uLinkPosition"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+</rdf:RDF>
+

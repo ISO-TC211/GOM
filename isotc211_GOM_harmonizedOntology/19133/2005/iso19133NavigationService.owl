@@ -1,0 +1,1105 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_333 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19133_1925 "http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#" >
+  <!ENTITY iso19133_1929 "http://def.isotc211.org/iso19133/2005/Route#" >
+  <!ENTITY orph_233 "http://def.isotc211.org/orphans/Orphans#" >
+  <!ENTITY iso19133_1927 "http://def.isotc211.org/iso19133/2005/NetworkModel#" >
+  <!ENTITY iso19133_1922 "http://def.isotc211.org/iso19133/2005/Preferences#" >
+  <!ENTITY iso19108_407 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19133_1920 "http://def.isotc211.org/iso19133/2005/CostFunction#" >
+  <!ENTITY iso19133_1926 "http://def.isotc211.org/iso19133/2005/Link#" >
+  <!ENTITY iso19133_1930 "http://def.isotc211.org/iso19133/2005/TurnAndJunction#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/NavigationService#" >
+  <!ENTITY iso19133Code "http://def.isotc211.org/iso19133/2005/NavigationService/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19133NavigationService.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL     -->
+  <!-- Generator version: 2.5                           -->
+  <!-- File date:         14-11-2016                    -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/NavigationService#"
+  xml:base="http://def.isotc211.org/iso19133/2005/NavigationService"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_333="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19133_1925="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#"
+  xmlns:iso19133_1929="http://def.isotc211.org/iso19133/2005/Route#"
+  xmlns:orph_233="http://def.isotc211.org/orphans/Orphans#"
+  xmlns:iso19133_1927="http://def.isotc211.org/iso19133/2005/NetworkModel#"
+  xmlns:iso19133_1922="http://def.isotc211.org/iso19133/2005/Preferences#"
+  xmlns:iso19108_407="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19133_1920="http://def.isotc211.org/iso19133/2005/CostFunction#"
+  xmlns:iso19133_1926="http://def.isotc211.org/iso19133/2005/Link#"
+  xmlns:iso19133_1930="http://def.isotc211.org/iso19133/2005/TurnAndJunction#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/NavigationService#"
+  xmlns:iso19133Code="http://def.isotc211.org/iso19133/2005/NavigationService/code/">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Navigation Service -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/NavigationService">
+    <rdfs:label>ISO 19133:2005 Navigation Service</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Route"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/orphans/Orphans"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Preferences"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/CostFunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Link"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/TurnAndJunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: NS_CostedLink -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_CostedLink">
+    <rdfs:label>NS_CostedLink</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedLink.totalCost"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedLink.totalCost"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedLink.link"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedLink.link"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1926;NT_Link"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedLink.costFunction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedLink.costFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1920;NS_CostFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: NS_CostedTurn -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_CostedTurn">
+    <rdfs:label>NS_CostedTurn</rdfs:label>
+    <skos:definition>A turn for which the cost has been calculated according to the indicated cost function.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedTurn.cost"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedTurn.cost"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedTurn.turn"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedTurn.turn"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1930;NT_Turn"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedTurn.costFunction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_CostedTurn.costFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1920;NS_CostFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: NS_Instruction -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_Instruction">
+    <rdfs:label>NS_Instruction</rdfs:label>
+    <skos:definition>Defines a single route instruction or advisory. An instruction can cover multiple maneuvers as in .gu.turn right and then immediately left..gu. Most such examples involve maneuvers that are not separated by .gu.long.gu. liniks. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_Instruction.cost"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_Instruction.cost"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_Instruction.action"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_Instruction.action"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_Instruction.advisory"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1925;NT_Advisory"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_Instruction.maneuver"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1929;NT_Maneuver"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: NS_InstructionList -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_InstructionList">
+    <rdfs:label>NS_InstructionList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_InstructionList.route"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_InstructionList.route"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1929;NT_Route"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_InstructionList.instruction"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_InstructionList.instruction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_Instruction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: NS_RenderingRequest -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RenderingRequest">
+    <rdfs:label>NS_RenderingRequest</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingRequest.route"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingRequest.route"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1929;NT_Route"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingRequest.type"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingRequest.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_RenderingType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: NS_RenderingResponse -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RenderingResponse">
+    <rdfs:label>NS_RenderingResponse</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.map"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.map"/>
+        <owl:allValuesFrom rdf:resource="&orph_233;Sequence.lt.Map.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.voice"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.voice"/>
+        <owl:allValuesFrom rdf:resource="&orph_233;Sequence.lt.VoiceStream.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.text"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.text"/>
+        <owl:allValuesFrom rdf:resource="&orph_233;Sequence.lt.CharacterString.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.groundLevelView"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.groundLevelView"/>
+        <owl:allValuesFrom rdf:resource="&orph_233;Sequence.lt.Image.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.instructionList"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RenderingResponse.instructionList"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_InstructionList"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NS_RouteRequest -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RouteRequest">
+    <rdfs:label>NS_RouteRequest</rdfs:label>
+    <skos:definition>Basic navigation request specifying only the source (starting point) and destination (ending point) of the requested route. Cost function used are based on general criteria.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.routeRequestType"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.routeRequestType"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_RouteRequestType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.vehicle"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.vehicle"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1925;NT_Vehicle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.wayPointList"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.wayPointList"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1927;NT_WayPointList"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.avoidList"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.avoidList"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1922;NS_AvoidList"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.departureTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.departureTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.arrivalTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.arrivalTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.costFunction"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.costFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_CostFunctionCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.preferences"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1922;NS_RoutePreferences"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.advisories"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1925;NT_AdvisoryCategory"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.isDynamic"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.isDynamic"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.refreshInterval"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.refreshInterval"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Duration"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.returnRouteInstructions"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.returnRouteInstructions"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.returnRouteMaps"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.returnRouteMaps"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.returnRouteGeometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.returnRouteGeometry"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteRequest.costFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1920;NS_CostFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: NS_RouteResponse -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RouteResponse">
+    <rdfs:label>NS_RouteResponse</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteResponse.request"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteResponse.request"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_RouteRequest"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteResponse.route"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1929;NT_Route"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_RouteResponse.rendering"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_RenderingResponse"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: NS_NavigationService -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_NavigationService">
+    <rdfs:label>NS_NavigationService</rdfs:label>
+    <skos:definition>This service interface supplies operation central to navigating and tracking a single target.Capabilities is a function that returns a sequence of route request types that are properly handled by the service supporting this interface.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_NavigationService.capabilities"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NS_RouteRequestType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: NS_RenderingService -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RenderingService">
+    <rdfs:label>NS_RenderingService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostedLink.totalCost -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostedLink.totalCost">
+    <rdfs:label>totalCost</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostedLink"/>
+    <rdfs:range rdf:resource="&iso19103_333;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostedTurn.cost -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostedTurn.cost">
+    <rdfs:label>cost</rdfs:label>
+    <skos:definition>The cost calculated for this turn. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostedTurn"/>
+    <rdfs:range rdf:resource="&iso19103_333;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_Instruction.cost -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_Instruction.cost">
+    <rdfs:label>cost</rdfs:label>
+    <skos:definition>The cost calculated for this turn, and the following link. For example, the intruction migth say .gu.turn right and go 40km.gu. in which case the value for a distance-based cost function is .gu.40km..gu.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_Instruction"/>
+    <rdfs:range rdf:resource="&iso19103_333;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_Instruction.action -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_Instruction.action">
+    <rdfs:label>action</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_Instruction"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_Instruction.advisory -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_Instruction.advisory">
+    <rdfs:label>advisory</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_Instruction"/>
+    <rdfs:range rdf:resource="&iso19133_1925;NT_Advisory"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_InstructionList.route -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_InstructionList.route">
+    <rdfs:label>route</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_InstructionList"/>
+    <rdfs:range rdf:resource="&iso19133_1929;NT_Route"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RenderingRequest.route -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RenderingRequest.route">
+    <rdfs:label>route</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RenderingRequest"/>
+    <rdfs:range rdf:resource="&iso19133_1929;NT_Route"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RenderingRequest.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RenderingRequest.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RenderingRequest"/>
+    <rdfs:range rdf:resource="&iso19133;NS_RenderingType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RenderingResponse.map -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RenderingResponse.map">
+    <rdfs:label>map</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RenderingResponse"/>
+    <rdfs:range rdf:resource="&orph_233;Sequence.lt.Map.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RenderingResponse.voice -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RenderingResponse.voice">
+    <rdfs:label>voice</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RenderingResponse"/>
+    <rdfs:range rdf:resource="&orph_233;Sequence.lt.VoiceStream.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RenderingResponse.text -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RenderingResponse.text">
+    <rdfs:label>text</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RenderingResponse"/>
+    <rdfs:range rdf:resource="&orph_233;Sequence.lt.CharacterString.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RenderingResponse.groundLevelView -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RenderingResponse.groundLevelView">
+    <rdfs:label>groundLevelView</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RenderingResponse"/>
+    <rdfs:range rdf:resource="&orph_233;Sequence.lt.Image.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RenderingResponse.instructionList -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RenderingResponse.instructionList">
+    <rdfs:label>instructionList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RenderingResponse"/>
+    <rdfs:range rdf:resource="&iso19133;NS_InstructionList"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.routeRequestType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.routeRequestType">
+    <rdfs:label>routeRequestType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133;NS_RouteRequestType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.vehicle -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.vehicle">
+    <rdfs:label>vehicle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133_1925;NT_Vehicle"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.wayPointList -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.wayPointList">
+    <rdfs:label>wayPointList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133_1927;NT_WayPointList"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.avoidList -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.avoidList">
+    <rdfs:label>avoidList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133_1922;NS_AvoidList"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.departureTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.departureTime">
+    <rdfs:label>departureTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Period"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.arrivalTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.arrivalTime">
+    <rdfs:label>arrivalTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Period"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.costFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.costFunction">
+    <rdfs:label>costFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133;NS_CostFunctionCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.preferences -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.preferences">
+    <rdfs:label>preferences</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133_1922;NS_RoutePreferences"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.advisories -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.advisories">
+    <rdfs:label>advisories</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133_1925;NT_AdvisoryCategory"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_RouteRequest.isDynamic -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_RouteRequest.isDynamic">
+    <rdfs:label>isDynamic</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.refreshInterval -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.refreshInterval">
+    <rdfs:label>refreshInterval</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Duration"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_RouteRequest.returnRouteInstructions -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_RouteRequest.returnRouteInstructions">
+    <rdfs:label>returnRouteInstructions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_RouteRequest.returnRouteMaps -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_RouteRequest.returnRouteMaps">
+    <rdfs:label>returnRouteMaps</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_RouteRequest.returnRouteGeometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_RouteRequest.returnRouteGeometry">
+    <rdfs:label>returnRouteGeometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteResponse.request -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteResponse.request">
+    <rdfs:label>request</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteResponse"/>
+    <rdfs:range rdf:resource="&iso19133;NS_RouteRequest"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteResponse.route -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteResponse.route">
+    <rdfs:label>route</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteResponse"/>
+    <rdfs:range rdf:resource="&iso19133_1929;NT_Route"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_NavigationService.capabilities -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_NavigationService.capabilities">
+    <rdfs:label>capabilities</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_NavigationService"/>
+    <rdfs:range rdf:resource="&iso19133;NS_RouteRequestType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostedLink.link -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostedLink.link">
+    <rdfs:label>link</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Link Costing</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostedLink"/>
+    <rdfs:range rdf:resource="&iso19133_1926;NT_Link"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostedLink.costFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostedLink.costFunction">
+    <rdfs:label>costFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Link Cost Function</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostedLink"/>
+    <rdfs:range rdf:resource="&iso19133_1920;NS_CostFunction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostedTurn.turn -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostedTurn.turn">
+    <rdfs:label>turn</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Turn Costing</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostedTurn"/>
+    <rdfs:range rdf:resource="&iso19133_1930;NT_Turn"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_CostedTurn.costFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_CostedTurn.costFunction">
+    <rdfs:label>costFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Turn Cost Functions</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_CostedTurn"/>
+    <rdfs:range rdf:resource="&iso19133_1920;NS_CostFunction"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_Instruction.maneuver -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_Instruction.maneuver">
+    <rdfs:label>maneuver</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NS_Instruction"/>
+    <rdfs:range rdf:resource="&iso19133_1929;NT_Maneuver"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_InstructionList.instruction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_InstructionList.instruction">
+    <rdfs:label>instruction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Instruction List</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_InstructionList"/>
+    <rdfs:range rdf:resource="&iso19133;NS_Instruction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteRequest.costFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteRequest.costFunction">
+    <rdfs:label>costFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CostFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteRequest"/>
+    <rdfs:range rdf:resource="&iso19133_1920;NS_CostFunction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_RouteResponse.rendering -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_RouteResponse.rendering">
+    <rdfs:label>rendering</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NS_RouteResponse"/>
+    <rdfs:range rdf:resource="&iso19133;NS_RenderingResponse"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: NS_CostFunctionCode -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_CostFunctionCode">
+    <rdfs:label>NS_CostFunctionCode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;NS_CostFunctionCode">
+    <skos:prefLabel>NS_CostFunctionCode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;NS_CostFunctionCode"/>
+  </skos:ConceptScheme>
+  <iso19133:NS_CostFunctionCode rdf:about="&iso19133Code;NS_CostFunctionCode/distance">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>distance</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostFunctionCode>
+  <iso19133:NS_CostFunctionCode rdf:about="&iso19133Code;NS_CostFunctionCode/time">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>time</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostFunctionCode>
+  <iso19133:NS_CostFunctionCode rdf:about="&iso19133Code;NS_CostFunctionCode/numberTurns">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>numberTurns</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_CostFunctionCode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_CostFunctionCode>
+  <skos:Collection rdf:about="&iso19133Code;NS_CostFunctionCodeCollection">
+    <skos:prefLabel>NS_CostFunctionCode - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostFunctionCode/distance"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostFunctionCode/time"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_CostFunctionCode/numberTurns"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Codelist: NS_RenderingType -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RenderingType">
+    <rdfs:label>NS_RenderingType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;NS_RenderingType">
+    <skos:prefLabel>NS_RenderingType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;NS_RenderingType"/>
+  </skos:ConceptScheme>
+  <iso19133:NS_RenderingType rdf:about="&iso19133Code;NS_RenderingType/map">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>map</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RenderingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RenderingType>
+  <iso19133:NS_RenderingType rdf:about="&iso19133Code;NS_RenderingType/voice">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>voice</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RenderingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RenderingType>
+  <iso19133:NS_RenderingType rdf:about="&iso19133Code;NS_RenderingType/text">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>text</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RenderingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RenderingType>
+  <iso19133:NS_RenderingType rdf:about="&iso19133Code;NS_RenderingType/groundLevelView">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>groundLevelView</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RenderingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RenderingType>
+  <iso19133:NS_RenderingType rdf:about="&iso19133Code;NS_RenderingType/maneuverInstructions">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>maneuverInstructions</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RenderingType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RenderingType>
+  <skos:Collection rdf:about="&iso19133Code;NS_RenderingTypeCollection">
+    <skos:prefLabel>NS_RenderingType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/map"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/voice"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/text"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/groundLevelView"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/maneuverInstructions"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: NS_RouteRequestType -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RouteRequestType">
+    <rdfs:label>NS_RouteRequestType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;NS_RouteRequestType">
+    <skos:prefLabel>NS_RouteRequestType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;NS_RouteRequestType"/>
+  </skos:ConceptScheme>
+  <iso19133:NS_RouteRequestType rdf:about="&iso19133Code;NS_RouteRequestType/basic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>basic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RouteRequestType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RouteRequestType>
+  <iso19133:NS_RouteRequestType rdf:about="&iso19133Code;NS_RouteRequestType/predictive">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>predictive</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RouteRequestType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RouteRequestType>
+  <iso19133:NS_RouteRequestType rdf:about="&iso19133Code;NS_RouteRequestType/dynamic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>dynamic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RouteRequestType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RouteRequestType>
+  <iso19133:NS_RouteRequestType rdf:about="&iso19133Code;NS_RouteRequestType/complex">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>complex</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RouteRequestType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RouteRequestType>
+  <skos:Collection rdf:about="&iso19133Code;NS_RouteRequestTypeCollection">
+    <skos:prefLabel>NS_RouteRequestType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/basic"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/predictive"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/dynamic"/>
+      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/complex"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
