@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1479496948660" name="http://def.isotc211.org/iso19134/2007/Location-BasedServices-MultimodalRoutingAndNavigation" uri="ISO19134_2007Location-BasedServices-MultimodalRoutingAndNavigation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479496948660" name="http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory" uri="iso19134MultimodalConstraintAndAdvisory.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479496948660" name="http://def.isotc211.org/iso19134/2007/MultimodalCostFunction" uri="iso19134MultimodalCostFunction.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479496948660" name="duplicate:http://def.isotc211.org/iso19134/2007/MultimodalNavigationService" uri="iso19134MultimodalNavigationService.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479496948660" name="duplicate:http://def.isotc211.org/iso19134/2007/MultimodalNavigationService" uri="iso19134MultimodalNavigationService_bak.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479496948660" name="http://def.isotc211.org/iso19134/2007/MultimodalNetwork" uri="iso19134MultimodalNetwork.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479496948660" name="http://def.isotc211.org/iso19134/2007/MultimodalRouting" uri="iso19134MultimodalRouting.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19108_407 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19133_1925 "http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#" >
+  <!ENTITY iso19134 "http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory#" >
+  <!ENTITY iso19134Code "http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19134MultimodalConstraintAndAdvisory.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL                   -->
+  <!-- Generator version: 2.5                                         -->
+  <!-- File date:         18-11-2016                                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory#"
+  xml:base="http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19108_407="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19133_1925="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#"
+  xmlns:iso19134="http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory#"
+  xmlns:iso19134Code="http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory/code/">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19134:2007 Multimodal Constraint and Advisory -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory">
+    <rdfs:label>ISO 19134:2007 Multimodal Constraint and Advisory</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19134/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-02-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: MM_Advisory -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MM_Advisory">
+    <rdfs:label>MM_Advisory</rdfs:label>
+    <skos:definition>The data type .gu.MM_Advisory.gu. specifies information for travelers of itineraries and trip scheme including transfers. Unlike ISO 19133, all advisory information will be provided in character strings.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1925;NT_Advisory"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_Advisory.category"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_Advisory.category"/>
+        <owl:allValuesFrom rdf:resource="&iso19134;MM_AdvisoryCategory"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_Advisory.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_Advisory.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: MM_Constraint -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MM_Constraint">
+    <rdfs:label>MM_Constraint</rdfs:label>
+    <skos:definition>The data type .gu.MM_Constraint.gu., a sub type of .gu.NT_Constraint.gu. from ISO19133, is an abstract class which is the root class of those types used to specify transfer and link restrictions.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1925;NT_Constraint"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: MM_ModeConstraint -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MM_ModeConstraint">
+    <rdfs:label>MM_ModeConstraint</rdfs:label>
+    <skos:definition>The data type .gu.MM_ModeConstraint.gu. is used to specify mode preference by a traveler for the type of a mode.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MM_Constraint"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_ModeConstraint.preferredMode"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_ModeConstraint.preferredMode"/>
+        <owl:allValuesFrom rdf:resource="&iso19134;MM_TransportationModeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: MM_ScheduleConstraint -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MM_ScheduleConstraint">
+    <rdfs:label>MM_ScheduleConstraint</rdfs:label>
+    <skos:definition>The data type .gu.MM_ScheduleConstraint.gu. specifies conditions for which the predefined schedule may have to be altered due to accidents, constructions and unscheduled events.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MM_Constraint"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_ScheduleConstraint.operableTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_ScheduleConstraint.operableTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_ScheduleConstraint.inoperableTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MM_ScheduleConstraint.inoperableTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MM_Advisory.category -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MM_Advisory.category">
+    <rdfs:label>category</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MM_Advisory"/>
+    <rdfs:range rdf:resource="&iso19134;MM_AdvisoryCategory"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MM_Advisory.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19134;MM_Advisory.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MM_Advisory"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MM_ModeConstraint.preferredMode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MM_ModeConstraint.preferredMode">
+    <rdfs:label>preferredMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MM_ModeConstraint"/>
+    <rdfs:range rdf:resource="&iso19134;MM_TransportationModeType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MM_ScheduleConstraint.operableTime -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MM_ScheduleConstraint.operableTime">
+    <rdfs:label>operableTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MM_ScheduleConstraint"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Period"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MM_ScheduleConstraint.inoperableTime -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MM_ScheduleConstraint.inoperableTime">
+    <rdfs:label>inoperableTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MM_ScheduleConstraint"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Period"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: MM_AdvisoryCategory -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MM_AdvisoryCategory">
+    <rdfs:label>MM_AdvisoryCategory</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19134Code;MM_AdvisoryCategory">
+    <skos:prefLabel>MM_AdvisoryCategory - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19134;MM_AdvisoryCategory"/>
+  </skos:ConceptScheme>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/startLocation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>startLocation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/endLocation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>endLocation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/viaLocation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>viaLocation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/enterPlace">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>enterPlace</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/exitPlace">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>exitPlace</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/takeTransferPoint">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>takeTransferPoint</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/dropoffTransferPoint">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>dropoffTransferPoint</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/landmark">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>landmark</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/crossRoad">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>crossRoad</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <iso19134:MM_AdvisoryCategory rdf:about="&iso19134Code;MM_AdvisoryCategory/byPass">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>byPass</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_AdvisoryCategory"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_AdvisoryCategory>
+  <skos:Collection rdf:about="&iso19134Code;MM_AdvisoryCategoryCollection">
+    <skos:prefLabel>MM_AdvisoryCategory - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/startLocation"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/endLocation"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/viaLocation"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/enterPlace"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/exitPlace"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/takeTransferPoint"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/dropoffTransferPoint"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/landmark"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/crossRoad"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/byPass"/>
+    </skos:members>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: MM_TransportationModeType -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MM_TransportationModeType">
+    <rdfs:label>MM_TransportationModeType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19134Code;MM_TransportationModeType">
+    <skos:prefLabel>MM_TransportationModeType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19134;MM_TransportationModeType"/>
+  </skos:ConceptScheme>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/intracityBus">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>intracityBus</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/intercityBus">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>intercityBus</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/shuttleBus">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>shuttleBus</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/rovingBus">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rovingBus</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/subway">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>subway</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/lightrail">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>lightrail</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/tram">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>tram</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/railway">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>railway</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/highSpeedRailway">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>highSpeedRailway</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/ferry">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>ferry</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/airway">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>airway</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/walk">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>walk</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/bike">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>bike</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <iso19134:MM_TransportationModeType rdf:about="&iso19134Code;MM_TransportationModeType/taxi">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>taxi</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MM_TransportationModeType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MM_TransportationModeType>
+  <skos:Collection rdf:about="&iso19134Code;MM_TransportationModeTypeCollection">
+    <skos:prefLabel>MM_TransportationModeType - Collection</skos:prefLabel>
+    <skos:members rdf:parseType="Collection">
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/intracityBus"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/intercityBus"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/shuttleBus"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/rovingBus"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/subway"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/lightrail"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/tram"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/railway"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/highSpeedRailway"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/ferry"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/airway"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/walk"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/bike"/>
+      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/taxi"/>
+    </skos:members>
+  </skos:Collection>
+
+</rdf:RDF>
+
