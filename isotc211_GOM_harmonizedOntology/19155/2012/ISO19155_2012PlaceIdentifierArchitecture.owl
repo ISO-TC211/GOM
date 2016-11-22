@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19108_407 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19115_509 "http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#" >
+  <!ENTITY iso19115_515 "http://def.isotc211.org/iso19115/2006/ExtentInformation#" >
+  <!ENTITY iso19111_1025 "http://def.isotc211.org/iso19111/2007/ReferenceSystems#" >
+  <!ENTITY iso19155 "http://def.isotc211.org/iso19155/2012/PlaceIdentifierArchitecture#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         ISO19155_2012PlaceIdentifierArchitecture.owl -->
+  <!-- Generator:         GOM_Technologies::UML2OWL                    -->
+  <!-- Generator version: 2.5                                          -->
+  <!-- File date:         22-11-2016                                   -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19155/2012/PlaceIdentifierArchitecture#"
+  xml:base="http://def.isotc211.org/iso19155/2012/PlaceIdentifierArchitecture"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19108_407="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19115_509="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#"
+  xmlns:iso19115_515="http://def.isotc211.org/iso19115/2006/ExtentInformation#"
+  xmlns:iso19111_1025="http://def.isotc211.org/iso19111/2007/ReferenceSystems#"
+  xmlns:iso19155="http://def.isotc211.org/iso19155/2012/PlaceIdentifierArchitecture#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19155:2012 ISO 19155:2012 Place Identifier Architecture -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19155/2012/PlaceIdentifierArchitecture">
+    <rdfs:label>ISO 19155:2012 ISO 19155:2012 Place Identifier Architecture</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19155/ed-1/en/</dct:source>
+    <owl:versionInfo>2012-11-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ExtentInformation"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/ReferenceSystems"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++-->
+  <!-- Class: PI_Data -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_Data">
+    <rdfs:label>PI_Data</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: PI_MatchedPISet -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_MatchedPISet">
+    <rdfs:label>PI_MatchedPISet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchedPISet.equivalent"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchedPISet.equivalent"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_PlaceIdentifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: PI_MatchingService -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_MatchingService">
+    <rdfs:label>PI_MatchingService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19155;PI_Service"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchingService.rs"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchingService.table"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchingService.table"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_MatchingTable"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: PI_MatchingTable -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_MatchingTable">
+    <rdfs:label>PI_MatchingTable</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19155;PI_Data"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchingTable.rs"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchingTable.rs"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchingTable.set"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_MatchingTable.set"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_MatchedPISet"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: PI_PlaceIdentifier -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_PlaceIdentifier">
+    <rdfs:label>PI_PlaceIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19155;PI_Data"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_PlaceIdentifier.rs"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_PlaceIdentifier.rs"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_PlaceIdentifier.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_PlaceIdentifier.value"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_PlaceIdentifier.validPeriod"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_PlaceIdentifier.validPeriod"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: PI_ReferenceSystem -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_ReferenceSystem">
+    <rdfs:label>PI_ReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_1025;RS_ReferenceSystem"/>
+    <rdfs:subClassOf rdf:resource="&iso19155;PI_Data"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_ReferenceSystem.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_ReferenceSystem.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_509;RS_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_ReferenceSystem.domainOfValidity"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_515;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_ReferenceSystem.definition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_ReferenceSystem.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_ReferenceSystem.pi"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_PlaceIdentifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: PI_RSService -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_RSService">
+    <rdfs:label>PI_RSService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19155;PI_Service"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_RSService.rs"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19155;PI_RSService.rs"/>
+        <owl:allValuesFrom rdf:resource="&iso19155;PI_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: PI_Service -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19155;PI_Service">
+    <rdfs:label>PI_Service</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_PlaceIdentifier.rs -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_PlaceIdentifier.rs">
+    <rdfs:label>rs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_PlaceIdentifier"/>
+    <rdfs:range rdf:resource="&iso19155;PI_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PI_PlaceIdentifier.value -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19155;PI_PlaceIdentifier.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_PlaceIdentifier"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_PlaceIdentifier.validPeriod -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_PlaceIdentifier.validPeriod">
+    <rdfs:label>validPeriod</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_PlaceIdentifier"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Period"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_ReferenceSystem.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_ReferenceSystem.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_ReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19115_509;RS_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_ReferenceSystem.domainOfValidity -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_ReferenceSystem.domainOfValidity">
+    <rdfs:label>domainOfValidity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_ReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19115_515;EX_Extent"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PI_ReferenceSystem.definition -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19155;PI_ReferenceSystem.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_ReferenceSystem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_MatchedPISet.equivalent -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_MatchedPISet.equivalent">
+    <rdfs:label>equivalent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_MatchedPISet"/>
+    <rdfs:range rdf:resource="&iso19155;PI_PlaceIdentifier"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_MatchingService.rs -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_MatchingService.rs">
+    <rdfs:label>rs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19155;PI_MatchingService"/>
+    <rdfs:range rdf:resource="&iso19155;PI_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_MatchingService.table -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_MatchingService.table">
+    <rdfs:label>table</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19155;PI_MatchingService"/>
+    <rdfs:range rdf:resource="&iso19155;PI_MatchingTable"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_MatchingTable.rs -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_MatchingTable.rs">
+    <rdfs:label>rs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19155;PI_MatchingTable"/>
+    <rdfs:range rdf:resource="&iso19155;PI_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_MatchingTable.set -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_MatchingTable.set">
+    <rdfs:label>set</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19155;PI_MatchingTable"/>
+    <rdfs:range rdf:resource="&iso19155;PI_MatchedPISet"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_ReferenceSystem.pi -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_ReferenceSystem.pi">
+    <rdfs:label>pi</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19155;PI_ReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19155;PI_PlaceIdentifier"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PI_RSService.rs -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19155;PI_RSService.rs">
+    <rdfs:label>rs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19155/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19155;PI_RSService"/>
+    <rdfs:range rdf:resource="&iso19155;PI_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
