@@ -8,19 +8,19 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
-    <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150-2/2012/base#" >
+    <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
 ]>
 
 
-<rdf:RDF xmlns="http://def.isotc211.org/iso19150-2/2012/base#"
-     xml:base="http://def.isotc211.org/iso19150-2/2012/base"
+<rdf:RDF xmlns="http://def.isotc211.org/iso19150/-2/2012/base#"
+     xml:base="http://def.isotc211.org/iso19150/-2/2012/base"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:iso19150-2="http://def.isotc211.org/iso19150-2/2012/base#">
+     xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#">
 
 
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -29,7 +29,7 @@
     +
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-    <owl:Ontology rdf:about="http://def.isotc211.org/iso19150-2/2012/base">
+    <owl:Ontology rdf:about="http://def.isotc211.org/iso19150/-2/2012/base">
         <rdfs:label>ISO19150-2, Rules for ontology in OWL</rdfs:label>
         <dc:source>ISO19150-2, Rules for ontology in OWL</dc:source>
         <owl:versionInfo>2014-07-07</owl:versionInfo>
@@ -43,26 +43,26 @@
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    
+
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    
+
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
-    
+
     <owl:AnnotationProperty rdf:about="&iso19150-2;isAbstract">
         <rdfs:domain rdf:resource="&owl;Class"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:AnnotationProperty>
-    
+
     <owl:AnnotationProperty rdf:about="&iso19150-2;associationName">
         <rdfs:domain rdf:resource="&owl;Class"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
-    
+
     <owl:AnnotationProperty rdf:about="&iso19150-2;aggregationType">
         <rdfs:domain rdf:resource="&owl;Class"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:AnnotationProperty>
-    
+
     <owl:AnnotationProperty rdf:about="&iso19150-2;constraint">
         <rdfs:domain rdf:resource="&owl;Class"/>
         <rdfs:range rdf:resource="&xsd;string"/>
@@ -104,5 +104,5 @@
 		</rdfs:domain>
 	</owl:ObjectProperty>
 
-	
+
 </rdf:RDF>
