@@ -1707,15 +1707,13 @@
     <skos:definition>The lifecycle stage of the addressable object is unknown.</skos:definition>
   </iso19160-1:AddressableObjectLifecycleStage>
   <skos:Collection rdf:about="&iso19160-1Code;AddressableObjectLifecycleStageCollection">
-    <skos:prefLabel>AddressableObjectLifecycleStage - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/proposed"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/approved"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/underConstruction"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/exists"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/ceasedToExist"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/unknown"/>
-    </skos:members>
+    <skos:prefLabel xml:lang="en">AddressableObjectLifecycleStage - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/proposed"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/approved"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/underConstruction"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/exists"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/ceasedToExist"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/unknown"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -1787,13 +1785,11 @@
   </iso19160-1:AddressAliasType>
   <skos:Collection rdf:about="&iso19160-1Code;AddressAliasTypeCollection">
     <skos:prefLabel>AddressAliasType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressAliasType/unspecifiedAlias"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressAliasType/classAlias"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressAliasType/colloquialAlias"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressAliasType/lifecycleAlias"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressAliasType/localeAlias"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressAliasType/unspecifiedAlias"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressAliasType/classAlias"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressAliasType/colloquialAlias"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressAliasType/lifecycleAlias"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressAliasType/localeAlias"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++-->
@@ -1886,16 +1882,14 @@
   </iso19160-1:AddressComponentType>
   <skos:Collection rdf:about="&iso19160-1Code;AddressComponentTypeCollection">
     <skos:prefLabel>AddressComponentType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/addressedObjectIdentifier"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/administrativeAreaName"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/countryCode"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/countryName"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/localityName"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/postcode"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/postOfficeName"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/thoroughfareName"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/addressedObjectIdentifier"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/administrativeAreaName"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/countryCode"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/countryName"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/localityName"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/postcode"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/postOfficeName"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/thoroughfareName"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++-->
@@ -1946,15 +1940,13 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
     <skos:definition>The alternative component value is in a different locale.</skos:definition>
   </iso19160-1:AddressComponentValueType>
-  <skos:Collection rdf:about="&iso19160-1Code;AddressComponentValueTypeCollection">
+   <skos:Collection rdf:about="&iso19160-1Code;AddressComponentValueTypeCollection">
     <skos:prefLabel>AddressComponentValueType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentValueType/defaultValue"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentValueType/abbreviatedAlternative"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentValueType/colloquialAlternative"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentValueType/lifecycleAlternative"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentValueType/localeAlternative"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentValueType/defaultValue"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentValueType/abbreviatedAlternative"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentValueType/colloquialAlternative"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentValueType/lifecycleAlternative"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentValueType/localeAlternative"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -2014,14 +2006,12 @@
   </iso19160-1:AddressLifecycleStage>
   <skos:Collection rdf:about="&iso19160-1Code;AddressLifecycleStageCollection">
     <skos:prefLabel>AddressLifecycleStage - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressLifecycleStage/current"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressLifecycleStage/proposed"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressLifecycleStage/rejected"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressLifecycleStage/reserved"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressLifecycleStage/retired"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressLifecycleStage/unknown"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressLifecycleStage/current"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressLifecycleStage/proposed"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressLifecycleStage/rejected"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressLifecycleStage/reserved"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressLifecycleStage/retired"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressLifecycleStage/unknown"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -2079,11 +2069,9 @@
   </iso19160-1:AddressStatus>
   <skos:Collection rdf:about="&iso19160-1Code;AddressStatusCollection">
     <skos:prefLabel>AddressStatus - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressStatus/unknown"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressStatus/official"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressStatus/unofficial"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressStatus/unknown"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressStatus/official"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressStatus/unofficial"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++-->
@@ -2122,11 +2110,9 @@
   </iso19160-1:AddressTypology>
   <skos:Collection rdf:about="&iso19160-1Code;AddressTypologyCollection">
     <skos:prefLabel>AddressTypology - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressTypology/thoroughfare"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressTypology/service"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressTypology/area"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressTypology/thoroughfare"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressTypology/service"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressTypology/area"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
