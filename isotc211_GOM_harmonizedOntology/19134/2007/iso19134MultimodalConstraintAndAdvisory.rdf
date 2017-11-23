@@ -17,7 +17,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19134MultimodalConstraintAndAdvisory.owl -->
+  <!-- File name:         iso19134MultimodalConstraintAndAdvisory.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                   -->
   <!-- Generator version: 2.5                                         -->
   <!-- File date:         18-11-2016                                  -->
@@ -275,18 +275,16 @@
   </iso19134:MM_AdvisoryCategory>
   <skos:Collection rdf:about="&iso19134Code;MM_AdvisoryCategoryCollection">
     <skos:prefLabel>MM_AdvisoryCategory - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/startLocation"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/endLocation"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/viaLocation"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/enterPlace"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/exitPlace"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/takeTransferPoint"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/dropoffTransferPoint"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/landmark"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/crossRoad"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_AdvisoryCategory/byPass"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/startLocation"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/endLocation"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/viaLocation"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/enterPlace"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/exitPlace"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/takeTransferPoint"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/dropoffTransferPoint"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/landmark"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/crossRoad"/>
+    <skos:member rdf:resource="&iso19134Code;MM_AdvisoryCategory/byPass"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++-->
@@ -388,22 +386,20 @@
   </iso19134:MM_TransportationModeType>
   <skos:Collection rdf:about="&iso19134Code;MM_TransportationModeTypeCollection">
     <skos:prefLabel>MM_TransportationModeType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/intracityBus"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/intercityBus"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/shuttleBus"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/rovingBus"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/subway"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/lightrail"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/tram"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/railway"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/highSpeedRailway"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/ferry"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/airway"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/walk"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/bike"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransportationModeType/taxi"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/intracityBus"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/intercityBus"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/shuttleBus"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/rovingBus"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/subway"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/lightrail"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/tram"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/railway"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/highSpeedRailway"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/ferry"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/airway"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/walk"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/bike"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransportationModeType/taxi"/>
   </skos:Collection>
 
 </rdf:RDF>

@@ -18,7 +18,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19134MultimodalCostFunction.owl -->
+  <!-- File name:         iso19134MultimodalCostFunction.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL          -->
   <!-- Generator version: 2.5                                -->
   <!-- File date:         18-11-2016                         -->
@@ -360,15 +360,13 @@
   </iso19134:MN_CostType>
   <skos:Collection rdf:about="&iso19134Code;MN_CostTypeCollection">
     <skos:prefLabel>MN_CostType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostType/waitingTime"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostType/travelTime"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostType/totalCost"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostType/fares"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostType/wayPointsCost"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostType/numberOfTransfers"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostType/distance"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/waitingTime"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/travelTime"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/totalCost"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/fares"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/wayPointsCost"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/numberOfTransfers"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/distance"/>
   </skos:Collection>
 
 </rdf:RDF>

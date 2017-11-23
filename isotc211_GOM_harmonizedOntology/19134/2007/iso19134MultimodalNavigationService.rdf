@@ -22,7 +22,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19134MultimodalNavigationService.owl -->
+  <!-- File name:         iso19134MultimodalNavigationService.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL               -->
   <!-- Generator version: 2.5                                     -->
   <!-- File date:         23-11-2015                              -->
@@ -642,13 +642,11 @@
   </iso19134:MN_CostFunctionCode>
   <skos:Collection rdf:about="&iso19134Code;MN_CostFunctionCodeCollection">
     <skos:prefLabel>MN_CostFunctionCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostFunctionCode/time"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostFunctionCode/distance"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostFunctionCode/numberOfTransfers"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostFunctionCode/totalFare"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_CostFunctionCode/totalCost"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19134Code;MN_CostFunctionCode/time"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostFunctionCode/distance"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostFunctionCode/numberOfTransfers"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostFunctionCode/totalFare"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostFunctionCode/totalCost"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -696,13 +694,11 @@
   </iso19134:MN_RenderingType>
   <skos:Collection rdf:about="&iso19134Code;MN_RenderingTypeCollection">
     <skos:prefLabel>MN_RenderingType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19134Code;MN_RenderingType/map"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RenderingType/voice"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RenderingType/text"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RenderingType/groundLevelView"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RenderingType/Itinerary"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19134Code;MN_RenderingType/map"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RenderingType/voice"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RenderingType/text"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RenderingType/groundLevelView"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RenderingType/Itinerary"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -750,13 +746,11 @@
   </iso19134:MN_RoutePreference>
   <skos:Collection rdf:about="&iso19134Code;MN_RoutePreferenceCollection">
     <skos:prefLabel>MN_RoutePreference - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19134Code;MN_RoutePreference/fastest"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RoutePreference/cheapest"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RoutePreference/minimumTransfers"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RoutePreference/easiest"/>
-      <skos:Concept rdf:resource="&iso19134Code;MN_RoutePreference/scenic"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19134Code;MN_RoutePreference/fastest"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RoutePreference/cheapest"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RoutePreference/minimumTransfers"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RoutePreference/easiest"/>
+    <skos:member rdf:resource="&iso19134Code;MN_RoutePreference/scenic"/>
   </skos:Collection>
 
 </rdf:RDF>

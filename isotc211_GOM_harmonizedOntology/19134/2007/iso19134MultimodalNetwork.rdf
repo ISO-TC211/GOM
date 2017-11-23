@@ -20,7 +20,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19134MultimodalNetwork.owl -->
+  <!-- File name:         iso19134MultimodalNetwork.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL     -->
   <!-- Generator version: 2.5                           -->
   <!-- File date:         18-11-2016                    -->
@@ -468,21 +468,19 @@
   </iso19134:MM_TransferNodeType>
   <skos:Collection rdf:about="&iso19134Code;MM_TransferNodeTypeCollection">
     <skos:prefLabel>MM_TransferNodeType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/busStop"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/taxiStop"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/subwayStation"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/lightrailStation"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/railwayStation"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/interCityBusTerminal"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/platform"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/gate"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/port"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/airport"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/parkAndRide"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/publicParkingLot"/>
-      <skos:Concept rdf:resource="&iso19134Code;MM_TransferNodeType/privateParkingLot"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/busStop"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/taxiStop"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/subwayStation"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/lightrailStation"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/railwayStation"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/interCityBusTerminal"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/platform"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/gate"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/port"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/airport"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/parkAndRide"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/publicParkingLot"/>
+    <skos:member rdf:resource="&iso19134Code;MM_TransferNodeType/privateParkingLot"/>
   </skos:Collection>
 
 </rdf:RDF>
