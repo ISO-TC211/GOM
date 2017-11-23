@@ -33,7 +33,7 @@
     <dct:source>http://standards.iso.org/iso/19157/ed-1/en/</dct:source>
     <owl:versionInfo>2013</owl:versionInfo>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQualityConcepts"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQuality"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQuality_2"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQualityMeasures"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
   </owl:Ontology>

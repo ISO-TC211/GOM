@@ -9,7 +9,7 @@
   <!ENTITY dct "http://purl.org/dc/terms/" >
   <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
   <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
-  <!ENTITY iso19157_1164 "http://def.isotc211.org/iso19157/2013/DataQuality#" >
+  <!ENTITY iso19157_1164 "http://def.isotc211.org/iso19157/2013/DataQuality_2#" >
   <!ENTITY iso19157 "http://def.isotc211.org/iso19157/2013/Metaquality#" >
 
 ]>
@@ -24,7 +24,7 @@
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
-  xmlns:iso19157_1164="http://def.isotc211.org/iso19157/2013/DataQuality#"
+  xmlns:iso19157_1164="http://def.isotc211.org/iso19157/2013/DataQuality_2#"
   xmlns:iso19157="http://def.isotc211.org/iso19157/2013/Metaquality#">
 
   <!--++++++++++++++++++++++++++++++++++++++-->
@@ -34,7 +34,7 @@
     <rdfs:label>ISO 19157:2013 Metaquality</rdfs:label>
     <dct:source>http://standards.iso.org/iso/19157/ed-1/en/</dct:source>
     <owl:versionInfo>2013</owl:versionInfo>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQuality"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQuality_2"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
   </owl:Ontology>
 

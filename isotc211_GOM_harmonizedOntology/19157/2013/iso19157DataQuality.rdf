@@ -13,12 +13,12 @@
   <!ENTITY iso19115-1_1194 "http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#" >
   <!ENTITY iso19157_1165 "http://def.isotc211.org/iso19157/2013/DataQualityResult#" >
   <!ENTITY iso19157_1167 "http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#" >
-  <!ENTITY iso19157 "http://def.isotc211.org/iso19157/2013/DataQuality#" >
+  <!ENTITY iso19157 "http://def.isotc211.org/iso19157/2013/DataQuality_2#" >
 
 ]>
 
-<rdf:RDF xmlns="http://def.isotc211.org/iso19157/2013/DataQuality#"
-  xml:base="http://def.isotc211.org/iso19157/2013/DataQuality"
+<rdf:RDF xmlns="http://def.isotc211.org/iso19157/2013/DataQuality_2#"
+  xml:base="http://def.isotc211.org/iso19157/2013/DataQuality_2"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -31,12 +31,12 @@
   xmlns:iso19115-1_1194="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#"
   xmlns:iso19157_1165="http://def.isotc211.org/iso19157/2013/DataQualityResult#"
   xmlns:iso19157_1167="http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#"
-  xmlns:iso19157="http://def.isotc211.org/iso19157/2013/DataQuality#">
+  xmlns:iso19157="http://def.isotc211.org/iso19157/2013/DataQuality_2#">
 
   <!--+++++++++++++++++++++++++++++++++++++++-->
   <!-- Ontology: ISO 19157:2013 Data quality -->
   <!--+++++++++++++++++++++++++++++++++++++++-->
-  <owl:Ontology rdf:about="http://def.isotc211.org/iso19157/2013/DataQuality">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19157/2013/DataQuality_2">
     <rdfs:label>ISO 19157:2013 Data quality</rdfs:label>
     <dct:source>http://standards.iso.org/iso/19157/ed-1/en/</dct:source>
     <owl:versionInfo>2013</owl:versionInfo>

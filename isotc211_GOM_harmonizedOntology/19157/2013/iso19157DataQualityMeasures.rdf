@@ -873,14 +873,12 @@
   </iso19157:DQM_ValueStructure>
   <skos:Collection rdf:about="&iso19157Code;DQM_ValueStructureCollection">
     <skos:prefLabel>DQM_ValueStructure - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/bag"/>
-      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/set"/>
-      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/sequence"/>
-      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/table"/>
-      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/matrix"/>
-      <skos:Concept rdf:resource="&iso19157Code;DQM_ValueStructure/coverage"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19157Code;DQM_ValueStructure/bag"/>
+    <skos:member rdf:resource="&iso19157Code;DQM_ValueStructure/set"/>
+    <skos:member rdf:resource="&iso19157Code;DQM_ValueStructure/sequence"/>
+    <skos:member rdf:resource="&iso19157Code;DQM_ValueStructure/table"/>
+    <skos:member rdf:resource="&iso19157Code;DQM_ValueStructure/matrix"/>
+    <skos:member rdf:resource="&iso19157Code;DQM_ValueStructure/coverage"/>
   </skos:Collection>
 
 </rdf:RDF>
