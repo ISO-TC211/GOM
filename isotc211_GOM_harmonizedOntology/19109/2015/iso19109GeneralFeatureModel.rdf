@@ -18,7 +18,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19109GeneralFeatureModel.owl -->
+  <!-- File name:         iso19109GeneralFeatureModel.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL       -->
   <!-- Generator version: 2.5                             -->
   <!-- File date:         3-11-2016                       -->
@@ -847,12 +847,10 @@
   </iso19109:ValueAssignmentType>
   <skos:Collection rdf:about="&iso19109Code;ValueAssignmentTypeCollection">
     <skos:prefLabel>ValueAssignmentType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19109Code;ValueAssignmentType/assertion"/>
-      <skos:Concept rdf:resource="&iso19109Code;ValueAssignmentType/derivation"/>
-      <skos:Concept rdf:resource="&iso19109Code;ValueAssignmentType/inheritance"/>
-      <skos:Concept rdf:resource="&iso19109Code;ValueAssignmentType/observation"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19109Code;ValueAssignmentType/assertion"/>
+    <skos:member rdf:resource="&iso19109Code;ValueAssignmentType/derivation"/>
+    <skos:member rdf:resource="&iso19109Code;ValueAssignmentType/inheritance"/>
+    <skos:member rdf:resource="&iso19109Code;ValueAssignmentType/observation"/>
   </skos:Collection>
 
 </rdf:RDF>
