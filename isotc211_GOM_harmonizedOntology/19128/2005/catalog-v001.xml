@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1433269907123" name="http://def.isotc211.org/iso19128/2005/MapServices" uri="ISO19128_2005MapServices.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509645328823" name="http://def.isotc211.org/iso19128/2005/MapServices" uri="ISO19128_2005MapServices.rdf"/>
     </group>
 </catalog>
