@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1445883865557" name="http://def.isotc211.org/iso19135/-1/2015/CoreModel" uri="iso19135-1CoreModel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445883865557" name="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel" uri="iso19135-1ExtendedModel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445883865557" name="http://def.isotc211.org/iso19135/-1/2015/Hierachical" uri="iso19135-1Hierachical.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445883865557" name="http://def.isotc211.org/iso19135/-1/2015/ProceduresForRegistration" uri="ISO19135-1_2015ProceduresForRegistration.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509646882665" name="http://def.isotc211.org/iso19135/-1/2015/CoreModel" uri="iso19135-1CoreModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509646882665" name="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel" uri="iso19135-1ExtendedModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509646882665" name="http://def.isotc211.org/iso19135/-1/2015/Hierachical" uri="iso19135-1Hierachical.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509646882665" name="http://def.isotc211.org/iso19135/-1/2015/ProceduresForRegistration" uri="ISO19135-1_2015ProceduresForRegistration.rdf"/>
     </group>
 </catalog>

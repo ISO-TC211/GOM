@@ -21,7 +21,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19135-1ExtendedModel.owl -->
+  <!-- File name:         iso19135-1ExtendedModel.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL   -->
   <!-- Generator version: 2.5                         -->
   <!-- File date:         14-10-2015                  -->
@@ -1639,14 +1639,12 @@
   </iso19135-1:RE_SimilarityToSource>
   <skos:Collection rdf:about="&iso19135-1Code;RE_SimilarityToSourceCollection">
     <skos:prefLabel>RE_SimilarityToSource - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/identical"/>
-      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/restyled"/>
-      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/contextAdded"/>
-      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/generalization"/>
-      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/specialization"/>
-      <skos:Concept rdf:resource="&iso19135-1Code;RE_SimilarityToSource/unspecified"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19135-1Code;RE_SimilarityToSource/identical"/>
+    <skos:member rdf:resource="&iso19135-1Code;RE_SimilarityToSource/restyled"/>
+    <skos:member rdf:resource="&iso19135-1Code;RE_SimilarityToSource/contextAdded"/>
+    <skos:member rdf:resource="&iso19135-1Code;RE_SimilarityToSource/generalization"/>
+    <skos:member rdf:resource="&iso19135-1Code;RE_SimilarityToSource/specialization"/>
+    <skos:member rdf:resource="&iso19135-1Code;RE_SimilarityToSource/unspecified"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
