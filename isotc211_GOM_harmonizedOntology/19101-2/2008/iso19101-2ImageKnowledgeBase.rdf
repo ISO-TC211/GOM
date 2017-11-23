@@ -18,7 +18,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19101-2ImageKnowledgeBase.owl -->
+  <!-- File name:         iso19101-2ImageKnowledgeBase.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL        -->
   <!-- Generator version: 2.5                              -->
   <!-- File date:         25-5-2015                        -->
@@ -186,11 +186,9 @@
   </iso19101-2:IG_OrganisingPrinciple>
   <skos:Collection rdf:about="&iso19101-2Code;IG_OrganisingPrincipleCollection">
     <skos:prefLabel>IG_OrganisingPrinciple - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19101-2Code;IG_OrganisingPrinciple/dataFusion"/>
-      <skos:Concept rdf:resource="&iso19101-2Code;IG_OrganisingPrinciple/dataMining"/>
-      <skos:Concept rdf:resource="&iso19101-2Code;IG_OrganisingPrinciple/physicalModel"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19101-2Code;IG_OrganisingPrinciple/dataFusion"/>
+    <skos:member rdf:resource="&iso19101-2Code;IG_OrganisingPrinciple/dataMining"/>
+    <skos:member rdf:resource="&iso19101-2Code;IG_OrganisingPrinciple/physicalModel"/>
   </skos:Collection>
 
 </rdf:RDF>
