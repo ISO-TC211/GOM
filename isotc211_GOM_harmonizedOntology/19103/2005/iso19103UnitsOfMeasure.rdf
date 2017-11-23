@@ -699,16 +699,14 @@
   </iso19103:MeasureType>
   <skos:Collection rdf:about="&iso19103Code;MeasureTypeCollection">
     <skos:prefLabel>MeasureType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/area"/>
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/length"/>
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/angle"/>
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/time"/>
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/velocity"/>
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/volume"/>
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/scale"/>
-      <skos:Concept rdf:resource="&iso19103Code;MeasureType/weight"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/area"/>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/length"/>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/angle"/>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/time"/>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/velocity"/>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/volume"/>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/scale"/>
+    <skos:member rdf:resource="&iso19103Code;MeasureType/weight"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19103;StandardUnits">
     <rdfs:label>StandardUnits</rdfs:label>
@@ -770,16 +768,14 @@
   </iso19103:StandardUnits>
   <skos:Collection rdf:about="&iso19103Code;StandardUnitsCollection">
     <skos:prefLabel>StandardUnits - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/meter"/>
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/second"/>
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/radian"/>
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/squareMeter"/>
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/cubicMeter"/>
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/meters/second"/>
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/meter/meter"/>
-      <skos:Concept rdf:resource="&iso19103Code;StandardUnits/kilogram"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/meter"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/second"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/radian"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/squareMeter"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/cubicMeter"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/meters/second"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/meter/meter"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/kilogram"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19103;UnitsList">
     <rdfs:label>UnitsList</rdfs:label>
@@ -812,11 +808,9 @@
   </iso19103:UnitsList>
   <skos:Collection rdf:about="&iso19103Code;UnitsListCollection">
     <skos:prefLabel>UnitsList - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19103Code;UnitsList/foot"/>
-      <skos:Concept rdf:resource="&iso19103Code;UnitsList/squareFoot"/>
-      <skos:Concept rdf:resource="&iso19103Code;UnitsList/cubicYard"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19103Code;UnitsList/foot"/>
+    <skos:member rdf:resource="&iso19103Code;UnitsList/squareFoot"/>
+    <skos:member rdf:resource="&iso19103Code;UnitsList/cubicYard"/>
   </skos:Collection>
 </rdf:RDF>
 
