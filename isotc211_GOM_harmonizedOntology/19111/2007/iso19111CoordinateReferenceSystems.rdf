@@ -413,12 +413,10 @@
   </iso19111:SC_DerivedCRSType>
   <skos:Collection rdf:about="&iso19111Code;SC_DerivedCRSTypeCollection">
     <skos:prefLabel>SC_DerivedCRSType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19111Code;SC_DerivedCRSType/geodetic"/>
-      <skos:Concept rdf:resource="&iso19111Code;SC_DerivedCRSType/vertical"/>
-      <skos:Concept rdf:resource="&iso19111Code;SC_DerivedCRSType/engineering"/>
-      <skos:Concept rdf:resource="&iso19111Code;SC_DerivedCRSType/image"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19111Code;SC_DerivedCRSType/geodetic"/>
+    <skos:member rdf:resource="&iso19111Code;SC_DerivedCRSType/vertical"/>
+    <skos:member rdf:resource="&iso19111Code;SC_DerivedCRSType/engineering"/>
+    <skos:member rdf:resource="&iso19111Code;SC_DerivedCRSType/image"/>
   </skos:Collection>
 </rdf:RDF>
 

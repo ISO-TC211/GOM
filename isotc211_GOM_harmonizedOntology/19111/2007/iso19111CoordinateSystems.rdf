@@ -675,37 +675,35 @@
   </iso19111:CS_AxisDirection>
   <skos:Collection rdf:about="&iso19111Code;CS_AxisDirectionCollection">
     <skos:prefLabel>CS_AxisDirection - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/north"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/northNorthEast"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/northEast"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/eastNorthEast"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/east"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/eastSouthEast"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/southEast"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/southSouthEast"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/south"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/southSouthWest"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/southWest"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/westSouthWest"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/west"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/westNorthWest"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/northWest"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/northNorthWest"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/up"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/down"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/geocentricX"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/geocentricY"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/geocentricZ"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/columnPositive"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/columnNegative"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/rowPositive"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/rowNegative"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/displayRight"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/displayLeft"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/displayUp"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_AxisDirection/displayDown"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/north"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/northNorthEast"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/northEast"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/eastNorthEast"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/east"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/eastSouthEast"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/southEast"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/southSouthEast"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/south"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/southSouthWest"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/southWest"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/westSouthWest"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/west"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/westNorthWest"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/northWest"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/northNorthWest"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/up"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/down"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/geocentricX"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/geocentricY"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/geocentricZ"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/columnPositive"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/columnNegative"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/rowPositive"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/rowNegative"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/displayRight"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/displayLeft"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/displayUp"/>
+    <skos:member rdf:resource="&iso19111Code;CS_AxisDirection/displayDown"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19111;CS_EngineeringCS">
     <rdfs:label>CS_EngineeringCS</rdfs:label>
@@ -779,10 +777,8 @@
   </iso19111:CS_RangeMeaning>
   <skos:Collection rdf:about="&iso19111Code;CS_RangeMeaningCollection">
     <skos:prefLabel>CS_RangeMeaning - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19111Code;CS_RangeMeaning/exact"/>
-      <skos:Concept rdf:resource="&iso19111Code;CS_RangeMeaning/wraparound"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19111Code;CS_RangeMeaning/exact"/>
+    <skos:member rdf:resource="&iso19111Code;CS_RangeMeaning/wraparound"/>
   </skos:Collection>
 </rdf:RDF>
 

@@ -304,11 +304,9 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/ed-2/en/</rdfs:isDefinedBy>
   </iso19111:CD_PixelinCell>
   <skos:Collection rdf:about="&iso19111Code;CD_PixelinCellCollection">
-    <skos:prefLabel>greenwichLongitude - Concepts</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19111Code;CD_PixelinCell/cellCenter"/>
-      <skos:Concept rdf:resource="&iso19111Code;CD_PixelinCell/cellCorner"/>
-    </skos:members>
+    <skos:prefLabel>CD_PixelinCell - Concepts</skos:prefLabel>
+    <skos:member rdf:resource="&iso19111Code;CD_PixelinCell/cellCenter"/>
+    <skos:member rdf:resource="&iso19111Code;CD_PixelinCell/cellCorner"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19111;CD_SecondDefiningParameter">
     <rdfs:label>CD_SecondDefiningParameter</rdfs:label>
