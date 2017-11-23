@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/BasicTypes" uri="iso19103BasicTypes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Collections" uri="iso19103Collections.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/DateAndTime" uri="iso19103DateAndTime.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Derived" uri="iso19103Derived.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Enumerations" uri="iso19103Enumerations.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Implementation" uri="iso19103Implementation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Multiplicities" uri="iso19103Multiplicities.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Names" uri="iso19103Names.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Numerics" uri="iso19103Numerics.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Primitive" uri="iso19103Primitive.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata" uri="iso19103RecordsAndClassMetadata.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/SchemaLanguage" uri="ISO19103_2005SchemaLanguage.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Text" uri="iso19103Text.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/Truth" uri="iso19103Truth.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1425430382401" name="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure" uri="iso19103UnitsOfMeasure.owl"/>
-    </group>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19109/2005/ApplicationSchema" uri="ISO19109_2005ApplicationSchema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel" uri="iso19109GeneralFeatureModel.rdf"/>
+   </group>
 </catalog>
