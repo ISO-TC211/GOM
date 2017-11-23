@@ -19,7 +19,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         ISO19135_2005ProceduresForRegistration.owl -->
+  <!-- File name:         ISO19135_2005ProceduresForRegistration.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                  -->
   <!-- Generator version: 2.4                                        -->
   <!-- File date:         15-4-2015                                  -->
@@ -1917,14 +1917,12 @@
   </iso19135:RE_SimilarityToSource>
   <skos:Collection rdf:about="&iso19135Code;RE_SimilarityToSourceCollection">
     <skos:prefLabel>RE_SimilarityToSource - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19135Code;RE_SimilarityToSource/identical"/>
-      <skos:Concept rdf:resource="&iso19135Code;RE_SimilarityToSource/restyled"/>
-      <skos:Concept rdf:resource="&iso19135Code;RE_SimilarityToSource/contextAdded"/>
-      <skos:Concept rdf:resource="&iso19135Code;RE_SimilarityToSource/generalization"/>
-      <skos:Concept rdf:resource="&iso19135Code;RE_SimilarityToSource/specialization"/>
-      <skos:Concept rdf:resource="&iso19135Code;RE_SimilarityToSource/unspecified"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19135Code;RE_SimilarityToSource/identical"/>
+    <skos:member rdf:resource="&iso19135Code;RE_SimilarityToSource/restyled"/>
+    <skos:member rdf:resource="&iso19135Code;RE_SimilarityToSource/contextAdded"/>
+    <skos:member rdf:resource="&iso19135Code;RE_SimilarityToSource/generalization"/>
+    <skos:member rdf:resource="&iso19135Code;RE_SimilarityToSource/specialization"/>
+    <skos:member rdf:resource="&iso19135Code;RE_SimilarityToSource/unspecified"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
