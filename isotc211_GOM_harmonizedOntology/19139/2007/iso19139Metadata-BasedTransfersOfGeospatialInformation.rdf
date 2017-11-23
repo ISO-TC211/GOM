@@ -21,7 +21,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19139Metadata-BasedTransfersOfGeospatialInformation.owl -->
+  <!-- File name:         iso19139Metadata-BasedTransfersOfGeospatialInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                                  -->
   <!-- Generator version: 2.4                                                        -->
   <!-- File date:         20-4-2015                                                  -->
@@ -364,16 +364,14 @@
   </iso19139:MX_ScopeCode>
   <skos:Collection rdf:about="&iso19139Code;MX_ScopeCodeCollection">
     <skos:prefLabel>MX_ScopeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/initiative"/>
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/stereoMate"/>
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/sensor"/>
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/platformSeries"/>
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/sensorSeries"/>
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/productionSeries"/>
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/transferAggregate"/>
-      <skos:Concept rdf:resource="&iso19139Code;MX_ScopeCode/otherAggregate"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/initiative"/>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/stereoMate"/>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/sensor"/>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/platformSeries"/>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/sensorSeries"/>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/productionSeries"/>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/transferAggregate"/>
+    <skos:member rdf:resource="&iso19139Code;MX_ScopeCode/otherAggregate"/>
   </skos:Collection>
 
 </rdf:RDF>
