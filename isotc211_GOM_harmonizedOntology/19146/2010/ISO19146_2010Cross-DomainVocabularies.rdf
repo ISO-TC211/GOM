@@ -40,9 +40,9 @@
     <rdfs:label>ISO 19146:2010 ISO 19146:2010 Cross-domain vocabularies</rdfs:label>
     <dct:source>http://standards.iso.org/iso/19146/ed-1/en/</dct:source>
     <owl:versionInfo>2010-11-01</owl:versionInfo>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Text"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Text"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/DateAndTime"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/DateAndTime"/-->
     <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
   </owl:Ontology>
 
@@ -524,10 +524,8 @@
   </iso19146:TR_TermSubregisterType>
   <skos:Collection rdf:about="&iso19146Code;TR_TermSubregisterTypeCollection">
     <skos:prefLabel>TR_TermSubregisterType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19146Code;TR_TermSubregisterType/ReferenceVocabulary"/>
-      <skos:Concept rdf:resource="&iso19146Code;TR_TermSubregisterType/OperatingVocabulary"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19146Code;TR_TermSubregisterType/ReferenceVocabulary"/>
+    <skos:member rdf:resource="&iso19146Code;TR_TermSubregisterType/OperatingVocabulary"/>
   </skos:Collection>
 
 </rdf:RDF>
