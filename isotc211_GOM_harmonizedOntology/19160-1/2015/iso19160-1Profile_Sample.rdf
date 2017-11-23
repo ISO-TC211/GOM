@@ -18,7 +18,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19160-1Profile_Sample.owl -->
+  <!-- File name:         iso19160-1Profile_Sample.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL    -->
   <!-- Generator version: 2.5                          -->
   <!-- File date:         2-11-2016                    -->
@@ -465,12 +465,10 @@
   </iso19160-1:AddressableObjectType>
   <skos:Collection rdf:about="&iso19160-1Code;AddressableObjectTypeCollection">
     <skos:prefLabel>AddressableObjectType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/commercialBuilding"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/landParcel"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/postBox"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressableObjectType/residentialDwelling"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectType/commercialBuilding"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectType/landParcel"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectType/postBox"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressableObjectType/residentialDwelling"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++-->
@@ -501,10 +499,8 @@
   </iso19160-1:AddressClass>
   <skos:Collection rdf:about="&iso19160-1Code;AddressClassCollection">
     <skos:prefLabel>AddressClass - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressClass/streetAddress"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressClass/boxAddress"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressClass/streetAddress"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressClass/boxAddress"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -523,8 +519,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19160-1Code;AddressComponentTypeCollection">
     <skos:prefLabel>AddressComponentType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -555,10 +549,8 @@
   </iso19160-1:AddressPositionType>
   <skos:Collection rdf:about="&iso19160-1Code;AddressPositionTypeCollection">
     <skos:prefLabel>AddressPositionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/entrance"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/centroid"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/entrance"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/centroid"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -589,10 +581,8 @@
   </iso19160-1:ReferenceObjectType>
   <skos:Collection rdf:about="&iso19160-1Code;ReferenceObjectTypeCollection">
     <skos:prefLabel>ReferenceObjectType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;ReferenceObjectType/street"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;ReferenceObjectType/placeNameBoundary"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;ReferenceObjectType/street"/>
+    <skos:member rdf:resource="&iso19160-1Code;ReferenceObjectType/placeNameBoundary"/>
   </skos:Collection>
 
 </rdf:RDF>

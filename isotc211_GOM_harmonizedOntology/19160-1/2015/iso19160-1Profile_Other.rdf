@@ -17,7 +17,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19160-1Profile_Other.owl -->
+  <!-- File name:         iso19160-1Profile_Other.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL   -->
   <!-- Generator version: 2.5                         -->
   <!-- File date:         2-11-2016                   -->
@@ -1073,13 +1073,11 @@
   </iso19160-1:AddressPositionType>
   <skos:Collection rdf:about="&iso19160-1Code;AddressPositionTypeCollection">
     <skos:prefLabel>AddressPositionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/buildingAccessPoint"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/buildingCentroid"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/emergencyAccess"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/propertyCentroid"/>
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressPositionType/serviceConnectionPoint"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/buildingAccessPoint"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/buildingCentroid"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/emergencyAccess"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/propertyCentroid"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/serviceConnectionPoint"/>
   </skos:Collection>
 
 </rdf:RDF>

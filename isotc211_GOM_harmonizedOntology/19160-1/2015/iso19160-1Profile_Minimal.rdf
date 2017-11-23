@@ -16,7 +16,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19160-1Profile_Minimal.owl -->
+  <!-- File name:         iso19160-1Profile_Minimal.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL     -->
   <!-- Generator version: 2.5                           -->
   <!-- File date:         2-11-2016                     -->
@@ -100,9 +100,7 @@
   </iso19160-1:AddressComponentType>
   <skos:Collection rdf:about="&iso19160-1Code;AddressComponentTypeCollection">
     <skos:prefLabel>AddressComponentType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19160-1Code;AddressComponentType/addressLine"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19160-1Code;AddressComponentType/addressLine"/>
   </skos:Collection>
 
 </rdf:RDF>

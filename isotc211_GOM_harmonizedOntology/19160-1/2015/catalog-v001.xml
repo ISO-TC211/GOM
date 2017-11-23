@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=file:/C:/isotc211_GOM_harmonizedOntology/19103/2005/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Addressing-ConceptualModel" uri="ISO19160-1_2015Addressing-ConceptualModel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Address" uri="iso19160-1Address.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/ExternalClasses" uri="iso19160-1ExternalClasses.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Profile_Minimal" uri="iso19160-1Profile_Minimal.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Profile_Other" uri="iso19160-1Profile_Other.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Profile_Sample" uri="iso19160-1Profile_Sample.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Addressing-ConceptualModel" uri="ISO19160-1_2015Addressing-ConceptualModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Address" uri="iso19160-1Address.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/ExternalClasses" uri="iso19160-1ExternalClasses.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Profile_Minimal" uri="iso19160-1Profile_Minimal.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Profile_Other" uri="iso19160-1Profile_Other.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427143332899" name="http://def.isotc211.org/iso19160/-1/2015/Profile_Sample" uri="iso19160-1Profile_Sample.rdf"/>
    </group>
 </catalog>

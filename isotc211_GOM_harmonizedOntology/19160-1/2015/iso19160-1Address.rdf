@@ -24,7 +24,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19160-1Address.owl     -->
+  <!-- File name:         iso19160-1Address.rdf     -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         2-11-2016                 -->
@@ -1707,7 +1707,7 @@
     <skos:definition>The lifecycle stage of the addressable object is unknown.</skos:definition>
   </iso19160-1:AddressableObjectLifecycleStage>
   <skos:Collection rdf:about="&iso19160-1Code;AddressableObjectLifecycleStageCollection">
-    <skos:prefLabel xml:lang="en">AddressableObjectLifecycleStage - Collection</skos:prefLabel>
+    <skos:prefLabel>AddressableObjectLifecycleStage - Collection</skos:prefLabel>
     <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/proposed"/>
     <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/approved"/>
     <skos:member rdf:resource="&iso19160-1Code;AddressableObjectLifecycleStage/underConstruction"/>
@@ -1731,8 +1731,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19160-1Code;AddressableObjectTypeCollection">
     <skos:prefLabel>AddressableObjectType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -1807,8 +1805,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19160-1Code;AddressClassCollection">
     <skos:prefLabel>AddressClass - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -1940,7 +1936,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
     <skos:definition>The alternative component value is in a different locale.</skos:definition>
   </iso19160-1:AddressComponentValueType>
-   <skos:Collection rdf:about="&iso19160-1Code;AddressComponentValueTypeCollection">
+  <skos:Collection rdf:about="&iso19160-1Code;AddressComponentValueTypeCollection">
     <skos:prefLabel>AddressComponentValueType - Collection</skos:prefLabel>
     <skos:member rdf:resource="&iso19160-1Code;AddressComponentValueType/defaultValue"/>
     <skos:member rdf:resource="&iso19160-1Code;AddressComponentValueType/abbreviatedAlternative"/>
@@ -2029,8 +2025,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19160-1Code;AddressPositionTypeCollection">
     <skos:prefLabel>AddressPositionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++-->
@@ -2130,8 +2124,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19160-1Code;ReferenceObjectTypeCollection">
     <skos:prefLabel>ReferenceObjectType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
 </rdf:RDF>
