@@ -19,7 +19,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19136BasicTypes.owl    -->
+  <!-- File name:         iso19136BasicTypes.rdf    -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         17-11-2015                -->
@@ -987,13 +987,11 @@
   </iso19136:NilReasonEnumeration>
   <skos:Collection rdf:about="&iso19136Code;NilReasonEnumerationCollection">
     <skos:prefLabel>NilReasonEnumeration - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/inapplicable"/>
-      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/missing"/>
-      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/template"/>
-      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/unknown"/>
-      <skos:Concept rdf:resource="&iso19136Code;NilReasonEnumeration/withheld"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19136Code;NilReasonEnumeration/inapplicable"/>
+    <skos:member rdf:resource="&iso19136Code;NilReasonEnumeration/missing"/>
+    <skos:member rdf:resource="&iso19136Code;NilReasonEnumeration/template"/>
+    <skos:member rdf:resource="&iso19136Code;NilReasonEnumeration/unknown"/>
+    <skos:member rdf:resource="&iso19136Code;NilReasonEnumeration/withheld"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->

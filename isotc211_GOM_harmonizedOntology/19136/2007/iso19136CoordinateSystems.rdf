@@ -16,7 +16,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19136CoordinateSystems.owl -->
+  <!-- File name:         iso19136CoordinateSystems.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL     -->
   <!-- Generator version: 2.5                           -->
   <!-- File date:         17-11-2015                    -->
@@ -83,10 +83,8 @@
   </iso19136:CS_AxisDirection>
   <skos:Collection rdf:about="&iso19136Code;CS_AxisDirectionCollection">
     <skos:prefLabel>CS_AxisDirection - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19136Code;CS_AxisDirection/future"/>
-      <skos:Concept rdf:resource="&iso19136Code;CS_AxisDirection/past"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19136Code;CS_AxisDirection/future"/>
+    <skos:member rdf:resource="&iso19136Code;CS_AxisDirection/past"/>
   </skos:Collection>
 
 </rdf:RDF>
