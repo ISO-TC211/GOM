@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/DPS" uri="iso19131DPS.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/DataProductSpecification" uri="ISO19131_2007DataProductSpecification.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationAdditionalInformation" uri="iso19131SpecificationAdditionalInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationContentAndStructure" uri="iso19131SpecificationContentAndStructure.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationCoveragesAndImages" uri="iso19131SpecificationCoveragesAndImages.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationDataCaptureInformation" uri="iso19131SpecificationDataCaptureInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationDataQualityRequirement" uri="iso19131SpecificationDataQualityRequirement.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation" uri="iso19131SpecificationDeliveryInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationFeatureBasedInformation" uri="iso19131SpecificationFeatureBasedInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationIdentification" uri="iso19131SpecificationIdentification.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationMaintenanceInformation" uri="iso19131SpecificationMaintenanceInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationPortrayalInformation" uri="iso19131SpecificationPortrayalInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationReferenceSystem" uri="iso19131SpecificationReferenceSystem.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1429560770289" name="http://def.isotc211.org/iso19131/2007/SpecificationScopes" uri="iso19131SpecificationScopes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/DPS" uri="iso19131DPS.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/DataProductSpecification" uri="ISO19131_2007DataProductSpecification.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationAdditionalInformation" uri="iso19131SpecificationAdditionalInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationContentAndStructure" uri="iso19131SpecificationContentAndStructure.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationCoveragesAndImages" uri="iso19131SpecificationCoveragesAndImages.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationDataCaptureInformation" uri="iso19131SpecificationDataCaptureInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationDataQualityRequirement" uri="iso19131SpecificationDataQualityRequirement.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation" uri="iso19131SpecificationDeliveryInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationFeatureBasedInformation" uri="iso19131SpecificationFeatureBasedInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationIdentification" uri="iso19131SpecificationIdentification.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationMaintenanceInformation" uri="iso19131SpecificationMaintenanceInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationPortrayalInformation" uri="iso19131SpecificationPortrayalInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationReferenceSystem" uri="iso19131SpecificationReferenceSystem.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645708665" name="http://def.isotc211.org/iso19131/2007/SpecificationScopes" uri="iso19131SpecificationScopes.rdf"/>
     </group>
 </catalog>
