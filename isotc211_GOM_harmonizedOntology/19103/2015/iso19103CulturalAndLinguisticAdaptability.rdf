@@ -16,7 +16,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19103CulturalAndLinguisticAdaptability.owl -->
+  <!-- File name:         iso19103CulturalAndLinguisticAdaptability.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                     -->
   <!-- Generator version: 2.5                                           -->
   <!-- File date:         8-10-2015                                     -->
@@ -95,8 +95,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19103Code;LanguageCodeCollection">
     <skos:prefLabel>LanguageCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
 </rdf:RDF>

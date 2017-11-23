@@ -15,7 +15,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19103Text.owl          -->
+  <!-- File name:         iso19103Text.rdf          -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         8-10-2015                 -->
@@ -188,11 +188,9 @@
   </iso19103:CharacterSetCode>
   <skos:Collection rdf:about="&iso19103Code;CharacterSetCodeCollection">
     <skos:prefLabel>CharacterSetCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19103Code;CharacterSetCode/ISO10646-2"/>
-      <skos:Concept rdf:resource="&iso19103Code;CharacterSetCode/ISO8859"/>
-      <skos:Concept rdf:resource="&iso19103Code;CharacterSetCode/ISO10646-1"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19103Code;CharacterSetCode/ISO10646-2"/>
+    <skos:member rdf:resource="&iso19103Code;CharacterSetCode/ISO8859"/>
+    <skos:member rdf:resource="&iso19103Code;CharacterSetCode/ISO10646-1"/>
   </skos:Collection>
 
 </rdf:RDF>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=file:/C:/isotc211_GOM_harmonizedOntology/19103/2015/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/ConceptualSchemaLanguage" uri="ISO19103_2015ConceptualSchemaLanguage.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/PrimitiveTypes" uri="iso19103PrimitiveTypes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/DateAndTime" uri="iso19103DateAndTime.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Numerics" uri="iso19103Numerics.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Text" uri="iso19103Text.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Truth" uri="iso19103Truth.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Collections" uri="iso19103Collections.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/EnumeratedTypes" uri="iso19103EnumeratedTypes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/NameTypes" uri="iso19103NameTypes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/AnyType" uri="iso19103AnyType.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/RecordTypes" uri="iso19103RecordTypes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/CulturalAndLinguisticAdaptability" uri="iso19103CulturalAndLinguisticAdaptability.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/WebEnvironment" uri="iso19103WebEnvironment.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/MeasureTypes" uri="iso19103MeasureTypes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/ConceptualSchemaLanguage" uri="ISO19103_2015ConceptualSchemaLanguage.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/PrimitiveTypes" uri="iso19103PrimitiveTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/DateAndTime" uri="iso19103DateAndTime.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Numerics" uri="iso19103Numerics.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Text" uri="iso19103Text.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Truth" uri="iso19103Truth.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/Collections" uri="iso19103Collections.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/EnumeratedTypes" uri="iso19103EnumeratedTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/NameTypes" uri="iso19103NameTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/AnyType" uri="iso19103AnyType.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/RecordTypes" uri="iso19103RecordTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/CulturalAndLinguisticAdaptability" uri="iso19103CulturalAndLinguisticAdaptability.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/WebEnvironment" uri="iso19103WebEnvironment.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1427136966645" name="http://def.isotc211.org/iso19103/2015/MeasureTypes" uri="iso19103MeasureTypes.rdf"/>
     </group>
 </catalog>
