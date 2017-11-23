@@ -30,7 +30,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19130SensorData.owl    -->
+  <!-- File name:         iso19130SensorData.rdf    -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         8-3-2017                  -->
@@ -3818,14 +3818,12 @@ then self.detector-.gt.size.eq.1
   </iso19130:SD_RotationSequence>
   <skos:Collection rdf:about="&iso19130Code;SD_RotationSequenceCollection">
     <skos:prefLabel>SD_RotationSequence - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19130Code;SD_RotationSequence/XYZ"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_RotationSequence/XZY"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_RotationSequence/YXZ"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_RotationSequence/YZX"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_RotationSequence/ZXY"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_RotationSequence/ZYX"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19130Code;SD_RotationSequence/XYZ"/>
+    <skos:member rdf:resource="&iso19130Code;SD_RotationSequence/XZY"/>
+    <skos:member rdf:resource="&iso19130Code;SD_RotationSequence/YXZ"/>
+    <skos:member rdf:resource="&iso19130Code;SD_RotationSequence/YZX"/>
+    <skos:member rdf:resource="&iso19130Code;SD_RotationSequence/ZXY"/>
+    <skos:member rdf:resource="&iso19130Code;SD_RotationSequence/ZYX"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -3855,10 +3853,8 @@ then self.detector-.gt.size.eq.1
   </iso19130:SD_SAROrientationCode>
   <skos:Collection rdf:about="&iso19130Code;SD_SAROrientationCodeCollection">
     <skos:prefLabel>SD_SAROrientationCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19130Code;SD_SAROrientationCode/left"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_SAROrientationCode/right"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19130Code;SD_SAROrientationCode/left"/>
+    <skos:member rdf:resource="&iso19130Code;SD_SAROrientationCode/right"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
@@ -3917,12 +3913,10 @@ then self.detector-.gt.size.eq.1
   </iso19130:SD_ShapeCode>
   <skos:Collection rdf:about="&iso19130Code;SD_ShapeCodeCollection">
     <skos:prefLabel>SD_ShapeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19130Code;SD_ShapeCode/square"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_ShapeCode/circular"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_ShapeCode/rectangular"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_ShapeCode/elliptical"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19130Code;SD_ShapeCode/square"/>
+    <skos:member rdf:resource="&iso19130Code;SD_ShapeCode/circular"/>
+    <skos:member rdf:resource="&iso19130Code;SD_ShapeCode/rectangular"/>
+    <skos:member rdf:resource="&iso19130Code;SD_ShapeCode/elliptical"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->
@@ -3964,12 +3958,10 @@ then self.detector-.gt.size.eq.1
   </iso19130:SD_SurfaceCode>
   <skos:Collection rdf:about="&iso19130Code;SD_SurfaceCodeCollection">
     <skos:prefLabel>SD_SurfaceCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19130Code;SD_SurfaceCode/ground"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_SurfaceCode/inflatedEllipsoid"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_SurfaceCode/ortho"/>
-      <skos:Concept rdf:resource="&iso19130Code;SD_SurfaceCode/slant"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19130Code;SD_SurfaceCode/ground"/>
+    <skos:member rdf:resource="&iso19130Code;SD_SurfaceCode/inflatedEllipsoid"/>
+    <skos:member rdf:resource="&iso19130Code;SD_SurfaceCode/ortho"/>
+    <skos:member rdf:resource="&iso19130Code;SD_SurfaceCode/slant"/>
   </skos:Collection>
 
 </rdf:RDF>
