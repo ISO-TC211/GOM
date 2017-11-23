@@ -20,7 +20,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19141PrismGeometry.owl -->
+  <!-- File name:         iso19141PrismGeometry.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         17-11-2015                -->
@@ -406,22 +406,20 @@
   </iso19141:MF_GlobalAxisName>
   <skos:Collection rdf:about="&iso19141Code;MF_GlobalAxisNameCollection">
     <skos:prefLabel>MF_GlobalAxisName - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/tangent"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/backtangent"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/normal"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/bearing"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/up"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/down"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/right"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/left"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/axis1"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/negativeAxis1"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/axis2"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/negativeAxis2"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/axis3"/>
-      <skos:Concept rdf:resource="&iso19141Code;MF_GlobalAxisName/negativeAxis3"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/tangent"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/backtangent"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/normal"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/bearing"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/up"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/down"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/right"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/left"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/axis1"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/negativeAxis1"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/axis2"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/negativeAxis2"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/axis3"/>
+    <skos:member rdf:resource="&iso19141Code;MF_GlobalAxisName/negativeAxis3"/>
   </skos:Collection>
 
 </rdf:RDF>
