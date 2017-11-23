@@ -16,7 +16,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19144-2LC_ElementCharacteristics.owl -->
+  <!-- File name:         iso19144-2LC_ElementCharacteristics.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL               -->
   <!-- Generator version: 2.5                                     -->
   <!-- File date:         12-4-2016                               -->
@@ -1155,8 +1155,8 @@
   <!--++++++++++++++++++++++++++++++++++++++++++++-->
   <!-- ObjectProperty: LC_ConstructionStatus.type -->
   <!--++++++++++++++++++++++++++++++++++++++++++++-->
-  <owl:ObjectProperty rdf:about="&iso19144-2;LC_ConstructionStatus.age">
-    <rdfs:label>age</rdfs:label>
+  <owl:ObjectProperty rdf:about="&iso19144-2;LC_ConstructionStatus.type">
+    <rdfs:label>type</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:domain rdf:resource="&iso19144-2;LC_ConstructionStatus"/>
     <rdfs:range rdf:resource="&iso19144-2;LC_ConstructionStatusType"/>
@@ -1557,8 +1557,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_AquacultureTypeCollection">
     <skos:prefLabel>LC_AquacultureType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++-->
@@ -1576,8 +1574,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ArtificialDamageTypeCollection">
     <skos:prefLabel>LC_AquacultureType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -1607,10 +1603,8 @@
   </iso19144-2:LC_ArtificialityType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ArtificialityTypeCollection">
     <skos:prefLabel>LC_ArtificialityType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ArtificialityType/natural"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ArtificialityType/artificial"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ArtificialityType/natural"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ArtificialityType/artificial"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++-->
@@ -1646,11 +1640,9 @@
   </iso19144-2:LC_ConstructionStatusType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ConstructionStatusTypeCollection">
     <skos:prefLabel>LC_ConstructionStatusType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/finished"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/in_progress"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/abandoned"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/finished"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/in_progress"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ConstructionStatusType/abandoned"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++++-->
@@ -1680,10 +1672,8 @@
   </iso19144-2:LC_CropFertilizationType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_CropFertilizationTypeCollection">
     <skos:prefLabel>LC_CropFertilizationType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_CropFertilizationType/organic"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_CropFertilizationType/inorganic"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_CropFertilizationType/organic"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_CropFertilizationType/inorganic"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -1699,10 +1689,8 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
     <dct:isFormatOf rdf:resource="&iso19144-2;LC_GrazingAnimalType"/>
   </skos:ConceptScheme>
-  <skos:Collection rdf:about="&iso19144-2Code;LC_GrazingAnimalType">
-    <skos:prefLabel>LC_AquacultureType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_GrazingAnimalTypeCollection">
+    <skos:prefLabel>LC_GrazingAnimalType - Collection</skos:prefLabel>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++++++-->
@@ -1732,10 +1720,8 @@
   </iso19144-2:LC_GroupOfPlantSpeciesType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_GroupOfPlantSpeciesTypeCollection">
     <skos:prefLabel>LC_GroupOfPlantSpeciesType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType/statisticallyDerivedPlantGroup"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType/NonStatisticallyDerivedPlantGroup"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType/statisticallyDerivedPlantGroup"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_GroupOfPlantSpeciesType/NonStatisticallyDerivedPlantGroup"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++++-->
@@ -1753,8 +1739,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_GrowthFormIllnessTypeCollection">
     <skos:prefLabel>LC_GrowthFormIllnessType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++-->
@@ -1772,8 +1756,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_IceTypeCollection">
     <skos:prefLabel>LC_IceType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
@@ -1809,11 +1791,9 @@
   </iso19144-2:LC_IrrigationType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_IrrigationTypeCollection">
     <skos:prefLabel>LC_IrrigationType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_IrrigationType/surface"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_IrrigationType/sprinkler"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_IrrigationType/drip"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_IrrigationType/surface"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_IrrigationType/sprinkler"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_IrrigationType/drip"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++-->
@@ -1849,11 +1829,9 @@
   </iso19144-2:LC_MechanicalErosionControlType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_MechanicalErosionControlTypeCollection">
     <skos:prefLabel>LC_MechanicalErosionControlType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/contourPloughing"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/terracing"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/windBreak"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/contourPloughing"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/terracing"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_MechanicalErosionControlType/windBreak"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -1889,11 +1867,9 @@
   </iso19144-2:LC_NutrientLevel>
   <skos:Collection rdf:about="&iso19144-2Code;LC_NutrientLevelCollection">
     <skos:prefLabel>LC_NutrientLevel - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_NutrientLevel/oligotrophic"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_NutrientLevel/mesotrophic"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_NutrientLevel/eutrophic"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_NutrientLevel/oligotrophic"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_NutrientLevel/mesotrophic"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_NutrientLevel/eutrophic"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -1923,10 +1899,8 @@
   </iso19144-2:LC_PestControlType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_PestControlTypeCollection">
     <skos:prefLabel>LC_PestControlType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PestControlType/organic"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PestControlType/inorganic"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PestControlType/organic"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PestControlType/inorganic"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++++++-->
@@ -1956,10 +1930,8 @@
   </iso19144-2:LC_PlantSpreadingGeometryType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_PlantSpreadingGeometryTypeCollection">
     <skos:prefLabel>LC_PlantSpreadingGeometryType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType/regular"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType/irregular"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType/regular"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PlantSpreadingGeometryType/irregular"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -1995,11 +1967,9 @@
   </iso19144-2:LC_PloughingType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_PloughingTypeCollection">
     <skos:prefLabel>LC_PloughingType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PloughingType/manual"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PloughingType/manual.sl.animal"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PloughingType/mechanical"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PloughingType/manual"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PloughingType/manual.sl.animal"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PloughingType/mechanical"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++-->
@@ -2029,10 +1999,8 @@
   </iso19144-2:LC_SinglePlantSpeciesType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_SinglePlantSpeciesTypeCollection">
     <skos:prefLabel>LC_SinglePlantSpeciesType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType/dominant"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType/mostFrequent"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType/dominant"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_SinglePlantSpeciesType/mostFrequent"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -2050,8 +2018,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_SnowTypeCollection">
     <skos:prefLabel>LC_SnowType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->
@@ -2069,8 +2035,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_SpeciesNameCollection">
     <skos:prefLabel>LC_SpeciesName - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -2112,12 +2076,10 @@
   </iso19144-2:LC_TreeAreaManagementPracticesType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_TreeAreaManagementPracticesTypeCollection">
     <skos:prefLabel>LC_TreeAreaManagementPracticesType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/evenAgedManagement"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/clearcutting"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/seedTreeHarvesting"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/unevenAgedManagement"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/evenAgedManagement"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/clearcutting"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/seedTreeHarvesting"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_TreeAreaManagementPracticesType/unevenAgedManagement"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++-->
@@ -2133,10 +2095,8 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
     <dct:isFormatOf rdf:resource="&iso19144-2;LC_VegetationDamageType"/>
   </skos:ConceptScheme>
-  <skos:Collection rdf:about="&iso19144-2Code;LC_VegetationDamageType">
+  <skos:Collection rdf:about="&iso19144-2Code;LC_VegetationDamageTypeCollection">
     <skos:prefLabel>LC_VegetationDamageType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -2178,12 +2138,10 @@
   </iso19144-2:LC_WaterSalinityType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_WaterSalinityTypeCollection">
     <skos:prefLabel>LC_WaterSalinityType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/fresh"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/brackish"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/saline"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterSalinityType/brine"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterSalinityType/fresh"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterSalinityType/brackish"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterSalinityType/saline"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterSalinityType/brine"/>
   </skos:Collection>
 
 </rdf:RDF>

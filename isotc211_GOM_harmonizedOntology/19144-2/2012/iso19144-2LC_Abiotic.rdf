@@ -18,7 +18,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19144-2LC_Abiotic.owl  -->
+  <!-- File name:         iso19144-2LC_Abiotic.rdf  -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         12-4-2016                 -->
@@ -1144,11 +1144,9 @@
   </iso19144-2:LC_CoarseMineralFragmentType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_CoarseMineralFragmentTypeCollection">
     <skos:prefLabel>LC_CoarseMineralFragmentType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_CoarseMineralFragmentType/gravel"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_CoarseMineralFragmentType/stone"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_CoarseMineralFragmentType/boulder"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_CoarseMineralFragmentType/gravel"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_CoarseMineralFragmentType/stone"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_CoarseMineralFragmentType/boulder"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++++++-->
@@ -1166,8 +1164,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_CommunicationsAndOtherTypeCollection">
     <skos:prefLabel>LC_CommunicationsAndOtherType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++-->
@@ -1185,8 +1181,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ConstructionMaterialCollection">
     <skos:prefLabel>LC_ConstructionMaterial - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++-->
@@ -1204,8 +1198,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_DumpSiteTypeCollection">
     <skos:prefLabel>LC_DumpSiteType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -1241,11 +1233,9 @@
   </iso19144-2:LC_DuneType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_DuneTypeCollection">
     <skos:prefLabel>LC_DuneType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_DuneType/barchan"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_DuneType/parabolic"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_DuneType/longitudinal"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_DuneType/barchan"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_DuneType/parabolic"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_DuneType/longitudinal"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
@@ -1275,10 +1265,8 @@
   </iso19144-2:LC_ExtractionType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ExtractionTypeCollection">
     <skos:prefLabel>LC_ExtractionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ExtractionType/surface"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ExtractionType/substrate"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ExtractionType/surface"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ExtractionType/substrate"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->
@@ -1314,11 +1302,9 @@
   </iso19144-2:LC_HardpanType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_HardpanTypeCollection">
     <skos:prefLabel>LC_HardpanType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_HardpanType/ironpan.sl.laterite"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_HardpanType/petrocalcic"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_HardpanType/petrogypsic"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_HardpanType/ironpan.sl.laterite"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_HardpanType/petrocalcic"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_HardpanType/petrogypsic"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->
@@ -1348,10 +1334,8 @@
   </iso19144-2:LC_IceDynamics>
   <skos:Collection rdf:about="&iso19144-2Code;LC_IceDynamicsCollection">
     <skos:prefLabel>LC_IceDynamics - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_IceDynamics/moving"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_IceDynamics/standing"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_IceDynamics/moving"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_IceDynamics/standing"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++-->
@@ -1393,12 +1377,10 @@
   </iso19144-2:LC_InorganicDepositType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_InorganicDepositTypeCollection">
     <skos:prefLabel>LC_InorganicDepositType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_InorganicDepositType/salt"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_InorganicDepositType/soda"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_InorganicDepositType/lime"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_InorganicDepositType/gypsum"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_InorganicDepositType/salt"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_InorganicDepositType/soda"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_InorganicDepositType/lime"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_InorganicDepositType/gypsum"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -1428,10 +1410,8 @@
   </iso19144-2:LC_MacropatternType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_MacropatternTypeCollection">
     <skos:prefLabel>LC_MacropatternType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_MacropatternType/gilgai"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_MacropatternType/termiteMounds"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_MacropatternType/gilgai"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_MacropatternType/termiteMounds"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -1467,9 +1447,7 @@
   </iso19144-2:LC_OrganicDepositType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_OrganicDepositTypeCollection">
     <skos:prefLabel>LC_OrganicDepositType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OrganicDepositType/peat"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OrganicDepositType/peat"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -1497,12 +1475,10 @@
     <skos:inScheme rdf:resource="&iso19144-2Code;LC_PeatType"/>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
   </iso19144-2:LC_PeatType>
-  <skos:Collection rdf:about="&iso19144-2Code;LC_MacropatternTypeCollection">
-    <skos:prefLabel>LC_MacropatternType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_MacropatternType/ombrotrophic"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_MacropatternType/minerotrophic"/>
-    </skos:members>
+  <skos:Collection rdf:about="&iso19144-2Code;LC_PeatTypeCollection">
+    <skos:prefLabel>LC_PeatType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PeatType/ombrotrophic"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PeatType/minerotrophic"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++-->
@@ -1544,12 +1520,10 @@
   </iso19144-2:LC_PeriodVariationType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_PeriodVariationTypeCollection">
     <skos:prefLabel>LC_PeriodVariationType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PeriodVariationType/atmospheric"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PeriodVariationType/daily"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PeriodVariationType/tidal"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_PeriodVariationType/seasonal"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PeriodVariationType/atmospheric"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PeriodVariationType/daily"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PeriodVariationType/tidal"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_PeriodVariationType/seasonal"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
@@ -1567,8 +1541,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_PermafrostTypeCollection">
     <skos:prefLabel>LC_RailwaLC_PermafrostTypeyType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->
@@ -1586,8 +1558,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_RailwayTypeCollection">
     <skos:prefLabel>LC_RailwayType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -1605,8 +1575,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_RoadTypeCollection">
     <skos:prefLabel>LC_RoadType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -1636,10 +1604,8 @@
   </iso19144-2:LC_WaterBodyDynamics>
   <skos:Collection rdf:about="&iso19144-2Code;LC_WaterBodyDynamicsCollection">
     <skos:prefLabel>LC_WaterBodyDynamics - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterBodyDynamics/flowing"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterBodyDynamics/standing"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterBodyDynamics/flowing"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterBodyDynamics/standing"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -1669,10 +1635,8 @@
   </iso19144-2:LC_WaterBodyPositions>
   <skos:Collection rdf:about="&iso19144-2Code;LC_WaterBodyPositionsCollection">
     <skos:prefLabel>LC_WaterBodyPositions - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterBodyPositions/aboveSurface"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_WaterBodyPositions/belowSurface"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterBodyPositions/aboveSurface"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_WaterBodyPositions/belowSurface"/>
   </skos:Collection>
 
 </rdf:RDF>

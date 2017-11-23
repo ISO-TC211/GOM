@@ -17,7 +17,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19144-2LC_LandCoverClassStructure.owl -->
+  <!-- File name:         iso19144-2LC_LandCoverClassStructure.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                -->
   <!-- Generator version: 2.5                                      -->
   <!-- File date:         12-4-2016                                -->
@@ -575,12 +575,10 @@
   </iso19144-2:LC_ElementPresenceType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ElementPresenceTypeCollection">
     <skos:prefLabel>LC_ElementPresenceType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ElementPresenceType/fixed"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ElementPresenceType/exclusive"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ElementPresenceType/conditional"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ElementPresenceType/sequentialTemporalRelationship"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ElementPresenceType/fixed"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ElementPresenceType/exclusive"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ElementPresenceType/conditional"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ElementPresenceType/sequentialTemporalRelationship"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++-->
@@ -652,17 +650,15 @@
   </iso19144-2:LC_OnTopType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_OnTopTypeCollection">
     <skos:prefLabel>LC_OnTopType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/baseline"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/previousE1"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/previousE2"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/previousE3"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/previousAll"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/stratum1E1"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/stratum1All"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/stratum2E1"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_OnTopType/stratum2All"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/baseline"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/previousE1"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/previousE2"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/previousE3"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/previousAll"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/stratum1E1"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/stratum1All"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/stratum2E1"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_OnTopType/stratum2All"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -692,10 +688,8 @@
   </iso19144-2:LC_SequentialTemporalRelationshipType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_SequentialTemporalRelationshipTypeCollection">
     <skos:prefLabel>LC_SequentialTemporalRelationshipType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_SequentialTemporalRelationshipType/sequentialSameYear"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_SequentialTemporalRelationshipType/sequentialOtherYear"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_SequentialTemporalRelationshipType/sequentialSameYear"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_SequentialTemporalRelationshipType/sequentialOtherYear"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++-->
@@ -725,10 +719,8 @@
   </iso19144-2:LC_StratumPresenceType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_StratumPresenceTypeCollection">
     <skos:prefLabel>LC_StratumPresenceType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_StratumPresenceType/fixed"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_StratumPresenceType/conditional"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_StratumPresenceType/fixed"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_StratumPresenceType/conditional"/>
   </skos:Collection>
 
 </rdf:RDF>

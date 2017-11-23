@@ -18,7 +18,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19144-2LC_Vegetation.owl -->
+  <!-- File name:         iso19144-2LC_Vegetation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL   -->
   <!-- Generator version: 2.5                         -->
   <!-- File date:         12-4-2016                   -->
@@ -742,10 +742,8 @@
   </iso19144-2:LC_AlgaeStatus>
   <skos:Collection rdf:about="&iso19144-2Code;LC_AlgaeStatusCollection">
     <skos:prefLabel>LC_AlgaeStatus - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_AlgaeStatus/floating"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_AlgaeStatus/submerged"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_AlgaeStatus/floating"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_AlgaeStatus/submerged"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
@@ -763,8 +761,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_BroadLeafShapeCollection">
     <skos:prefLabel>LC_BroadLeafShape - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -782,8 +778,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ForbsLeafTypeCollection">
     <skos:prefLabel>LC_ForbsLeafType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->
@@ -813,10 +807,8 @@
   </iso19144-2:LC_ForbsStatus>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ForbsStatusCollection">
     <skos:prefLabel>LC_ForbsStatus - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ForbsStatus/rooted"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ForbsStatus/nonrooted"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ForbsStatus/rooted"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ForbsStatus/nonrooted"/>
   </skos:Collection>
 
 </rdf:RDF>

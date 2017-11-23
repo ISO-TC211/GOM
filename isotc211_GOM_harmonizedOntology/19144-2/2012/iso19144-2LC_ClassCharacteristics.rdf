@@ -17,7 +17,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19144-2LC_ClassCharacteristics.owl -->
+  <!-- File name:         iso19144-2LC_ClassCharacteristics.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL             -->
   <!-- Generator version: 2.5                                   -->
   <!-- File date:         12-4-2016                             -->
@@ -385,13 +385,11 @@
   </iso19144-2:LC_ErosionType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_ErosionTypeCollection">
     <skos:prefLabel>LC_ErosionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionSheet"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionRill"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionGully"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/gravityErosion"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_ErosionType/iceErosion"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionSheet"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionRill"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ErosionType/waterErosionGully"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ErosionType/gravityErosion"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_ErosionType/iceErosion"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++-->
@@ -433,12 +431,10 @@
   </iso19144-2:LC_GeoType>
   <skos:Collection rdf:about="&iso19144-2Code;LC_GeoTypeCollection">
     <skos:prefLabel>LC_GeoType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/beach"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/bay"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/estuary"/>
-      <skos:Concept rdf:resource="&iso19144-2Code;LC_GeoType/shore"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-2Code;LC_GeoType/beach"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_GeoType/bay"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_GeoType/estuary"/>
+    <skos:member rdf:resource="&iso19144-2Code;LC_GeoType/shore"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++-->
@@ -456,8 +452,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_LandformTypeCollection">
     <skos:prefLabel>LC_LandformType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++-->
@@ -475,8 +469,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_RockAgeTypeCollection">
     <skos:prefLabel>LC_RockAgeType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -494,8 +486,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_RockTypeCollection">
     <skos:prefLabel>LC_RockType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -513,8 +503,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_SedimentationTypeCollection">
     <skos:prefLabel>LC_SedimentationType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -532,8 +520,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_SlopeExpositionCollection">
     <skos:prefLabel>LC_SlopeExposition - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -551,8 +537,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19144-2Code;LC_SoilTypeCollection">
     <skos:prefLabel>LC_SoilType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
 </rdf:RDF>

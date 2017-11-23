@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LCML" uri="ISO19144-2_2012LCML.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LCML_Examples" uri="iso19144-2LCML_Examples.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LC_Abiotic" uri="iso19144-2LC_Abiotic.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics" uri="iso19144-2LC_ClassCharacteristics.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics" uri="iso19144-2LC_ElementCharacteristics.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LC_LandCoverClassStructure" uri="iso19144-2LC_LandCoverClassStructure.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LC_Registers" uri="iso19144-2LC_Registers.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes" uri="iso19144-2LC_ValueObjectTypes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/LC_Vegetation" uri="iso19144-2LC_Vegetation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463614238872" name="http://def.isotc211.org/iso19144/-2/2012/RelationshipToGFM" uri="iso19144-2RelationshipToGFM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LCML" uri="ISO19144-2_2012LCML.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LCML_Examples" uri="iso19144-2LCML_Examples.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LC_Abiotic" uri="iso19144-2LC_Abiotic.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LC_ClassCharacteristics" uri="iso19144-2LC_ClassCharacteristics.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LC_ElementCharacteristics" uri="iso19144-2LC_ElementCharacteristics.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LC_LandCoverClassStructure" uri="iso19144-2LC_LandCoverClassStructure.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LC_Registers" uri="iso19144-2LC_Registers.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LC_ValueObjectTypes" uri="iso19144-2LC_ValueObjectTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/LC_Vegetation" uri="iso19144-2LC_Vegetation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510082038329" name="http://def.isotc211.org/iso19144/-2/2012/RelationshipToGFM" uri="iso19144-2RelationshipToGFM.rdf"/>
     </group>
 </catalog>
