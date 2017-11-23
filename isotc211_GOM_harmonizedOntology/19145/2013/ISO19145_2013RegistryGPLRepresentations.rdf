@@ -21,7 +21,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         ISO19145_2013RegistryGPLRepresentations.owl -->
+  <!-- File name:         ISO19145_2013RegistryGPLRepresentations.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                   -->
   <!-- Generator version: 2.4                                         -->
   <!-- File date:         14-4-2015                                   -->
@@ -716,10 +716,8 @@
   </iso19145:GPLR_ConversionType>
   <skos:Collection rdf:about="&iso19145Code;GPLR_ConversionTypeCollection">
     <skos:prefLabel>GPLR_ConversionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19145Code;GPLR_ConversionType/static"/>
-      <skos:Concept rdf:resource="&iso19145Code;GPLR_ConversionType/dynamic"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19145Code;GPLR_ConversionType/static"/>
+    <skos:member rdf:resource="&iso19145Code;GPLR_ConversionType/dynamic"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++-->
@@ -755,11 +753,9 @@
   </iso19145:GPLR_RepresentationType>
   <skos:Collection rdf:about="&iso19145Code;GPLR_RepresentationTypeCollection">
     <skos:prefLabel>GPLR_RepresentationType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19145Code;GPLR_RepresentationType/text"/>
-      <skos:Concept rdf:resource="&iso19145Code;GPLR_RepresentationType/binary"/>
-      <skos:Concept rdf:resource="&iso19145Code;GPLR_RepresentationType/XML"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19145Code;GPLR_RepresentationType/text"/>
+    <skos:member rdf:resource="&iso19145Code;GPLR_RepresentationType/binary"/>
+    <skos:member rdf:resource="&iso19145Code;GPLR_RepresentationType/XML"/>
   </skos:Collection>
 
 </rdf:RDF>
