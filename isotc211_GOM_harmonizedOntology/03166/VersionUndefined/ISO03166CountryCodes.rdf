@@ -15,7 +15,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         ISO03166CountryCodes.owl  -->
+  <!-- File name:         ISO03166CountryCodes.rdf  -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.4                       -->
   <!-- File date:         15-4-2015                 -->
@@ -59,8 +59,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso03166Code;CountryCodeCollection">
     <skos:prefLabel>CountryCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
 </rdf:RDF>
