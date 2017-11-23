@@ -18,7 +18,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19118InstanceModel.owl -->
+  <!-- File name:         iso19118InstanceModel.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.4                       -->
   <!-- File date:         20-4-2015                 -->
@@ -528,12 +528,10 @@
   </iso19118:EM_CodeListValueFormat>
   <skos:Collection rdf:about="&iso19118Code;EM_CodeListValueFormatCollection">
     <skos:prefLabel>EM_CodeListValueFormat - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19118Code;EM_CodeListValueFormat/code"/>
-      <skos:Concept rdf:resource="&iso19118Code;EM_CodeListValueFormat/value"/>
-      <skos:Concept rdf:resource="&iso19118Code;EM_CodeListValueFormat/mix"/>
-      <skos:Concept rdf:resource="&iso19118Code;EM_CodeListValueFormat/both"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19118Code;EM_CodeListValueFormat/code"/>
+    <skos:member rdf:resource="&iso19118Code;EM_CodeListValueFormat/value"/>
+    <skos:member rdf:resource="&iso19118Code;EM_CodeListValueFormat/mix"/>
+    <skos:member rdf:resource="&iso19118Code;EM_CodeListValueFormat/both"/>
   </skos:Collection>
 
 </rdf:RDF>

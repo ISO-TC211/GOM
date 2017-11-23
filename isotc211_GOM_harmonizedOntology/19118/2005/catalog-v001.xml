@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1432318002441" name="http://def.isotc211.org/iso19118/2005/Encoding" uri="ISO19118_2005Encoding.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1432318002441" name="http://def.isotc211.org/iso19118/2005/EncodingRules" uri="iso19118EncodingRules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1432318002441" name="http://def.isotc211.org/iso19118/2005/ExchangeMetadata" uri="iso19118ExchangeMetadata.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1432318002441" name="http://def.isotc211.org/iso19118/2005/ExchangeModel" uri="iso19118ExchangeModel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1432318002441" name="http://def.isotc211.org/iso19118/2005/InstanceModel" uri="iso19118InstanceModel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509644627369" name="http://def.isotc211.org/iso19118/2005/Encoding" uri="ISO19118_2005Encoding.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509644627369" name="http://def.isotc211.org/iso19118/2005/ExchangeMetadata" uri="iso19118ExchangeMetadata.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509644627369" name="http://def.isotc211.org/iso19118/2005/ExchangeModel" uri="iso19118ExchangeModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509644627369" name="http://def.isotc211.org/iso19118/2005/InstanceModel" uri="iso19118InstanceModel.rdf"/>
     </group>
 </catalog>
