@@ -19,7 +19,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133Link.owl          -->
+  <!-- File name:         iso19133Link.rdf          -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         14-11-2016                -->
@@ -296,22 +296,20 @@
   </iso19133:NT_RouteSegmentCategory>
   <skos:Collection rdf:about="&iso19133Code;NT_RouteSegmentCategoryCollection">
     <skos:prefLabel>NT_RouteSegmentCategory - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/road"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/ferry"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/rail"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/walkway"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/subway"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/airway"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/lightRail"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/bus"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/airRoute"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/bikepath"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/toll"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/tunnel"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/endway"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_RouteSegmentCategory/bridge"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/road"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/ferry"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/rail"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/walkway"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/subway"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/airway"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/lightRail"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/bus"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/airRoute"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/bikepath"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/toll"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/tunnel"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/endway"/>
+    <skos:member rdf:resource="&iso19133Code;NT_RouteSegmentCategory/bridge"/>
   </skos:Collection>
 
 </rdf:RDF>

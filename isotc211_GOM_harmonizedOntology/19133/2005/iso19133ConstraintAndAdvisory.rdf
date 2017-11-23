@@ -18,7 +18,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133ConstraintAndAdvisory.owl -->
+  <!-- File name:         iso19133ConstraintAndAdvisory.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL         -->
   <!-- Generator version: 2.5                               -->
   <!-- File date:         14-11-2016                        -->
@@ -725,21 +725,19 @@
   </iso19133:NT_AdvisoryCategory>
   <skos:Collection rdf:about="&iso19133Code;NT_AdvisoryCategoryCollection">
     <skos:prefLabel>NT_AdvisoryCategory - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/startLocation"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/endLocation"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/viaLocation"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/enterPlace"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/exitPlace"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/byPass"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/streetNameChange"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/tollBooth"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/landmark"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/crossRoad"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/highwayMerge"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/rampMerge"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_AdvisoryCategory/roadMerge"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/startLocation"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/endLocation"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/viaLocation"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/enterPlace"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/exitPlace"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/byPass"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/streetNameChange"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/tollBooth"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/landmark"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/crossRoad"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/highwayMerge"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/rampMerge"/>
+    <skos:member rdf:resource="&iso19133Code;NT_AdvisoryCategory/roadMerge"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -775,11 +773,9 @@
   </iso19133:NT_SpatialRelation>
   <skos:Collection rdf:about="&iso19133Code;NT_SpatialRelationCollection">
     <skos:prefLabel>NT_SpatialRelation - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NT_SpatialRelation/leftOfRoute"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_SpatialRelation/rightOfRoute"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_SpatialRelation/overRoute"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NT_SpatialRelation/leftOfRoute"/>
+    <skos:member rdf:resource="&iso19133Code;NT_SpatialRelation/rightOfRoute"/>
+    <skos:member rdf:resource="&iso19133Code;NT_SpatialRelation/overRoute"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++-->
@@ -989,40 +985,38 @@
   </iso19133:NT_Vehicle>
   <skos:Collection rdf:about="&iso19133Code;NT_VehicleCollection">
     <skos:prefLabel>NT_Vehicle - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/allVehicles"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/passengerCars"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/truck"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/deliveryTruck"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/transportTruck"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/pedestrian"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/bicycle"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/motorcycle"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/moped"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/emergency"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/taxi"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/publicBus"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/facility"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/residential"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/employee"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/hov"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/military"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/carWithTrailer"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/privateBus"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/farm"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/explosiveCargo"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/pollutingToWaterCargo"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/dangerousCargo"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/trolleyBus"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/lightRail"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/schoolBus"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/4WheelDrive"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/snowChains"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/mailDelivery"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/tanker"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/disableOccupant"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_Vehicle/userDefined"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/allVehicles"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/passengerCars"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/truck"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/deliveryTruck"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/transportTruck"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/pedestrian"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/bicycle"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/motorcycle"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/moped"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/emergency"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/taxi"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/publicBus"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/facility"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/residential"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/employee"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/hov"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/military"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/carWithTrailer"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/privateBus"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/farm"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/explosiveCargo"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/pollutingToWaterCargo"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/dangerousCargo"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/trolleyBus"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/lightRail"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/schoolBus"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/4WheelDrive"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/snowChains"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/mailDelivery"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/tanker"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/disableOccupant"/>
+    <skos:member rdf:resource="&iso19133Code;NT_Vehicle/userDefined"/>
   </skos:Collection>
 
 </rdf:RDF>

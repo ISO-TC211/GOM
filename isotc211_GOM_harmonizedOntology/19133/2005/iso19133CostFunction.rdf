@@ -18,7 +18,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133CostFunction.owl  -->
+  <!-- File name:         iso19133CostFunction.rdf  -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         14-11-2016                -->
@@ -467,19 +467,17 @@
   </iso19133:NS_CostElementType>
   <skos:Collection rdf:about="&iso19133Code;NS_CostElementTypeCollection">
     <skos:prefLabel>NS_CostElementType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/time"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/waitingTime"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/travelTime"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/currency"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/tolls"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/fares"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/counts"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/turns"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/transfers"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/manuevers"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostElementType/distance"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/time"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/waitingTime"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/travelTime"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/currency"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/tolls"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/fares"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/counts"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/turns"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/transfers"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/manuevers"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostElementType/distance"/>
   </skos:Collection>
 
 </rdf:RDF>

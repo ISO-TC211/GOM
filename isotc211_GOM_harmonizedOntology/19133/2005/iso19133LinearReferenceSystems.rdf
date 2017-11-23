@@ -18,7 +18,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133LinearReferenceSystems.owl -->
+  <!-- File name:         iso19133LinearReferenceSystems.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL          -->
   <!-- Generator version: 2.5                                -->
   <!-- File date:         14-11-2016                         -->
@@ -584,17 +584,15 @@
   </iso19133:LR_OffsetReference>
   <skos:Collection rdf:about="&iso19133Code;LR_OffsetReferenceCollection">
     <skos:prefLabel>LR_OffsetReference - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/centerline"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/edgeOfTravel"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/rightOfWay"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/curbFace"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/curbBack"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/edgeOfShoulder"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/edgeOfBerm"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/walkwayInside"/>
-      <skos:Concept rdf:resource="&iso19133Code;LR_OffsetReference/walkwayOutside"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/centerline"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/edgeOfTravel"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/rightOfWay"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/curbFace"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/curbBack"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/edgeOfShoulder"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/edgeOfBerm"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/walkwayInside"/>
+    <skos:member rdf:resource="&iso19133Code;LR_OffsetReference/walkwayOutside"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->

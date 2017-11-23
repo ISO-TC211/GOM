@@ -25,7 +25,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133TrackingService.owl -->
+  <!-- File name:         iso19133TrackingService.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL   -->
   <!-- Generator version: 2.5                         -->
   <!-- File date:         14-11-2016                  -->
@@ -1122,11 +1122,9 @@
   </iso19133:TK_AccuracyType>
   <skos:Collection rdf:about="&iso19133Code;TK_AccuracyTypeCollection">
     <skos:prefLabel>TK_AccuracyType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;TK_AccuracyType/linear"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_AccuracyType/circularRMS"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_AccuracyType/ellipticalRMS"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;TK_AccuracyType/linear"/>
+    <skos:member rdf:resource="&iso19133Code;TK_AccuracyType/circularRMS"/>
+    <skos:member rdf:resource="&iso19133Code;TK_AccuracyType/ellipticalRMS"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++-->
@@ -1208,15 +1206,13 @@
   </iso19133:TK_PositionType>
   <skos:Collection rdf:about="&iso19133Code;TK_PositionTypeCollection">
     <skos:prefLabel>TK_PositionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;TK_PositionType/coordinate"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_PositionType/placeName"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_PositionType/feature"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_PositionType/linearReference"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_PositionType/network"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_PositionType/address"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_PositionType/phone"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/coordinate"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/placeName"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/feature"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/linearReference"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/network"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/address"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/phone"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
@@ -1270,14 +1266,12 @@
   </iso19133:TK_TransitionType>
   <skos:Collection rdf:about="&iso19133Code;TK_TransitionTypeCollection">
     <skos:prefLabel>TK_TransitionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;TK_TransitionType/enterCell"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_TransitionType/leaveCell"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_TransitionType/changeContacts"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_TransitionType/changeDirection"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_TransitionType/changePosition"/>
-      <skos:Concept rdf:resource="&iso19133Code;TK_TransitionType/changeAvailability"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/enterCell"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/leaveCell"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changeContacts"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changeDirection"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changePosition"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changeAvailability"/>
   </skos:Collection>
 
 </rdf:RDF>

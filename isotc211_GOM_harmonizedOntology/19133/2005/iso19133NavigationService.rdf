@@ -25,7 +25,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133NavigationService.owl -->
+  <!-- File name:         iso19133NavigationService.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL     -->
   <!-- Generator version: 2.5                           -->
   <!-- File date:         14-11-2016                    -->
@@ -993,11 +993,9 @@
   </iso19133:NS_CostFunctionCode>
   <skos:Collection rdf:about="&iso19133Code;NS_CostFunctionCodeCollection">
     <skos:prefLabel>NS_CostFunctionCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostFunctionCode/distance"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostFunctionCode/time"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_CostFunctionCode/numberTurns"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NS_CostFunctionCode/distance"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostFunctionCode/time"/>
+    <skos:member rdf:resource="&iso19133Code;NS_CostFunctionCode/numberTurns"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -1045,13 +1043,11 @@
   </iso19133:NS_RenderingType>
   <skos:Collection rdf:about="&iso19133Code;NS_RenderingTypeCollection">
     <skos:prefLabel>NS_RenderingType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/map"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/voice"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/text"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/groundLevelView"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RenderingType/maneuverInstructions"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NS_RenderingType/map"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RenderingType/voice"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RenderingType/text"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RenderingType/groundLevelView"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RenderingType/maneuverInstructions"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -1093,12 +1089,10 @@
   </iso19133:NS_RouteRequestType>
   <skos:Collection rdf:about="&iso19133Code;NS_RouteRequestTypeCollection">
     <skos:prefLabel>NS_RouteRequestType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/basic"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/predictive"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/dynamic"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RouteRequestType/complex"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NS_RouteRequestType/basic"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RouteRequestType/predictive"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RouteRequestType/dynamic"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RouteRequestType/complex"/>
   </skos:Collection>
 
 </rdf:RDF>

@@ -9,19 +9,19 @@
   <!ENTITY dct "http://purl.org/dc/terms/" >
   <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
   <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
-  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/Network#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/Tracking#" >
 
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133Network.owl       -->
+  <!-- File name:         iso19133Tracking.rdf      -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         14-11-2016                -->
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
 
-<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/Network#"
-  xml:base="http://def.isotc211.org/iso19133/2005/Network"
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/Tracking#"
+  xml:base="http://def.isotc211.org/iso19133/2005/Tracking"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -30,22 +30,21 @@
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
-  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/Network#">
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/Tracking#">
 
-  <!--++++++++++++++++++++++++++++++++++-->
-  <!-- Ontology: ISO 19133:2005 Network -->
-  <!--++++++++++++++++++++++++++++++++++-->
-  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/Network">
-    <rdfs:label>ISO 19133:2005 Network</rdfs:label>
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Tracking -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/Tracking">
+    <rdfs:label>ISO 19133:2005 Tracking</rdfs:label>
     <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
     <owl:versionInfo>2005-10-15</owl:versionInfo>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/CombinedNetworks"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Link"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkModel"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkPosition"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Route"/>
-    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/TurnAndJunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/FeatureDataModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/LocationTransformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/MeasuredCoordinates"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/PointEstimates"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/TrackingService"/>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
   </owl:Ontology>
 

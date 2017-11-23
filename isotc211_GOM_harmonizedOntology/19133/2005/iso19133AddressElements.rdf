@@ -15,7 +15,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133AddressElements.owl -->
+  <!-- File name:         iso19133AddressElements.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL   -->
   <!-- Generator version: 2.5                         -->
   <!-- File date:         14-11-2016                  -->
@@ -784,13 +784,11 @@
   </iso19133:AD_NamedPlaceClassification>
   <skos:Collection rdf:about="&iso19133Code;AD_NamedPlaceClassificationCollection">
     <skos:prefLabel>AD_NamedPlaceClassification - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/country"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/countrySubdividsion"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/countrySecondarySubdivision"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/municipality"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_NamedPlaceClassification/municipalitySubdivision"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;AD_NamedPlaceClassification/country"/>
+    <skos:member rdf:resource="&iso19133Code;AD_NamedPlaceClassification/countrySubdividsion"/>
+    <skos:member rdf:resource="&iso19133Code;AD_NamedPlaceClassification/countrySecondarySubdivision"/>
+    <skos:member rdf:resource="&iso19133Code;AD_NamedPlaceClassification/municipality"/>
+    <skos:member rdf:resource="&iso19133Code;AD_NamedPlaceClassification/municipalitySubdivision"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++-->
@@ -880,20 +878,18 @@
   </iso19133:AD_RegionCode>
   <skos:Collection rdf:about="&iso19133Code;AD_RegionCodeCollection">
     <skos:prefLabel>AD_RegionCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/AT"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/BE"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/ES"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/GB"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/US"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/VA"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/US-VA"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA-NB"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA-NT"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/CA-NU"/>
-      <skos:Concept rdf:resource="&iso19133Code;AD_RegionCode/..."/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/AT"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/BE"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/CA"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/ES"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/GB"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/US"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/VA"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/US-VA"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/CA-NB"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/CA-NT"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/CA-NU"/>
+    <skos:member rdf:resource="&iso19133Code;AD_RegionCode/..."/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->

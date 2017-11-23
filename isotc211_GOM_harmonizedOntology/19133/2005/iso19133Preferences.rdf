@@ -18,7 +18,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133Preferences.owl   -->
+  <!-- File name:         iso19133Preferences.rdf   -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         14-11-2016                -->
@@ -166,12 +166,10 @@
   </iso19133:NS_RoutePreferences>
   <skos:Collection rdf:about="&iso19133Code;NS_RoutePreferencesCollection">
     <skos:prefLabel>NS_RoutePreferences - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NS_RoutePreferences/scenic"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RoutePreferences/easiest"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RoutePreferences/majorRoadsOnly"/>
-      <skos:Concept rdf:resource="&iso19133Code;NS_RoutePreferences/avoidMajorHighways"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/scenic"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/easiest"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/majorRoadsOnly"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/avoidMajorHighways"/>
   </skos:Collection>
 
 </rdf:RDF>

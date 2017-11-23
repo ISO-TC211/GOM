@@ -19,7 +19,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19133TurnAndJunction.owl -->
+  <!-- File name:         iso19133TurnAndJunction.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL   -->
   <!-- Generator version: 2.5                         -->
   <!-- File date:         14-11-2016                  -->
@@ -447,17 +447,15 @@
   </iso19133:NT_JunctionType>
   <skos:Collection rdf:about="&iso19133Code;NT_JunctionTypeCollection">
     <skos:prefLabel>NT_JunctionType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/intersection"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/roundabout"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/enclosedTrafficArea"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/exitRamp"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/entranceRamp"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/changOver"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/boardingRamp"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/station"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_JunctionType/transfer"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/intersection"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/roundabout"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/enclosedTrafficArea"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/exitRamp"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/entranceRamp"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/changOver"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/boardingRamp"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/station"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/transfer"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -535,18 +533,16 @@
   </iso19133:NT_TurnDirection>
   <skos:Collection rdf:about="&iso19133Code;NT_TurnDirectionCollection">
     <skos:prefLabel>NT_TurnDirection - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/straight"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/keepLeft"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/slightLeft"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/left"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/sharpLeft"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/uTurn"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/sharpRight"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/right"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/slightRight"/>
-      <skos:Concept rdf:resource="&iso19133Code;NT_TurnDirection/keepRight"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/straight"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/keepLeft"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/slightLeft"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/left"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/sharpLeft"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/uTurn"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/sharpRight"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/right"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/slightRight"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/keepRight"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++-->
