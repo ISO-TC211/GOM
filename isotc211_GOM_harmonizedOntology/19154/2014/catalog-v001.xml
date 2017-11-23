@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1479844186385" name="http://def.isotc211.org/iso19154/2014/ContextInformationModel" uri="iso19154ContextInformationModel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479844186385" name="http://def.isotc211.org/iso19154/2014/ServiceModel" uri="iso19154ServiceModel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479844186385" name="http://def.isotc211.org/iso19154/2014/UPAGeoSemanticContext" uri="iso19154UPAGeoSemanticContext.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479844186385" name="http://def.isotc211.org/iso19154/2014/UPAGeospatialContext" uri="iso19154UPAGeospatialContext.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479844186385" name="http://def.isotc211.org/iso19154/2014/UPALocationalContext" uri="iso19154UPALocationalContext.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479844186385" name="http://def.isotc211.org/iso19154/2014/UbiquitousPublicAccess-ReferenceModel" uri="ISO19154_2014UbiquitousPublicAccess-ReferenceModel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510074833403" name="http://def.isotc211.org/iso19154/2014/ContextInformationModel" uri="iso19154ContextInformationModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510074833403" name="http://def.isotc211.org/iso19154/2014/ServiceModel" uri="iso19154ServiceModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510074833403" name="http://def.isotc211.org/iso19154/2014/UPAGeoSemanticContext" uri="iso19154UPAGeoSemanticContext.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510074833403" name="http://def.isotc211.org/iso19154/2014/UPAGeospatialContext" uri="iso19154UPAGeospatialContext.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510074833403" name="http://def.isotc211.org/iso19154/2014/UPALocationalContext" uri="iso19154UPALocationalContext.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1510074833403" name="http://def.isotc211.org/iso19154/2014/UbiquitousPublicAccess-ReferenceModel" uri="ISO19154_2014UbiquitousPublicAccess-ReferenceModel.rdf"/>
     </group>
 </catalog>
