@@ -22,7 +22,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         ISO19144-1_2009ClassificationSystems.owl -->
+  <!-- File name:         ISO19144-1_2009ClassificationSystems.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                -->
   <!-- Generator version: 2.5                                      -->
   <!-- File date:         11-4-2016                                -->
@@ -547,13 +547,11 @@
   </iso19144-1:CL_TessellationGeometry>
   <skos:Collection rdf:about="&iso19144-1Code;CL_TessellationGeometryCollection">
     <skos:prefLabel>CL_TessellationGeometry - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/quadrilateralgrid"/>
-      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/hexagonalgrid"/>
-      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/TIN"/>
-      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/polygonnetwork"/>
-      <skos:Concept rdf:resource="&iso19144-1Code;CL_TessellationGeometry/Thiessenpolygonnetwork"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19144-1Code;CL_TessellationGeometry/quadrilateralgrid"/>
+    <skos:member rdf:resource="&iso19144-1Code;CL_TessellationGeometry/hexagonalgrid"/>
+    <skos:member rdf:resource="&iso19144-1Code;CL_TessellationGeometry/TIN"/>
+    <skos:member rdf:resource="&iso19144-1Code;CL_TessellationGeometry/polygonnetwork"/>
+    <skos:member rdf:resource="&iso19144-1Code;CL_TessellationGeometry/Thiessenpolygonnetwork"/>
   </skos:Collection>
 
 </rdf:RDF>
