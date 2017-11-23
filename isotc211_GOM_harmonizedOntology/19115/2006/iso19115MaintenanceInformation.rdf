@@ -370,20 +370,18 @@
   </iso19115:MD_MaintenanceFrequencyCode>
   <skos:Collection rdf:about="&iso19115Code;MD_MaintenanceFrequencyCodeCollection">
     <skos:prefLabel>MD_MaintenanceFrequencyCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/continual"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/daily"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/weekly"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/fortnightly"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/monthly"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/quarterly"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/biannually"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/annually"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/asNeeded"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/irregular"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/notPlanned"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/unknown"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/continual"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/daily"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/weekly"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/fortnightly"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/monthly"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/quarterly"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/biannually"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/annually"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/asNeeded"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/irregular"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/notPlanned"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MaintenanceFrequencyCode/unknown"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_ScopeCode">
     <rdfs:label>MD_ScopeCode</rdfs:label>
@@ -493,24 +491,22 @@
   </iso19115:MD_ScopeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_ScopeCodeCollection">
     <skos:prefLabel>MD_ScopeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/attribute"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/attributeType"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/collectionHardware"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/collectionSession"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/dataset"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/series"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/nonGeographicDataset"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/dimensionGroup"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/feature"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/featureType"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/propertyType"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/fieldSession"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/software"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/service"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/model"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ScopeCode/tile"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/attribute"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/attributeType"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/collectionHardware"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/collectionSession"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/dataset"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/series"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/nonGeographicDataset"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/dimensionGroup"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/feature"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/featureType"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/propertyType"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/fieldSession"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/software"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/service"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/model"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ScopeCode/tile"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_ScopeDescription">
     <rdfs:label>MD_ScopeDescription</rdfs:label>

@@ -560,14 +560,12 @@
   </iso19115:MD_MediumFormatCode>
   <skos:Collection rdf:about="&iso19115Code;MD_MediumFormatCodeCollection">
     <skos:prefLabel>MD_MediumFormatCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/cpio"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/tar"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/highSierra"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660RockRidge"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660AppleHFS"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumFormatCode/cpio"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumFormatCode/tar"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumFormatCode/highSierra"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660RockRidge"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumFormatCode/iso9660AppleHFS"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_MediumNameCode">
     <rdfs:label>MD_MediumNameCode</rdfs:label>
@@ -689,26 +687,24 @@
   </iso19115:MD_MediumNameCode>
   <skos:Collection rdf:about="&iso19115Code;MD_MediumNameCodeCollection">
     <skos:prefLabel>MD_MediumNameCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/cdRom"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/dvd"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/dvdRom"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3halfInchFloppy"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/5quarterInchFloppy"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/7trackTape"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/9trackTape"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3480Cartridge"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3490Cartridge"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/3580Cartridge"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/4mmCartridgeTape"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/8mmCartridgeTape"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/1quarterInchCartridgeTape"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/digitalLinearTape"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/onLine"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/satellite"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/telephoneLink"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_MediumNameCode/hardcopy"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/cdRom"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/dvd"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/dvdRom"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/3halfInchFloppy"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/5quarterInchFloppy"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/7trackTape"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/9trackTape"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/3480Cartridge"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/3490Cartridge"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/3580Cartridge"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/4mmCartridgeTape"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/8mmCartridgeTape"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/1quarterInchCartridgeTape"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/digitalLinearTape"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/onLine"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/satellite"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/telephoneLink"/>
+    <skos:member rdf:resource="&iso19115Code;MD_MediumNameCode/hardcopy"/>
   </skos:Collection>
 </rdf:RDF>
 

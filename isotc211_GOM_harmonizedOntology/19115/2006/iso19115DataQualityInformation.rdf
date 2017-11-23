@@ -812,11 +812,9 @@
   </iso19115:DQ_EvaluationMethodTypeCode>
   <skos:Collection rdf:about="&iso19115Code;DQ_EvaluationMethodTypeCodeCollection">
     <skos:prefLabel>DQ_EvaluationMethodTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/directInternal"/>
-      <skos:Concept rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/directExternal"/>
-      <skos:Concept rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/indirect"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/directInternal"/>
+    <skos:member rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/directExternal"/>
+    <skos:member rdf:resource="&iso19115Code;DQ_EvaluationMethodTypeCode/indirect"/>
   </skos:Collection>
 </rdf:RDF>
 

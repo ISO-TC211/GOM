@@ -407,23 +407,21 @@
   </iso19115:MD_DatatypeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_DatatypeCodeCollection">
     <skos:prefLabel>MD_DatatypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/class"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/codelist"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/enumeration"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/codelistElement"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/abstractClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/aggregateClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/specifiedClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/datatypeClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/interfaceClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/unionClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/metaClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/typeClass"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/characterString"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/integer"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DatatypeCode/association"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/class"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/codelist"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/enumeration"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/codelistElement"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/abstractClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/aggregateClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/specifiedClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/datatypeClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/interfaceClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/unionClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/metaClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/typeClass"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/characterString"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/integer"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DatatypeCode/association"/>
   </skos:Collection>
   <rdfs:Datatype rdf:about="&iso19115;MD_ObligationCode">
     <rdfs:label>MD_ObligationCode</rdfs:label>

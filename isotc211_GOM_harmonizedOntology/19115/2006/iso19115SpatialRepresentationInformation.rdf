@@ -509,10 +509,8 @@
   </iso19115:MD_CellGeometryCode>
   <skos:Collection rdf:about="&iso19115Code;MD_CellGeometryCodeCollection">
     <skos:prefLabel>MD_CellGeometryCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_CellGeometryCode/point"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CellGeometryCode/area"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_CellGeometryCode/point"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CellGeometryCode/area"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_DimensionNameTypeCode">
     <rdfs:label>MD_DimensionNameTypeCode</rdfs:label>
@@ -574,16 +572,14 @@
   </iso19115:MD_DimensionNameTypeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_DimensionNameTypeCodeCollection">
     <skos:prefLabel>MD_DimensionNameTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/row"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/column"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/vertical"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/track"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/crossTrack"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/line"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/sample"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/time"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/row"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/column"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/vertical"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/track"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/crossTrack"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/line"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/sample"/>
+    <skos:member rdf:resource="&iso19115Code;MD_DimensionNameTypeCode/time"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_GeometricObjectTypeCode">
     <rdfs:label>MD_GeometricObjectTypeCode</rdfs:label>
@@ -633,14 +629,12 @@
   </iso19115:MD_GeometricObjectTypeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_GeometricObjectTypeCodeCollection">
     <skos:prefLabel>MD_GeometricObjectTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/complex"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/composite"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/curve"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/point"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/solid"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/surface"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/complex"/>
+    <skos:member rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/composite"/>
+    <skos:member rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/curve"/>
+    <skos:member rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/point"/>
+    <skos:member rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/solid"/>
+    <skos:member rdf:resource="&iso19115Code;MD_GeometricObjectTypeCode/surface"/>
   </skos:Collection>
   <rdfs:Datatype rdf:about="&iso19115;MD_PixelOrientationCode">
     <rdfs:label>MD_PixelOrientationCode</rdfs:label>
@@ -742,17 +736,15 @@
   </iso19115:MD_TopologyLevelCode>
   <skos:Collection rdf:about="&iso19115Code;MD_TopologyLevelCodeCollection">
     <skos:prefLabel>MD_TopologyLevelCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/geometryOnly"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/topology1D"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/planarGraph"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/fullPlanarGraph"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/surfaceGraph"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/fullSurfaceGraph"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/topology3D"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/fullTopology3D"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_TopologyLevelCode/abstract"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/geometryOnly"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/topology1D"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/planarGraph"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/fullPlanarGraph"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/surfaceGraph"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/fullSurfaceGraph"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/topology3D"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/fullTopology3D"/>
+    <skos:member rdf:resource="&iso19115Code;MD_TopologyLevelCode/abstract"/>
   </skos:Collection>
 </rdf:RDF>
 
