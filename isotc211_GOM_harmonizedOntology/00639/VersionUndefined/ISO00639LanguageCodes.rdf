@@ -15,7 +15,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         ISO00639LanguageCodes.owl -->
+  <!-- File name:         ISO00639LanguageCodes.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.4                       -->
   <!-- File date:         15-4-2015                 -->
@@ -323,52 +323,51 @@
   </iso00639:LanguageCode>
   <skos:Collection rdf:about="&iso00639Code;LanguageCodeCollection">
     <skos:prefLabel>LanguageCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Afrikaans"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Albanian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Arabic"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Basque"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Belarusian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Bulgarian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Catalan"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Chinese"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Croatian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Czech"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Danish"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Dutch"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/English"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Estonian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Faeroese"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/French"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/French(Canadian)"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Finnish"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/German"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Greek"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Hawaian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Hebrew"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Hungarian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Icelandic"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Indonesian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Italian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Japanese"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Korean"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Latvian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Lithuanian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Malaysian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Norwegian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Polish"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Portuguese"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Romanian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Russian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Serbian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Slovak"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Slovenian"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Spanish"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Swahili"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Swedish"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Turkish"/>
-      <skos:Concept rdf:resource="&iso00639Code;LanguageCode/Ukranian"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Afrikaans"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Albanian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Arabic"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Basque"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Belarusian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Bulgarian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Catalan"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Chinese"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Croatian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Czech"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Danish"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Dutch"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/English"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Estonian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Faeroese"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/French"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/French(Canadian)"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Finnish"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/German"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Greek"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Hawaian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Hebrew"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Hungarian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Icelandic"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Indonesian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Italian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Japanese"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Korean"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Latvian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Lithuanian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Malaysian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Norwegian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Polish"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Portuguese"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Romanian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Russian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Serbian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Slovak"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Slovenian"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Spanish"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Swahili"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Swedish"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Turkish"/>
+    <skos:member rdf:resource="&iso00639Code;LanguageCode/Ukranian"/>
+
   </skos:Collection>
 
 </rdf:RDF>
