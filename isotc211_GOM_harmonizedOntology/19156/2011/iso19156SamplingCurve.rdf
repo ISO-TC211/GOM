@@ -11,19 +11,19 @@
   <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
   <!ENTITY iso19156_1678 "http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#" >
   <!ENTITY iso19107_400 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
-  <!ENTITY iso19156 "http://def.isotc211.org/iso19156/2011/SamplingSolid#" >
+  <!ENTITY iso19156 "http://def.isotc211.org/iso19156/2011/SamplingCurve#" >
 
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19156SamplingSolid.owl -->
+  <!-- File name:         iso19156SamplingCurve.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         26-10-2016                -->
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
 
-<rdf:RDF xmlns="http://def.isotc211.org/iso19156/2011/SamplingSolid#"
-  xml:base="http://def.isotc211.org/iso19156/2011/SamplingSolid"
+<rdf:RDF xmlns="http://def.isotc211.org/iso19156/2011/SamplingCurve#"
+  xml:base="http://def.isotc211.org/iso19156/2011/SamplingCurve"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -34,13 +34,13 @@
   xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
   xmlns:iso19156_1678="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#"
   xmlns:iso19107_400="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
-  xmlns:iso19156="http://def.isotc211.org/iso19156/2011/SamplingSolid#">
+  xmlns:iso19156="http://def.isotc211.org/iso19156/2011/SamplingCurve#">
 
   <!--++++++++++++++++++++++++++++++++++++++++-->
-  <!-- Ontology: ISO 19156:2011 samplingSolid -->
+  <!-- Ontology: ISO 19156:2011 samplingCurve -->
   <!--++++++++++++++++++++++++++++++++++++++++-->
-  <owl:Ontology rdf:about="http://def.isotc211.org/iso19156/2011/SamplingSolid">
-    <rdfs:label>ISO 19156:2011 samplingSolid</rdfs:label>
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19156/2011/SamplingCurve">
+    <rdfs:label>ISO 19156:2011 samplingCurve</rdfs:label>
     <dct:source>http://standards.iso.org/iso/19156/ed-1/en/</dct:source>
     <owl:versionInfo>2011-12-15</owl:versionInfo>
     <owl:imports rdf:resource="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature"/>
@@ -49,36 +49,36 @@
   </owl:Ontology>
 
   <!--+++++++++++++++++++++++++-->
-  <!-- Class: SF_SamplingSolid -->
+  <!-- Class: SF_SamplingCurve -->
   <!--+++++++++++++++++++++++++-->
-  <owl:Class rdf:about="&iso19156;SF_SamplingSolid">
-    <rdfs:label>SF_SamplingSolid</rdfs:label>
-    <skos:definition>Sampling may be in a solid. The class .lt.i.gt.SS_SamplingSolid.lt..sl.i.gt. (Figure 11) is an instance of the .og.metaclass.cg. GF_FeatureType (ISO 19109), which therefore represents a feature type. SS_SamplingSolid shall support one attribute and one association.  </skos:definition>
+  <owl:Class rdf:about="&iso19156;SF_SamplingCurve">
+    <rdfs:label>SF_SamplingCurve</rdfs:label>
+    <skos:definition>A common mode of sampling is along a curve. The class .lt.i.gt.SM_SamplingCurve.lt..sl.i.gt. (Figure 11) is an instance of the .og.metaclass.cg. GF_FeatureType (ISO 19109), which therefore represents a feature type. SM_SamplingCurve shall support one attribute and one association.  </skos:definition>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
     <rdfs:subClassOf rdf:resource="&iso19156_1678;SF_SpatialSamplingFeature"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19156;SF_SamplingSolid.shape"/>
+        <owl:onProperty rdf:resource="&iso19156;SF_SamplingCurve.shape"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&iso19156;SF_SamplingSolid.shape"/>
-        <owl:allValuesFrom rdf:resource="&iso19107_400;GM_Solid"/>
+        <owl:onProperty rdf:resource="&iso19156;SF_SamplingCurve.shape"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_400;GM_Curve"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <!--++++++++++++++++++++++++++++++++++++++++-->
-  <!-- ObjectProperty: SF_SamplingSolid.shape -->
+  <!-- ObjectProperty: SF_SamplingCurve.shape -->
   <!--++++++++++++++++++++++++++++++++++++++++-->
-  <owl:ObjectProperty rdf:about="&iso19156;SF_SamplingSolid.shape">
+  <owl:ObjectProperty rdf:about="&iso19156;SF_SamplingCurve.shape">
     <rdfs:label>shape</rdfs:label>
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
     <iso19150-2:associationName>Geometry</iso19150-2:associationName>
-    <rdfs:domain rdf:resource="&iso19156;SF_SamplingSolid"/>
-    <rdfs:range rdf:resource="&iso19107_400;GM_Solid"/>
+    <rdfs:domain rdf:resource="&iso19156;SF_SamplingCurve"/>
+    <rdfs:range rdf:resource="&iso19107_400;GM_Curve"/>
   </owl:ObjectProperty>
 
 </rdf:RDF>
