@@ -1180,11 +1180,9 @@
   </iso19115-2:MI_ContextCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_ContextCodeCollection">
     <skos:prefLabel>MI_ContextCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_ContextCode/acquisition"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_ContextCode/pass"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_ContextCode/wayPoint"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_ContextCode/acquisition"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_ContextCode/pass"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_ContextCode/wayPoint"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_GeometryTypeCode">
     <rdfs:label>MI_GeometryTypeCode</rdfs:label>
@@ -1222,12 +1220,10 @@
   </iso19115-2:MI_GeometryTypeCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_GeometryTypeCodeCollection">
     <skos:prefLabel>MI_GeometryTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/point"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/linear"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/areal"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/strip"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/point"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/linear"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/areal"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_GeometryTypeCode/strip"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_ObjectiveTypeCode">
     <rdfs:label>MI_ObjectiveTypeCode</rdfs:label>
@@ -1259,11 +1255,9 @@
   </iso19115-2:MI_ObjectiveTypeCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_ObjectiveTypeCodeCollection">
     <skos:prefLabel>MI_ObjectiveTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_ObjectiveTypeCode/instantaneousCollection"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_ObjectiveTypeCode/persistentView"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_ObjectiveTypeCode/survey"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_ObjectiveTypeCode/instantaneousCollection"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_ObjectiveTypeCode/persistentView"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_ObjectiveTypeCode/survey"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_OperationTypeCode">
     <rdfs:label>MI_OperationTypeCode</rdfs:label>
@@ -1295,11 +1289,9 @@
   </iso19115-2:MI_OperationTypeCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_OperationTypeCodeCollection">
     <skos:prefLabel>MI_OperationTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_OperationTypeCode/real"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_OperationTypeCode/simulated"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_OperationTypeCode/synthetic"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_OperationTypeCode/real"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_OperationTypeCode/simulated"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_OperationTypeCode/synthetic"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_PriorityCode">
     <rdfs:label>MI_PriorityCode</rdfs:label>
@@ -1337,12 +1329,10 @@
   </iso19115-2:MI_PriorityCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_PriorityCodeCollection">
     <skos:prefLabel>MI_PriorityCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PriorityCode/critical"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PriorityCode/highImportance"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PriorityCode/mediumImportance"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PriorityCode/lowImportance"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PriorityCode/critical"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PriorityCode/highImportance"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PriorityCode/mediumImportance"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PriorityCode/lowImportance"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_SequenceCode">
     <rdfs:label>MI_SequenceCode</rdfs:label>
@@ -1374,11 +1364,9 @@
   </iso19115-2:MI_SequenceCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_SequenceCodeCollection">
     <skos:prefLabel>MI_SequenceCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_SequenceCode/start"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_SequenceCode/end"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_SequenceCode/instantaneous"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_SequenceCode/start"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_SequenceCode/end"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_SequenceCode/instantaneous"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_TriggerCode">
     <rdfs:label>MI_TriggerCode</rdfs:label>
@@ -1410,11 +1398,9 @@
   </iso19115-2:MI_TriggerCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_TriggerCodeCollection">
     <skos:prefLabel>MI_TriggerCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_TriggerCode/automatic"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_TriggerCode/manual"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_TriggerCode/preProgrammed"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_TriggerCode/automatic"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_TriggerCode/manual"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_TriggerCode/preProgrammed"/>
   </skos:Collection>
 </rdf:RDF>
 

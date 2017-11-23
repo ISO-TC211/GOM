@@ -273,13 +273,11 @@
   </iso19115-2:MI_BandDefinition>
   <skos:Collection rdf:about="&iso19115-2Code;MI_BandDefinitionCollection">
     <skos:prefLabel>MI_BandDefinition - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_BandDefinition/3db"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_BandDefinition/halfMaximum"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_BandDefinition/fiftyPercent"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_BandDefinition/oneOverE"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_BandDefinition/equivalentWidth"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_BandDefinition/3db"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_BandDefinition/halfMaximum"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_BandDefinition/fiftyPercent"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_BandDefinition/oneOverE"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_BandDefinition/equivalentWidth"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_PolarisationOrientationCode">
     <rdfs:label>MI_PolarisationOrientationCode</rdfs:label>
@@ -329,14 +327,12 @@
   </iso19115-2:MI_PolarisationOrientationCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_PolarisationOrientationCodeCollection">
     <skos:prefLabel>MI_PolarisationOrientationCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/horizontal"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/vertical"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/leftCircular"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/rightCircular"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/theta"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/phi"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/horizontal"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/vertical"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/leftCircular"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/rightCircular"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/theta"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_PolarisationOrientationCode/phi"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115-2;MI_TransferFunctionTypeCode">
     <rdfs:label>MI_TransferFunctionTypeCode</rdfs:label>
@@ -368,11 +364,9 @@
   </iso19115-2:MI_TransferFunctionTypeCode>
   <skos:Collection rdf:about="&iso19115-2Code;MI_TransferFunctionTypeCodeCollection">
     <skos:prefLabel>MI_TransferFunctionTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_TransferFunctionTypeCode/linear"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_TransferFunctionTypeCode/logarithmic"/>
-      <skos:Concept rdf:resource="&iso19115-2Code;MI_TransferFunctionTypeCode/exponential"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-2Code;MI_TransferFunctionTypeCode/linear"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_TransferFunctionTypeCode/logarithmic"/>
+    <skos:member rdf:resource="&iso19115-2Code;MI_TransferFunctionTypeCode/exponential"/>
   </skos:Collection>
 </rdf:RDF>
 
