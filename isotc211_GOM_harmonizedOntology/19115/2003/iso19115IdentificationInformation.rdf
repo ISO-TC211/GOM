@@ -749,13 +749,11 @@
   </iso19115:DS_AssociationTypeCode>
   <skos:Collection rdf:about="&iso19115Code;DS_AssociationTypeCodeCollection">
     <skos:prefLabel>DS_AssociationTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;DS_AssociationTypeCode/crossReference"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_AssociationTypeCode/largerWorkCitation"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_AssociationTypeCode/partOfSeamlessDatabase"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_AssociationTypeCode/source"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_AssociationTypeCode/stereoMate"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;DS_AssociationTypeCode/crossReference"/>
+    <skos:member rdf:resource="&iso19115Code;DS_AssociationTypeCode/largerWorkCitation"/>
+    <skos:member rdf:resource="&iso19115Code;DS_AssociationTypeCode/partOfSeamlessDatabase"/>
+    <skos:member rdf:resource="&iso19115Code;DS_AssociationTypeCode/source"/>
+    <skos:member rdf:resource="&iso19115Code;DS_AssociationTypeCode/stereoMate"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;DS_InitiativeTypeCode">
     <rdfs:label>DS_InitiativeTypeCode</rdfs:label>
@@ -859,23 +857,21 @@
   </iso19115:DS_InitiativeTypeCode>
   <skos:Collection rdf:about="&iso19115Code;DS_InitiativeTypeCodeCollection">
     <skos:prefLabel>DS_InitiativeTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/campaign"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/collection"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/exercise"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/experiment"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/investigation"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/mission"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/sensor"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/operation"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/platform"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/process"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/program"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/project"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/study"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/task"/>
-      <skos:Concept rdf:resource="&iso19115Code;DS_InitiativeTypeCode/trial"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/campaign"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/collection"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/exercise"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/experiment"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/investigation"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/mission"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/sensor"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/operation"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/platform"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/process"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/program"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/project"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/study"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/task"/>
+    <skos:member rdf:resource="&iso19115Code;DS_InitiativeTypeCode/trial"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_CharacterSetCode">
     <rdfs:label>MD_CharacterSetCode</rdfs:label>
@@ -1063,37 +1059,35 @@
   </iso19115:MD_CharacterSetCode>
   <skos:Collection rdf:about="&iso19115Code;MD_CharacterSetCodeCollection">
     <skos:prefLabel>MD_CharacterSetCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/ucs2"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/ucs4"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/utf7"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/utf8"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/utf16"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part1"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part2"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part3"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part4"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part5"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part6"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part7"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part8"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part9"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part10"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part11"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/(reservedforfutureuse)"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part13"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part14"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part15"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part16"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/jis"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/shiftJIS"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/eucJP"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/usAscii"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/ebcdic"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/eucKR"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/big5"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CharacterSetCode/GB2312"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/ucs2"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/ucs4"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/utf7"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/utf8"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/utf16"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part1"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part2"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part3"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part4"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part5"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part6"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part7"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part8"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part9"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part10"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part11"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/(reservedforfutureuse)"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part13"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part14"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part15"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/8859part16"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/jis"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/shiftJIS"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/eucJP"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/usAscii"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/ebcdic"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/eucKR"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/big5"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CharacterSetCode/GB2312"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_KeywordTypeCode">
     <rdfs:label>MD_KeywordTypeCode</rdfs:label>
@@ -1137,13 +1131,11 @@
   </iso19115:MD_KeywordTypeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_KeywordTypeCodeCollection">
     <skos:prefLabel>MD_KeywordTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_KeywordTypeCode/discipline"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_KeywordTypeCode/place"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_KeywordTypeCode/stratum"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_KeywordTypeCode/temporal"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_KeywordTypeCode/theme"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_KeywordTypeCode/discipline"/>
+    <skos:member rdf:resource="&iso19115Code;MD_KeywordTypeCode/place"/>
+    <skos:member rdf:resource="&iso19115Code;MD_KeywordTypeCode/stratum"/>
+    <skos:member rdf:resource="&iso19115Code;MD_KeywordTypeCode/temporal"/>
+    <skos:member rdf:resource="&iso19115Code;MD_KeywordTypeCode/theme"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_ProgressCode">
     <rdfs:label>MD_ProgressCode</rdfs:label>
@@ -1199,15 +1191,13 @@
   </iso19115:MD_ProgressCode>
   <skos:Collection rdf:about="&iso19115Code;MD_ProgressCodeCollection">
     <skos:prefLabel>MD_ProgressCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_ProgressCode/completed"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ProgressCode/historicalArchive"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ProgressCode/obsolete"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ProgressCode/onGoing"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ProgressCode/planned"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ProgressCode/required"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ProgressCode/underDevelopment"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_ProgressCode/completed"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ProgressCode/historicalArchive"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ProgressCode/obsolete"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ProgressCode/onGoing"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ProgressCode/planned"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ProgressCode/required"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ProgressCode/underDevelopment"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_Resolution">
     <rdfs:label>MD_Resolution</rdfs:label>
@@ -1269,14 +1259,12 @@
   </iso19115:MD_SpatialRepresentationTypeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_SpatialRepresentationTypeCodeCollection">
     <skos:prefLabel>MD_SpatialRepresentationTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/vector"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/grid"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/textTable"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/tin"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/stereoModel"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/video"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/vector"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/grid"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/textTable"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/tin"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/stereoModel"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/video"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_SpatialRepresentationTypeCode">
     <rdfs:label>MD_SpatialRepresentationTypeCode</rdfs:label>
@@ -1326,14 +1314,12 @@
   </iso19115:MD_SpatialRepresentationTypeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_SpatialRepresentationTypeCodeCollection">
     <skos:prefLabel>MD_SpatialRepresentationTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/vector"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/grid"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/textTable"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/tin"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/stereoModel"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/video"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/vector"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/grid"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/textTable"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/tin"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/stereoModel"/>
+    <skos:member rdf:resource="&iso19115Code;MD_SpatialRepresentationTypeCode/video"/>
   </skos:Collection>
   <rdfs:Datatype rdf:about="&iso19115;MD_TopicCategoryCode">
     <rdfs:label>MD_TopicCategoryCode</rdfs:label>

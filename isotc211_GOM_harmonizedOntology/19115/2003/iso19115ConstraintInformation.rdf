@@ -214,13 +214,11 @@
   </iso19115:MD_ClassificationCode>
   <skos:Collection rdf:about="&iso19115Code;MD_ClassificationCodeCollection">
     <skos:prefLabel>MD_ClassificationCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_ClassificationCode/unclassified"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ClassificationCode/restricted"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ClassificationCode/confidential"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ClassificationCode/secret"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ClassificationCode/topSecret"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_ClassificationCode/unclassified"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ClassificationCode/restricted"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ClassificationCode/confidential"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ClassificationCode/secret"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ClassificationCode/topSecret"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_RestrictionCode">
     <rdfs:label>MD_RestrictionCode</rdfs:label>
@@ -282,16 +280,14 @@
   </iso19115:MD_RestrictionCode>
   <skos:Collection rdf:about="&iso19115Code;MD_RestrictionCodeCollection">
     <skos:prefLabel>MD_RestrictionCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/copyright"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/patent"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/patentPending"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/trademark"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/license"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/intellectualPropertyRights"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/restricted"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_RestrictionCode/otherRestrictions"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/copyright"/>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/patent"/>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/patentPending"/>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/trademark"/>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/license"/>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/intellectualPropertyRights"/>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/restricted"/>
+    <skos:member rdf:resource="&iso19115Code;MD_RestrictionCode/otherRestrictions"/>
   </skos:Collection>
 </rdf:RDF>
 

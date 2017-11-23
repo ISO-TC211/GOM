@@ -633,11 +633,9 @@
   </iso19115:MD_CoverageContentTypeCode>
   <skos:Collection rdf:about="&iso19115Code;MD_CoverageContentTypeCodeCollection">
     <skos:prefLabel>MD_CoverageContentTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_CoverageContentTypeCode/image"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CoverageContentTypeCode/thematicClassification"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_CoverageContentTypeCode/physicalMeasurement"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_CoverageContentTypeCode/image"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CoverageContentTypeCode/thematicClassification"/>
+    <skos:member rdf:resource="&iso19115Code;MD_CoverageContentTypeCode/physicalMeasurement"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_ImagingConditionCode">
     <rdfs:label>MD_ImagingConditionCode</rdfs:label>
@@ -717,19 +715,17 @@
   </iso19115:MD_ImagingConditionCode>
   <skos:Collection rdf:about="&iso19115Code;MD_ImagingConditionCodeCollection">
     <skos:prefLabel>MD_ImagingConditionCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/blurredImage"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/cloud"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/degradingObliquity"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/fog"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/heavySmokeOrDust"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/night"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/rain"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/semiDarkness"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/shadow"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/snow"/>
-      <skos:Concept rdf:resource="&iso19115Code;MD_ImagingConditionCode/terrainMasking"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/blurredImage"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/cloud"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/degradingObliquity"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/fog"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/heavySmokeOrDust"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/night"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/rain"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/semiDarkness"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/shadow"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/snow"/>
+    <skos:member rdf:resource="&iso19115Code;MD_ImagingConditionCode/terrainMasking"/>
   </skos:Collection>
 </rdf:RDF>
 
