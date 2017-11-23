@@ -19,7 +19,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19123SegmentedCurve.owl -->
+  <!-- File name:         iso19123SegmentedCurve.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL  -->
   <!-- Generator version: 2.5                        -->
   <!-- File date:         28-10-2015                 -->
@@ -317,14 +317,12 @@
   </iso19123:CV_CommonPointRule>
   <skos:Collection rdf:about="&iso19123Code;CV_CommonPointRuleCollection">
     <skos:prefLabel>CV_CommonPointRule - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/average"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/low"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/high"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/all"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/start"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/end"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/average"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/low"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/high"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/all"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/start"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/end"/>
   </skos:Collection>
 
 </rdf:RDF>

@@ -21,7 +21,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19123QuadrilateralGrid.owl -->
+  <!-- File name:         iso19123QuadrilateralGrid.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL     -->
   <!-- Generator version: 2.5                           -->
   <!-- File date:         28-10-2015                    -->
@@ -957,14 +957,12 @@
   </iso19123:CV_SequenceType>
   <skos:Collection rdf:about="&iso19123Code;CV_SequenceTypeCollection">
     <skos:prefLabel>CV_SequenceType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19123Code;CV_SequenceType/linear"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_SequenceType/boustrophedonic"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_SequenceType/CantorDiagonal"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_SequenceType/spiral"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_SequenceType/Morton"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_SequenceType/Hilbert"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/linear"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/boustrophedonic"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/CantorDiagonal"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/spiral"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/Morton"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/Hilbert"/>
   </skos:Collection>
 
 </rdf:RDF>

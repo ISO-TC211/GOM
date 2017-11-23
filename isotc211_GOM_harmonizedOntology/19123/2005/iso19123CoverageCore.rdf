@@ -21,7 +21,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19123CoverageCore.owl  -->
+  <!-- File name:         iso19123CoverageCore.rdf  -->
   <!-- Generator:         GOM_Technologies::UML2OWL -->
   <!-- Generator version: 2.5                       -->
   <!-- File date:         28-10-2015                -->
@@ -536,14 +536,12 @@
   </iso19123:CV_CommonPointRule>
   <skos:Collection rdf:about="&iso19123Code;CV_CommonPointRuleCollection">
     <skos:prefLabel>CV_CommonPointRule - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/average"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/low"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/high"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/all"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/start"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_CommonPointRule/end"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/average"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/low"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/high"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/all"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/start"/>
+    <skos:member rdf:resource="&iso19123Code;CV_CommonPointRule/end"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++-->
@@ -615,17 +613,15 @@
   </iso19123:CV_InterpolationMethod>
   <skos:Collection rdf:about="&iso19123Code;CV_InterpolationMethodCollection">
     <skos:prefLabel>CV_InterpolationMethod - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/nearestneighbor"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/linear"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/quadratic"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/cubic"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/bilinear"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/biquadratic"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/bicubic"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/lostarea"/>
-      <skos:Concept rdf:resource="&iso19123Code;CV_InterpolationMethod/barycentric"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/nearestneighbor"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/linear"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/quadratic"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/cubic"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/bilinear"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/biquadratic"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/bicubic"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/lostarea"/>
+    <skos:member rdf:resource="&iso19123Code;CV_InterpolationMethod/barycentric"/>
   </skos:Collection>
 
 </rdf:RDF>
