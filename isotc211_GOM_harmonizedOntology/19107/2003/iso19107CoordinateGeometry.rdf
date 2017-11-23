@@ -1580,14 +1580,12 @@
   </iso19107:GM_BSplineSurfaceForm>
   <skos:Collection rdf:about="&iso19107Code;GM_BSplineSurfaceFormCollection">
     <skos:prefLabel>GM_BSplineSurfaceForm - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/planar"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/cylindrical"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/conical"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/spherical"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/toroidal"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/unspecified"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/planar"/>
+    <skos:member rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/cylindrical"/>
+    <skos:member rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/conical"/>
+    <skos:member rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/spherical"/>
+    <skos:member rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/toroidal"/>
+    <skos:member rdf:resource="&iso19107Code;GM_BSplineSurfaceForm/unspecified"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19107;GM_KnotType">
     <rdfs:label>GM_KnotType</rdfs:label>
@@ -1619,11 +1617,9 @@
   </iso19107:GM_KnotType>
   <skos:Collection rdf:about="&iso19107Code;GM_KnotTypeCollection">
     <skos:prefLabel>GM_KnotType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19107Code;GM_KnotType/uniform"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_KnotType/quasiUniform"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_KnotType/piecewiseBezier"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19107Code;GM_KnotType/uniform"/>
+    <skos:member rdf:resource="&iso19107Code;GM_KnotType/quasiUniform"/>
+    <skos:member rdf:resource="&iso19107Code;GM_KnotType/piecewiseBezier"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19107;GM_Position">
     <rdfs:label>GM_Position</rdfs:label>
@@ -1680,13 +1676,11 @@
   </iso19107:GM_SplineCurveForm>
   <skos:Collection rdf:about="&iso19107Code;GM_SplineCurveFormCollection">
     <skos:prefLabel>GM_SplineCurveForm - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19107Code;GM_SplineCurveForm/polylineForm"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SplineCurveForm/circularArc"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SplineCurveForm/ellipticArc"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SplineCurveForm/parabolicArc"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SplineCurveForm/hyperbolicArc"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19107Code;GM_SplineCurveForm/polylineForm"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SplineCurveForm/circularArc"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SplineCurveForm/ellipticArc"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SplineCurveForm/parabolicArc"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SplineCurveForm/hyperbolicArc"/>
   </skos:Collection>
 </rdf:RDF>
 

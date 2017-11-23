@@ -655,18 +655,16 @@
   </iso19107:GM_CurveInterpolation>
   <skos:Collection rdf:about="&iso19107Code;GM_CurveInterpolationCollection">
     <skos:prefLabel>GM_CurveInterpolation - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/linear"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/geodesic"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/circularArc3Points"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/circularArc2PointWithBulge"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/elliptical"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/clothoid"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/conic"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/polynomialSpline"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/cubicSpline"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_CurveInterpolation/rationalSpline"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/linear"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/geodesic"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/circularArc3Points"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/circularArc2PointWithBulge"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/elliptical"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/clothoid"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/conic"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/polynomialSpline"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/cubicSpline"/>
+    <skos:member rdf:resource="&iso19107Code;GM_CurveInterpolation/rationalSpline"/>
   </skos:Collection>
   <owl:Class rdf:about="&iso19107;GM_SurfaceInterpolation">
     <rdfs:label>GM_SurfaceInterpolation</rdfs:label>
@@ -740,18 +738,16 @@
   </iso19107:GM_SurfaceInterpolation>
   <skos:Collection rdf:about="&iso19107Code;GM_SurfaceInterpolationCollection">
     <skos:prefLabel>GM_SurfaceInterpolation - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/none"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/planar"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/spherical"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/elliptical"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/conic"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/tin"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/parametricCurve"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/polynomialSpline"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/rationalSpline"/>
-      <skos:Concept rdf:resource="&iso19107Code;GM_SurfaceInterpolation/triangulatedSpline"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/none"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/planar"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/spherical"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/elliptical"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/conic"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/tin"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/parametricCurve"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/polynomialSpline"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/rationalSpline"/>
+    <skos:member rdf:resource="&iso19107Code;GM_SurfaceInterpolation/triangulatedSpline"/>
   </skos:Collection>
 </rdf:RDF>
 
