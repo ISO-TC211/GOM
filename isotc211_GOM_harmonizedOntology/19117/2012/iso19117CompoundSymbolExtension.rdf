@@ -17,7 +17,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19117CompoundSymbolExtension.owl -->
+  <!-- File name:         iso19117CompoundSymbolExtension.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL           -->
   <!-- Generator version: 2.4                                 -->
   <!-- File date:         15-4-2015                           -->
@@ -437,11 +437,9 @@
   </iso19117:SY_RelativePlacement>
   <skos:Collection rdf:about="&iso19117Code;SY_RelativePlacementCollection">
     <skos:prefLabel>SY_RelativePlacement - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19117Code;SY_RelativePlacement/portrayal"/>
-      <skos:Concept rdf:resource="&iso19117Code;SY_RelativePlacement/geometry"/>
-      <skos:Concept rdf:resource="&iso19117Code;SY_RelativePlacement/notApplicable"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19117Code;SY_RelativePlacement/portrayal"/>
+    <skos:member rdf:resource="&iso19117Code;SY_RelativePlacement/geometry"/>
+    <skos:member rdf:resource="&iso19117Code;SY_RelativePlacement/notApplicable"/>
   </skos:Collection>
 
 </rdf:RDF>
