@@ -19,7 +19,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1CommonClasses.owl -->
+  <!-- File name:         iso19115-1CommonClasses.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL   -->
   <!-- Generator version: 2.5                         -->
   <!-- File date:         9-10-2015                   -->
@@ -711,34 +711,32 @@
   </iso19115-1:MD_ScopeCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_ScopeCodeCollection">
     <skos:prefLabel>MD_ScopeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/attribute"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/attributeType"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/collectionHardware"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/collectionSession"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/dataset"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/series"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/nonGeographicDataset"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/dimensionGroup"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/feature"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/featureType"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/propertyType"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/fieldSession"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/software"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/service"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/model"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/tile"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/metadata"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/initiative"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/sample"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/document"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/repository"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/aggregate"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/product"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/collection"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/coverage"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ScopeCode/application"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/attribute"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/attributeType"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/collectionHardware"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/collectionSession"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/dataset"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/series"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/nonGeographicDataset"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/dimensionGroup"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/feature"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/featureType"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/propertyType"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/fieldSession"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/software"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/service"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/model"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/tile"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/metadata"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/initiative"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/sample"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/document"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/repository"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/aggregate"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/product"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/collection"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/coverage"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ScopeCode/application"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->

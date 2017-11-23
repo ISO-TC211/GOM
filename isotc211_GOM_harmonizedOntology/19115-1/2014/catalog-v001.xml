@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.owl"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation" uri="iso19115-1ApplicationSchemaInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation" uri="iso19115-1CitationAndResponsiblePartyInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/CommonClasses" uri="iso19115-1CommonClasses.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation" uri="iso19115-1ConstraintInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/ContentInformation" uri="iso19115-1ContentInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/DistributionInformation" uri="iso19115-1DistributionInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata" uri="iso19115-1ExampleOfExtendedMatadata.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/ExtentInformation" uri="iso19115-1ExtentInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation" uri="iso19115-1IdentificationInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation" uri="iso19115-1Language-CharactersetLocalizationInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/LineageInformation" uri="iso19115-1LineageInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation" uri="iso19115-1MaintenanceInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals" uri="ISO19115-1_2014Metadata-Fundamentals.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation" uri="iso19115-1MetadataApplicationInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation" uri="iso19115-1MetadataExtensionInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/MetadataInformation" uri="iso19115-1MetadataInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation" uri="iso19115-1PortrayalCatalogueInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation" uri="iso19115-1ReferenceSystemInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation" uri="iso19115-1ServiceMetadataInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444765282629" name="http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation" uri="iso19115-1SpatialRepresentationInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/ApplicationSchemaInformation" uri="iso19115-1ApplicationSchemaInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation" uri="iso19115-1CitationAndResponsiblePartyInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/CommonClasses" uri="iso19115-1CommonClasses.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation" uri="iso19115-1ConstraintInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/ContentInformation" uri="iso19115-1ContentInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/DistributionInformation" uri="iso19115-1DistributionInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata" uri="iso19115-1ExampleOfExtendedMatadata.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/ExtentInformation" uri="iso19115-1ExtentInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation" uri="iso19115-1IdentificationInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation" uri="iso19115-1Language-CharactersetLocalizationInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/LineageInformation" uri="iso19115-1LineageInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation" uri="iso19115-1MaintenanceInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/Metadata-Fundamentals" uri="ISO19115-1_2014Metadata-Fundamentals.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation" uri="iso19115-1MetadataApplicationInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/MetadataExtensionInformation" uri="iso19115-1MetadataExtensionInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/MetadataInformation" uri="iso19115-1MetadataInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/PortrayalCatalogueInformation" uri="iso19115-1PortrayalCatalogueInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation" uri="iso19115-1ReferenceSystemInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation" uri="iso19115-1ServiceMetadataInformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394042040" name="http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation" uri="iso19115-1SpatialRepresentationInformation.rdf"/>
     </group>
 </catalog>

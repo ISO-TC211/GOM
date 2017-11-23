@@ -19,7 +19,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1ServiceMetadataInformation.owl -->
+  <!-- File name:         iso19115-1ServiceMetadataInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                -->
   <!-- Generator version: 2.5                                      -->
   <!-- File date:         9-10-2015                                -->
@@ -781,18 +781,16 @@
   </iso19115-1:DCPList>
   <skos:Collection rdf:about="&iso19115-1Code;DCPListCollection">
     <skos:prefLabel>DCPList - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/XML"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/CORBA"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/JAVA"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/COM"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/SQL"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/SOAP"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/Z3950"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/HTTP"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/FTP"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DCPList/webServices"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/XML"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/CORBA"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/JAVA"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/COM"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/SQL"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/SOAP"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/Z3950"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/HTTP"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/FTP"/>
+    <skos:member rdf:resource="&iso19115-1Code;DCPList/webServices"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++-->
@@ -828,11 +826,9 @@
   </iso19115-1:SV_CouplingType>
   <skos:Collection rdf:about="&iso19115-1Code;SV_CouplingTypeCollection">
     <skos:prefLabel>SV_CouplingType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;SV_CouplingType/loose"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;SV_CouplingType/mixed"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;SV_CouplingType/tight"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;SV_CouplingType/loose"/>
+    <skos:member rdf:resource="&iso19115-1Code;SV_CouplingType/mixed"/>
+    <skos:member rdf:resource="&iso19115-1Code;SV_CouplingType/tight"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++++-->

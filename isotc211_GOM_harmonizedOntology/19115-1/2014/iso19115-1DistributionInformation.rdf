@@ -20,7 +20,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1DistributionInformation.owl -->
+  <!-- File name:         iso19115-1DistributionInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL             -->
   <!-- Generator version: 2.5                                   -->
   <!-- File date:         9-10-2015                             -->
@@ -809,15 +809,13 @@
   </iso19115-1:MD_MediumFormatCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_MediumFormatCodeCollection">
     <skos:prefLabel>MD_MediumFormatCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MediumFormatCode/cpio"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MediumFormatCode/tar"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MediumFormatCode/highSierra"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MediumFormatCode/iso9660"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MediumFormatCode/iso9660RockRidge"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MediumFormatCode/iso9660AppleHFS"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MediumFormatCode/udf"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MediumFormatCode/cpio"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MediumFormatCode/tar"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MediumFormatCode/highSierra"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MediumFormatCode/iso9660"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MediumFormatCode/iso9660RockRidge"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MediumFormatCode/iso9660AppleHFS"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MediumFormatCode/udf"/>
   </skos:Collection>
 
 </rdf:RDF>

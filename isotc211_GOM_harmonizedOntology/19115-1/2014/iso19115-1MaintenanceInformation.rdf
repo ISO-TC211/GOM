@@ -18,7 +18,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1MaintenanceInformation.owl -->
+  <!-- File name:         iso19115-1MaintenanceInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL            -->
   <!-- Generator version: 2.5                                  -->
   <!-- File date:         9-10-2015                            -->
@@ -276,23 +276,21 @@
   </iso19115-1:MD_MaintenanceFrequencyCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_MaintenanceFrequencyCodeCollection">
     <skos:prefLabel>MD_MaintenanceFrequencyCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/continual"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/daily"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/weekly"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/fortnightly"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/monthly"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/quarterly"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/biannually"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/annually"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/asNeeded"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/irregular"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/notPlanned"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/unknown"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/periodic"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/semimonthly"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/biennially"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/continual"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/daily"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/weekly"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/fortnightly"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/monthly"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/quarterly"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/biannually"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/annually"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/asNeeded"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/irregular"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/notPlanned"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/unknown"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/periodic"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/semimonthly"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_MaintenanceFrequencyCode/biennially"/>
   </skos:Collection>
 
 </rdf:RDF>

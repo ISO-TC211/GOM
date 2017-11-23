@@ -27,7 +27,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1IdentificationInformation.owl -->
+  <!-- File name:         iso19115-1IdentificationInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL               -->
   <!-- Generator version: 2.5                                     -->
   <!-- File date:         9-10-2015                               -->
@@ -1244,17 +1244,15 @@
   </iso19115-1:DS_AssociationTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;DS_AssociationTypeCodeCollection">
     <skos:prefLabel>DS_AssociationTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/crossReference"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/largerWorkCitation"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/partOfSeamlessDatabase"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/stereoMate"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/isComposedOf"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/collectiveTitle"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/series"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/dependency"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/revisionOf"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/crossReference"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/largerWorkCitation"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/partOfSeamlessDatabase"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/stereoMate"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/isComposedOf"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/collectiveTitle"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/series"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/dependency"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_AssociationTypeCode/revisionOf"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -1362,23 +1360,21 @@
   </iso19115-1:DS_InitiativeTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;DS_InitiativeTypeCodeCollection">
     <skos:prefLabel>DS_InitiativeTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/campaign"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/collection"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/exercise"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/experiment"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/investigation"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/mission"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/sensor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/operation"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/platform"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/process"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/program"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/project"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/study"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/task"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/trial"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/campaign"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/collection"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/exercise"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/experiment"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/investigation"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/mission"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/sensor"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/operation"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/platform"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/process"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/program"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/project"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/study"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/task"/>
+    <skos:member rdf:resource="&iso19115-1Code;DS_InitiativeTypeCode/trial"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -1486,23 +1482,21 @@
   </iso19115-1:MD_KeywordTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_KeywordTypeCodeCollection">
     <skos:prefLabel>MD_KeywordTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/discipline"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/place"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/stratum"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/temporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/theme"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/dataCentre"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/featureType"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/instrument"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/platform"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/process"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/project"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/service"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/product"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/subTopicCategory"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/taxon"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/discipline"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/place"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/stratum"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/temporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/theme"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/dataCentre"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/featureType"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/instrument"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/platform"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/process"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/project"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/service"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/product"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/subTopicCategory"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_KeywordTypeCode/taxon"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++-->
@@ -1628,26 +1622,24 @@
   </iso19115-1:MD_ProgressCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_ProgressCodeCollection">
     <skos:prefLabel>MD_ProgressCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/completed"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/historicalArchive"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/obsolete"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/onGoing"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/planned"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/required"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/underDevelopment"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/final"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/pending"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/retired"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/superseded"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/tentative"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/valid"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/accepted"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/notAccepted"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/withdrawn"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/proposed"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ProgressCode/deprecated"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/completed"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/historicalArchive"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/obsolete"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/onGoing"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/planned"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/required"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/underDevelopment"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/final"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/pending"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/retired"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/superseded"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/tentative"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/valid"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/accepted"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/notAccepted"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/withdrawn"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/proposed"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ProgressCode/deprecated"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++-->
@@ -1721,14 +1713,12 @@
   </iso19115-1:MD_SpatialRepresentationTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_SpatialRepresentationTypeCodeCollection">
     <skos:prefLabel>MD_SpatialRepresentationTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/vector"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/grid"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/textTable"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/tin"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/stereoModel"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/video"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/vector"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/grid"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/textTable"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/tin"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/stereoModel"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_SpatialRepresentationTypeCode/video"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++-->

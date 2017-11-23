@@ -18,7 +18,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1Language-CharactersetLocalizationInformation.owl -->
+  <!-- File name:         iso19115-1Language-CharactersetLocalizationInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                                  -->
   <!-- Generator version: 2.5                                                        -->
   <!-- File date:         9-10-2015                                                  -->
@@ -327,8 +327,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19115-1Code;CountryCodeCollection">
     <skos:prefLabel>CountryCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++-->
@@ -346,8 +344,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19115-1Code;LanguageCodeCollection">
     <skos:prefLabel>LanguageCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -365,8 +361,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19115-1Code;MD_CharacterSetCodeCollection">
     <skos:prefLabel>MD_CharacterSetCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
 </rdf:RDF>

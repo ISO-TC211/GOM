@@ -17,7 +17,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1CitationAndResponsiblePartyInformation.owl -->
+  <!-- File name:         iso19115-1CitationAndResponsiblePartyInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                            -->
   <!-- Generator version: 2.5                                                  -->
   <!-- File date:         9-10-2015                                            -->
@@ -1215,24 +1215,22 @@
   </iso19115-1:CI_DateTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;CI_DateTypeCodeCollection">
     <skos:prefLabel>CI_DateTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/creation"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/publication"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/revision"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/expiry"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastUpdate"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastRevision"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/nextUpdate"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/unavailable"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/inForce"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/adopted"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/deprecated"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/superseded"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityBegins"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityExpires"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/released"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_DateTypeCode/distribution"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/creation"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/publication"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/revision"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/expiry"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastUpdate"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastRevision"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/nextUpdate"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/unavailable"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/inForce"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/adopted"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/deprecated"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/superseded"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityBegins"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityExpires"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/released"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/distribution"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -1316,19 +1314,17 @@
   </iso19115-1:CI_OnLineFunctionCode>
   <skos:Collection rdf:about="&iso19115-1Code;CI_OnLineFunctionCodeCollection">
     <skos:prefLabel>CI_OnLineFunctionCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/download"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/information"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/offlineAccess"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/order"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/search"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/completeMetadata"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/browseGraphic"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/upload"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/emailService"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/browsing"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/fileAccess"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/download"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/information"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/offlineAccess"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/order"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/search"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/completeMetadata"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/browseGraphic"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/upload"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/emailService"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/browsing"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_OnLineFunctionCode/fileAccess"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++-->
@@ -1472,29 +1468,27 @@
   </iso19115-1:CI_PresentationFormCode>
   <skos:Collection rdf:about="&iso19115-1Code;CI_PresentationFormCodeCollection">
     <skos:prefLabel>CI_PresentationFormCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/documentDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/documentHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/imageDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/imageHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/mapDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/mapHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/modelDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/modelHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/profileDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/profileHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/tableDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/tableHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/videoDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/videoHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/audioDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/audioHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/multimediaDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/multimediaHardcopy"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/physicalObject"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/diagramDigital"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_PresentationFormCode/diagramHardcopy"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/documentDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/documentHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/imageDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/imageHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/mapDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/mapHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/modelDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/modelHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/profileDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/profileHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/tableDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/tableHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/videoDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/videoHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/audioDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/audioHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/multimediaDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/multimediaHardcopy"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/physicalObject"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/diagramDigital"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_PresentationFormCode/diagramHardcopy"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -1632,28 +1626,26 @@
   </iso19115-1:CI_RoleCode>
   <skos:Collection rdf:about="&iso19115-1Code;CI_RoleCodeCollection">
     <skos:prefLabel>CI_RoleCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/resourceProvider"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/custodian"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/owner"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/user"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/distributor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/originator"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/pointOfContact"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/principalInvestigator"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/processor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/publisher"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/author"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/sponsor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/coAuthor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/collaborator"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/editor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/mediator"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/rightsHolder"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/contributor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/funder"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_RoleCode/stakeholder"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/resourceProvider"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/custodian"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/owner"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/user"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/distributor"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/originator"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/pointOfContact"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/principalInvestigator"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/processor"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/publisher"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/author"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/sponsor"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/coAuthor"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/collaborator"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/editor"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/mediator"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/rightsHolder"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/contributor"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/funder"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_RoleCode/stakeholder"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
@@ -1689,11 +1681,9 @@
   </iso19115-1:CI_TelephoneTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;CI_TelephoneTypeCodeCollection">
     <skos:prefLabel>CI_TelephoneTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_TelephoneTypeCode/voice"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_TelephoneTypeCode/facsimile"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;CI_TelephoneTypeCode/sms"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;CI_TelephoneTypeCode/voice"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_TelephoneTypeCode/facsimile"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_TelephoneTypeCode/sms"/>
   </skos:Collection>
 
 </rdf:RDF>

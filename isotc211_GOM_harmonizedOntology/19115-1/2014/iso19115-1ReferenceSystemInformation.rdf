@@ -16,7 +16,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1ReferenceSystemInformation.owl -->
+  <!-- File name:         iso19115-1ReferenceSystemInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL                -->
   <!-- Generator version: 2.5                                      -->
   <!-- File date:         9-10-2015                                -->
@@ -283,36 +283,34 @@
   </iso19115-1:MD_ReferenceSystemTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_ReferenceSystemTypeCodeCollection">
     <skos:prefLabel>MD_ReferenceSystemTypeCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringParametric"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringParametricTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringVertical"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringVerticalTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DParametric"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DParametricTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DVertical"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DVerticalTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic3DTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjected2DParametric"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjected2DParametricTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjectedTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjectedVertical"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjectedVerticalTemporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/engineering"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/engineeringDesign"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/engineeringImage"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geodeticGeocentric"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geodeticGeographic2D"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geodeticGeographic3D"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geographicIdentifier"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/linear"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/parametric"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/projected"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/temporal"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/vertical"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringParametric"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringParametricTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringVertical"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundEngineeringVerticalTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DParametric"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DParametricTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DVertical"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic2DVerticalTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundGeographic3DTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjected2DParametric"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjected2DParametricTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjectedTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjectedVertical"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/compoundProjectedVerticalTemporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/engineering"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/engineeringDesign"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/engineeringImage"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geodeticGeocentric"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geodeticGeographic2D"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geodeticGeographic3D"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/geographicIdentifier"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/linear"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/parametric"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/projected"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/temporal"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ReferenceSystemTypeCode/vertical"/>
   </skos:Collection>
 
 </rdf:RDF>

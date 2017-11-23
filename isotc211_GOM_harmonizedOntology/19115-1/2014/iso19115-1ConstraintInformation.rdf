@@ -17,7 +17,7 @@
 ]>
 
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19115-1ConstraintInformation.owl -->
+  <!-- File name:         iso19115-1ConstraintInformation.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL           -->
   <!-- Generator version: 2.5                                 -->
   <!-- File date:         9-10-2015                           -->
@@ -458,17 +458,15 @@
   </iso19115-1:MD_ClassificationCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_ClassificationCodeCollection">
     <skos:prefLabel>MD_ClassificationCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/unclassified"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/restricted"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/confidential"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/secret"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/topSecret"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/sensitiveButUnclassified"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/forOfficialUseOnly"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/protected"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_ClassificationCode/limitedDistribution"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/unclassified"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/restricted"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/confidential"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/secret"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/topSecret"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/sensitiveButUnclassified"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/forOfficialUseOnly"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/protected"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_ClassificationCode/limitedDistribution"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -588,25 +586,23 @@
   </iso19115-1:MD_RestrictionCode>
   <skos:Collection rdf:about="&iso19115-1Code;MD_RestrictionCodeCollection">
     <skos:prefLabel>MD_RestrictionCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/copyright"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/patent"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/patentPending"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/trademark"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/licence"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/intellectualPropertyRights"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/restricted"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/otherRestrictions"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/unrestricted"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/licenceUnrestricted"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/licenceEndUser"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/licenceDistributor"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/private"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/statutory"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/confidential"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/sensitiveButUnclassified"/>
-      <skos:Concept rdf:resource="&iso19115-1Code;MD_RestrictionCode/in-confidence"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/copyright"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/patent"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/patentPending"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/trademark"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/licence"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/intellectualPropertyRights"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/restricted"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/otherRestrictions"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/unrestricted"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/licenceUnrestricted"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/licenceEndUser"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/licenceDistributor"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/private"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/statutory"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/confidential"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/sensitiveButUnclassified"/>
+    <skos:member rdf:resource="&iso19115-1Code;MD_RestrictionCode/in-confidence"/>
   </skos:Collection>
 
 </rdf:RDF>
