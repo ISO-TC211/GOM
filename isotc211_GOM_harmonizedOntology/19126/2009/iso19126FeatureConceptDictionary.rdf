@@ -19,7 +19,7 @@
 ]>
 
   <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- File name:         iso19126FeatureConceptDictionary.owl -->
+  <!-- File name:         iso19126FeatureConceptDictionary.rdf -->
   <!-- Generator:         GOM_Technologies::UML2OWL            -->
   <!-- Generator version: 2.5                                  -->
   <!-- File date:         2-6-2015                             -->
@@ -511,11 +511,9 @@
   </iso19126:CD_ConceptRelationshipType>
   <skos:Collection rdf:about="&iso19126Code;CD_ConceptRelationshipTypeCollection">
     <skos:prefLabel>CD_ConceptRelationshipType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19126Code;CD_ConceptRelationshipType/similarity"/>
-      <skos:Concept rdf:resource="&iso19126Code;CD_ConceptRelationshipType/oppposition"/>
-      <skos:Concept rdf:resource="&iso19126Code;CD_ConceptRelationshipType/other"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19126Code;CD_ConceptRelationshipType/similarity"/>
+    <skos:member rdf:resource="&iso19126Code;CD_ConceptRelationshipType/oppposition"/>
+    <skos:member rdf:resource="&iso19126Code;CD_ConceptRelationshipType/other"/>
   </skos:Collection>
 
 </rdf:RDF>
