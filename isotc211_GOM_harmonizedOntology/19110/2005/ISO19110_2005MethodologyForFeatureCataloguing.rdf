@@ -1445,11 +1445,9 @@
   </iso19110:FC_RoleType>
   <skos:Collection rdf:about="&iso19110Code;FC_RoleTypeCollection">
     <skos:prefLabel>FC_RoleType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19110Code;FC_RoleType/ordinary"/>
-      <skos:Concept rdf:resource="&iso19110Code;FC_RoleType/aggregation"/>
-      <skos:Concept rdf:resource="&iso19110Code;FC_RoleType/composition"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19110Code;FC_RoleType/ordinary"/>
+    <skos:member rdf:resource="&iso19110Code;FC_RoleType/aggregation"/>
+    <skos:member rdf:resource="&iso19110Code;FC_RoleType/composition"/>
   </skos:Collection>
 
 </rdf:RDF>
