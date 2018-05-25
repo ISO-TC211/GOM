@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19110_193 "http://def.isotc211.org/iso19110/2016/FeatureCataloguing#" >
+  <!ENTITY iso19135-1_636 "http://def.isotc211.org/iso19135/-1/2015/ExtendedModel#" >
+  <!ENTITY iso19110 "http://def.isotc211.org/iso19110/2016/FeatureCatalogueRegisters#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19110FeatureCatalogueRegisters.rdf -->
+  <!-- Generator:         GOM_Technologies::UML2OWL             -->
+  <!-- Generator version: 2.6                                   -->
+  <!-- File date:         13-3-2018                             -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19110/2016/FeatureCatalogueRegisters#"
+  xml:base="http://def.isotc211.org/iso19110/2016/FeatureCatalogueRegisters"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19110_193="http://def.isotc211.org/iso19110/2016/FeatureCataloguing#"
+  xmlns:iso19135-1_636="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel#"
+  xmlns:iso19110="http://def.isotc211.org/iso19110/2016/FeatureCatalogueRegisters#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19110:2016 Feature Catalogue Registers -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19110/2016/FeatureCatalogueRegisters">
+    <rdfs:label>ISO 19110:2016 Feature Catalogue Registers</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19110/ed-2/en/</dct:source>
+    <owl:versionInfo>2016-12</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19110/2016/FeatureCataloguing"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19135/-1/2015/ExtendedModel"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_FeatureCatalogueRegister -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_FeatureCatalogueRegister">
+    <rdfs:label>FR_FeatureCatalogueRegister</rdfs:label>
+    <skos:definition>Realization of RE_Register that represents the description of a feature catalogue. Because the content of this class is in its equivalent class in the feature catalogue schema, it serves only as a pointer from the register to the catalogue, and need not be implemented explicitly. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_Register"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_FeatureCatalogueRegister.featureCatalogueContent"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_FeatureCatalogueRegister.featureCatalogueContent"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_FeatureCatalogue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredAssociationRole -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredAssociationRole">
+    <rdfs:label>FR_RegisteredAssociationRole</rdfs:label>
+    <skos:definition>Registered Association Role</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredAssociationRole.definedAssociationRole"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredAssociationRole.definedAssociationRole"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_AssociationRole"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredDefinitionSource -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredDefinitionSource">
+    <rdfs:label>FR_RegisteredDefinitionSource</rdfs:label>
+    <skos:definition>Registered Definition Source</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredDefinitionSource.definedDefinitionSource"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredDefinitionSource.definedDefinitionSource"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_DefinitionSource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredFeatureAssociation -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredFeatureAssociation">
+    <rdfs:label>FR_RegisteredFeatureAssociation</rdfs:label>
+    <skos:definition>Registered Feature Association</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureAssociation.definedFeatureAssociation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureAssociation.definedFeatureAssociation"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_FeatureAssociation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredFeatureAttribute -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredFeatureAttribute">
+    <rdfs:label>FR_RegisteredFeatureAttribute</rdfs:label>
+    <skos:definition>Registered Feature Attribute</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureAttribute.definedFeatureAttribute"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureAttribute.definedFeatureAttribute"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_FeatureAttribute"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredFeatureCatalogue -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredFeatureCatalogue">
+    <rdfs:label>FR_RegisteredFeatureCatalogue</rdfs:label>
+    <skos:definition>Registered Feature Catalogue Item</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureCatalogue.definedFeatureCatalogue"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureCatalogue.definedFeatureCatalogue"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_FeatureCatalogue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredFeatureOperation -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredFeatureOperation">
+    <rdfs:label>FR_RegisteredFeatureOperation</rdfs:label>
+    <skos:definition>Registered Feature Operation</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureOperation.definedFeatureOperation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureOperation.definedFeatureOperation"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_FeatureOperation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredFeatureType -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredFeatureType">
+    <rdfs:label>FR_RegisteredFeatureType</rdfs:label>
+    <skos:definition>Registered Feature Type</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureType.definedFeaturetype"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredFeatureType.definedFeaturetype"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredInheritanceRelation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredInheritanceRelation">
+    <rdfs:label>FR_RegisteredInheritanceRelation</rdfs:label>
+    <skos:definition>Registered inheritance Relation</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredInheritanceRelation.definedInheritanceRelation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredInheritanceRelation.definedInheritanceRelation"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_InheritanceRelation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: FR_RegisteredListedValue -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19110;FR_RegisteredListedValue">
+    <rdfs:label>FR_RegisteredListedValue</rdfs:label>
+    <skos:definition>Registered Listed Value</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135-1_636;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredListedValue.definedListedValue"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19110;FR_RegisteredListedValue.definedListedValue"/>
+        <owl:allValuesFrom rdf:resource="&iso19110_193;FC_ListedValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_FeatureCatalogueRegister.featureCatalogueContent -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_FeatureCatalogueRegister.featureCatalogueContent">
+    <rdfs:label>featureCatalogueContent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_FeatureCatalogueRegister"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_FeatureCatalogue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredAssociationRole.definedAssociationRole -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredAssociationRole.definedAssociationRole">
+    <rdfs:label>definedAssociationRole</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredAssociationRole"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_AssociationRole"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredDefinitionSource.definedDefinitionSource -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredDefinitionSource.definedDefinitionSource">
+    <rdfs:label>definedDefinitionSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredDefinitionSource"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_DefinitionSource"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredFeatureAssociation.definedFeatureAssociation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredFeatureAssociation.definedFeatureAssociation">
+    <rdfs:label>definedFeatureAssociation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredFeatureAssociation"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_FeatureAssociation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredFeatureAttribute.definedFeatureAttribute -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredFeatureAttribute.definedFeatureAttribute">
+    <rdfs:label>definedFeatureAttribute</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredFeatureAttribute"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_FeatureAttribute"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredFeatureCatalogue.definedFeatureCatalogue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredFeatureCatalogue.definedFeatureCatalogue">
+    <rdfs:label>definedFeatureCatalogue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredFeatureCatalogue"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_FeatureCatalogue"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredFeatureOperation.definedFeatureOperation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredFeatureOperation.definedFeatureOperation">
+    <rdfs:label>definedFeatureOperation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredFeatureOperation"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_FeatureOperation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredFeatureType.definedFeaturetype -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredFeatureType.definedFeaturetype">
+    <rdfs:label>definedFeaturetype</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredFeatureType"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_FeatureType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredInheritanceRelation.definedInheritanceRelation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredInheritanceRelation.definedInheritanceRelation">
+    <rdfs:label>definedInheritanceRelation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredInheritanceRelation"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_InheritanceRelation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FR_RegisteredListedValue.definedListedValue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19110;FR_RegisteredListedValue.definedListedValue">
+    <rdfs:label>definedListedValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19110/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Content</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19110;FR_RegisteredListedValue"/>
+    <rdfs:range rdf:resource="&iso19110_193;FC_ListedValue"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
