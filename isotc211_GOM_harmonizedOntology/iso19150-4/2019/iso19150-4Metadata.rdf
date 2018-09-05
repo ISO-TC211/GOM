@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-4_serv "http://def.isotc211.org/iso19150/-4/2019/Service#" >
+  <!ENTITY iso19115-1_2086 "http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19150-4 "http://def.isotc211.org/iso19150/-4/2019/Metadata#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19150-4Metadata.rdf    -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         7-7-2017                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19150/-4/2019/Metadata#"
+  xml:base="http://def.isotc211.org/iso19150/-4/2019/Metadata"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-4_serv="http://def.isotc211.org/iso19150/-4/2019/Service#"
+  xmlns:iso19115-1_2086="http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19150-4="http://def.isotc211.org/iso19150/-4/2019/Metadata#">
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19150-4:2019 Metadata -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19150/-4/2019/Metadata">
+    <rdfs:label>ISO 19150-4:2019 Metadata</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19150/-4/ed-1/en/</dct:source>
+    <owl:versionInfo>2019-11</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-4/2019/Service"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation"/-->
+  </owl:Ontology>
+  
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: GeoWebServiceIdentification -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4_serv;GeoWebServiceIdentification">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.geoWebServiceMetadata"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.geoWebServiceMetadata"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2086;SV_ServiceIdentification"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceIdentification.geoWebServiceMetadata -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceIdentification.geoWebServiceMetadata">
+    <rdfs:label>geoWebServiceMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19150-4_serv;GeoWebServiceIdentification"/>
+    <rdfs:range rdf:resource="&iso19115-1_2086;SV_ServiceIdentification"/>
+  </owl:ObjectProperty>
+
+
+</rdf:RDF>
+

@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_2338 "http://def.isotc211.org/iso19103/2015/MeasureTypes#" >
+  <!ENTITY iso19108_407 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19103_2333 "http://def.isotc211.org/iso19103/2015/NameTypes#" >
+  <!ENTITY iso19115-1_2093 "http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#" >
+  <!ENTITY iso19150-4_serv "http://def.isotc211.org/iso19150/-4/2019/Service#" >
+  <!ENTITY iso19150-4 "http://def.isotc211.org/iso19150/-4/2019/Capabilities#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19150-4Capabilities.rdf -->
+  <!-- Generator:         GOM_Technologies::UML2OWL  -->
+  <!-- Generator version: 2.5                        -->
+  <!-- File date:         7-7-2017                   -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19150/-4/2019/Capabilities#"
+  xml:base="http://def.isotc211.org/iso19150/-4/2019/Capabilities"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_2338="http://def.isotc211.org/iso19103/2015/MeasureTypes#"
+  xmlns:iso19108_407="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19103_2333="http://def.isotc211.org/iso19103/2015/NameTypes#"
+  xmlns:iso19115-1_2093="http://def.isotc211.org/iso19115/-1/2014/ExtentInformation#"
+  xmlns:iso19150-4_serv="http://def.isotc211.org/iso19150/-4/2019/Service#"
+  xmlns:iso19150-4="http://def.isotc211.org/iso19150/-4/2019/Capabilities#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19150-4:2019 Capabilities -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19150/-4/2019/Capabilities">
+    <rdfs:label>ISO 19150-4:2019 Capabilities</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19150/-4/ed-1/en/</dct:source>
+    <owl:versionInfo>2019-11</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/MeasureTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/NameTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/ExtentInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-4/2019/Service"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: GeoWebServiceIdentification -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4_serv;GeoWebServiceIdentification">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.capability"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: GeoWebServiceCapability -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebServiceCapability">
+    <rdfs:label>GeoWebServiceCapability</rdfs:label>
+    <skos:definition>The class GeoWebServiceCapability provides abilities of the services.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>count(self.trust+self.reliability+self.accuracy+self.performance+self.robustness+self.security+self.scalability+self.transactional).gt..eq.1</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.trust"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.trust"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.reliability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.reliability"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2338;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.accuracy"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;Accuracy"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.performance"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;Performance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.robustness"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.robustness"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.security"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.security"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;Security"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.scalability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.scalability"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2338;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.transactional"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.transactional"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceCapability.extent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2093;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: Troughput -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;uTroughput">
+    <rdfs:label>Troughput</rdfs:label>
+    <skos:definition>Number of units of information a GeoWeb service can process in a given amount of time measured in bits per second (bps), in megabits per second (Mbps) or in gigabits per second (Gbps).</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uTroughput.troughput"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uTroughput.troughput"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2338;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Latency -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;uLatency">
+    <rdfs:label>Latency</rdfs:label>
+    <skos:definition>Delay from input into a GeoWeb Service to desired outcome. Latency measurement starts at the the GeoWeb service is invoked and ends on the return of the response from the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uLatency.latency"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uLatency.latency"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Duration"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: ExecutionTime -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;uExecutionTime">
+    <rdfs:label>ExecutionTime</rdfs:label>
+    <skos:definition>The maximum length of time the GeoWeb service requires to perform the task.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uExecutionTime.executionTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uExecutionTime.executionTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Duration"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: TransactionTime -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;uTransactionTime">
+    <rdfs:label>TransactionTime</rdfs:label>
+    <skos:definition>Time required to exchange a sequence of information with the related work (such as database updating) that is treated as a unit for the purposes of satisfying a request and for ensuring database integrity.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uTransactionTime.transactionTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uTransactionTime.transactionTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Duration"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: ResponseTime -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;uResponseTime">
+    <rdfs:label>ResponseTime</rdfs:label>
+    <skos:definition>Elapsed time between the end of an inquiry or demand on a GeoWeb service and the beginning of a response.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uResponseTime.responseTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uResponseTime.responseTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Duration"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Accuracy -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;Accuracy">
+    <rdfs:label>Accuracy</rdfs:label>
+    <skos:definition>The datatype Accuracy provides the identification and quantification of errors generated by the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Accuracy.errorType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Accuracy.errorType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2333;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Accuracy.errorRate"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Accuracy.errorRate"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2338;Measure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Security -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;Security">
+    <rdfs:label>Security</rdfs:label>
+    <skos:definition>The datatype Security provides the ability of a GeoWeb service to provide authentication, authorization, confidentiality, traceability.sl.auditability, data encryption, and non-repudiation.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>count(self.authentication+self.authorization+self.confidentiality+self.traceabilityAuditability+self.dataEncription+self.nonRepudiation).gt..eq.1</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.authentication"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.authentication"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.authorization"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.authorization"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.confidentiality"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.confidentiality"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.traceabilityAuditability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.traceabilityAuditability"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.dataEncryption"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.dataEncryption"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.nonRepudiation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;Security.nonRepudiation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceIdentification.capability -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceIdentification.capability">
+    <rdfs:label>capability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19150-4_serv;GeoWebServiceIdentification"/>
+    <rdfs:range rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GeoWebServiceCapability.trust -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;GeoWebServiceCapability.trust">
+    <rdfs:label>trust</rdfs:label>
+    <skos:definition>Trustworthiness of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceCapability.reliability -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceCapability.reliability">
+    <rdfs:label>reliability</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to perform its functions (to maintain its Web service quality), measured by the number of failures of the GeoWeb service in a certain time interval.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&iso19103_2338;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceCapability.accuracy -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceCapability.accuracy">
+    <rdfs:label>accuracy</rdfs:label>
+    <skos:definition>Error rate generated by the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&iso19150-4;Accuracy"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceCapability.performance -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceCapability.performance">
+    <rdfs:label>performance</rdfs:label>
+    <skos:definition>How fast a GeoWeb service request is completed, measured in terms of throughput, latency, execution time, transaction time, or response time.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&iso19150-4;Performance"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GeoWebServiceCapability.robustness -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;GeoWebServiceCapability.robustness">
+    <rdfs:label>robustness</rdfs:label>
+    <skos:definition>Ability of the GeoWeb service to function correctly in the presence of incomplete or invalid inputs.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceCapability.security -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceCapability.security">
+    <rdfs:label>security</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to provide authentication, authorization, confidentiality, traceability.sl.auditability, data encryption, and non-repudiation.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&iso19150-4;Security"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceCapability.scalability -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceCapability.scalability">
+    <rdfs:label>scalability</rdfs:label>
+    <skos:definition>Ability of the Web service to process more requests in a certain time interval, measured by the number of solved requests in a certain time interval.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&iso19103_2338;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GeoWebServiceCapability.transactional -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;GeoWebServiceCapability.transactional">
+    <rdfs:label>transactional</rdfs:label>
+    <skos:definition>Transactional properties of the Web service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: troughput -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;uTroughput.troughput">
+    <skos:prefLabel>troughput</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;uTroughput"/>
+    <rdfs:range rdf:resource="&iso19103_2338;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- ObjectProperty: latency -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;uLatency.latency">
+    <skos:prefLabel>latency</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;uLatency"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Duration"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: executionTime -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;uExecutionTime.executionTime">
+    <skos:prefLabel>executionTime</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;uExecutionTime"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Duration"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: transactionTime -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;uTransactionTime.transactionTime">
+    <skos:prefLabel>transactionTime</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;uTransactionTime"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Duration"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: responseTime -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;uResponseTime.responseTime">
+    <skos:prefLabel>responseTime</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;uResponseTime"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Duration"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Accuracy.errorType -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;Accuracy.errorType">
+    <rdfs:label>errorType</rdfs:label>
+    <skos:definition>Kind of error generated by the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Accuracy"/>
+    <rdfs:range rdf:resource="&iso19103_2333;GenericName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Accuracy.errorRate -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;Accuracy.errorRate">
+    <rdfs:label>errorRate</rdfs:label>
+    <skos:definition>Rate of error generated by the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Accuracy"/>
+    <rdfs:range rdf:resource="&iso19103_2338;Measure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Security.authentication -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;Security.authentication">
+    <rdfs:label>authentication</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to provide authentication.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Security"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Security.authorization -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;Security.authorization">
+    <rdfs:label>authorization</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to provide authorization.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Security"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Security.confidentiality -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;Security.confidentiality">
+    <rdfs:label>confidentiality</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to provide confidentiality.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Security"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Security.traceabilityAuditability -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;Security.traceabilityAuditability">
+    <rdfs:label>traceabilityAuditability</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to provide traceability.sl.auditability.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Security"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Security.dataEncryption -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;Security.dataEncryption">
+    <rdfs:label>dataEncryption</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to provide data encryption.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Security"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: Security.nonRepudiation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;Security.nonRepudiation">
+    <rdfs:label>nonRepudiation</rdfs:label>
+    <skos:definition>Ability of a GeoWeb service to provide non-repudiation.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;Security"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceCapability.extent -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceCapability.extent">
+    <rdfs:label>extent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceCapability"/>
+    <rdfs:range rdf:resource="&iso19115-1_2093;EX_Extent"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: Performance -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;Performance">
+    <rdfs:label>Performance</rdfs:label>
+    <skos:definition>The union class Performance provides a measure in terms of throughput, latency, execution time, transaction time, or response time about the operation of the GeoWebService.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19150-4;uTroughput"/>
+          <owl:Class rdf:about="&iso19150-4;uLatency"/>
+          <owl:Class rdf:about="&iso19150-4;uExecutionTime"/>
+          <owl:Class rdf:about="&iso19150-4;uTransactionTime"/>
+          <owl:Class rdf:about="&iso19150-4;uResponseTime"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+</rdf:RDF>
+
