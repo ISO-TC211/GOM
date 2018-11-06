@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19146/2018/TermCrossMap" uri="iso19146TermCrossMap.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1541187922942" name="http://def.isotc211.org/iso19146/-2/2018/CrossDomainVocabularies" uri="ISO19146_2018Cross-DomainVocabularies.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1541187922942" name="http://def.isotc211.org/iso19146/-2/2018/TermCrossMap" uri="iso19146TermCrossMap.rdf"/>
+    </group>
+</catalog>
