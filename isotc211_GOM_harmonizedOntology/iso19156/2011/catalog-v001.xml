@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/CategoryObservation" uri="CategoryObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/ComplexObservation" uri="ComplexObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/CountObservation" uri="CountObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/CoverageObservation" uri="CoverageObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures" uri="DomainSpecificSamplingFeatures.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/Examples" uri="Examples.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance" uri="GeneralFeatureInstance.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/GeometryObservation" uri="GeometryObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/Measurement" uri="Measurement.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/Observation" uri="Observation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/ObservationSchema" uri="ObservationSchema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/ObservationsAndMeasurements" uri="ObservationsAndMeasurements.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/PointCoverageObservation" uri="PointCoverageObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SamplingCoverageObservation" uri="SamplingCoverageObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SamplingCurve" uri="SamplingCurve.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SamplingFeature" uri="SamplingFeature.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SamplingFeatures" uri="SamplingFeatures.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SamplingPoint" uri="SamplingPoint.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SamplingSolid" uri="SamplingSolid.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SamplingSurface" uri="SamplingSurface.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature" uri="SpatialSamplingFeature.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/Specimen" uri="Specimen.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/TemporalCoverage" uri="TemporalCoverage.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/TemporalObservation" uri="TemporalObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/TimeSeriesObservation" uri="TimeSeriesObservation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557931715739" name="http://def.isotc211.org/iso19156/2011/TruthObservation" uri="TruthObservation.rdf"/>
+    </group>
+</catalog>

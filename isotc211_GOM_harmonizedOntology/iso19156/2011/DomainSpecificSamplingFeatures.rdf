@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19156_1679 "http://def.isotc211.org/iso19156/2011/SamplingPoint#" >
+  <!ENTITY iso19156_1680 "http://def.isotc211.org/iso19156/2011/SamplingCurve#" >
+  <!ENTITY iso19156_1681 "http://def.isotc211.org/iso19156/2011/SamplingSurface#" >
+  <!ENTITY iso19156_1682 "http://def.isotc211.org/iso19156/2011/SamplingSolid#" >
+  <!ENTITY iso19156 "http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         DomainSpecificSamplingFeatures.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL                  -->
+  <!-- Generator version: 2.5                                        -->
+  <!-- File date:         26-10-2016                                 -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#"
+  xml:base="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19156_1679="http://def.isotc211.org/iso19156/2011/SamplingPoint#"
+  xmlns:iso19156_1680="http://def.isotc211.org/iso19156/2011/SamplingCurve#"
+  xmlns:iso19156_1681="http://def.isotc211.org/iso19156/2011/SamplingSurface#"
+  xmlns:iso19156_1682="http://def.isotc211.org/iso19156/2011/SamplingSolid#"
+  xmlns:iso19156="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19156:2011 Domain specific sampling features -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures">
+    <rdfs:label>ISO 19156:2011 Domain specific sampling features</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19156/ed-1/en/</dct:source>
+    <owl:versionInfo>2011-12-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19156/2011/SamplingPoint"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19156/2011/SamplingCurve"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19156/2011/SamplingSurface"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19156/2011/SamplingSolid"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Borehole -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Borehole">
+    <rdfs:label>Borehole</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1680;SF_SamplingCurve"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: Flightline -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Flightline">
+    <rdfs:label>Flightline</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156;Trajectory"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Interval -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Interval">
+    <rdfs:label>Interval</rdfs:label>
+    <skos:definition>An Interval is a simple curve, parameterized only by its two end-points. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>type(shape).eq.GM_CurveSegment</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19156_1680;SF_SamplingCurve"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: LidarCloud -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;LidarCloud">
+    <rdfs:label>LidarCloud</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1682;SF_SamplingSolid"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: MapHorizon -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;MapHorizon">
+    <rdfs:label>MapHorizon</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1681;SF_SamplingSurface"/>
+  </owl:Class>
+
+  <!--+++++++++++++-->
+  <!-- Class: Mine -->
+  <!--+++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Mine">
+    <rdfs:label>Mine</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1682;SF_SamplingSolid"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: MineLevel -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;MineLevel">
+    <rdfs:label>MineLevel</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1681;SF_SamplingSurface"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: ObservationWell -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;ObservationWell">
+    <rdfs:label>ObservationWell</rdfs:label>
+    <skos:definition>Wells, boreholes, drillholes provide access within a solid medium, and are used to sample rock-units, aquifers, etc. Instruments may be inserted into the hole for in-situ observations. Specimens may be retrieved from a well for observations ex-situ. The association between specimens and wells may be indicated using the SamplingFeatureRelation class. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1680;SF_SamplingCurve"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Outcrop -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Outcrop">
+    <rdfs:label>Outcrop</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Profile -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Profile">
+    <rdfs:label>Profile</rdfs:label>
+    <skos:definition>A profilfe is a curve along which a continuously varying property is sampled, usually at a high spatial sampling rate with an automated instrument. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1680;SF_SamplingCurve"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Quadrat -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Quadrat">
+    <rdfs:label>Quadrat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>shape is square</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19156_1681;SF_SamplingSurface"/>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Scene -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Scene">
+    <rdfs:label>Scene</rdfs:label>
+    <skos:definition>A Scene is a (usually) rectangular surface containing an image. Its geometry is usually defined as part of a tiled set covering the earth's surface. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1681;SF_SamplingSurface"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Section -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Section">
+    <rdfs:label>Section</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1681;SF_SamplingSurface"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: ShipsTrack -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;ShipsTrack">
+    <rdfs:label>ShipsTrack</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156;Trajectory"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Sounding -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Sounding">
+    <rdfs:label>Sounding</rdfs:label>
+    <skos:definition>A sounding is a depth or elevation measurement, usually made from a point on the earth's surface, using various kinds of instrument such as lead-line, radar, sonar, etc. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1679;SF_SamplingPoint"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Station -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Station">
+    <rdfs:label>Station</rdfs:label>
+    <skos:definition>A station is an identified point location where observations are made. In many cases the station will be continuously monitored or revisted. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1679;SF_SamplingPoint"/>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Swath -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Swath">
+    <rdfs:label>Swath</rdfs:label>
+    <skos:definition>A Swath is a (usually) oblique parallelogram within which an image is contained. The shape of the swath is constrained by orbital and instrument scanning mechanics.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1681;SF_SamplingSurface"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: Trajectory -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Trajectory">
+    <rdfs:label>Trajectory</rdfs:label>
+    <skos:definition>A trajectory is a sampling curve that is parameterized primarily by time. This is usually due to sensors being mounted on a moving platform, where the position of the platform is parameterized by its travel time from the start of a mission. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>parameterized by time</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19156_1680;SF_SamplingCurve"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Traverse -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19156;Traverse">
+    <rdfs:label>Traverse</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19156_1680;SF_SamplingCurve"/>
+  </owl:Class>
+
+</rdf:RDF>
+
