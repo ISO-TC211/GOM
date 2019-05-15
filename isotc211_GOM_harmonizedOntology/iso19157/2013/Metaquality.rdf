@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19157_1164 "http://def.isotc211.org/iso19157/2013/DataQuality_2#" >
+  <!ENTITY iso19157 "http://def.isotc211.org/iso19157/2013/Metaquality#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19157/2013/Metaquality#"
+  xml:base="http://def.isotc211.org/iso19157/2013/Metaquality"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19157_1164="http://def.isotc211.org/iso19157/2013/DataQuality_2#"
+  xmlns:iso19157="http://def.isotc211.org/iso19157/2013/Metaquality#">
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19157:2013 Metaquality -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19157/2013/Metaquality">
+    <rdfs:label>ISO 19157:2013 Metaquality</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19157/ed-1/en/</dct:source>
+    <owl:versionInfo>2013</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQuality_2"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: DQ_Confidence -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_Confidence">
+    <rdfs:label>DQ_Confidence</rdfs:label>
+    <skos:definition>trustworthiness of a data quality result</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Metaquality"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: DQ_Homogeneity -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_Homogeneity">
+    <rdfs:label>DQ_Homogeneity</rdfs:label>
+    <skos:definition>expected or tested uniformity of the results obtained for a data quality evaluation</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Metaquality"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: DQ_Metaquality -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_Metaquality">
+    <rdfs:label>DQ_Metaquality</rdfs:label>
+    <skos:definition>information about the reliability of data quality results</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19157_1164;DQ_Element"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Metaquality.relatedElement"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19157;DQ_Metaquality.relatedElement"/>
+        <owl:allValuesFrom rdf:resource="&iso19157_1164;DQ_Element"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: DQ_Representativity -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19157;DQ_Representativity">
+    <rdfs:label>DQ_Representativity</rdfs:label>
+    <skos:definition>degree to which the sample used has produced a result which is representative of the data within the data quality scope</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19157;DQ_Metaquality"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DQ_Metaquality.relatedElement -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19157;DQ_Metaquality.relatedElement">
+    <rdfs:label>relatedElement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19157/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19157;DQ_Metaquality"/>
+    <rdfs:range rdf:resource="&iso19157_1164;DQ_Element"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

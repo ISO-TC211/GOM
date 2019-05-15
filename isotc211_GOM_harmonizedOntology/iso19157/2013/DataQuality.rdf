@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19157 "http://def.isotc211.org/iso19157/2013/DataQuality#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19157/2013/DataQuality#"
+  xml:base="http://def.isotc211.org/iso19157/2013/DataQuality"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19157="http://def.isotc211.org/iso19157/2013/DataQuality#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19157:2013 ISO 19157:2013 Data Quality -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19157/2013/DataQuality">
+    <rdfs:label>ISO 19157:2013 ISO 19157:2013 Data Quality</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19157/ed-1/en/</dct:source>
+    <owl:versionInfo>2013</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQualityConcepts"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQuality_2"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19157/2013/DataQualityMeasures"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+</rdf:RDF>
+
