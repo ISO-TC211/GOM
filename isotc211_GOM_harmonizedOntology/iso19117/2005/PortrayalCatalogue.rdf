@@ -1,0 +1,679 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_1187 "http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19117_652 "http://def.isotc211.org/iso19117/2005/PortrayalSpecification#" >
+  <!ENTITY iso19109_1010 "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#" >
+  <!ENTITY iso19117 "http://def.isotc211.org/iso19117/2005/PortrayalCatalogue#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19117/2005/PortrayalCatalogue#"
+  xml:base="http://def.isotc211.org/iso19117/2005/PortrayalCatalogue"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_1187="http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19117_652="http://def.isotc211.org/iso19117/2005/PortrayalSpecification#"
+  xmlns:iso19109_1010="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#"
+  xmlns:iso19117="http://def.isotc211.org/iso19117/2005/PortrayalCatalogue#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19117:2005 Portrayal  Catalogue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19117/2005/PortrayalCatalogue">
+    <rdfs:label>ISO 19117:2005 Portrayal  Catalogue</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19117/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-06-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19117/2005/PortrayalSpecification"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel"/-->
+   <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: FeatureInstance -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;FeatureInstance">
+    <rdfs:label>FeatureInstance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_AttributeDefinition -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_AttributeDefinition">
+    <rdfs:label>PF_AttributeDefinition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.defaultValue"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_AttributeDefinition.defaultValue"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: PF_ExternalFunction -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_ExternalFunction">
+    <rdfs:label>PF_ExternalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.functionName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.functionName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.returnType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.returnType"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.featureType"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.featureType"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.formalParameter"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_AttributeDefinition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.thePF_PortrayalRule"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_ExternalFunction.thePF_PortrayalRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_PortrayalRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: PF_FeaturePortrayal -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_FeaturePortrayal">
+    <rdfs:label>PF_FeaturePortrayal</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.priority"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.priority"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.definedFor"/>
+        <owl:allValuesFrom rdf:resource="&iso19109_1010;GF_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.definedForInst"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;FeatureInstance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.externalFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_ExternalFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.portrayalRule"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_FeaturePortrayal.portrayalRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_PortrayalRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: PF_PortrayalCatalogue -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_PortrayalCatalogue">
+    <rdfs:label>PF_PortrayalCatalogue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.queryLanguage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.queryLanguage"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.actionLanguage"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.actionLanguage"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.defaultPortrayalSpec"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.defaultPortrayalSpec"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1187;CI_OnlineResource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.featurePortrayal"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.featurePortrayal"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalCatalogue.externalFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_ExternalFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: PF_PortrayalRule -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19117;PF_PortrayalRule">
+    <rdfs:label>PF_PortrayalRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.ruleName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.ruleName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.priority"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.priority"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.queryStatment"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.queryStatment"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.portrayalAction"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.portrayalAction"/>
+        <owl:allValuesFrom rdf:resource="&iso19117_652;PF_PortrayalSpecification"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.propertyName"/>
+        <owl:allValuesFrom rdf:resource="&iso19109_1010;GF_PropertyType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19117;PF_PortrayalRule.externalFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19117;PF_ExternalFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_AttributeDefinition.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_AttributeDefinition.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_AttributeDefinition"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_AttributeDefinition.description -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_AttributeDefinition.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_AttributeDefinition"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_AttributeDefinition.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_AttributeDefinition.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_AttributeDefinition"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_AttributeDefinition.defaultValue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_AttributeDefinition.defaultValue">
+    <rdfs:label>defaultValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_AttributeDefinition"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_ExternalFunction.functionName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_ExternalFunction.functionName">
+    <rdfs:label>functionName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_ExternalFunction.returnType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_ExternalFunction.returnType">
+    <rdfs:label>returnType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_ExternalFunction.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_ExternalFunction.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_FeaturePortrayal.priority -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_FeaturePortrayal.priority">
+    <rdfs:label>priority</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_FeaturePortrayal.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_FeaturePortrayal.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_PortrayalCatalogue.queryLanguage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_PortrayalCatalogue.queryLanguage">
+    <rdfs:label>queryLanguage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalCatalogue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_PortrayalCatalogue.actionLanguage -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_PortrayalCatalogue.actionLanguage">
+    <rdfs:label>actionLanguage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalCatalogue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalCatalogue.defaultPortrayalSpec -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalCatalogue.defaultPortrayalSpec">
+    <rdfs:label>defaultPortrayalSpec</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalCatalogue"/>
+    <rdfs:range rdf:resource="&iso19115_1187;CI_OnlineResource"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_PortrayalRule.ruleName -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_PortrayalRule.ruleName">
+    <rdfs:label>ruleName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalRule"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_PortrayalRule.priority -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_PortrayalRule.priority">
+    <rdfs:label>priority</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalRule"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_PortrayalRule.description -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_PortrayalRule.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalRule"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PF_PortrayalRule.queryStatment -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19117;PF_PortrayalRule.queryStatment">
+    <rdfs:label>queryStatment</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalRule"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_ExternalFunction.featureType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_ExternalFunction.featureType">
+    <rdfs:label>featureType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <rdfs:range rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_FeaturePortrayal.externalFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_FeaturePortrayal.externalFunction">
+    <rdfs:label>externalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+    <rdfs:range rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <owl:inverseOf rdf:resource="&iso19117;PF_ExternalFunction.featureType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_ExternalFunction.formalParameter -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_ExternalFunction.formalParameter">
+    <rdfs:label>formalParameter</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <rdfs:range rdf:resource="&iso19117;PF_AttributeDefinition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_ExternalFunction.thePF_PortrayalRule -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_ExternalFunction.thePF_PortrayalRule">
+    <rdfs:label>thePF_PortrayalRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <rdfs:range rdf:resource="&iso19117;PF_PortrayalRule"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalRule.externalFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalRule.externalFunction">
+    <rdfs:label>externalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalRule"/>
+    <rdfs:range rdf:resource="&iso19117;PF_ExternalFunction"/>
+    <owl:inverseOf rdf:resource="&iso19117;PF_ExternalFunction.thePF_PortrayalRule"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_FeaturePortrayal.definedFor -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_FeaturePortrayal.definedFor">
+    <rdfs:label>definedFor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+    <rdfs:range rdf:resource="&iso19109_1010;GF_FeatureType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_FeaturePortrayal.definedForInst -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_FeaturePortrayal.definedForInst">
+    <rdfs:label>definedForInst</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+    <rdfs:range rdf:resource="&iso19117;FeatureInstance"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_FeaturePortrayal.portrayalRule -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_FeaturePortrayal.portrayalRule">
+    <rdfs:label>portrayalRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+    <rdfs:range rdf:resource="&iso19117;PF_PortrayalRule"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalCatalogue.featurePortrayal -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalCatalogue.featurePortrayal">
+    <rdfs:label>featurePortrayal</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalCatalogue"/>
+    <rdfs:range rdf:resource="&iso19117;PF_FeaturePortrayal"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalCatalogue.externalFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalCatalogue.externalFunction">
+    <rdfs:label>externalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalCatalogue"/>
+    <rdfs:range rdf:resource="&iso19117;PF_ExternalFunction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalRule.portrayalAction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalRule.portrayalAction">
+    <rdfs:label>portrayalAction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalRule"/>
+    <rdfs:range rdf:resource="&iso19117_652;PF_PortrayalSpecification"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PF_PortrayalRule.propertyName -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19117;PF_PortrayalRule.propertyName">
+    <rdfs:label>propertyName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19117/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19117;PF_PortrayalRule"/>
+    <rdfs:range rdf:resource="&iso19109_1010;GF_PropertyType"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
