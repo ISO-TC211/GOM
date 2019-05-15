@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557850165342" name="http://def.isotc211.org/iso19150-2/2012/base" uri="base_old_v1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1557850165342" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="base.rdf"/>
+    </group>
+</catalog>
