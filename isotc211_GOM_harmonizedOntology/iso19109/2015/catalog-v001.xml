@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=file:/D:/isotc211_GOM_harmonizedOntology/iso19109/2015/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/A" uri="iso19109A.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/ApplicationSchemaA" uri="iso19109ApplicationSchemaA.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/ApplicationSchemaB" uri="iso19109ApplicationSchemaB.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/ApplicationSchemaC" uri="iso19109ApplicationSchemaC.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/ApplicationSchemaExamples" uri="iso19109ApplicationSchemaExamples.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/B" uri="iso19109B.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/BaseApplicationSchema" uri="iso19109BaseApplicationSchema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Bridges" uri="iso19109Bridges.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Building" uri="iso19109Building.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/BuildingQuality" uri="iso19109BuildingQuality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/C" uri="iso19109C.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Classifications" uri="iso19109Classifications.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/CodeList" uri="iso19109CodeList.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Coverage" uri="iso19109Coverage.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Customers" uri="iso19109Customers.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/DomainSpatial" uri="iso19109DomainSpatial.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Examples" uri="iso19109Examples.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Feature" uri="iso19109Feature.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Fruit" uri="iso19109Fruit.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/GeneralFeatureModel" uri="GeneralFeatureModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/HistoryOfBuildings" uri="iso19109HistoryOfBuildings.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Integration" uri="iso19109Integration.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Metadata" uri="iso19109Metadata.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Mine" uri="iso19109Mine.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Observation" uri="iso19109Observation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Operations" uri="iso19109Operations.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Parcels" uri="iso19109Parcels.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Quality" uri="iso19109Quality.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Rivers" uri="iso19109Rivers.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Roads" uri="iso19109Roads.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/RulesForApplicationSchema" uri="RulesForApplicationSchema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/SABE" uri="iso19109SABE.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Scene" uri="iso19109Scene.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Spatial" uri="iso19109Spatial.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/SpatialReferencingByIdentifiers" uri="iso19109SpatialReferencingByIdentifiers.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Temporal" uri="iso19109Temporal.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/Utility" uri="iso19109Utility.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/UtilityClasses" uri="UtilityClasses.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557935980924" name="http://def.isotc211.org/iso19109/2015/WaterGauging" uri="iso19109WaterGauging.rdf"/>
+    </group>
+</catalog>
