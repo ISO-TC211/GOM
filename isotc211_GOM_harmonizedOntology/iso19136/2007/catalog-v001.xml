@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/BasicTypes" uri="BasicTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/CoordinateReferenceSystems" uri="CoordinateReferenceSystems.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/CoordinateSystems" uri="CoordinateSystems.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Datums" uri="Datums.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Dictionary" uri="Dictionary.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Direction" uri="Direction.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/DynamicFeature" uri="DynamicFeature.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Feature" uri="Feature.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/GML" uri="GML.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Geometry0d1d" uri="Geometry0d1d.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Geometry2d" uri="Geometry2d.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/GeometryAggregates" uri="GeometryAggregates.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/GeometryPrimitives" uri="GeometryPrimitives.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/GmlBase" uri="GmlBase.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Measures" uri="Measures.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Observation" uri="Observation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Topology" uri="Topology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/Units" uri="Units.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557847772939" name="http://def.isotc211.org/iso19136/2007/ValueObjects" uri="ValueObjects.rdf"/>
+    </group>
+</catalog>

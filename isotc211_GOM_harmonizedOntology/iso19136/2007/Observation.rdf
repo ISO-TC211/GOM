@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19136_1729 "http://def.isotc211.org/iso19136/2007/Direction#" >
+  <!ENTITY iso19103_1460 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19108_891 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19103_1464 "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#" >
+  <!ENTITY iso19136_1731 "http://def.isotc211.org/iso19136/2007/Feature#" >
+  <!ENTITY iso19136 "http://def.isotc211.org/iso19136/2007/Observation#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         Observation.rdf           -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         17-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19136/2007/Observation#"
+  xml:base="http://def.isotc211.org/iso19136/2007/Observation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19136_1729="http://def.isotc211.org/iso19136/2007/Direction#"
+  xmlns:iso19103_1460="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19108_891="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19103_1464="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#"
+  xmlns:iso19136_1731="http://def.isotc211.org/iso19136/2007/Feature#"
+  xmlns:iso19136="http://def.isotc211.org/iso19136/2007/Observation#">
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19136:2007 observation -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19136/2007/Observation">
+    <rdfs:label>ISO 19136:2007 observation</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19136/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-09-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Direction"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Feature"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: DirectedObservation -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;DirectedObservation">
+    <rdfs:label>DirectedObservation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;Observation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DirectedObservation.direction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DirectedObservation.direction"/>
+        <owl:allValuesFrom rdf:resource="&iso19136_1729;Direction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DirectedObservationAtDistance -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;DirectedObservationAtDistance">
+    <rdfs:label>DirectedObservationAtDistance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;DirectedObservation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DirectedObservationAtDistance.distance"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DirectedObservationAtDistance.distance"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;Length"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: Observation -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;Observation">
+    <rdfs:label>Observation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136_1731;AbstractFeature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.validTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.validTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Instant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.using"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.using"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;Any"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.target"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.target"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;Any"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.resultOf"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;Observation.resultOf"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1464;Any"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DirectedObservation.direction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DirectedObservation.direction">
+    <rdfs:label>direction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DirectedObservation"/>
+    <rdfs:range rdf:resource="&iso19136_1729;Direction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DirectedObservationAtDistance.distance -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DirectedObservationAtDistance.distance">
+    <rdfs:label>distance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DirectedObservationAtDistance"/>
+    <rdfs:range rdf:resource="&iso19103_1460;Length"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Observation.validTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;Observation.validTime">
+    <rdfs:label>validTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Observation"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Instant"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Observation.using -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;Observation.using">
+    <rdfs:label>using</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Observation"/>
+    <rdfs:range rdf:resource="&iso19103_1464;Any"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Observation.target -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;Observation.target">
+    <rdfs:label>target</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Observation"/>
+    <rdfs:range rdf:resource="&iso19103_1464;Any"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Observation.resultOf -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;Observation.resultOf">
+    <rdfs:label>resultOf</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;Observation"/>
+    <rdfs:range rdf:resource="&iso19103_1464;Any"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

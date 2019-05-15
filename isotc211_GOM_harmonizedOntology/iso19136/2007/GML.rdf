@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19136 "http://def.isotc211.org/iso19136/2007/GML#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         GML.rdf                   -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         17-11-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19136/2007/GML#"
+  xml:base="http://def.isotc211.org/iso19136/2007/GML"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19136="http://def.isotc211.org/iso19136/2007/GML#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19136:2007 ISO 19136:2007 GML -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19136/2007/GML">
+    <rdfs:label>ISO 19136:2007 ISO 19136:2007 GML</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19136/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-09-01</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/BasicTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/CoordinateReferenceSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/CoordinateSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Datums"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Dictionary"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Direction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/DynamicFeature"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Feature"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Geometry0d1d"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Geometry2d"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/GeometryAggregates"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/GeometryPrimitives"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/GmlBase"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Measures"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Observation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Topology"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Units"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/ValueObjects"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+</rdf:RDF>
+

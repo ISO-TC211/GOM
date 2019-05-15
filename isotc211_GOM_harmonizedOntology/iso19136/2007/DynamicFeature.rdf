@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19108_891 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19136_1724 "http://def.isotc211.org/iso19136/2007/BasicTypes#" >
+  <!ENTITY iso19136_1731 "http://def.isotc211.org/iso19136/2007/Feature#" >
+  <!ENTITY iso19136 "http://def.isotc211.org/iso19136/2007/DynamicFeature#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         DynamicFeature.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL  -->
+  <!-- Generator version: 2.5                        -->
+  <!-- File date:         17-11-2015                 -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19136/2007/DynamicFeature#"
+  xml:base="http://def.isotc211.org/iso19136/2007/DynamicFeature"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19108_891="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19136_1724="http://def.isotc211.org/iso19136/2007/BasicTypes#"
+  xmlns:iso19136_1731="http://def.isotc211.org/iso19136/2007/Feature#"
+  xmlns:iso19136="http://def.isotc211.org/iso19136/2007/DynamicFeature#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19136:2007 dynamicFeature -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19136/2007/DynamicFeature">
+    <rdfs:label>ISO 19136:2007 dynamicFeature</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19136/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-09-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/BasicTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Feature"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: AbstractTimeSlice -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;AbstractTimeSlice">
+    <rdfs:label>AbstractTimeSlice</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;AbstractTimeSlice.validTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;AbstractTimeSlice.validTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;AbstractTimeSlice.dataSource"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;AbstractTimeSlice.dataSource"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;AbstractTimeSlice.dataSourceReference"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;AbstractTimeSlice.dataSourceReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19136_1724;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: DynamicFeature -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;DynamicFeature">
+    <rdfs:label>DynamicFeature</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136_1731;AbstractFeature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeature.validTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeature.validTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeature.history"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;AbstractTimeSlice"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeature.dataSource"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeature.dataSource"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeature.dataSourceReference"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeature.dataSourceReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19136_1724;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: DynamicFeatureCollection -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19136;DynamicFeatureCollection">
+    <rdfs:label>DynamicFeatureCollection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19136;DynamicFeature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19136;DynamicFeatureCollection.dynamicMembers"/>
+        <owl:allValuesFrom rdf:resource="&iso19136;DynamicFeature"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AbstractTimeSlice.validTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;AbstractTimeSlice.validTime">
+    <rdfs:label>validTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;AbstractTimeSlice"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: AbstractTimeSlice.dataSource -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;AbstractTimeSlice.dataSource">
+    <rdfs:label>dataSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;AbstractTimeSlice"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AbstractTimeSlice.dataSourceReference -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;AbstractTimeSlice.dataSourceReference">
+    <rdfs:label>dataSourceReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;AbstractTimeSlice"/>
+    <rdfs:range rdf:resource="&iso19136_1724;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DynamicFeature.validTime -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DynamicFeature.validTime">
+    <rdfs:label>validTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DynamicFeature"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DynamicFeature.history -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DynamicFeature.history">
+    <rdfs:label>history</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DynamicFeature"/>
+    <rdfs:range rdf:resource="&iso19136;AbstractTimeSlice"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DynamicFeature.dataSource -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19136;DynamicFeature.dataSource">
+    <rdfs:label>dataSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DynamicFeature"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DynamicFeature.dataSourceReference -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DynamicFeature.dataSourceReference">
+    <rdfs:label>dataSourceReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19136;DynamicFeature"/>
+    <rdfs:range rdf:resource="&iso19136_1724;URI"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DynamicFeatureCollection.dynamicMembers -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19136;DynamicFeatureCollection.dynamicMembers">
+    <rdfs:label>dynamicMembers</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19136/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19136;DynamicFeatureCollection"/>
+    <rdfs:range rdf:resource="&iso19136;DynamicFeature"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
