@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY orph_239 "http://def.isotc211.org/orphans/Orphans#" >
+  <!ENTITY iso19108_554 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19103_539 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19103_530 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19115_606 "http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#" >
+  <!ENTITY iso19115_612 "http://def.isotc211.org/iso19115/2003/ExtentInformation#" >
+  <!ENTITY iso19111_566 "http://def.isotc211.org/iso19111/2007/ReferenceSystems#" >
+  <!ENTITY iso19108 "http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#"
+  xml:base="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:orph_239="http://def.isotc211.org/orphans/Orphans#"
+  xmlns:iso19108_554="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19103_539="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19103_530="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19115_606="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation#"
+  xmlns:iso19115_612="http://def.isotc211.org/iso19115/2003/ExtentInformation#"
+  xmlns:iso19111_566="http://def.isotc211.org/iso19111/2007/ReferenceSystems#"
+  xmlns:iso19108="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem">
+    <rdfs:label>ISO 19108:2006 Temporal Reference System</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19108/ed-1/en/</dct:source>
+    <owl:versionInfo>2006-10-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/orphans/Orphans"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/DateAndTime"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/ReferenceSystemInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2003/ExtentInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/ReferenceSystems"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19108;JulianDate">
+    <rdfs:label>JulianDate</rdfs:label>
+    <skos:definition>The decimal number of days since the origin of the numbering system, which is noon on 1 January 4712 BC in the proleptic Julian calendar.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Coordinate"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_CalDate">
+    <rdfs:label>TM_CalDate</rdfs:label>
+    <skos:definition>A date in a calendar other than the Gregorian calendar.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_TemporalPosition"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalDate.calDate"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalDate.calDate"/>
+        <owl:allValuesFrom rdf:resource="&orph_239;Sequence.lt.Integer.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalDate.calendarEraName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalDate.calendarEraName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Calendar">
+    <rdfs:label>TM_Calendar</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Calendar.timeBasis"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Calendar.timeBasis"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Clock"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Calendar.referenceFrame"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Calendar.referenceFrame"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_CalendarEra"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_CalendarEra">
+    <rdfs:label>TM_CalendarEra</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.referenceEvent"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.referenceEvent"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.referenceDate"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.referenceDate"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_CalDate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.julianReference"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.julianReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;JulianDate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.epochOfUse"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.epochOfUse"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_554;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.datingSystem"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CalendarEra.datingSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Calendar"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Clock">
+    <rdfs:label>TM_Clock</rdfs:label>
+    <skos:definition>A system for measuring temporal position within a day.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Clock.referenceEvent"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Clock.referenceEvent"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Clock.referenceTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Clock.referenceTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_ClockTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Clock.utcReference"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Clock.utcReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_ClockTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Clock.dateBasis"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Calendar"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_ClockTime">
+    <rdfs:label>TM_ClockTime</rdfs:label>
+    <skos:definition>Time of day measured in a time keeping system other than UTC.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_ClockTime.clkTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_ClockTime.clkTime"/>
+        <owl:allValuesFrom rdf:resource="&orph_239;Sequence.lt.Number.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Coordinate">
+    <rdfs:label>TM_Coordinate</rdfs:label>
+    <skos:definition>The value of a coordinate in a temporal coordinate system.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_TemporalPosition"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Coordinate.coordinateValue"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Coordinate.coordinateValue"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_CoordinateSystem">
+    <rdfs:label>TM_CoordinateSystem</rdfs:label>
+    <skos:definition>A system for measuring time on a continuous interval scale using a single standard time interval.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CoordinateSystem.origin"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CoordinateSystem.origin"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CoordinateSystem.interval"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_CoordinateSystem.interval"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_DateAndTime">
+    <rdfs:label>TM_DateAndTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_CalDate"/>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_ClockTime"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_OrdinalEra">
+    <rdfs:label>TM_OrdinalEra</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108_554;TM_Separation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.begin"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.begin"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.end"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.end"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.system"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.system"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_OrdinalReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.group"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.group"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_OrdinalEra"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.member"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_OrdinalEra"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.position"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalEra.position"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_OrdinalPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_OrdinalPosition">
+    <rdfs:label>TM_OrdinalPosition</rdfs:label>
+    <skos:definition>The name of an era in an ordinal temporal reference system.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_TemporalPosition"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalPosition.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalPosition.value"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_OrdinalEra"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_OrdinalReferenceSystem">
+    <rdfs:label>TM_OrdinalReferenceSystem</rdfs:label>
+    <skos:definition>A TM_ReferenceSystem based on an ordinal scale for measuring time.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalReferenceSystem.component"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_OrdinalReferenceSystem.component"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_OrdinalEra"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;uAnyOther">
+    <rdfs:label>AnyOther</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uAnyOther.anyOther"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uAnyOther.anyOther"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_TemporalPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;uDate8601">
+    <rdfs:label>Date8601</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uDate8601.date8601"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uDate8601.date8601"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;uTime8601">
+    <rdfs:label>Time8601</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uTime8601.time8601"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uTime8601.time8601"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;Time"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;uDateTime8601">
+    <rdfs:label>DateTime8601</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uDateTime8601.dateTime8601"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;uDateTime8601.dateTime8601"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_ReferenceSystem">
+    <rdfs:label>TM_ReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_566;RS_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_ReferenceSystem.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_ReferenceSystem.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_606;RS_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_ReferenceSystem.domainOfValidity"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_612;EX_Extent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_TemporalPosition">
+    <rdfs:label>TM_TemporalPosition</rdfs:label>
+    <skos:definition>The position of a TM_Instant relative to a TM_ReferenceSystem.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TemporalPosition.indeterminatePosition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TemporalPosition.indeterminatePosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_IndeterminateValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TemporalPosition.frame"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TemporalPosition.frame"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_CalDate.calDate">
+    <rdfs:label>calDate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalDate"/>
+    <rdfs:range rdf:resource="&orph_239;Sequence.lt.Integer.gt."/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_CalDate.calendarEraName">
+    <rdfs:label>calendarEraName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalDate"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_CalendarEra.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalendarEra"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_CalendarEra.referenceEvent">
+    <rdfs:label>referenceEvent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalendarEra"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_CalendarEra.referenceDate">
+    <rdfs:label>referenceDate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalendarEra"/>
+    <rdfs:range rdf:resource="&iso19108;TM_CalDate"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_CalendarEra.julianReference">
+    <rdfs:label>julianReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalendarEra"/>
+    <rdfs:range rdf:resource="&iso19108;JulianDate"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_CalendarEra.epochOfUse">
+    <rdfs:label>epochOfUse</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalendarEra"/>
+    <rdfs:range rdf:resource="&iso19108_554;TM_Period"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_Clock.referenceEvent">
+    <rdfs:label>referenceEvent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_Clock"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Clock.referenceTime">
+    <rdfs:label>referenceTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_Clock"/>
+    <rdfs:range rdf:resource="&iso19108;TM_ClockTime"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Clock.utcReference">
+    <rdfs:label>utcReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_Clock"/>
+    <rdfs:range rdf:resource="&iso19108;TM_ClockTime"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_ClockTime.clkTime">
+    <rdfs:label>clkTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_ClockTime"/>
+    <rdfs:range rdf:resource="&orph_239;Sequence.lt.Number.gt."/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Coordinate.coordinateValue">
+    <rdfs:label>coordinateValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_Coordinate"/>
+    <rdfs:range rdf:resource="&iso19103_539;Number"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_CoordinateSystem.origin">
+    <rdfs:label>origin</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CoordinateSystem"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_CoordinateSystem.interval">
+    <rdfs:label>interval</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_CoordinateSystem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_OrdinalEra.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_OrdinalEra.begin">
+    <rdfs:label>begin</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_OrdinalEra.end">
+    <rdfs:label>end</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;uAnyOther.anyOther">
+    <skos:prefLabel>anyOther</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;uAnyOther"/>
+    <rdfs:range rdf:resource="&iso19108;TM_TemporalPosition"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;uDate8601.date8601">
+    <rdfs:label>date8601</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;uDate8601"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;uTime8601.time8601">
+    <skos:prefLabel>time8601</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;uTime8601"/>
+    <rdfs:range rdf:resource="&iso19103_530;Time"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;uDateTime8601.dateTime8601">
+    <rdfs:label>dateTime8601</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;uDateTime8601"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_ReferenceSystem.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_ReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19115_606;RS_Identifier"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_ReferenceSystem.domainOfValidity">
+    <rdfs:label>domainOfValidity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_ReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19115_612;EX_Extent"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_TemporalPosition.indeterminatePosition">
+    <rdfs:label>indeterminatePosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_TemporalPosition"/>
+    <rdfs:range rdf:resource="&iso19108;TM_IndeterminateValue"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Clock.dateBasis">
+    <rdfs:label>dateBasis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Resolution</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Clock"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Calendar"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Calendar.timeBasis">
+    <rdfs:label>timeBasis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Resolution</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Calendar"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Clock"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_Clock.dateBasis"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_CalendarEra.datingSystem">
+    <rdfs:label>datingSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Basis</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_CalendarEra"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Calendar"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Calendar.referenceFrame">
+    <rdfs:label>referenceFrame</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Basis</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Calendar"/>
+    <rdfs:range rdf:resource="&iso19108;TM_CalendarEra"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_CalendarEra.datingSystem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_OrdinalEra.system">
+    <rdfs:label>system</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Structure</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <rdfs:range rdf:resource="&iso19108;TM_OrdinalReferenceSystem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_OrdinalReferenceSystem.component">
+    <rdfs:label>component</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Structure</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_OrdinalEra.system"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_OrdinalEra.group">
+    <rdfs:label>group</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Composition</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <rdfs:range rdf:resource="&iso19108;TM_OrdinalEra"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_OrdinalEra.member">
+    <rdfs:label>member</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Composition</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <rdfs:range rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_OrdinalEra.group"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_OrdinalPosition.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalPosition"/>
+    <rdfs:range rdf:resource="&iso19108;TM_OrdinalEra"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_OrdinalEra.position">
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_OrdinalEra"/>
+    <rdfs:range rdf:resource="&iso19108;TM_OrdinalPosition"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_OrdinalPosition.value"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_TemporalPosition.frame">
+    <rdfs:label>frame</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Basis</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_TemporalPosition"/>
+    <rdfs:range rdf:resource="&iso19108;TM_ReferenceSystem"/>
+  </owl:ObjectProperty>
+  <rdfs:Datatype rdf:about="&iso19108;TM_IndeterminateValue">
+    <rdfs:label>TM_IndeterminateValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">unknow</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">now</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">before</rdf:first>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">after</rdf:first>
+                        <rdf:rest>
+                          <rdf:List>
+                            <rdf:first rdf:datatype="&xsd;string">name</rdf:first>
+                            <rdf:rest rdf:resource="&rdf;nil"/>
+                          </rdf:List>
+                        </rdf:rest>
+                      </rdf:List>
+                    </rdf:rest>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+  <owl:Class rdf:about="&iso19108;TM_Position">
+    <rdfs:label>TM_Position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19108;uAnyOther"/>
+          <owl:Class rdf:about="&iso19108;uDate8601"/>
+          <owl:Class rdf:about="&iso19108;uTime8601"/>
+          <owl:Class rdf:about="&iso19108;uDateTime8601"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+</rdf:RDF>
+

@@ -1,0 +1,675 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19108_555 "http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#" >
+  <!ENTITY iso19108 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xml:base="http://def.isotc211.org/iso19108/2006/TemporalObjects"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19108_555="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#"
+  xmlns:iso19108="http://def.isotc211.org/iso19108/2006/TemporalObjects#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19108/2006/TemporalObjects">
+    <rdfs:label>ISO 19108:2006 Temporal Objects</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19108/ed-1/en/</dct:source>
+    <owl:versionInfo>2006-10-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19108;TM_Complex">
+    <rdfs:label>TM_Complex</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Object"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Duration">
+    <rdfs:label>TM_Duration</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Edge">
+    <rdfs:label>TM_Edge</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_TopologicalPrimitive"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Edge.start"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Edge.start"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Node"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Edge.end"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Edge.end"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Node"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Edge.geometry"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Edge.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_GeometricPrimitive">
+    <rdfs:label>TM_GeometricPrimitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Separation"/>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Primitive"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Instant">
+    <rdfs:label>TM_Instant</rdfs:label>
+    <skos:definition>The instant is the 0-dimensional geometric primitive in time, equivalent to a point in space.  An instant shall occupy a single temporal position in  a given temporal reference system.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_GeometricPrimitive"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Instant.position"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Instant.position"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_555;TM_Position"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Instant.topology"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Instant.topology"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Node"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Instant.begunBy"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Instant.endedBy"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_IntervalLength">
+    <rdfs:label>TM_IntervalLength</rdfs:label>
+    <skos:definition>A data type for temporal distance specified as interval length compliant with ISO 11404.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Duration"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.unit"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.unit"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.radix"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.radix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.factor"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.factor"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_IntervalLength.value"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Node">
+    <rdfs:label>TM_Node</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_TopologicalPrimitive"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Node.nextEdge"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Edge"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Node.previousEdge"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Edge"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Node.geometry"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Node.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Instant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Object">
+    <rdfs:label>TM_Object</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Period">
+    <rdfs:label>TM_Period</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_GeometricPrimitive"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Period.topology"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Period.topology"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Edge"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Period.begin"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Period.begin"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Instant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Period.end"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_Period.end"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_Instant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_PeriodDuration">
+    <rdfs:label>TM_PeriodDuration</rdfs:label>
+    <skos:definition>Data type for the duration of a period as specified by ISO 8601.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Duration"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.designator"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.designator"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.years"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.years"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.months"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.months"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.days"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.days"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.timeIndicator"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.timeIndicator"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.hours"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.hours"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.minutes"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.minutes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.seconds"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_PeriodDuration.seconds"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Primitive">
+    <rdfs:label>TM_Primitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Order"/>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Object"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_TopologicalComplex">
+    <rdfs:label>TM_TopologicalComplex</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Complex"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TopologicalComplex.primitive"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TopologicalComplex.primitive"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_TopologicalPrimitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_TopologicalPrimitive">
+    <rdfs:label>TM_TopologicalPrimitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19108;TM_Primitive"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TopologicalPrimitive.complex"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19108;TM_TopologicalPrimitive.complex"/>
+        <owl:allValuesFrom rdf:resource="&iso19108;TM_TopologicalComplex"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Order">
+    <rdfs:label>TM_Order</rdfs:label>
+    <skos:definition>Interface that supports the derivation of the position of a TM_Primitive relative to another TM_Primitive.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19108;TM_Separation">
+    <rdfs:label>TM_Separation</rdfs:label>
+    <skos:definition>Interface that supports the computation of lengths of TM_GeometricPrimitives and the distances between them.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Instant.position">
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_Instant"/>
+    <rdfs:range rdf:resource="&iso19108_555;TM_Position"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_IntervalLength.unit">
+    <rdfs:label>unit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_IntervalLength"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_IntervalLength.radix">
+    <rdfs:label>radix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_IntervalLength"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_IntervalLength.factor">
+    <rdfs:label>factor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_IntervalLength"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_IntervalLength.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_IntervalLength"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.designator">
+    <rdfs:label>designator</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.years">
+    <rdfs:label>years</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.months">
+    <rdfs:label>months</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.days">
+    <rdfs:label>days</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.timeIndicator">
+    <rdfs:label>timeIndicator</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.hours">
+    <rdfs:label>hours</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.minutes">
+    <rdfs:label>minutes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="&iso19108;TM_PeriodDuration.seconds">
+    <rdfs:label>seconds</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19108;TM_PeriodDuration"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Edge.start">
+    <rdfs:label>start</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Initiation</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Edge"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Node"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Node.nextEdge">
+    <rdfs:label>nextEdge</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Initiation</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Node"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Edge"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_Edge.start"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Edge.end">
+    <rdfs:label>end</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Termination</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Edge"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Node"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Node.previousEdge">
+    <rdfs:label>previousEdge</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Termination</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Node"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Edge"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_Edge.end"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Edge.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Realization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Edge"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Period"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Period.topology">
+    <rdfs:label>topology</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Realization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Period"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Edge"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_Edge.geometry"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Node.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Realization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Node"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Instant"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Instant.topology">
+    <rdfs:label>topology</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Realization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Instant"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Node"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_Node.geometry"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Instant.begunBy">
+    <rdfs:label>begunBy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Beginning</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Instant"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Period"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Period.begin">
+    <rdfs:label>begin</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Beginning</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Period"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Instant"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_Instant.begunBy"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Instant.endedBy">
+    <rdfs:label>endedBy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Ending</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Instant"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Period"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_Period.end">
+    <rdfs:label>end</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Ending</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_Period"/>
+    <rdfs:range rdf:resource="&iso19108;TM_Instant"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_Instant.endedBy"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_TopologicalPrimitive.complex">
+    <rdfs:label>complex</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Complex</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_TopologicalPrimitive"/>
+    <rdfs:range rdf:resource="&iso19108;TM_TopologicalComplex"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19108;TM_TopologicalComplex.primitive">
+    <rdfs:label>primitive</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Complex</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19108;TM_TopologicalComplex"/>
+    <rdfs:range rdf:resource="&iso19108;TM_TopologicalPrimitive"/>
+    <owl:inverseOf rdf:resource="&iso19108;TM_TopologicalPrimitive.complex"/>
+  </owl:ObjectProperty>
+  <rdfs:Datatype rdf:about="&iso19108;TM_RelativePosition">
+    <rdfs:label>TM_RelativePosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19108/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">Before</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">After</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">Begins</rdf:first>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">Ends</rdf:first>
+                        <rdf:rest>
+                          <rdf:List>
+                            <rdf:first rdf:datatype="&xsd;string">During</rdf:first>
+                            <rdf:rest>
+                              <rdf:List>
+                                <rdf:first rdf:datatype="&xsd;string">Equals</rdf:first>
+                                <rdf:rest>
+                                  <rdf:List>
+                                    <rdf:first rdf:datatype="&xsd;string">Contains</rdf:first>
+                                    <rdf:rest>
+                                      <rdf:List>
+                                        <rdf:first rdf:datatype="&xsd;string">Overlaps</rdf:first>
+                                        <rdf:rest>
+                                          <rdf:List>
+                                            <rdf:first rdf:datatype="&xsd;string">Meets</rdf:first>
+                                            <rdf:rest>
+                                              <rdf:List>
+                                                <rdf:first rdf:datatype="&xsd;string">OverlappedBy</rdf:first>
+                                                <rdf:rest>
+                                                  <rdf:List>
+                                                    <rdf:first rdf:datatype="&xsd;string">MetBy</rdf:first>
+                                                    <rdf:rest>
+                                                      <rdf:List>
+                                                        <rdf:first rdf:datatype="&xsd;string">BegunBy</rdf:first>
+                                                        <rdf:rest>
+                                                          <rdf:List>
+                                                            <rdf:first rdf:datatype="&xsd;string">EndedBy</rdf:first>
+                                                            <rdf:rest rdf:resource="&rdf;nil"/>
+                                                          </rdf:List>
+                                                        </rdf:rest>
+                                                      </rdf:List>
+                                                    </rdf:rest>
+                                                  </rdf:List>
+                                                </rdf:rest>
+                                              </rdf:List>
+                                            </rdf:rest>
+                                          </rdf:List>
+                                        </rdf:rest>
+                                      </rdf:List>
+                                    </rdf:rest>
+                                  </rdf:List>
+                                </rdf:rest>
+                              </rdf:List>
+                            </rdf:rest>
+                          </rdf:List>
+                        </rdf:rest>
+                      </rdf:List>
+                    </rdf:rest>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+</rdf:RDF>
+
