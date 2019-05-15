@@ -1,0 +1,2693 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19111_1003 "http://def.isotc211.org/iso19111/2007/CoordinateSystems#" >
+  <!ENTITY iso19103_539 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19115_1263 "http://def.isotc211.org/iso19115/2006/DataQualityInformation#" >
+  <!ENTITY iso19103_530 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19103_534 "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#" >
+  <!ENTITY iso19108_892 "http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#" >
+  <!ENTITY iso19111_1001 "http://def.isotc211.org/iso19111/2007/CoordinateOperations#" >
+  <!ENTITY iso19115_1273 "http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#" >
+  <!ENTITY iso19115_1266 "http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#" >
+  <!ENTITY iso19108_891 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19111_1006 "http://def.isotc211.org/iso19111/2007/ReferenceSystems#" >
+  <!ENTITY iso19111_1002 "http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#" >
+  <!ENTITY iso19116 "http://def.isotc211.org/iso19116/2004/PositioningServiceModel#" >
+  <!ENTITY iso19116Code "http://def.isotc211.org/iso19116/2004/PositioningServiceModel/code/">
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19116/2004/PositioningServiceModel#"
+  xml:base="http://def.isotc211.org/iso19116/2004/PositioningServiceModel"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19111_1003="http://def.isotc211.org/iso19111/2007/CoordinateSystems#"
+  xmlns:iso19103_539="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19115_1263="http://def.isotc211.org/iso19115/2006/DataQualityInformation#"
+  xmlns:iso19103_530="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19103_534="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#"
+  xmlns:iso19108_892="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#"
+  xmlns:iso19111_1001="http://def.isotc211.org/iso19111/2007/CoordinateOperations#"
+  xmlns:iso19115_1273="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#"
+  xmlns:iso19115_1266="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation#"
+  xmlns:iso19108_891="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19111_1006="http://def.isotc211.org/iso19111/2007/ReferenceSystems#"
+  xmlns:iso19111_1002="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#"
+  xmlns:iso19116="http://def.isotc211.org/iso19116/2004/PositioningServiceModel#"
+  xmlns:iso19116Code="http://def.isotc211.org/iso19116/2004/PositioningServiceModel/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19116:2004 Positioning Service Model -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19116/2004/PositioningServiceModel">
+    <rdfs:label>ISO 19116:2004 Positioning Service Model</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19116/ed-1/en/</dct:source>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/DateAndTime"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/CoordinateSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/DataQualityInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/CoordinateOperations"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ReferenceSystemInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/ReferenceSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_ComputationalConditions -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_ComputationalConditions">
+    <rdfs:label>PS_ComputationalConditions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.positionFixMode"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.positionFixMode"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_PositionFixMode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.positionSolutionMethod"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.positionSolutionMethod"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_PositionSolutionMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.processingMode"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.processingMode"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ProcessingMode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.positioningMode"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.positioningMode"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_PositioningMode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.augmentation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.augmentation"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_CorrectionMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.observationFrequiencesUsed"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ComputationalConditions.observationFrequiencesUsed"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_FrequencyList"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_CoordinateTransferValues -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_CoordinateTransferValues">
+    <rdfs:label>PS_CoordinateTransferValues</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_CoordinateTransferValues.objectID"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_CoordinateTransferValues.objectID"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_CoordinateTransferValues.sensorOffset"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_CoordinateTransferValues.sensorOffset"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_OffsetVector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_CoordinateTransferValues.objectOffset"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_CoordinateTransferValues.objectOffset"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_OffsetVector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_GNSSOperatingConditions -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_GNSSOperatingConditions">
+    <rdfs:label>PS_GNSSOperatingConditions</rdfs:label>
+    <skos:definition>.lt.UsedBy.gt..lt.NameSpace.gt.ISO 19116 Positioning Services.lt..sl.NameSpace.gt..lt.Class.gt.PS_Observation.lt..sl.Class.gt..lt.Attribute.gt.operatingConditions[0..*].lt..sl.Attribute.gt..lt.Type.gt.PS_GNSSOperatingConditions.lt..sl.Type.gt..lt.UsedBy.gt.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_GNSSOperatingConditions.dateTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_GNSSOperatingConditions.dateTime"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_GNSSOperatingConditions.measurementConditions"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_MeasurementConditions"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_GNSSOperatingConditions.performanceIndicators"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_PerformanceIndicators"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_GNSSOperatingConditions.computationalConditions"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ComputationalConditions"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: PS_InstrumentId -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_InstrumentId">
+    <rdfs:label>PS_InstrumentId</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.identifier"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.identifier"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.manufacturer"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.manufacturer"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.model"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.model"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.partNumber"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.partNumber"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.revisionNumber"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.revisionNumber"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.serialNumber"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.serialNumber"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.calibrationReport"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.calibrationReport"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_InstrumentId.component"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_InstrumentId"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_LinkToReferenceSystem -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_LinkToReferenceSystem">
+    <rdfs:label>PS_LinkToReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.identification"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.identification"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.dimensionConstraints"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.dimensionConstraints"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.dimensionConstraints"/>
+        <owl:allValuesFrom rdf:resource="&iso19111_1003;CS_CoordinateSystemAxis"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.referencePosition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.referencePosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.accuracyOfReference"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_LinkToReferenceSystem.accuracyOfReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1263;DQ_DataQuality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_MeasurementConditions -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_MeasurementConditions">
+    <rdfs:label>PS_MeasurementConditions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.satelliteIDs"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.signalStrenght"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.dilutionOfPrecisionTypes"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_DOPType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.dilutionOfPrecisionValues"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.dilutionOfPrecisionValues"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.ageOfAugmentation"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.ageOfAugmentation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.statusRAIM"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MeasurementConditions.statusRAIM"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: PS_MotionAxis -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_MotionAxis">
+    <rdfs:label>PS_MotionAxis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_1003;CS_CoordinateSystemAxis"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MotionAxis.unitSize"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MotionAxis.unitSize"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;UomVelocity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_MotionReferenceSystem -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_MotionReferenceSystem">
+    <rdfs:label>PS_MotionReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19116;PS_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MotionReferenceSystem.temporalReferenceSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MotionReferenceSystem.temporalReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_892;TM_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MotionReferenceSystem.axis"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MotionReferenceSystem.axis"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_MotionReferenceSystem.axis"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_MotionAxis"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: PS_Observation -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_Observation">
+    <rdfs:label>PS_Observation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.objectID"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.observationDateTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.observationDateTime"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.observationEndDateTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.observationEndDateTime"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.offset"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_CoordinateTransferValues"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.operatingConditions"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_GNSSOperatingConditions"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.qualityResult"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;Record"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.result"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.result"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Observation.qualityMeasure"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ObservationQuality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: PS_ObservationMode -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_ObservationMode">
+    <rdfs:label>PS_ObservationMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.name"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.resultType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.resultType"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_MeasurementType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.temporalReferenceSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.temporalReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_892;TM_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.positionalReferenceSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.positionalReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.referenceLink"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.referenceLink"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_LinkToReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.operationsApplied"/>
+        <owl:allValuesFrom rdf:resource="&iso19111_1001;CC_ConcatenatedOperation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.observation"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_Observation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationMode.qualityType"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_QualityMode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_ObservationQuality -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_ObservationQuality">
+    <rdfs:label>PS_ObservationQuality</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationQuality.result"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationQuality.result"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ObservationQuality.result"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1263;DQ_Result"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_OffsetReferenceSystem -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_OffsetReferenceSystem">
+    <rdfs:label>PS_OffsetReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetReferenceSystem.offsetReferenceSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetReferenceSystem.offsetReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: PS_OffsetVector -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_OffsetVector">
+    <rdfs:label>PS_OffsetVector</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.ordinate"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.ordinate"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.sourceType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.sourceType"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_OffsetSource"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.offsetSource"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.offsetSource"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1273;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.offsetReferenceSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OffsetVector.offsetReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_OffsetReferenceSystem"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_OperatingConditions -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_OperatingConditions">
+    <rdfs:label>PS_OperatingConditions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: PS_OrientationAxis -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_OrientationAxis">
+    <rdfs:label>PS_OrientationAxis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_1003;CS_CoordinateSystemAxis"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OrientationAxis.unitSize"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OrientationAxis.unitSize"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;Angle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_OrientationReferenceSystem -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_OrientationReferenceSystem">
+    <rdfs:label>PS_OrientationReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19116;PS_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OrientationReferenceSystem.axis"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OrientationReferenceSystem.axis"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_OrientationReferenceSystem.axis"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_OrientationAxis"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_PerformanceIndicators -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_PerformanceIndicators">
+    <rdfs:label>PS_PerformanceIndicators</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_PerformanceIndicators.performanceIndicators"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_PerformanceIndicators.performanceIndicators"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_PositioningServices -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_PositioningServices">
+    <rdfs:label>PS_PositioningServices</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_PositioningServices.mode"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ObservationMode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_PositioningServices.session"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_Session"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_PositioningServices.system"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_PositioningServices.system"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_System"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: PS_QualityMode -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_QualityMode">
+    <rdfs:label>PS_QualityMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.nameOfMeasure"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.measureIdentification"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.measureIdentification"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1266;MD_Identifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.measureDescription"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.measureDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.evaluationMethodType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.evaluationMethodType"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1263;DQ_EvaluationMethodTypeCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.evaluationMethod_Description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.evaluationMethod_Description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.evaluationProcedure"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.evaluationProcedure"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1273;CI_Citation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.dateTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.dateTime"/>
+        <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.qualityResultType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.qualityResultType"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_534;RecordType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_QualityMode.qualityObservation"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ObservationQuality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: PS_ReferenceSystem -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_ReferenceSystem">
+    <rdfs:label>PS_ReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_1006;RS_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ReferenceSystem.spatialReferenceSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_ReferenceSystem.spatialReferenceSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19111_1002;SC_CRS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: PS_RotationAxis -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_RotationAxis">
+    <rdfs:label>PS_RotationAxis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_1003;CS_CoordinateSystemAxis"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_RotationAxis.unitSize"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_RotationAxis.unitSize"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_530;UomAngularVelocity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: PS_RotationReferenceSystem -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_RotationReferenceSystem">
+    <rdfs:label>PS_RotationReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19116;PS_ReferenceSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_RotationReferenceSystem.axis"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_RotationReferenceSystem.axis"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_RotationReferenceSystem.axis"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_RotationAxis"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: PS_Session -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_Session">
+    <rdfs:label>PS_Session</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.sessionID"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.sessionID"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.startTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.startTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Instant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.stopTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.stopTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Instant"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.datasetInitiative"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.datasetInitiative"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.observer"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1273;CI_ResponsibleParty"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.mode"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.mode"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ObservationMode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.system"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_Session.system"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_System"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: PS_System -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_System">
+    <rdfs:label>PS_System</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.capability"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.capability"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_SystemCapability"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.positioningTechnology"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.positioningTechnology"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_PositioningTechnology"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.referencingMethod"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.referencingMethod"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_ReferencingMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.instrument"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19116;PS_System.instrument"/>
+        <owl:allValuesFrom rdf:resource="&iso19116;PS_InstrumentId"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ComputationalConditions.positionFixMode -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ComputationalConditions.positionFixMode">
+    <rdfs:label>positionFixMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ComputationalConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_PositionFixMode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ComputationalConditions.positionSolutionMethod -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ComputationalConditions.positionSolutionMethod">
+    <rdfs:label>positionSolutionMethod</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ComputationalConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_PositionSolutionMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ComputationalConditions.processingMode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ComputationalConditions.processingMode">
+    <rdfs:label>processingMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ComputationalConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ProcessingMode"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ComputationalConditions.positioningMode -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ComputationalConditions.positioningMode">
+    <rdfs:label>positioningMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ComputationalConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_PositioningMode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ComputationalConditions.augmentation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ComputationalConditions.augmentation">
+    <rdfs:label>augmentation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ComputationalConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_CorrectionMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ComputationalConditions.observationFrequiencesUsed -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ComputationalConditions.observationFrequiencesUsed">
+    <rdfs:label>observationFrequiencesUsed</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ComputationalConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_FrequencyList"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_CoordinateTransferValues.objectID -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_CoordinateTransferValues.objectID">
+    <rdfs:label>objectID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_CoordinateTransferValues"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_CoordinateTransferValues.sensorOffset -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_CoordinateTransferValues.sensorOffset">
+    <rdfs:label>sensorOffset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_CoordinateTransferValues"/>
+    <rdfs:range rdf:resource="&iso19116;PS_OffsetVector"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_CoordinateTransferValues.objectOffset -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_CoordinateTransferValues.objectOffset">
+    <rdfs:label>objectOffset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_CoordinateTransferValues"/>
+    <rdfs:range rdf:resource="&iso19116;PS_OffsetVector"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_GNSSOperatingConditions.dateTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_GNSSOperatingConditions.dateTime">
+    <rdfs:label>dateTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_GNSSOperatingConditions"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.identifier -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.identifier">
+    <rdfs:label>identifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.manufacturer -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.manufacturer">
+    <rdfs:label>manufacturer</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.model -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.model">
+    <rdfs:label>model</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.partNumber -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.partNumber">
+    <rdfs:label>partNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.revisionNumber -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.revisionNumber">
+    <rdfs:label>revisionNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.serialNumber -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.serialNumber">
+    <rdfs:label>serialNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_InstrumentId.calibrationReport -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_InstrumentId.calibrationReport">
+    <rdfs:label>calibrationReport</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_LinkToReferenceSystem.identification -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_LinkToReferenceSystem.identification">
+    <rdfs:label>identification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_LinkToReferenceSystem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_LinkToReferenceSystem.dimensionConstraints -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_LinkToReferenceSystem.dimensionConstraints">
+    <rdfs:label>dimensionConstraints</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_LinkToReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19111_1003;CS_CoordinateSystemAxis"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_LinkToReferenceSystem.referencePosition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_LinkToReferenceSystem.referencePosition">
+    <rdfs:label>referencePosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_LinkToReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19103_539;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_LinkToReferenceSystem.accuracyOfReference -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_LinkToReferenceSystem.accuracyOfReference">
+    <rdfs:label>accuracyOfReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_LinkToReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19115_1263;DQ_DataQuality"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_MeasurementConditions.satelliteIDs -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_MeasurementConditions.satelliteIDs">
+    <rdfs:label>satelliteIDs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MeasurementConditions"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_MeasurementConditions.signalStrenght -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_MeasurementConditions.signalStrenght">
+    <rdfs:label>signalStrenght</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MeasurementConditions"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_MeasurementConditions.dilutionOfPrecisionTypes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_MeasurementConditions.dilutionOfPrecisionTypes">
+    <rdfs:label>dilutionOfPrecisionTypes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MeasurementConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_DOPType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_MeasurementConditions.dilutionOfPrecisionValues -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_MeasurementConditions.dilutionOfPrecisionValues">
+    <rdfs:label>dilutionOfPrecisionValues</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MeasurementConditions"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_MeasurementConditions.ageOfAugmentation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_MeasurementConditions.ageOfAugmentation">
+    <rdfs:label>ageOfAugmentation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MeasurementConditions"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_MeasurementConditions.statusRAIM -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_MeasurementConditions.statusRAIM">
+    <rdfs:label>statusRAIM</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MeasurementConditions"/>
+    <rdfs:range rdf:resource="&iso19103_539;Number"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_MotionAxis.unitSize -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_MotionAxis.unitSize">
+    <rdfs:label>unitSize</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MotionAxis"/>
+    <rdfs:range rdf:resource="&iso19103_530;UomVelocity"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_Observation.objectID -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_Observation.objectID">
+    <rdfs:label>objectID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_Observation.observationDateTime -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_Observation.observationDateTime">
+    <rdfs:label>observationDateTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_Observation.observationEndDateTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_Observation.observationEndDateTime">
+    <rdfs:label>observationEndDateTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Observation.offset -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Observation.offset">
+    <rdfs:label>offset</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&iso19116;PS_CoordinateTransferValues"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Observation.operatingConditions -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Observation.operatingConditions">
+    <rdfs:label>operatingConditions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&iso19116;PS_GNSSOperatingConditions"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Observation.qualityResult -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Observation.qualityResult">
+    <rdfs:label>qualityResult</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&iso19103_534;Record"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Observation.result -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Observation.result">
+    <rdfs:label>result</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&iso19103_539;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_ObservationMode.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_ObservationMode.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationMode.resultType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationMode.resultType">
+    <rdfs:label>resultType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&iso19116;PS_MeasurementType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationMode.temporalReferenceSystem -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationMode.temporalReferenceSystem">
+    <rdfs:label>temporalReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&iso19108_892;TM_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationMode.positionalReferenceSystem -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationMode.positionalReferenceSystem">
+    <rdfs:label>positionalReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationMode.referenceLink -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationMode.referenceLink">
+    <rdfs:label>referenceLink</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&iso19116;PS_LinkToReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationMode.operationsApplied -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationMode.operationsApplied">
+    <rdfs:label>operationsApplied</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&iso19111_1001;CC_ConcatenatedOperation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationQuality.result -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationQuality.result">
+    <rdfs:label>result</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationQuality"/>
+    <rdfs:range rdf:resource="&iso19115_1263;DQ_Result"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_OffsetReferenceSystem.offsetReferenceSystem -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_OffsetReferenceSystem.offsetReferenceSystem">
+    <rdfs:label>offsetReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_OffsetReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_OffsetVector.ordinate -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_OffsetVector.ordinate">
+    <rdfs:label>ordinate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_OffsetVector"/>
+    <rdfs:range rdf:resource="&iso19103_539;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_OffsetVector.sourceType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_OffsetVector.sourceType">
+    <rdfs:label>sourceType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_OffsetVector"/>
+    <rdfs:range rdf:resource="&iso19116;PS_OffsetSource"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_OffsetVector.offsetSource -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_OffsetVector.offsetSource">
+    <rdfs:label>offsetSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_OffsetVector"/>
+    <rdfs:range rdf:resource="&iso19115_1273;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_OrientationAxis.unitSize -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_OrientationAxis.unitSize">
+    <rdfs:label>unitSize</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_OrientationAxis"/>
+    <rdfs:range rdf:resource="&iso19103_530;Angle"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_PerformanceIndicators.performanceIndicators -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_PerformanceIndicators.performanceIndicators">
+    <rdfs:label>performanceIndicators</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_PerformanceIndicators"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_QualityMode.nameOfMeasure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_QualityMode.nameOfMeasure">
+    <rdfs:label>nameOfMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_QualityMode.measureIdentification -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_QualityMode.measureIdentification">
+    <rdfs:label>measureIdentification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&iso19115_1266;MD_Identifier"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_QualityMode.measureDescription -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_QualityMode.measureDescription">
+    <rdfs:label>measureDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_QualityMode.evaluationMethodType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_QualityMode.evaluationMethodType">
+    <rdfs:label>evaluationMethodType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&iso19115_1263;DQ_EvaluationMethodTypeCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_QualityMode.evaluationMethod_Description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_QualityMode.evaluationMethod_Description">
+    <rdfs:label>evaluationMethod_Description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_QualityMode.evaluationProcedure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_QualityMode.evaluationProcedure">
+    <rdfs:label>evaluationProcedure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&iso19115_1273;CI_Citation"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_QualityMode.dateTime -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_QualityMode.dateTime">
+    <rdfs:label>dateTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_QualityMode.qualityResultType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_QualityMode.qualityResultType">
+    <rdfs:label>qualityResultType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&iso19103_534;RecordType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_RotationAxis.unitSize -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_RotationAxis.unitSize">
+    <rdfs:label>unitSize</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_RotationAxis"/>
+    <rdfs:range rdf:resource="&iso19103_530;UomAngularVelocity"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_Session.sessionID -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_Session.sessionID">
+    <rdfs:label>sessionID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Session"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Session.startTime -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Session.startTime">
+    <rdfs:label>startTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Session"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Instant"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Session.stopTime -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Session.stopTime">
+    <rdfs:label>stopTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Session"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Instant"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: PS_Session.datasetInitiative -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19116;PS_Session.datasetInitiative">
+    <rdfs:label>datasetInitiative</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Session"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Session.observer -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Session.observer">
+    <rdfs:label>observer</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Session"/>
+    <rdfs:range rdf:resource="&iso19115_1273;CI_ResponsibleParty"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_System.capability -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_System.capability">
+    <rdfs:label>capability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_System"/>
+    <rdfs:range rdf:resource="&iso19116;PS_SystemCapability"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_System.positioningTechnology -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_System.positioningTechnology">
+    <rdfs:label>positioningTechnology</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_System"/>
+    <rdfs:range rdf:resource="&iso19116;PS_PositioningTechnology"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_System.referencingMethod -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_System.referencingMethod">
+    <rdfs:label>referencingMethod</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_System"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ReferencingMethod"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_GNSSOperatingConditions.measurementConditions -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_GNSSOperatingConditions.measurementConditions">
+    <rdfs:label>measurementConditions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_GNSSOperatingConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_MeasurementConditions"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_GNSSOperatingConditions.performanceIndicators -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_GNSSOperatingConditions.performanceIndicators">
+    <rdfs:label>performanceIndicators</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_GNSSOperatingConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_PerformanceIndicators"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_GNSSOperatingConditions.computationalConditions -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_GNSSOperatingConditions.computationalConditions">
+    <rdfs:label>computationalConditions</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_GNSSOperatingConditions"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ComputationalConditions"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_InstrumentId.component -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_InstrumentId.component">
+    <rdfs:label>component</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_InstrumentId"/>
+    <rdfs:range rdf:resource="&iso19116;PS_InstrumentId"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_MotionReferenceSystem.temporalReferenceSystem -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_MotionReferenceSystem.temporalReferenceSystem">
+    <rdfs:label>temporalReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_MotionReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19108_892;TM_ReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_MotionReferenceSystem.axis -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_MotionReferenceSystem.axis">
+    <rdfs:label>axis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_MotionReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19116;PS_MotionAxis"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Observation.qualityMeasure -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Observation.qualityMeasure">
+    <rdfs:label>qualityMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_Observation"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ObservationQuality"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationMode.observation -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationMode.observation">
+    <rdfs:label>observation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&iso19116;PS_Observation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ObservationMode.qualityType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ObservationMode.qualityType">
+    <rdfs:label>qualityType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_ObservationMode"/>
+    <rdfs:range rdf:resource="&iso19116;PS_QualityMode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_OffsetVector.offsetReferenceSystem -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_OffsetVector.offsetReferenceSystem">
+    <rdfs:label>offsetReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_OffsetVector"/>
+    <rdfs:range rdf:resource="&iso19116;PS_OffsetReferenceSystem"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_OrientationReferenceSystem.axis -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_OrientationReferenceSystem.axis">
+    <rdfs:label>axis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_OrientationReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19116;PS_OrientationAxis"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_PositioningServices.mode -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_PositioningServices.mode">
+    <rdfs:label>mode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_PositioningServices"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ObservationMode"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_PositioningServices.session -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_PositioningServices.session">
+    <rdfs:label>session</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_PositioningServices"/>
+    <rdfs:range rdf:resource="&iso19116;PS_Session"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_PositioningServices.system -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_PositioningServices.system">
+    <rdfs:label>system</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_PositioningServices"/>
+    <rdfs:range rdf:resource="&iso19116;PS_System"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_QualityMode.qualityObservation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_QualityMode.qualityObservation">
+    <rdfs:label>qualityObservation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_QualityMode"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ObservationQuality"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_ReferenceSystem.spatialReferenceSystem -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_ReferenceSystem.spatialReferenceSystem">
+    <rdfs:label>spatialReferenceSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_ReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19111_1002;SC_CRS"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_RotationReferenceSystem.axis -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_RotationReferenceSystem.axis">
+    <rdfs:label>axis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_RotationReferenceSystem"/>
+    <rdfs:range rdf:resource="&iso19116;PS_RotationAxis"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Session.mode -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Session.mode">
+    <rdfs:label>mode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_Session"/>
+    <rdfs:range rdf:resource="&iso19116;PS_ObservationMode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_Session.system -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_Session.system">
+    <rdfs:label>system</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19116;PS_Session"/>
+    <rdfs:range rdf:resource="&iso19116;PS_System"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: PS_System.instrument -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19116;PS_System.instrument">
+    <rdfs:label>instrument</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19116;PS_System"/>
+    <rdfs:range rdf:resource="&iso19116;PS_InstrumentId"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_CorrectionMethod -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_CorrectionMethod">
+    <rdfs:label>PS_CorrectionMethod</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_CorrectionMethod">
+    <skos:prefLabel>PS_CorrectionMethod - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_CorrectionMethod"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_CorrectionMethod rdf:about="&iso19116Code;PS_CorrectionMethod/DGPS">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>DGPS</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_CorrectionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_CorrectionMethod>
+  <iso19116:PS_CorrectionMethod rdf:about="&iso19116Code;PS_CorrectionMethod/PreciseEphemeris">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>PreciseEphemeris</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_CorrectionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_CorrectionMethod>
+  <iso19116:PS_CorrectionMethod rdf:about="&iso19116Code;PS_CorrectionMethod/PreciseEphemerisWithClockCorrection">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>PreciseEphemerisWithClockCorrection</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_CorrectionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_CorrectionMethod>
+  <skos:Collection rdf:about="&iso19116Code;PS_CorrectionMethodCollection">
+    <skos:prefLabel>PS_CorrectionMethod - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_CorrectionMethod/DGPS"/>
+    <skos:member rdf:resource="&iso19116Code;PS_CorrectionMethod/PreciseEphemeris"/>
+    <skos:member rdf:resource="&iso19116Code;PS_CorrectionMethod/PreciseEphemerisWithClockCorrection"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Codelist: PS_DOPType -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_DOPType">
+    <rdfs:label>PS_DOPType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_DOPType">
+    <skos:prefLabel>PS_DOPType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_DOPType"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_DOPType rdf:about="&iso19116Code;PS_DOPType/GDOP">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>GDOP</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_DOPType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_DOPType>
+  <iso19116:PS_DOPType rdf:about="&iso19116Code;PS_DOPType/PDOP">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>PDOP</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_DOPType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_DOPType>
+  <iso19116:PS_DOPType rdf:about="&iso19116Code;PS_DOPType/HDOP">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>HDOP</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_DOPType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_DOPType>
+  <iso19116:PS_DOPType rdf:about="&iso19116Code;PS_DOPType/VDOP">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>VDOP</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_DOPType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_DOPType>
+  <iso19116:PS_DOPType rdf:about="&iso19116Code;PS_DOPType/TDOP">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>TDOP</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_DOPType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_DOPType>
+  <skos:Collection rdf:about="&iso19116Code;PS_DOPTypeCollection">
+    <skos:prefLabel>PS_DOPType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/GDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/PDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/HDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/VDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/TDOP"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_FrequencyList -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_FrequencyList">
+    <rdfs:label>PS_FrequencyList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_FrequencyList">
+    <skos:prefLabel>PS_FrequencyList - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_FrequencyList"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_FrequencyList rdf:about="&iso19116Code;PS_FrequencyList/L1">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>L1</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_FrequencyList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_FrequencyList>
+  <iso19116:PS_FrequencyList rdf:about="&iso19116Code;PS_FrequencyList/L1.sl.L2">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>L1.sl.L2</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_FrequencyList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_FrequencyList>
+  <iso19116:PS_FrequencyList rdf:about="&iso19116Code;PS_FrequencyList/L2">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>L2</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_FrequencyList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_FrequencyList>
+  <iso19116:PS_FrequencyList rdf:about="&iso19116Code;PS_FrequencyList/L3">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>L3</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_FrequencyList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_FrequencyList>
+  <iso19116:PS_FrequencyList rdf:about="&iso19116Code;PS_FrequencyList/L1.sl.L2.sl.L3">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>L1.sl.L2.sl.L3</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_FrequencyList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_FrequencyList>
+  <iso19116:PS_FrequencyList rdf:about="&iso19116Code;PS_FrequencyList/L2.sl.L3">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>L2.sl.L3</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_FrequencyList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_FrequencyList>
+  <iso19116:PS_FrequencyList rdf:about="&iso19116Code;PS_FrequencyList/L1.sl.L3">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>L1.sl.L3</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_FrequencyList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_FrequencyList>
+  <skos:Collection rdf:about="&iso19116Code;PS_FrequencyListCollection">
+    <skos:prefLabel>PS_FrequencyList - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L2"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L2"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L3"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L2.sl.L3"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L2.sl.L3"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L3"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_MeasurementType -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_MeasurementType">
+    <rdfs:label>PS_MeasurementType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_MeasurementType">
+    <skos:prefLabel>PS_MeasurementType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_MeasurementType"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_MeasurementType rdf:about="&iso19116Code;PS_MeasurementType/position">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>position</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_MeasurementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_MeasurementType>
+  <iso19116:PS_MeasurementType rdf:about="&iso19116Code;PS_MeasurementType/orientation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>orientation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_MeasurementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_MeasurementType>
+  <iso19116:PS_MeasurementType rdf:about="&iso19116Code;PS_MeasurementType/motion">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>motion</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_MeasurementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_MeasurementType>
+  <iso19116:PS_MeasurementType rdf:about="&iso19116Code;PS_MeasurementType/rotation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rotation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_MeasurementType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_MeasurementType>
+  <skos:Collection rdf:about="&iso19116Code;PS_MeasurementTypeCollection">
+    <skos:prefLabel>PS_MeasurementType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/position"/>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/orientation"/>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/motion"/>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/rotation"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_OffsetSource -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_OffsetSource">
+    <rdfs:label>PS_OffsetSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_OffsetSource">
+    <skos:prefLabel>PS_OffsetSource - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_OffsetSource"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_OffsetSource rdf:about="&iso19116Code;PS_OffsetSource/manufacturerSpecifcations">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>manufacturerSpecifcations</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_OffsetSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_OffsetSource>
+  <iso19116:PS_OffsetSource rdf:about="&iso19116Code;PS_OffsetSource/measured">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>measured</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_OffsetSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_OffsetSource>
+  <iso19116:PS_OffsetSource rdf:about="&iso19116Code;PS_OffsetSource/publication">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>publication</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_OffsetSource"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_OffsetSource>
+  <skos:Collection rdf:about="&iso19116Code;PS_OffsetSourceCollection">
+    <skos:prefLabel>PS_OffsetSource - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_OffsetSource/manufacturerSpecifcations"/>
+    <skos:member rdf:resource="&iso19116Code;PS_OffsetSource/measured"/>
+    <skos:member rdf:resource="&iso19116Code;PS_OffsetSource/publication"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_PositionFixMode -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_PositionFixMode">
+    <rdfs:label>PS_PositionFixMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_PositionFixMode">
+    <skos:prefLabel>PS_PositionFixMode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_PositionFixMode"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_PositionFixMode rdf:about="&iso19116Code;PS_PositionFixMode/Nofix">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Nofix</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionFixMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionFixMode>
+  <iso19116:PS_PositionFixMode rdf:about="&iso19116Code;PS_PositionFixMode/Oldfix">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Oldfix</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionFixMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionFixMode>
+  <iso19116:PS_PositionFixMode rdf:about="&iso19116Code;PS_PositionFixMode/1D">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>1D</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionFixMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionFixMode>
+  <iso19116:PS_PositionFixMode rdf:about="&iso19116Code;PS_PositionFixMode/2D">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>2D</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionFixMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionFixMode>
+  <iso19116:PS_PositionFixMode rdf:about="&iso19116Code;PS_PositionFixMode/3D">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>3D</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionFixMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionFixMode>
+  <iso19116:PS_PositionFixMode rdf:about="&iso19116Code;PS_PositionFixMode/3Doverdetermined">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>3Doverdetermined</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionFixMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionFixMode>
+  <skos:Collection rdf:about="&iso19116Code;PS_PositionFixModeCollection">
+    <skos:prefLabel>PS_PositionFixMode - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/Nofix"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/Oldfix"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/1D"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/2D"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/3D"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/3Doverdetermined"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_PositioningMode -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_PositioningMode">
+    <rdfs:label>PS_PositioningMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_PositioningMode">
+    <skos:prefLabel>PS_PositioningMode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_PositioningMode"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_PositioningMode rdf:about="&iso19116Code;PS_PositioningMode/Point">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Point</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositioningMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositioningMode>
+  <iso19116:PS_PositioningMode rdf:about="&iso19116Code;PS_PositioningMode/Relative">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Relative</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositioningMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositioningMode>
+  <skos:Collection rdf:about="&iso19116Code;PS_PositioningModeCollection">
+    <skos:prefLabel>PS_PositioningMode - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningMode/Point"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningMode/Relative"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_PositioningTechnology -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_PositioningTechnology">
+    <rdfs:label>PS_PositioningTechnology</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_PositioningTechnology">
+    <skos:prefLabel>PS_PositioningTechnology - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_PositioningTechnology"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_PositioningTechnology rdf:about="&iso19116Code;PS_PositioningTechnology/GNSS">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>GNSS</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositioningTechnology"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositioningTechnology>
+  <iso19116:PS_PositioningTechnology rdf:about="&iso19116Code;PS_PositioningTechnology/LORANC">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>LORANC</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositioningTechnology"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositioningTechnology>
+  <iso19116:PS_PositioningTechnology rdf:about="&iso19116Code;PS_PositioningTechnology/Inertial">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Inertial</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositioningTechnology"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositioningTechnology>
+  <iso19116:PS_PositioningTechnology rdf:about="&iso19116Code;PS_PositioningTechnology/TotalStation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>TotalStation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositioningTechnology"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositioningTechnology>
+  <iso19116:PS_PositioningTechnology rdf:about="&iso19116Code;PS_PositioningTechnology/GNSS_InertialAided">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>GNSS_InertialAided</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositioningTechnology"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositioningTechnology>
+  <skos:Collection rdf:about="&iso19116Code;PS_PositioningTechnologyCollection">
+    <skos:prefLabel>PS_PositioningTechnology - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningTechnology/GNSS"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningTechnology/LORANC"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningTechnology/Inertial"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningTechnology/TotalStation"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningTechnology/GNSS_InertialAided"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_PositionSolutionMethod -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_PositionSolutionMethod">
+    <rdfs:label>PS_PositionSolutionMethod</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_PositionSolutionMethod">
+    <skos:prefLabel>PS_PositionSolutionMethod - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_PositionSolutionMethod"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_PositionSolutionMethod rdf:about="&iso19116Code;PS_PositionSolutionMethod/C.sl.Acode">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>C.sl.Acode</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionSolutionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionSolutionMethod>
+  <iso19116:PS_PositionSolutionMethod rdf:about="&iso19116Code;PS_PositionSolutionMethod/PPScode">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>PPScode</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionSolutionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionSolutionMethod>
+  <iso19116:PS_PositionSolutionMethod rdf:about="&iso19116Code;PS_PositionSolutionMethod/StaticFloating">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>StaticFloating</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionSolutionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionSolutionMethod>
+  <iso19116:PS_PositionSolutionMethod rdf:about="&iso19116Code;PS_PositionSolutionMethod/StaticFixed">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>StaticFixed</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionSolutionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionSolutionMethod>
+  <iso19116:PS_PositionSolutionMethod rdf:about="&iso19116Code;PS_PositionSolutionMethod/KinematicFloating">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>KinematicFloating</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionSolutionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionSolutionMethod>
+  <iso19116:PS_PositionSolutionMethod rdf:about="&iso19116Code;PS_PositionSolutionMethod/KinematicFixed">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>KinematicFixed</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_PositionSolutionMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_PositionSolutionMethod>
+  <skos:Collection rdf:about="&iso19116Code;PS_PositionSolutionMethodCollection">
+    <skos:prefLabel>PS_PositionSolutionMethod - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/C.sl.Acode"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/PPScode"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/StaticFloating"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/StaticFixed"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/KinematicFloating"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/KinematicFixed"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_ProcessingMode -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_ProcessingMode">
+    <rdfs:label>PS_ProcessingMode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_ProcessingMode">
+    <skos:prefLabel>PS_ProcessingMode - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_ProcessingMode"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_ProcessingMode rdf:about="&iso19116Code;PS_ProcessingMode/RealTime">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>RealTime</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_ProcessingMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_ProcessingMode>
+  <iso19116:PS_ProcessingMode rdf:about="&iso19116Code;PS_ProcessingMode/PostProcessed">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>PostProcessed</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_ProcessingMode"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_ProcessingMode>
+  <skos:Collection rdf:about="&iso19116Code;PS_ProcessingModeCollection">
+    <skos:prefLabel>PS_ProcessingMode - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_ProcessingMode/RealTime"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ProcessingMode/PostProcessed"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_ReferencingMethod -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_ReferencingMethod">
+    <rdfs:label>PS_ReferencingMethod</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_ReferencingMethod">
+    <skos:prefLabel>PS_ReferencingMethod - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_ReferencingMethod"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_ReferencingMethod rdf:about="&iso19116Code;PS_ReferencingMethod/coordinate">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coordinate</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_ReferencingMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_ReferencingMethod>
+  <iso19116:PS_ReferencingMethod rdf:about="&iso19116Code;PS_ReferencingMethod/linear">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>linear</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_ReferencingMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_ReferencingMethod>
+  <iso19116:PS_ReferencingMethod rdf:about="&iso19116Code;PS_ReferencingMethod/gridCell">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>gridCell</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_ReferencingMethod"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_ReferencingMethod>
+  <skos:Collection rdf:about="&iso19116Code;PS_ReferencingMethodCollection">
+    <skos:prefLabel>PS_ReferencingMethod - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_ReferencingMethod/coordinate"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReferencingMethod/linear"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReferencingMethod/gridCell"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: PS_SystemCapability -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19116;PS_SystemCapability">
+    <rdfs:label>PS_SystemCapability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19116Code;PS_SystemCapability">
+    <skos:prefLabel>PS_SystemCapability - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19116;PS_SystemCapability"/>
+  </skos:ConceptScheme>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/positionData">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>positionData</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/positionalQuality">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>positionalQuality</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/motionData">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>motionData</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/motionQuality">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>motionQuality</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/attitudeData">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>attitudeData</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/attitudeQuality">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>attitudeQuality</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/rotationalData">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rotationalData</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/rotationalQuality">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rotationalQuality</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/technologySpecificData">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>technologySpecificData</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <iso19116:PS_SystemCapability rdf:about="&iso19116Code;PS_SystemCapability/rawMeasurementData">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rawMeasurementData</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19116Code;PS_SystemCapability"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19116/ed-1/en/</rdfs:isDefinedBy>
+  </iso19116:PS_SystemCapability>
+  <skos:Collection rdf:about="&iso19116Code;PS_SystemCapabilityCollection">
+    <skos:prefLabel>PS_SystemCapability - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/positionData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/positionalQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/motionData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/motionQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/attitudeData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/attitudeQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/rotationalData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/rotationalQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/technologySpecificData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/rawMeasurementData"/>
+  </skos:Collection>
+
+</rdf:RDF>
+
