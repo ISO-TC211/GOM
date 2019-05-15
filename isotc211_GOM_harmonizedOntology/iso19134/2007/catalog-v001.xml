@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557845818069" name="http://def.isotc211.org/iso19134/2007/Location-BasedServices-MultimodalRoutingAndNavigation" uri="Location-BasedServices-MultimodalRoutingAndNavigation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845818069" name="http://def.isotc211.org/iso19134/2007/MultimodalConstraintAndAdvisory" uri="MultimodalConstraintAndAdvisory.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845818069" name="http://def.isotc211.org/iso19134/2007/MultimodalCostFunction" uri="MultimodalCostFunction.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845818069" name="http://def.isotc211.org/iso19134/2007/MultimodalNavigationService" uri="MultimodalNavigationService.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845818069" name="http://def.isotc211.org/iso19134/2007/MultimodalNetwork" uri="MultimodalNetwork.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845818069" name="http://def.isotc211.org/iso19134/2007/MultimodalRouting" uri="MultimodalRouting.rdf"/>
+    </group>
+</catalog>

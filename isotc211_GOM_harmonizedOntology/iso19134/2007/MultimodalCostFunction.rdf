@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_333 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19103_342 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19133_1920 "http://def.isotc211.org/iso19133/2005/CostFunction#" >
+  <!ENTITY iso19134 "http://def.isotc211.org/iso19134/2007/MultimodalCostFunction#" >
+  <!ENTITY iso19134Code "http://def.isotc211.org/iso19134/2007/MultimodalCostFunction/code/">
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         MultimodalCostFunction.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL          -->
+  <!-- Generator version: 2.5                                -->
+  <!-- File date:         18-11-2016                         -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19134/2007/MultimodalCostFunction#"
+  xml:base="http://def.isotc211.org/iso19134/2007/MultimodalCostFunction"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_333="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19103_342="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19133_1920="http://def.isotc211.org/iso19133/2005/CostFunction#"
+  xmlns:iso19134="http://def.isotc211.org/iso19134/2007/MultimodalCostFunction#"
+  xmlns:iso19134Code="http://def.isotc211.org/iso19134/2007/MultimodalCostFunction/code/">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19134:2007 Multimodal Cost Function -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19134/2007/MultimodalCostFunction">
+    <rdfs:label>ISO 19134:2007 Multimodal Cost Function</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19134/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-02-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/CostFunction"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: MN_CostElement -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_CostElement">
+    <rdfs:label>MN_CostElement</rdfs:label>
+    <skos:definition>The data type .gu.MN_CostElement.gu. is the root of the collection of data types used to define cost functions.  MN_CostElement is a variant type of NS_CostElement in ISO 19133. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_CostFunction"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: MN_CostFunction -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_CostFunction">
+    <rdfs:label>MN_CostFunction</rdfs:label>
+    <skos:definition>The data type .gu.MN_CostFunction.gu. is a variant subtype of .gu.NS_CostFunction.gu. in ISO 19133. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1920;NS_CostFunction"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: MN_Counts -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_Counts">
+    <rdfs:label>MN_Counts</rdfs:label>
+    <skos:definition>The data type .gu.MN_ Counts.gu. is the root class for all types that have a count-valued cost.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_CostElement"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: MN_Distance -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_Distance">
+    <rdfs:label>MN_Distance</rdfs:label>
+    <skos:definition>The data type .gu.MN_ Distance.gu. is the root class for all types that have a distance-valued cost. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_CostElement"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: MN_Fares -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_Fares">
+    <rdfs:label>MN_Fares</rdfs:label>
+    <skos:definition>The data type .gu.MN_Fares.gu. is used for describing monetary cost arising from out-of-pocket costs for travel. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_MonetaryCost"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: MN_MonetaryCost -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_MonetaryCost">
+    <rdfs:label>MN_MonetaryCost</rdfs:label>
+    <skos:definition>The data type .gu.MN_MonetaryCost.gu. is the root class for all types that have a monetary-valued cost.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_CostElement"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: MN_NumberOfTransfers -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_NumberOfTransfers">
+    <rdfs:label>MN_NumberOfTransfers</rdfs:label>
+    <skos:definition>The data type .gu.MN_NumberOfTransfer.gu. is the cost element used for counting modal transfers. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_Counts"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: MN_Time -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_Time">
+    <rdfs:label>MN_Time</rdfs:label>
+    <skos:definition>The data type .gu.MN_Time.gu. is the root class for all types that have a time-valued cost. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_CostElement"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: MN_TotalCost -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_TotalCost">
+    <rdfs:label>MN_TotalCost</rdfs:label>
+    <skos:definition>The data type .gu.MN_TotalCost.gu. is used for describing monetary cost arising from total travel activities.  For example, the total cost is composed of time, distance, out-of-pocket costs including parking fees, and cost related to waypoint activities such as shopping. Detailed explanation for MN_TotalCost can be found in Annex B. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_MonetaryCost"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: MN_TravelTime -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_TravelTime">
+    <rdfs:label>MN_TravelTime</rdfs:label>
+    <skos:definition>The data type .gu.MN_TravelTime.gu. is used for describing cost arising from line-haul travel time along the multimodal route. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_Time"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: MN_WaitingTime -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_WaitingTime">
+    <rdfs:label>MN_WaitingTime</rdfs:label>
+    <skos:definition>The data type .gu.MN_WaitingTime.gu. is used for describing cost arising from waiting time at transfer points along the multimodal route.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_Time"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: MN_WayPointsCost -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_WayPointsCost">
+    <rdfs:label>MN_WayPointsCost</rdfs:label>
+    <skos:definition>The data type .gu.MN_WayPointsCost.gu. is used for describing monetary cost related to waypoint activities such as shopping. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_MonetaryCost"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: MN_WeightedCost -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_WeightedCost">
+    <rdfs:label>MN_WeightedCost</rdfs:label>
+    <skos:definition>The type .gu.MN_WeightedCost.gu. is a cost function that is the sum of the numeric values of other cost functions with weights. MN_WeightedCost is a variant type of NS_WeightedCost in ISO 19133.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19134;MN_CostFunction"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCost.targetUnit"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCost.targetUnit"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCost.term"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCost.term"/>
+        <owl:allValuesFrom rdf:resource="&iso19134;MN_WeightedCostFunctionTerm"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: MN_WeightedCostFunctionTerm -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_WeightedCostFunctionTerm">
+    <rdfs:label>MN_WeightedCostFunctionTerm</rdfs:label>
+    <skos:definition>The data type .gu.MN_WeightedCostFunctionTerm.gu. is a component of a cost function that is the sum of the numeric values of other cost functions with weights.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCostFunctionTerm.unit"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCostFunctionTerm.unit"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCostFunctionTerm.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCostFunctionTerm.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19134;MN_CostType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCostFunctionTerm.weight"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19134;MN_WeightedCostFunctionTerm.weight"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_342;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MN_WeightedCost.targetUnit -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MN_WeightedCost.targetUnit">
+    <rdfs:label>targetUnit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MN_WeightedCost"/>
+    <rdfs:range rdf:resource="&iso19103_333;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MN_WeightedCostFunctionTerm.unit -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MN_WeightedCostFunctionTerm.unit">
+    <rdfs:label>unit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MN_WeightedCostFunctionTerm"/>
+    <rdfs:range rdf:resource="&iso19103_333;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MN_WeightedCostFunctionTerm.type -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MN_WeightedCostFunctionTerm.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MN_WeightedCostFunctionTerm"/>
+    <rdfs:range rdf:resource="&iso19134;MN_CostType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MN_WeightedCostFunctionTerm.weight -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MN_WeightedCostFunctionTerm.weight">
+    <rdfs:label>weight</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19134;MN_WeightedCostFunctionTerm"/>
+    <rdfs:range rdf:resource="&iso19103_342;Number"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: MN_WeightedCost.term -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19134;MN_WeightedCost.term">
+    <rdfs:label>term</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19134;MN_WeightedCost"/>
+    <rdfs:range rdf:resource="&iso19134;MN_WeightedCostFunctionTerm"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Codelist: MN_CostType -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19134;MN_CostType">
+    <rdfs:label>MN_CostType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19134Code;MN_CostType">
+    <skos:prefLabel>MN_CostType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19134;MN_CostType"/>
+  </skos:ConceptScheme>
+  <iso19134:MN_CostType rdf:about="&iso19134Code;MN_CostType/waitingTime">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>waitingTime</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MN_CostType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MN_CostType>
+  <iso19134:MN_CostType rdf:about="&iso19134Code;MN_CostType/travelTime">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>travelTime</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MN_CostType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MN_CostType>
+  <iso19134:MN_CostType rdf:about="&iso19134Code;MN_CostType/totalCost">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>totalCost</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MN_CostType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MN_CostType>
+  <iso19134:MN_CostType rdf:about="&iso19134Code;MN_CostType/fares">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>fares</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MN_CostType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MN_CostType>
+  <iso19134:MN_CostType rdf:about="&iso19134Code;MN_CostType/wayPointsCost">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>wayPointsCost</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MN_CostType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MN_CostType>
+  <iso19134:MN_CostType rdf:about="&iso19134Code;MN_CostType/numberOfTransfers">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>numberOfTransfers</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MN_CostType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MN_CostType>
+  <iso19134:MN_CostType rdf:about="&iso19134Code;MN_CostType/distance">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>distance</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19134Code;MN_CostType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19134/ed-1/en/</rdfs:isDefinedBy>
+  </iso19134:MN_CostType>
+  <skos:Collection rdf:about="&iso19134Code;MN_CostTypeCollection">
+    <skos:prefLabel>MN_CostType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/waitingTime"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/travelTime"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/totalCost"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/fares"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/wayPointsCost"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/numberOfTransfers"/>
+    <skos:member rdf:resource="&iso19134Code;MN_CostType/distance"/>
+  </skos:Collection>
+
+</rdf:RDF>
+
