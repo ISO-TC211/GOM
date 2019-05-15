@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/ComplexSymbolExtension" uri="ComplexSymbolExtension.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/CompoundSymbolExtension" uri="CompoundSymbolExtension.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/ConditionalFunctionExtension" uri="ConditionalFunctionExtension.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/ContextExtension" uri="ContextExtension.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/FunctionSymbolParameterExtension" uri="FunctionSymbolParameterExtension.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/Portrayal" uri="Portrayal.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/PortrayalCatalogue" uri="PortrayalCatalogue.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/PortrayalCore" uri="PortrayalCore.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/PortrayalExtensions" uri="PortrayalExtensions.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/PortrayalFunction" uri="PortrayalFunction.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/ReusableSymbolComponentExtension" uri="ReusableSymbolComponentExtension.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/Symbol" uri="Symbol.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557842209267" name="http://def.isotc211.org/iso19117/2012/SymbolParameterExtension" uri="SymbolParameterExtension.rdf"/>
+    </group>
+</catalog>
