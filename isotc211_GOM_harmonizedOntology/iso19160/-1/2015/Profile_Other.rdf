@@ -1,0 +1,1084 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_294 "http://def.isotc211.org/iso19103/2015/Numerics#" >
+  <!ENTITY iso19160-1_1127 "http://def.isotc211.org/iso19160/-1/2015/Address#" >
+  <!ENTITY iso19160-1 "http://def.isotc211.org/iso19160/-1/2015/Profile_Other#" >
+  <!ENTITY iso19160-1Code "http://def.isotc211.org/iso19160/-1/2015/Profile_Other/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         Profile_Other.rdf           -->
+  <!-- Generator:         GOM_Technologies::UML2OWL   -->
+  <!-- Generator version: 2.5                         -->
+  <!-- File date:         2-11-2016                   -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19160/-1/2015/Profile_Other#"
+  xml:base="http://def.isotc211.org/iso19160/-1/2015/Profile_Other"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_294="http://def.isotc211.org/iso19103/2015/Numerics#"
+  xmlns:iso19160-1_1127="http://def.isotc211.org/iso19160/-1/2015/Address#"
+  xmlns:iso19160-1="http://def.isotc211.org/iso19160/-1/2015/Profile_Other#"
+  xmlns:iso19160-1Code="http://def.isotc211.org/iso19160/-1/2015/Profile_Other/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19160-1:2015 Profile_Other -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19160/-1/2015/Profile_Other">
+    <rdfs:label>ISO 19160-1:2015 Profile_Other</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19160/-1/ed-1/en/</dct:source>
+    <owl:versionInfo>2015-12-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/Numerics"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19160/-1/2015/Address"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Address -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Address">
+    <rdfs:label>Address</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;Address"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: AddressableObject -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressableObject">
+    <rdfs:label>AddressableObject</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>Only the following codes are within scope for position.type: buildingAccessPoint, buildingCentroid, propertyCentroid</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;AddressableObject"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: AddressComponent -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressComponent">
+    <rdfs:label>AddressComponent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: AddressLine -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressLine">
+    <rdfs:label>AddressLine</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Building -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Building">
+    <rdfs:label>Building</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type BuildingValue</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type BuildingValue</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: BuildingValue -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;BuildingValue">
+    <rdfs:label>BuildingValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;BuildingValue.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;BuildingValue.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;BuildingValue.part"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;BuildingValue.part"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: CityTown -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;CityTown">
+    <rdfs:label>CityTown</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type CharacterString</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type CharacterString</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Country -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Country">
+    <rdfs:label>Country</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type CountryCode</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type CountryCode</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: DeliveryService -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;DeliveryService">
+    <rdfs:label>DeliveryService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: DeliveryServicePoint -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;DeliveryServicePoint">
+    <rdfs:label>DeliveryServicePoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type DeliveryServiceValue</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type DeliveryServiceValue</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: DeliveryServiceValue -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;DeliveryServiceValue">
+    <rdfs:label>DeliveryServiceValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;DeliveryServiceValue.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;DeliveryServiceValue.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;DeliveryServiceValue.number"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;DeliveryServiceValue.number"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_294;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;DeliveryServiceValue.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;DeliveryServiceValue.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: EmergencyAccessRegister -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;EmergencyAccessRegister">
+    <rdfs:label>EmergencyAccessRegister</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>Only emergencyAccess is within scope for position.type</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;EmergencyAccessRegister.position"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;EmergencyAccessRegister.position"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1_1127;AddressPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Level -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Level">
+    <rdfs:label>Level</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type is levelValue</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type is levelValue</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: LevelValue -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;LevelValue">
+    <rdfs:label>LevelValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;LevelValue.number"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;LevelValue.number"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;LevelValue.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;LevelValue.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Mailtown -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Mailtown">
+    <rdfs:label>Mailtown</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: NonStandard -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;NonStandard">
+    <rdfs:label>NonStandard</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Postcode -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Postcode">
+    <rdfs:label>Postcode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type Number</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type Number</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: RegionName -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;RegionName">
+    <rdfs:label>RegionName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type CharacterString</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type CharacterString</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--+++++++++++++-->
+  <!-- Class: Road -->
+  <!--+++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Road">
+    <rdfs:label>Road</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type RoadValue</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type RoadValue</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: RoadDesignation -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;RoadDesignation">
+    <rdfs:label>RoadDesignation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: RoadNumber -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;RoadNumber">
+    <rdfs:label>RoadNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value if of type RoadNumberValue</iso19150-2:constraint>
+    <iso19150-2:constraint>value if of type RoadNumberValue</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: RoadNumberValue -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;RoadNumberValue">
+    <rdfs:label>RoadNumberValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.alpha"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.alpha"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.number"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.number"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_294;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.numberHigh"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.numberHigh"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_294;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.numberLow"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadNumberValue.numberLow"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_294;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: RoadValue -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;RoadValue">
+    <rdfs:label>RoadValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadValue.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadValue.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadValue.prefix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadValue.suffix"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadValue.suffix"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadValue.type"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;RoadValue.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: RuralDeliveryRoute -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;RuralDeliveryRoute">
+    <rdfs:label>RuralDeliveryRoute</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: RuralPostalDelivery -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;RuralPostalDelivery">
+    <rdfs:label>RuralPostalDelivery</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+  </owl:Class>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Suburb -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Suburb">
+    <rdfs:label>Suburb</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type CharacterString(0..1)</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type CharacterString(0..1)</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: Thoroughfare -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Thoroughfare">
+    <rdfs:label>Thoroughfare</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: ThoroughfareAddress -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;ThoroughfareAddress">
+    <rdfs:label>ThoroughfareAddress</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1_1127;Address"/>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.level"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.level"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;Level"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.unit"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.unit"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;Unit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.building"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.building"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;Building"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.roadNumber"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.roadNumber"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;RoadNumber"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.road"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.road"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;Road"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.touringRouteName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.touringRouteName"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;TouringRouteName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.suburb"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.suburb"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;Suburb"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.cityTown"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.cityTown"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;CityTown"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.regionName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.regionName"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;RegionName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.postcode"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.postcode"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;Postcode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.country"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;ThoroughfareAddress.country"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1;Country"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: TouringRouteName -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;TouringRouteName">
+    <rdfs:label>TouringRouteName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type CharacterString</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type CharacterString</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--+++++++++++++-->
+  <!-- Class: Unit -->
+  <!--+++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Unit">
+    <rdfs:label>Unit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>value is of type UnitValue</iso19150-2:constraint>
+    <iso19150-2:constraint>value is of type UnitValue</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressComponent"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: UnitValue -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;UnitValue">
+    <rdfs:label>UnitValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;UnitValue.number"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;UnitValue.number"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;UnitValue.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;UnitValue.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: UtilityRegister -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;UtilityRegister">
+    <rdfs:label>UtilityRegister</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>Only serviceConnectionPoint is within scope for position.type</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;UtilityRegister.position"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19160-1;UtilityRegister.position"/>
+        <owl:allValuesFrom rdf:resource="&iso19160-1_1127;AddressPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Water -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;Water">
+    <rdfs:label>Water</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;Address"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: BuildingValue.name -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;BuildingValue.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;BuildingValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: BuildingValue.part -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;BuildingValue.part">
+    <rdfs:label>part</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;BuildingValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DeliveryServiceValue.name -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;DeliveryServiceValue.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;DeliveryServiceValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DeliveryServiceValue.number -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;DeliveryServiceValue.number">
+    <rdfs:label>number</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;DeliveryServiceValue"/>
+    <rdfs:range rdf:resource="&iso19103_294;Number"/>
+  </owl:ObjectProperty>
+
+
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.level -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.level">
+    <rdfs:label>level</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;Level"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.unit -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.unit">
+    <rdfs:label>unit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;Unit"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.building -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.building">
+    <rdfs:label>building</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;Building"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.roadNumber -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.roadNumber">
+    <rdfs:label>roadNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;RoadNumber"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.road -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.road">
+    <rdfs:label>road</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;Road"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.touringRouteName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.touringRouteName">
+    <rdfs:label>touringRouteName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;TouringRouteName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.suburb -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.suburb">
+    <rdfs:label>suburb</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;Suburb"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.cityTown -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.cityTown">
+    <rdfs:label>cityTown</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;CityTown"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.regionName -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.regionName">
+    <rdfs:label>regionName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;RegionName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.postcode -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.postcode">
+    <rdfs:label>postcode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;Postcode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: ThoroughfareAddress.country -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;ThoroughfareAddress.country">
+    <rdfs:label>country</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;ThoroughfareAddress"/>
+    <rdfs:range rdf:resource="&iso19160-1;Country"/>
+  </owl:ObjectProperty>
+
+
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DeliveryServiceValue.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;DeliveryServiceValue.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;DeliveryServiceValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: EmergencyAccessRegister.position -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;EmergencyAccessRegister.position">
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;EmergencyAccessRegister"/>
+    <rdfs:range rdf:resource="&iso19160-1_1127;AddressPosition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LevelValue.number -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;LevelValue.number">
+    <rdfs:label>number</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;LevelValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LevelValue.type -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;LevelValue.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;LevelValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RoadNumberValue.alpha -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;RoadNumberValue.alpha">
+    <rdfs:label>alpha</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadNumberValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RoadNumberValue.number -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;RoadNumberValue.number">
+    <rdfs:label>number</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadNumberValue"/>
+    <rdfs:range rdf:resource="&iso19103_294;Number"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RoadNumberValue.numberHigh -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;RoadNumberValue.numberHigh">
+    <rdfs:label>numberHigh</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadNumberValue"/>
+    <rdfs:range rdf:resource="&iso19103_294;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: RoadNumberValue.numberLow -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;RoadNumberValue.numberLow">
+    <rdfs:label>numberLow</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadNumberValue"/>
+    <rdfs:range rdf:resource="&iso19103_294;Number"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RoadValue.name -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;RoadValue.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RoadValue.prefix -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;RoadValue.prefix">
+    <rdfs:label>prefix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RoadValue.suffix -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;RoadValue.suffix">
+    <rdfs:label>suffix</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: RoadValue.type -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;RoadValue.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;RoadValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: UnitValue.number -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;UnitValue.number">
+    <rdfs:label>number</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;UnitValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: UnitValue.type -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19160-1;UnitValue.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;UnitValue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: UtilityRegister.position -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19160-1;UtilityRegister.position">
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19160-1;UtilityRegister"/>
+    <rdfs:range rdf:resource="&iso19160-1_1127;AddressPosition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: AddressPositionType -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19160-1;AddressPositionType">
+    <rdfs:label>AddressPositionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19160-1;AddressPositionType"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19160-1Code;AddressPositionType">
+    <skos:prefLabel>AddressPositionType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19160-1;AddressPositionType"/>
+  </skos:ConceptScheme>
+  <iso19160-1:AddressPositionType rdf:about="&iso19160-1Code;AddressPositionType/buildingAccessPoint">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>buildingAccessPoint</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressPositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressPositionType>
+  <iso19160-1:AddressPositionType rdf:about="&iso19160-1Code;AddressPositionType/buildingCentroid">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>buildingCentroid</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressPositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressPositionType>
+  <iso19160-1:AddressPositionType rdf:about="&iso19160-1Code;AddressPositionType/emergencyAccess">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>emergencyAccess</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressPositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressPositionType>
+  <iso19160-1:AddressPositionType rdf:about="&iso19160-1Code;AddressPositionType/propertyCentroid">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>propertyCentroid</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressPositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressPositionType>
+  <iso19160-1:AddressPositionType rdf:about="&iso19160-1Code;AddressPositionType/serviceConnectionPoint">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>serviceConnectionPoint</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19160-1Code;AddressPositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19160/-1/ed-1/en/</rdfs:isDefinedBy>
+  </iso19160-1:AddressPositionType>
+  <skos:Collection rdf:about="&iso19160-1Code;AddressPositionTypeCollection">
+    <skos:prefLabel>AddressPositionType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/buildingAccessPoint"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/buildingCentroid"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/emergencyAccess"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/propertyCentroid"/>
+    <skos:member rdf:resource="&iso19160-1Code;AddressPositionType/serviceConnectionPoint"/>
+  </skos:Collection>
+
+</rdf:RDF>
+
