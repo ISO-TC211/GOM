@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1509644774961" name="http://def.isotc211.org/iso19119/2005/ServiceMetadata" uri="iso19119ServiceMetadata.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1509644774961" name="http://def.isotc211.org/iso19119/2005/ServiceModel" uri="iso19119ServiceModel.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1509644774961" name="http://def.isotc211.org/iso19119/2005/Services" uri="ISO19119_2005Services.rdf"/>
-    </group>
-</catalog>
