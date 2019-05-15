@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1509394432721" name="http://def.isotc211.org/19115/-2/2009/AcquisitionInformation-Imagery" uri="AcquisitionInformation-Imagery.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394432721" name="http://def.isotc211.org/19115/-2/2009/ContentInformation-Imagery" uri="ContentInformation-Imagery.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394432721" name="http://def.isotc211.org/19115/-2/2009/DataQualityInformation-Imagery" uri="DataQualityInformation-Imagery.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394432721" name="http://def.isotc211.org/19115/-2/2009/Metadata-Imagery" uri="Metadata-Imagery.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394432721" name="http://def.isotc211.org/19115/-2/2009/MetadataEntitySet-Imagery" uri="MetadataEntitySet-Imagery.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509394432721" name="http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery" uri="SpatialRepresentationInformation-Imagery.rdf"/>
+    </group>
+</catalog>
