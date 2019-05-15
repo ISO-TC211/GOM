@@ -1,0 +1,1654 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_2333 "http://def.isotc211.org/iso19103/2015/NameTypes#" >
+  <!ENTITY iso19115-1_1541 "http://def.isotc211.org/iso19115/-1/2017/CitationAndResponsiblePartyInformation-Copy#" >
+  <!ENTITY iso_2197 "http://def.isotc211.org/iso//LanguageCodes#" >
+  <!ENTITY iso19103_2337 "http://def.isotc211.org/iso19103/2015/WebEnvironment#" >
+  <!ENTITY iso19103_2338 "http://def.isotc211.org/iso19103/2015/MeasureTypes#" >
+  <!ENTITY iso19150-4_2275 "http://def.isotc211.org/iso19150/-4/2019/Capabilities#" >
+  <!ENTITY iso19115-1_2086 "http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#" >
+  <!ENTITY iso19150-4 "http://def.isotc211.org/iso19150/-4/2019/Service#" >
+  <!ENTITY iso19150-4Code "http://def.isotc211.org/iso19150/-4/2019/Service/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         Service.rdf               -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         7-7-2017                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19150/-4/2019/Service#"
+  xml:base="http://def.isotc211.org/iso19150/-4/2019/Service"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_2333="http://def.isotc211.org/iso19103/2015/NameTypes#"
+  xmlns:iso19115-1_1541="http://def.isotc211.org/iso19115/-1/2017/CitationAndResponsiblePartyInformation-Copy#"
+  xmlns:iso_2197="http://def.isotc211.org/iso//LanguageCodes#"
+  xmlns:iso19103_2337="http://def.isotc211.org/iso19103/2015/WebEnvironment#"
+  xmlns:iso19103_2338="http://def.isotc211.org/iso19103/2015/MeasureTypes#"
+  xmlns:iso19150-4_2275="http://def.isotc211.org/iso19150/-4/2019/Capabilities#"
+  xmlns:iso19115-1_2086="http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#"
+  xmlns:iso19150-4="http://def.isotc211.org/iso19150/-4/2019/Service#"
+  xmlns:iso19150-4Code="http://def.isotc211.org/iso19150/-4/2019/Service/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19150-4:2019 Service -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19150/-4/2019/Service">
+    <rdfs:label>ISO 19150-4:2019 Service</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19150/-4/ed-1/en/</dct:source>
+    <owl:versionInfo>2019-11</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/NameTypes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2017/CitationAndResponsiblePartyInformation-Copy"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso//LanguageCodes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/WebEnvironment"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/MeasureTypes"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19150/-4/2019/Capabilities"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: GeoWebServiceDescription -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebServiceDescription">
+    <rdfs:label>GeoWebServiceDescription</rdfs:label>
+    <skos:definition>The class GeoWebServiceDescription provides detailed information about the GeoWeb Service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.subject"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.subject"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2333;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.version"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.version"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.date"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1541;CI_Date"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.language"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.language"/>
+        <owl:allValuesFrom rdf:resource="&iso_2197;LanguageCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.source"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2337;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.contact"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_1541;CI_Responsibility"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.rights"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.cost"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.cost"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;ServiceCost"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.url"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2337;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.serviceChainingInformation"/>
+        <owl:allValuesFrom rdf:resource="&iso19115-1_2086;SV_OperationChainMetadata"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.parameters"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceDescription.parameters"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;ServiceParameters"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: GeoWebServiceIdentification -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebServiceIdentification">
+    <rdfs:label>GeoWebServiceIdentification</rdfs:label>
+    <skos:definition>A GeoWeb service is a computational entity which is able (by invocation) to achieve a user's goal related to geographic information. The class GeoWebServiceIdentification provides basic information about the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.identifier"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.identifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2337;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.taxonomyAndFunction"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.taxonomyAndFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;TaxonomyFunctionPair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.lifeCycle"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.lifeCycle"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;GeoWebServiceLifeCycle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;GeoWebServiceIdentification.description"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: MonetaryUnitCost -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;uMonetaryUnitCost">
+    <rdfs:label>MonetaryUnitCost</rdfs:label>
+    <skos:definition>Amount of money requested for accessing the GeoWeb service.Note: If the service is free, the value is set to 0.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uMonetaryUnitCost.monetaryUnitCost"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uMonetaryUnitCost.monetaryUnitCost"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2338;Currency"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: ComplexCost -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;uComplexCost">
+    <rdfs:label>ComplexCost</rdfs:label>
+    <skos:definition>Account of the charging cost for the GeoWeb service including charging styles (e.g. per request or delivery, per unit of measure or granularity etc.), aspects of settlement like the settlement model (transactional vs. rental) and a settlement contract, payment obligations and payment instruments. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uComplexCost.complexCost"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;uComplexCost.complexCost"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: ServiceParameters -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;ServiceParameters">
+    <rdfs:label>ServiceParameters</rdfs:label>
+    <skos:definition>The class ServiceParameters provides the parameters, input, output, preconditions and results of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;ServiceParameters.parameter"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;ServiceParameters.input"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;ServiceParameters.output"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;ServiceParameters.precondition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;ServiceParameters.result"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;ServiceParameters.result"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: TaxonomyFunctionPair -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;TaxonomyFunctionPair">
+    <rdfs:label>TaxonomyFunctionPair</rdfs:label>
+    <skos:definition>TaxonomyFunctionPair provides synchronized function values to the taxonomy value.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <iso19150-2:constraint>self.taxonomy .eq. .gu.geographicProcessingMetadata.gu. implies self.function.oclAsType(GeoWebProcessingMetadataFunction)</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;TaxonomyFunctionPair.taxonomy"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;TaxonomyFunctionPair.taxonomy"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;GeoWebServiceTaxonomy"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19150-4;TaxonomyFunctionPair.function"/>
+        <owl:allValuesFrom rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GeoWebServiceDescription.description -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;GeoWebServiceDescription.description">
+    <rdfs:label>description</rdfs:label>
+    <skos:definition>Brief account of the content of the GeoWeb service which may include a summary of what the service offers and any requirements that the service has.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.subject -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.subject">
+    <rdfs:label>subject</rdfs:label>
+    <skos:definition>Topic of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19103_2333;GenericName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GeoWebServiceDescription.version -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;GeoWebServiceDescription.version">
+    <rdfs:label>version</rdfs:label>
+    <skos:definition>Identifier for the specific release of the GeoWeb service at a precise time.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.date -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.date">
+    <rdfs:label>date</rdfs:label>
+    <skos:definition>Date of an event in the life cycle of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1_1541;CI_Date"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.language -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.language">
+    <rdfs:label>language</rdfs:label>
+    <skos:definition>ISO 639 identifier of the language of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso_2197;LanguageCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.source -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.source">
+    <rdfs:label>source</rdfs:label>
+    <skos:definition>Reference to an element from which the present GeoWeb service is derived.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19103_2337;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.contact -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.contact">
+    <rdfs:label>contact</rdfs:label>
+    <skos:definition>Reference to humans or individuals responsible for the GeoWeb service or to some aspects of the service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1_1541;CI_Responsibility"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GeoWebServiceDescription.rights -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;GeoWebServiceDescription.rights">
+    <rdfs:label>rights</rdfs:label>
+    <skos:definition>Information about rights held in and over the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.cost -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.cost">
+    <rdfs:label>cost</rdfs:label>
+    <skos:definition>Cost information requested for accessing the GeoWeb service.Note: The service free may be free.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19150-4;ServiceCost"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.url -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.url">
+    <rdfs:label>url</rdfs:label>
+    <skos:definition>URL associated with the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19103_2337;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceIdentification.identifier -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceIdentification.identifier">
+    <rdfs:label>identifier</rdfs:label>
+    <skos:definition>Unambiguous reference to the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceIdentification"/>
+    <rdfs:range rdf:resource="&iso19103_2337;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: GeoWebServiceIdentification.name -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;GeoWebServiceIdentification.name">
+    <rdfs:label>name</rdfs:label>
+    <skos:definition>Name identifying the GeoWeb service that is being offered.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceIdentification"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceIdentification.taxonomyAndFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceIdentification.taxonomyAndFunction">
+    <rdfs:label>taxonomyAndFunction</rdfs:label>
+    <skos:definition>A pair of taxonomy and function(s) values.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceIdentification"/>
+    <rdfs:range rdf:resource="&iso19150-4;TaxonomyFunctionPair"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceIdentification.lifeCycle -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceIdentification.lifeCycle">
+    <rdfs:label>lifeCycle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceIdentification"/>
+    <rdfs:range rdf:resource="&iso19150-4;GeoWebServiceLifeCycle"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: monetaryUnitCost -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;uMonetaryUnitCost.monetaryUnitCost">
+    <skos:prefLabel>monetaryUnitCost</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;uMonetaryUnitCost"/>
+    <rdfs:range rdf:resource="&iso19103_2338;Currency"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: complexCost -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;uComplexCost.complexCost">
+    <rdfs:label>complexCost</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;uComplexCost"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ServiceParameters.parameter -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;ServiceParameters.parameter">
+    <rdfs:label>parameter</rdfs:label>
+    <skos:definition>One numerical or measurable factor setting conditions of the GeoWeb service operation.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;ServiceParameters"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ServiceParameters.input -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;ServiceParameters.input">
+    <rdfs:label>input</rdfs:label>
+    <skos:definition>Information (parameter) that the process requires for the GeoWeb service execution.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;ServiceParameters"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ServiceParameters.output -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;ServiceParameters.output">
+    <rdfs:label>output</rdfs:label>
+    <skos:definition>Something produced by the GeoWeb Service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;ServiceParameters"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ServiceParameters.precondition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;ServiceParameters.precondition">
+    <rdfs:label>precondition</rdfs:label>
+    <skos:definition>Condition that is true to perform the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;ServiceParameters"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: ServiceParameters.result -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19150-4;ServiceParameters.result">
+    <rdfs:label>result</rdfs:label>
+    <skos:definition>Outcome of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;ServiceParameters"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TaxonomyFunctionPair.taxonomy -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;TaxonomyFunctionPair.taxonomy">
+    <rdfs:label>taxonomy</rdfs:label>
+    <skos:definition>Nature of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;TaxonomyFunctionPair"/>
+    <rdfs:range rdf:resource="&iso19150-4;GeoWebServiceTaxonomy"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TaxonomyFunctionPair.function -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;TaxonomyFunctionPair.function">
+    <rdfs:label>function</rdfs:label>
+    <skos:definition>Purpose of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19150-4;TaxonomyFunctionPair"/>
+    <rdfs:range rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.serviceChainingInformation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.serviceChainingInformation">
+    <rdfs:label>serviceChainingInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19115-1_2086;SV_OperationChainMetadata"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceDescription.parameters -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceDescription.parameters">
+    <rdfs:label>parameters</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+    <rdfs:range rdf:resource="&iso19150-4;ServiceParameters"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: GeoWebServiceIdentification.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19150-4;GeoWebServiceIdentification.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19150-4;GeoWebServiceIdentification"/>
+    <rdfs:range rdf:resource="&iso19150-4;GeoWebServiceDescription"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebBoundaryHumanInteractionServiceFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebBoundaryHumanInteractionServiceFunction">
+    <rdfs:label>GeoWebBoundaryHumanInteractionServiceFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction">
+    <skos:prefLabel>GeoWebBoundaryHumanInteractionServiceFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebBoundaryHumanInteractionServiceFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/catalogueViewer">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>catalogueViewer</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that allows a user to interact with a catalogue to locate, browse, and manage metadata about geographic data or geographic services.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewer">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicViewer</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that allows a user to view one or more feature collections or coverages. This viewer allows a user to interact with map data, e.g. displaying, overlaying and querying.Note: ISO 19128 and OGC Web Map Service compliant services are part of this kind of viewers.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerAnimation">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicViewerAnimation</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Geographic viewer that allows a human to sequence views of the same geographic location at different times.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerMosaicing">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicViewerMosaicing</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Geographic viewer that allows combination of views of geographic data for adjacent areas into a single view.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerPerspective">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicViewerPerspective</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Geographic viewer that allows the viewpoint to be changed; for example, to specify how high off the ground, what direction, and from what angle a viewpoint is seeing a scene.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerImagery">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicViewerImagery</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Geographic viewer that visualizes coverage data including the mapping of sample dimensions in the coverage to colours in the display.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicSpreadsheetViewer">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicSpreadsheetViewer</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that allows a user to interact with multiple data objects and to request calculations similar to an arithmetic spreadsheet, but extended to geographic data.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/serviceEditor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>serviceEditor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that allows a user to control geographic processing services. Views include understanding a service, composing.sl.scripting service chains, invoking a service, status of a service, scheduling services for peak performance times, and invoking a service chain.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/chainDefinitionEditor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>chainDefinitionEditor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that provides user interaction with a chain definition service.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/workflowEnactmentManager">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>workflowEnactmentManager</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that provides user interaction with a workflow enactment service.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicFeatureEditor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicFeatureEditor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Geographic viewer that allows a user to interact with feature data, e.g. displaying, querying; supports feature annotation. The user controls view orientation, perspective, depth cueing, hidden-line.sl.surface, light-sources, transparency, and texture mapping onto the objects. Objects in view can be picked or drawn on to generate new objects in the model.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicSymbolEditor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicSymbolEditor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that allows a human to select and manage symbol libraries.Note: ISO 19117 is relevant to symbol libraries.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/featureGeneralizationEditor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>featureGeneralizationEditor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that allows a user to modify the cartographic characteristics of a feature or feature collection by simplifying its visualization, while maintaining its salient elements ? the spatial equivalent of simplification.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicDataStructureViewer">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicDataStructureViewer</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Client GeoWeb service that allows a user to access part of a dataset to see its internal structure, to request creation of new objects from parts of an object being browsed and to request a check of an object, e.g. type checking.</skos:definition>
+  </iso19150-4:GeoWebBoundaryHumanInteractionServiceFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunctionCollection">
+    <skos:prefLabel>GeoWebBoundaryHumanInteractionServiceFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/catalogueViewer"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewer"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerAnimation"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerMosaicing"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerPerspective"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicViewerImagery"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicSpreadsheetViewer"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/serviceEditor"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/chainDefinitionEditor"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/workflowEnactmentManager"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicFeatureEditor"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicSymbolEditor"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/featureGeneralizationEditor"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebBoundaryHumanInteractionServiceFunction/geographicDataStructureViewer"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebCommunicationFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebCommunicationFunction">
+    <rdfs:label>GeoWebCommunicationFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebCommunicationFunction">
+    <skos:prefLabel>GeoWebCommunicationFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebCommunicationFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebCommunicationFunction rdf:about="&iso19150-4Code;GeoWebCommunicationFunction/encodingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>encodingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides implementation of an encoding rule and provides an interface to encoding and decoding functionality.Note: ISO 19118 is a standard relevant to encoding.</skos:definition>
+  </iso19150-4:GeoWebCommunicationFunction>
+  <iso19150-4:GeoWebCommunicationFunction rdf:about="&iso19150-4Code;GeoWebCommunicationFunction/transferService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>transferService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides implementation of one or more transfer protocols, which allows data transfer between distributed information systems over off-line or online communication media. To successfully transfer data between two systems, the sender and receiver need to agree on the transfer protocol to be used.Note: ISO 19118 is a standard relevant to transfer. For some geographic datasets, large data-object transfer is required.</skos:definition>
+  </iso19150-4:GeoWebCommunicationFunction>
+  <iso19150-4:GeoWebCommunicationFunction rdf:about="&iso19150-4Code;GeoWebCommunicationFunction/geographicCompressionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicCompressionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that converts spatial portions of a feature collection to and from compressed form.</skos:definition>
+  </iso19150-4:GeoWebCommunicationFunction>
+  <iso19150-4:GeoWebCommunicationFunction rdf:about="&iso19150-4Code;GeoWebCommunicationFunction/geographicFormatConversionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicFormatConversionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that converts from one geographic data format to another.</skos:definition>
+  </iso19150-4:GeoWebCommunicationFunction>
+  <iso19150-4:GeoWebCommunicationFunction rdf:about="&iso19150-4Code;GeoWebCommunicationFunction/messagingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>messagingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that allows multiple users to simultaneously view, comment about, and request edits of feature collections. This service allows collaboration involving geographic data.</skos:definition>
+  </iso19150-4:GeoWebCommunicationFunction>
+  <iso19150-4:GeoWebCommunicationFunction rdf:about="&iso19150-4Code;GeoWebCommunicationFunction/remoteFileAndExecutableManagementService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>remoteFileAndExecutableManagementService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides access to secondary storage of geographic features as if it were local to the client.</skos:definition>
+  </iso19150-4:GeoWebCommunicationFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebCommunicationFunctionCollection">
+    <skos:prefLabel>GeoWebCommunicationFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction/encodingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction/transferService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction/geographicCompressionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction/geographicFormatConversionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction/messagingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebCommunicationFunction/remoteFileAndExecutableManagementService"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebModelInformationManagementFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebModelInformationManagementFunction">
+    <rdfs:label>GeoWebModelInformationManagementFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction">
+    <skos:prefLabel>GeoWebModelInformationManagementFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebModelInformationManagementFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/featureAccessService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>featureAccessService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides a client access to and management of a feature store. An access service may include a query that filters the data returned to the client.Note: ISO 19125, ISO 19142 and ISO 19143 are relevant to feature access.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/mapAccessService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>mapAccessService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides a client access to a geographic graphics, i.e. pictures of geographic data.Note: ISO 19128 is relevant to map access.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/coverageAccessService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coverageAccessService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides a client access to and management of a coverage store. Coverage is considered as a special case of Feature. An access service may include a query that filters the data returned to the client.Note: ISO 19123 and ISO 19111 are relevant to coverage access.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/coverageAccessServiceSensor">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coverageAccessServiceSensor</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides access to coverage where the source of the coverage data are a real-time sensor, i.e. not a persistent store.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/sensorDescriptionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>sensorDescriptionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides the description of a coverage sensor, including sensor location and orientation, as well as the sensor?s geometric, dynamic and radiometric characteristics for geoprocessing purposes.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/productAccessService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>productAccessService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides access to and management of a geographic product store. A product can be a predefined feature collection and metadata with known boundaries and content, corresponding to a paper map or report. A product can alternately be a previously defined set of coverages with associated metadata.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/featureTypeService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>featureTypeService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides a client access to and management of a store of feature type definitions.Note: The static and dynamic information models for a feature type catalogue are provided in ISO 19110.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/catalogueService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>catalogueService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides discovery and management services on a store of metadata about instances. The metadata may be for dataset instances, e.g. dataset catalogue, or may contain service metadata, e.g. service catalogue.Note: ISO 19115-1 is relevant to catalogue service for dataset metadata. ISO 19115-2 is relevant for service metadata.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/registryService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>registryService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides access to a store of metadata about types. Types are vocabularies that can be organized and related to each other.Examples: information community registries, type dictionaries, service registries and schema registries.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/gazetteerService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>gazetteerService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides access to a directory of instances of a class or classes of real-world phenomena containing some information regarding position.Note: An information model for a gazetteer is provided by ISO 19112.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/orderHandlingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>orderHandlingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides a client with the ability to order products from a provider, including the formulation of quotes on orders, selection of geographic processing options, submission of an order, statusing of orders and billing and accounting of users? orders.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <iso19150-4:GeoWebModelInformationManagementFunction rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunction/standingOrderService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>standingOrderService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb order-handling service that allows a user to request that a product over a geographic area be disseminated when it becomes available. Such dissemination includes receiving, preparing (i.e. reformatting, compressing, decompressing, etc.), prioritizing, and transmitting the geographic information requested through standing queries or profiles.</skos:definition>
+  </iso19150-4:GeoWebModelInformationManagementFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebModelInformationManagementFunctionCollection">
+    <skos:prefLabel>GeoWebModelInformationManagementFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/featureAccessService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/mapAccessService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/coverageAccessService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/coverageAccessServiceSensor"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/sensorDescriptionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/productAccessService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/featureTypeService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/catalogueService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/registryService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/gazetteerService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/orderHandlingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebModelInformationManagementFunction/standingOrderService"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebProcessingFunction -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebProcessingFunction">
+    <rdfs:label>GeoWebProcessingFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebProcessingFunction">
+    <skos:prefLabel>GeoWebProcessingFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebProcessingFunction"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebProcessingFunctionCollection">
+    <skos:prefLabel>GeoWebProcessingFunction - Collection</skos:prefLabel>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebProcessingMetadataFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebProcessingMetadataFunction">
+    <rdfs:label>GeoWebProcessingMetadataFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebProcessingFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebProcessingMetadataFunction">
+    <skos:prefLabel>GeoWebProcessingMetadataFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebProcessingMetadataFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebProcessingMetadataFunction rdf:about="&iso19150-4Code;GeoWebProcessingMetadataFunction/statisticalCalculationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>statisticalCalculationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingMetadataFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to calculate the statistics of a dataset, e.g. mean, median, mode and standard deviation; histogram statistics and histogram calculation; minimum and maximum of an image; multi-band cross-correlation matrix; spectral statistics; spatial statistics; and other statistical calculations.</skos:definition>
+  </iso19150-4:GeoWebProcessingMetadataFunction>
+  <iso19150-4:GeoWebProcessingMetadataFunction rdf:about="&iso19150-4Code;GeoWebProcessingMetadataFunction/geographicAnnotationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicAnnotationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingMetadataFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to add ancillary information to an image or a feature in a Feature Collection (e.g. by way of a label, a hot link, or an entry of a property for a feature into a database) that augments or provides a more complete description.</skos:definition>
+  </iso19150-4:GeoWebProcessingMetadataFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebProcessingMetadataFunctionCollection">
+    <skos:prefLabel>GeoWebProcessingMetadataFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingMetadataFunction/statisticalCalculationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingMetadataFunction/geographicAnnotationService"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebProcessingSpatialFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebProcessingSpatialFunction">
+    <rdfs:label>GeoWebProcessingSpatialFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebProcessingFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction">
+    <skos:prefLabel>GeoWebProcessingSpatialFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebProcessingSpatialFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/coordinateConversionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coordinateConversionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to change coordinates from one coordinate system to another coordinate system that is related to the same datum. In a coordinate conversion, the parameters? values are exact. Coordinate conversion services include map projection services.Note: ISO 19111 is relevant to coordinate conversion.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/coordinateTransformationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coordinateTransformationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to change coordinates from a coordinate reference system based on one datum to a coordinate reference system based on a second datum. A coordinate transformation differs from a coordinate conversion in that the coordinate transformation parameter values are derived empirically; therefore, there may be several different estimations (or realizations).Note: ISO 19111 is relevant to coordinate transformation.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/coverageVectorConversionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coverageVectorConversionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to change the spatial representation from a coverage schema to a vector schema or vice versa.Note: A standard relevant to vector schema definition is ISO 19107. A standard relevant to coverage schema definition is ISO 19123.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/imageCoordinateConversionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageCoordinateConversionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Coordinate transformation or coordinate conversion service to change the coordinate reference system for an image.Note: A standard relevant to image coordinates is ISO 19123; standardization relevant to image coordinates is also discussed in ISO.sl.TR 19121.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/rectificationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>rectificationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that projects a tilted or oblique image onto a selected plane or other surface. The plane is often horizontal, but can be tilted to achieve some desired condition, such as to better fit the local surface of the Earth.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/orthorectificationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>orthorectificationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Rectification service that removes image displacement due to variation in terrain elevation. Orthorectification requires use of digital elevation data, usually in grid form.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/sensorGeometryModelAdjustmentService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>sensorGeometryModelAdjustmentService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that adjusts sensor geometry models to improve the match of the image with other images and.sl.or known ground positions.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/imageGeometryModelConversionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageGeometryModelConversionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that converts sensor geometry models into a different but equivalent sensor geometry model.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/spatialSubsettingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>spatialSubsettingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that extracts data from an input in a continuous spatial region either by geographic location or by grid coordinates.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/spatialSamplingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>spatialSamplingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that extracts data from an input using a consistent sampling scheme either by geographic location or by grid coordinates.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/tilingChangeService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>tilingChangeService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that changes the tiling of geographic data.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/dimensionMeasurementService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>dimensionMeasurementService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to compute dimensions of objects visible in an image or other geodata. An alternative name for this service is .lt.i.gt.image mensuration service.lt..sl.i.gt..</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/featureManipulationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>featureManipulationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to register one feature to another, an image, or another dataset or coordinate set; correcting for relative translation shifts, rotational differences, scale differences, and perspective differences; verifying that all features in the Feature Collection are topologically consistent according to the topology rules of the Feature Collection, and identifying and.sl.or correcting any inconsistencies that are discovered.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/featureMatchingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>featureMatchingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that determines which features and portions of features represent the same real-world entity from multiple data sources, e.g. edge matching and limited conflation.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/featureGeneralizationServiceSpatial">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>featureGeneralizationServiceSpatial</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that reduces spatial variation in a feature collection to increase the effectiveness of communication by counteracting the undesirable effects of scale reduction.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/routeDeterminationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>routeDeterminationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to determine the optimal path between two specified points based on the input parameters and properties contained in the Feature Collection; may also determine the measured distance between two points along a specified path based on the properties supported in the Feature Collection further, may determine the length of time it takes to follow a route through the geographic data in the Feature Collection.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/positioningService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>positioningService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service provided by a position-providing device to use, obtain and unambiguously interpret position information and determines whether the results meet the requirements of the use.Note: A standard relevant to position services is ISO 19116.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <iso19150-4:GeoWebProcessingSpatialFunction rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunction/proximityAnalysisService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>proximityAnalysisService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that, given a position or geographic feature, finds all objects with a given set of attributes that are located within a user-specified distance of the position or feature.</skos:definition>
+  </iso19150-4:GeoWebProcessingSpatialFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebProcessingSpatialFunctionCollection">
+    <skos:prefLabel>GeoWebProcessingSpatialFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/coordinateConversionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/coordinateTransformationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/coverageVectorConversionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/imageCoordinateConversionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/rectificationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/orthorectificationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/sensorGeometryModelAdjustmentService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/imageGeometryModelConversionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/spatialSubsettingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/spatialSamplingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/tilingChangeService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/dimensionMeasurementService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/featureManipulationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/featureMatchingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/featureGeneralizationServiceSpatial"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/routeDeterminationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/positioningService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingSpatialFunction/proximityAnalysisService"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebProcessingTemporalFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebProcessingTemporalFunction">
+    <rdfs:label>GeoWebProcessingTemporalFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebProcessingFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebProcessingTemporalFunction">
+    <skos:prefLabel>GeoWebProcessingTemporalFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebProcessingTemporalFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebProcessingTemporalFunction rdf:about="&iso19150-4Code;GeoWebProcessingTemporalFunction/changeDetectionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>changeDetectionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to find differences between two datasets that represent the same geographical area at different times.</skos:definition>
+  </iso19150-4:GeoWebProcessingTemporalFunction>
+  <iso19150-4:GeoWebProcessingTemporalFunction rdf:about="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalReferenceSystemTransformationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>temporalReferenceSystemTransformationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to change the values of temporal instances from one temporal reference system to another temporal reference system.Note: ISO 19108 is relevant to temporal reference systems. Using the terminology of ISO 19108, a temporal reference system transformation service replaces the TM_Position value of a given TM_Instant with an equivalent TM_Position value associated with a different temporal reference system.</skos:definition>
+  </iso19150-4:GeoWebProcessingTemporalFunction>
+  <iso19150-4:GeoWebProcessingTemporalFunction rdf:about="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalSubsettingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>temporalSubsettingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that extracts data from an input in a continuous interval based on temporal position values.</skos:definition>
+  </iso19150-4:GeoWebProcessingTemporalFunction>
+  <iso19150-4:GeoWebProcessingTemporalFunction rdf:about="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalSamplingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>temporalSamplingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that extracts data from an input using a consistent sampling scheme based on temporal position values.</skos:definition>
+  </iso19150-4:GeoWebProcessingTemporalFunction>
+  <iso19150-4:GeoWebProcessingTemporalFunction rdf:about="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalProximityAnalysisService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>temporalProximityAnalysisService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that, given a temporal interval or event, find all objects with a given set of attributes that are located within a user-specified interval from the interval or event.</skos:definition>
+  </iso19150-4:GeoWebProcessingTemporalFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebProcessingTemporalFunctionCollection">
+    <skos:prefLabel>GeoWebProcessingTemporalFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction/changeDetectionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalReferenceSystemTransformationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalSubsettingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalSamplingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingTemporalFunction/temporalProximityAnalysisService"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebProcessingThematicFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebProcessingThematicFunction">
+    <rdfs:label>GeoWebProcessingThematicFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebProcessingFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction">
+    <skos:prefLabel>GeoWebProcessingThematicFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebProcessingThematicFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/geoparameterCalculationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geoparameterCalculationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to derive application-oriented quantitative results that are not available from the raw data themselves.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/thematicClassificationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>thematicClassificationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to classify regions of geographic data based on thematic attributes. Classification of coverages (including images) subdivides a coverage into regions based on attribute values. Classification of features sorts features into groups based on attribute values or feature associations.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/featureGeneralizationServiceThematic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>featureGeneralizationServiceThematic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that generalizes feature types in a feature collection to increase the effectiveness of communication by counteracting the undesirable effects of data reduction.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/thematicSubsettingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>thematicSubsettingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that extracts features or coverage elements from a larger set based on thematic characteristics.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/spatialCountingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>spatialCountingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that counts geographic features of a given type within a specified area.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/geographicInformationExtractionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicInformationExtractionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service supporting the extraction of feature and terrain information from remotely sensed and scanned images.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/imageProcessingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageProcessingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to change the values of thematic attributes of an image using a mathematical function.Examples: convolution, data compression, feature extraction, frequency filters, geometric operations, nonlinear filters and spatial filters.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/reducedResolutionGenerationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>reducedResolutionGenerationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that reduces the resolution of an image.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/imageManipulationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageManipulationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service for manipulating data values in images; changing colour and contrast values, applying various filters, manipulating image resolution, noise removal, ?striping?, systematic-radiometric corrections, atmospheric attenuation, changes in scene illumination, etc.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/imageUnderstandingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageUnderstandingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that provides automated image change detection, registered image differencing, significance-of-difference analysis and display and area-based and model-based differencing.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/imageSynthesisService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>imageSynthesisService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service for creating or transforming images using computer-based spatial models, perspective transformations, and manipulations of image characteristics to improve visibility, sharpen resolution, and.sl.or reduce the effects of cloud cover or haze.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/multiBandImageManipulationService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>multiBandImageManipulationService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that modifies an image using the multiple bands of the image.Examples: ratioing, principal components transformation, intensity-hue-saturation colour space transformation, and de-correlation-stretching.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/objectDetectionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>objectDetectionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to detect real-world objects in an image.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/geoparsingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geoparsingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to scan text documents for location-based references, such as a place names, addresses, postal codes, etc., in preparation for passage to a geocoding service.</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <iso19150-4:GeoWebProcessingThematicFunction rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunction/geocodingService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geocodingService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to augment location-based text references with geographic coordinates (or some other spatial reference).</skos:definition>
+  </iso19150-4:GeoWebProcessingThematicFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebProcessingThematicFunctionCollection">
+    <skos:prefLabel>GeoWebProcessingThematicFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/geoparameterCalculationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/thematicClassificationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/featureGeneralizationServiceThematic"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/thematicSubsettingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/spatialCountingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/geographicInformationExtractionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/imageProcessingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/reducedResolutionGenerationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/imageManipulationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/imageUnderstandingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/imageSynthesisService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/multiBandImageManipulationService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/objectDetectionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/geoparsingService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebProcessingThematicFunction/geocodingService"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebServiceFunction -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebServiceFunction">
+    <rdfs:label>GeoWebServiceFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebServiceFunction">
+    <skos:prefLabel>GeoWebServiceFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebServiceFunctionCollection">
+    <skos:prefLabel>GeoWebServiceFunction - Collection</skos:prefLabel>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebServiceLifeCycle -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebServiceLifeCycle">
+    <rdfs:label>GeoWebServiceLifeCycle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle">
+    <skos:prefLabel>GeoWebServiceLifeCycle - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebServiceLifeCycle"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebServiceLifeCycle rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle/register">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>register</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Describing and publishing resources.</skos:definition>
+  </iso19150-4:GeoWebServiceLifeCycle>
+  <iso19150-4:GeoWebServiceLifeCycle rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle/discovery">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>discovery</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Searching and discovery of resources.</skos:definition>
+  </iso19150-4:GeoWebServiceLifeCycle>
+  <iso19150-4:GeoWebServiceLifeCycle rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle/view">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>view</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Visualizing of resources.</skos:definition>
+  </iso19150-4:GeoWebServiceLifeCycle>
+  <iso19150-4:GeoWebServiceLifeCycle rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle/download">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>download</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Downloading and exchanging resources.</skos:definition>
+  </iso19150-4:GeoWebServiceLifeCycle>
+  <iso19150-4:GeoWebServiceLifeCycle rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle/invoke">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>invoke</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Interacting with resources.</skos:definition>
+  </iso19150-4:GeoWebServiceLifeCycle>
+  <iso19150-4:GeoWebServiceLifeCycle rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle/orchestrationAndComposition">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>orchestrationAndComposition</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Providing aggregated resources including, in particular, workflows for service composition.</skos:definition>
+  </iso19150-4:GeoWebServiceLifeCycle>
+  <iso19150-4:GeoWebServiceLifeCycle rdf:about="&iso19150-4Code;GeoWebServiceLifeCycle/securityAndRightsManagement">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>securityAndRightsManagement</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Managing access rights to resources.</skos:definition>
+  </iso19150-4:GeoWebServiceLifeCycle>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebServiceLifeCycleCollection">
+    <skos:prefLabel>GeoWebServiceLifeCycle - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle/register"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle/discovery"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle/view"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle/download"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle/invoke"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle/orchestrationAndComposition"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceLifeCycle/securityAndRightsManagement"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebServiceTaxonomy -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebServiceTaxonomy">
+    <rdfs:label>GeoWebServiceTaxonomy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy">
+    <skos:prefLabel>GeoWebServiceTaxonomy - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebServiceTaxonomy"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicBoundaryHumanInteraction">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicBoundaryHumanInteraction</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services for management of user interfaces, graphics, multimedia and for presentation of compound document, user interface dialogues and interaction with other system boundary elements like physical sensors.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicModelInformationManagement">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicModelInformationManagement</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services for management of the development, manipulation and storage of metadata, conceptual schemas and datasets.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicWorkflowTaskManagement">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicWorkflowTaskManagement</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services for support of specific tasks or work-related activities conducted by humans. These services support use of resources and development of products involving a sequence of activities or steps that may be conducted by different persons.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessing">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicProcessing</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services that perform large-scale computations involving substantial amounts of data. Examples include services for providing the time of day, spelling checkers and services that perform coordinate transformations (e.g. that accept a set of coordinates expressed using one reference system and converting them to a set of coordinates in a different reference system). A processing service does not include capabilities for providing persistent storage of data or transfer of data over networks.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingSpatial">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicProcessingSpatial</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services that perform large-scale computations involving substantial amounts of spatial data.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingThematic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicProcessingThematic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services that perform large-scale computations involving substantial amounts of thematic data.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingTemporal">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicProcessingTemporal</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services that perform large-scale computations involving substantial amounts of temporal data.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingMetadata">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geographicProcessingMetadata</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services that perform large-scale computations involving substantial amounts of metadata.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/communication">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>communication</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services for encoding and transfer of data across communications networks. </skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <iso19150-4:GeoWebServiceTaxonomy rdf:about="&iso19150-4Code;GeoWebServiceTaxonomy/systemManagementSecurity">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>systemManagementSecurity</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb services for the management of system components, applications and networks. These services also include management of user accounts and user access privileges.</skos:definition>
+  </iso19150-4:GeoWebServiceTaxonomy>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebServiceTaxonomyCollection">
+    <skos:prefLabel>GeoWebServiceTaxonomy - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicBoundaryHumanInteraction"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicModelInformationManagement"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicWorkflowTaskManagement"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessing"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingSpatial"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingThematic"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingTemporal"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/geographicProcessingMetadata"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/communication"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebServiceTaxonomy/systemManagementSecurity"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebSystemManagementSecurityFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebSystemManagementSecurityFunction">
+    <rdfs:label>GeoWebSystemManagementSecurityFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebSystemManagementSecurityFunction">
+    <skos:prefLabel>GeoWebSystemManagementSecurityFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebSystemManagementSecurityFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebSystemManagementSecurityFunction rdf:about="&iso19150-4Code;GeoWebSystemManagementSecurityFunction/geoRM">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>geoRM</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebSystemManagementSecurityFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>Geospatial Right Management (ISO 19153).</skos:definition>
+  </iso19150-4:GeoWebSystemManagementSecurityFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebSystemManagementSecurityFunctionCollection">
+    <skos:prefLabel>GeoWebSystemManagementSecurityFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebSystemManagementSecurityFunction/geoRM"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Codelist: GeoWebWorkflowTaskManagementFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;GeoWebWorkflowTaskManagementFunction">
+    <rdfs:label>GeoWebWorkflowTaskManagementFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19150-4;GeoWebServiceFunction"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction">
+    <skos:prefLabel>GeoWebWorkflowTaskManagementFunction - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19150-4;GeoWebWorkflowTaskManagementFunction"/>
+  </skos:ConceptScheme>
+  <iso19150-4:GeoWebWorkflowTaskManagementFunction rdf:about="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction/chainDefinitionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>chainDefinitionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to define a chain and to enable it to be executed by the workflow enactment service. This includes information about its starting and completion conditions, constituent activities and rules for navigating between them, user tasks to be undertaken, references to applications which may be invoked, definition of any workflow relevant data which may need to be referenced, etc. Chain definition service may also provide a chain validation service.</skos:definition>
+  </iso19150-4:GeoWebWorkflowTaskManagementFunction>
+  <iso19150-4:GeoWebWorkflowTaskManagementFunction rdf:about="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction/workflowEnactmentService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>workflowEnactmentService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service that interprets a chain and controls the instantiation of services and sequencing of activities. This is done through one or more co-operating workflow management engines, which manage the execution of individual instances of the various services. A workflow enactment service maintains control data either centralized or distributed across a set of workflow engines. Workflow control data include the internal state information associated with the various services under execution and may also include check-pointing and recovery.sl.restart information used by the workflow engines to coordinate and recover from failure conditions.</skos:definition>
+  </iso19150-4:GeoWebWorkflowTaskManagementFunction>
+  <iso19150-4:GeoWebWorkflowTaskManagementFunction rdf:about="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction/subscriptionService">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>subscriptionService</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <skos:definition>GeoWeb service to allow clients to register for notification about events. Events are defined by a service that performs an activity resulting in the event. Events are catalogued by the subscription service. Clients identify events of interest, e.g. receipt of data with a specific geographic extent. When an event occurs, the subscription service sends notification to all clients who have registered an interest in the event. Once an event occurs, a subscription service may cause an activity to occur, e.g. delivery of a product.</skos:definition>
+  </iso19150-4:GeoWebWorkflowTaskManagementFunction>
+  <skos:Collection rdf:about="&iso19150-4Code;GeoWebWorkflowTaskManagementFunctionCollection">
+    <skos:prefLabel>GeoWebWorkflowTaskManagementFunction - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction/chainDefinitionService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction/workflowEnactmentService"/>
+    <skos:member rdf:resource="&iso19150-4Code;GeoWebWorkflowTaskManagementFunction/subscriptionService"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: ServiceCost -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19150-4;ServiceCost">
+    <rdfs:label>ServiceCost</rdfs:label>
+    <skos:definition>The union class ServiceCost is used to describe the cost of the GeoWeb service.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19150/-4/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19150-4;uMonetaryUnitCost"/>
+          <owl:Class rdf:about="&iso19150-4;uComplexCost"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+</rdf:RDF>
+
