@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19139_705 "http://def.isotc211.org/iso19139/2007/Catalogues#" >
+  <!ENTITY iso19136_186 "http://def.isotc211.org/iso19136/2007/Units#" >
+  <!ENTITY iso19139 "http://def.isotc211.org/iso19139/2007/UoMCatalogue#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         UoMCatalogue.rdf          -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.4                       -->
+  <!-- File date:         20-4-2015                 -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19139/2007/UoMCatalogue#"
+  xml:base="http://def.isotc211.org/iso19139/2007/UoMCatalogue"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19139_705="http://def.isotc211.org/iso19139/2007/Catalogues#"
+  xmlns:iso19136_186="http://def.isotc211.org/iso19136/2007/Units#"
+  xmlns:iso19139="http://def.isotc211.org/iso19139/2007/UoMCatalogue#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19139:2007 UoM Catalogue -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19139/2007/UoMCatalogue">
+    <rdfs:label>ISO 19139:2007 UoM Catalogue</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19139/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-04-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19139/2007/Catalogues"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19136/2007/Units"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: CT_UnitOfMeasure -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19139;CT_UnitOfMeasure">
+    <rdfs:label>CT_UnitOfMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19139_705;CT_Item"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_UnitOfMeasure.quantityType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_UnitOfMeasure.quantityType"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_UnitOfMeasure.uomSymbol"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_UnitOfMeasure.uomSymbol"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: CT_UomCatalogue -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19139;CT_UomCatalogue">
+    <rdfs:label>CT_UomCatalogue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19139_705;CT_Catalogue"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_UomCatalogue.uomItem"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_UomCatalogue.uomItem"/>
+        <owl:allValuesFrom rdf:resource="&iso19136_186;UnitDefinition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_UnitOfMeasure.quantityType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_UnitOfMeasure.quantityType">
+    <rdfs:label>quantityType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_UnitOfMeasure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_UnitOfMeasure.uomSymbol -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_UnitOfMeasure.uomSymbol">
+    <rdfs:label>uomSymbol</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_UnitOfMeasure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CT_UomCatalogue.uomItem -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19139;CT_UomCatalogue.uomItem">
+    <rdfs:label>uomItem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19139;CT_UomCatalogue"/>
+    <rdfs:range rdf:resource="&iso19136_186;UnitDefinition"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

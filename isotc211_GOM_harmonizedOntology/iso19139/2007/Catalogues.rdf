@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_1261 "http://def.isotc211.org/iso19115/2006/IdentificationInformation#" >
+  <!ENTITY iso19139_709 "http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#" >
+  <!ENTITY iso19103_533 "http://def.isotc211.org/iso19103/2005/Names#" >
+  <!ENTITY iso19139_710 "http://def.isotc211.org/iso19139/2007/Metadata-BasedTransfersOfGeospatialInformation#" >
+  <!ENTITY iso19139 "http://def.isotc211.org/iso19139/2007/Catalogues#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         Catalogues.rdf            -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.4                       -->
+  <!-- File date:         20-4-2015                 -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19139/2007/Catalogues#"
+  xml:base="http://def.isotc211.org/iso19139/2007/Catalogues"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_1261="http://def.isotc211.org/iso19115/2006/IdentificationInformation#"
+  xmlns:iso19139_709="http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability#"
+  xmlns:iso19103_533="http://def.isotc211.org/iso19103/2005/Names#"
+  xmlns:iso19139_710="http://def.isotc211.org/iso19139/2007/Metadata-BasedTransfersOfGeospatialInformation#"
+  xmlns:iso19139="http://def.isotc211.org/iso19139/2007/Catalogues#">
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19139:2007 Catalogues -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19139/2007/Catalogues">
+    <rdfs:label>ISO 19139:2007 Catalogues</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19139/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-04-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19139/2007/CodelistCatalogue"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19139/2007/CRSCatalogue"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19139/2007/UoMCatalogue"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/IdentificationInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19139/2007/CulturalAndLinguisticAdapdability"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Names"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19139/2007/Metadata-BasedTransfersOfGeospatialInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: CT_Catalogue -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19139;CT_Catalogue">
+    <rdfs:label>CT_Catalogue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.name"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.name"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.scope"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.scope"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.fieldOfApplication"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.versionNumber"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.versionNumber"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.versionDate"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.versionDate"/>
+        <owl:allValuesFrom rdf:resource="&rdf;XMLLiteral"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.language"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.language"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.characterSet"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.characterSet"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1261;MD_CharacterSetCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.locale"/>
+        <owl:allValuesFrom rdf:resource="&iso19139_709;PT_Locale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Catalogue.subCatalogue"/>
+        <owl:allValuesFrom rdf:resource="&iso19139;CT_Catalogue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: CT_Item -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19139;CT_Item">
+    <rdfs:label>CT_Item</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Item.identifier"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Item.identifier"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Item.name"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_533;GenericName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Item.definition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Item.definition"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Item.description"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19139;CT_Item.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Catalogue.name -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Catalogue.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Catalogue.scope -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Catalogue.scope">
+    <rdfs:label>scope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Catalogue.fieldOfApplication -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Catalogue.fieldOfApplication">
+    <rdfs:label>fieldOfApplication</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Catalogue.versionNumber -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Catalogue.versionNumber">
+    <rdfs:label>versionNumber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Catalogue.versionDate -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Catalogue.versionDate">
+    <rdfs:label>versionDate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&rdf;XMLLiteral"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Catalogue.language -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Catalogue.language">
+    <rdfs:label>language</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CT_Catalogue.characterSet -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19139;CT_Catalogue.characterSet">
+    <rdfs:label>characterSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&iso19115_1261;MD_CharacterSetCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CT_Catalogue.locale -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19139;CT_Catalogue.locale">
+    <rdfs:label>locale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&iso19139_709;PT_Locale"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CT_Item.identifier -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19139;CT_Item.identifier">
+    <rdfs:label>identifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Item"/>
+    <rdfs:range rdf:resource="&iso19103_533;GenericName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CT_Item.name -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19139;CT_Item.name">
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Item"/>
+    <rdfs:range rdf:resource="&iso19103_533;GenericName"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Item.definition -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Item.definition">
+    <rdfs:label>definition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Item"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CT_Item.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19139;CT_Item.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19139;CT_Item"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CT_Catalogue.subCatalogue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19139;CT_Catalogue.subCatalogue">
+    <rdfs:label>subCatalogue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19139/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19139;CT_Catalogue"/>
+    <rdfs:range rdf:resource="&iso19139;CT_Catalogue"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
