@@ -1,0 +1,1298 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso00639_65 "http://def.isotc211.org/iso00639/-2/LanguageCodes#" >
+  <!ENTITY iso19103_1460 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19103_1470 "http://def.isotc211.org/iso19103/2005/Text#" >
+  <!ENTITY iso19108_891 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19133_1706 "http://def.isotc211.org/iso19133/2005/FeatureDataModel#" >
+  <!ENTITY iso19107_2207 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19107_2211 "http://def.isotc211.org/iso19107/2003/GeometryRoot#" >
+  <!ENTITY iso19107_2215 "http://def.isotc211.org/iso19107/2003/TopologyRoot#" >
+  <!ENTITY iso19112_1279 "http://def.isotc211.org/iso19112/2003/Gazetteer#" >
+  <!ENTITY iso19133_1711 "http://def.isotc211.org/iso19133/2005/TrackingService#" >
+  <!ENTITY iso19132_131 "http://def.isotc211.org/iso19132/2007/DigitalRightsManagement#" >
+  <!ENTITY iso19133_1693 "http://def.isotc211.org/iso19133/2005/CostFunction#" >
+  <!ENTITY iso19132 "http://def.isotc211.org/iso19132/2007/MessageDataTypes#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         MessageDataTypes.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL    -->
+  <!-- Generator version: 2.5                          -->
+  <!-- File date:         23-11-2015                   -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19132/2007/MessageDataTypes#"
+  xml:base="http://def.isotc211.org/iso19132/2007/MessageDataTypes"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso00639_65="http://def.isotc211.org/iso00639/-2/LanguageCodes#"
+  xmlns:iso19103_1460="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19103_1470="http://def.isotc211.org/iso19103/2005/Text#"
+  xmlns:iso19108_891="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19133_1706="http://def.isotc211.org/iso19133/2005/FeatureDataModel#"
+  xmlns:iso19107_2207="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19107_2211="http://def.isotc211.org/iso19107/2003/GeometryRoot#"
+  xmlns:iso19107_2215="http://def.isotc211.org/iso19107/2003/TopologyRoot#"
+  xmlns:iso19112_1279="http://def.isotc211.org/iso19112/2003/Gazetteer#"
+  xmlns:iso19133_1711="http://def.isotc211.org/iso19133/2005/TrackingService#"
+  xmlns:iso19132_131="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement#"
+  xmlns:iso19133_1693="http://def.isotc211.org/iso19133/2005/CostFunction#"
+  xmlns:iso19132="http://def.isotc211.org/iso19132/2007/MessageDataTypes#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19132:2007 Message Data Types -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19132/2007/MessageDataTypes">
+    <rdfs:label>ISO 19132:2007 Message Data Types</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19132/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-01-29</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso00639/-2/LanguageCodes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Text"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/FeatureDataModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometryRoot"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/TopologyRoot"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19112/2003/Gazetteer"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/TrackingService"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19132/2007/DigitalRightsManagement"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/CostFunction"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LanguageSpecificCharacterString -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LanguageSpecificCharacterString">
+    <rdfs:label>LanguageSpecificCharacterString</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103_1470;CharacterString"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LanguageSpecificCharacterString.language"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LanguageSpecificCharacterString.language"/>
+        <owl:allValuesFrom rdf:resource="&iso00639_65;LanguageCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LBS_AccessInfo -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_AccessInfo">
+    <rdfs:label>LBS_AccessInfo</rdfs:label>
+    <skos:definition>The abstract type .gu.LBS_AccessInfo.gu. holds information about the requestor of information, the target of that request, and sufficient security information to validate appropriate access, dependent on the service and server being use. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_AccessInfo.id"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_AccessInfo.id"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_UserID"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_AccessInfo.myID"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_AccessInfo.myID"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_UserID"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_AccessInfo.securityPass"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_AccessInfo.securityPass"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_SecurityCertificate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LBS_Accuracy -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Accuracy">
+    <rdfs:label>LBS_Accuracy</rdfs:label>
+    <skos:definition>.gu.LBS_Accuracy.gu. is an abstract type which can be realized by any class capable of describing the accuracy of a position representation.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: LBS_Address -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Address">
+    <rdfs:label>LBS_Address</rdfs:label>
+    <skos:definition>.lt.UsedBy.gt..lt.NameSpace.gt.ISO 19132 Location Based Services Reference Model.lt..sl.NameSpace.gt..lt.Class.gt.LBS_AddressParsing.lt..sl.Class.gt..lt.Package.gt.Geomatics Services.lt..sl.Package.gt..lt.Operation.gt.parseAddress.lt..sl.Operation.gt..lt.Parameter.gt.Return.lt..sl.Parameter.gt..lt.Type.gt.LBS_Address.lt..sl.Type.gt..lt.UsedBy.gt.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: LBS_CostFunction -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_CostFunction">
+    <rdfs:label>LBS_CostFunction</rdfs:label>
+    <skos:definition>.lt.UsedBy.gt..lt.NameSpace.gt.ISO 19132 Location Based Services Reference Model.lt..sl.NameSpace.gt..lt.Class.gt.LBS_RouteCriteria.lt..sl.Class.gt..lt.Package.gt.Message Data Types.lt..sl.Package.gt..lt.Attribute.gt.costFunction.lt..sl.Attribute.gt..lt.Type.gt.LBS_CostFunction.lt..sl.Type.gt..lt.UsedBy.gt.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_CostFunction.costFunction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_CostFunction.costFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1693;NS_CostFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: LBS_Data -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Data">
+    <rdfs:label>LBS_Data</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LBS_DataSource -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_DataSource">
+    <rdfs:label>LBS_DataSource</rdfs:label>
+    <skos:definition>.lt.UsedBy.gt..lt.NameSpace.gt.ISO 19132 Location Based Services Reference Model.lt..sl.NameSpace.gt..lt.Class.gt.LBS_DataServices.lt..sl.Class.gt..lt.Package.gt.Information Services.lt..sl.Package.gt..lt.Attribute.gt.dataSource.lt..sl.Attribute.gt..lt.Type.gt.LBS_DataSource.lt..sl.Type.gt..lt.UsedBy.gt.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19132;LBS_Data"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: LBS_DisplayParameters -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_DisplayParameters">
+    <rdfs:label>LBS_DisplayParameters</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.width"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.width"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;Distance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.length"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.length"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;Distance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.scale"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.scale"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_1460;Scale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.symbol"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.symbol"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_SymbolSet"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.format"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_DisplayParameters.format"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_MapFormat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: LBS_EventInfo -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_EventInfo">
+    <rdfs:label>LBS_EventInfo</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_EventInfo.description"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_EventInfo.description"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_EventInfo.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_EventInfo.place"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_EventInfo.place"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Location"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Feature -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;uFeature">
+    <rdfs:label>Feature</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uFeature.feature"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uFeature.feature"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1706;FD_Feature"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: Coordinate -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;uCoordinate">
+    <rdfs:label>Coordinate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uCoordinate.coordinate"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uCoordinate.coordinate"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2207;DirectPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Geometry -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;uGeometry">
+    <rdfs:label>Geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uGeometry.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uGeometry.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2211;GM_Object"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Topology -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;uTopology">
+    <rdfs:label>Topology</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uTopology.topology"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uTopology.topology"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2215;TP_Object"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: LBS_Instruction -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Instruction">
+    <rdfs:label>LBS_Instruction</rdfs:label>
+    <skos:definition>An .gu.LBS_Instruction.gu. is sufficient information for a traveller to execute a single step in a route. The content of realizations of this abstract type will depend on the type of navigation and the type of network or other geometry being navigated. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Instruction.maneuver"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Maneuver"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LBS_Location -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Location">
+    <rdfs:label>LBS_Location</rdfs:label>
+    <skos:definition>All instances of this type specify a location, and a degree of accuracy of that location. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Location.position"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Location.position"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Position"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Location.qualityOfPosition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Location.qualityOfPosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Accuracy"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LBS_Maneuver -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Maneuver">
+    <rdfs:label>LBS_Maneuver</rdfs:label>
+    <skos:definition>The class LBS_Maneuver describes a means to execute all or part of a route. It's associated instruction (if it has one) details that maneuver in some manner. If the maneuver does not have an instruction, then it must reflect the main road rule for the route.sl.network. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: LBS_MapFormat -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_MapFormat">
+    <rdfs:label>LBS_MapFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: GazetteerEntry -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;uGazetteerEntry">
+    <rdfs:label>GazetteerEntry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uGazetteerEntry.gazetteerEntry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uGazetteerEntry.gazetteerEntry"/>
+        <owl:allValuesFrom rdf:resource="&iso19112_1279;SI_LocationInstance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: TrackPosition -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;uTrackPosition">
+    <rdfs:label>TrackPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uTrackPosition.trackPosition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uTrackPosition.trackPosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1711;TK_Position"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: LBS_Notification -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Notification">
+    <rdfs:label>LBS_Notification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.user"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.user"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_AccessInfo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.event"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.event"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_EventInfo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.trigger"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.trigger"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Trigger"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.triggerTime"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Notification.triggerTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: LBS_Position -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Position">
+    <rdfs:label>LBS_Position</rdfs:label>
+    <skos:definition>.gu.LBS_Position.gu. is an abstract type that can be realized by any class capable of describing a position.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: LBS_Preference -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Preference">
+    <rdfs:label>LBS_Preference</rdfs:label>
+    <skos:definition>.lt.UsedBy.gt..lt.NameSpace.gt.ISO 19132 Location Based Services Reference Model.lt..sl.NameSpace.gt..lt.Class.gt.LBS_RouteCriteria.lt..sl.Class.gt..lt.Package.gt.Message Data Types.lt..sl.Package.gt..lt.Attribute.gt.preferences[0..*].lt..sl.Attribute.gt..lt.Type.gt.LBS_Preference.lt..sl.Type.gt..lt.UsedBy.gt.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: LBS_Route -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Route">
+    <rdfs:label>LBS_Route</rdfs:label>
+    <skos:definition>The class .gu.LBS_Route.gu. is a sequence of maneuvers that will take a traveller from one location to the next as specified in a route request. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Route.mainRouteRule"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Route.mainRouteRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Instruction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Route.maneuver"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_Route.maneuver"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Maneuver"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: LBS_RouteConstraint -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_RouteConstraint">
+    <rdfs:label>LBS_RouteConstraint</rdfs:label>
+    <skos:definition>.lt.UsedBy.gt..lt.NameSpace.gt.ISO 19132 Location Based Services Reference Model.lt..sl.NameSpace.gt..lt.Class.gt.LBS_RouteCriteria.lt..sl.Class.gt..lt.Package.gt.Message Data Types.lt..sl.Package.gt..lt.Attribute.gt.constraints[0..*].lt..sl.Attribute.gt..lt.Type.gt.LBS_RouteConstraint.lt..sl.Type.gt..lt.UsedBy.gt.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: LBS_RouteCriteria -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_RouteCriteria">
+    <rdfs:label>LBS_RouteCriteria</rdfs:label>
+    <skos:definition>The .gu.LBS_RouteCriteria.gu. is a partial description of a route that indicates which routes are acceptable and what is the cost to be optimized within a routing request. Contraint types are generally application specific. For examples, see ISO 19133 and ISO 19134.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.start"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.start"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Location"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.wayPoints"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Location"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.end"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.end"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Location"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.constraints"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_RouteConstraint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.preferences"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_Preference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.costFunction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_RouteCriteria.costFunction"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_CostFunction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: LBS_SecurityCertificate -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_SecurityCertificate">
+    <rdfs:label>LBS_SecurityCertificate</rdfs:label>
+    <skos:definition>An .gu.LBS_SecurityCertificate.gu. contains information that identifies the user whose data is being accessed, the user who is accessing that data (if different) and validation information that verifies that no unauthorized access is being made. The precise mechanism for this validation is determined by the security model being used by the service provider.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_SecurityCertificate.user"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_SecurityCertificate.user"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_UserID"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_SecurityCertificate.license"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_SecurityCertificate.license"/>
+        <owl:allValuesFrom rdf:resource="&iso19132_131;LBS_License"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: LBS_SymbolSet -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_SymbolSet">
+    <rdfs:label>LBS_SymbolSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: LBS_TrackingLocation -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_TrackingLocation">
+    <rdfs:label>LBS_TrackingLocation</rdfs:label>
+    <skos:definition>A realization of a .gu.LBS_TrackingLocation.gu. describes the location of a tracked object as some point in time, and to some accuracy, potentially as triggered by an event. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19132;LBS_Location"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_TrackingLocation.time"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_TrackingLocation.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_891;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: LBS_TrackingLocationSeq -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_TrackingLocationSeq">
+    <rdfs:label>LBS_TrackingLocationSeq</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_TrackingLocationSeq.location"/>
+        <owl:allValuesFrom rdf:resource="&iso19132;LBS_TrackingLocation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: TrackTrigger -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;uTrackTrigger">
+    <rdfs:label>TrackTrigger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uTrackTrigger.trackTrigger"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;uTrackTrigger.trackTrigger"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1711;TK_Trigger"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: LBS_Trigger -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_Trigger">
+    <rdfs:label>LBS_Trigger</rdfs:label>
+    <skos:definition>The realizations of the abstract class .gu.LBS_Trigger.gu. is an description of the type of event that will cause an action to be taken, usually a notification to a subscriber at to the occurrence and location of the event. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: LBS_UserID -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_UserID">
+    <rdfs:label>LBS_UserID</rdfs:label>
+    <skos:definition>The .gu.LBS_UserID.gu. contains sufficient information to identify the user, or trackable object in question. The content of the type is determined by the security model of the system and may vary among brokers and suppliers. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_UserID.ID"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19132;LBS_UserID.ID"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LanguageSpecificCharacterString.language -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LanguageSpecificCharacterString.language">
+    <rdfs:label>language</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LanguageSpecificCharacterString"/>
+    <rdfs:range rdf:resource="&iso00639_65;LanguageCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_AccessInfo.id -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_AccessInfo.id">
+    <rdfs:label>id</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_AccessInfo"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_UserID"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_AccessInfo.myID -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_AccessInfo.myID">
+    <rdfs:label>myID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_AccessInfo"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_UserID"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_AccessInfo.securityPass -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_AccessInfo.securityPass">
+    <rdfs:label>securityPass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_AccessInfo"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_SecurityCertificate"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_DisplayParameters.width -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_DisplayParameters.width">
+    <rdfs:label>width</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_DisplayParameters"/>
+    <rdfs:range rdf:resource="&iso19103_1460;Distance"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_DisplayParameters.length -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_DisplayParameters.length">
+    <rdfs:label>length</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_DisplayParameters"/>
+    <rdfs:range rdf:resource="&iso19103_1460;Distance"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_DisplayParameters.scale -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_DisplayParameters.scale">
+    <rdfs:label>scale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_DisplayParameters"/>
+    <rdfs:range rdf:resource="&iso19103_1460;Scale"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_DisplayParameters.symbol -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_DisplayParameters.symbol">
+    <rdfs:label>symbol</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_DisplayParameters"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_SymbolSet"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_DisplayParameters.format -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_DisplayParameters.format">
+    <rdfs:label>format</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_DisplayParameters"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_MapFormat"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LBS_EventInfo.description -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19132;LBS_EventInfo.description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_EventInfo"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_EventInfo.time -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_EventInfo.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_EventInfo"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_EventInfo.place -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_EventInfo.place">
+    <rdfs:label>place</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_EventInfo"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Location"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- ObjectProperty: feature -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;uFeature.feature">
+    <skos:prefLabel>feature</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;uFeature"/>
+    <rdfs:range rdf:resource="&iso19133_1706;FD_Feature"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: coordinate -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;uCoordinate.coordinate">
+    <skos:prefLabel>coordinate</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;uCoordinate"/>
+    <rdfs:range rdf:resource="&iso19107_2207;DirectPosition"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: geometry -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;uGeometry.geometry">
+    <skos:prefLabel>geometry</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;uGeometry"/>
+    <rdfs:range rdf:resource="&iso19107_2211;GM_Object"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: topology -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;uTopology.topology">
+    <skos:prefLabel>topology</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;uTopology"/>
+    <rdfs:range rdf:resource="&iso19107_2215;TP_Object"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Location.position -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Location.position">
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Location"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Position"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Location.qualityOfPosition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Location.qualityOfPosition">
+    <rdfs:label>qualityOfPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Location"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Accuracy"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: gazetteerEntry -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;uGazetteerEntry.gazetteerEntry">
+    <skos:prefLabel>gazetteerEntry</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;uGazetteerEntry"/>
+    <rdfs:range rdf:resource="&iso19112_1279;SI_LocationInstance"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: trackPosition -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;uTrackPosition.trackPosition">
+    <skos:prefLabel>trackPosition</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;uTrackPosition"/>
+    <rdfs:range rdf:resource="&iso19133_1711;TK_Position"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Notification.user -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Notification.user">
+    <rdfs:label>user</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Notification"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_AccessInfo"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Notification.event -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Notification.event">
+    <rdfs:label>event</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Notification"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_EventInfo"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Notification.trigger -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Notification.trigger">
+    <rdfs:label>trigger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Notification"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Trigger"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Notification.triggerTime -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Notification.triggerTime">
+    <rdfs:label>triggerTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Notification"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Route.mainRouteRule -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Route.mainRouteRule">
+    <rdfs:label>mainRouteRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Route"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Instruction"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_RouteCriteria.start -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_RouteCriteria.start">
+    <rdfs:label>start</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_RouteCriteria"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Location"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_RouteCriteria.wayPoints -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_RouteCriteria.wayPoints">
+    <rdfs:label>wayPoints</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_RouteCriteria"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Location"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_RouteCriteria.end -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_RouteCriteria.end">
+    <rdfs:label>end</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_RouteCriteria"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Location"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_RouteCriteria.constraints -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_RouteCriteria.constraints">
+    <rdfs:label>constraints</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_RouteCriteria"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_RouteConstraint"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_RouteCriteria.preferences -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_RouteCriteria.preferences">
+    <rdfs:label>preferences</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_RouteCriteria"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Preference"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_RouteCriteria.costFunction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_RouteCriteria.costFunction">
+    <rdfs:label>costFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_RouteCriteria"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_CostFunction"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_TrackingLocation.time -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_TrackingLocation.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_TrackingLocation"/>
+    <rdfs:range rdf:resource="&iso19108_891;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: trackTrigger -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;uTrackTrigger.trackTrigger">
+    <skos:prefLabel>trackTrigger</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;uTrackTrigger"/>
+    <rdfs:range rdf:resource="&iso19133_1711;TK_Trigger"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LBS_UserID.ID -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19132;LBS_UserID.ID">
+    <rdfs:label>ID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_UserID"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_CostFunction.costFunction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_CostFunction.costFunction">
+    <rdfs:label>costFunction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_CostFunction"/>
+    <rdfs:range rdf:resource="&iso19133_1693;NS_CostFunction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Instruction.maneuver -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Instruction.maneuver">
+    <rdfs:label>maneuver</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Instruction"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Maneuver"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_Route.maneuver -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_Route.maneuver">
+    <rdfs:label>maneuver</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_Route"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_Maneuver"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_SecurityCertificate.user -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_SecurityCertificate.user">
+    <rdfs:label>user</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_SecurityCertificate"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_UserID"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_SecurityCertificate.license -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_SecurityCertificate.license">
+    <rdfs:label>license</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19132;LBS_SecurityCertificate"/>
+    <rdfs:range rdf:resource="&iso19132_131;LBS_License"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: LBS_TrackingLocationSeq.location -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19132;LBS_TrackingLocationSeq.location">
+    <rdfs:label>location</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19132;LBS_TrackingLocationSeq"/>
+    <rdfs:range rdf:resource="&iso19132;LBS_TrackingLocation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: LBS_FeatureData -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_FeatureData">
+    <rdfs:label>LBS_FeatureData</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19132;LBS_Data"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19132;uFeature"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: LBS_GeometryChoice -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_GeometryChoice">
+    <rdfs:label>LBS_GeometryChoice</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19132;LBS_Position"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19132;uCoordinate"/>
+          <owl:Class rdf:about="&iso19132;uGeometry"/>
+          <owl:Class rdf:about="&iso19132;uTopology"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: LBS_NamedLocation -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_NamedLocation">
+    <rdfs:label>LBS_NamedLocation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19132;LBS_Position"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19132;uGazetteerEntry"/>
+          <owl:Class rdf:about="&iso19132;uTrackPosition"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: LBS_TrackTrigger -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19132;LBS_TrackTrigger">
+    <rdfs:label>LBS_TrackTrigger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19132/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19132;LBS_Trigger"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19132;uTrackTrigger"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+</rdf:RDF>
+
