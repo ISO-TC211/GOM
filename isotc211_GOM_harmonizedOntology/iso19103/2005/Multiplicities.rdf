@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_539 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19103 "http://def.isotc211.org/iso19103/2005/Multiplicities#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19103/2005/Multiplicities#"
+  xml:base="http://def.isotc211.org/iso19103/2005/Multiplicities"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_539="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19103="http://def.isotc211.org/iso19103/2005/Multiplicities#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19103/2005/Multiplicities">
+    <rdfs:label>ISO 19103:2005 Multiplicities</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19103/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-07-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19103;Multiplicity">
+    <rdfs:label>Multiplicity</rdfs:label>
+    <skos:definition>Use to represent the possible cardinality of a relation. Represented by a set of simple multiplicity ranges. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Multiplicity.range"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Multiplicity.range"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;MultiplicityRange"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19103;MultiplicityRange">
+    <rdfs:label>MultiplicityRange</rdfs:label>
+    <skos:definition>A component of a multiplicity, consisting of an non-negative lower bound, and a potentially infinite upper bound. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:constraint>upper .gt..eq. lower</iso19150-2:constraint>
+    <iso19150-2:constraint>upper .gt..eq. lower</iso19150-2:constraint>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;MultiplicityRange.lower"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;MultiplicityRange.lower"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;MultiplicityRange.upper"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;MultiplicityRange.upper"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_539;UnlimitedInteger"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="&iso19103;MultiplicityRange.lower">
+    <rdfs:label>lower</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;MultiplicityRange"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&iso19103;MultiplicityRange.upper">
+    <rdfs:label>upper</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;MultiplicityRange"/>
+    <rdfs:range rdf:resource="&iso19103_539;UnlimitedInteger"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19103;Multiplicity.range">
+    <rdfs:label>range</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19103;Multiplicity"/>
+    <rdfs:range rdf:resource="&iso19103;MultiplicityRange"/>
+  </owl:ObjectProperty>
+</rdf:RDF>
+

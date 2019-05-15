@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/d:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=file:/D:/isotc211_GOM_harmonizedOntology/iso19103/2005/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/BasicTypes" uri="BasicTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Collections" uri="Collections.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/DateAndTime" uri="DateAndTime.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Derived" uri="Derived.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Enumerations" uri="Enumerations.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Implementation" uri="Implementation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Multiplicities" uri="Multiplicities.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Names" uri="Names.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Numerics" uri="Numerics.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Primitive" uri="Primitive.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata" uri="RecordsAndClassMetadata.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/SchemaLanguage" uri="SchemaLanguage.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Text" uri="Text.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/Truth" uri="Truth.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556824636057" name="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure" uri="UnitsOfMeasure.rdf"/>
+    </group>
+</catalog>
