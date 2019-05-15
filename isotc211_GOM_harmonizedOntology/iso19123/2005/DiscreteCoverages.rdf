@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19107_2210 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
+  <!ENTITY iso19123_1962 "http://def.isotc211.org/iso19123/2005/CoverageCore#" >
+  <!ENTITY iso19123_1965 "http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#" >
+  <!ENTITY iso19123_1967 "http://def.isotc211.org/iso19123/2005/TIN#" >
+  <!ENTITY iso19123_1964 "http://def.isotc211.org/iso19123/2005/ThiessenPolygon#" >
+  <!ENTITY iso19123 "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         DiscreteCoverages.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL     -->
+  <!-- Generator version: 2.5                           -->
+  <!-- File date:         28-10-2015                    -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#"
+  xml:base="http://def.isotc211.org/iso19123/2005/DiscreteCoverages"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19107_2210="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xmlns:iso19123_1962="http://def.isotc211.org/iso19123/2005/CoverageCore#"
+  xmlns:iso19123_1965="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#"
+  xmlns:iso19123_1967="http://def.isotc211.org/iso19123/2005/TIN#"
+  xmlns:iso19123_1964="http://def.isotc211.org/iso19123/2005/ThiessenPolygon#"
+  xmlns:iso19123="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19123:2005  Discrete Coverages -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19123/2005/DiscreteCoverages">
+    <rdfs:label>ISO 19123:2005  Discrete Coverages</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19123/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-08-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricPrimitive"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/CoverageCore"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/TIN"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/ThiessenPolygon"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: CV_CurveValuePair -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_CurveValuePair">
+    <rdfs:label>CV_CurveValuePair</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_GeometryValuePair"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_CurveValuePair.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_CurveValuePair.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Curve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: CV_DiscreteCoverage -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_DiscreteCoverage">
+    <rdfs:label>CV_DiscreteCoverage</rdfs:label>
+    <skos:definition>CV_DiscreteCoverage is a subclass of CV_Coverage that returns a single record of values for any direct position within a single geometric object in  its spatiotemporal domain.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_Coverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1962;CV_GeometryValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_DiscreteCurveCoverage -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_DiscreteCurveCoverage">
+    <rdfs:label>CV_DiscreteCurveCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_DiscreteCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteCurveCoverage.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteCurveCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_CurveValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_DiscreteGridPointCoverage -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_DiscreteGridPointCoverage">
+    <rdfs:label>CV_DiscreteGridPointCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_DiscreteCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteGridPointCoverage.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteGridPointCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1965;CV_GridPointValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteGridPointCoverage.valueAssignment"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteGridPointCoverage.valueAssignment"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1965;CV_GridValuesMatrix"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_DiscretePointCoverage -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_DiscretePointCoverage">
+    <rdfs:label>CV_DiscretePointCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_DiscreteCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscretePointCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_PointValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_DiscreteSolidCoverage -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_DiscreteSolidCoverage">
+    <rdfs:label>CV_DiscreteSolidCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_DiscreteCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSolidCoverage.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSolidCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_SolidValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_DiscreteSurfaceCoverage -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_DiscreteSurfaceCoverage">
+    <rdfs:label>CV_DiscreteSurfaceCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_DiscreteCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_SurfaceValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage.triangleSource"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage.triangleSource"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1967;CV_TINCoverage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage.polygonSource"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage.polygonSource"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1964;CV_ThiessenPolygonCoverage"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: CV_PointValuePair -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_PointValuePair">
+    <rdfs:label>CV_PointValuePair</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_GeometryValuePair"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_PointValuePair.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_PointValuePair.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Point"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: CV_SolidValuePair -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_SolidValuePair">
+    <rdfs:label>CV_SolidValuePair</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_GeometryValuePair"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SolidValuePair.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SolidValuePair.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Solid"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: CV_SurfaceValuePair -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_SurfaceValuePair">
+    <rdfs:label>CV_SurfaceValuePair</rdfs:label>
+    <skos:definition>A surface with an associated value.  Used in the definition of discrete (step function) surface coverage functions.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_GeometryValuePair"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SurfaceValuePair.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SurfaceValuePair.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Surface"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_CurveValuePair.geometry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_CurveValuePair.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_CurveValuePair"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Curve"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_PointValuePair.geometry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_PointValuePair.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_PointValuePair"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Point"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_SolidValuePair.geometry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_SolidValuePair.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_SolidValuePair"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Solid"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_SurfaceValuePair.geometry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_SurfaceValuePair.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_SurfaceValuePair"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Surface"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteCoverage.element -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1962;CV_GeometryValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteCurveCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteCurveCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteCurveCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_CurveValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteGridPointCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteGridPointCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteGridPointCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1965;CV_GridPointValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteGridPointCoverage.valueAssignment -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteGridPointCoverage.valueAssignment">
+    <rdfs:label>valueAssignment</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>PointFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteGridPointCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1965;CV_GridValuesMatrix"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscretePointCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscretePointCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscretePointCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_PointValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteSolidCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteSolidCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteSolidCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_SolidValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteSurfaceCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteSurfaceCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_SurfaceValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteSurfaceCoverage.triangleSource -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteSurfaceCoverage.triangleSource">
+    <rdfs:label>triangleSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>TIN Base</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1967;CV_TINCoverage"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_DiscreteSurfaceCoverage.polygonSource -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_DiscreteSurfaceCoverage.polygonSource">
+    <rdfs:label>polygonSource</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>ThiessenBase</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_DiscreteSurfaceCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1964;CV_ThiessenPolygonCoverage"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

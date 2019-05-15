@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/CoverageCore" uri="CoverageCore.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/Coverages" uri="Coverages.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/DiscreteCoverages" uri="DiscreteCoverages.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/HexagonalGrid" uri="HexagonalGrid.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid" uri="QuadrilateralGrid.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/SegmentedCurve" uri="SegmentedCurve.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/TIN" uri="TIN.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1509645134586" name="http://def.isotc211.org/iso19123/2005/ThiessenPolygon" uri="ThiessenPolygon.rdf"/>
+    </group>
+</catalog>

@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19107_2207 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19123_1962 "http://def.isotc211.org/iso19123/2005/CoverageCore#" >
+  <!ENTITY iso19123_1963 "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#" >
+  <!ENTITY iso19123 "http://def.isotc211.org/iso19123/2005/TIN#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         TIN.rdf                   -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         28-10-2015                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19123/2005/TIN#"
+  xml:base="http://def.isotc211.org/iso19123/2005/TIN"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19107_2207="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19123_1962="http://def.isotc211.org/iso19123/2005/CoverageCore#"
+  xmlns:iso19123_1963="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#"
+  xmlns:iso19123="http://def.isotc211.org/iso19123/2005/TIN#">
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19123:2005  TIN -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19123/2005/TIN">
+    <rdfs:label>ISO 19123:2005  TIN</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19123/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-08-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/CoverageCore"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/DiscreteCoverages"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: CV_TINCoverage -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_TINCoverage">
+    <rdfs:label>CV_TINCoverage</rdfs:label>
+    <skos:definition>Triangulated Irregular Network (TIN) - A tessellation model usually of the earth's surface comprised of a network of non-overlapping triangles, not necessary co-planar.  The vertices of the triangles form a set of irregular spaced elevation posts  The Delaunay Triangulation method is commonly used to produce TINs with triangles that are approximately equiangular in shape.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_ContinuousCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_TINCoverage.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_TINCoverage.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2207;GM_Tin"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_TINCoverage.interpolationType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_TINCoverage.interpolationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1962;CV_InterpolationMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_TINCoverage.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_TINCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_ValueTriangle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: CV_ValueTriangle -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_ValueTriangle">
+    <rdfs:label>CV_ValueTriangle</rdfs:label>
+    <skos:definition>Three non-colinear points and associated values used in interpolation of a coverage function.  Usually associated with a TIN or a Triangulated Spline.Constraint: The three associated points in the PointValuePairs are not co-linear</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_ValueObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ValueTriangle.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ValueTriangle.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2207;GM_Triangle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ValueTriangle.controlValue"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ValueTriangle.controlValue"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1963;CV_PointValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_TINCoverage.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_TINCoverage.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19107_2207;GM_Tin"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_TINCoverage.interpolationType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_TINCoverage.interpolationType">
+    <rdfs:label>interpolationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1962;CV_InterpolationMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ValueTriangle.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ValueTriangle.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_ValueTriangle"/>
+    <rdfs:range rdf:resource="&iso19107_2207;GM_Triangle"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_TINCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_TINCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_TINCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_ValueTriangle"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ValueTriangle.controlValue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ValueTriangle.controlValue">
+    <rdfs:label>controlValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Control</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_ValueTriangle"/>
+    <rdfs:range rdf:resource="&iso19123_1963;CV_PointValuePair"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19107_2210 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
+  <!ENTITY iso19123_1962 "http://def.isotc211.org/iso19123/2005/CoverageCore#" >
+  <!ENTITY iso19107_2207 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19123_1963 "http://def.isotc211.org/iso19123/2005/DiscreteCoverages#" >
+  <!ENTITY iso19123 "http://def.isotc211.org/iso19123/2005/ThiessenPolygon#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         ThiessenPolygon.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL   -->
+  <!-- Generator version: 2.5                         -->
+  <!-- File date:         28-10-2015                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19123/2005/ThiessenPolygon#"
+  xml:base="http://def.isotc211.org/iso19123/2005/ThiessenPolygon"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19107_2210="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xmlns:iso19123_1962="http://def.isotc211.org/iso19123/2005/CoverageCore#"
+  xmlns:iso19107_2207="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19123_1963="http://def.isotc211.org/iso19123/2005/DiscreteCoverages#"
+  xmlns:iso19123="http://def.isotc211.org/iso19123/2005/ThiessenPolygon#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19123:2005  Thiessen Polygon -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19123/2005/ThiessenPolygon">
+    <rdfs:label>ISO 19123:2005  Thiessen Polygon</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19123/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-08-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricPrimitive"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/CoverageCore"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/DiscreteCoverages"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_ThiessenPolygonCoverage -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_ThiessenPolygonCoverage">
+    <rdfs:label>CV_ThiessenPolygonCoverage</rdfs:label>
+    <skos:definition>A telleslation of spatial domain using Thiessen Polygons.The C_Function associated to the network is an interpolation method defined from the PointValuePairs that are the center of the  polygons.  The most common interpolation methods are .gu.nearest neighbor.gu., and .gu.lost area.gu..</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_ContinuousCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenPolygonCoverage.clipArea"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenPolygonCoverage.clipArea"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Surface"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenPolygonCoverage.interpolationType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenPolygonCoverage.interpolationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1962;CV_InterpolationMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenPolygonCoverage.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenPolygonCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_ThiessenValuePolygon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_ThiessenValuePolygon -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_ThiessenValuePolygon">
+    <rdfs:label>CV_ThiessenValuePolygon</rdfs:label>
+    <skos:definition>A polygon whose boundaries define the area consisting of points that are closer to the center point than any other point in the defining set.  The boundaries are the perpendicular bisectors of the lines between the points in the dual TIN.   Also referred to as Voronoi Diagrams.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_ValueObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenValuePolygon.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenValuePolygon.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2207;GM_Polygon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenValuePolygon.controlValue"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ThiessenValuePolygon.controlValue"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1963;CV_PointValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ThiessenPolygonCoverage.clipArea -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ThiessenPolygonCoverage.clipArea">
+    <rdfs:label>clipArea</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_ThiessenPolygonCoverage"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Surface"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ThiessenPolygonCoverage.interpolationType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ThiessenPolygonCoverage.interpolationType">
+    <rdfs:label>interpolationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_ThiessenPolygonCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1962;CV_InterpolationMethod"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ThiessenValuePolygon.geometry -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ThiessenValuePolygon.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_ThiessenValuePolygon"/>
+    <rdfs:range rdf:resource="&iso19107_2207;GM_Polygon"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ThiessenPolygonCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ThiessenPolygonCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_ThiessenPolygonCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_ThiessenValuePolygon"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ThiessenValuePolygon.controlValue -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ThiessenValuePolygon.controlValue">
+    <rdfs:label>controlValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Control</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_ThiessenValuePolygon"/>
+    <rdfs:range rdf:resource="&iso19123_1963;CV_PointValuePair"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

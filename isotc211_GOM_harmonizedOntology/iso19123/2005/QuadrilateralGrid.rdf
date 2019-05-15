@@ -1,0 +1,969 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19123_1962 "http://def.isotc211.org/iso19123/2005/CoverageCore#" >
+  <!ENTITY iso19107_2211 "http://def.isotc211.org/iso19107/2003/GeometryRoot#" >
+  <!ENTITY orph_1287 "http://def.isotc211.org/orphans/Orphans#" >
+  <!ENTITY iso19107_2207 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19107_2210 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
+  <!ENTITY iso19111_1300 "http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#" >
+  <!ENTITY iso19123 "http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#" >
+  <!ENTITY iso19123Code "http://def.isotc211.org/iso19123/2005/QuadrilateralGrid/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         QuadrilateralGrid.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL     -->
+  <!-- Generator version: 2.5                           -->
+  <!-- File date:         28-10-2015                    -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#"
+  xml:base="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19123_1962="http://def.isotc211.org/iso19123/2005/CoverageCore#"
+  xmlns:iso19107_2211="http://def.isotc211.org/iso19107/2003/GeometryRoot#"
+  xmlns:orph_1287="http://def.isotc211.org/orphans/Orphans#"
+  xmlns:iso19107_2207="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19107_2210="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xmlns:iso19111_1300="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#"
+  xmlns:iso19123="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid#"
+  xmlns:iso19123Code="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19123:2005  Quadrilateral Grid -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19123/2005/QuadrilateralGrid">
+    <rdfs:label>ISO 19123:2005  Quadrilateral Grid</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19123/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-08-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19123/2005/CoverageCore"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometryRoot"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/orphans/Orphans"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricPrimitive"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_ContinuousQuadrilateralGridCoverage -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_ContinuousQuadrilateralGridCoverage">
+    <rdfs:label>CV_ContinuousQuadrilateralGridCoverage</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_ContinuousCoverage"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage.interpolationType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage.interpolationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19123_1962;CV_InterpolationMethod"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage.source"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage.source"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridValuesMatrix"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage.element"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage.element"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridValueCell"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: CV_FootPrint -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_FootPrint">
+    <rdfs:label>CV_FootPrint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_FootPrint.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_FootPrint.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2211;GM_Object"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: CV_Grid -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_Grid">
+    <rdfs:label>CV_Grid</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.dimension"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.dimension"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.axisNames"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.axisNames"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.CharacterString.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.extent"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.extent"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridEnvelope"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.cell"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.cell"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCell"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.intersection"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_Grid.intersection"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridPoint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: CV_GridCell -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridCell">
+    <rdfs:label>CV_GridCell</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107_2210;GM_Surface"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridCell.framework"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridCell.framework"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_Grid"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridCell.corner"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">4</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridCell.corner"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridPoint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Class: CV_GridCoordinate -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridCoordinate">
+    <rdfs:label>CV_GridCoordinate</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridCoordinate.coordValues"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridCoordinate.coordValues"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.Integer.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: CV_GridEnvelope -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridEnvelope">
+    <rdfs:label>CV_GridEnvelope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridEnvelope.low"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridEnvelope.low"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCoordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridEnvelope.high"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridEnvelope.high"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCoordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: CV_GridPoint -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridPoint">
+    <rdfs:label>CV_GridPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_DomainObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.gridCoord"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.gridCoord"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCoordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.groundPoint"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2210;GM_Point"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.framework"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.framework"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_Grid"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.cell"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.cell"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCell"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPoint.footprint"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_FootPrint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- Class: CV_GridPointValuePair -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridPointValuePair">
+    <rdfs:label>CV_GridPointValuePair</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_GeometryValuePair"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPointValuePair.point"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridPointValuePair.point"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridPoint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: CV_GridRange -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridRange">
+    <rdfs:label>CV_GridRange</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridRange.low"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridRange.low"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCoordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridRange.high"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridRange.high"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCoordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: CV_GridValueCell -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridValueCell">
+    <rdfs:label>CV_GridValueCell</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123_1962;CV_ValueObject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValueCell.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValueCell.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCell"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValueCell.controlValue"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">4</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValueCell.controlValue"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridPointValuePair"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: CV_GridValuesMatrix -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_GridValuesMatrix">
+    <rdfs:label>CV_GridValuesMatrix</rdfs:label>
+    <skos:definition>The geometry represented by the various offset vectors is in the image plane of the grid.  For example, for orthorectified grids, these vectors are in a spatial reference system.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValuesMatrix.values"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValuesMatrix.values"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.Record.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValuesMatrix.sequencingRule"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValuesMatrix.sequencingRule"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_SequenceRule"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValuesMatrix.startSequence"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_GridValuesMatrix.startSequence"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_GridCoordinate"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Class: CV_RectifiedGrid -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_RectifiedGrid">
+    <rdfs:label>CV_RectifiedGrid</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_RectifiedGrid.origin"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_RectifiedGrid.origin"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_2207;DirectPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_RectifiedGrid.offsetVectors"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_RectifiedGrid.offsetVectors"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.Vector.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: CV_ReferenceableGrid -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_ReferenceableGrid">
+    <rdfs:label>CV_ReferenceableGrid</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ReferenceableGrid.crs"/>
+        <owl:allValuesFrom rdf:resource="&iso19111_1300;SC_CRS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_ReferenceableGrid.crs"/>
+        <owl:allValuesFrom rdf:resource="&iso19111_1300;SC_CRS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: CV_SequenceRule -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_SequenceRule">
+    <rdfs:label>CV_SequenceRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SequenceRule.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SequenceRule.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19123;CV_SequenceType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SequenceRule.scanDirection"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19123;CV_SequenceRule.scanDirection"/>
+        <owl:allValuesFrom rdf:resource="&orph_1287;Sequence.lt.CharacterString.gt."/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ContinuousQuadrilateralGridCoverage.interpolationType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ContinuousQuadrilateralGridCoverage.interpolationType">
+    <rdfs:label>interpolationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage"/>
+    <rdfs:range rdf:resource="&iso19123_1962;CV_InterpolationMethod"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_FootPrint.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_FootPrint.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_FootPrint"/>
+    <rdfs:range rdf:resource="&iso19107_2211;GM_Object"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: CV_Grid.dimension -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19123;CV_Grid.dimension">
+    <rdfs:label>dimension</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_Grid.axisNames -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_Grid.axisNames">
+    <rdfs:label>axisNames</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.CharacterString.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_Grid.extent -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_Grid.extent">
+    <rdfs:label>extent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridEnvelope"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridCoordinate.coordValues -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridCoordinate.coordValues">
+    <rdfs:label>coordValues</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridCoordinate"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.Integer.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridEnvelope.low -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridEnvelope.low">
+    <rdfs:label>low</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridEnvelope"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCoordinate"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridEnvelope.high -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridEnvelope.high">
+    <rdfs:label>high</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridEnvelope"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCoordinate"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridPoint.gridCoord -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridPoint.gridCoord">
+    <rdfs:label>gridCoord</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridPoint"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCoordinate"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridPointValuePair.point -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridPointValuePair.point">
+    <rdfs:label>point</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridPointValuePair"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridPoint"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridRange.low -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridRange.low">
+    <rdfs:label>low</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridRange"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCoordinate"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridRange.high -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridRange.high">
+    <rdfs:label>high</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridRange"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCoordinate"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridValueCell.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridValueCell.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridValueCell"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCell"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridValuesMatrix.values -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridValuesMatrix.values">
+    <rdfs:label>values</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridValuesMatrix"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.Record.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridValuesMatrix.sequencingRule -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridValuesMatrix.sequencingRule">
+    <rdfs:label>sequencingRule</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridValuesMatrix"/>
+    <rdfs:range rdf:resource="&iso19123;CV_SequenceRule"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridValuesMatrix.startSequence -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridValuesMatrix.startSequence">
+    <rdfs:label>startSequence</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridValuesMatrix"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCoordinate"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_RectifiedGrid.origin -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_RectifiedGrid.origin">
+    <rdfs:label>origin</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_RectifiedGrid"/>
+    <rdfs:range rdf:resource="&iso19107_2207;DirectPosition"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_RectifiedGrid.offsetVectors -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_RectifiedGrid.offsetVectors">
+    <rdfs:label>offsetVectors</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_RectifiedGrid"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.Vector.gt."/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_SequenceRule.type -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_SequenceRule.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_SequenceRule"/>
+    <rdfs:range rdf:resource="&iso19123;CV_SequenceType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_SequenceRule.scanDirection -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_SequenceRule.scanDirection">
+    <rdfs:label>scanDirection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19123;CV_SequenceRule"/>
+    <rdfs:range rdf:resource="&orph_1287;Sequence.lt.CharacterString.gt."/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ContinuousQuadrilateralGridCoverage.source -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ContinuousQuadrilateralGridCoverage.source">
+    <rdfs:label>source</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>RangValues</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridValuesMatrix"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ContinuousQuadrilateralGridCoverage.element -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ContinuousQuadrilateralGridCoverage.element">
+    <rdfs:label>element</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoverageFunction</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_ContinuousQuadrilateralGridCoverage"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridValueCell"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridCell.framework -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridCell.framework">
+    <rdfs:label>framework</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>EvaluationStructure</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridCell"/>
+    <rdfs:range rdf:resource="&iso19123;CV_Grid"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_Grid.cell -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_Grid.cell">
+    <rdfs:label>cell</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>EvaluationStructure</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCell"/>
+    <owl:inverseOf rdf:resource="&iso19123;CV_GridCell.framework"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridPoint.framework -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridPoint.framework">
+    <rdfs:label>framework</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Organization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridPoint"/>
+    <rdfs:range rdf:resource="&iso19123;CV_Grid"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_Grid.intersection -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_Grid.intersection">
+    <rdfs:label>intersection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Organization</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_Grid"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridPoint"/>
+    <owl:inverseOf rdf:resource="&iso19123;CV_GridPoint.framework"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridCell.corner -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridCell.corner">
+    <rdfs:label>corner</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Location</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridCell"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridPoint"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridPoint.cell -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridPoint.cell">
+    <rdfs:label>cell</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Location</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridPoint"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridCell"/>
+    <owl:inverseOf rdf:resource="&iso19123;CV_GridCell.corner"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridPoint.groundPoint -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridPoint.groundPoint">
+    <rdfs:label>groundPoint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Reference</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridPoint"/>
+    <rdfs:range rdf:resource="&iso19107_2210;GM_Point"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridPoint.footprint -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridPoint.footprint">
+    <rdfs:label>footprint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>SampleSpace</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridPoint"/>
+    <rdfs:range rdf:resource="&iso19123;CV_FootPrint"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_GridValueCell.controlValue -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_GridValueCell.controlValue">
+    <rdfs:label>controlValue</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Control</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_GridValueCell"/>
+    <rdfs:range rdf:resource="&iso19123;CV_GridPointValuePair"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ReferenceableGrid.crs -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ReferenceableGrid.crs">
+    <rdfs:label>crs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>CoordinateReferenceSystem</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_ReferenceableGrid"/>
+    <rdfs:range rdf:resource="&iso19111_1300;SC_CRS"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: CV_ReferenceableGrid.crs -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19123;CV_ReferenceableGrid.crs">
+    <rdfs:label>crs</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>CoordinateReferenceSystem</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19123;CV_ReferenceableGrid"/>
+    <rdfs:range rdf:resource="&iso19111_1300;SC_CRS"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Codelist: CV_SequenceType -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19123;CV_SequenceType">
+    <rdfs:label>CV_SequenceType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19123Code;CV_SequenceType">
+    <skos:prefLabel>CV_SequenceType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19123;CV_SequenceType"/>
+  </skos:ConceptScheme>
+  <iso19123:CV_SequenceType rdf:about="&iso19123Code;CV_SequenceType/linear">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>linear</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19123Code;CV_SequenceType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+  </iso19123:CV_SequenceType>
+  <iso19123:CV_SequenceType rdf:about="&iso19123Code;CV_SequenceType/boustrophedonic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>boustrophedonic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19123Code;CV_SequenceType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+  </iso19123:CV_SequenceType>
+  <iso19123:CV_SequenceType rdf:about="&iso19123Code;CV_SequenceType/CantorDiagonal">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>CantorDiagonal</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19123Code;CV_SequenceType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+  </iso19123:CV_SequenceType>
+  <iso19123:CV_SequenceType rdf:about="&iso19123Code;CV_SequenceType/spiral">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>spiral</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19123Code;CV_SequenceType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+  </iso19123:CV_SequenceType>
+  <iso19123:CV_SequenceType rdf:about="&iso19123Code;CV_SequenceType/Morton">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Morton</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19123Code;CV_SequenceType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+  </iso19123:CV_SequenceType>
+  <iso19123:CV_SequenceType rdf:about="&iso19123Code;CV_SequenceType/Hilbert">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>Hilbert</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19123Code;CV_SequenceType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19123/ed-1/en/</rdfs:isDefinedBy>
+  </iso19123:CV_SequenceType>
+  <skos:Collection rdf:about="&iso19123Code;CV_SequenceTypeCollection">
+    <skos:prefLabel>CV_SequenceType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/linear"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/boustrophedonic"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/CantorDiagonal"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/spiral"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/Morton"/>
+    <skos:member rdf:resource="&iso19123Code;CV_SequenceType/Hilbert"/>
+  </skos:Collection>
+
+</rdf:RDF>
+
