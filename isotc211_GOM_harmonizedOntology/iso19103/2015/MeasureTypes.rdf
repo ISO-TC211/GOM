@@ -1,0 +1,1137 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_2169 "http://def.isotc211.org/iso19103/2015/Numerics#" >
+  <!ENTITY iso19103 "http://def.isotc211.org/iso19103/2015/MeasureTypes#" >
+  <!ENTITY iso19103Code "http://def.isotc211.org/iso19103/2015/MeasureTypes/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19103MeasureTypes.rdf  -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         8-10-2015                 -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19103/2015/MeasureTypes#"
+  xml:base="http://def.isotc211.org/iso19103/2015/MeasureTypes"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_2169="http://def.isotc211.org/iso19103/2015/Numerics#"
+  xmlns:iso19103="http://def.isotc211.org/iso19103/2015/MeasureTypes#"
+  xmlns:iso19103Code="http://def.isotc211.org/iso19103/2015/MeasureTypes/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19103:2015 Measure types -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19103/2015/MeasureTypes">
+    <rdfs:label>ISO 19103:2015 Measure types</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19103/ed-2/en/</dct:source>
+    <owl:versionInfo>2015</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/Numerics"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: Acceleration -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Acceleration">
+    <rdfs:label>Acceleration</rdfs:label>
+    <skos:definition>Acceleration is the instantaneous rate of change of velocity with time. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;DirectedMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Angle -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Angle">
+    <rdfs:label>Angle</rdfs:label>
+    <skos:definition>The amount of rotation needed to bring one line or plane into coincidence with another, generally measured in radians or degrees.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Angle.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Angle.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomAngle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: AngularAcceleration -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;AngularAcceleration">
+    <rdfs:label>AngularAcceleration</rdfs:label>
+    <skos:definition>AngularAcceleration is the instantaneous rate of change of angular velocity with time.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;DirectedMeasure"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: AngularSpeed -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;AngularSpeed">
+    <rdfs:label>AngularSpeed</rdfs:label>
+    <skos:definition>AngularVelocity is the instantaneous rate of change of angular displacement with time.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularSpeed.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularSpeed.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomAngularSpeed"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: AngularVelocity -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;AngularVelocity">
+    <rdfs:label>AngularVelocity</rdfs:label>
+    <skos:definition>AngularVelocity is the instantaneous rate of change of angular displacement with time in a specified direction.  </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;DirectedMeasure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularVelocity.time"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularVelocity.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularVelocity.angle"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularVelocity.angle"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomAngle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularVelocity.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;AngularVelocity.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomSpeed"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++-->
+  <!-- Class: Area -->
+  <!--+++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Area">
+    <rdfs:label>Area</rdfs:label>
+    <skos:definition>The measure of the physical extent of any topologically 2-D geometric object. Usually measured in .gu.square.gu. units of length.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Area.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Area.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomArea"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Currency -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Currency">
+    <rdfs:label>Currency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Currency.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Currency.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomCurrency"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: DirectedMeasure -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;DirectedMeasure">
+    <rdfs:label>DirectedMeasure</rdfs:label>
+    <skos:definition>A DirectedMeasure is the result of ascertaining the value of a characteristic of some entity where direction is an essential aspect of the characteristic.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;DirectedMeasure.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;DirectedMeasure.value"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2169;Vector"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;DirectedMeasure.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;DirectedMeasure.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Distance -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Distance">
+    <rdfs:label>Distance</rdfs:label>
+    <skos:definition>Used as a type for returning distances and possibly lengths. Care must be taken when using distance where length is meant. The distance from start to end of a curve is not the length of the curve, but represents the length of the shortest curve between these two points. Since Distance is a length of some curve (albeit a hypothetical one), the unit of measure is the same.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Length"/>
+  </owl:Class>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Length -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Length">
+    <rdfs:label>Length</rdfs:label>
+    <skos:definition>The measure of distance as an integral, i.e. the limit of an infinite sum of distances between points on a curve.  For example the length of curve, the perimeter of a polygon as the length of the boundary.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Length.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Length.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomLength"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Measure -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Measure">
+    <rdfs:label>Measure</rdfs:label>
+    <skos:definition>The result from performing the act or process of ascertaining the extent, dimensions, or quantity of some entity.A measure is always associated to a unit of measure. Ratio measures where the two base measures are in the same units (often considered unit-less) should be associated to UnitOfMeasure (same meter.sl.meter for map scale) so that conversions to non-unitless ratios can be accomplished (such as miles.sl.inch).</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Measure.value"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Measure.value"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2169;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Measure.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Measure.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Scale -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Scale">
+    <rdfs:label>Scale</rdfs:label>
+    <skos:definition>The ratio of one quantity to another. Scale is unitless in this standard (the two quantities use the same unit). </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Scale.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Scale.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomScale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Scale.sourceUnits"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Scale.sourceUnits"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomLength"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Scale.targetUnits"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Scale.targetUnits"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomLength"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Speed -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Speed">
+    <rdfs:label>Speed</rdfs:label>
+    <skos:definition>Speed is the instantaneous rate of change of position with time. It is usually calculated using the simple formula, the change in position during a given time interval. Speed is the magnitude of a vector representing velocity.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Speed.time"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Speed.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Speed.distance"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Speed.distance"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomLength"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Speed.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Speed.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomSpeed"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: SubUnitsPerUnit -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;SubUnitsPerUnit">
+    <rdfs:label>SubUnitsPerUnit</rdfs:label>
+    <skos:definition>An association attribute that links a master unit to a subunit of the same type, such as feet and inches. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;SubUnitsPerUnit.factor"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;SubUnitsPerUnit.factor"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_2169;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: TimeMeasure -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;TimeMeasure">
+    <rdfs:label>TimeMeasure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;TimeMeasure.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;TimeMeasure.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: UnitOfMeasure -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UnitOfMeasure">
+    <rdfs:label>UnitOfMeasure</rdfs:label>
+    <skos:definition>Any of the systems devised to measure some physical quantity such distance or area or a system devised to measure such things as the passage of time.The classes of UnitOfMeasure are determined by the member .gu.measureType..gu. Subclasses are not needed for implementation, but their use makes type constraints on measure valued attributes easier to specify. -- conversionToISOstandardUnit is not null only if the conversion is a simple scale</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;UnitOfMeasure.uomIdentifier"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;UnitOfMeasure.uomIdentifier"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;UnitOfMeasure.subunit"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;UnitOfMeasure.subunit"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: UomAcceleration -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomAcceleration">
+    <rdfs:label>UomAcceleration</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: UomAngle -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomAngle">
+    <rdfs:label>UomAngle</rdfs:label>
+    <skos:definition>Any of the measuring systems commonly used to measure angles.  In the US, The sexigesimal system of degrees, minutes and seconds is frequently used. The radian measurement system is also used.  In other parts of the world the grad angle measuring system is used.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Class: UomAngularAcceleration -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomAngularAcceleration">
+    <rdfs:label>UomAngularAcceleration</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: UomAngularSpeed -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomAngularSpeed">
+    <rdfs:label>UomAngularSpeed</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: UomArea -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomArea">
+    <rdfs:label>UomArea</rdfs:label>
+    <skos:definition>Any of the measuring systems commonly used to measure area.  Common units include square length units, such as square meters and square feet.  Other common unit include acres (in the US) and hectares.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: UomCurrency -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomCurrency">
+    <rdfs:label>UomCurrency</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: UomLength -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomLength">
+    <rdfs:label>UomLength</rdfs:label>
+    <skos:definition>Any of the measuring systems to measure the length, distance between two entities.  Example are the English System of feet and inches or the metric system of  millimeters, centimeters and meters, also the System International (SI) System of Units.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: UomScale -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomScale">
+    <rdfs:label>UomScale</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: UomSpeed -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomSpeed">
+    <rdfs:label>UomSpeed</rdfs:label>
+    <skos:definition>Units for measure of speed, usually a combination of time and distance units. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: UomTime -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomTime">
+    <rdfs:label>UomTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: UomVelocity -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomVelocity">
+    <rdfs:label>UomVelocity</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: UomVolume -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomVolume">
+    <rdfs:label>UomVolume</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: UomWeight -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UomWeight">
+    <rdfs:label>UomWeight</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: Velocity -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Velocity">
+    <rdfs:label>Velocity</rdfs:label>
+    <skos:definition>Velocity is the instantaneous rate of change of position with time in a specified direction.  The magnitude of the vector representing a value for velocity is expressed in units of measure appropriate for speed. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;DirectedMeasure"/>
+  </owl:Class>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Volume -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Volume">
+    <rdfs:label>Volume</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Volume.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Volume.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomVolume"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Weight -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Weight">
+    <rdfs:label>Weight</rdfs:label>
+    <skos:definition>weight is the measure of the gravitational force acting on an object</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103;Measure"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Weight.uom"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Weight.uom"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;UomWeight"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Angle.uom -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Angle.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Angle"/>
+    <rdfs:range rdf:resource="&iso19103;UomAngle"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AngularSpeed.uom -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;AngularSpeed.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;AngularSpeed"/>
+    <rdfs:range rdf:resource="&iso19103;UomAngularSpeed"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AngularVelocity.time -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;AngularVelocity.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;AngularVelocity"/>
+    <rdfs:range rdf:resource="&iso19103;UomTime"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AngularVelocity.angle -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;AngularVelocity.angle">
+    <rdfs:label>angle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;AngularVelocity"/>
+    <rdfs:range rdf:resource="&iso19103;UomAngle"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: AngularVelocity.uom -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;AngularVelocity.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;AngularVelocity"/>
+    <rdfs:range rdf:resource="&iso19103;UomSpeed"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Area.uom -->
+  <!--++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Area.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Area"/>
+    <rdfs:range rdf:resource="&iso19103;UomArea"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Currency.uom -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Currency.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Currency"/>
+    <rdfs:range rdf:resource="&iso19103;UomCurrency"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DirectedMeasure.value -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;DirectedMeasure.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;DirectedMeasure"/>
+    <rdfs:range rdf:resource="&iso19103_2169;Vector"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Length.uom -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Length.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Length"/>
+    <rdfs:range rdf:resource="&iso19103;UomLength"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Measure.value -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Measure.value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Measure"/>
+    <rdfs:range rdf:resource="&iso19103_2169;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Scale.uom -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Scale.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Scale"/>
+    <rdfs:range rdf:resource="&iso19103;UomScale"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Scale.sourceUnits -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Scale.sourceUnits">
+    <rdfs:label>sourceUnits</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Scale"/>
+    <rdfs:range rdf:resource="&iso19103;UomLength"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Scale.targetUnits -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Scale.targetUnits">
+    <rdfs:label>targetUnits</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Scale"/>
+    <rdfs:range rdf:resource="&iso19103;UomLength"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Speed.time -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Speed.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Speed"/>
+    <rdfs:range rdf:resource="&iso19103;UomTime"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Speed.distance -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Speed.distance">
+    <rdfs:label>distance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Speed"/>
+    <rdfs:range rdf:resource="&iso19103;UomLength"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Speed.uom -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Speed.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Speed"/>
+    <rdfs:range rdf:resource="&iso19103;UomSpeed"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: SubUnitsPerUnit.factor -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;SubUnitsPerUnit.factor">
+    <rdfs:label>factor</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;SubUnitsPerUnit"/>
+    <rdfs:range rdf:resource="&iso19103_2169;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TimeMeasure.uom -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;TimeMeasure.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;TimeMeasure"/>
+    <rdfs:range rdf:resource="&iso19103;UomTime"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: UnitOfMeasure.uomIdentifier -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19103;UnitOfMeasure.uomIdentifier">
+    <rdfs:label>uomIdentifier</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;UnitOfMeasure"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Volume.uom -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Volume.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Volume"/>
+    <rdfs:range rdf:resource="&iso19103;UomVolume"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Weight.uom -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Weight.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Weight"/>
+    <rdfs:range rdf:resource="&iso19103;UomWeight"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DirectedMeasure.uom -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;DirectedMeasure.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;DirectedMeasure"/>
+    <rdfs:range rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Measure.uom -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Measure.uom">
+    <rdfs:label>uom</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Measure"/>
+    <rdfs:range rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: UnitOfMeasure.subunit -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;UnitOfMeasure.subunit">
+    <rdfs:label>subunit</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>SubUnitsPerUnit</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19103;UnitOfMeasure"/>
+    <rdfs:range rdf:resource="&iso19103;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- Codelist: StandardUnits -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;StandardUnits">
+    <rdfs:label>StandardUnits</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19103Code;StandardUnits">
+    <skos:prefLabel>StandardUnits - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19103;StandardUnits"/>
+  </skos:ConceptScheme>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/metre">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>metre</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/second">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>second</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/radian">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>radian</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/squareMetre">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>squareMetre</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/cubicMetre">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>cubicMetre</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/metrePrSecond">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>metrePrSecond</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/metrePrMetre">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>metrePrMetre</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/metrePrSecondPrSecond">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>metrePrSecondPrSecond</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/radianPrSecond">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>radianPrSecond</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/radianPrSecondPrSecond">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>radianPrSecondPrSecond</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <iso19103:StandardUnits rdf:about="&iso19103Code;StandardUnits/kilogram">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>kilogram</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;StandardUnits"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:StandardUnits>
+  <skos:Collection rdf:about="&iso19103Code;StandardUnitsCollection">
+    <skos:prefLabel>StandardUnits - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/metre"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/second"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/radian"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/squareMetre"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/cubicMetre"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/metrePrSecond"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/metrePrMetre"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/metrePrSecondPrSecond"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/radianPrSecond"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/radianPrSecondPrSecond"/>
+    <skos:member rdf:resource="&iso19103Code;StandardUnits/kilogram"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Codelist: UnitsList -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;UnitsList">
+    <rdfs:label>UnitsList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19103;StandardUnits"/>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19103Code;UnitsList">
+    <skos:prefLabel>UnitsList - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19103;UnitsList"/>
+  </skos:ConceptScheme>
+  <iso19103:UnitsList rdf:about="&iso19103Code;UnitsList/foot">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>foot</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;UnitsList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:UnitsList>
+  <iso19103:UnitsList rdf:about="&iso19103Code;UnitsList/squareFoot">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>squareFoot</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;UnitsList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:UnitsList>
+  <iso19103:UnitsList rdf:about="&iso19103Code;UnitsList/cubicYard">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>cubicYard</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19103Code;UnitsList"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+  </iso19103:UnitsList>
+  <skos:Collection rdf:about="&iso19103Code;UnitsListCollection">
+    <skos:prefLabel>UnitsList - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19103Code;UnitsList/foot"/>
+    <skos:member rdf:resource="&iso19103Code;UnitsList/squareFoot"/>
+    <skos:member rdf:resource="&iso19103Code;UnitsList/cubicYard"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++-->
+  <!-- Enumeration: MeasureType -->
+  <!--++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19103;MeasureType">
+    <rdfs:label>MeasureType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">area</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">length</rdf:first>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:first rdf:datatype="&xsd;string">angle</rdf:first>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:first rdf:datatype="&xsd;string">time</rdf:first>
+                        <rdf:rest>
+                          <rdf:List>
+                            <rdf:first rdf:datatype="&xsd;string">velocity</rdf:first>
+                            <rdf:rest>
+                              <rdf:List>
+                                <rdf:first rdf:datatype="&xsd;string">volume</rdf:first>
+                                <rdf:rest>
+                                  <rdf:List>
+                                    <rdf:first rdf:datatype="&xsd;string">scale</rdf:first>
+                                    <rdf:rest>
+                                      <rdf:List>
+                                        <rdf:first rdf:datatype="&xsd;string">weight</rdf:first>
+                                        <rdf:rest>
+                                          <rdf:List>
+                                            <rdf:first rdf:datatype="&xsd;string">currency</rdf:first>
+                                            <rdf:rest>
+                                              <rdf:List>
+                                                <rdf:first rdf:datatype="&xsd;string">angularVelocity</rdf:first>
+                                                <rdf:rest>
+                                                  <rdf:List>
+                                                    <rdf:first rdf:datatype="&xsd;string">distance</rdf:first>
+                                                    <rdf:rest>
+                                                      <rdf:List>
+                                                        <rdf:first rdf:datatype="&xsd;string">speed</rdf:first>
+                                                        <rdf:rest>
+                                                          <rdf:List>
+                                                            <rdf:first rdf:datatype="&xsd;string">acceleration</rdf:first>
+                                                            <rdf:rest>
+                                                              <rdf:List>
+                                                                <rdf:first rdf:datatype="&xsd;string">angularSpeed</rdf:first>
+                                                                <rdf:rest>
+                                                                  <rdf:List>
+                                                                    <rdf:first rdf:datatype="&xsd;string">angularAcceleration</rdf:first>
+                                                                    <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                  </rdf:List>
+                                                                </rdf:rest>
+                                                              </rdf:List>
+                                                            </rdf:rest>
+                                                          </rdf:List>
+                                                        </rdf:rest>
+                                                      </rdf:List>
+                                                    </rdf:rest>
+                                                  </rdf:List>
+                                                </rdf:rest>
+                                              </rdf:List>
+                                            </rdf:rest>
+                                          </rdf:List>
+                                        </rdf:rest>
+                                      </rdf:List>
+                                    </rdf:rest>
+                                  </rdf:List>
+                                </rdf:rest>
+                              </rdf:List>
+                            </rdf:rest>
+                          </rdf:List>
+                        </rdf:rest>
+                      </rdf:List>
+                    </rdf:rest>
+                  </rdf:List>
+                </rdf:rest>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+

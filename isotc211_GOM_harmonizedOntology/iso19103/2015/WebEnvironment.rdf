@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_2170 "http://def.isotc211.org/iso19103/2015/Text#" >
+  <!ENTITY iso19103 "http://def.isotc211.org/iso19103/2015/WebEnvironment#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         iso19103WebEnvironment.rdf -->
+  <!-- Generator:         GOM_Technologies::UML2OWL  -->
+  <!-- Generator version: 2.5                        -->
+  <!-- File date:         8-10-2015                  -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19103/2015/WebEnvironment#"
+  xml:base="http://def.isotc211.org/iso19103/2015/WebEnvironment"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_2170="http://def.isotc211.org/iso19103/2015/Text#"
+  xmlns:iso19103="http://def.isotc211.org/iso19103/2015/WebEnvironment#">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19103:2015 Web environment -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19103/2015/WebEnvironment">
+    <rdfs:label>ISO 19103:2015 Web environment</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19103/ed-2/en/</dct:source>
+    <owl:versionInfo>2015</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19103/2015/Text"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++-->
+  <!-- Class: Anchor -->
+  <!--+++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;Anchor">
+    <rdfs:label>Anchor</rdfs:label>
+    <skos:definition>Supports hyper-linking capabilities and ensures a web-like implementation of CharacterStrings </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103_2170;CharacterString"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Anchor.href"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;Anchor.href"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: FileName -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;FileName">
+    <rdfs:label>FileName</rdfs:label>
+    <skos:definition>Support explicitly referencing an external file corresponding to a property containing the name of the file </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103_2170;CharacterString"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;FileName.src"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;FileName.src"/>
+        <owl:allValuesFrom rdf:resource="&iso19103;URI"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: MediaType -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19103;MediaType">
+    <rdfs:label>MediaType</rdfs:label>
+    <skos:definition>Supports identification of the file type using the mime media type name and subtype name </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103_2170;CharacterString"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;MediaType.type"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19103;MediaType.type"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++-->
+  <!-- Class: URI -->
+  <!--++++++++++++-->
+  <owl:Class rdf:about="&iso19103;URI">
+    <rdfs:label>URI</rdfs:label>
+    <skos:definition>Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <rdfs:subClassOf rdf:resource="&iso19103_2170;CharacterString"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: Anchor.href -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;Anchor.href">
+    <rdfs:label>href</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;Anchor"/>
+    <rdfs:range rdf:resource="&iso19103;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: FileName.src -->
+  <!--++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19103;FileName.src">
+    <rdfs:label>src</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;FileName"/>
+    <rdfs:range rdf:resource="&iso19103;URI"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: MediaType.type -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19103;MediaType.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19103/ed-2/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19103;MediaType"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+</rdf:RDF>
+
