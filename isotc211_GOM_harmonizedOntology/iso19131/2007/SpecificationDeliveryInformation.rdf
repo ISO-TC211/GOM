@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_1261 "http://def.isotc211.org/iso19115/2006/IdentificationInformation#" >
+  <!ENTITY iso19131_114 "http://def.isotc211.org/iso19131/2007/DPS#" >
+  <!ENTITY iso19131_126 "http://def.isotc211.org/iso19131/2007/SpecificationScopes#" >
+  <!ENTITY iso19131 "http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         SpecificationDeliveryInformation.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL                    -->
+  <!-- Generator version: 2.4                                          -->
+  <!-- File date:         20-4-2015                                    -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation#"
+  xml:base="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_1261="http://def.isotc211.org/iso19115/2006/IdentificationInformation#"
+  xmlns:iso19131_114="http://def.isotc211.org/iso19131/2007/DPS#"
+  xmlns:iso19131_126="http://def.isotc211.org/iso19131/2007/SpecificationScopes#"
+  xmlns:iso19131="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19131:2007 Specification Delivery Information -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19131/2007/SpecificationDeliveryInformation">
+    <rdfs:label>ISO 19131:2007 Specification Delivery Information</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19131/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-04-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/IdentificationInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/DPS"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationScopes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: DPS_DeliveryFormat -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19131;DPS_DeliveryFormat">
+    <rdfs:label>DPS_DeliveryFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.formatName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.formatName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.version"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.version"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.specification"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.specification"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.fileStructure"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.fileStructure"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.language"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.language"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.characterSet"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryFormat.characterSet"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1261;MD_CharacterSetCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Class: DPS_DeliveryInformation -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19131;DPS_DeliveryInformation">
+    <rdfs:label>DPS_DeliveryInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryInformation.deliveryScope"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryInformation.deliveryScope"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_126;DPS_ScopeInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryInformation.deliveryFormat"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryInformation.deliveryFormat"/>
+        <owl:allValuesFrom rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryInformation.deliveryMedium"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryInformation.deliveryMedium"/>
+        <owl:allValuesFrom rdf:resource="&iso19131;DPS_DeliveryMedium"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: DPS_DeliveryMedium -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19131;DPS_DeliveryMedium">
+    <rdfs:label>DPS_DeliveryMedium</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.unitsOfDelivery"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.unitsOfDelivery"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.transferSize"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.transferSize"/>
+        <owl:allValuesFrom rdf:resource="&xsd;double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.mediumName"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.mediumName"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.otherDeliveryInformation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_DeliveryMedium.otherDeliveryInformation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryFormat.formatName -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryFormat.formatName">
+    <rdfs:label>formatName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryFormat.version -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryFormat.version">
+    <rdfs:label>version</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryFormat.specification -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryFormat.specification">
+    <rdfs:label>specification</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryFormat.fileStructure -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryFormat.fileStructure">
+    <rdfs:label>fileStructure</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryFormat.language -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryFormat.language">
+    <rdfs:label>language</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_DeliveryFormat.characterSet -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_DeliveryFormat.characterSet">
+    <rdfs:label>characterSet</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+    <rdfs:range rdf:resource="&iso19115_1261;MD_CharacterSetCode"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryMedium.unitsOfDelivery -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryMedium.unitsOfDelivery">
+    <rdfs:label>unitsOfDelivery</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryMedium"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryMedium.transferSize -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryMedium.transferSize">
+    <rdfs:label>transferSize</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryMedium"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryMedium.mediumName -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryMedium.mediumName">
+    <rdfs:label>mediumName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryMedium"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_DeliveryMedium.otherDeliveryInformation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_DeliveryMedium.otherDeliveryInformation">
+    <rdfs:label>otherDeliveryInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryMedium"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_DeliveryInformation.deliveryScope -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_DeliveryInformation.deliveryScope">
+    <rdfs:label>deliveryScope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryInformation"/>
+    <rdfs:range rdf:resource="&iso19131_126;DPS_ScopeInformation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_DeliveryInformation.deliveryFormat -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_DeliveryInformation.deliveryFormat">
+    <rdfs:label>deliveryFormat</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryInformation"/>
+    <rdfs:range rdf:resource="&iso19131;DPS_DeliveryFormat"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_DeliveryInformation.deliveryMedium -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_DeliveryInformation.deliveryMedium">
+    <rdfs:label>deliveryMedium</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19131;DPS_DeliveryInformation"/>
+    <rdfs:range rdf:resource="&iso19131;DPS_DeliveryMedium"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

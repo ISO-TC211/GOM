@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19115_1261 "http://def.isotc211.org/iso19115/2006/IdentificationInformation#" >
+  <!ENTITY iso19115_1272 "http://def.isotc211.org/iso19115/2006/ExtentInformation#" >
+  <!ENTITY iso19131_114 "http://def.isotc211.org/iso19131/2007/DPS#" >
+  <!ENTITY iso19131_126 "http://def.isotc211.org/iso19131/2007/SpecificationScopes#" >
+  <!ENTITY iso19131 "http://def.isotc211.org/iso19131/2007/SpecificationIdentification#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         SpecificationIdentification.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL               -->
+  <!-- Generator version: 2.4                                     -->
+  <!-- File date:         20-4-2015                               -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19131/2007/SpecificationIdentification#"
+  xml:base="http://def.isotc211.org/iso19131/2007/SpecificationIdentification"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19115_1261="http://def.isotc211.org/iso19115/2006/IdentificationInformation#"
+  xmlns:iso19115_1272="http://def.isotc211.org/iso19115/2006/ExtentInformation#"
+  xmlns:iso19131_114="http://def.isotc211.org/iso19131/2007/DPS#"
+  xmlns:iso19131_126="http://def.isotc211.org/iso19131/2007/SpecificationScopes#"
+  xmlns:iso19131="http://def.isotc211.org/iso19131/2007/SpecificationIdentification#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19131:2007 Specification Identification -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19131/2007/SpecificationIdentification">
+    <rdfs:label>ISO 19131:2007 Specification Identification</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19131/ed-1/en/</dct:source>
+    <owl:versionInfo>2007-04-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/IdentificationInformation"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ExtentInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/DPS"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19131/2007/SpecificationScopes"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: DPS_IdentificationInformation -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19131;DPS_IdentificationInformation">
+    <rdfs:label>DPS_IdentificationInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.title"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.title"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.altTitle"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.abstract"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.abstract"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.purpose"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.purpose"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.topicCategory"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.topicCategory"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1261;MD_TopicCategoryCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.spatialRepresentationType"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1261;MD_SpatialRepresentationTypeCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.spatialResolution"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1261;MD_Resolution"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.geographicDescription"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.geographicDescription"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_1272;EX_GeographicDescription"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.supplementalInformation"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.supplementalInformation"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.identificationScope"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19131;DPS_IdentificationInformation.identificationScope"/>
+        <owl:allValuesFrom rdf:resource="&iso19131_126;DPS_ScopeInformation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_IdentificationInformation.title -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_IdentificationInformation.title">
+    <rdfs:label>title</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_IdentificationInformation.altTitle -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_IdentificationInformation.altTitle">
+    <rdfs:label>altTitle</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_IdentificationInformation.abstract -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_IdentificationInformation.abstract">
+    <rdfs:label>abstract</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_IdentificationInformation.purpose -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_IdentificationInformation.purpose">
+    <rdfs:label>purpose</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_IdentificationInformation.topicCategory -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_IdentificationInformation.topicCategory">
+    <rdfs:label>topicCategory</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&iso19115_1261;MD_TopicCategoryCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_IdentificationInformation.spatialRepresentationType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_IdentificationInformation.spatialRepresentationType">
+    <rdfs:label>spatialRepresentationType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&iso19115_1261;MD_SpatialRepresentationTypeCode"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_IdentificationInformation.spatialResolution -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_IdentificationInformation.spatialResolution">
+    <rdfs:label>spatialResolution</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&iso19115_1261;MD_Resolution"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_IdentificationInformation.geographicDescription -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_IdentificationInformation.geographicDescription">
+    <rdfs:label>geographicDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&iso19115_1272;EX_GeographicDescription"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: DPS_IdentificationInformation.supplementalInformation -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19131;DPS_IdentificationInformation.supplementalInformation">
+    <rdfs:label>supplementalInformation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: DPS_IdentificationInformation.identificationScope -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19131;DPS_IdentificationInformation.identificationScope">
+    <rdfs:label>identificationScope</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19131/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19131;DPS_IdentificationInformation"/>
+    <rdfs:range rdf:resource="&iso19131_126;DPS_ScopeInformation"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+
