@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Address" uri="Address.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/AddressElements" uri="AddressElements.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/AddressModel" uri="AddressModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/CombinedNetworks" uri="CombinedNetworks.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory" uri="ConstraintAndAdvisory.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/CostFunction" uri="CostFunction.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/FeatureDataModel" uri="FeatureDataModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems" uri="LinearReferenceSystems.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Link" uri="Link.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Location-BasedServices-TrackingAndNavigation" uri="Location-BasedServices-TrackingAndNavigation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/LocationTransformation" uri="LocationTransformation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/MeasuredCoordinates" uri="MeasuredCoordinates.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Navigation" uri="Navigation.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/NavigationService" uri="NavigationService.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Network" uri="Network.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/NetworkModel" uri="NetworkModel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/NetworkPosition" uri="NetworkPosition.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/NewBasicTypes" uri="NewBasicTypes.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/PointEstimates" uri="PointEstimates.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Preferences" uri="Preferences.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Route" uri="Route.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/Tracking" uri="Tracking.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/TrackingService" uri="TrackingService.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557845453330" name="http://def.isotc211.org/iso19133/2005/TurnAndJunction" uri="TurnAndJunction.rdf"/>
+    </group>
+</catalog>

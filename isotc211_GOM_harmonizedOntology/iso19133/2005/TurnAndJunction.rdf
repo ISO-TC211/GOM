@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19133_1925 "http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#" >
+  <!ENTITY iso19133_1926 "http://def.isotc211.org/iso19133/2005/Link#" >
+  <!ENTITY iso19133_1927 "http://def.isotc211.org/iso19133/2005/NetworkModel#" >
+  <!ENTITY iso19107_404 "http://def.isotc211.org/iso19107/2003/TopologicalPrimitive#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/TurnAndJunction#" >
+  <!ENTITY iso19133Code "http://def.isotc211.org/iso19133/2005/TurnAndJunction/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         TurnAndJunction.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL   -->
+  <!-- Generator version: 2.5                         -->
+  <!-- File date:         14-11-2016                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/TurnAndJunction#"
+  xml:base="http://def.isotc211.org/iso19133/2005/TurnAndJunction"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19133_1925="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#"
+  xmlns:iso19133_1926="http://def.isotc211.org/iso19133/2005/Link#"
+  xmlns:iso19133_1927="http://def.isotc211.org/iso19133/2005/NetworkModel#"
+  xmlns:iso19107_404="http://def.isotc211.org/iso19107/2003/TopologicalPrimitive#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/TurnAndJunction#"
+  xmlns:iso19133Code="http://def.isotc211.org/iso19133/2005/TurnAndJunction/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Turn and Junction -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/TurnAndJunction">
+    <rdfs:label>ISO 19133:2005 Turn and Junction</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Link"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkModel"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/TopologicalPrimitive"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: NT_Junction -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_Junction">
+    <rdfs:label>NT_Junction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19107_404;TP_Node"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.junctionType"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.junctionType"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_JunctionType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.turn"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.turn"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_Turn"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.maximalComplex"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.maximalComplex"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1927;NT_Network"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.spoke"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Junction.spoke"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1926;NT_Link"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: NT_Turn -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_Turn">
+    <rdfs:label>NT_Turn</rdfs:label>
+    <skos:definition>The NT_Turn object represents a mechanism for traversing from one link to another. Each turn will be located at a node of the underlying topologyand will form the bridge for a link entering the node and a link exiting the node. The use of turns allows a restricted network (one with constraints) to be represented by an unrestricted one.The use of the word .gu.turn.gu. does not necessarily reflect a change of direction. Going straight through an intersection is one such viable option and would be represented by a .gu.NT_Turn..gu. In public transportsuch as a rail systemthe .gu.NT_Turns.gu. are routes through .gu.stations.gu. connecting one incoming .gu.train.gu. with one outgoing .gu.train..gu.  NT_Turns are thus called .gu.connections.gu. when speaking of airportand have temporal constraints based on the availability of the .gu.links.gu. that ison flight times.{fromLink.endNode .eq. toLink.startNode .eq. topology}(isTraversable} implies {fromLink.isTraversable}(isTraversable} implies {toLink.isTraversable</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.exitCount"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.exitCount"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.turnDirection"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.turnDirection"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_TurnDirection"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.isTraversable"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.isTraversable"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.isManuever"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.isManuever"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.entryCount"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.entryCount"/>
+        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.junction"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.junction"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_Junction"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.fromLink"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.fromLink"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1926;NT_Link"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.toLink"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.toLink"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1926;NT_Link"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.constraint"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1925;NT_Constraint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Turn.advisory"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1925;NT_Advisory"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Junction.junctionType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Junction.junctionType">
+    <rdfs:label>junctionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Junction"/>
+    <rdfs:range rdf:resource="&iso19133;NT_JunctionType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NT_Turn.exitCount -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NT_Turn.exitCount">
+    <rdfs:label>exitCount</rdfs:label>
+    <skos:definition>The exitCount indicates how far around the intersection the exit link occurs relative to entrance link. In right-hand lane systems the count is counter-clockwise. In left-hand lande systems the count is clockwise. In non-road systems, the number can usually be ignored. </skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Turn.turnDirection -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Turn.turnDirection">
+    <rdfs:label>turnDirection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&iso19133;NT_TurnDirection"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NT_Turn.isTraversable -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NT_Turn.isTraversable">
+    <rdfs:label>isTraversable</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NT_Turn.isManuever -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NT_Turn.isManuever">
+    <rdfs:label>isManuever</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NT_Turn.entryCount -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NT_Turn.entryCount">
+    <rdfs:label>entryCount</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Turn.junction -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Turn.junction">
+    <rdfs:label>junction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&iso19133;NT_Junction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Junction.turn -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Junction.turn">
+    <rdfs:label>turn</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Junction"/>
+    <rdfs:range rdf:resource="&iso19133;NT_Turn"/>
+    <owl:inverseOf rdf:resource="&iso19133;NT_Turn.junction"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Junction.maximalComplex -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Junction.maximalComplex">
+    <rdfs:label>maximalComplex</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Junction"/>
+    <rdfs:range rdf:resource="&iso19133_1927;NT_Network"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Junction.spoke -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Junction.spoke">
+    <rdfs:label>spoke</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>CoBoundary</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NT_Junction"/>
+    <rdfs:range rdf:resource="&iso19133_1926;NT_Link"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Turn.fromLink -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Turn.fromLink">
+    <rdfs:label>fromLink</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>From</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&iso19133_1926;NT_Link"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Turn.toLink -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Turn.toLink">
+    <rdfs:label>toLink</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>To</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&iso19133_1926;NT_Link"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Turn.constraint -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Turn.constraint">
+    <rdfs:label>constraint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&iso19133_1925;NT_Constraint"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Turn.advisory -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Turn.advisory">
+    <rdfs:label>advisory</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_Turn"/>
+    <rdfs:range rdf:resource="&iso19133_1925;NT_Advisory"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Codelist: NT_JunctionType -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_JunctionType">
+    <rdfs:label>NT_JunctionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;NT_JunctionType">
+    <skos:prefLabel>NT_JunctionType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;NT_JunctionType"/>
+  </skos:ConceptScheme>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/intersection">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>intersection</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/roundabout">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>roundabout</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/enclosedTrafficArea">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>enclosedTrafficArea</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/exitRamp">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>exitRamp</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/entranceRamp">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>entranceRamp</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/changOver">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>changOver</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/boardingRamp">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>boardingRamp</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/station">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>station</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <iso19133:NT_JunctionType rdf:about="&iso19133Code;NT_JunctionType/transfer">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>transfer</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_JunctionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_JunctionType>
+  <skos:Collection rdf:about="&iso19133Code;NT_JunctionTypeCollection">
+    <skos:prefLabel>NT_JunctionType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/intersection"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/roundabout"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/enclosedTrafficArea"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/exitRamp"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/entranceRamp"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/changOver"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/boardingRamp"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/station"/>
+    <skos:member rdf:resource="&iso19133Code;NT_JunctionType/transfer"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Codelist: NT_TurnDirection -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_TurnDirection">
+    <rdfs:label>NT_TurnDirection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;NT_TurnDirection">
+    <skos:prefLabel>NT_TurnDirection - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;NT_TurnDirection"/>
+  </skos:ConceptScheme>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/straight">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>straight</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/keepLeft">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>keepLeft</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/slightLeft">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>slightLeft</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/left">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>left</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/sharpLeft">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>sharpLeft</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/uTurn">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>uTurn</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/sharpRight">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>sharpRight</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/right">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>right</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/slightRight">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>slightRight</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <iso19133:NT_TurnDirection rdf:about="&iso19133Code;NT_TurnDirection/keepRight">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>keepRight</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NT_TurnDirection"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NT_TurnDirection>
+  <skos:Collection rdf:about="&iso19133Code;NT_TurnDirectionCollection">
+    <skos:prefLabel>NT_TurnDirection - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/straight"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/keepLeft"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/slightLeft"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/left"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/sharpLeft"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/uTurn"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/sharpRight"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/right"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/slightRight"/>
+    <skos:member rdf:resource="&iso19133Code;NT_TurnDirection/keepRight"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Enumeration: NT_AngularDirection -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <rdfs:Datatype rdf:about="&iso19133;NT_AngularDirection">
+    <rdfs:label>NT_AngularDirection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <rdfs:Datatype>
+        <owl:oneOf>
+          <rdf:List>
+            <rdf:first rdf:datatype="&xsd;string">clockwise</rdf:first>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:first rdf:datatype="&xsd;string">counterclockwise</rdf:first>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:List>
+        </owl:oneOf>
+      </rdfs:Datatype>
+    </owl:equivalentClass>
+  </rdfs:Datatype>
+
+</rdf:RDF>
+

@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19107_399 "http://def.isotc211.org/iso19107/2003/GeometricComplex#" >
+  <!ENTITY iso19108_407 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19103_333 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19115_515 "http://def.isotc211.org/iso19115/2006/ExtentInformation#" >
+  <!ENTITY iso19133_1928 "http://def.isotc211.org/iso19133/2005/NetworkPosition#" >
+  <!ENTITY iso19133_1927 "http://def.isotc211.org/iso19133/2005/NetworkModel#" >
+  <!ENTITY iso19133_1925 "http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#" >
+  <!ENTITY iso19133_1926 "http://def.isotc211.org/iso19133/2005/Link#" >
+  <!ENTITY iso19133_1930 "http://def.isotc211.org/iso19133/2005/TurnAndJunction#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/Route#" >
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         Route.rdf                 -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         14-11-2016                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/Route#"
+  xml:base="http://def.isotc211.org/iso19133/2005/Route"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19107_399="http://def.isotc211.org/iso19107/2003/GeometricComplex#"
+  xmlns:iso19108_407="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19103_333="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19115_515="http://def.isotc211.org/iso19115/2006/ExtentInformation#"
+  xmlns:iso19133_1928="http://def.isotc211.org/iso19133/2005/NetworkPosition#"
+  xmlns:iso19133_1927="http://def.isotc211.org/iso19133/2005/NetworkModel#"
+  xmlns:iso19133_1925="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory#"
+  xmlns:iso19133_1926="http://def.isotc211.org/iso19133/2005/Link#"
+  xmlns:iso19133_1930="http://def.isotc211.org/iso19133/2005/TurnAndJunction#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/Route#">
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Route -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/Route">
+    <rdfs:label>ISO 19133:2005 Route</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricComplex"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19115/2006/ExtentInformation"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkPosition"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/ConstraintAndAdvisory"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Link"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/TurnAndJunction"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: NT_Maneuver -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_Maneuver">
+    <rdfs:label>NT_Maneuver</rdfs:label>
+    <skos:definition>A maneuver is a legal sequence of actions, given by a sequence of turns, each of which terminates on the link that is the start of the next turn. Most maneuvers are single turns, but some turn's traversability are dependent on route history (as a ending turn in a U-turn across a divided highway). Since in this case, the turn's traversability cannot be decided by a single link's history, the maneuver extends that history to a sufficient  length to determine traversability. The total length of most maneuvers is quite short.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Maneuver.isTraversable"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Maneuver.isTraversable"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Maneuver.turn"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Maneuver.turn"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1930;NT_Turn"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Maneuver.link"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1926;NT_Link"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Maneuver.constraint"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1925;NT_Constraint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Maneuver.advisory"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1925;NT_Advisory"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++-->
+  <!-- Class: NT_Route -->
+  <!--+++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_Route">
+    <rdfs:label>NT_Route</rdfs:label>
+    <skos:definition>This class is used for routes defined by a geometry (a composite curve) and start and stop positions on that geometry. A route is calculated from and optimizes a cost function from the set of possible routes that traverse a set of target positions. The recalculate function determines a new route that optimizes the new cost function from the passed target position to the end of the route. If the cost function has not changed the new route should coincide with old one.The two canonical representations of a route are 1) an ordered list of directed links to be traversedand 2) an ordered list of maneuver to be made. Each maneuver advisory or route instruction is associated to either a link, a maneuver or a turn of the route.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133_1927;NT_Network"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Route.summary"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Route.summary"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_RouteSummary"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Route.geometry"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Route.geometry"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_399;GM_CompositeCurve"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Route.maneuver"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_Route.maneuver"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;NT_Maneuver"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NT_RouteSummary -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NT_RouteSummary">
+    <rdfs:label>NT_RouteSummary</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.time"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Duration"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.distance"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.distance"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Distance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.extent"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.extent"/>
+        <owl:allValuesFrom rdf:resource="&iso19115_515;EX_GeographicExtent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.begin"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.begin"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1928;NT_NetworkPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.stops"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.stops"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1927;NT_WayPointList"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.end"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NT_RouteSummary.end"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1928;NT_NetworkPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NT_Maneuver.isTraversable -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NT_Maneuver.isTraversable">
+    <rdfs:label>isTraversable</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Maneuver"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Route.summary -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Route.summary">
+    <rdfs:label>summary</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Route"/>
+    <rdfs:range rdf:resource="&iso19133;NT_RouteSummary"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Route.geometry -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Route.geometry">
+    <rdfs:label>geometry</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_Route"/>
+    <rdfs:range rdf:resource="&iso19107_399;GM_CompositeCurve"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_RouteSummary.time -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_RouteSummary.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_RouteSummary"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Duration"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_RouteSummary.distance -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_RouteSummary.distance">
+    <rdfs:label>distance</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_RouteSummary"/>
+    <rdfs:range rdf:resource="&iso19103_333;Distance"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_RouteSummary.extent -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_RouteSummary.extent">
+    <rdfs:label>extent</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_RouteSummary"/>
+    <rdfs:range rdf:resource="&iso19115_515;EX_GeographicExtent"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_RouteSummary.begin -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_RouteSummary.begin">
+    <rdfs:label>begin</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_RouteSummary"/>
+    <rdfs:range rdf:resource="&iso19133_1928;NT_NetworkPosition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_RouteSummary.stops -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_RouteSummary.stops">
+    <rdfs:label>stops</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_RouteSummary"/>
+    <rdfs:range rdf:resource="&iso19133_1927;NT_WayPointList"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_RouteSummary.end -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_RouteSummary.end">
+    <rdfs:label>end</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NT_RouteSummary"/>
+    <rdfs:range rdf:resource="&iso19133_1928;NT_NetworkPosition"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Maneuver.turn -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Maneuver.turn">
+    <rdfs:label>turn</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Turns</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NT_Maneuver"/>
+    <rdfs:range rdf:resource="&iso19133_1930;NT_Turn"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Maneuver.link -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Maneuver.link">
+    <rdfs:label>link</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>Links</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19133;NT_Maneuver"/>
+    <rdfs:range rdf:resource="&iso19133_1926;NT_Link"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Maneuver.constraint -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Maneuver.constraint">
+    <rdfs:label>constraint</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_Maneuver"/>
+    <rdfs:range rdf:resource="&iso19133_1925;NT_Constraint"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Maneuver.advisory -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Maneuver.advisory">
+    <rdfs:label>advisory</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_Maneuver"/>
+    <rdfs:range rdf:resource="&iso19133_1925;NT_Advisory"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NT_Route.maneuver -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NT_Route.maneuver">
+    <rdfs:label>maneuver</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NT_Route"/>
+    <rdfs:range rdf:resource="&iso19133;NT_Maneuver"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19133_1927 "http://def.isotc211.org/iso19133/2005/NetworkModel#" >
+  <!ENTITY iso19109_449 "http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#" >
+  <!ENTITY iso19133_1933 "http://def.isotc211.org/iso19133/2005/FeatureDataModel#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/Preferences#" >
+  <!ENTITY iso19133Code "http://def.isotc211.org/iso19133/2005/Preferences/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         Preferences.rdf           -->
+  <!-- Generator:         GOM_Technologies::UML2OWL -->
+  <!-- Generator version: 2.5                       -->
+  <!-- File date:         14-11-2016                -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/Preferences#"
+  xml:base="http://def.isotc211.org/iso19133/2005/Preferences"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19133_1927="http://def.isotc211.org/iso19133/2005/NetworkModel#"
+  xmlns:iso19109_449="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#"
+  xmlns:iso19133_1933="http://def.isotc211.org/iso19133/2005/FeatureDataModel#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/Preferences#"
+  xmlns:iso19133Code="http://def.isotc211.org/iso19133/2005/Preferences/code/">
+
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Preferences -->
+  <!--++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/Preferences">
+    <rdfs:label>ISO 19133:2005 Preferences</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkModel"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19109/2005/GeneralFeatureModel"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/FeatureDataModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--+++++++++++++++++++++-->
+  <!-- Class: NS_AvoidList -->
+  <!--+++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_AvoidList">
+    <rdfs:label>NS_AvoidList</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_AvoidList.pointElement"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1927;NT_WayPoint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_AvoidList.mode"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_AvoidList.avoidFeatureType"/>
+        <owl:allValuesFrom rdf:resource="&iso19109_449;GF_FeatureType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;NS_AvoidList.avoidFeature"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1933;FD_Feature"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_AvoidList.pointElement -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_AvoidList.pointElement">
+    <rdfs:label>pointElement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_AvoidList"/>
+    <rdfs:range rdf:resource="&iso19133_1927;NT_WayPoint"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: NS_AvoidList.mode -->
+  <!--+++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;NS_AvoidList.mode">
+    <rdfs:label>mode</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;NS_AvoidList"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_AvoidList.avoidFeatureType -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_AvoidList.avoidFeatureType">
+    <rdfs:label>avoidFeatureType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NS_AvoidList"/>
+    <rdfs:range rdf:resource="&iso19109_449;GF_FeatureType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: NS_AvoidList.avoidFeature -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;NS_AvoidList.avoidFeature">
+    <rdfs:label>avoidFeature</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;NS_AvoidList"/>
+    <rdfs:range rdf:resource="&iso19133_1933;FD_Feature"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++-->
+  <!-- Codelist: NS_RoutePreferences -->
+  <!--+++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;NS_RoutePreferences">
+    <rdfs:label>NS_RoutePreferences</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;NS_RoutePreferences">
+    <skos:prefLabel>NS_RoutePreferences - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;NS_RoutePreferences"/>
+  </skos:ConceptScheme>
+  <iso19133:NS_RoutePreferences rdf:about="&iso19133Code;NS_RoutePreferences/scenic">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>scenic</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RoutePreferences"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RoutePreferences>
+  <iso19133:NS_RoutePreferences rdf:about="&iso19133Code;NS_RoutePreferences/easiest">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>easiest</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RoutePreferences"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RoutePreferences>
+  <iso19133:NS_RoutePreferences rdf:about="&iso19133Code;NS_RoutePreferences/majorRoadsOnly">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>majorRoadsOnly</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RoutePreferences"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RoutePreferences>
+  <iso19133:NS_RoutePreferences rdf:about="&iso19133Code;NS_RoutePreferences/avoidMajorHighways">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>avoidMajorHighways</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;NS_RoutePreferences"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:NS_RoutePreferences>
+  <skos:Collection rdf:about="&iso19133Code;NS_RoutePreferencesCollection">
+    <skos:prefLabel>NS_RoutePreferences - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/scenic"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/easiest"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/majorRoadsOnly"/>
+    <skos:member rdf:resource="&iso19133Code;NS_RoutePreferences/avoidMajorHighways"/>
+  </skos:Collection>
+
+</rdf:RDF>
+

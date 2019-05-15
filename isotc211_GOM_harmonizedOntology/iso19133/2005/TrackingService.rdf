@@ -1,0 +1,1278 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19103_342 "http://def.isotc211.org/iso19103/2005/Numerics#" >
+  <!ENTITY iso19103_333 "http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#" >
+  <!ENTITY iso19108_407 "http://def.isotc211.org/iso19108/2006/TemporalObjects#" >
+  <!ENTITY iso19107_397 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19112_1787 "http://def.isotc211.org/iso19112/2003/Gazetteer#" >
+  <!ENTITY iso19133_1933 "http://def.isotc211.org/iso19133/2005/FeatureDataModel#" >
+  <!ENTITY iso19133_1934 "http://def.isotc211.org/iso19133/2005/LinearReferenceSystems#" >
+  <!ENTITY iso19133_1928 "http://def.isotc211.org/iso19133/2005/NetworkPosition#" >
+  <!ENTITY iso19133_1917 "http://def.isotc211.org/iso19133/2005/Address#" >
+  <!ENTITY iso19107_400 "http://def.isotc211.org/iso19107/2003/GeometricPrimitive#" >
+  <!ENTITY iso19133 "http://def.isotc211.org/iso19133/2005/TrackingService#" >
+  <!ENTITY iso19133Code "http://def.isotc211.org/iso19133/2005/TrackingService/code/">
+
+]>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         TrackingService.rdf         -->
+  <!-- Generator:         GOM_Technologies::UML2OWL   -->
+  <!-- Generator version: 2.5                         -->
+  <!-- File date:         14-11-2016                  -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19133/2005/TrackingService#"
+  xml:base="http://def.isotc211.org/iso19133/2005/TrackingService"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19103_342="http://def.isotc211.org/iso19103/2005/Numerics#"
+  xmlns:iso19103_333="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#"
+  xmlns:iso19108_407="http://def.isotc211.org/iso19108/2006/TemporalObjects#"
+  xmlns:iso19107_397="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19112_1787="http://def.isotc211.org/iso19112/2003/Gazetteer#"
+  xmlns:iso19133_1933="http://def.isotc211.org/iso19133/2005/FeatureDataModel#"
+  xmlns:iso19133_1934="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems#"
+  xmlns:iso19133_1928="http://def.isotc211.org/iso19133/2005/NetworkPosition#"
+  xmlns:iso19133_1917="http://def.isotc211.org/iso19133/2005/Address#"
+  xmlns:iso19107_400="http://def.isotc211.org/iso19107/2003/GeometricPrimitive#"
+  xmlns:iso19133="http://def.isotc211.org/iso19133/2005/TrackingService#"
+  xmlns:iso19133Code="http://def.isotc211.org/iso19133/2005/TrackingService/code/">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19133:2005 Tracking Service -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19133/2005/TrackingService">
+    <rdfs:label>ISO 19133:2005 Tracking Service</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19133/ed-1/en/</dct:source>
+    <owl:versionInfo>2005-10-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/Numerics"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19103/2005/UnitsOfMeasure"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19108/2006/TemporalObjects"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/-->
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19112/2003/Gazetteer"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/FeatureDataModel"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/LinearReferenceSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/NetworkPosition"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19133/2005/Address"/>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricPrimitive"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: TK_Accuracy -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_Accuracy">
+    <rdfs:label>TK_Accuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.accuracyType"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.accuracyType"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_AccuracyType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.sigmaLevel"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.sigmaLevel"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_342;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.sigma"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.sigma"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_342;Number"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.units"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Accuracy.units"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;UnitOfMeasure"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: TK_AccuracyStatement -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_AccuracyStatement">
+    <rdfs:label>TK_AccuracyStatement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_AccuracyStatement.axis"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_AccuracyStatement.axis"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_AccuracyStatement.accuracy"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_AccuracyStatement.accuracy"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_Accuracy"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: TK_MobileSubscriber -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_MobileSubscriber">
+    <rdfs:label>TK_MobileSubscriber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_MobileSubscriber.id"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_MobileSubscriber.id"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_MobileSubscriber.location"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_MobileSubscriber.location"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_TrackingLocation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_MobileSubscriber.trackingService"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_MobileSubscriber.trackingService"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_TrackingService"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: TK_PeriodicTrigger -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_PeriodicTrigger">
+    <rdfs:label>TK_PeriodicTrigger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;TK_Trigger"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_PeriodicTrigger.minTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_PeriodicTrigger.minTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_PeriodicTrigger.maxTime"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_PeriodicTrigger.maxTime"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++-->
+  <!-- Class: DirectPosition -->
+  <!--+++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uDirectPosition">
+    <rdfs:label>DirectPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uDirectPosition.directPosition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uDirectPosition.directPosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_397;DirectPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: PlaceName -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uPlaceName">
+    <rdfs:label>PlaceName</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uPlaceName.placeName"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uPlaceName.placeName"/>
+        <owl:allValuesFrom rdf:resource="&iso19112_1787;SI_LocationInstance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++-->
+  <!-- Class: FeatureID -->
+  <!--++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uFeatureID">
+    <rdfs:label>FeatureID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uFeatureID.featureID"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uFeatureID.featureID"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1933;FD_FeatureName"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: LinearReference -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uLinearReference">
+    <rdfs:label>LinearReference</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uLinearReference.linearReference"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uLinearReference.linearReference"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1934;LR_PositionExpression"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: NetworkPosition -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uNetworkPosition">
+    <rdfs:label>NetworkPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uNetworkPosition.networkPosition"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uNetworkPosition.networkPosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1928;NT_NetworkPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++-->
+  <!-- Class: Address -->
+  <!--++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uAddress">
+    <rdfs:label>Address</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uAddress.address"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uAddress.address"/>
+        <owl:allValuesFrom rdf:resource="&iso19133_1917;AD_AbstractAddress"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++-->
+  <!-- Class: Phone -->
+  <!--++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;uPhone">
+    <rdfs:label>Phone</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uPhone.phone"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;uPhone.phone"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: TK_QualityOfPosition -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_QualityOfPosition">
+    <rdfs:label>TK_QualityOfPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_QualityOfPosition.accuracyStatement"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_QualityOfPosition.accuracyStatement"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_AccuracyStatement"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++-->
+  <!-- Class: TK_TrackingLocation -->
+  <!--++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_TrackingLocation">
+    <rdfs:label>TK_TrackingLocation</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.position"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.position"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_Position"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.time"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.direction"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.direction"/>
+        <owl:allValuesFrom rdf:resource="&iso19107_400;Bearing"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.speed"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.speed"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Velocity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocation.metadata"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_TrackingLocationMetadata"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: TK_TrackingLocationMetadata -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_TrackingLocationMetadata">
+    <rdfs:label>TK_TrackingLocationMetadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.ms"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.ms"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_MobileSubscriber"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.quality"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.quality"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_QualityOfPosition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.time"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.clientID"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.clientID"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationMetadata.trigger"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_Transition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: TK_TrackingLocationSequence -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_TrackingLocationSequence">
+    <rdfs:label>TK_TrackingLocationSequence</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationSequence.ms"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationSequence.ms"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_MobileSubscriber"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationSequence.sequenceID"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingLocationSequence.sequenceID"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Class: TK_TrackingService -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_TrackingService">
+    <rdfs:label>TK_TrackingService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TrackingService.mobileSubscriber"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_MobileSubscriber"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++-->
+  <!-- Class: TK_Transition -->
+  <!--++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_Transition">
+    <rdfs:label>TK_Transition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.type"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_TransitionType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.time"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.time"/>
+        <owl:allValuesFrom rdf:resource="&iso19108_407;TM_Primitive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.deltaDirection"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.deltaDirection"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Angle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.deltaPosition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.deltaPosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Distance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.availability"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_Transition.availability"/>
+        <owl:allValuesFrom rdf:resource="&xsd;boolean"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Class: TK_TransitionTrigger -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_TransitionTrigger">
+    <rdfs:label>TK_TransitionTrigger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19133;TK_Trigger"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TransitionTrigger.type"/>
+        <owl:allValuesFrom rdf:resource="&iso19133;TK_TransitionType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TransitionTrigger.deltaDirection"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TransitionTrigger.deltaDirection"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Angle"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TransitionTrigger.deltaPosition"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19133;TK_TransitionTrigger.deltaPosition"/>
+        <owl:allValuesFrom rdf:resource="&iso19103_333;Distance"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--+++++++++++++++++++-->
+  <!-- Class: TK_Trigger -->
+  <!--+++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_Trigger">
+    <rdfs:label>TK_Trigger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Accuracy.accuracyType -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Accuracy.accuracyType">
+    <rdfs:label>accuracyType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Accuracy"/>
+    <rdfs:range rdf:resource="&iso19133;TK_AccuracyType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Accuracy.sigmaLevel -->
+  <!--++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Accuracy.sigmaLevel">
+    <rdfs:label>sigmaLevel</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Accuracy"/>
+    <rdfs:range rdf:resource="&iso19103_342;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Accuracy.sigma -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Accuracy.sigma">
+    <rdfs:label>sigma</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Accuracy"/>
+    <rdfs:range rdf:resource="&iso19103_342;Number"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Accuracy.units -->
+  <!--+++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Accuracy.units">
+    <rdfs:label>units</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Accuracy"/>
+    <rdfs:range rdf:resource="&iso19103_333;UnitOfMeasure"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TK_AccuracyStatement.axis -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;TK_AccuracyStatement.axis">
+    <rdfs:label>axis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_AccuracyStatement"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_AccuracyStatement.accuracy -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_AccuracyStatement.accuracy">
+    <rdfs:label>accuracy</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_AccuracyStatement"/>
+    <rdfs:range rdf:resource="&iso19133;TK_Accuracy"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TK_MobileSubscriber.id -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;TK_MobileSubscriber.id">
+    <rdfs:label>id</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_MobileSubscriber"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_MobileSubscriber.location -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_MobileSubscriber.location">
+    <rdfs:label>location</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_MobileSubscriber"/>
+    <rdfs:range rdf:resource="&iso19133;TK_TrackingLocation"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_PeriodicTrigger.minTime -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_PeriodicTrigger.minTime">
+    <rdfs:label>minTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_PeriodicTrigger"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_PeriodicTrigger.maxTime -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_PeriodicTrigger.maxTime">
+    <rdfs:label>maxTime</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_PeriodicTrigger"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: directPosition -->
+  <!--++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uDirectPosition.directPosition">
+    <skos:prefLabel>directPosition</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uDirectPosition"/>
+    <rdfs:range rdf:resource="&iso19107_397;DirectPosition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: placeName -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uPlaceName.placeName">
+    <skos:prefLabel>placeName</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uPlaceName"/>
+    <rdfs:range rdf:resource="&iso19112_1787;SI_LocationInstance"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: featureID -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uFeatureID.featureID">
+    <skos:prefLabel>featureID</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uFeatureID"/>
+    <rdfs:range rdf:resource="&iso19133_1933;FD_FeatureName"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: linearReference -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uLinearReference.linearReference">
+    <skos:prefLabel>linearReference</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uLinearReference"/>
+    <rdfs:range rdf:resource="&iso19133_1934;LR_PositionExpression"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: networkPosition -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uNetworkPosition.networkPosition">
+    <skos:prefLabel>networkPosition</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uNetworkPosition"/>
+    <rdfs:range rdf:resource="&iso19133_1928;NT_NetworkPosition"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- ObjectProperty: address -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;uAddress.address">
+    <skos:prefLabel>address</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uAddress"/>
+    <rdfs:range rdf:resource="&iso19133_1917;AD_AbstractAddress"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: phone -->
+  <!--+++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;uPhone.phone">
+    <rdfs:label>phone</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;uPhone"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocation.position -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocation.position">
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocation"/>
+    <rdfs:range rdf:resource="&iso19133;TK_Position"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocation.time -->
+  <!--++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocation.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocation"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocation.direction -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocation.direction">
+    <rdfs:label>direction</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocation"/>
+    <rdfs:range rdf:resource="&iso19107_400;Bearing"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocation.speed -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocation.speed">
+    <rdfs:label>speed</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocation"/>
+    <rdfs:range rdf:resource="&iso19103_333;Velocity"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocationMetadata.ms -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocationMetadata.ms">
+    <rdfs:label>ms</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocationMetadata"/>
+    <rdfs:range rdf:resource="&iso19133;TK_MobileSubscriber"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocationMetadata.quality -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocationMetadata.quality">
+    <rdfs:label>quality</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocationMetadata"/>
+    <rdfs:range rdf:resource="&iso19133;TK_QualityOfPosition"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocationMetadata.time -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocationMetadata.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocationMetadata"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TK_TrackingLocationMetadata.clientID -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;TK_TrackingLocationMetadata.clientID">
+    <rdfs:label>clientID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocationMetadata"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocationMetadata.trigger -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocationMetadata.trigger">
+    <rdfs:label>trigger</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocationMetadata"/>
+    <rdfs:range rdf:resource="&iso19133;TK_Transition"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocationSequence.ms -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocationSequence.ms">
+    <rdfs:label>ms</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocationSequence"/>
+    <rdfs:range rdf:resource="&iso19133;TK_MobileSubscriber"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TK_TrackingLocationSequence.sequenceID -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;TK_TrackingLocationSequence.sequenceID">
+    <rdfs:label>sequenceID</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocationSequence"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Transition.type -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Transition.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Transition"/>
+    <rdfs:range rdf:resource="&iso19133;TK_TransitionType"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Transition.time -->
+  <!--++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Transition.time">
+    <rdfs:label>time</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Transition"/>
+    <rdfs:range rdf:resource="&iso19108_407;TM_Primitive"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Transition.deltaDirection -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Transition.deltaDirection">
+    <rdfs:label>deltaDirection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Transition"/>
+    <rdfs:range rdf:resource="&iso19103_333;Angle"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_Transition.deltaPosition -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_Transition.deltaPosition">
+    <rdfs:label>deltaPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Transition"/>
+    <rdfs:range rdf:resource="&iso19103_333;Distance"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: TK_Transition.availability -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19133;TK_Transition.availability">
+    <rdfs:label>availability</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_Transition"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TransitionTrigger.type -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TransitionTrigger.type">
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TransitionTrigger"/>
+    <rdfs:range rdf:resource="&iso19133;TK_TransitionType"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TransitionTrigger.deltaDirection -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TransitionTrigger.deltaDirection">
+    <rdfs:label>deltaDirection</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TransitionTrigger"/>
+    <rdfs:range rdf:resource="&iso19103_333;Angle"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TransitionTrigger.deltaPosition -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TransitionTrigger.deltaPosition">
+    <rdfs:label>deltaPosition</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TransitionTrigger"/>
+    <rdfs:range rdf:resource="&iso19103_333;Distance"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_MobileSubscriber.trackingService -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_MobileSubscriber.trackingService">
+    <rdfs:label>trackingService</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;TK_MobileSubscriber"/>
+    <rdfs:range rdf:resource="&iso19133;TK_TrackingService"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingService.mobileSubscriber -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingService.mobileSubscriber">
+    <rdfs:label>mobileSubscriber</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingService"/>
+    <rdfs:range rdf:resource="&iso19133;TK_MobileSubscriber"/>
+    <owl:inverseOf rdf:resource="&iso19133;TK_MobileSubscriber.trackingService"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_QualityOfPosition.accuracyStatement -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_QualityOfPosition.accuracyStatement">
+    <rdfs:label>accuracyStatement</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;TK_QualityOfPosition"/>
+    <rdfs:range rdf:resource="&iso19133;TK_AccuracyStatement"/>
+  </owl:ObjectProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- ObjectProperty: TK_TrackingLocation.metadata -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:ObjectProperty rdf:about="&iso19133;TK_TrackingLocation.metadata">
+    <rdfs:label>metadata</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfCompositeAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19133;TK_TrackingLocation"/>
+    <rdfs:range rdf:resource="&iso19133;TK_TrackingLocationMetadata"/>
+  </owl:ObjectProperty>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Codelist: TK_AccuracyType -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_AccuracyType">
+    <rdfs:label>TK_AccuracyType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;TK_AccuracyType">
+    <skos:prefLabel>TK_AccuracyType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;TK_AccuracyType"/>
+  </skos:ConceptScheme>
+  <iso19133:TK_AccuracyType rdf:about="&iso19133Code;TK_AccuracyType/linear">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>linear</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_AccuracyType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_AccuracyType>
+  <iso19133:TK_AccuracyType rdf:about="&iso19133Code;TK_AccuracyType/circularRMS">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>circularRMS</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_AccuracyType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_AccuracyType>
+  <iso19133:TK_AccuracyType rdf:about="&iso19133Code;TK_AccuracyType/ellipticalRMS">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>ellipticalRMS</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_AccuracyType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_AccuracyType>
+  <skos:Collection rdf:about="&iso19133Code;TK_AccuracyTypeCollection">
+    <skos:prefLabel>TK_AccuracyType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19133Code;TK_AccuracyType/linear"/>
+    <skos:member rdf:resource="&iso19133Code;TK_AccuracyType/circularRMS"/>
+    <skos:member rdf:resource="&iso19133Code;TK_AccuracyType/ellipticalRMS"/>
+  </skos:Collection>
+
+  <!--++++++++++++++++++++-->
+  <!-- Class: TK_Position -->
+  <!--++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_Position">
+    <rdfs:label>TK_Position</rdfs:label>
+    <skos:definition>This class locates a position or place within the network. It should always be interpretable as a direct position (coordinate in a reference system)an address or as a network position.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&iso19133;uDirectPosition"/>
+          <owl:Class rdf:about="&iso19133;uPlaceName"/>
+          <owl:Class rdf:about="&iso19133;uFeatureID"/>
+          <owl:Class rdf:about="&iso19133;uLinearReference"/>
+          <owl:Class rdf:about="&iso19133;uNetworkPosition"/>
+          <owl:Class rdf:about="&iso19133;uAddress"/>
+          <owl:Class rdf:about="&iso19133;uPhone"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++-->
+  <!-- Codelist: TK_PositionType -->
+  <!--+++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_PositionType">
+    <rdfs:label>TK_PositionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;TK_PositionType">
+    <skos:prefLabel>TK_PositionType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;TK_PositionType"/>
+  </skos:ConceptScheme>
+  <iso19133:TK_PositionType rdf:about="&iso19133Code;TK_PositionType/coordinate">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>coordinate</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_PositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_PositionType>
+  <iso19133:TK_PositionType rdf:about="&iso19133Code;TK_PositionType/placeName">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>placeName</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_PositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_PositionType>
+  <iso19133:TK_PositionType rdf:about="&iso19133Code;TK_PositionType/feature">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>feature</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_PositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_PositionType>
+  <iso19133:TK_PositionType rdf:about="&iso19133Code;TK_PositionType/linearReference">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>linearReference</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_PositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_PositionType>
+  <iso19133:TK_PositionType rdf:about="&iso19133Code;TK_PositionType/network">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>network</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_PositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_PositionType>
+  <iso19133:TK_PositionType rdf:about="&iso19133Code;TK_PositionType/address">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>address</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_PositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_PositionType>
+  <iso19133:TK_PositionType rdf:about="&iso19133Code;TK_PositionType/phone">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>phone</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_PositionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_PositionType>
+  <skos:Collection rdf:about="&iso19133Code;TK_PositionTypeCollection">
+    <skos:prefLabel>TK_PositionType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/coordinate"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/placeName"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/feature"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/linearReference"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/network"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/address"/>
+    <skos:member rdf:resource="&iso19133Code;TK_PositionType/phone"/>
+  </skos:Collection>
+
+  <!--+++++++++++++++++++++++++++++-->
+  <!-- Codelist: TK_TransitionType -->
+  <!--+++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19133;TK_TransitionType">
+    <rdfs:label>TK_TransitionType</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+  </owl:Class>
+  <skos:ConceptScheme rdf:about="&iso19133Code;TK_TransitionType">
+    <skos:prefLabel>TK_TransitionType - ConceptScheme</skos:prefLabel>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+    <dct:isFormatOf rdf:resource="&iso19133;TK_TransitionType"/>
+  </skos:ConceptScheme>
+  <iso19133:TK_TransitionType rdf:about="&iso19133Code;TK_TransitionType/enterCell">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>enterCell</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_TransitionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_TransitionType>
+  <iso19133:TK_TransitionType rdf:about="&iso19133Code;TK_TransitionType/leaveCell">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>leaveCell</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_TransitionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_TransitionType>
+  <iso19133:TK_TransitionType rdf:about="&iso19133Code;TK_TransitionType/changeContacts">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>changeContacts</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_TransitionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_TransitionType>
+  <iso19133:TK_TransitionType rdf:about="&iso19133Code;TK_TransitionType/changeDirection">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>changeDirection</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_TransitionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_TransitionType>
+  <iso19133:TK_TransitionType rdf:about="&iso19133Code;TK_TransitionType/changePosition">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>changePosition</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_TransitionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_TransitionType>
+  <iso19133:TK_TransitionType rdf:about="&iso19133Code;TK_TransitionType/changeAvailability">
+    <rdf:type rdf:resource="&skos;Concept"/>
+    <skos:prefLabel>changeAvailability</skos:prefLabel>
+    <skos:inScheme rdf:resource="&iso19133Code;TK_TransitionType"/>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19133/ed-1/en/</rdfs:isDefinedBy>
+  </iso19133:TK_TransitionType>
+  <skos:Collection rdf:about="&iso19133Code;TK_TransitionTypeCollection">
+    <skos:prefLabel>TK_TransitionType - Collection</skos:prefLabel>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/enterCell"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/leaveCell"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changeContacts"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changeDirection"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changePosition"/>
+    <skos:member rdf:resource="&iso19133Code;TK_TransitionType/changeAvailability"/>
+  </skos:Collection>
+
+</rdf:RDF>
+
