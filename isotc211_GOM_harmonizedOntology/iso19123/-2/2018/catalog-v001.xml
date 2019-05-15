@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1557246385321" name="http://def.isotc211.org/iso19123/-2/2018/CIS1.0" uri="CIS1.0.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557246385321" name="http://def.isotc211.org/iso19123/-2/2018/GML" uri="GML.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557246385321" name="http://def.isotc211.org/iso19123/-2/2018/SWE_Common" uri="SWE_Common.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1557246385321" name="http://def.isotc211.org/iso19123/-2/2018/SchemaForCoverageGeometryAndFunctionsPart2_CoverageImplementation" uri="SchemaForCoverageGeometryAndFunctions-Part2_CoverageImplementation.rdf"/>
+    </group>
+</catalog>
