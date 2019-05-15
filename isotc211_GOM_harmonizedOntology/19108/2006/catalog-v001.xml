@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/C:/isotc211_GOM_harmonizedOntology/19150-2/2012/base.rdf"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1427150506541" name="http://def.isotc211.org/iso19108/2006/TemporalObjects" uri="iso19108TemporalObjects.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1427150506541" name="http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem" uri="iso19108TemporalReferenceSystem.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1427150506541" name="http://def.isotc211.org/iso19108/2006/TemporalSchema" uri="ISO19108_2006TemporalSchema.rdf"/>
-    </group>
-</catalog>
