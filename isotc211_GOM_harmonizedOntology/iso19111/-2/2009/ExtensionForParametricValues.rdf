@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19111_564 "http://def.isotc211.org/iso19111/2007/Datums#" >
+  <!ENTITY iso19111_563 "http://def.isotc211.org/iso19111/2007/CoordinateSystems#" >
+  <!ENTITY iso19111_562 "http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#" >
+  <!ENTITY iso19111-2 "http://def.isotc211.org/iso19111/-2/2009/ExtensionForParametricValues#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19111/-2/2009/ExtensionForParametricValues#"
+  xml:base="http://def.isotc211.org/iso19111/-2/2009/ExtensionForParametricValues"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19111_564="http://def.isotc211.org/iso19111/2007/Datums#"
+  xmlns:iso19111_563="http://def.isotc211.org/iso19111/2007/CoordinateSystems#"
+  xmlns:iso19111_562="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#"
+  xmlns:iso19111-2="http://def.isotc211.org/iso19111/-2/2009/ExtensionForParametricValues#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19111/-2/2009/ExtensionForParametricValues">
+    <rdfs:label>ISO 19111-2:2009 ISO 19111-2:2009 Extension for parametric values</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19111/-2/ed-1/en/</dct:source>
+    <owl:versionInfo>2009-08-15</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/Datums"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/CoordinateSystems"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19111-2;CD_ParametricDatum">
+    <rdfs:label>CD_ParametricDatum</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_564;CD_Datum"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19111-2;CS_ParametricCS">
+    <rdfs:label>CS_ParametricCS</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_563;CS_CoordinateSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19111-2;CS_ParametricCS.axis"/>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19111-2;CS_ParametricCS.axis"/>
+        <owl:allValuesFrom rdf:resource="&iso19111_563;CS_CoordinateSystemAxis"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19111-2;SC_ParametricCRS">
+    <rdfs:label>SC_ParametricCRS</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19111_562;SC_SingleCRS"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19111-2;SC_ParametricCRS.coordinateSystem"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19111-2;SC_ParametricCRS.coordinateSystem"/>
+        <owl:allValuesFrom rdf:resource="&iso19111-2;CS_ParametricCS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19111-2;SC_ParametricCRS.datum"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19111-2;SC_ParametricCRS.datum"/>
+        <owl:allValuesFrom rdf:resource="&iso19111-2;CD_ParametricDatum"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19111-2;CS_ParametricCS.axis">
+    <rdfs:label>axis</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <rdfs:domain rdf:resource="&iso19111-2;CS_ParametricCS"/>
+    <rdfs:range rdf:resource="&iso19111_563;CS_CoordinateSystemAxis"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19111-2;SC_ParametricCRS.coordinateSystem">
+    <rdfs:label>coordinateSystem</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>CoordinateSystem</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19111-2;SC_ParametricCRS"/>
+    <rdfs:range rdf:resource="&iso19111-2;CS_ParametricCS"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&iso19111-2;SC_ParametricCRS.datum">
+    <rdfs:label>datum</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19111/-2/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:aggregationType>partOfSharedAggregation</iso19150-2:aggregationType>
+    <iso19150-2:associationName>DefiningDatum</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19111-2;SC_ParametricCRS"/>
+    <rdfs:range rdf:resource="&iso19111-2;CD_ParametricDatum"/>
+  </owl:ObjectProperty>
+</rdf:RDF>
+
