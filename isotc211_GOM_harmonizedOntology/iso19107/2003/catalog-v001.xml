@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=file:/D:/isotc211_GOM_harmonizedOntology/iso19107/2003/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/CoordinateGeometry" uri="CoordinateGeometry.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/GeometricAggregates" uri="GeometricAggregates.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/GeometricComplex" uri="GeometricComplex.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/GeometricPrimitive" uri="GeometricPrimitive.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/Geometry" uri="Geometry.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/GeometryRoot" uri="GeometryRoot.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/SpatialSchema" uri="SpatialSchema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/TopologicalComplex" uri="TopologicalComplex.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/TopologicalPrimitive" uri="TopologicalPrimitive.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/Topology" uri="Topology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1556825343004" name="http://def.isotc211.org/iso19107/2003/TopologyRoot" uri="TopologyRoot.rdf"/>
+    </group>
+</catalog>

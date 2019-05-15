@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19107_544 "http://def.isotc211.org/iso19107/2003/CoordinateGeometry#" >
+  <!ENTITY iso19107_546 "http://def.isotc211.org/iso19107/2003/GeometricComplex#" >
+  <!ENTITY iso19111_562 "http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#" >
+  <!ENTITY iso19107 "http://def.isotc211.org/iso19107/2003/GeometryRoot#" >
+
+]>
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19107/2003/GeometryRoot#"
+  xml:base="http://def.isotc211.org/iso19107/2003/GeometryRoot"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19107_544="http://def.isotc211.org/iso19107/2003/CoordinateGeometry#"
+  xmlns:iso19107_546="http://def.isotc211.org/iso19107/2003/GeometricComplex#"
+  xmlns:iso19111_562="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#"
+  xmlns:iso19107="http://def.isotc211.org/iso19107/2003/GeometryRoot#">
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19107/2003/GeometryRoot">
+    <rdfs:label>ISO 19107:2003 Geometry root</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19107/ed-1/en/</dct:source>
+    <owl:versionInfo>2003-05-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/CoordinateGeometry"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19107/2003/GeometricComplex"/>
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="&iso19107;GM_Boundary">
+    <rdfs:label>GM_Boundary</rdfs:label>
+    <skos:definition>The abstract root data type for all the data types used to represent the boundary of geometric objects is GM_Boundary (Figure 7). Any subclass of GM_Object will use a subclass of GM_Boundary to represent its boundary through the operation GM_Object::boundary. By the nature of geometry, boundary objects are cycles. GM_Boundary:{isCycle() .eq. TRUE}</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <iso19150-2:constraint>isCycle() .eq. TRUE</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107_546;GM_Complex"/>
+  </owl:Class>
+  <owl:Class rdf:about="&iso19107;GM_Object">
+    <rdfs:label>GM_Object</rdfs:label>
+    <skos:definition>GM_Object (Figure 6) is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet&lt;DirectPosition&gt;. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.NOTE As a type, GM_Object does not have a well-defined default state or value representation as a data type. Instantiated subclasses of GM_Object will.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:isAbstract rdf:datatype="&xsd;boolean">true</iso19150-2:isAbstract>
+    <iso19150-2:constraint>dimension() .gt.  boundary().dimension</iso19150-2:constraint>
+    <iso19150-2:constraint>dimension() .gt.  boundary().dimension</iso19150-2:constraint>
+    <iso19150-2:constraint>dimension() .gt.  boundary().dimension</iso19150-2:constraint>
+    <rdfs:subClassOf rdf:resource="&iso19107_544;TransfiniteSet.lt.DirectPosition.gt."/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Object.CRS"/>
+        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19107;GM_Object.CRS"/>
+        <owl:allValuesFrom rdf:resource="&iso19111_562;SC_CRS"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="&iso19107;GM_Object.CRS">
+    <rdfs:label>CRS</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19107/ed-1/en/</rdfs:isDefinedBy>
+    <iso19150-2:associationName>Coordinate Reference System</iso19150-2:associationName>
+    <rdfs:domain rdf:resource="&iso19107;GM_Object"/>
+    <rdfs:range rdf:resource="&iso19111_562;SC_CRS"/>
+  </owl:ObjectProperty>
+</rdf:RDF>
+
