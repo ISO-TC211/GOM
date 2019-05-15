@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+  <!ENTITY dct "http://purl.org/dc/terms/" >
+  <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+  <!ENTITY iso19150-2 "http://def.isotc211.org/iso19150/-2/2012/base#" >
+  <!ENTITY iso19135_1286 "http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#" >
+  <!ENTITY iso19144-2 "http://def.isotc211.org/iso19144/-2/2012/LC_Registers#" >
+
+]>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- File name:         LC_Registers.rdf           -->
+  <!-- Generator:         GOM_Technologies::UML2OWL  -->
+  <!-- Generator version: 2.5                        -->
+  <!-- File date:         12-4-2016                  -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<rdf:RDF xmlns="http://def.isotc211.org/iso19144/-2/2012/LC_Registers#"
+  xml:base="http://def.isotc211.org/iso19144/-2/2012/LC_Registers"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:iso19150-2="http://def.isotc211.org/iso19150/-2/2012/base#"
+  xmlns:iso19135_1286="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration#"
+  xmlns:iso19144-2="http://def.isotc211.org/iso19144/-2/2012/LC_Registers#">
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Ontology: ISO 19144-2:2012 LC_Registers -->
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Ontology rdf:about="http://def.isotc211.org/iso19144/-2/2012/LC_Registers">
+    <rdfs:label>ISO 19144-2:2012 LC_Registers</rdfs:label>
+    <dct:source>http://standards.iso.org/iso/19144/-2/ed-1/en/</dct:source>
+    <owl:versionInfo>2012-07-01</owl:versionInfo>
+    <!--owl:imports rdf:resource="http://def.isotc211.org/iso19135/2005/ProceduresForRegistration"/-->
+    <owl:imports rdf:resource="http://def.isotc211.org/iso19150/-2/2012/base"/>
+  </owl:Ontology>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ClassCharacteristicDescriptorClass -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ClassCharacteristicDescriptorClass">
+    <rdfs:label>LC_ClassCharacteristicDescriptorClass</rdfs:label>
+    <skos:definition>This class inherits three attributes: name, technicalStandard and alternativeLanguages. For the LCLM register described in this part of ISO 19144 the attribute .gu.name.gu. shall contains the text string .gu.LC_ClassCharacteristicDescriptorClass .gu. to identify the registered item class.  The attribute .gu.technicalStandard.gu. shall contain the following:title: ISO 19144-2, Geographic information - Classification Systems - Part 2: Land Cover Meta Language (LCML); alternateTitle: ISO 19144-2; date: xxxx1; otherCitationDetails: ISO 19144-2 clause 9.3.The attribute .gu.alternativeLanguage.gu. is optional. 1 To be determined when the standard is published.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_ItemClass"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ClassCharacteristicDescriptorItem -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ClassCharacteristicDescriptorItem">
+    <rdfs:label>LC_ClassCharacteristicDescriptorItem</rdfs:label>
+    <skos:definition>The three subtypes to RE_RegisteredItem are LC_ClassCharacteristicDescriptorItem, LC_ElementCharacteristicDescriptorItem and LC_ElementDescriptorItem. These subtypes take the same form and include the following attributes: A definition of the registered LCML metalanguage object; A description of any metalanguage object attributes to the LCML metalanguage object; A reference to the parent class in the LCML metalanguage model (either from the standard or another registered class) together with an indication of the type of relationship such as: subtype, component, enumeration, code list; A reference to any LCML metalanguage object which this metalanguage object supersedes (i.e. causes to be deprecated) NOTE	LC_Element objects may only be extended; that is, an instance of the registered item may be superseded only by another instance that contains all of the information from the superseded registered item.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem.metalanguageObjectDescription"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem.metalanguageObjectDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem.metalanguageObjectAttributes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem.referenceToParentClass"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem.referenceToParentClass"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem.referenceToSupersededClass"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ElementCharacteristicDescriptorClass -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ElementCharacteristicDescriptorClass">
+    <rdfs:label>LC_ElementCharacteristicDescriptorClass</rdfs:label>
+    <skos:definition>This class inherits three attributes: name, technicalStandard and alternativeLanguages. For the LCCS register described in this part of ISO 19144 the attribute .gu.name.gu. shall contains the text string .gu. LC_ElementCharacteristicDescriptorClass .gu. to identify the registered class.  The attribute .gu.technicalStandard.gu. shall contain the following: title: ISO 19144-2, Geographic information - Classification Systems - Part 2: Land Cover Meta Language (LCML); alternateTitle: ISO 19144-2; date: xxxx1; otherCitationDetails: ISO 19144-2 clause 9.3. The attribute .gu.alternativeLanguage.gu. is optional. 1 To be determined when the standard is published.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_ItemClass"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ElementCharacteristicDescriptorItem -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ElementCharacteristicDescriptorItem">
+    <rdfs:label>LC_ElementCharacteristicDescriptorItem</rdfs:label>
+    <skos:definition>The three subtypes to RE_RegisteredItem are LC_ClassCharacteristicDescriptorItem, LC_ElementCharacteristicDescriptorItem and LC_ElementDescriptorItem. These subtypes take the same form and include the following attributes: A definition of the registered LCML metalanguage object; A description of any metalanguage object attributes to the LCML metalanguage object; A reference to the parent class in the LCML metalanguage model (either from the standard or another registered class) together with an indication of the type of relationship such as: subtype, component, enumeration, code list; A reference to any LCML metalanguage object which this metalanguage object supersedes (i.e. causes to be deprecated) NOTE	LC_Element objects may only be extended; that is, an instance of the registered item may be superseded only by another instance that contains all of the information from the superseded registered item.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem.metalanguageObjectDescription"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem.metalanguageObjectDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem.metalanguageObjectAttributes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem.referenceToParentClass"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem.referenceToParentClass"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem.referenceToSupersededClass"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ElementDescriptorClass -->
+  <!--++++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ElementDescriptorClass">
+    <rdfs:label>LC_ElementDescriptorClass</rdfs:label>
+    <skos:definition>This class inherits three attributes: name, technicalStandard and alternativeLanguages. For the LCCS register described in this part of ISO 19144 the attribute .gu.name.gu. shall contains the text string .gu. LC_ElementDescriptorClass .gu. to identify the registered class.  The attribute .gu.technicalStandard.gu. shall contain the following: ISO 19144-2, Geographic information - Classification Systems - Part 2: Land Cover Meta Language (LCML); Title: ISO 19144-2; date: xxxx1; otherCitationDetails: ISO 19144-2 clause 9.3. The attribute .gu.alternativeLanguage.gu. is optional. 1 To be determined when the standard is published.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_ItemClass"/>
+  </owl:Class>
+
+  <!--+++++++++++++++++++++++++++++++++-->
+  <!-- Class: LC_ElementDescriptorItem -->
+  <!--+++++++++++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_ElementDescriptorItem">
+    <rdfs:label>LC_ElementDescriptorItem</rdfs:label>
+    <skos:definition>The three subtypes to RE_RegisteredItem are LC_ClassCharacteristicDescriptorItem, LC_ElementCharacteristicDescriptorItem and LC_ElementDescriptorItem. These subtypes take the same form and include the following attributes: A definition of the registered LCML metalanguage object; A description of any metalanguage object attributes to the LCML metalanguage object; A reference to the parent class in the LCML metalanguage model (either from the standard or another registered class) together with an indication of the type of relationship such as: subtype, component, enumeration, code list; A reference to any LCML metalanguage object which this metalanguage object supersedes (i.e. causes to be deprecated) NOTE	LC_Element objects may only be extended; that is, an instance of the registered item may be superseded only by another instance that contains all of the information from the superseded registered item.</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_RegisterItem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementDescriptorItem.metalanguageObjectDescription"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementDescriptorItem.metalanguageObjectDescription"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementDescriptorItem.metalanguageObjectAttributes"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementDescriptorItem.referenceToParentClass"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementDescriptorItem.referenceToParentClass"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementDescriptorItem.referenceToSupersededClass"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&iso19144-2;LC_ElementDescriptorItem.referenceToSupersededClass"/>
+        <owl:allValuesFrom rdf:resource="&xsd;string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++-->
+  <!-- Class: LC_LCMLRegister -->
+  <!--++++++++++++++++++++++++-->
+  <owl:Class rdf:about="&iso19144-2;LC_LCMLRegister">
+    <rdfs:label>LC_LCMLRegister</rdfs:label>
+    <skos:definition>The class LC_LCMLRegister specifies information about the register itself. It is a subclass of the class RE_Register which is defined in ISO 19135. It inherits 6 attributes from ISO 19135. Two of the attributes are specialized. The other attributes are taken directly from ISO 19135.ISO 19135 specifies that the attribute .lt.i.gt.name.lt..sl.i.gt. shall be a character string that is used to uniquely identify a register within the set of registers maintained by the register owner.  In the case the LCML register shall be called:.gu.Land Cover Meta Language Register.gu..ISO 19135 specifies that the attribute.lt.i.gt. contentSummary.lt..sl.i.gt. shall be a character string containing a general statement of the purpose for which items in the register are made, including any limits to the scope of the register, and the types of applications for which the items are intended. In the case the LCML register .lt.i.gt.contentSummary.lt..sl.i.gt. shall be contain:.gu.Register of LCML metalanguage objects used to extend the LCML metalanguage LC_ElementCharacteristic and LC_ClassCharacteristic and the extension only of LC_Element .gu..</skos:definition>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="&iso19135_1286;RE_Register"/>
+  </owl:Class>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ClassCharacteristicDescriptorItem.metalanguageObjectDescription -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ClassCharacteristicDescriptorItem.metalanguageObjectDescription">
+    <rdfs:label>metalanguageObjectDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ClassCharacteristicDescriptorItem.metalanguageObjectAttributes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ClassCharacteristicDescriptorItem.metalanguageObjectAttributes">
+    <rdfs:label>metalanguageObjectAttributes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ClassCharacteristicDescriptorItem.referenceToParentClass -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ClassCharacteristicDescriptorItem.referenceToParentClass">
+    <rdfs:label>referenceToParentClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ClassCharacteristicDescriptorItem.referenceToSupersededClass -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ClassCharacteristicDescriptorItem.referenceToSupersededClass">
+    <rdfs:label>referenceToSupersededClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ClassCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementCharacteristicDescriptorItem.metalanguageObjectDescription -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementCharacteristicDescriptorItem.metalanguageObjectDescription">
+    <rdfs:label>metalanguageObjectDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementCharacteristicDescriptorItem.metalanguageObjectAttributes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementCharacteristicDescriptorItem.metalanguageObjectAttributes">
+    <rdfs:label>metalanguageObjectAttributes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementCharacteristicDescriptorItem.referenceToParentClass -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementCharacteristicDescriptorItem.referenceToParentClass">
+    <rdfs:label>referenceToParentClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementCharacteristicDescriptorItem.referenceToSupersededClass -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementCharacteristicDescriptorItem.referenceToSupersededClass">
+    <rdfs:label>referenceToSupersededClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementCharacteristicDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementDescriptorItem.metalanguageObjectDescription -->
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementDescriptorItem.metalanguageObjectDescription">
+    <rdfs:label>metalanguageObjectDescription</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementDescriptorItem.metalanguageObjectAttributes -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementDescriptorItem.metalanguageObjectAttributes">
+    <rdfs:label>metalanguageObjectAttributes</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementDescriptorItem.referenceToParentClass -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementDescriptorItem.referenceToParentClass">
+    <rdfs:label>referenceToParentClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <!-- DatatypeProperty: LC_ElementDescriptorItem.referenceToSupersededClass -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <owl:DatatypeProperty rdf:about="&iso19144-2;LC_ElementDescriptorItem.referenceToSupersededClass">
+    <rdfs:label>referenceToSupersededClass</rdfs:label>
+    <rdfs:isDefinedBy>http://standards.iso.org/iso/19144/-2/ed-1/en/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="&iso19144-2;LC_ElementDescriptorItem"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+</rdf:RDF>
+
