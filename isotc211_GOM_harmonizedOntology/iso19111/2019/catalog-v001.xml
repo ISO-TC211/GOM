@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://def.isotc211.org/iso19150/-2/2012/base" uri="file:/D:/isotc211_GOM_harmonizedOntology/iso19150/-2/2012/base.rdf"/>
+    <group id="Folder Repository, directory=file:/D:/isotc211_GOM_harmonizedOntology/iso19103/2015/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1572984435180" name="http://def.isotc211.org/iso19111/2019/ReferencingByCoordinates" uri="ReferencingByCoordinates.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1572984435180" name="http://def.isotc211.org/iso19111/2019/CommonClasses" uri="CommonClasses.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1572984435180" name="http://def.isotc211.org/iso19111/2019/Coordinates" uri="Coordinates.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1572984435180" name="http://def.isotc211.org/iso19111/2019/CoordinateReferenceSystems" uri="CoordinateReferenceSystems.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1572984435180" name="http://def.isotc211.org/iso19111/2019/CoordinateSystems" uri="CoordinateSystems.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1572984435180" name="http://def.isotc211.org/iso19111/2019/Datums" uri="Datums.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1572984435180" name="http://def.isotc211.org/iso19111/2019/CoordinateOperations" uri="CoordinateOperations.rdf"/>
+    </group>
+</catalog>
