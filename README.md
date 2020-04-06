@@ -1,4 +1,4 @@
 GOM
 ===
 
-Group for Ontology Management
+Group for Ontology Management.
