@@ -753,10 +753,8 @@
   </iso19112:NativenessValue>
   <skos:Collection rdf:about="&iso19112Code;NativenessValueCollection">
     <skos:prefLabel>NativenessValue - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19112Code;NativenessValue/endonym"/>
-      <skos:Concept rdf:resource="&iso19112Code;NativenessValue/exonym"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19112Code;NativenessValue/endonym"/>
+    <skos:member rdf:resource="&iso19112Code;NativenessValue/exonym"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++-->
@@ -816,15 +814,13 @@
   </iso19112:StatusValue>
   <skos:Collection rdf:about="&iso19112Code;StatusValueCollection">
     <skos:prefLabel>StatusValue - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19112Code;StatusValue/official"/>
-      <skos:Concept rdf:resource="&iso19112Code;StatusValue/standardized"/>
-      <skos:Concept rdf:resource="&iso19112Code;StatusValue/preferred"/>
-      <skos:Concept rdf:resource="&iso19112Code;StatusValue/historical"/>
-      <skos:Concept rdf:resource="&iso19112Code;StatusValue/alias"/>
-      <skos:Concept rdf:resource="&iso19112Code;StatusValue/short"/>
-      <skos:Concept rdf:resource="&iso19112Code;StatusValue/other"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19112Code;StatusValue/official"/>
+    <skos:member rdf:resource="&iso19112Code;StatusValue/standardized"/>
+    <skos:member rdf:resource="&iso19112Code;StatusValue/preferred"/>
+    <skos:member rdf:resource="&iso19112Code;StatusValue/historical"/>
+    <skos:member rdf:resource="&iso19112Code;StatusValue/alias"/>
+    <skos:member rdf:resource="&iso19112Code;StatusValue/short"/>
+    <skos:member rdf:resource="&iso19112Code;StatusValue/other"/>
   </skos:Collection>
 
 </rdf:RDF>
