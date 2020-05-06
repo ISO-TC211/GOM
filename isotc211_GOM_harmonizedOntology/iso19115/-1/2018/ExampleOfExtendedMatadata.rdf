@@ -201,8 +201,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19115-1Code;KeywordTypeCode -BioCollection">
     <skos:prefLabel>KeywordTypeCode -Bio - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
 
 </rdf:RDF>
