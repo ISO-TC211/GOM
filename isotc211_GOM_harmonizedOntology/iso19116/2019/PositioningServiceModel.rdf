@@ -2167,13 +2167,11 @@
   </iso19116:PS_DOPType>
   <skos:Collection rdf:about="&iso19116Code;PS_DOPTypeCollection">
     <skos:prefLabel>PS_DOPType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_DOPType/GDOP"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_DOPType/PDOP"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_DOPType/HDOP"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_DOPType/VDOP"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_DOPType/TDOP"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/GDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/PDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/HDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/VDOP"/>
+    <skos:member rdf:resource="&iso19116Code;PS_DOPType/TDOP"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++-->
@@ -2240,15 +2238,13 @@
   </iso19116:PS_FrequencyList>
   <skos:Collection rdf:about="&iso19116Code;PS_FrequencyListCollection">
     <skos:prefLabel>PS_FrequencyList - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_FrequencyList/L1"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_FrequencyList/L2"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_FrequencyList/L3"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L2"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_FrequencyList/L2.sl.L3"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L3"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L2.sl.L3"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L2"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L3"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L2"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L2.sl.L3"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L3"/>
+    <skos:member rdf:resource="&iso19116Code;PS_FrequencyList/L1.sl.L2.sl.L3"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -2294,12 +2290,10 @@
   </iso19116:PS_MeasurementType>
   <skos:Collection rdf:about="&iso19116Code;PS_MeasurementTypeCollection">
     <skos:prefLabel>PS_MeasurementType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_MeasurementType/position"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_MeasurementType/orientation"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_MeasurementType/motion"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_MeasurementType/rotation"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/position"/>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/orientation"/>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/motion"/>
+    <skos:member rdf:resource="&iso19116Code;PS_MeasurementType/rotation"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -2338,11 +2332,9 @@
   </iso19116:PS_OffsetSourceType>
   <skos:Collection rdf:about="&iso19116Code;PS_OffsetSourceTypeCollection">
     <skos:prefLabel>PS_OffsetSourceType - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_OffsetSourceType/manufacturerSpecifications"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_OffsetSourceType/measured"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_OffsetSourceType/publication"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_OffsetSourceType/manufacturerSpecifications"/>
+    <skos:member rdf:resource="&iso19116Code;PS_OffsetSourceType/measured"/>
+    <skos:member rdf:resource="&iso19116Code;PS_OffsetSourceType/publication"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -2402,14 +2394,12 @@
   </iso19116:PS_PositionFixMode>
   <skos:Collection rdf:about="&iso19116Code;PS_PositionFixModeCollection">
     <skos:prefLabel>PS_PositionFixMode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionFixMode/Nofix"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionFixMode/Oldfix"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionFixMode/1D"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionFixMode/2D"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionFixMode/3D"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionFixMode/3Doverdetermined"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/Nofix"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/Oldfix"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/1D"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/2D"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/3D"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionFixMode/3Doverdetermined"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++-->
@@ -2441,10 +2431,8 @@
   </iso19116:PS_PositioningMode>
   <skos:Collection rdf:about="&iso19116Code;PS_PositioningModeCollection">
     <skos:prefLabel>PS_PositioningMode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositioningMode/Absolute"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositioningMode/Relative"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningMode/Absolute"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositioningMode/Relative"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++++++-->
@@ -2504,14 +2492,12 @@
   </iso19116:PS_PositionSolutionMethod>
   <skos:Collection rdf:about="&iso19116Code;PS_PositionSolutionMethodCollection">
     <skos:prefLabel>PS_PositionSolutionMethod - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionSolutionMethod/C.sl.Acode"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionSolutionMethod/PPScode"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionSolutionMethod/StaticFloating"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionSolutionMethod/StaticFixed"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionSolutionMethod/KinematicFloating"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_PositionSolutionMethod/KinematicFixed"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/C.sl.Acode"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/PPScode"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/StaticFloating"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/StaticFixed"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/KinematicFloating"/>
+    <skos:member rdf:resource="&iso19116Code;PS_PositionSolutionMethod/KinematicFixed"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
@@ -2585,11 +2571,9 @@
   </iso19116:PS_ReferencingMethod>
   <skos:Collection rdf:about="&iso19116Code;PS_ReferencingMethodCollection">
     <skos:prefLabel>PS_ReferencingMethod - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReferencingMethod/coordinate"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReferencingMethod/linear"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReferencingMethod/gridCell"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_ReferencingMethod/coordinate"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReferencingMethod/linear"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReferencingMethod/gridCell"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++++++++++-->
@@ -2663,16 +2647,14 @@
   </iso19116:PS_ReliabilityEvaluationCode>
   <skos:Collection rdf:about="&iso19116Code;PS_ReliabilityEvaluationCodeCollection">
     <skos:prefLabel>PS_ReliabilityEvaluationCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/usability"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/powerAvailability"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/collectionTime"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/proximity"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/performance"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/movement"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/accuracy"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/trustability"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/usability"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/powerAvailability"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/collectionTime"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/proximity"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/performance"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/movement"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/accuracy"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ReliabilityEvaluationCode/trustability"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++-->
@@ -2760,18 +2742,16 @@
   </iso19116:PS_SystemCapability>
   <skos:Collection rdf:about="&iso19116Code;PS_SystemCapabilityCollection">
     <skos:prefLabel>PS_SystemCapability - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/positionData"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/positionalQuality"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/motionData"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/motionQuality"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/attitudeData"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/attitudeQuality"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/rotationalData"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/rotationalQuality"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/technologySpecificData"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_SystemCapability/rawMeasurementData"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/positionData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/positionalQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/motionData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/motionQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/attitudeData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/attitudeQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/rotationalData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/rotationalQuality"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/technologySpecificData"/>
+    <skos:member rdf:resource="&iso19116Code;PS_SystemCapability/rawMeasurementData"/>
   </skos:Collection>
 
 </rdf:RDF>
