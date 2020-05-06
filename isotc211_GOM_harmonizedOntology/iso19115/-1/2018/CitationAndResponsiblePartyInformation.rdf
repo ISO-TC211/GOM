@@ -1293,23 +1293,22 @@
     <skos:definition>date identifies when an instance of the resource was distributed</skos:definition>
   </iso19115-1:CI_DateTypeCode>
   <skos:Collection rdf:about="&iso19115-1Code;CI_DateTypeCodeCollection">
-    <skos:members rdf:parseType="Collection">
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/creation"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/publication"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/revision"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/expiry"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastUpdate"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastRevision"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/nextUpdate"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/unavailable"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/inForce"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/adopted"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/deprecated"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/superseded"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityBegins"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityExpires"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/released"/>
-      <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/distribution"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/creation"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/publication"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/revision"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/expiry"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastUpdate"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/lastRevision"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/nextUpdate"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/unavailable"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/inForce"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/adopted"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/deprecated"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/superseded"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityBegins"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/validityExpires"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/released"/>
+    <skos:member rdf:resource="&iso19115-1Code;CI_DateTypeCode/distribution"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
