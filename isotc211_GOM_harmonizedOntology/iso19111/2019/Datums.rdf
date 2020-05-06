@@ -737,11 +737,9 @@
   </iso19111:RealizationMethod>
   <skos:Collection rdf:about="&iso19111Code;RealizationMethodCollection">
     <skos:prefLabel>RealizationMethod - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19111Code;RealizationMethod/levelling"/>
-      <skos:Concept rdf:resource="&iso19111Code;RealizationMethod/geoid"/>
-      <skos:Concept rdf:resource="&iso19111Code;RealizationMethod/tidal"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19111Code;RealizationMethod/levelling"/>
+    <skos:member rdf:resource="&iso19111Code;RealizationMethod/geoid"/>
+    <skos:member rdf:resource="&iso19111Code;RealizationMethod/tidal"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++-->
@@ -766,9 +764,7 @@
   </iso19111:Calendar>
   <skos:Collection rdf:about="&iso19111Code;CalendarCollection">
     <skos:prefLabel>Calendar - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19111Code;Calendar/prolepticGregorian"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19111Code;Calendar/prolepticGregorian"/>
   </skos:Collection>
 
 </rdf:RDF>
