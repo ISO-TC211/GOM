@@ -509,8 +509,6 @@
   </skos:ConceptScheme>
   <skos:Collection rdf:about="&iso19115Code;MD_DistributionUnitsCollection">
     <skos:prefLabel>MD_DistributionUnits - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-    </skos:members>
   </skos:Collection>
   <owl:Class rdf:about="&iso19115;MD_MediumFormatCode">
     <rdfs:label>MD_MediumFormatCode</rdfs:label>
