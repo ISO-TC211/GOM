@@ -3844,14 +3844,12 @@ then self.detector-.gt.size.eq.1
   </iso19130-1:SD_RotationSequence>
   <skos:Collection rdf:about="&iso19130-1Code;SD_RotationSequenceCollection">
     <skos:prefLabel>SD_RotationSequence - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_RotationSequence/XYZ"/>
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_RotationSequence/XZY"/>
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_RotationSequence/YXZ"/>
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_RotationSequence/YZX"/>
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_RotationSequence/ZXY"/>
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_RotationSequence/ZYX"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19130-1Code;SD_RotationSequence/XYZ"/>
+    <skos:member rdf:resource="&iso19130-1Code;SD_RotationSequence/XZY"/>
+    <skos:member rdf:resource="&iso19130-1Code;SD_RotationSequence/YXZ"/>
+    <skos:member rdf:resource="&iso19130-1Code;SD_RotationSequence/YZX"/>
+    <skos:member rdf:resource="&iso19130-1Code;SD_RotationSequence/ZXY"/>
+    <skos:member rdf:resource="&iso19130-1Code;SD_RotationSequence/ZYX"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++++++-->
@@ -3881,10 +3879,8 @@ then self.detector-.gt.size.eq.1
   </iso19130-1:SD_SAROrientationCode>
   <skos:Collection rdf:about="&iso19130-1Code;SD_SAROrientationCodeCollection">
     <skos:prefLabel>SD_SAROrientationCode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_SAROrientationCode/left"/>
-      <skos:Concept rdf:resource="&iso19130-1Code;SD_SAROrientationCode/right"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19130-1Code;SD_SAROrientationCode/left"/>
+    <skos:member rdf:resource="&iso19130-1Code;SD_SAROrientationCode/right"/>
   </skos:Collection>
 
   <!--+++++++++++++++++++++++++++++-->
