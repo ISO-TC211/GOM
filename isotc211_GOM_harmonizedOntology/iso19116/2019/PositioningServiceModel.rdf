@@ -2110,11 +2110,9 @@
   </iso19116:PS_CorrectionMethod>
   <skos:Collection rdf:about="&iso19116Code;PS_CorrectionMethodCollection">
     <skos:prefLabel>PS_CorrectionMethod - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_CorrectionMethod/DGPS"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_CorrectionMethod/PreciseEphemeris"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_CorrectionMethod/PreciseEphemerisWithClockCorrection"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_CorrectionMethod/DGPS"/>
+    <skos:member rdf:resource="&iso19116Code;PS_CorrectionMethod/PreciseEphemeris"/>
+    <skos:member rdf:resource="&iso19116Code;PS_CorrectionMethod/PreciseEphemerisWithClockCorrection"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++-->
@@ -2529,10 +2527,8 @@
   </iso19116:PS_ProcessingMode>
   <skos:Collection rdf:about="&iso19116Code;PS_ProcessingModeCollection">
     <skos:prefLabel>PS_ProcessingMode - Collection</skos:prefLabel>
-    <skos:members rdf:parseType="Collection">
-      <skos:Concept rdf:resource="&iso19116Code;PS_ProcessingMode/PostProcessed"/>
-      <skos:Concept rdf:resource="&iso19116Code;PS_ProcessingMode/RealTime"/>
-    </skos:members>
+    <skos:member rdf:resource="&iso19116Code;PS_ProcessingMode/PostProcessed"/>
+    <skos:member rdf:resource="&iso19116Code;PS_ProcessingMode/RealTime"/>
   </skos:Collection>
 
   <!--++++++++++++++++++++++++++++++++-->
