@@ -8,7 +8,7 @@ These resources are not official ISO or TC publications and are placed here for 
 1. **ISO 19135-1 Roles for the management of registers**
     * A SKOS taxonomy of _role_ types extracted from ISO/DIS 19135-1 _Geographic information — Procedures for item registration_
     * Available formats
-        * [Markdown](iso19135-RolesResponsibilities.md)
+        * Markdown: [repository file](iso19135-roles.md), [rendered](https://raw.githack.com/ISO-TC211/GOM/master/experimental/iso19135-roles.md)
             * automatically rendered from the RDF file using [pyLODE](https://github.com/RDFLib/pyLODE)
-        * [RDF (turtle)](iso19135-RolesResponsibilities.ttl)
+        * RDF (turtle): [repository file](iso19135-roles.ttl), [rendered](https://raw.githack.com/ISO-TC211/GOM/master/experimental/iso19135-roles.ttl)
             * manually generated, conforms to the [VocPub Profile](https://w3id.org/profile/vocpub) of SKOS
