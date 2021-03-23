@@ -1,7 +1,7 @@
-# GOM Experimenatal
+# GOM Experimental
 This folder contains experimental GOM resources to assist with testing potential new forms of GOM information delivery.
 
-These resources are not official ISO or TC publications and are only placed here for experimentation purposes.
+These resources are not official ISO or TC publications and are placed here for experimentation purposes only.
 
 ## Experimental Resources
 
