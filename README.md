@@ -9,7 +9,7 @@ This repository contains outputs from GOM in the form of [Web ontology Language 
 Published output from GOM is provided at https://def.isotc211.org/ .
 
 ## Experimental works
-The folder [experimental/](experimental/) contains alternate forms of TC211 ontology content such as [SKOS](https://www.w3.org/TR/skos-reference/) taxonomies extracted from standards' ontologies
+The folder [experimental/](experimental/) contains alternate forms of TC211 ontology content extracted from standards' ontologies to test potential delivery mechanisms.
 
 ## License
 The content for this repository is not licensed for use independently of the standards that contain their sources.
