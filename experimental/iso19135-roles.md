@@ -29,9 +29,6 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE)
 1. [Legend](#legend)
 
 
-## Overview
-
-**Figure 1:** Ontology overview
 ## Concepts
 * [Control body](https://example.com/roles-responsibilities/control-body)
 * [Register manager](https://example.com/roles-responsibilities/register-manager)
@@ -99,6 +96,7 @@ Description | Organization authorized by a Register Owner to propose changes to 
   * `http://www.w3.org/2004/02/skos/core#`
 * **xsd**
   * `http://www.w3.org/2001/XMLSchema#`
+
 
 ## Legend
 * Collections: cl
