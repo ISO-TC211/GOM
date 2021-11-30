@@ -18,13 +18,13 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE)
   * [https://www.iso.org/standard/54721.html](https://www.iso.org/standard/54721.html)
 
 * **Taxonomy RDF**
-  * RDF ([data_file.ttl](turtle))
+  * RDF ([turtle](https://github.com/ISO-TC211/GOM/blob/master/experimental/iso19135-roles.ttl))
 ### Description
 <p>Roles defined by the standard ISO/DIS 19135-1 <em>Geographic information — Procedures for item registration</em>, Section 5 "Roles and responsibilities in the management of registers"</p>
 
 
 ## Table of Contents
-1. [Object Concepts](#concepts)
+1. [Concepts](#concepts)
 1. [Namespaces](#namespaces)
 1. [Legend](#legend)
 
@@ -32,7 +32,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE)
 ## Overview
 
 **Figure 1:** Ontology overview
-## Classes
+## Concepts
 * [Control body](https://example.com/roles-responsibilities/control-body)
 * [Register manager](https://example.com/roles-responsibilities/register-manager)
 * [Register owner](https://example.com/roles-responsibilities/register-owner)
@@ -45,31 +45,42 @@ Property | Value
 --- | ---
 URI | `https://example.com/roles-responsibilities/control-body`
 Preferred Labels |Control body (en)<br />
+Description | Group of technical experts that makes decisions regarding the content of a Register
+
 ### Register manager
 Property | Value
 --- | ---
 URI | `https://example.com/roles-responsibilities/register-manager`
-Preferred Labels |Register manager (en)<br />
+Preferred Labels |Register manager (en)
+Description | Organization that establishes a Register
+
 ### Register owner
 Property | Value
 --- | ---
 URI | `https://example.com/roles-responsibilities/register-owner`
-Preferred Labels |Register owner (en)<br />
+Preferred Labels |Register owner (en)
+Description | Organization to which management of a Register has been delegated by the Register Owner
+
 ### Register user
 Property | Value
 --- | ---
 URI | `https://example.com/roles-responsibilities/register-user`
-Preferred Labels |Register user (en)<br />
+Preferred Labels |Register user (en)
+Description | Users of a Register without another defined role
+
 ### Registry manager
 Property | Value
 --- | ---
 URI | `https://example.com/roles-responsibilities/registry-manager`
-Preferred Labels |Registry manager (en)<br />
+Preferred Labels |Registry manager (en)
+Description | A Registry Ranager is a person or an organization responsible for the day-to-day management of a Registry
+
 ### Submitting organization
 Property | Value
 --- | ---
 URI | `https://example.com/roles-responsibilities/submitting-organization`
-Preferred Labels |Submitting organization (en)<br />
+Preferred Labels |Submitting organization (en)
+Description | Organization authorized by a Register Owner to propose changes to the content of a Register
 
 ## Namespaces
 * **dcterms**
