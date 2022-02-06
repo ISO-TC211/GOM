@@ -1,0 +1,83 @@
+@prefix : <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/DS_AssociationTypeCode/> .
+@prefix cs: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/DS_AssociationTypeCode> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cs: a skos:ConceptScheme ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition ""@en ;
+    skos:prefLabel "Association Type Codes" .
+
+:collectiveTitle a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition " 	common title for a collection of resources. NOTE: title identifies elements of a series collectively, combined with information about what volumes are available at the source cite"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "collective title" .
+
+:crossReference a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "reference from one dataset to another"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "crossReference" .
+
+:dependency a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "associated through a dependency"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "dependency" .
+
+:isComposedOf a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "reference to resources that are parts of this resource"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "is composed of" .
+
+:largerWorkCitation a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "reference to a master dataset of which this one is a part"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "larger work citation" .
+
+:partOfSeamlessDatabase a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "part of the same structured set of data held in a computer"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "part of seamless database" .
+
+:revisionOf a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "resource is a revision of associated resource"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "revision of" .
+
+:series a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "associated through a common heritage such as produced to a common product specification"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "series" .
+
+:stereoMate a :DS_AssociationTypeCode,
+        skos:Concept ;
+    dct:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "part of a set of imagery that when used together, provides three-dimensional images"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "stereo mate" .
