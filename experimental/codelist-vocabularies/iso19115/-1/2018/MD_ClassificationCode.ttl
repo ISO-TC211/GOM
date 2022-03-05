@@ -1,0 +1,122 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:confidential
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "confidential" ;
+    skos:topConceptOf cs: ;
+.
+
+:forOfficialUseOnly
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "forOfficialUseOnly" ;
+    skos:topConceptOf cs: ;
+.
+
+:limitedDistribution
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "limitedDistribution" ;
+    skos:topConceptOf cs: ;
+.
+
+:protected
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "protected" ;
+    skos:topConceptOf cs: ;
+.
+
+:restricted
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "restricted" ;
+    skos:topConceptOf cs: ;
+.
+
+:secret
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "secret" ;
+    skos:topConceptOf cs: ;
+.
+
+:sensitiveButUnclassified
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sensitiveButUnclassified" ;
+    skos:topConceptOf cs: ;
+.
+
+:topSecret
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "topSecret" ;
+    skos:topConceptOf cs: ;
+.
+
+:unclassified
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "unclassified" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_ClassificationCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :confidential ,
+        :forOfficialUseOnly ,
+        :limitedDistribution ,
+        :protected ,
+        :restricted ,
+        :secret ,
+        :sensitiveButUnclassified ,
+        :topSecret ,
+        :unclassified ;
+    skos:prefLabel
+        "MD_ClassificationCode - ConceptScheme" ,
+        "MD_ClassificationCode"@en ;
+.
+

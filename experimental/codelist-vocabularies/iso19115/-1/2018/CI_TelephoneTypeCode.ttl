@@ -1,0 +1,65 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_TelephoneTypeCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_TelephoneTypeCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:facsimile
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "telephone provides facsimile service" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "facsimile" ;
+    skos:topConceptOf cs: ;
+.
+
+:sms
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "telephone provides sms service" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sms" ;
+    skos:topConceptOf cs: ;
+.
+
+:voice
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "telephone provides voice service" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "voice" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_TelephoneTypeCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :facsimile ,
+        :sms ,
+        :voice ;
+    skos:prefLabel
+        "CI_TelephoneTypeCode - ConceptScheme" ,
+        "CI_TelephoneTypeCode"@en ;
+.
+

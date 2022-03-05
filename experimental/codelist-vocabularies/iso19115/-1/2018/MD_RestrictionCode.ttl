@@ -1,0 +1,202 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:confidential
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "confidential" ;
+    skos:topConceptOf cs: ;
+.
+
+:copyright
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "copyright" ;
+    skos:topConceptOf cs: ;
+.
+
+:in-confidence
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "in-confidence" ;
+    skos:topConceptOf cs: ;
+.
+
+:intellectualPropertyRights
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "intellectualPropertyRights" ;
+    skos:topConceptOf cs: ;
+.
+
+:licence
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "licence" ;
+    skos:topConceptOf cs: ;
+.
+
+:licenceDistributor
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "licenceDistributor" ;
+    skos:topConceptOf cs: ;
+.
+
+:licenceEndUser
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "licenceEndUser" ;
+    skos:topConceptOf cs: ;
+.
+
+:licenceUnrestricted
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "licenceUnrestricted" ;
+    skos:topConceptOf cs: ;
+.
+
+:otherRestrictions
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "otherRestrictions" ;
+    skos:topConceptOf cs: ;
+.
+
+:patent
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "patent" ;
+    skos:topConceptOf cs: ;
+.
+
+:patentPending
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "patentPending" ;
+    skos:topConceptOf cs: ;
+.
+
+:private
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "private" ;
+    skos:topConceptOf cs: ;
+.
+
+:restricted
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "restricted" ;
+    skos:topConceptOf cs: ;
+.
+
+:sensitiveButUnclassified
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sensitiveButUnclassified" ;
+    skos:topConceptOf cs: ;
+.
+
+:statutory
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "statutory" ;
+    skos:topConceptOf cs: ;
+.
+
+:trademark
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "trademark" ;
+    skos:topConceptOf cs: ;
+.
+
+:unrestricted
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "unrestricted" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_RestrictionCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :confidential ,
+        :copyright ,
+        :in-confidence ,
+        :intellectualPropertyRights ,
+        :licence ,
+        :licenceDistributor ,
+        :licenceEndUser ,
+        :licenceUnrestricted ,
+        :otherRestrictions ,
+        :patent ,
+        :patentPending ,
+        :private ,
+        :restricted ,
+        :sensitiveButUnclassified ,
+        :statutory ,
+        :trademark ,
+        :unrestricted ;
+    skos:prefLabel
+        "MD_RestrictionCode - ConceptScheme" ,
+        "MD_RestrictionCode"@en ;
+.
+

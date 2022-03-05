@@ -1,0 +1,92 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_SpatialRepresentationTypeCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation/code/MD_SpatialRepresentationTypeCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:grid
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "grid" ;
+    skos:topConceptOf cs: ;
+.
+
+:stereoModel
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "stereoModel" ;
+    skos:topConceptOf cs: ;
+.
+
+:textTable
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "textTable" ;
+    skos:topConceptOf cs: ;
+.
+
+:tin
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "tin" ;
+    skos:topConceptOf cs: ;
+.
+
+:vector
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "vector" ;
+    skos:topConceptOf cs: ;
+.
+
+:video
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "video" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#MD_SpatialRepresentationTypeCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :grid ,
+        :stereoModel ,
+        :textTable ,
+        :tin ,
+        :vector ,
+        :video ;
+    skos:prefLabel
+        "MD_SpatialRepresentationTypeCode - ConceptScheme" ,
+        "MD_SpatialRepresentationTypeCode"@en ;
+.
+

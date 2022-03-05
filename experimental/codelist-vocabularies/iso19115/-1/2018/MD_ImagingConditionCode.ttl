@@ -1,0 +1,153 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_ImagingConditionCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_ImagingConditionCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:blurredImage
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "portion of the image is blurred" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "blurredImage" ;
+    skos:topConceptOf cs: ;
+.
+
+:cloud
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "portion of the image is partially obscured by cloud cover" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "cloud" ;
+    skos:topConceptOf cs: ;
+.
+
+:degradingObliquity
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "acute angle between the plane of the ecliptic (the plane of the Earth's orbit) and the plane of the celestial equator" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "degradingObliquity" ;
+    skos:topConceptOf cs: ;
+.
+
+:fog
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "portion of the image is partially obscured by fog" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "fog" ;
+    skos:topConceptOf cs: ;
+.
+
+:heavySmokeOrDust
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "portion of the image is partially obscured by heavy smoke or dust" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "heavySmokeOrDust" ;
+    skos:topConceptOf cs: ;
+.
+
+:night
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "image was taken at night" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "night" ;
+    skos:topConceptOf cs: ;
+.
+
+:rain
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "image was taken during rainfall" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "rain" ;
+    skos:topConceptOf cs: ;
+.
+
+:semiDarkness
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "image was taken during semi-dark conditions-twilight conditions" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "semiDarkness" ;
+    skos:topConceptOf cs: ;
+.
+
+:shadow
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "portion of the image is obscured by shadow" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "shadow" ;
+    skos:topConceptOf cs: ;
+.
+
+:snow
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "portion of the image is obscured by snow" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "snow" ;
+    skos:topConceptOf cs: ;
+.
+
+:terrainMasking
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "terrainMasking" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/ContentInformation#MD_ImagingConditionCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :blurredImage ,
+        :cloud ,
+        :degradingObliquity ,
+        :fog ,
+        :heavySmokeOrDust ,
+        :night ,
+        :rain ,
+        :semiDarkness ,
+        :shadow ,
+        :snow ,
+        :terrainMasking ;
+    skos:prefLabel
+        "MD_ImagingConditionCode - ConceptScheme" ,
+        "MD_ImagingConditionCode"@en ;
+.
+

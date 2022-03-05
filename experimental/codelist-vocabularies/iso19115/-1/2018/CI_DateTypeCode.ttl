@@ -1,0 +1,208 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:adopted
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource was adopted" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "adopted" ;
+    skos:topConceptOf cs: ;
+.
+
+:creation
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when the resource was brought into existence" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "creation" ;
+    skos:topConceptOf cs: ;
+.
+
+:deprecated
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource was deprecated" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "deprecated" ;
+    skos:topConceptOf cs: ;
+.
+
+:distribution
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when an instance of the resource was distributed" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "distribution" ;
+    skos:topConceptOf cs: ;
+.
+
+:expiry
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource expires" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "expiry" ;
+    skos:topConceptOf cs: ;
+.
+
+:inForce
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource became in force" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "inForce" ;
+    skos:topConceptOf cs: ;
+.
+
+:lastRevision
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource was last reviewed" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lastRevision" ;
+    skos:topConceptOf cs: ;
+.
+
+:lastUpdate
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource was last updated" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lastUpdate" ;
+    skos:topConceptOf cs: ;
+.
+
+:nextUpdate
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource will be next updated" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "nextUpdate" ;
+    skos:topConceptOf cs: ;
+.
+
+:publication
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when the resource was issued" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "publication" ;
+    skos:topConceptOf cs: ;
+.
+
+:released
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "the date that the resource shall be released for public access" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "released" ;
+    skos:topConceptOf cs: ;
+.
+
+:revision
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when the resource was examined or re-examined and improved or amended" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "revision" ;
+    skos:topConceptOf cs: ;
+.
+
+:superseded
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource was superseded or replaced by another resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "superseded" ;
+    skos:topConceptOf cs: ;
+.
+
+:unavailable
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "date identifies when resource became not available or obtainable" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "unavailable" ;
+    skos:topConceptOf cs: ;
+.
+
+:validityBegins
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "time at which the data is considered to become valid. Note: There could be quite a delay between creation and validity begins" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "validityBegins" ;
+    skos:topConceptOf cs: ;
+.
+
+:validityExpires
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "time at which the data is no longer considered to be valid" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "validityExpires" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_DateTypeCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :adopted ,
+        :creation ,
+        :deprecated ,
+        :distribution ,
+        :expiry ,
+        :inForce ,
+        :lastRevision ,
+        :lastUpdate ,
+        :nextUpdate ,
+        :publication ,
+        :released ,
+        :revision ,
+        :superseded ,
+        :unavailable ,
+        :validityBegins ,
+        :validityExpires ;
+    skos:prefLabel
+        "CI_DateTypeCode - ConceptScheme" ,
+        "CI_DateTypeCode"@en ;
+.
+

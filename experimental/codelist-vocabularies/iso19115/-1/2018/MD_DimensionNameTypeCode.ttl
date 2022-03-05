@@ -1,0 +1,120 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:column
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "abscissa (x) axis" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "column" ;
+    skos:topConceptOf cs: ;
+.
+
+:crossTrack
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "perpendicular to the direction of motion of the scan point" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "crossTrack" ;
+    skos:topConceptOf cs: ;
+.
+
+:line
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "scan line of a sensor" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "line" ;
+    skos:topConceptOf cs: ;
+.
+
+:row
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "ordinate (y) axis" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "row" ;
+    skos:topConceptOf cs: ;
+.
+
+:sample
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "element along a scan line" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sample" ;
+    skos:topConceptOf cs: ;
+.
+
+:time
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "duration" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "time" ;
+    skos:topConceptOf cs: ;
+.
+
+:track
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "along the direction of motion of the scan point" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "track" ;
+    skos:topConceptOf cs: ;
+.
+
+:vertical
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "vertical (z) axis" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "vertical" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation#MD_DimensionNameTypeCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :column ,
+        :crossTrack ,
+        :line ,
+        :row ,
+        :sample ,
+        :time ,
+        :track ,
+        :vertical ;
+    skos:prefLabel
+        "MD_DimensionNameTypeCode - ConceptScheme" ,
+        "MD_DimensionNameTypeCode"@en ;
+.
+

@@ -1,0 +1,252 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:author
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who authored the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "author" ;
+    skos:topConceptOf cs: ;
+.
+
+:coAuthor
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who jointly authors the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "coAuthor" ;
+    skos:topConceptOf cs: ;
+.
+
+:collaborator
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who assists with the generation of the resource other than the principal investigator" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "collaborator" ;
+    skos:topConceptOf cs: ;
+.
+
+:contributor
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party contributing to the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "contributor" ;
+    skos:topConceptOf cs: ;
+.
+
+:custodian
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "custodian" ;
+    skos:topConceptOf cs: ;
+.
+
+:distributor
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who distributes the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "distributor" ;
+    skos:topConceptOf cs: ;
+.
+
+:editor
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who reviewed or modified the resource to improve the content" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "editor" ;
+    skos:topConceptOf cs: ;
+.
+
+:funder
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party providing monetary support for the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "funder" ;
+    skos:topConceptOf cs: ;
+.
+
+:mediator
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "a class of entity that mediates access to the resource and for whom the resource is intended or useful" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "mediator" ;
+    skos:topConceptOf cs: ;
+.
+
+:originator
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who created the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "originator" ;
+    skos:topConceptOf cs: ;
+.
+
+:owner
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party that owns the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "owner" ;
+    skos:topConceptOf cs: ;
+.
+
+:pointOfContact
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who can be contacted for acquiring knowledge about or acquisition of the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "pointOfContact" ;
+    skos:topConceptOf cs: ;
+.
+
+:principalInvestigator
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "key party responsible for gathering information and conducting research" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "principalInvestigator" ;
+    skos:topConceptOf cs: ;
+.
+
+:processor
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who has processed the data in a manner such that the resource has been modified" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "processor" ;
+    skos:topConceptOf cs: ;
+.
+
+:publisher
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who published the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "publisher" ;
+    skos:topConceptOf cs: ;
+.
+
+:resourceProvider
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party that supplies the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "resourceProvider" ;
+    skos:topConceptOf cs: ;
+.
+
+:rightsHolder
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party owning or managing rights over the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "rightsHolder" ;
+    skos:topConceptOf cs: ;
+.
+
+:sponsor
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who speaks for the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sponsor" ;
+    skos:topConceptOf cs: ;
+.
+
+:stakeholder
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who has an interest in the resource or the use of the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "stakeholder" ;
+    skos:topConceptOf cs: ;
+.
+
+:user
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "party who uses the resource" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "user" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_RoleCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :author ,
+        :coAuthor ,
+        :collaborator ,
+        :contributor ,
+        :custodian ,
+        :distributor ,
+        :editor ,
+        :funder ,
+        :mediator ,
+        :originator ,
+        :owner ,
+        :pointOfContact ,
+        :principalInvestigator ,
+        :processor ,
+        :publisher ,
+        :resourceProvider ,
+        :rightsHolder ,
+        :sponsor ,
+        :stakeholder ,
+        :user ;
+    skos:prefLabel
+        "CI_RoleCode - ConceptScheme" ,
+        "CI_RoleCode"@en ;
+.
+

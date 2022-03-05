@@ -1,0 +1,312 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:compoundEngineeringParametric
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundEngineeringParametric" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundEngineeringParametricTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundEngineeringParametricTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundEngineeringTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundEngineeringTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundEngineeringVertical
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundEngineeringVertical" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundEngineeringVerticalTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundEngineeringVerticalTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundGeographic2DParametric
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundGeographic2DParametric" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundGeographic2DParametricTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundGeographic2DParametricTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundGeographic2DTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundGeographic2DTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundGeographic2DVertical
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundGeographic2DVertical" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundGeographic2DVerticalTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundGeographic2DVerticalTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundGeographic3DTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundGeographic3DTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundProjected2DParametric
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundProjected2DParametric" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundProjected2DParametricTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundProjected2DParametricTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundProjectedTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundProjectedTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundProjectedVertical
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundProjectedVertical" ;
+    skos:topConceptOf cs: ;
+.
+
+:compoundProjectedVerticalTemporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compoundProjectedVerticalTemporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:engineering
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "engineering" ;
+    skos:topConceptOf cs: ;
+.
+
+:engineeringDesign
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "engineeringDesign" ;
+    skos:topConceptOf cs: ;
+.
+
+:engineeringImage
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "engineeringImage" ;
+    skos:topConceptOf cs: ;
+.
+
+:geodeticGeocentric
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "geodeticGeocentric" ;
+    skos:topConceptOf cs: ;
+.
+
+:geodeticGeographic2D
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "geodeticGeographic2D" ;
+    skos:topConceptOf cs: ;
+.
+
+:geodeticGeographic3D
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "geodeticGeographic3D" ;
+    skos:topConceptOf cs: ;
+.
+
+:geographicIdentifier
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "geographicIdentifier" ;
+    skos:topConceptOf cs: ;
+.
+
+:linear
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "linear" ;
+    skos:topConceptOf cs: ;
+.
+
+:parametric
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "parametric" ;
+    skos:topConceptOf cs: ;
+.
+
+:projected
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "projected" ;
+    skos:topConceptOf cs: ;
+.
+
+:temporal
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "temporal" ;
+    skos:topConceptOf cs: ;
+.
+
+:vertical
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:prefLabel "vertical" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#MD_ReferenceSystemTypeCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :compoundEngineeringParametric ,
+        :compoundEngineeringParametricTemporal ,
+        :compoundEngineeringTemporal ,
+        :compoundEngineeringVertical ,
+        :compoundEngineeringVerticalTemporal ,
+        :compoundGeographic2DParametric ,
+        :compoundGeographic2DParametricTemporal ,
+        :compoundGeographic2DTemporal ,
+        :compoundGeographic2DVertical ,
+        :compoundGeographic2DVerticalTemporal ,
+        :compoundGeographic3DTemporal ,
+        :compoundProjected2DParametric ,
+        :compoundProjected2DParametricTemporal ,
+        :compoundProjectedTemporal ,
+        :compoundProjectedVertical ,
+        :compoundProjectedVerticalTemporal ,
+        :engineering ,
+        :engineeringDesign ,
+        :engineeringImage ,
+        :geodeticGeocentric ,
+        :geodeticGeographic2D ,
+        :geodeticGeographic3D ,
+        :geographicIdentifier ,
+        :linear ,
+        :parametric ,
+        :projected ,
+        :temporal ,
+        :vertical ;
+    skos:prefLabel
+        "MD_ReferenceSystemTypeCode - ConceptScheme" ,
+        "MD_ReferenceSystemTypeCode"@en ;
+.
+

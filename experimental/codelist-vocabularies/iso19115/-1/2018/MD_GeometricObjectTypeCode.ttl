@@ -1,0 +1,98 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:complex
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "set of geometric primitives such that their boundaries can be represented as a union of other primitives" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "complex" ;
+    skos:topConceptOf cs: ;
+.
+
+:composite
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "connected set of curves, solids or surfaces" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "composite" ;
+    skos:topConceptOf cs: ;
+.
+
+:curve
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "bounded, 1-dimensional geometric primitive, representing the continuous image of a line" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "curve" ;
+    skos:topConceptOf cs: ;
+.
+
+:point
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "zero-dimensional geometric primitive, representing a position but not having an extent" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "point" ;
+    skos:topConceptOf cs: ;
+.
+
+:solid
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "solid" ;
+    skos:topConceptOf cs: ;
+.
+
+:surface
+    a skos:Concept ;
+    dcterms:provenance "Code originally presented in the standard"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "surface" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation#MD_GeometricObjectTypeCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :complex ,
+        :composite ,
+        :curve ,
+        :point ,
+        :solid ,
+        :surface ;
+    skos:prefLabel
+        "MD_GeometricObjectTypeCode - ConceptScheme" ,
+        "MD_GeometricObjectTypeCode"@en ;
+.
+
