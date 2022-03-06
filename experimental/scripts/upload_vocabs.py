@@ -44,6 +44,14 @@ def upload_vocab(p: Path):
         )
 
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
+
+        r = httpx.post(
+            DB_ENDPOINT,
+            data={"update": f"ADD <{iri}> TO DEFAULT"},
+            auth=(DB_USERNAME, DB_PASSWORD),
+        )
+
+        assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
     else:
         print(f"Skipping {p.name}, invalid")
 
@@ -51,6 +59,8 @@ def upload_vocab(p: Path):
 def upload_all_vocabs():
     for vocab in list_all_vocabs():
         upload_vocab(vocab)
+
+
 
 
 def drop_all_vocabs():

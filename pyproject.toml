@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gom"
+version = "0.1.0"
+description = ""
+authors = ["nicholascar <nicholas.car@surroundaustralia.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rdflib = "^6.1.1"
+httpx = "^0.22.0"
+pyshacl = "^0.18.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
