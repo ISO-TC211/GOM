@@ -8,8 +8,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :campaign
     a skos:Concept ;
+    dcterms:identifier "campaign"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "campaign" ;
     skos:topConceptOf cs: ;
@@ -17,8 +19,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :collection
     a skos:Concept ;
+    dcterms:identifier "collection"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "collection" ;
     skos:topConceptOf cs: ;
@@ -26,8 +30,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :exercise
     a skos:Concept ;
+    dcterms:identifier "exercise"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "exercise" ;
     skos:topConceptOf cs: ;
@@ -35,8 +41,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :experiment
     a skos:Concept ;
+    dcterms:identifier "experiment"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "experiment" ;
     skos:topConceptOf cs: ;
@@ -44,8 +52,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :investigation
     a skos:Concept ;
+    dcterms:identifier "investigation"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "investigation" ;
     skos:topConceptOf cs: ;
@@ -53,8 +63,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mission
     a skos:Concept ;
+    dcterms:identifier "mission"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "mission" ;
     skos:topConceptOf cs: ;
@@ -62,8 +74,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :operation
     a skos:Concept ;
+    dcterms:identifier "operation"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "operation" ;
     skos:topConceptOf cs: ;
@@ -71,8 +85,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :platform
     a skos:Concept ;
+    dcterms:identifier "platform"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "platform" ;
     skos:topConceptOf cs: ;
@@ -80,8 +96,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :process
     a skos:Concept ;
+    dcterms:identifier "process"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "process" ;
     skos:topConceptOf cs: ;
@@ -89,8 +107,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :program
     a skos:Concept ;
+    dcterms:identifier "program"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "program" ;
     skos:topConceptOf cs: ;
@@ -98,8 +118,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :project
     a skos:Concept ;
+    dcterms:identifier "project"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "project" ;
     skos:topConceptOf cs: ;
@@ -107,8 +129,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :sensor
     a skos:Concept ;
+    dcterms:identifier "sensor"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sensor" ;
     skos:topConceptOf cs: ;
@@ -116,8 +140,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :study
     a skos:Concept ;
+    dcterms:identifier "study"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "study" ;
     skos:topConceptOf cs: ;
@@ -125,8 +151,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :task
     a skos:Concept ;
+    dcterms:identifier "task"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "task" ;
     skos:topConceptOf cs: ;
@@ -134,8 +162,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :trial
     a skos:Concept ;
+    dcterms:identifier "trial"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "trial" ;
     skos:topConceptOf cs: ;
@@ -152,6 +182,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "DS_InitiativeTypeCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#DS_InitiativeTypeCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -175,8 +206,6 @@ cs:
         :study ,
         :task ,
         :trial ;
-    skos:prefLabel
-        "DS_InitiativeTypeCode - ConceptScheme" ,
-        "DS_InitiativeTypeCode"@en ;
+    skos:prefLabel "DS_InitiativeTypeCode"@en ;
 .
 

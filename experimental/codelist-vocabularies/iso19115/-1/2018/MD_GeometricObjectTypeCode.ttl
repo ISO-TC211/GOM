@@ -8,6 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :complex
     a skos:Concept ;
+    dcterms:identifier "complex"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "set of geometric primitives such that their boundaries can be represented as a union of other primitives" ;
@@ -18,6 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :composite
     a skos:Concept ;
+    dcterms:identifier "composite"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "connected set of curves, solids or surfaces" ;
@@ -28,6 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :curve
     a skos:Concept ;
+    dcterms:identifier "curve"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "bounded, 1-dimensional geometric primitive, representing the continuous image of a line" ;
@@ -38,6 +41,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :point
     a skos:Concept ;
+    dcterms:identifier "point"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "zero-dimensional geometric primitive, representing a position but not having an extent" ;
@@ -48,6 +52,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :solid
     a skos:Concept ;
+    dcterms:identifier "solid"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space" ;
@@ -58,6 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :surface
     a skos:Concept ;
+    dcterms:identifier "surface"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane" ;
@@ -77,6 +83,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "MD_GeometricObjectTypeCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation#MD_GeometricObjectTypeCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -91,8 +98,6 @@ cs:
         :point ,
         :solid ,
         :surface ;
-    skos:prefLabel
-        "MD_GeometricObjectTypeCode - ConceptScheme" ,
-        "MD_GeometricObjectTypeCode"@en ;
+    skos:prefLabel "MD_GeometricObjectTypeCode"@en ;
 .
 

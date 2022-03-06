@@ -8,6 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :author
     a skos:Concept ;
+    dcterms:identifier "author"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who authored the resource" ;
@@ -18,6 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :coAuthor
     a skos:Concept ;
+    dcterms:identifier "coAuthor"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who jointly authors the resource" ;
@@ -28,6 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :collaborator
     a skos:Concept ;
+    dcterms:identifier "collaborator"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who assists with the generation of the resource other than the principal investigator" ;
@@ -38,6 +41,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :contributor
     a skos:Concept ;
+    dcterms:identifier "contributor"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party contributing to the resource" ;
@@ -48,6 +52,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :custodian
     a skos:Concept ;
+    dcterms:identifier "custodian"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource" ;
@@ -58,6 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :distributor
     a skos:Concept ;
+    dcterms:identifier "distributor"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who distributes the resource" ;
@@ -68,6 +74,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :editor
     a skos:Concept ;
+    dcterms:identifier "editor"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who reviewed or modified the resource to improve the content" ;
@@ -78,6 +85,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :funder
     a skos:Concept ;
+    dcterms:identifier "funder"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party providing monetary support for the resource" ;
@@ -88,6 +96,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mediator
     a skos:Concept ;
+    dcterms:identifier "mediator"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "a class of entity that mediates access to the resource and for whom the resource is intended or useful" ;
@@ -98,6 +107,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :originator
     a skos:Concept ;
+    dcterms:identifier "originator"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who created the resource" ;
@@ -108,6 +118,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :owner
     a skos:Concept ;
+    dcterms:identifier "owner"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party that owns the resource" ;
@@ -118,6 +129,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :pointOfContact
     a skos:Concept ;
+    dcterms:identifier "pointOfContact"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who can be contacted for acquiring knowledge about or acquisition of the resource" ;
@@ -128,6 +140,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :principalInvestigator
     a skos:Concept ;
+    dcterms:identifier "principalInvestigator"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "key party responsible for gathering information and conducting research" ;
@@ -138,6 +151,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :processor
     a skos:Concept ;
+    dcterms:identifier "processor"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who has processed the data in a manner such that the resource has been modified" ;
@@ -148,6 +162,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :publisher
     a skos:Concept ;
+    dcterms:identifier "publisher"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who published the resource" ;
@@ -158,6 +173,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :resourceProvider
     a skos:Concept ;
+    dcterms:identifier "resourceProvider"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party that supplies the resource" ;
@@ -168,6 +184,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :rightsHolder
     a skos:Concept ;
+    dcterms:identifier "rightsHolder"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party owning or managing rights over the resource" ;
@@ -178,6 +195,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :sponsor
     a skos:Concept ;
+    dcterms:identifier "sponsor"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who speaks for the resource" ;
@@ -188,6 +206,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :stakeholder
     a skos:Concept ;
+    dcterms:identifier "stakeholder"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who has an interest in the resource or the use of the resource" ;
@@ -198,6 +217,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :user
     a skos:Concept ;
+    dcterms:identifier "user"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "party who uses the resource" ;
@@ -217,6 +237,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "CI_RoleCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_RoleCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -245,8 +266,6 @@ cs:
         :sponsor ,
         :stakeholder ,
         :user ;
-    skos:prefLabel
-        "CI_RoleCode - ConceptScheme" ,
-        "CI_RoleCode"@en ;
+    skos:prefLabel "CI_RoleCode"@en ;
 .
 

@@ -8,6 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :blurredImage
     a skos:Concept ;
+    dcterms:identifier "blurredImage"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is blurred" ;
@@ -18,6 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :cloud
     a skos:Concept ;
+    dcterms:identifier "cloud"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is partially obscured by cloud cover" ;
@@ -28,6 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :degradingObliquity
     a skos:Concept ;
+    dcterms:identifier "degradingObliquity"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "acute angle between the plane of the ecliptic (the plane of the Earth's orbit) and the plane of the celestial equator" ;
@@ -38,6 +41,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :fog
     a skos:Concept ;
+    dcterms:identifier "fog"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is partially obscured by fog" ;
@@ -48,6 +52,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :heavySmokeOrDust
     a skos:Concept ;
+    dcterms:identifier "heavySmokeOrDust"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is partially obscured by heavy smoke or dust" ;
@@ -58,6 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :night
     a skos:Concept ;
+    dcterms:identifier "night"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "image was taken at night" ;
@@ -68,6 +74,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :rain
     a skos:Concept ;
+    dcterms:identifier "rain"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "image was taken during rainfall" ;
@@ -78,6 +85,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :semiDarkness
     a skos:Concept ;
+    dcterms:identifier "semiDarkness"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "image was taken during semi-dark conditions-twilight conditions" ;
@@ -88,6 +96,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :shadow
     a skos:Concept ;
+    dcterms:identifier "shadow"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is obscured by shadow" ;
@@ -98,6 +107,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :snow
     a skos:Concept ;
+    dcterms:identifier "snow"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is obscured by snow" ;
@@ -108,6 +118,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :terrainMasking
     a skos:Concept ;
+    dcterms:identifier "terrainMasking"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest" ;
@@ -127,6 +138,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "MD_ImagingConditionCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/ContentInformation#MD_ImagingConditionCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -146,8 +158,6 @@ cs:
         :shadow ,
         :snow ,
         :terrainMasking ;
-    skos:prefLabel
-        "MD_ImagingConditionCode - ConceptScheme" ,
-        "MD_ImagingConditionCode"@en ;
+    skos:prefLabel "MD_ImagingConditionCode"@en ;
 .
 

@@ -8,6 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :audioDigital
     a skos:Concept ;
+    dcterms:identifier "audioDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "digital audio recording" ;
@@ -18,6 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :audioHardcopy
     a skos:Concept ;
+    dcterms:identifier "audioHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "audio recording delivered by analog media, such as a magnetic tape" ;
@@ -28,6 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :diagramDigital
     a skos:Concept ;
+    dcterms:identifier "diagramDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format" ;
@@ -38,6 +41,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :diagramHardcopy
     a skos:Concept ;
+    dcterms:identifier "diagramHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media" ;
@@ -48,6 +52,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :documentDigital
     a skos:Concept ;
+    dcterms:identifier "documentDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "digital representation of a primarily textual item (can contain illustrations also)" ;
@@ -58,6 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :documentHardcopy
     a skos:Concept ;
+    dcterms:identifier "documentHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media" ;
@@ -68,6 +74,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :imageDigital
     a skos:Concept ;
+    dcterms:identifier "imageDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format" ;
@@ -78,6 +85,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :imageHardcopy
     a skos:Concept ;
+    dcterms:identifier "imageHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user" ;
@@ -88,6 +96,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mapDigital
     a skos:Concept ;
+    dcterms:identifier "mapDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "map represented in raster or vector form" ;
@@ -98,6 +107,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mapHardcopy
     a skos:Concept ;
+    dcterms:identifier "mapHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "map printed on paper, photographic material, or other media for use directly by the human user" ;
@@ -108,6 +118,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :modelDigital
     a skos:Concept ;
+    dcterms:identifier "modelDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "multi-dimensional digital representation of a feature, process, etc." ;
@@ -118,6 +129,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :modelHardcopy
     a skos:Concept ;
+    dcterms:identifier "modelHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "3-dimensional, physical model" ;
@@ -128,6 +140,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :multimediaDigital
     a skos:Concept ;
+    dcterms:identifier "multimediaDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "information representation using simultaneously various digital modes for text, sound, image" ;
@@ -138,6 +151,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :multimediaHardcopy
     a skos:Concept ;
+    dcterms:identifier "multimediaHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "information representation using simultaneously various analog modes for text, sound, image" ;
@@ -148,6 +162,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :physicalObject
     a skos:Concept ;
+    dcterms:identifier "physicalObject"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "a physical object. Eg. Rock or mineral sample, microscope slide" ;
@@ -158,6 +173,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :profileDigital
     a skos:Concept ;
+    dcterms:identifier "profileDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "vertical cross-section in digital form" ;
@@ -168,6 +184,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :profileHardcopy
     a skos:Concept ;
+    dcterms:identifier "profileHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "vertical cross-section printed on paper, etc." ;
@@ -178,6 +195,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :tableDigital
     a skos:Concept ;
+    dcterms:identifier "tableDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "digital representation of facts or figures systematically displayed, especially in columns" ;
@@ -188,6 +206,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :tableHardcopy
     a skos:Concept ;
+    dcterms:identifier "tableHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media" ;
@@ -198,6 +217,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :videoDigital
     a skos:Concept ;
+    dcterms:identifier "videoDigital"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "digital video recording" ;
@@ -208,6 +228,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :videoHardcopy
     a skos:Concept ;
+    dcterms:identifier "videoHardcopy"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "video recording on film" ;
@@ -227,6 +248,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "CI_PresentationFormCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_PresentationFormCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -256,8 +278,6 @@ cs:
         :tableHardcopy ,
         :videoDigital ,
         :videoHardcopy ;
-    skos:prefLabel
-        "CI_PresentationFormCode - ConceptScheme" ,
-        "CI_PresentationFormCode"@en ;
+    skos:prefLabel "CI_PresentationFormCode"@en ;
 .
 

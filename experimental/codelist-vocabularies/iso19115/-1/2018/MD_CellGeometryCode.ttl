@@ -8,6 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :area
     a skos:Concept ;
+    dcterms:identifier "area"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "each cell represents an area" ;
@@ -18,6 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :point
     a skos:Concept ;
+    dcterms:identifier "point"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "each cell represents a point" ;
@@ -28,6 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :stratum
     a skos:Concept ;
+    dcterms:identifier "stratum"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "height range for a single point vertical profile" ;
@@ -38,6 +41,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :voxel
     a skos:Concept ;
+    dcterms:identifier "voxel"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "each cell represents a volumetric measurement on a regular grid in three dimensional space" ;
@@ -57,6 +61,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "MD_CellGeometryCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation#MD_CellGeometryCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -69,8 +74,6 @@ cs:
         :point ,
         :stratum ,
         :voxel ;
-    skos:prefLabel
-        "MD_CellGeometryCode - ConceptScheme" ,
-        "MD_CellGeometryCode"@en ;
+    skos:prefLabel "MD_CellGeometryCode"@en ;
 .
 

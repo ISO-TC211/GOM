@@ -8,6 +8,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "CountryCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/Language-CharactersetLocalizationInformation#CountryCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -15,9 +16,7 @@ cs:
     dcterms:publisher <http://def.isotc211.org/org/tc211> ;
     dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     skos:definition "An ISO standard's ConceptScheme"@en ;
-    skos:prefLabel
-        "CountryCode - ConceptScheme" ,
-        "CountryCode"@en ;
+    skos:prefLabel "CountryCode"@en ;
 .
 
 <http://def.isotc211.org/org/tc211>

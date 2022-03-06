@@ -8,8 +8,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :aggregate
     a skos:Concept ;
+    dcterms:identifier "aggregate"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "aggregate" ;
     skos:topConceptOf cs: ;
@@ -17,8 +19,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :application
     a skos:Concept ;
+    dcterms:identifier "application"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "application" ;
     skos:topConceptOf cs: ;
@@ -26,8 +30,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :attribute
     a skos:Concept ;
+    dcterms:identifier "attribute"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "attribute" ;
     skos:topConceptOf cs: ;
@@ -35,8 +41,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :attributeType
     a skos:Concept ;
+    dcterms:identifier "attributeType"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "attributeType" ;
     skos:topConceptOf cs: ;
@@ -44,8 +52,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :collection
     a skos:Concept ;
+    dcterms:identifier "collection"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "collection" ;
     skos:topConceptOf cs: ;
@@ -53,8 +63,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :collectionHardware
     a skos:Concept ;
+    dcterms:identifier "collectionHardware"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "collectionHardware" ;
     skos:topConceptOf cs: ;
@@ -62,8 +74,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :collectionSession
     a skos:Concept ;
+    dcterms:identifier "collectionSession"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "collectionSession" ;
     skos:topConceptOf cs: ;
@@ -71,8 +85,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :coverage
     a skos:Concept ;
+    dcterms:identifier "coverage"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "coverage" ;
     skos:topConceptOf cs: ;
@@ -80,8 +96,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :dataset
     a skos:Concept ;
+    dcterms:identifier "dataset"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "dataset" ;
     skos:topConceptOf cs: ;
@@ -89,8 +107,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :dimensionGroup
     a skos:Concept ;
+    dcterms:identifier "dimensionGroup"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "dimensionGroup" ;
     skos:topConceptOf cs: ;
@@ -98,8 +118,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :document
     a skos:Concept ;
+    dcterms:identifier "document"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "document" ;
     skos:topConceptOf cs: ;
@@ -107,8 +129,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :feature
     a skos:Concept ;
+    dcterms:identifier "feature"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "feature" ;
     skos:topConceptOf cs: ;
@@ -116,8 +140,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :featureType
     a skos:Concept ;
+    dcterms:identifier "featureType"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "featureType" ;
     skos:topConceptOf cs: ;
@@ -125,8 +151,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :fieldSession
     a skos:Concept ;
+    dcterms:identifier "fieldSession"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "fieldSession" ;
     skos:topConceptOf cs: ;
@@ -134,8 +162,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :initiative
     a skos:Concept ;
+    dcterms:identifier "initiative"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "initiative" ;
     skos:topConceptOf cs: ;
@@ -143,8 +173,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :metadata
     a skos:Concept ;
+    dcterms:identifier "metadata"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "metadata" ;
     skos:topConceptOf cs: ;
@@ -152,8 +184,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :model
     a skos:Concept ;
+    dcterms:identifier "model"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "model" ;
     skos:topConceptOf cs: ;
@@ -161,8 +195,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :nonGeographicDataset
     a skos:Concept ;
+    dcterms:identifier "nonGeographicDataset"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "nonGeographicDataset" ;
     skos:topConceptOf cs: ;
@@ -170,8 +206,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :product
     a skos:Concept ;
+    dcterms:identifier "product"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "product" ;
     skos:topConceptOf cs: ;
@@ -179,8 +217,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :propertyType
     a skos:Concept ;
+    dcterms:identifier "propertyType"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "propertyType" ;
     skos:topConceptOf cs: ;
@@ -188,8 +228,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :repository
     a skos:Concept ;
+    dcterms:identifier "repository"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "repository" ;
     skos:topConceptOf cs: ;
@@ -197,8 +239,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :sample
     a skos:Concept ;
+    dcterms:identifier "sample"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sample" ;
     skos:topConceptOf cs: ;
@@ -206,8 +250,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :series
     a skos:Concept ;
+    dcterms:identifier "series"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "series" ;
     skos:topConceptOf cs: ;
@@ -215,8 +261,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :service
     a skos:Concept ;
+    dcterms:identifier "service"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "service" ;
     skos:topConceptOf cs: ;
@@ -224,8 +272,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :software
     a skos:Concept ;
+    dcterms:identifier "software"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "software" ;
     skos:topConceptOf cs: ;
@@ -233,8 +283,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :tile
     a skos:Concept ;
+    dcterms:identifier "tile"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "tile" ;
     skos:topConceptOf cs: ;
@@ -251,6 +303,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "MD_ScopeCode"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_ScopeCode> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -285,8 +338,6 @@ cs:
         :service ,
         :software ,
         :tile ;
-    skos:prefLabel
-        "MD_ScopeCode - ConceptScheme" ,
-        "MD_ScopeCode"@en ;
+    skos:prefLabel "MD_ScopeCode"@en ;
 .
 

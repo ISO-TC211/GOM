@@ -1,0 +1,35 @@
+name: Upload merged vocabs
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bring in repo
+        uses: actions/checkout@v1
+      - name: install Python dependencies
+        run: |
+          python -m pip install -U pip
+          pip install -r experimental/codelist-vocabularies/scripts/requirements.txt
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.4
+        with:
+          output: ','
+      - name: detect file changes
+        env:
+            DB_USERNAME: ${{secrets.DB_USERNAME}}
+            DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+        run: |
+          echo 'Run update script...'
+          a=${{steps.file_changes.outputs.files_added}}
+          m=${{steps.file_changes.outputs.files_modified}}
+          d=${{steps.file_changes.outputs.files_removed}}
+          r=${{steps.file_changes.outputs.files_renamed}}
+          if [ -z $a ]; then a="x"; fi
+          if [ -z $m ]; then m="x"; fi
+          if [ -z $d ]; then d="x"; fi
+          if [ -z $r ]; then r="x"; fi
+          python scripts/update_vocabs.py -a $a -m $m -d $d -r $r

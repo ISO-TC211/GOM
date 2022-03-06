@@ -199,7 +199,7 @@
     <rdfs:isDefinedBy>http://standards.iso.org/iso/19115/-1/ed-1/en/</rdfs:isDefinedBy>
     <dct:isFormatOf rdf:resource="&iso19115-1;KeywordTypeCode-Bio"/>
   </skos:ConceptScheme>
-  <skos:Collection rdf:about="&iso19115-1Code;KeywordTypeCode -BioCollection">
+  <skos:Collection rdf:about="&iso19115-1Code;KeywordTypeCode-BioCollection">
     <skos:prefLabel>KeywordTypeCode -Bio - Collection</skos:prefLabel>
   </skos:Collection>
 

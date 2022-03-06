@@ -8,8 +8,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :COM
     a skos:Concept ;
+    dcterms:identifier "COM"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "COM" ;
     skos:topConceptOf cs: ;
@@ -17,8 +19,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :CORBA
     a skos:Concept ;
+    dcterms:identifier "CORBA"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "CORBA" ;
     skos:topConceptOf cs: ;
@@ -26,8 +30,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :FTP
     a skos:Concept ;
+    dcterms:identifier "FTP"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "FTP" ;
     skos:topConceptOf cs: ;
@@ -35,8 +41,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :HTTP
     a skos:Concept ;
+    dcterms:identifier "HTTP"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "HTTP" ;
     skos:topConceptOf cs: ;
@@ -44,8 +52,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :JAVA
     a skos:Concept ;
+    dcterms:identifier "JAVA"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "JAVA" ;
     skos:topConceptOf cs: ;
@@ -53,8 +63,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :SOAP
     a skos:Concept ;
+    dcterms:identifier "SOAP"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "SOAP" ;
     skos:topConceptOf cs: ;
@@ -62,8 +74,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :SQL
     a skos:Concept ;
+    dcterms:identifier "SQL"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "SQL" ;
     skos:topConceptOf cs: ;
@@ -71,8 +85,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :XML
     a skos:Concept ;
+    dcterms:identifier "XML"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "XML" ;
     skos:topConceptOf cs: ;
@@ -80,8 +96,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :Z3950
     a skos:Concept ;
+    dcterms:identifier "Z3950"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Z3950" ;
     skos:topConceptOf cs: ;
@@ -89,8 +107,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :webServices
     a skos:Concept ;
+    dcterms:identifier "webServices"^^xsd:token ;
     dcterms:provenance "Code originally presented in the standard"@en ;
     rdfs:isDefinedBy cs: ;
+    skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "webServices" ;
     skos:topConceptOf cs: ;
@@ -107,6 +127,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "DCPList"^^xsd:token ;
     dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ServiceMetadataInformation#DCPList> ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
@@ -125,8 +146,6 @@ cs:
         :XML ,
         :Z3950 ,
         :webServices ;
-    skos:prefLabel
-        "DCPList - ConceptScheme" ,
-        "DCPList"@en ;
+    skos:prefLabel "DCPList"@en ;
 .
 
