@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "cpio" ;
+    skos:prefLabel "cpio"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "highSierra" ;
+    skos:prefLabel "highSierra"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "iso9660" ;
+    skos:prefLabel "iso9660"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "iso9660AppleHFS" ;
+    skos:prefLabel "iso9660AppleHFS"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "iso9660RockRidge" ;
+    skos:prefLabel "iso9660RockRidge"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "tar" ;
+    skos:prefLabel "tar"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "udf" ;
+    skos:prefLabel "udf"@en ;
     skos:topConceptOf cs: ;
 .
 

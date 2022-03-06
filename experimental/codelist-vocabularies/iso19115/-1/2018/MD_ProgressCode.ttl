@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "accepted" ;
+    skos:prefLabel "accepted"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "completed" ;
+    skos:prefLabel "completed"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "deprecated" ;
+    skos:prefLabel "deprecated"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "final" ;
+    skos:prefLabel "final"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "historicalArchive" ;
+    skos:prefLabel "historicalArchive"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "notAccepted" ;
+    skos:prefLabel "notAccepted"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "obsolete" ;
+    skos:prefLabel "obsolete"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "onGoing" ;
+    skos:prefLabel "onGoing"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "pending" ;
+    skos:prefLabel "pending"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -112,7 +112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "planned" ;
+    skos:prefLabel "planned"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -123,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "proposed" ;
+    skos:prefLabel "proposed"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "required" ;
+    skos:prefLabel "required"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -145,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "retired" ;
+    skos:prefLabel "retired"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -156,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "superseded" ;
+    skos:prefLabel "superseded"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -167,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "tentative" ;
+    skos:prefLabel "tentative"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "underDevelopment" ;
+    skos:prefLabel "underDevelopment"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -189,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "valid" ;
+    skos:prefLabel "valid"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -200,7 +200,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "withdrawn" ;
+    skos:prefLabel "withdrawn"@en ;
     skos:topConceptOf cs: ;
 .
 

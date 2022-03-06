@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundEngineeringParametric" ;
+    skos:prefLabel "compoundEngineeringParametric"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundEngineeringParametricTemporal" ;
+    skos:prefLabel "compoundEngineeringParametricTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundEngineeringTemporal" ;
+    skos:prefLabel "compoundEngineeringTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundEngineeringVertical" ;
+    skos:prefLabel "compoundEngineeringVertical"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundEngineeringVerticalTemporal" ;
+    skos:prefLabel "compoundEngineeringVerticalTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundGeographic2DParametric" ;
+    skos:prefLabel "compoundGeographic2DParametric"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundGeographic2DParametricTemporal" ;
+    skos:prefLabel "compoundGeographic2DParametricTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundGeographic2DTemporal" ;
+    skos:prefLabel "compoundGeographic2DTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundGeographic2DVertical" ;
+    skos:prefLabel "compoundGeographic2DVertical"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -112,7 +112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundGeographic2DVerticalTemporal" ;
+    skos:prefLabel "compoundGeographic2DVerticalTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -123,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundGeographic3DTemporal" ;
+    skos:prefLabel "compoundGeographic3DTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundProjected2DParametric" ;
+    skos:prefLabel "compoundProjected2DParametric"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -145,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundProjected2DParametricTemporal" ;
+    skos:prefLabel "compoundProjected2DParametricTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -156,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundProjectedTemporal" ;
+    skos:prefLabel "compoundProjectedTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -167,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundProjectedVertical" ;
+    skos:prefLabel "compoundProjectedVertical"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compoundProjectedVerticalTemporal" ;
+    skos:prefLabel "compoundProjectedVerticalTemporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -189,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "engineering" ;
+    skos:prefLabel "engineering"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -200,7 +200,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "engineeringDesign" ;
+    skos:prefLabel "engineeringDesign"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -211,7 +211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "engineeringImage" ;
+    skos:prefLabel "engineeringImage"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -222,7 +222,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "geodeticGeocentric" ;
+    skos:prefLabel "geodeticGeocentric"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -233,7 +233,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "geodeticGeographic2D" ;
+    skos:prefLabel "geodeticGeographic2D"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -244,7 +244,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "geodeticGeographic3D" ;
+    skos:prefLabel "geodeticGeographic3D"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -255,7 +255,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "geographicIdentifier" ;
+    skos:prefLabel "geographicIdentifier"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -266,7 +266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "linear" ;
+    skos:prefLabel "linear"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -277,7 +277,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "parametric" ;
+    skos:prefLabel "parametric"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -288,7 +288,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "projected" ;
+    skos:prefLabel "projected"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -299,7 +299,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "temporal" ;
+    skos:prefLabel "temporal"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -310,7 +310,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "vertical" ;
+    skos:prefLabel "vertical"@en ;
     skos:topConceptOf cs: ;
 .
 

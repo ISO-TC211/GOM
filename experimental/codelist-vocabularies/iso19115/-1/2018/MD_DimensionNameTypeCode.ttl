@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "abscissa (x) axis" ;
     skos:inScheme cs: ;
-    skos:prefLabel "column" ;
+    skos:prefLabel "column"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "perpendicular to the direction of motion of the scan point" ;
     skos:inScheme cs: ;
-    skos:prefLabel "crossTrack" ;
+    skos:prefLabel "crossTrack"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "scan line of a sensor" ;
     skos:inScheme cs: ;
-    skos:prefLabel "line" ;
+    skos:prefLabel "line"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "ordinate (y) axis" ;
     skos:inScheme cs: ;
-    skos:prefLabel "row" ;
+    skos:prefLabel "row"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "element along a scan line" ;
     skos:inScheme cs: ;
-    skos:prefLabel "sample" ;
+    skos:prefLabel "sample"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "duration" ;
     skos:inScheme cs: ;
-    skos:prefLabel "time" ;
+    skos:prefLabel "time"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "along the direction of motion of the scan point" ;
     skos:inScheme cs: ;
-    skos:prefLabel "track" ;
+    skos:prefLabel "track"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "vertical (z) axis" ;
     skos:inScheme cs: ;
-    skos:prefLabel "vertical" ;
+    skos:prefLabel "vertical"@en ;
     skos:topConceptOf cs: ;
 .
 

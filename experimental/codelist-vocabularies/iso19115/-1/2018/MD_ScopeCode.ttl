@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "aggregate" ;
+    skos:prefLabel "aggregate"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "application" ;
+    skos:prefLabel "application"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "attribute" ;
+    skos:prefLabel "attribute"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "attributeType" ;
+    skos:prefLabel "attributeType"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "collection" ;
+    skos:prefLabel "collection"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "collectionHardware" ;
+    skos:prefLabel "collectionHardware"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "collectionSession" ;
+    skos:prefLabel "collectionSession"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "coverage" ;
+    skos:prefLabel "coverage"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "dataset" ;
+    skos:prefLabel "dataset"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -112,7 +112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "dimensionGroup" ;
+    skos:prefLabel "dimensionGroup"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -123,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "document" ;
+    skos:prefLabel "document"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "feature" ;
+    skos:prefLabel "feature"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -145,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "featureType" ;
+    skos:prefLabel "featureType"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -156,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "fieldSession" ;
+    skos:prefLabel "fieldSession"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -167,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "initiative" ;
+    skos:prefLabel "initiative"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "metadata" ;
+    skos:prefLabel "metadata"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -189,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "model" ;
+    skos:prefLabel "model"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -200,7 +200,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "nonGeographicDataset" ;
+    skos:prefLabel "nonGeographicDataset"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -211,7 +211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "product" ;
+    skos:prefLabel "product"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -222,7 +222,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "propertyType" ;
+    skos:prefLabel "propertyType"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -233,7 +233,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "repository" ;
+    skos:prefLabel "repository"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -244,7 +244,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sample" ;
+    skos:prefLabel "sample"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -255,7 +255,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "series" ;
+    skos:prefLabel "series"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -266,7 +266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "service" ;
+    skos:prefLabel "service"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -277,7 +277,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "software" ;
+    skos:prefLabel "software"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -288,7 +288,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "tile" ;
+    skos:prefLabel "tile"@en ;
     skos:topConceptOf cs: ;
 .
 

@@ -54,6 +54,8 @@ for cs in g.subjects(RDF.type, SKOS.ConceptScheme):
             else:
                 if p2 == RDFS.isDefinedBy:
                     g2.add((s2, p2, cs))
+                elif p2 == SKOS.prefLabel:
+                    g2.add((s2, p2, Literal(str(o2), lang="en")))
                 else:
                     g2.add((s2, p2, o2))
         g2.add((c, DCTERMS.provenance, Literal("Code originally presented in the standard", lang="en")))

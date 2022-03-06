@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was adopted" ;
     skos:inScheme cs: ;
-    skos:prefLabel "adopted" ;
+    skos:prefLabel "adopted"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when the resource was brought into existence" ;
     skos:inScheme cs: ;
-    skos:prefLabel "creation" ;
+    skos:prefLabel "creation"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was deprecated" ;
     skos:inScheme cs: ;
-    skos:prefLabel "deprecated" ;
+    skos:prefLabel "deprecated"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when an instance of the resource was distributed" ;
     skos:inScheme cs: ;
-    skos:prefLabel "distribution" ;
+    skos:prefLabel "distribution"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource expires" ;
     skos:inScheme cs: ;
-    skos:prefLabel "expiry" ;
+    skos:prefLabel "expiry"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource became in force" ;
     skos:inScheme cs: ;
-    skos:prefLabel "inForce" ;
+    skos:prefLabel "inForce"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was last reviewed" ;
     skos:inScheme cs: ;
-    skos:prefLabel "lastRevision" ;
+    skos:prefLabel "lastRevision"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was last updated" ;
     skos:inScheme cs: ;
-    skos:prefLabel "lastUpdate" ;
+    skos:prefLabel "lastUpdate"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource will be next updated" ;
     skos:inScheme cs: ;
-    skos:prefLabel "nextUpdate" ;
+    skos:prefLabel "nextUpdate"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -112,7 +112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when the resource was issued" ;
     skos:inScheme cs: ;
-    skos:prefLabel "publication" ;
+    skos:prefLabel "publication"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -123,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "the date that the resource shall be released for public access" ;
     skos:inScheme cs: ;
-    skos:prefLabel "released" ;
+    skos:prefLabel "released"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when the resource was examined or re-examined and improved or amended" ;
     skos:inScheme cs: ;
-    skos:prefLabel "revision" ;
+    skos:prefLabel "revision"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -145,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was superseded or replaced by another resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "superseded" ;
+    skos:prefLabel "superseded"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -156,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource became not available or obtainable" ;
     skos:inScheme cs: ;
-    skos:prefLabel "unavailable" ;
+    skos:prefLabel "unavailable"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -167,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "time at which the data is considered to become valid. Note: There could be quite a delay between creation and validity begins" ;
     skos:inScheme cs: ;
-    skos:prefLabel "validityBegins" ;
+    skos:prefLabel "validityBegins"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "time at which the data is no longer considered to be valid" ;
     skos:inScheme cs: ;
-    skos:prefLabel "validityExpires" ;
+    skos:prefLabel "validityExpires"@en ;
     skos:topConceptOf cs: ;
 .
 

@@ -45,3 +45,15 @@
         sh:message "Requirement c-id: Each Concept must have exactly one dcterms:identifier property that indicates an xsd:token object" ;
     ] ;
 .
+
+<c-pl-en>
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Requirement c-id: Each Concept must have exactly one skos:prefLabel property that indicates an English xsd:string object - an rdf:langString" ;
+    ] ;
+.

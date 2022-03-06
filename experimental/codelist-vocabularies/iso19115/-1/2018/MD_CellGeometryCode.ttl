@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "each cell represents an area" ;
     skos:inScheme cs: ;
-    skos:prefLabel "area" ;
+    skos:prefLabel "area"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "each cell represents a point" ;
     skos:inScheme cs: ;
-    skos:prefLabel "point" ;
+    skos:prefLabel "point"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "height range for a single point vertical profile" ;
     skos:inScheme cs: ;
-    skos:prefLabel "stratum" ;
+    skos:prefLabel "stratum"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "each cell represents a volumetric measurement on a regular grid in three dimensional space" ;
     skos:inScheme cs: ;
-    skos:prefLabel "voxel" ;
+    skos:prefLabel "voxel"@en ;
     skos:topConceptOf cs: ;
 .
 

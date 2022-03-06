@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "topological complex without any specified geometric realisation" ;
     skos:inScheme cs: ;
-    skos:prefLabel "abstract" ;
+    skos:prefLabel "abstract"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "2-dimensional topological complex that is planar. (A 2-dimensional topological complex is commonly called 'full topology' in a cartographic 2D environment.)" ;
     skos:inScheme cs: ;
-    skos:prefLabel "fullPlanarGraph" ;
+    skos:prefLabel "fullPlanarGraph"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "2-dimensional topological complex that is isomorphic to a subset of a surface" ;
     skos:inScheme cs: ;
-    skos:prefLabel "fullSurfaceGraph" ;
+    skos:prefLabel "fullSurfaceGraph"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "complete coverage of a 3D Euclidean coordinate space" ;
     skos:inScheme cs: ;
-    skos:prefLabel "fullTopology3D" ;
+    skos:prefLabel "fullTopology3D"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "geometry objects without any additional structure which describes topology" ;
     skos:inScheme cs: ;
-    skos:prefLabel "geometryOnly" ;
+    skos:prefLabel "geometryOnly"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "1-dimensional topological complex that is planar. (A planar graph is a graph that can be drawn in a plane in such a way that no two edges intersect except at a vertex.)" ;
     skos:inScheme cs: ;
-    skos:prefLabel "planarGraph" ;
+    skos:prefLabel "planarGraph"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "1-dimensional topological complex that is isomorphic to a subset of a surface. (A geometric complex is isomorphic to a topological complex if their elements are in a one-to-one, dimensional-and boundary-preserving correspondence to one another.)" ;
     skos:inScheme cs: ;
-    skos:prefLabel "surfaceGraph" ;
+    skos:prefLabel "surfaceGraph"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "1-dimensional topological complex - commonly called 'chain-node' topology" ;
     skos:inScheme cs: ;
-    skos:prefLabel "topology1D" ;
+    skos:prefLabel "topology1D"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "3-dimensional topological complex. (A topological complex is a collection of topological primitives that are closed under the boundary operations.)" ;
     skos:inScheme cs: ;
-    skos:prefLabel "topology3D" ;
+    skos:prefLabel "topology3D"@en ;
     skos:topConceptOf cs: ;
 .
 

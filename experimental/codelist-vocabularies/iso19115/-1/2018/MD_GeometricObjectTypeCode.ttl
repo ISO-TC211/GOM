@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "set of geometric primitives such that their boundaries can be represented as a union of other primitives" ;
     skos:inScheme cs: ;
-    skos:prefLabel "complex" ;
+    skos:prefLabel "complex"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "connected set of curves, solids or surfaces" ;
     skos:inScheme cs: ;
-    skos:prefLabel "composite" ;
+    skos:prefLabel "composite"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "bounded, 1-dimensional geometric primitive, representing the continuous image of a line" ;
     skos:inScheme cs: ;
-    skos:prefLabel "curve" ;
+    skos:prefLabel "curve"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "zero-dimensional geometric primitive, representing a position but not having an extent" ;
     skos:inScheme cs: ;
-    skos:prefLabel "point" ;
+    skos:prefLabel "point"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space" ;
     skos:inScheme cs: ;
-    skos:prefLabel "solid" ;
+    skos:prefLabel "solid"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane" ;
     skos:inScheme cs: ;
-    skos:prefLabel "surface" ;
+    skos:prefLabel "surface"@en ;
     skos:topConceptOf cs: ;
 .
 

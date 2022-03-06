@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who authored the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "author" ;
+    skos:prefLabel "author"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who jointly authors the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "coAuthor" ;
+    skos:prefLabel "coAuthor"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who assists with the generation of the resource other than the principal investigator" ;
     skos:inScheme cs: ;
-    skos:prefLabel "collaborator" ;
+    skos:prefLabel "collaborator"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party contributing to the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "contributor" ;
+    skos:prefLabel "contributor"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "custodian" ;
+    skos:prefLabel "custodian"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who distributes the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "distributor" ;
+    skos:prefLabel "distributor"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who reviewed or modified the resource to improve the content" ;
     skos:inScheme cs: ;
-    skos:prefLabel "editor" ;
+    skos:prefLabel "editor"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party providing monetary support for the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "funder" ;
+    skos:prefLabel "funder"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "a class of entity that mediates access to the resource and for whom the resource is intended or useful" ;
     skos:inScheme cs: ;
-    skos:prefLabel "mediator" ;
+    skos:prefLabel "mediator"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -112,7 +112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who created the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "originator" ;
+    skos:prefLabel "originator"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -123,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party that owns the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "owner" ;
+    skos:prefLabel "owner"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who can be contacted for acquiring knowledge about or acquisition of the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "pointOfContact" ;
+    skos:prefLabel "pointOfContact"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -145,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "key party responsible for gathering information and conducting research" ;
     skos:inScheme cs: ;
-    skos:prefLabel "principalInvestigator" ;
+    skos:prefLabel "principalInvestigator"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -156,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who has processed the data in a manner such that the resource has been modified" ;
     skos:inScheme cs: ;
-    skos:prefLabel "processor" ;
+    skos:prefLabel "processor"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -167,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who published the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "publisher" ;
+    skos:prefLabel "publisher"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party that supplies the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "resourceProvider" ;
+    skos:prefLabel "resourceProvider"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -189,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party owning or managing rights over the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "rightsHolder" ;
+    skos:prefLabel "rightsHolder"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -200,7 +200,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who speaks for the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "sponsor" ;
+    skos:prefLabel "sponsor"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -211,7 +211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who has an interest in the resource or the use of the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "stakeholder" ;
+    skos:prefLabel "stakeholder"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -222,7 +222,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who uses the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "user" ;
+    skos:prefLabel "user"@en ;
     skos:topConceptOf cs: ;
 .
 

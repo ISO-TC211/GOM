@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "telephone provides facsimile service" ;
     skos:inScheme cs: ;
-    skos:prefLabel "facsimile" ;
+    skos:prefLabel "facsimile"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "telephone provides sms service" ;
     skos:inScheme cs: ;
-    skos:prefLabel "sms" ;
+    skos:prefLabel "sms"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "telephone provides voice service" ;
     skos:inScheme cs: ;
-    skos:prefLabel "voice" ;
+    skos:prefLabel "voice"@en ;
     skos:topConceptOf cs: ;
 .
 
