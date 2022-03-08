@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "digital audio recording" ;
     skos:inScheme cs: ;
-    skos:prefLabel "audioDigital"@en ;
+    skos:prefLabel "audio digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "audio recording delivered by analog media, such as a magnetic tape" ;
     skos:inScheme cs: ;
-    skos:prefLabel "audioHardcopy"@en ;
+    skos:prefLabel "audio hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format" ;
     skos:inScheme cs: ;
-    skos:prefLabel "diagramDigital"@en ;
+    skos:prefLabel "diagram digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media" ;
     skos:inScheme cs: ;
-    skos:prefLabel "diagramHardcopy"@en ;
+    skos:prefLabel "diagram hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "digital representation of a primarily textual item (can contain illustrations also)" ;
     skos:inScheme cs: ;
-    skos:prefLabel "documentDigital"@en ;
+    skos:prefLabel "document digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media" ;
     skos:inScheme cs: ;
-    skos:prefLabel "documentHardcopy"@en ;
+    skos:prefLabel "document hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format" ;
     skos:inScheme cs: ;
-    skos:prefLabel "imageDigital"@en ;
+    skos:prefLabel "image digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user" ;
     skos:inScheme cs: ;
-    skos:prefLabel "imageHardcopy"@en ;
+    skos:prefLabel "image hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "map represented in raster or vector form" ;
     skos:inScheme cs: ;
-    skos:prefLabel "mapDigital"@en ;
+    skos:prefLabel "map digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -112,7 +112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "map printed on paper, photographic material, or other media for use directly by the human user" ;
     skos:inScheme cs: ;
-    skos:prefLabel "mapHardcopy"@en ;
+    skos:prefLabel "map hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -123,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "multi-dimensional digital representation of a feature, process, etc." ;
     skos:inScheme cs: ;
-    skos:prefLabel "modelDigital"@en ;
+    skos:prefLabel "model digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "3-dimensional, physical model" ;
     skos:inScheme cs: ;
-    skos:prefLabel "modelHardcopy"@en ;
+    skos:prefLabel "model hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -145,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information representation using simultaneously various digital modes for text, sound, image" ;
     skos:inScheme cs: ;
-    skos:prefLabel "multimediaDigital"@en ;
+    skos:prefLabel "multimedia digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -156,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "information representation using simultaneously various analog modes for text, sound, image" ;
     skos:inScheme cs: ;
-    skos:prefLabel "multimediaHardcopy"@en ;
+    skos:prefLabel "multimedia hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -167,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "a physical object. Eg. Rock or mineral sample, microscope slide" ;
     skos:inScheme cs: ;
-    skos:prefLabel "physicalObject"@en ;
+    skos:prefLabel "physical object"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "vertical cross-section in digital form" ;
     skos:inScheme cs: ;
-    skos:prefLabel "profileDigital"@en ;
+    skos:prefLabel "profile digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -189,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "vertical cross-section printed on paper, etc." ;
     skos:inScheme cs: ;
-    skos:prefLabel "profileHardcopy"@en ;
+    skos:prefLabel "profile hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -200,7 +200,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "digital representation of facts or figures systematically displayed, especially in columns" ;
     skos:inScheme cs: ;
-    skos:prefLabel "tableDigital"@en ;
+    skos:prefLabel "table digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -211,7 +211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media" ;
     skos:inScheme cs: ;
-    skos:prefLabel "tableHardcopy"@en ;
+    skos:prefLabel "table hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -222,7 +222,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "digital video recording" ;
     skos:inScheme cs: ;
-    skos:prefLabel "videoDigital"@en ;
+    skos:prefLabel "video digital"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -233,7 +233,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "video recording on film" ;
     skos:inScheme cs: ;
-    skos:prefLabel "videoHardcopy"@en ;
+    skos:prefLabel "video hardcopy"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -278,6 +278,6 @@ cs:
         :tableHardcopy ,
         :videoDigital ,
         :videoHardcopy ;
-    skos:prefLabel "CI_PresentationFormCode"@en ;
+    skos:prefLabel "CI Presentation Form Code"@en ;
 .
 

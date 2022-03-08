@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "forOfficialUseOnly"@en ;
+    skos:prefLabel "for official use only"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "limitedDistribution"@en ;
+    skos:prefLabel "limited distribution"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sensitiveButUnclassified"@en ;
+    skos:prefLabel "sensitive but unclassified"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "topSecret"@en ;
+    skos:prefLabel "top secret"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,6 +134,6 @@ cs:
         :sensitiveButUnclassified ,
         :topSecret ,
         :unclassified ;
-    skos:prefLabel "MD_ClassificationCode"@en ;
+    skos:prefLabel "MD Classification Code"@en ;
 .
 

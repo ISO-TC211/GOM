@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource became in force" ;
     skos:inScheme cs: ;
-    skos:prefLabel "inForce"@en ;
+    skos:prefLabel "in force"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was last reviewed" ;
     skos:inScheme cs: ;
-    skos:prefLabel "lastRevision"@en ;
+    skos:prefLabel "last revision"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was last updated" ;
     skos:inScheme cs: ;
-    skos:prefLabel "lastUpdate"@en ;
+    skos:prefLabel "last update"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource will be next updated" ;
     skos:inScheme cs: ;
-    skos:prefLabel "nextUpdate"@en ;
+    skos:prefLabel "next update"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -167,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "time at which the data is considered to become valid. Note: There could be quite a delay between creation and validity begins" ;
     skos:inScheme cs: ;
-    skos:prefLabel "validityBegins"@en ;
+    skos:prefLabel "validity begins"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "time at which the data is no longer considered to be valid" ;
     skos:inScheme cs: ;
-    skos:prefLabel "validityExpires"@en ;
+    skos:prefLabel "validity expires"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -218,6 +218,6 @@ cs:
         :unavailable ,
         :validityBegins ,
         :validityExpires ;
-    skos:prefLabel "CI_DateTypeCode"@en ;
+    skos:prefLabel "CI Date Type Code"@en ;
 .
 

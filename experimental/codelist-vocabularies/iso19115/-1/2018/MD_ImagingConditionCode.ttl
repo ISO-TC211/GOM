@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is blurred" ;
     skos:inScheme cs: ;
-    skos:prefLabel "blurredImage"@en ;
+    skos:prefLabel "blurred image"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "acute angle between the plane of the ecliptic (the plane of the Earth's orbit) and the plane of the celestial equator" ;
     skos:inScheme cs: ;
-    skos:prefLabel "degradingObliquity"@en ;
+    skos:prefLabel "degrading obliquity"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is partially obscured by heavy smoke or dust" ;
     skos:inScheme cs: ;
-    skos:prefLabel "heavySmokeOrDust"@en ;
+    skos:prefLabel "heavy smoke or dust"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "image was taken during semi-dark conditions-twilight conditions" ;
     skos:inScheme cs: ;
-    skos:prefLabel "semiDarkness"@en ;
+    skos:prefLabel "semi darkness"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -123,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest" ;
     skos:inScheme cs: ;
-    skos:prefLabel "terrainMasking"@en ;
+    skos:prefLabel "terrain masking"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -158,6 +158,6 @@ cs:
         :shadow ,
         :snow ,
         :terrainMasking ;
-    skos:prefLabel "MD_ImagingConditionCode"@en ;
+    skos:prefLabel "MD Imaging Condition Code"@en ;
 .
 

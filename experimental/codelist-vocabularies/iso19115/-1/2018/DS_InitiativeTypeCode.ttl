@@ -206,6 +206,6 @@ cs:
         :study ,
         :task ,
         :trial ;
-    skos:prefLabel "DS_InitiativeTypeCode"@en ;
+    skos:prefLabel "DS Initiative Type Code"@en ;
 .
 

@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "asNeeded"@en ;
+    skos:prefLabel "as needed"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -112,7 +112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "notPlanned"@en ;
+    skos:prefLabel "not planned"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -206,6 +206,6 @@ cs:
         :semimonthly ,
         :unknown ,
         :weekly ;
-    skos:prefLabel "MD_MaintenanceFrequencyCode"@en ;
+    skos:prefLabel "MD Maintenance Frequency Code"@en ;
 .
 

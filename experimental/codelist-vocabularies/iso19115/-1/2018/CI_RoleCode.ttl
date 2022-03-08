@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who jointly authors the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "coAuthor"@en ;
+    skos:prefLabel "co author"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party who can be contacted for acquiring knowledge about or acquisition of the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "pointOfContact"@en ;
+    skos:prefLabel "point of contact"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -145,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "key party responsible for gathering information and conducting research" ;
     skos:inScheme cs: ;
-    skos:prefLabel "principalInvestigator"@en ;
+    skos:prefLabel "principal investigator"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party that supplies the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "resourceProvider"@en ;
+    skos:prefLabel "resource provider"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -189,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "party owning or managing rights over the resource" ;
     skos:inScheme cs: ;
-    skos:prefLabel "rightsHolder"@en ;
+    skos:prefLabel "rights holder"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -266,6 +266,6 @@ cs:
         :sponsor ,
         :stakeholder ,
         :user ;
-    skos:prefLabel "CI_RoleCode"@en ;
+    skos:prefLabel "CI Role Code"@en ;
 .
 

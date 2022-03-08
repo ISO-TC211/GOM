@@ -62,6 +62,6 @@ cs:
         :loose ,
         :mixed ,
         :tight ;
-    skos:prefLabel "SV_CouplingType"@en ;
+    skos:prefLabel "SV Coupling Type"@en ;
 .
 

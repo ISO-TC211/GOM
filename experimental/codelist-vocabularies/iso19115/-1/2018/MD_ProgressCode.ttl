@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "historicalArchive"@en ;
+    skos:prefLabel "historical archive"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "notAccepted"@en ;
+    skos:prefLabel "not accepted"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "onGoing"@en ;
+    skos:prefLabel "on going"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "underDevelopment"@en ;
+    skos:prefLabel "under development"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -242,6 +242,6 @@ cs:
         :underDevelopment ,
         :valid ,
         :withdrawn ;
-    skos:prefLabel "MD_ProgressCode"@en ;
+    skos:prefLabel "MD Progress Code"@en ;
 .
 

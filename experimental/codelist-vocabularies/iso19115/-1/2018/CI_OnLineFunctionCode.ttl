@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "browse graphic provided" ;
     skos:inScheme cs: ;
-    skos:prefLabel "browseGraphic"@en ;
+    skos:prefLabel "browse graphic"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "complete metadata provided" ;
     skos:inScheme cs: ;
-    skos:prefLabel "completeMetadata"@en ;
+    skos:prefLabel "complete metadata"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "online email service provided" ;
     skos:inScheme cs: ;
-    skos:prefLabel "emailService"@en ;
+    skos:prefLabel "email service"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "online file access provided" ;
     skos:inScheme cs: ;
-    skos:prefLabel "fileAccess"@en ;
+    skos:prefLabel "file access"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "online instructions for requesting the resource from the provider" ;
     skos:inScheme cs: ;
-    skos:prefLabel "offlineAccess"@en ;
+    skos:prefLabel "offline access"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -158,6 +158,6 @@ cs:
         :order ,
         :search ,
         :upload ;
-    skos:prefLabel "CI_OnLineFunctionCode"@en ;
+    skos:prefLabel "CI On Line Function Code"@en ;
 .
 

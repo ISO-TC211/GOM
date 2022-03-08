@@ -16,7 +16,7 @@ cs:
     dcterms:publisher <http://def.isotc211.org/org/tc211> ;
     dcterms:source "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     skos:definition "An ISO standard's ConceptScheme"@en ;
-    skos:prefLabel "CountryCode"@en ;
+    skos:prefLabel "Country Code"@en ;
 .
 
 <http://def.isotc211.org/org/tc211>

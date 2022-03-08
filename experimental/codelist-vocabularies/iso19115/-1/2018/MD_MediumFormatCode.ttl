@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "highSierra"@en ;
+    skos:prefLabel "high sierra"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "iso9660AppleHFS"@en ;
+    skos:prefLabel "iso9660apple hfs"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "iso9660RockRidge"@en ;
+    skos:prefLabel "iso9660rock ridge"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -110,6 +110,6 @@ cs:
         :iso9660RockRidge ,
         :tar ,
         :udf ;
-    skos:prefLabel "MD_MediumFormatCode"@en ;
+    skos:prefLabel "MD Medium Format Code"@en ;
 .
 

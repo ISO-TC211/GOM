@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "dataCentre"@en ;
+    skos:prefLabel "data centre"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "featureType"@en ;
+    skos:prefLabel "feature type"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -134,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "subTopicCategory"@en ;
+    skos:prefLabel "sub topic category"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -206,6 +206,6 @@ cs:
         :taxon ,
         :temporal ,
         :theme ;
-    skos:prefLabel "MD_KeywordTypeCode"@en ;
+    skos:prefLabel "MD Keyword Type Code"@en ;
 .
 

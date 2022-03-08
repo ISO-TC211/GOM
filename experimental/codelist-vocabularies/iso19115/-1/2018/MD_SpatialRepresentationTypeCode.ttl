@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "stereoModel"@en ;
+    skos:prefLabel "stereo model"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "textTable"@en ;
+    skos:prefLabel "text table"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -98,6 +98,6 @@ cs:
         :tin ,
         :vector ,
         :video ;
-    skos:prefLabel "MD_SpatialRepresentationTypeCode"@en ;
+    skos:prefLabel "MD Spatial Representation Type Code"@en ;
 .
 

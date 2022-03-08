@@ -24,7 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:definition "perpendicular to the direction of motion of the scan point" ;
     skos:inScheme cs: ;
-    skos:prefLabel "crossTrack"@en ;
+    skos:prefLabel "cross track"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -122,6 +122,6 @@ cs:
         :time ,
         :track ,
         :vertical ;
-    skos:prefLabel "MD_DimensionNameTypeCode"@en ;
+    skos:prefLabel "MD Dimension Name Type Code"@en ;
 .
 

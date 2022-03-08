@@ -98,6 +98,6 @@ cs:
         :point ,
         :solid ,
         :surface ;
-    skos:prefLabel "MD_GeometricObjectTypeCode"@en ;
+    skos:prefLabel "MD Geometric Object Type Code"@en ;
 .
 
