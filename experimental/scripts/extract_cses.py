@@ -3,6 +3,9 @@ from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DCTERMS, RDF, RDFS, SDO, SKOS, XSD
 import re
 
+REG = Namespace("http://purl.org/linked-data/registry#")
+STATUS = Namespace("http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/")
+
 
 def pretty_title(title: str):
     t = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", title)
@@ -13,7 +16,8 @@ def pretty_title(title: str):
 
 
 def main():
-    tc_graph =  Graph()
+    tc_graph = Graph()
+
     tc = URIRef("http://def.isotc211.org/org/tc211")
     tc_graph.add((tc, RDF.type, SDO.Organization))
     tc_graph.add((tc, SDO.name, Literal("ISO's Technical Committee 211")))
@@ -34,6 +38,8 @@ def main():
 
     for cs in g.subjects(RDF.type, SKOS.ConceptScheme):
         g2 = Graph()
+        g2.bind("reg", REG)
+        g2.bind("status", STATUS)
         g2.bind("cs", cs)
         g2.bind("", Namespace(str(cs) + "/"))
         for s, p, o in g.triples((cs, None, None)):
@@ -68,9 +74,10 @@ def main():
                         g2.add((s2, p2, Literal(pretty_title(str(o2)).lower(), lang="en")))
                     else:
                         g2.add((s2, p2, o2))
-            g2.add((c, DCTERMS.provenance, Literal("Code originally presented in the standard", lang="en")))
+            g2.add((c, DCTERMS.provenance, Literal("Presented in the original standard's codelist", lang="en")))
             g2.add((c, SKOS.topConceptOf, cs))
             g2.add((c, DCTERMS.identifier, Literal(str(c).split("/")[-1], datatype=XSD.token)))
+            g2.add((c, REG.status, STATUS.stable))
 
             g2.add((cs, SKOS.hasTopConcept, c))
 

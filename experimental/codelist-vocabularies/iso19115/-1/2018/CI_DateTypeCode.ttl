@@ -2,14 +2,17 @@ PREFIX : <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyIn
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :adopted
     a skos:Concept ;
     dcterms:identifier "adopted"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was adopted" ;
     skos:inScheme cs: ;
@@ -20,7 +23,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :creation
     a skos:Concept ;
     dcterms:identifier "creation"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when the resource was brought into existence" ;
     skos:inScheme cs: ;
@@ -31,7 +35,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :deprecated
     a skos:Concept ;
     dcterms:identifier "deprecated"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was deprecated" ;
     skos:inScheme cs: ;
@@ -42,7 +47,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :distribution
     a skos:Concept ;
     dcterms:identifier "distribution"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when an instance of the resource was distributed" ;
     skos:inScheme cs: ;
@@ -53,7 +59,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :expiry
     a skos:Concept ;
     dcterms:identifier "expiry"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource expires" ;
     skos:inScheme cs: ;
@@ -64,7 +71,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :inForce
     a skos:Concept ;
     dcterms:identifier "inForce"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource became in force" ;
     skos:inScheme cs: ;
@@ -75,7 +83,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :lastRevision
     a skos:Concept ;
     dcterms:identifier "lastRevision"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was last reviewed" ;
     skos:inScheme cs: ;
@@ -86,7 +95,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :lastUpdate
     a skos:Concept ;
     dcterms:identifier "lastUpdate"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was last updated" ;
     skos:inScheme cs: ;
@@ -97,7 +107,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :nextUpdate
     a skos:Concept ;
     dcterms:identifier "nextUpdate"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource will be next updated" ;
     skos:inScheme cs: ;
@@ -108,7 +119,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :publication
     a skos:Concept ;
     dcterms:identifier "publication"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when the resource was issued" ;
     skos:inScheme cs: ;
@@ -119,7 +131,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :released
     a skos:Concept ;
     dcterms:identifier "released"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "the date that the resource shall be released for public access" ;
     skos:inScheme cs: ;
@@ -130,7 +143,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :revision
     a skos:Concept ;
     dcterms:identifier "revision"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when the resource was examined or re-examined and improved or amended" ;
     skos:inScheme cs: ;
@@ -141,7 +155,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :superseded
     a skos:Concept ;
     dcterms:identifier "superseded"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource was superseded or replaced by another resource" ;
     skos:inScheme cs: ;
@@ -152,7 +167,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :unavailable
     a skos:Concept ;
     dcterms:identifier "unavailable"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "date identifies when resource became not available or obtainable" ;
     skos:inScheme cs: ;
@@ -163,7 +179,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :validityBegins
     a skos:Concept ;
     dcterms:identifier "validityBegins"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "time at which the data is considered to become valid. Note: There could be quite a delay between creation and validity begins" ;
     skos:inScheme cs: ;
@@ -174,7 +191,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :validityExpires
     a skos:Concept ;
     dcterms:identifier "validityExpires"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "time at which the data is no longer considered to be valid" ;
     skos:inScheme cs: ;

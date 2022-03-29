@@ -2,14 +2,17 @@ PREFIX : <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_Co
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_CoverageContentTypeCode>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :auxilliaryInformation
     a skos:Concept ;
     dcterms:identifier "auxilliaryInformation"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "data, usually a physical measurement, used to support the calculation of the primary physicalMeasurement coverages in the dataset (e.g. grid of aerosol optical thickness used in the calculation of a sea surface temperature product)." ;
     skos:inScheme cs: ;
@@ -20,7 +23,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :coordinate
     a skos:Concept ;
     dcterms:identifier "coordinate"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "data used to provide coordinate axis values " ;
     skos:inScheme cs: ;
@@ -31,7 +35,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :image
     a skos:Concept ;
     dcterms:identifier "image"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "meaningful numerical representation of a physical parameter that is not the actual value of the physical parameter" ;
     skos:inScheme cs: ;
@@ -42,7 +47,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :modelResult
     a skos:Concept ;
     dcterms:identifier "modelResult"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "resources with values that are calculated using a model rather than being observed or calculated from observations." ;
     skos:inScheme cs: ;
@@ -53,7 +59,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :physicalMeasurement
     a skos:Concept ;
     dcterms:identifier "physicalMeasurement"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "value in physical units of the quantity being measured" ;
     skos:inScheme cs: ;
@@ -64,7 +71,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :qualityInformation
     a skos:Concept ;
     dcterms:identifier "qualityInformation"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "data used to characterize the quality of the physicalMeasurement coverages in the dataset. Typically included in a gmi:QE_CoverageResult." ;
     skos:inScheme cs: ;
@@ -75,7 +83,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :referenceInformation
     a skos:Concept ;
     dcterms:identifier "referenceInformation"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "reference information used to support the calculation or use of the physicalMeasurement coverages in the dataset (e.g. grids of latitude.sl.longitude used to geolocate the physical measurements)." ;
     skos:inScheme cs: ;
@@ -86,7 +95,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :thematicClassification
     a skos:Concept ;
     dcterms:identifier "thematicClassification"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "code value with no quantitative meaning, used to represent a physical quantity" ;
     skos:inScheme cs: ;

@@ -4,7 +4,7 @@ sudo a2enmod proxy-http
 sudo systemctl restart apache2
 
 # run Fuseki
-docker run -p 3030:3030 -e ADMIN_PASSWORD=pw123 stain/jena-fuseki
+docker run -p 3030:3030 -e ADMIN_PASSWORD=pw123 stain/jena-fuseki -d
 # using alternative pwd
 
 # edit settings in the Fuseki container

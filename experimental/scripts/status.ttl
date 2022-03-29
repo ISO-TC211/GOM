@@ -1,0 +1,161 @@
+@prefix cs: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix reg:  <http://purl.org/linked-data/registry#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix : <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/> .
+
+
+cs: 
+    a owl:Ontology , skos:ConceptScheme;
+    skos:prefLabel "Registry Status Vocabulary"@en ;
+    skos:definition """ISO 191535-1 test vocab"""@en ;
+    owl:versionIRI :0.1 ;
+    owl:versionInfo "0.1"@en ;
+    vann:preferredNamespaceUri "https://linked.data.gov.au/def/reg-status/"^^xsd:string ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    vann:preferredNamespacePrefix "reg-status"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:modified "2022-03-09"^^xsd:date ;
+    dcterms:created "2018-07-23"^^xsd:date ;
+    dcterms:source "http://standards.iso.org/iso/19135/-1/en/"^^xsd:anyURI ;
+    skos:hasTopConcept :accepted , :notAccepted ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a  sdo:Organization ;
+     sdo:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+     sdo:name "ISO's Technical Committee 211" ;
+     sdo:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+
+:accepted a skos:Concept ;
+    owl:sameAs reg:statusAccepted ;
+    rdfs:label "accepted"@en ;
+    skos:prefLabel "accepted"@en;
+    skos:definition "An entry that has been accepted for use and is visible in the default register listing. Includes entries that have seen been retired or superseded."@en;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    rdfs:isDefinedBy cs: ;
+.
+
+:deprecated a skos:Concept ;
+    owl:sameAs reg:statusDeprecated ;
+    rdfs:label "deprecated"@en ;
+    skos:prefLabel "deprecated"@en;
+    skos:definition "An entry that has been Retired or Superseded or has become Unstable and is no longer to be used."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accepted ;
+.
+
+:experimental a skos:Concept ;
+    owl:sameAs reg:statusExperimental ;
+    rdfs:label "experimental"@en ;
+    skos:prefLabel "experimental"@en;
+    skos:altlabel "provisional"@en;
+    skos:definition "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :valid ;
+.
+
+:invalid a skos:Concept ;
+    owl:sameAs reg:statusInvalid ;
+    rdfs:label "invalid"@en ;
+    skos:prefLabel "invalid"@en;
+    skos:definition "An entry which has been invalidated due to serious flaws, distinct from retrirement."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :notAccepted ;
+.
+
+:notAccepted a skos:Concept ;
+    owl:sameAs reg:statusNotAccepted ;
+    rdfs:label "notAccepted"@en ;
+    skos:prefLabel "notAccepted"@en;
+    skos:definition "An entry that should not be visible in the default register listing."@en;
+    skos:topConceptOf cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    rdfs:isDefinedBy cs: ;
+.
+
+:reserved a skos:Concept ;
+    owl:sameAs reg:statusReserved ;
+    rdfs:label "reserved"@en ;
+    skos:prefLabel "reserved"@en;
+    skos:definition "A reserved entry allocated for some as yet undetermined future use."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :notAccepted ;
+.
+
+:retired a skos:Concept ;
+    owl:sameAs reg:statusRetired ;
+    rdfs:label "retired"@en ;
+    skos:prefLabel "retired"@en;
+    skos:altlabel "withdrawn"@en;
+    skos:definition "An entry that has been withdrawn from use."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :deprecated ;
+.
+
+:stable a skos:Concept ;
+    owl:sameAs reg:statusStable ;
+    rdfs:label "stable"@en ;
+    skos:prefLabel "stable"@en;
+    skos:definition "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :valid ;
+.
+
+:submitted a skos:Concept ;
+    owl:sameAs reg:statusSubmitted ;
+    rdfs:label "submitted"@en ;
+    skos:prefLabel "submitted"@en;
+    skos:definition "A proposed entry which is not yet approved for use for use."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :notAccepted ;
+.
+
+:superseded a skos:Concept ;
+    owl:sameAs reg:statusSuperseded ;
+    rdfs:label "superseded"@en ;
+    skos:prefLabel "superseded"@en;
+    skos:altlabel "replaced"@en;
+    skos:definition "An entry that has been replaced by a new alternative which should be used instead."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :deprecated ;
+.
+
+:unstable a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    rdfs:label "stable"@en ;
+    skos:prefLabel "stable"@en;
+    skos:definition "An entry that is not seen as having a reasonable measure of stability. This status is expected to be allocated to entries that were once Stable but have become Unstable, due to a management or technical mishap, rather than being allocated to resources before they become Stable. Those resources should be allocated Experimental."@en;
+    skos:inScheme cs: ;
+    skos:broader :valid ;
+    owl:sameAs reg:statusStable ;
+.
+
+:valid a skos:Concept ;
+    owl:sameAs reg:statusValid ;
+    rdfs:label "valid"@en ;
+    skos:prefLabel "valid"@en;
+    skos:definition "An entry that has been accepted into the register and is deemed fit for use."@en;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accepted ;
+.

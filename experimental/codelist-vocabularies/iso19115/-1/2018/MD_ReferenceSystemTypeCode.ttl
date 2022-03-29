@@ -2,14 +2,17 @@ PREFIX : <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/co
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :compoundEngineeringParametric
     a skos:Concept ;
     dcterms:identifier "compoundEngineeringParametric"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -20,7 +23,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundEngineeringParametricTemporal
     a skos:Concept ;
     dcterms:identifier "compoundEngineeringParametricTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -31,7 +35,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundEngineeringTemporal
     a skos:Concept ;
     dcterms:identifier "compoundEngineeringTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -42,7 +47,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundEngineeringVertical
     a skos:Concept ;
     dcterms:identifier "compoundEngineeringVertical"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -53,7 +59,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundEngineeringVerticalTemporal
     a skos:Concept ;
     dcterms:identifier "compoundEngineeringVerticalTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -64,7 +71,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundGeographic2DParametric
     a skos:Concept ;
     dcterms:identifier "compoundGeographic2DParametric"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -75,7 +83,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundGeographic2DParametricTemporal
     a skos:Concept ;
     dcterms:identifier "compoundGeographic2DParametricTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -86,7 +95,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundGeographic2DTemporal
     a skos:Concept ;
     dcterms:identifier "compoundGeographic2DTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -97,7 +107,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundGeographic2DVertical
     a skos:Concept ;
     dcterms:identifier "compoundGeographic2DVertical"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -108,7 +119,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundGeographic2DVerticalTemporal
     a skos:Concept ;
     dcterms:identifier "compoundGeographic2DVerticalTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -119,7 +131,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundGeographic3DTemporal
     a skos:Concept ;
     dcterms:identifier "compoundGeographic3DTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -130,7 +143,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundProjected2DParametric
     a skos:Concept ;
     dcterms:identifier "compoundProjected2DParametric"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -141,7 +155,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundProjected2DParametricTemporal
     a skos:Concept ;
     dcterms:identifier "compoundProjected2DParametricTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -152,7 +167,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundProjectedTemporal
     a skos:Concept ;
     dcterms:identifier "compoundProjectedTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -163,7 +179,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundProjectedVertical
     a skos:Concept ;
     dcterms:identifier "compoundProjectedVertical"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -174,7 +191,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :compoundProjectedVerticalTemporal
     a skos:Concept ;
     dcterms:identifier "compoundProjectedVerticalTemporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -185,7 +203,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :engineering
     a skos:Concept ;
     dcterms:identifier "engineering"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -196,7 +215,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :engineeringDesign
     a skos:Concept ;
     dcterms:identifier "engineeringDesign"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -207,7 +227,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :engineeringImage
     a skos:Concept ;
     dcterms:identifier "engineeringImage"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -218,7 +239,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :geodeticGeocentric
     a skos:Concept ;
     dcterms:identifier "geodeticGeocentric"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -229,7 +251,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :geodeticGeographic2D
     a skos:Concept ;
     dcterms:identifier "geodeticGeographic2D"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -240,7 +263,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :geodeticGeographic3D
     a skos:Concept ;
     dcterms:identifier "geodeticGeographic3D"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -251,7 +275,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :geographicIdentifier
     a skos:Concept ;
     dcterms:identifier "geographicIdentifier"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -262,7 +287,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :linear
     a skos:Concept ;
     dcterms:identifier "linear"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -273,7 +299,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :parametric
     a skos:Concept ;
     dcterms:identifier "parametric"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -284,7 +311,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :projected
     a skos:Concept ;
     dcterms:identifier "projected"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -295,7 +323,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :temporal
     a skos:Concept ;
     dcterms:identifier "temporal"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
@@ -306,7 +335,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :vertical
     a skos:Concept ;
     dcterms:identifier "vertical"^^xsd:token ;
-    dcterms:provenance "Code originally presented in the standard"@en ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
