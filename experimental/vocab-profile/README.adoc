@@ -1,0 +1,53 @@
+= ISO SKOS Vocabulary Profile
+
+WARNING: in early development, not officially released yet
+
+This is a _profile_ of the https://www.w3.org/TR/skos-reference/[Simple Knowledge Organization System (SKOS)] data model for vocabularies (taxonomies) that is designed to cater for the special needs of the https://www.iso.org[International Organization for Standardization (ISO].
+
+By _profile_, what is meant here is "A specification that constrains, extends, combines, or provides guidance or explanation about the usage of other specification" - from the https://www.w3.org/TR/dx-prof/#definitions[Profiles Vocabulary (PORF)] and, here the _other specification_ is SKOS.
+
+This _profile_ is presented in several resources with differing roles:
+
+* *specification* - a document containing the normative requirements for data claiming conformance to this profile
+* *validator* - a machine-actionable code file that can be used to validate data files against the requirements. This profile contains two validators.
+* *examples* - data files, some valid and others invalid, according to this profile. This profile contains several
+* *guidance* - a starting point that contains general information about a profile. This document
+
+The roles of the various resources are formalised in the https://www.w3.org/TR/dx-prof/:[Profiles Vocabulary (PROF)]. PROF also defines how profiles technically related to other standards. The example data that this profile gives is formulated using the https://www.w3.org/RDF/[Resource Description Framework (RDF)] and the validator using the https://www.w3.org/TR/shacl/[Shapes Constraint Language (SHACL)].
+
+This profile is hosted online in https://www.w3.org/standards/semanticweb/data:[Linked Data] form using the following web address:
+
+* <https://w3id.org/profile/iso-skos>
+
+== Profile Resources
+
+This profile consists of several resources that play different roles, as described above. This profile's specific resources are:
+
+|===
+| Resource | Role | IRI | Description
+
+|This document | _guidance_ | `https://w3id.org/profile/iso-skos` | This profile overview document
+|Specification Document | _specification_ | `https://w3id.org/profile/iso-skos/spec` | Lists the normative requirements for data aiming to conform to this profile
+|Validator | _validation_ | `https://w3id.org/profile/iso-skos/validator` | A machine-executable data validator for this profile's requirements
+|Compounded Validator | _validation_ | `https://w3id.org/profile/iso-skos/compounded-validator` | A machine-executable data validator for this profile's requirements that also contains all the validators that this profile inherits from the things that it profiles
+|Example data files | _example_ | `https://w3id.org/profile/iso-skos/examples` | A directory of example data files, some valid and others invalid, according to this profile
+|===
+
+== License & Rights
+
+The contents of this repository is not licensed for use as it is experimental and not officially published.
+
+== Contacts
+
+Initial development of this work is being undertaken by the following, for the Technical Committee 211 of the ISO:
+
+*Nicholas J. Car* +
+_Advisory Group 6 (Group on Ontology Management) Co-chair_ +
+Technical Committee 211, International Organization for Standardization +
+<nicholas.car@surroundaustralia.com>
+
+*Ivana Ivanova* +
+_Advisory Group 6 (Group on Ontology Management) Co-chair_ +
+Technical Committee 211, International Organization for Standardization +
+<ivana.ivanova@curtin.edu.au>
+
