@@ -1,0 +1,186 @@
+= ISO SKOS Vocabulary Profile - Specification
+:toc: left
+:table-stripes: even
+:sectnums:
+
+NOTE: DRAFT, incomplete
+
+== Metadata
+
+[width=75%, frame=none, grid=none, cols="1,5"]
+|===
+|**IRI** | https://w3id.org/profile/iso-skos/spec
+|**Title** | ISO SKOS Vocabulary Profile - Specification
+|**Definition** | This document lists the normative requirements for data aiming to conform to the https://w3id.org/profile/iso-skos[ISO SKOS Vocabulary Profile]. It is to be used as the authoritative, human-readable, list of individual requirements from which other profile artifacts, such as data validators, are derived.
+|**Created** | 2022-03-25
+|**Modified** | 2022-03-25
+|**Creator** | ISO Technical Committee 211's Advisory Group 6
+|**Publisher** | _not officially published_
+|**License** | _not licensed for use_
+|**Further information** | This specification document is one resource of many within the ISO SKOS Vocabulary Profile. See section <<Standard Parts>> below for more details of the other parts and how this Specification related to them. See also the profile's https://w3id.org/profile/iso-skos[overview document].
+|===
+
+== Preamble
+
+=== Abstract
+
+This document lists the normative requirements for data aiming to conform to the https://w3id.org/profile/iso-skos[ISO SKOS Vocabulary Profile]. It is to be used as the authoritative, human-readable, list of individual requirements from which other profile artifacts, such as data validators, are derived.
+
+=== Normative Status
+
+This Specification is normative for the ISO SKOS Vocabulary Profile and its directives take precedence over other elements of the Standard where conflicts are found.
+
+=== Standard Parts
+
+This specification document is one resource of many within the ISO SKOS Vocabulary Profile. The Standard and its parts are formally defined using terminology from the _Profiles Vocabulary_ <<PROF>>.
+
+Other parts of this _Standard_ are:
+
+* _Overview_
+** the guidance document of this profile
+** <https://w3id.org/profile/iso-skos>
+* _Validators_
+** machine-readable validation code to validate data claiming conformance to the ABIS
+* _Examples_
+** Examples of RDF data to show how to formulate BDR information
+* _Mappings_
+** Instructions on how to convert BDR data to data conformaing to other Standards
+
+The formal and linked listing of this Standards's parts is found in its _Profile Declaration_ online at link:https://linked.data.gov.au/def/abis[Australian Biodiversity Information Standard].
+
+In addition to the "technical" parts, this Specification describes the conceptual parts of ABIS, in particular, the domain model and other non-domain models.
+
+=== Namespaces
+
+[width=75%, frame=none, grid=none]
+|===
+|Prefix | Namespace | Description
+
+|**`abis:`** | **`https://linked.data.gov.au/def/abis/`** | **ABIS namespace** - for the Standard as a whole
+|**`req:`** | **`https://linked.data.gov.au/def/abis/req/`** | **ABIS Requirements namespace**
+|**`rul:`** | **`https://linked.data.gov.au/def/abis/rul/`** | **ABIS Rules namespace**
+|**`cc:`** | **`https://linked.data.gov.au/def/abis/req/`** | **ABIS Conformance Class namespace**
+|**`aex:`** | **`https://linked.data.gov.au/def/abis/eg/`** | **ABIS Canonical Examples namespace**
+|**`ash:`** | **`https://linked.data.gov.au/def/abis/sh/`** | **ABIS Validators Shapes namespace**
+|`bdrm:` | `https://linked.data.gov.au/def/bdr-msg/` | BDR Messages Ontology Namespace
+|`dcterms:` | `http://purl.org/dc/terms/` | Dublin Core Terms vocabulary namespace
+|`ex:` | `http://example.com/thing` | Generic examples namespace
+|`owl:` | `http://www.w3.org/2002/07/owl#` | Web Ontology Language ontology namespace
+|`rdfs:` | `http://www.w3.org/2000/01/rdf-schema#` | RDF Schema ontology namespace
+|`sosa:` | `http://www.w3.org/ns/sosa/` | Sensor, Observation, Sample, and Actuator ontology namespace
+|`skos:` | `http://www.w3.org/2004/02/skos/core#` | Simple Knowledge Organization System (SKOS) ontology namespace
+|`status:` | `https://linked.data.gov.au/def/bdr-msg/status/` | BDR Messages Status Vocabulary**
+|`tern:` | `https://w3id.org/tern/ontologies/tern/` | TERN Ontology namespace
+|`time:` | `http://www.w3.org/2006/time#` | Time Ontology in OWL namespace
+|`void:` | `http://rdfs.org/ns/void#` | Vocabulary of Interlinked Data (VoID) ontology namespace
+|`xsd:` | `http://www.w3.org/2001/XMLSchema#` | XML Schema Definitions ontology namespace
+|===
+
+A JSON-LD _context_ built from this namespaces table is available as another resource within the ABIS specification and is online at:
+
+* https://surroundaustralia.github.io/abis/context.json
+
+== Introduction
+
+This document contains general description of the link:https://linked.data.gov.au/def/abis[Australian Biodiversity Information Standard (ABIS)] and importantly a list of _requirements_ and groupings of requirements, _Conformance Classes_. Data must meet all the _requirements_ in _conformance classes_ to claim conformance to that _conformance class'_ part of the ABIS.
+
+This document also lists all the parts of the ABIS which are its various ontologies, vocabularies and others that these depend on. These parts are listed in <<Annex A: ABIS Parts, Annex A: ABIS Parts>>.
+
+=== Requirement and Conformance Class modelling
+
+Each _requirement_ is defined with a table of values like this:
+
+[width=25%, frame=none, grid=none]
+|===
+|Identifier | Prefixed IRI identifier
+|Label | Short text
+|Definition | Defining text
+|Conformance Classes | Selected Conformance Class Identifiers
+|Source | Notes on _requirement_ source
+|Validators | Related SHACL validators
+|Examples | Related RDF example data
+|===
+
+The link:https://en.wikipedia.org/wiki/Semantic_Web[Semantic Web] interpretation of the relation of each of those properties are to each requirement instance are:
+
+[width=25%, frame=none, grid=none]
+|===
+|Property | Defining RDF predicate | Object type
+
+|Identifier | `dcterms:identifier` | IRI
+|Label | `skos:prefLabel` | text
+|Definition | `skos:definition` | text
+|Conformance Classes | `dcterms:isPartOf` | IRIs
+|Source | `dcterms:source` or `dcterms:provenance` | IRI of an ABIS resource or text
+|Validators | ??? | IRI of a `Resource Descriptor`
+|Examples | `skos:example` | IRI of a `Resource Descriptor`
+|===
+
+See the link:#namespaces[Namespaces] section below to understand the prefixes in the table above.
+
+The following subsections define properties of the _requirements_ in detail.
+
+==== Identifier
+
+Each _requirement_ is identified with a unique identifier of the form `req:X`, where `req:` is a prefix for the IRI namespace `+<https://linked.data.gov.au/def/abis/req/>+` and `X` is a number, the number of the _requirement_.
+
+The IRI namespace plus the number make the complete IRI of the _requirement_.
+
+An IRI is an link:https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier[Internationalized Resource Identifier] which is a globally unique web address created within a managed namespace that resolves to the element it identifies
+
+==== Labeled
+
+Each _requirement_ is named with a short form of its definition, to assist with human referencing.
+
+==== Definition
+
+Each _requirement_ is defined in human-readable terms but with references to data elements modelled according to ontologies defined using the link:https://www.w3.org/TR/owl2-overview/[Web Ontology Language (OWL)] since the _target models_ of the ABIS are themselves OWL Ontologies.
+
+> NOTE: if there are differences between derivatives of this specification, including the ABIS validator, these definitions take precendence
+
+==== Conformance Classes list
+
+Each _requirement_ is categorised within one or more "Conformance Classes" which are defined bundles of requrirements. Within the ABIS, the Conformance Classes form modules which data may conform to individually.
+
+Each _requirement_ needs to indicate its Conformance Classes by linking to them.
+
+==== Contains source notes
+
+Each _requirement_ contains source notes  what motivated the _requirement_'s definition, including references to source documents or other ABIS artifacts, such as ontologies.
+
+==== Related validators
+
+Each _requirement_ contains references to individual, identified, data validation _shapes_ defined in the ABIS Profile's _validator_ used to validate link:https://www.w3.org/RDF/[Resource Description Framework (RDF)] data - the only form of data allowed to be used for ABIS data exchange.
+
+The content of _validator_s is contianed in the ABIS' _Validator_ resource.
+
+> NOTE: the validating _shapes_ are not 1:1 with these _requirements_ and that there are _requirements_ for which there are no _shapes_ - those _requirements_ that cannot be determined to have been met by inspecting data.
+
+==== Canonical examples
+
+For each _requirement_, references are given to at least two _canonical examples_ of RDF data that do (positive example) and don't (negative example) pass validation using the validators related to the _requirement_.
+
+The content of the _canonical examples_, i.e. the examples' data, is contianed in the ABIS' _Canonical Examples_ resource.
+
+
+include::01_conformance_classes.adoc[]
+
+
+include::02_requirements.adoc[]
+
+
+include::03_sources.adoc[]
+
+
+include::04_examples.adoc[]
+
+
+== References
+
+* [[PROF]] World Wide Web Consortium, _The Profiles Vocabulary_, W3C Working Group Note (18 December 2019). <https://www.w3.org/TR/dx-prof/>
+
+:sectnums!:
+
+include::14_annex_a_abis_parts.adoc[]
+
+include::15_annex_b_bdr_messages.adoc[]
