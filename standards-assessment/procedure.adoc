@@ -132,6 +132,7 @@ The types of sections and the forms of their assessment are given in <<Table 1>>
 |Bibliography |
 |==
 
+#TODO: complete sections table#
 
 == References
 
