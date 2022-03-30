@@ -21,7 +21,7 @@ jobs:
         echo "Add readme to docs/"
         asciidoctor readme.adoc -o docs/index.html
         echo "Add procedure to docs/"
-        asciidoctor procedure.adoc -o docs/prodecure.html
+        asciidoctor procedure.adoc -o docs/procedure.html
         echo "Replace img links in procedure.html"
         sed -i 's#img src="#img src="https://iso-tc211.github.io/gom/#' docs/procedure.html
         echo "Add image files to docs/"
