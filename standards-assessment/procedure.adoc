@@ -85,3 +85,58 @@ SOURCE: World Wide Web Consortium, RDF 1.1 Concepts and Abstract Syntax, W3C Rec
 The term "Semantic Web" refers to the https://w3.org[World Wide Web]’s vision of the Web of <<Linked Data>>. Semantic Web technologies enable people to create data stores on the Web, build vocabularies, and write rules for handling data. Linked data are empowered by technologies such as RDFfootnote:[https://www.w3.org/RDF/], SPARQLfootnote:[https://www.w3.org/TR/sparql11-query/], OWLfootnote:[https://www.w3.org/TR/owl2-overview/], and SKOSfootnote:[https://www.w3.org/TR/skos-reference/].
 
 SOURCE: https://www.w3.org/standards/semanticweb/
+
+== Standards Assessment Procedure
+
+Upon invitation to review a proposed Standard, GOM will follow the workflow show in <<procedure-overview>>
+
+[id=procedure-overview]
+image::img/procedure-overview.png[title="Standards Assessment Procedure Overview Workflow Diagram"]
+
+The essence of the workflow is that Standards documents comprise multiple sections which require related but separate Semantic Web assessments. The rationale for this assessment is that Standards documents are highly regular in that they consist of common and predictable sections and that no one Semantic Web model can sensibly represent all the concerns of a Standard, other than at a superficial structural level - a document structural, not a content, model.
+
+[NOTE]
+====
+This rationale was established within an Open Geospatial Consortium (OGC) project which considered the potential for the OGC to produce Semantic Web model-driven standards <<tb17>>. OGC standards are similar in structure, but not identical to, TC 211 standards.
+
+Suggested enhancements to ISO Standards in line with recent enhancements to improve the Semantic Web positioning of OGC Standards are part of this Standards Assessment Procedure.
+====
+
+=== Document Metadata Assessment
+
+In this assessment, the metadata of the Standard document will be assessed for its compatability with potential future Semantic Web publication of the document in Semantic Web document catalogues.
+
+[NOTE]
+====
+No commitment to a Semantic Web-based cataloguing of Standards documents has been made by the TC211 so this assessment is a preemptive readiness step should such a commitment be made.
+
+It is expected that if no commitment is made, this step will act just as a general metadata check.
+====
+
+This assessment will be conducted with the _Data Catalog Vocabulary_ <<DCAT>> model as the reference Semantic Web model since it is both standardised, well-regarded and close in structure and purpose to ISO TC211's <<ISO19115>> data cataloguing standard.
+
+#TODO: metadata model and document element details here#
+
+=== Section Assessment
+
+The types of sections and the forms of their assessment are given in <<Table 1>>. Note that the types of sections requiring such assessment will grow over time if/when GOM/TC211 extends the requirements for Standards' Semantic Web form.
+
+[width=75%, frame=none, grid=none, cols="1,5"]
+.Standards document sections and their corresponding Semantic Web assessments
+|===
+|Section | Assessment
+
+|Terms & Definitions |
+|Codelists |
+|Domain Model |
+|Bibliography |
+|==
+
+
+== References
+
+[[tb17]] Car, N.J. _Testbed sub-task D143_. Chapter from Engineering Report _OGC Model-Driven Standards_. http://www.opengis.net/doc/PER/t17-D022 (https://github.com/ISO-TC211/GOM/blob/master/standards-assessment/t17-D143.pdf[local copy])
+
+[[DCAT]] World Wide Web Consortium _Data Catalogue Vocabulary (DCAT) - revised edition_. W3C Recommendation, 25 November 2018. https://www.w3.org/TR/vocab-dcat/
+
+[[ISO19115]] International Organization for Standardization _ISO 19115-1:2018: Geographic information – Metadata – Part 1: Fundamentals_. International standard. https://www.iso.org/standard/53798.html
