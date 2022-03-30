@@ -23,7 +23,7 @@ jobs:
         echo "Add procedure to docs/"
         asciidoctor standards-assessment/procedure.adoc -o docs/procedure.html
         echo "Replace img links in procedure.html"
-        sed -i 's#img src="#img src="https://iso-tc211.github.io/gom/#' docs/procedure.html
+        sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/#' docs/procedure.html
         echo "Add image files to docs/"
         cp -r standards-assessment/img docs/
     - name: Deploy 🚀
