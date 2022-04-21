@@ -12,6 +12,7 @@ This _profile_ is presented in several resources with differing roles:
 * *validator* - a machine-actionable code file that can be used to validate data files against the requirements. This profile contains two validators.
 * *examples* - data files, some valid and others invalid, according to this profile. This profile contains several
 * *guidance* - a starting point that contains general information about a profile. This document
+* *vocabulary* - controlled terms lists to be used by data claiming conformance to this profile
 
 The roles of the various resources are formalised in the https://www.w3.org/TR/dx-prof/:[Profiles Vocabulary (PROF)]. PROF also defines how profiles technically related to other standards. The example data that this profile gives is formulated using the https://www.w3.org/RDF/[Resource Description Framework (RDF)] and the validator using the https://www.w3.org/TR/shacl/[Shapes Constraint Language (SHACL)].
 
@@ -30,6 +31,7 @@ This profile consists of several resources that play different roles, as describ
 |Specification Document | _specification_ | `https://w3id.org/profile/iso-skos/spec` | Lists the normative requirements for data aiming to conform to this profile
 |Validator | _validation_ | `https://w3id.org/profile/iso-skos/validator` | A machine-executable data validator for this profile's requirements
 |Compounded Validator | _validation_ | `https://w3id.org/profile/iso-skos/compounded-validator` | A machine-executable data validator for this profile's requirements that also contains all the validators that this profile inherits from the things that it profiles
+|Status Vocabulary | _vocabulary_ | _to be established_ | An extended ISO19135 statuses vocabulary used for vocabulary and vocabulary element status indication
 |Example data files | _example_ | `https://w3id.org/profile/iso-skos/examples` | A directory of example data files, some valid and others invalid, according to this profile
 |===
 
