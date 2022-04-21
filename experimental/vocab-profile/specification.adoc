@@ -64,7 +64,7 @@ In addition to the "technical" parts, this Specification describes the conceptua
 |`rdfs:` | `http://www.w3.org/2000/01/rdf-schema#` | RDF Schema ontology namespace
 | `sdo:` | `https://schema.org/` | schema.org vocabulary namespace
 |`skos:` | `http://www.w3.org/2004/02/skos/core#` | Simple Knowledge Organization System (SKOS) ontology namespace
-|`status:` | `https://linked.data.gov.au/def/bdr-msg/status/` | BDR Messages Status Vocabulary**
+|`status:` | `http://def.isotc211.org/iso19135/-1/2015/code/RE_ItemStatus/` | ISO19135-1:2015 Registry Status Codes
 |`void:` | `http://rdfs.org/ns/void#` | Vocabulary of Interlinked Data (VoID) ontology namespace
 |`xsd:` | `http://www.w3.org/2001/XMLSchema#` | XML Schema Definitions ontology namespace
 |===
