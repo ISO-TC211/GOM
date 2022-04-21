@@ -1,0 +1,57 @@
+= GOM Assessment Report
+
+== 19157-1 - For Geographic information — Data quality - Part 1: General requirements
+
+== Document Metadata Assessment
+
+|===
+| Element | Value
+
+| IRI | suggested `https://def.isotc211.org/iso19157/-1/2021`
+| Title | Geographic information — Data quality - Part 1: General requirements (_Information géographique — Qualité des données - Partie 1: Exigences générales_)
+| Version | 2021
+|===
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this standard relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *4.1 Abbreviations*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *6 General requirements for geographic information quality*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *8 Components of data quality*
+** this contains the formalized data model of the Standard
+* *9 Data quality measures*
+** contains a code list for "Value structure"
+* *Annex A - Abstract test suites*
+** contains a vocabulary of tests
+* *Annex C - Data dictionary for data quality*
+** contains two codelists, for "Evaluation method type" and "Value structure"
+* *Bibiligraphy*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+
+| *3 Terms and definitions* | Refer to GeoLexica | Contact GeoLexca for review
+| *4.1 Abbreviations* | |
+| *6 General requirements for geographic information quality* | | 
+| *8 Components of data quality* | | 
+| *9 Data quality measures* | | 
+| *Annex A - Abstract test suites* | | 
+| *Annex C - Data dictionary for data quality* | | 
+| *Bibiligraphy* | As per *2 Normative references* | 
+|===
