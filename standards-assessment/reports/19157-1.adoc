@@ -47,11 +47,11 @@ The sections in this standard relevant for semantic assessment are determined to
 | None: pending a TC 211 references library
 
 | *3 Terms and definitions* | Refer to GeoLexica | Contact GeoLexca for review
-| *4.1 Abbreviations* | |
-| *6 General requirements for geographic information quality* | | 
-| *8 Components of data quality* | | 
-| *9 Data quality measures* | | 
-| *Annex A - Abstract test suites* | | 
-| *Annex C - Data dictionary for data quality* | | 
-| *Bibiligraphy* | As per *2 Normative references* | 
+| *4.1 Abbreviations* | Refer to GeoLexica | Check whether abbreviations used here are present in GeoLexica
+| *6 General requirements for geographic information quality* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *8 Components of data quality* | Auto-generation of OWL model form | Confirm GOM can generate
+| *9 Data quality measures* | See *Annex C* | -
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex C - Data dictionary for data quality* | Establish SW vocabularies for these codelists | Confirm GOM can generate
+| *Bibiligraphy* | As per *2 Normative references* | -
 |===
