@@ -1,10 +1,10 @@
 = ISO SKOS Vocabulary Profile
 
-WARNING: in early development, not officially released yet
+WARNING: This is a proposed profile for ISO TC 211 use, it is not officially released
 
 This is a _profile_ of the https://www.w3.org/TR/skos-reference/[Simple Knowledge Organization System (SKOS)] data model for vocabularies (taxonomies) that is designed to cater for the special needs of the https://www.iso.org[International Organization for Standardization (ISO].
 
-By _profile_, what is meant here is "A specification that constrains, extends, combines, or provides guidance or explanation about the usage of other specification" - from the https://www.w3.org/TR/dx-prof/#definitions[Profiles Vocabulary (PORF)] and, here the _other specification_ is SKOS.
+By _profile_, what is meant here is "A specification that constrains, extends, combines, or provides guidance or explanation about the usage of other specification" - from the https://www.w3.org/TR/dx-prof/#definitions[Profiles Vocabulary (PROF)] and, here the _other specification_ is SKOS.
 
 This _profile_ is presented in several resources with differing roles:
 
@@ -15,7 +15,7 @@ This _profile_ is presented in several resources with differing roles:
 
 The roles of the various resources are formalised in the https://www.w3.org/TR/dx-prof/:[Profiles Vocabulary (PROF)]. PROF also defines how profiles technically related to other standards. The example data that this profile gives is formulated using the https://www.w3.org/RDF/[Resource Description Framework (RDF)] and the validator using the https://www.w3.org/TR/shacl/[Shapes Constraint Language (SHACL)].
 
-This profile is hosted online in https://www.w3.org/standards/semanticweb/data:[Linked Data] form using the following web address:
+This profile is hosted online in https://www.w3.org/standards/semanticweb/data:[Linked Data] form using the following web address for testing purposes:
 
 * <https://w3id.org/profile/iso-skos>
 
@@ -44,10 +44,10 @@ Initial development of this work is being undertaken by the following, for the T
 *Nicholas J. Car* +
 _Advisory Group 6 (Group on Ontology Management) Co-chair_ +
 Technical Committee 211, International Organization for Standardization +
-<nicholas.car@surroundaustralia.com>
+nicholas.car@surroundaustralia.com
 
 *Ivana Ivanova* +
 _Advisory Group 6 (Group on Ontology Management) Co-chair_ +
 Technical Committee 211, International Organization for Standardization +
-<ivana.ivanova@curtin.edu.au>
+ivana.ivanova@curtin.edu.au
 

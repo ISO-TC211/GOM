@@ -66,3 +66,5 @@ Differences between that original form and that presented here are:
 
 Codelists presented here as `skos:ConceptScheme` instances conform to the [_VocPub Profile_ of SKOS](https://w3id.org/profile/vocpub) which defines the minimum set of properties that these Semantic Web codelist all have.
 
+
+https://inspire.ec.europa.eu/codelist
