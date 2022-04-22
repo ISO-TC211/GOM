@@ -8,4 +8,4 @@ This directory contains the public resources GOM uses in its assessments of ISO 
 
 As an Advisory Group, one major role of GOM's is to provide advice to TC211 standards editors and TC committee staff on how to best present TC211 standards in Semantic Web form. One mechanism for this is the assessment of a standard by GOM before its publication.
 
-See the https://iso-tc211.github.io/GOM/standards-assessment/[Procedure document] for the articulation of the assessment process.
+See the https://iso-tc211.github.io/GOM/standards-assessment/procedure.adoc[Procedure document] for the articulation of the assessment process.
