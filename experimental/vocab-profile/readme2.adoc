@@ -18,7 +18,7 @@ The roles of the various resources are formalised in the https://www.w3.org/TR/d
 
 This profile is hosted online in https://www.w3.org/standards/semanticweb/data:[Linked Data] form using the following web address for testing purposes:
 
-* <https://w3id.org/profile/iso-skos>
+* https://iso-tc211.github.io/GOM/vocab-profile/
 
 == Profile Resources
 
