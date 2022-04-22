@@ -73,11 +73,11 @@ In addition to the "technical" parts, this Specification describes the conceptua
 
 The following terms are used throughout this Specification document and, where they are, these definitions apply. They are italicized within the text for identification and often capitalized when referring to a specific instance.
 
-IRI:
+IRI::
 
     "Internationalized Resource Identifier... is a complement to the Uniform Resource Identifier (URI)""
 
-    "IRIs can be used instead of URIs, where appropriate, to identify resources"
+"IRIs can be used instead of URIs, where appropriate, to identify resources"
 
 [width=75%, frame=none, grid=none, cols="1,4"]
 |===
@@ -88,8 +88,8 @@ IRI:
 ontology::
 
     In computer science and information science, an ontology encompasses a representation, formal naming, and definition of the categories, properties, and relations between the concepts, data, and entities that substantiate one, many, or all domains of discourse.
-
-    The word ontology was originally defined as "the branch of philosophy that studies concepts such as existence, being, becoming, and reality". and the computer science term is derived from that definition.
+    
+The word ontology was originally defined as "the branch of philosophy that studies concepts such as existence, being, becoming, and reality". and the computer science term is derived from that definition.
 
 [width=75%, frame=none, grid=none, cols="1,4"]
 |===
@@ -129,9 +129,9 @@ resource::
 Semantic Web::
 
     The https://www.w3.org/[World Wide Web Consortium]'s vision of an Internet-based web of Linked Data.
-
+    +
     Semantic Web is used to refer to something more than just the technologies and conventions of Linked Data; the term also encompases a specific set of interoperable data models - often called ontologies - published by the W3C, other standards bodies and some well-known companies.
-
+    +
     The 'semantic' refers to the strongly-defined nature of the elements in the Semantic Web: the meaning of Semantic Web data is as precicely defined as any data can be.
 
 [width=75%, frame=none, grid=none, cols="1,4"]
