@@ -25,7 +25,7 @@ jobs:
         asciidoctor standards-assessment/procedure.adoc -o docs/procedure.html
         echo "Replace img links in standards-assessment procedure HTML"
         sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/standards-assessment/#' docs/procedure.html
-        cp -r standards-assessment/img docs/standards-assessment/images
+        cp -r standards-assessment/images docs/standards-assessment/images
 
         # vocab-profile
         mkdir -p docs/vocab-profile/images
@@ -33,7 +33,7 @@ jobs:
         asciidoctor vocab-profile/specification.adoc -o docs/vocab-profile/specification.html
         echo "Replace img links in vocab-profile specification HTML"
         sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/vocab-profile/#' docs/vocab-profile/specification.html
-        cp -r vocab-profile/img docs/vocab-profile/images
+        cp -r vocab-profile/images docs/vocab-profile/images
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
