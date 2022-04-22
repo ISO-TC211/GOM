@@ -1,0 +1,10 @@
+= List of assessd Standards
+
+This list is of reports by GOM on ISO TC 211 Standards that GOM has reviewed for Semantic Web alignment:
+
+[width=25%]
+|===
+| Date | Stadnard
+
+| 2022-04-22 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19157-1-1.html[ISO19157-1 (1) Geographic information — Data quality - Part 1: General requirements]
+|===

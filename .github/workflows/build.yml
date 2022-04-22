@@ -26,9 +26,12 @@ jobs:
         echo "Replace img links in standards-assessment procedure HTML"
         sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/standards-assessment/#' docs/standards-assessment/procedure.html
         cp -r standards-assessment/images docs/standards-assessment/images
+        mkdir -p docs/standards-assessment/reports
+        asciidoctor standards-assessment/reports/readme.adoc -o docs/standards-assessment/reports/index.html
+        asciidoctor standards-assessment/reports/19157-1-1.adoc -o docs/standards-assessment/reports/19157-1-1.html
 
         # vocab-profile
-        mkdir -p docs/vocab-profile/images
+        mkdir -p docs/vocab-profile/images        
         asciidoctor experimental/vocab-profile/readme.adoc -o docs/vocab-profile/index.html
         asciidoctor experimental/vocab-profile/specification.adoc -o docs/vocab-profile/specification.html
         echo "Replace img links in vocab-profile specification HTML"

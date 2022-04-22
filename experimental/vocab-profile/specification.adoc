@@ -153,7 +153,7 @@ specification document::
 
 This document contains rules, names _requirements_ that must be obeyed by data wishing to claim conformance to this profile. The _requirements_ are identified with persistent web identifiers (IRIs)
 
-NOTE: This document does not contain all of the information in this profile. See the https://w3id.org/profile/iso-skos[Profile Declaration] for a listing of all profile parts and their roles.
+NOTE: This document does not contain all of the information in this profile. See the https://iso-tc211.github.io/GOM/vocab-profile/[Profile Declaration] for a listing of all profile parts and their roles.
 
 === Purpose
 
