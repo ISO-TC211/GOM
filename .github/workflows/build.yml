@@ -21,10 +21,10 @@ jobs:
         
         # standards-assessment
         mkdir -p docs/standards-assessment/images
-        asciidoctor standards-assessment/readme.adoc -o docs/index.html
-        asciidoctor standards-assessment/procedure.adoc -o docs/procedure.html
+        asciidoctor standards-assessment/readme.adoc -o docs/standards-assessment/index.html
+        asciidoctor standards-assessment/procedure.adoc -o docs/standards-assessment/procedure.html
         echo "Replace img links in standards-assessment procedure HTML"
-        sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/standards-assessment/#' docs/procedure.html
+        sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/standards-assessment/#' docs/standards-assessment/procedure.html
         cp -r standards-assessment/images docs/standards-assessment/images
 
         # vocab-profile
