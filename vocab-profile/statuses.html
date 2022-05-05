@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<title>List of assessd Standards</title>
+<title>Extended ISO19135 Statuses Vocabulary</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,30 +438,155 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>List of assessd Standards</h1>
+<h1>Extended ISO19135 Statuses Vocabulary</h1>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>This list is of reports by GOM on ISO TC 211 Standards that GOM has reviewed for Semantic Web alignment:</p>
+<p>This is a ddiscussion about a possible vocabulary extension to ISO19135&#8217;s <a href="#ISO19135">[ISO19135]</a> <code>RE_ItemStatus</code> 'status' enumeration to cater for additional status required for use in GOM&#8217;s handling of standard&#8217;s codelists.</p>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_current_re_itemstatus_codes">Current <code>RE_ItemStatus</code> codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>GOM believes ISO19135&#8217;s <a href="#ISO19135">[ISO19135]</a> <code>RE_ItemStatus</code> 'status' enumeration is the correct property for demonstrating the <em>officialness</em> of a code in a codelist vocabulary, such as those produced from standard&#8217;s codelists. <code>RE_ItemStatus</code> contains the following items:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 75%;">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Date</th>
-<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022-04-22</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://iso-tc211.github.io/GOM/standards-assessment/reports/19157-1-1.html">ISO19157-1 (1) Geographic information — Data quality - Part 1: General requirements</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>submitted</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The item has been entered into the register, but the control body has not accepted the proposal to add it.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>valid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The item has been accepted, is recommended for use, and has not been superseded or retired.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>superseded</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The item has been superseded by another item and is no longer recommended for use.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>retired</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A decision has been made that the item is no longer recommended for use. It has not been superseded by another item.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>invalid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A decision has been made that a previously valid register item contains a substantial error and is invalid, and will normally have been replaced by a corrected item.</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extensible_vocabulary_needs">Extensible vocabulary needs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Codes within ISO codelists delivered as SKOS <a href="#SKOS">[SKOS]</a> vocabularies by GOM are intended for maximal reuse. Some non-standard SKOS properties added to the proposed <a href="https://iso-tc211.github.io/GOM/vocab-profile/">ISO SKOS Vocabulary Profile</a> to cater for this, such as <code>rdfs:isDefinedBy</code> which indicates which vocabulary originally defined a code, as opposed to all the vocabularies that reuse that code but do not define it. Vocabulary code inclusion is indicated with the standard SKOS <code>skos:inScheme</code> property.</p>
+</div>
+<div class="paragraph">
+<p>To allow for codelist vocabulary extension, several properties are proposed for use in the <a href="https://iso-tc211.github.io/GOM/vocab-profile/">ISO SKOS Vocabulary Profile</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>sdo:contributor</strong> - the party that contributed the individual code</p>
+</li>
+<li>
+<p><strong>dcterms:provenance</strong> / <strong>dcterms:source</strong> / <strong>prof:wasDefinedBy</strong> - properties on an individual code indicating different provenance/source information that the vocabulary as a whole</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>GOM also proposes that the <code>RE_ItemStatus</code> 'status' enumeration be extended with nuanced versions of <code>valid</code> so that valid codes contributed by the community can be easily differntiated from codes orriginally supplied in standards.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_proposed_re_itemstatus_extension">Proposed <code>RE_ItemStatus</code> extension</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>GOM proposes two subclasses of <code>valid</code> as follows:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 75%;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>original</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The item is valid and was supplied within the original issuance of the vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addition</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The item is valid and was supplied to the vocabulary after initial creation</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>These two statuses, defined in generic terms above, will be interpreted as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>original</code> - present within a Standard&#8217;s codelist</p>
+</li>
+<li>
+<p><code>addition</code> - supplied as a codelist extension after Standard publication</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Since all vocabulary items present within a Standard&#8217;s codelist will automatically be deemed <code>valid</code> by GOM and assigned the <code>original</code> specialised status, the ISO19135 assessment lifecycle - <code>submitted</code> to <code>valid</code> - will only be enacted for community supplied codes that, if accepted, result in items with status <code>addition</code>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+the codes <code>original</code> &amp; <code>addition</code> within a future vocabulary for the ISO19135 <code>RE_ItemStatus</code> codelist will have the status of <code>addition</code>. Existing codes will have the status <code>original</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a id="ISO19153"></a> [ISO19135] International Organization for Standardization, <em>ISO19135-1 Geographic information - Procedures for item registration Part 1: Fundamentals</em>. International Standard (2015). <a href="https://www.iso.org/standard/54721.html" class="bare">https://www.iso.org/standard/54721.html</a></p>
+</li>
+<li>
+<p><a id="SKOS"></a> [SKOS] World Wide Web Consortium, <em>SKOS Simple Knowledge Organization System Reference</em>, W3C Recommendation (18 August 2009). <a href="https://www.w3.org/TR/skos-reference/" class="bare">https://www.w3.org/TR/skos-reference/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
