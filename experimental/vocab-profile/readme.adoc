@@ -31,7 +31,7 @@ This profile consists of several resources that play different roles, as describ
 |Specification Document | _specification_ | `https://iso-tc211.github.io/GOM/vocab-profile/specification.html` | Lists the normative requirements for data aiming to conform to this profile
 |Validator | _validation_ | `https://iso-tc211.github.io/GOM/vocab-profile/validator.shacl.ttl` | A machine-executable data validator for this profile's requirements
 |Compounded Validator | _validation_ | `https://iso-tc211.github.io/GOM/vocab-profile/compounded-validator.shacl.ttl` | A machine-executable data validator for this profile's requirements that also contains all the validators that this profile inherits from the things that it profiles
-|Status Vocabulary | _vocabulary_ | _to be established_ | An extended ISO19135 statuses vocabulary used for vocabulary and vocabulary element status indication
+|Status Vocabulary | _vocabulary_ | _to be established_ | An extended ISO19135 statuses vocabulary used for vocabulary and vocabulary element status indication. Currently a temporary vocabulary is given at https://iso-tc211.github.io/GOM/vocab-profile/statuses.html
 |Example data files | _example_ | `https://github.com/ISO-TC211/GOM/tree/master/experimental/vocab-profile/examples` | A directory of example data files, some valid and others invalid, according to this profile
 |===
 

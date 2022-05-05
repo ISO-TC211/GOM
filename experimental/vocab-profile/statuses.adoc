@@ -1,0 +1,57 @@
+= Extended ISO19135 Statuses Vocabulary
+
+This is a ddiscussion about a possible vocabulary extension to ISO19135's <<ISO19135>> `RE_ItemStatus` 'status' enumeration to cater for additional status required for use in GOM's handling of standard's codelists.
+
+== Current `RE_ItemStatus` codes
+
+GOM believes ISO19135's <<ISO19135>> `RE_ItemStatus` 'status' enumeration is the correct property for demonstrating the _officialness_ of a code in a codelist vocabulary, such as those produced from standard's codelists. `RE_ItemStatus` contains the following items:
+
+[width="75%", cols="1,4"]
+|===
+| Code | Definition
+
+| `submitted` | The item has been entered into the register, but the control body has not accepted the proposal to add it. 
+| `valid` | The item has been accepted, is recommended for use, and has not been superseded or retired.
+| `superseded` |The item has been superseded by another item and is no longer recommended for use.
+| `retired` | A decision has been made that the item is no longer recommended for use. It has not been superseded by another item.
+| `invalid` | A decision has been made that a previously valid register item contains a substantial error and is invalid, and will normally have been replaced by a corrected item.
+|===
+
+== Extensible vocabulary needs
+
+Codes within ISO codelists delivered as SKOS <<SKOS>> vocabularies by GOM are intended for maximal reuse. Some non-standard SKOS properties added to the proposed https://iso-tc211.github.io/GOM/vocab-profile/[ISO SKOS Vocabulary Profile] to cater for this, such as `rdfs:isDefinedBy` which indicates which vocabulary originally defined a code, as opposed to all the vocabularies that reuse that code but do not define it. Vocabulary code inclusion is indicated with the standard SKOS `skos:inScheme` property.
+
+To allow for codelist vocabulary extension, several properties are proposed for use in the https://iso-tc211.github.io/GOM/vocab-profile/[ISO SKOS Vocabulary Profile]:
+
+* *sdo:contributor* - the party that contributed the individual code
+* *dcterms:provenance* / *dcterms:source* / *prof:wasDefinedBy* - properties on an individual code indicating different provenance/source information that the vocabulary as a whole
+
+GOM also proposes that the `RE_ItemStatus` 'status' enumeration be extended with nuanced versions of `valid` so that valid codes contributed by the community can be easily differntiated from codes orriginally supplied in standards.
+
+== Proposed `RE_ItemStatus` extension 
+
+GOM proposes two subclasses of `valid` as follows:
+
+[width="75%", cols="1,4"]
+|===
+| Code | Definition
+
+| `original` | The item is valid and was supplied within the original issuance of the vocabulary
+| `addition` | The item is valid and was supplied to the vocabulary after initial creation
+|===
+
+These two statuses, defined in generic terms above, will be interpreted as:
+
+* `original` - present within a Standard's codelist
+* `addition` - supplied as a codelist extension after Standard publication
+
+Since all vocabulary items present within a Standard's codelist will automatically be deemed `valid` by GOM and assigned the `original` specialised status, the ISO19135 assessment lifecycle - `submitted` to `valid` - will only be enacted for community supplied codes that, if accepted, result in items with status `addition`.
+
+NOTE: the codes `original` & `addition` within a future vocabulary for the ISO19135 `RE_ItemStatus` codelist will have the status of `addition`. Existing codes will have the status `original`.
+
+
+== References
+
+* [[ISO19153]] [ISO19135] International Organization for Standardization, _ISO19135-1 Geographic information - Procedures for item registration Part 1: Fundamentals_. International Standard (2015). https://www.iso.org/standard/54721.html
+
+* [[SKOS]] [SKOS] World Wide Web Consortium, _SKOS Simple Knowledge Organization System Reference_, W3C Recommendation (18 August 2009). https://www.w3.org/TR/skos-reference/
