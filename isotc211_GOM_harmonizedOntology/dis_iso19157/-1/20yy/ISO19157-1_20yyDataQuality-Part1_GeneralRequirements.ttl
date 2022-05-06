@@ -1,0 +1,16 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityPart1_GeneralRequirements>
+    a owl:Ontology ;
+    rdfs:label "ISO 19157-1:20yy ISO19157-1_20yy Data quality - Part 1: General requirements" ;
+    dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    owl:imports
+        <http://def.isotc211.org/iso19150/-2/2012/base> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQuality> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityConcepts> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures> ;
+    owl:versionInfo "20yy-mm" ;
+.
+

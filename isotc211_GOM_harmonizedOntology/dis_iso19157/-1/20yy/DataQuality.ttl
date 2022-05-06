@@ -1,0 +1,510 @@
+PREFIX : <http://def.isotc211.org/iso19157/-1/20yy/DataQuality#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso19115-1_7972: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>
+PREFIX iso19115-1_7977: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>
+PREFIX iso19115-1_7985: <http://def.isotc211.org/iso19115/-1/2014/MetadataApplicationInformation#>
+PREFIX iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#>
+PREFIX iso19157-1_8269: <http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation#>
+PREFIX iso19157-1_8270: <http://def.isotc211.org/iso19157/-1/20yy/DataQualityResult#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQuality>
+    a owl:Ontology ;
+    rdfs:label "ISO 19157-1:20yy Data quality" ;
+    dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    owl:imports
+        <http://def.isotc211.org/iso19115/-1/2014/CommonClasses> ,
+        <http://def.isotc211.org/iso19150/-2/2012/base> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityResult> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/Metaquality> ;
+    owl:versionInfo "20yy-mm" ;
+.
+
+:AbsolutePositionalAccuracy
+    a owl:Class ;
+    rdfs:label "AbsolutePositionalAccuracy" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :PositionalAccuracy ;
+    skos:definition "closeness of reported coordinate values to values accepted as or being true" ;
+.
+
+:AccuracyOfATimeMeasurement
+    a owl:Class ;
+    rdfs:label "AccuracyOfATimeMeasurement" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :TemporalQuality ;
+    skos:definition "correctness of the temporal references of an item (reporting of error in time measurement)" ;
+.
+
+:Commission
+    a owl:Class ;
+    rdfs:label "Commission" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :Completeness ;
+    skos:definition "excess data present in the dataset, as described by the scope" ;
+.
+
+:ConceptualConsistency
+    a owl:Class ;
+    rdfs:label "ConceptualConsistency" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :LogicalConsistency ;
+    skos:definition "adherence to rules of the conceptual schema" ;
+.
+
+:DomainConsistency
+    a owl:Class ;
+    rdfs:label "DomainConsistency" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :LogicalConsistency ;
+    skos:definition "adherence of values to the value domains" ;
+.
+
+:FormatConsistency
+    a owl:Class ;
+    rdfs:label "FormatConsistency" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :LogicalConsistency ;
+    skos:definition "degree to which data is stored in accordance with the physical structure of the dataset, as described by the scope" ;
+.
+
+:GriddedDataPositionalAccuracy
+    a owl:Class ;
+    rdfs:label "GriddedDataPositionalAccuracy" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :PositionalAccuracy ;
+    skos:definition "closeness of gridded data position values to values accepted as or being true" ;
+.
+
+:NonQuantitativeAttributeCorrectness
+    a owl:Class ;
+    rdfs:label "NonQuantitativeAttributeCorrectness" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :ThematicQuality ;
+    skos:definition "correctness of non-quantitative attributes" ;
+.
+
+:Omission
+    a owl:Class ;
+    rdfs:label "Omission" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :Completeness ;
+    skos:definition "data absent from the dataset, as described by the scope" ;
+.
+
+:QuantitativeAttributeAccuracy
+    a owl:Class ;
+    rdfs:label "QuantitativeAttributeAccuracy" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :ThematicQuality ;
+    skos:definition "accuracy of quantitative attributes " ;
+.
+
+:RelativePositionalAccuracy
+    a owl:Class ;
+    rdfs:label "RelativePositionalAccuracy" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :PositionalAccuracy ;
+    skos:definition "closeness of the relative positions of features in the scope to their respective relative positions accepted as or being true" ;
+.
+
+:TemporalConsistency
+    a owl:Class ;
+    rdfs:label "TemporalConsistency" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :TemporalQuality ;
+    skos:definition "correctness of ordered events or sequences, if reported" ;
+.
+
+:TemporalValidity
+    a owl:Class ;
+    rdfs:label "TemporalValidity" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :TemporalQuality ;
+    skos:definition "validity of data specified by the scope with respect to time" ;
+.
+
+:ThematicClassificationCorrectness
+    a owl:Class ;
+    rdfs:label "ThematicClassificationCorrectness" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :ThematicQuality ;
+    skos:definition "comparison of the classes assigned to features or their attributes to a universe of discourse" ;
+.
+
+:TopologicalConsistency
+    a owl:Class ;
+    rdfs:label "TopologicalConsistency" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :LogicalConsistency ;
+    skos:definition "correctness of the explicitly encoded topological characteristics of the dataset as described by the scope" ;
+.
+
+:MeasureReference.nameOfMeasure
+    a owl:DatatypeProperty ;
+    rdfs:label "nameOfMeasure" ;
+    rdfs:domain :MeasureReference ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "name of the test applied to the data" ;
+.
+
+:QualityElement.derivedElement
+    a owl:ObjectProperty ;
+    rdfs:label "derivedElement" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :QualityElement ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :QualityElement ;
+.
+
+:QualityEvaluationReportInformation.elementReport
+    a owl:ObjectProperty ;
+    rdfs:label "elementReport" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :QualityEvaluationReportInformation ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :QualityElement ;
+.
+
+:QualityEvaluationReportInformation.onlineResource
+    a owl:ObjectProperty ;
+    rdfs:label "onlineResource" ;
+    iso19150-2:associationName "refetrences" ;
+    rdfs:domain :QualityEvaluationReportInformation ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7985:DS_Resource ;
+.
+
+:Completeness
+    a owl:Class ;
+    rdfs:label "Completeness" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :QualityElement ;
+    skos:definition "presence and absence of features, their attributes and their relationships" ;
+.
+
+:DataQuality.qualityEvaluationReport
+    a owl:ObjectProperty ;
+    rdfs:label "qualityEvaluationReport" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :DataQuality ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :QualityEvaluationReportInformation ;
+.
+
+:DataQuality.report
+    a owl:ObjectProperty ;
+    rdfs:label "report" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :DataQuality ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :QualityElement ;
+.
+
+:DataQuality.scope
+    a owl:ObjectProperty ;
+    rdfs:label "scope" ;
+    rdfs:domain :DataQuality ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7972:MD_Scope ;
+    skos:definition "the specific data to which the data quality information applies" ;
+.
+
+:MeasureReference.measureDescription
+    a owl:DatatypeProperty ;
+    rdfs:label "measureDescription" ;
+    rdfs:domain :MeasureReference ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "description of the measure" ;
+.
+
+:MeasureReference.measureIdentification
+    a owl:ObjectProperty ;
+    rdfs:label "measureIdentification" ;
+    rdfs:domain :MeasureReference ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7972:MD_Identifier ;
+    skos:definition "Identifier of the measure, value uniquely identifying the measure within a namespace" ;
+.
+
+:QualityElement.evaluationMethod
+    a owl:ObjectProperty ;
+    rdfs:label "evaluationMethod" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :QualityElement ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19157-1_8269:EvaluationMethod ;
+.
+
+:QualityElement.measure
+    a owl:ObjectProperty ;
+    rdfs:label "measure" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :QualityElement ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :MeasureReference ;
+.
+
+:QualityElement.qualityReportDetails
+    a owl:DatatypeProperty ;
+    rdfs:label "qualityReportDetails" ;
+    rdfs:domain :QualityElement ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "Clause in the standaloneQualityReport where this data quality element or any related data quality element (original results in case of derivation or aggregation) is described" ;
+.
+
+:QualityElement.result
+    a owl:ObjectProperty ;
+    rdfs:label "result" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :QualityElement ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19157-1_8270:QualityResult ;
+.
+
+:QualityEvaluationReportInformation.abstract
+    a owl:DatatypeProperty ;
+    rdfs:label "abstract" ;
+    rdfs:domain :QualityEvaluationReportInformation ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "abstract for the associated standalone quality report" ;
+.
+
+:QualityEvaluationReportInformation.qualityEvaluationReportDetails
+    a owl:DatatypeProperty ;
+    rdfs:label "qualityEvaluationReportDetails" ;
+    rdfs:domain :QualityEvaluationReportInformation ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "clause in the QualityEvaluationReport where this data quality element or any related data quality element (original results in case of derivation or aggregation) is described." ;
+.
+
+:QualityEvaluationReportInformation.reportReference
+    a owl:ObjectProperty ;
+    rdfs:label "reportReference" ;
+    rdfs:domain :QualityEvaluationReportInformation ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7977:CI_Citation ;
+    skos:definition "reference to the associated standalone quality report" ;
+.
+
+:DataQuality
+    a owl:Class ;
+    rdfs:label "DataQuality" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :DataQuality.scope
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :QualityEvaluationReportInformation ;
+            owl:onProperty :DataQuality.qualityEvaluationReport
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :DataQuality.qualityEvaluationReport
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :DataQuality.report
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :QualityElement ;
+            owl:onProperty :DataQuality.report
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7972:MD_Scope ;
+            owl:onProperty :DataQuality.scope
+        ] ;
+    skos:definition "quality information for the data specified by a data quality scope " ;
+.
+
+:PositionalAccuracy
+    a owl:Class ;
+    rdfs:label "PositionalAccuracy" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :QualityElement ;
+    skos:definition "accuracy of the position of features" ;
+.
+
+:TemporalQuality
+    a owl:Class ;
+    rdfs:label "TemporalQuality" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :QualityElement ;
+    skos:definition "accuracy of the temporal attributes and temporal relationships of features" ;
+.
+
+:ThematicQuality
+    a owl:Class ;
+    rdfs:label "ThematicQuality" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :QualityElement ;
+    skos:definition "accuracy of quantitative attributes and the correctness of non-quantitative attributes and of the classifications of features and their relationships" ;
+.
+
+:LogicalConsistency
+    a owl:Class ;
+    rdfs:label "LogicalConsistency" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :QualityElement ;
+    skos:definition "degree of adherence to logical rules of data structure, attribution and relationships (data structure can be conceptual, logical or physical)" ;
+.
+
+:MeasureReference
+    a owl:Class ;
+    rdfs:label "MeasureReference" ;
+    iso19150-2:constraint "(count(measureIdentifier) .gt. 0) OR (count (nameOfMeasure) AND count (measureDescription).gt.0)" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :MeasureReference.nameOfMeasure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :MeasureReference.measureDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7972:MD_Identifier ;
+            owl:onProperty :MeasureReference.measureIdentification
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureReference.measureDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureReference.measureIdentification
+        ] ;
+    skos:definition "reference to the measure used" ;
+.
+
+:QualityEvaluationReportInformation
+    a owl:Class ;
+    rdfs:label "QualityEvaluationReportInformation" ;
+    iso19150-2:constraint "count(reportReference) + count(onlineResource) .gt. 1" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityEvaluationReportInformation.qualityEvaluationReportDetails
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :QualityEvaluationReportInformation.abstract
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7977:CI_Citation ;
+            owl:onProperty :QualityEvaluationReportInformation.reportReference
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :QualityElement ;
+            owl:onProperty :QualityEvaluationReportInformation.elementReport
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7985:DS_Resource ;
+            owl:onProperty :QualityEvaluationReportInformation.onlineResource
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityEvaluationReportInformation.abstract
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :QualityEvaluationReportInformation.qualityEvaluationReportDetails
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityEvaluationReportInformation.reportReference
+        ] ;
+    skos:definition "reference to an external quality evaluation report" ;
+.
+
+:QualityElement
+    a owl:Class ;
+    rdfs:label "QualityElement" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19157-1_8270:QualityResult ;
+            owl:onProperty :QualityElement.result
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityElement.qualityReportDetails
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :QualityElement.qualityReportDetails
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19157-1_8269:EvaluationMethod ;
+            owl:onProperty :QualityElement.evaluationMethod
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :MeasureReference ;
+            owl:onProperty :QualityElement.measure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityElement.evaluationMethod
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityElement.measure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityElement.result
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :QualityElement ;
+            owl:onProperty :QualityElement.derivedElement
+        ] ;
+    skos:definition "aspect of quantitative quality information" ;
+.
+

@@ -1,0 +1,590 @@
+PREFIX : <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso19103_5900: <http://def.isotc211.org/iso19103/2015/NameTypes#>
+PREFIX iso19115-1_7972: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>
+PREFIX iso19115-1_7977: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>
+PREFIX iso19135-1_6193: <http://def.isotc211.org/iso19135/-1/2015/CoreModel#>
+PREFIX iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#>
+PREFIX iso19157-1Code: <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+iso19157-1Code:ValueStructureCollection
+    a skos:Collection ;
+    skos:member
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/bag> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/coverage> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/matrix> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/sequence> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/set> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/table> ;
+    skos:prefLabel "ValueStructure - Collection" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures>
+    a owl:Ontology ;
+    rdfs:label "ISO 19157-1:20yy Data quality measures" ;
+    dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    owl:imports
+        <http://def.isotc211.org/iso19150/-2/2012/base> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures> ;
+    owl:versionInfo "20yy-mm" ;
+.
+
+:QualityMeasure.alias
+    a owl:DatatypeProperty ;
+    rdfs:label "alias" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "another recognized name, an abbreviation or a short name for the same data quality measure" ;
+.
+
+:QualityMeasure.example
+    a owl:ObjectProperty ;
+    rdfs:label "example" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :MeasureDescription ;
+    skos:definition "illustration of the use of a data quality measure" ;
+.
+
+:QualityMeasure.parameter
+    a owl:ObjectProperty ;
+    rdfs:label "parameter" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :MeasureParameter ;
+.
+
+:QualityMeasure.sourceReference
+    a owl:ObjectProperty ;
+    rdfs:label "sourceReference" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :SourceReference ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/bag>
+    a
+        :ValueStructure ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "finite, unordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)" ;
+    skos:inScheme iso19157-1Code:ValueStructure ;
+    skos:prefLabel "bag" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/coverage>
+    a
+        :ValueStructure ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "feature that acts as a function to return values from its range for any direct position within its spatial, temporal or spatiotemporal domain (ISO 19123:2005)" ;
+    skos:inScheme iso19157-1Code:ValueStructure ;
+    skos:prefLabel "coverage" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/matrix>
+    a
+        :ValueStructure ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "rectangular array of numbers (ISO.sl.TS 19129:2009)" ;
+    skos:inScheme iso19157-1Code:ValueStructure ;
+    skos:prefLabel "matrix" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/sequence>
+    a
+        :ValueStructure ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "finite, ordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)" ;
+    skos:inScheme iso19157-1Code:ValueStructure ;
+    skos:prefLabel "sequence" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/set>
+    a
+        :ValueStructure ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "unordered collection of related items (objects or values) with no repetition (ISO 19107:2003)" ;
+    skos:inScheme iso19157-1Code:ValueStructure ;
+    skos:prefLabel "set" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/table>
+    a
+        :ValueStructure ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "an arrangement of data in which each item may be identified by means of arguments or keys (ISO.sl.IEC 2382-4:1999)" ;
+    skos:inScheme iso19157-1Code:ValueStructure ;
+    skos:prefLabel "table" ;
+.
+
+:BasicMeasure.definition
+    a owl:DatatypeProperty ;
+    rdfs:label "definition" ;
+    rdfs:domain :BasicMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "definition of the data quality basic measure" ;
+.
+
+:BasicMeasure.example
+    a owl:ObjectProperty ;
+    rdfs:label "example" ;
+    rdfs:domain :BasicMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :MeasureDescription ;
+    skos:definition "illustration of the use of a data quality measure" ;
+.
+
+:BasicMeasure.name
+    a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain :BasicMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "name of the data quality basic measure applied to the data" ;
+.
+
+:BasicMeasure.valueType
+    a owl:ObjectProperty ;
+    rdfs:label "valueType" ;
+    rdfs:domain :BasicMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19103_5900:TypeName ;
+    skos:definition "value type for the result of the basic measure (shall be one of the data types defined in ISO.sl.TS 19103:2005)" ;
+.
+
+:MeasureDescription.extendedDescription
+    a owl:ObjectProperty ;
+    rdfs:label "extendedDescription" ;
+    rdfs:domain :MeasureDescription ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7972:MD_BrowseGraphic ;
+    skos:definition "illustration" ;
+.
+
+:MeasureDescription.textDescription
+    a owl:DatatypeProperty ;
+    rdfs:label "textDescription" ;
+    rdfs:domain :MeasureDescription ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "text description" ;
+.
+
+:MeasureParameter.definition
+    a owl:DatatypeProperty ;
+    rdfs:label "definition" ;
+    rdfs:domain :MeasureParameter ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "definition of the data quality parameter" ;
+.
+
+:MeasureParameter.description
+    a owl:ObjectProperty ;
+    rdfs:label "description" ;
+    rdfs:domain :MeasureParameter ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :MeasureDescription ;
+    skos:definition "description of the data quality parameter" ;
+.
+
+:MeasureParameter.name
+    a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain :MeasureParameter ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "name of the data quality parameter" ;
+.
+
+:MeasureParameter.valueStructure
+    a owl:ObjectProperty ;
+    rdfs:label "valueStructure" ;
+    rdfs:domain :MeasureParameter ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :ValueStructure ;
+    skos:definition "structure of the data quality parameter" ;
+.
+
+:MeasureParameter.valueType
+    a owl:ObjectProperty ;
+    rdfs:label "valueType" ;
+    rdfs:domain :MeasureParameter ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19103_5900:TypeName ;
+    skos:definition "value type of the data quality parameter (shall be one of the data types defined in ISO.sl.TS 19103:2005)" ;
+.
+
+:QualityMeasure.basicMeasure
+    a owl:ObjectProperty ;
+    rdfs:label "basicMeasure" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :BasicMeasure ;
+.
+
+:QualityMeasure.definition
+    a owl:DatatypeProperty ;
+    rdfs:label "definition" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "definition of the fundamental concept for the data quality measure" ;
+.
+
+:QualityMeasure.description
+    a owl:ObjectProperty ;
+    rdfs:label "description" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :MeasureDescription ;
+    skos:definition "description of the data quality measure, including all formulae and.sl.or illustrations needed to establish the result of applying the measure" ;
+.
+
+:QualityMeasure.elementName
+    a owl:ObjectProperty ;
+    rdfs:label "elementName" ;
+    iso19150-2:constraint "The value of  elementName shall be the TypeName of a data quality element specified in this International Standard" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19103_5900:TypeName ;
+    skos:definition "name of the data quality element for which quality is reported" ;
+.
+
+:QualityMeasure.measureIdentifier
+    a owl:ObjectProperty ;
+    rdfs:label "measureIdentifier" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7972:MD_Identifier ;
+    skos:definition "value uniquely identifying the measure within a namespace" ;
+.
+
+:QualityMeasure.name
+    a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "name of the data quality measure applied to the data" ;
+.
+
+:QualityMeasure.valueStructure
+    a owl:ObjectProperty ;
+    rdfs:label "valueStructure" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :ValueStructure ;
+    skos:definition "structure for reporting a complex data quality result" ;
+.
+
+:QualityMeasure.valueType
+    a owl:ObjectProperty ;
+    rdfs:label "valueType" ;
+    rdfs:domain :QualityMeasure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19103_5900:TypeName ;
+    skos:definition "value type for reporting a data quality result (shall be one of the data types defined in ISO.sl.TS 19103:2005)" ;
+.
+
+:SourceReference.citation
+    a owl:ObjectProperty ;
+    rdfs:label "citation" ;
+    rdfs:domain :SourceReference ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7977:CI_Citation ;
+    skos:definition "reference to the source" ;
+.
+
+:SourceReference
+    a owl:Class ;
+    rdfs:label "SourceReference" ;
+    iso19150-2:constraint "sourceReference shall be provided if external source exists" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :SourceReference.citation
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7977:CI_Citation ;
+            owl:onProperty :SourceReference.citation
+        ] ;
+    skos:definition "reference to the source of the data quality measure" ;
+.
+
+:BasicMeasure
+    a owl:Class ;
+    rdfs:label "BasicMeasure" ;
+    iso19150-2:constraint "valueType shall be one of the data types defined in ISO 19103" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :BasicMeasure.valueType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :BasicMeasure.definition
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :BasicMeasure.name
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :BasicMeasure.example
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :BasicMeasure.name
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :BasicMeasure.definition
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19103_5900:TypeName ;
+            owl:onProperty :BasicMeasure.valueType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :MeasureDescription ;
+            owl:onProperty :BasicMeasure.example
+        ] ,
+        iso19135-1_6193:RegisterItem ;
+    skos:definition "data quality basic measure" ;
+.
+
+iso19157-1Code:ValueStructure
+    a skos:ConceptScheme ;
+    dcterms:isFormatOf :ValueStructure ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:prefLabel "ValueStructure - ConceptScheme" ;
+.
+
+:MeasureParameter
+    a owl:Class ;
+    rdfs:label "MeasureParameter" ;
+    iso19150-2:constraint "valueType shall be one of the data types defined in ISO 19103" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureParameter.name
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19103_5900:TypeName ;
+            owl:onProperty :MeasureParameter.valueType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :MeasureParameter.definition
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureParameter.description
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureParameter.valueStructure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureParameter.definition
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :MeasureDescription ;
+            owl:onProperty :MeasureParameter.description
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :ValueStructure ;
+            owl:onProperty :MeasureParameter.valueStructure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :MeasureParameter.name
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureParameter.valueType
+        ] ,
+        iso19135-1_6193:RegisterItem ;
+    skos:definition "data quality parameter" ;
+.
+
+:MeasureDescription
+    a owl:Class ;
+    rdfs:label "MeasureDescription" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :MeasureDescription.textDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7972:MD_BrowseGraphic ;
+            owl:onProperty :MeasureDescription.extendedDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureDescription.extendedDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :MeasureDescription.textDescription
+        ] ;
+    skos:definition "data quality measure description" ;
+.
+
+:ValueStructure
+    a owl:Class ;
+    rdfs:label "ValueStructure" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf skos:Concept ;
+.
+
+:QualityMeasure
+    a owl:Class ;
+    rdfs:label "QualityMeasure" ;
+    iso19150-2:constraint "valueStructure shall be provided if the result includes more than one value" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :QualityMeasure.name
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :QualityMeasure.definition
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.elementName
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :MeasureParameter ;
+            owl:onProperty :QualityMeasure.parameter
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.valueStructure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19103_5900:TypeName ;
+            owl:onProperty :QualityMeasure.elementName
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19103_5900:TypeName ;
+            owl:onProperty :QualityMeasure.valueType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.basicMeasure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.description
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.name
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.definition
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7972:MD_Identifier ;
+            owl:onProperty :QualityMeasure.measureIdentifier
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :SourceReference ;
+            owl:onProperty :QualityMeasure.sourceReference
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :QualityMeasure.alias
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :MeasureDescription ;
+            owl:onProperty :QualityMeasure.description
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :MeasureDescription ;
+            owl:onProperty :QualityMeasure.example
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :BasicMeasure ;
+            owl:onProperty :QualityMeasure.basicMeasure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.valueType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityMeasure.measureIdentifier
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :ValueStructure ;
+            owl:onProperty :QualityMeasure.valueStructure
+        ] ,
+        iso19135-1_6193:RegisterItem ;
+    skos:definition "Data quality measure" ;
+.
+

@@ -1,0 +1,13 @@
+= Standards Domain Model Assessment Procedure
+
+The Standards Domain Model Assessment Procedure focusses on converting UML models for the Standard to OWL. 
+
+The current conversion process uses an Enterprise Architect script developed by GOM [1].
+
+The proposed future conversion process alters the output of the current conversion process in the following ways:
+
+. One
+. Two
+. Three
+
+[1] https://github.com/ISO-TC211/GOM/tree/master/GOM_Technologies

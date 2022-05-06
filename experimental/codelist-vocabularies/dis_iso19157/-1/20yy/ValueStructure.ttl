@@ -1,0 +1,109 @@
+PREFIX cs: <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:bag
+    a skos:Concept ;
+    dcterms:identifier "bag"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "finite, unordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "bag" ;
+    skos:topConceptOf cs: ;
+.
+
+cs:coverage
+    a skos:Concept ;
+    dcterms:identifier "coverage"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "feature that acts as a function to return values from its range for any direct position within its spatial, temporal or spatiotemporal domain (ISO 19123:2005)" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "coverage" ;
+    skos:topConceptOf cs: ;
+.
+
+cs:matrix
+    a skos:Concept ;
+    dcterms:identifier "matrix"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "rectangular array of numbers (ISO.sl.TS 19129:2009)" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "matrix" ;
+    skos:topConceptOf cs: ;
+.
+
+cs:sequence
+    a skos:Concept ;
+    dcterms:identifier "sequence"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "finite, ordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sequence" ;
+    skos:topConceptOf cs: ;
+.
+
+cs:set
+    a skos:Concept ;
+    dcterms:identifier "set"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "unordered collection of related items (objects or values) with no repetition (ISO 19107:2003)" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "set" ;
+    skos:topConceptOf cs: ;
+.
+
+cs:table
+    a skos:Concept ;
+    dcterms:identifier "table"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "an arrangement of data in which each item may be identified by means of arguments or keys (ISO.sl.IEC 2382-4:1999)" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "table" ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "ValueStructure"^^xsd:token ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_DateTypeCode> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        cs:bag ,
+        cs:coverage ,
+        cs:matrix ,
+        cs:sequence ,
+        cs:set ,
+        cs:table ;
+    skos:prefLabel "Value Structure Code list"@en ;
+.

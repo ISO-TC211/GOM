@@ -1,0 +1,323 @@
+PREFIX : <http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso19115-1_7977: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>
+PREFIX iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#>
+PREFIX iso19157-1Code: <http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation/code/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation>
+    a owl:Ontology ;
+    rdfs:label "ISO 19157-1:20yy Data quality evaluation" ;
+    dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    owl:imports <http://def.isotc211.org/iso19150/-2/2012/base> ;
+    owl:versionInfo "20yy-mm" ;
+.
+
+:AggregationDerivation
+    a owl:Class ;
+    rdfs:label "AggregationDerivation" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :EvaluationMethod ;
+    skos:definition "Aggregation or derivation method" ;
+.
+
+:FullInspection
+    a owl:Class ;
+    rdfs:label "FullInspection" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :DataEvaluation ;
+    skos:definition "full inspection" ;
+.
+
+iso19157-1Code:EvaluationMethodTypeCodeCollection
+    a skos:Collection ;
+    skos:member
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation/code/EvaluationMethodTypeCode/directExternal> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation/code/EvaluationMethodTypeCode/directInternal> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation/code/EvaluationMethodTypeCode/indirect> ;
+    skos:prefLabel "EvaluationMethodTypeCode - Collection" ;
+.
+
+:EvaluationMethod.dateTime
+    a owl:DatatypeProperty ;
+    rdfs:label "dateTime" ;
+    rdfs:domain :EvaluationMethod ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "date or range of dates on which a data quality measure was applied" ;
+.
+
+:EvaluationMethod.referenceDoc
+    a owl:ObjectProperty ;
+    rdfs:label "referenceDoc" ;
+    rdfs:domain :EvaluationMethod ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7977:CI_Citation ;
+    skos:definition "Information on documents which are referenced in developing and applying a data quality evaluation method" ;
+.
+
+:IndirectEvaluation
+    a owl:Class ;
+    rdfs:label "IndirectEvaluation" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :IndirectEvaluation.deductiveSource
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :IndirectEvaluation.deductiveSource
+        ] ,
+        :DataEvaluation ;
+    skos:definition "indirect evaluation" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation/code/EvaluationMethodTypeCode/directExternal>
+    a
+        :EvaluationMethodTypeCode ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required" ;
+    skos:inScheme iso19157-1Code:EvaluationMethodTypeCode ;
+    skos:prefLabel "directExternal" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation/code/EvaluationMethodTypeCode/directInternal>
+    a
+        :EvaluationMethodTypeCode ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "method of evaluating the quality of a dataset based on inspection of items within the dataset, where all data required is internal to the dataset being evaluated" ;
+    skos:inScheme iso19157-1Code:EvaluationMethodTypeCode ;
+    skos:prefLabel "directInternal" ;
+.
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityEvaluation/code/EvaluationMethodTypeCode/indirect>
+    a
+        :EvaluationMethodTypeCode ,
+        skos:Concept ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:definition "method of evaluating the quality of a dataset based on external knowledge" ;
+    skos:inScheme iso19157-1Code:EvaluationMethodTypeCode ;
+    skos:prefLabel "indirect" ;
+.
+
+:EvaluationMethod.deductiveSource
+    a owl:DatatypeProperty ;
+    rdfs:label "deductiveSource" ;
+    rdfs:domain :EvaluationMethod ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "information on which data are used as sources in deductive evaluation method" ;
+.
+
+:EvaluationMethod.evaluationMethodDescription
+    a owl:DatatypeProperty ;
+    rdfs:label "evaluationMethodDescription" ;
+    rdfs:domain :EvaluationMethod ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "description of the evaluation method" ;
+.
+
+:EvaluationMethod.evaluationMethodType
+    a owl:ObjectProperty ;
+    rdfs:label "evaluationMethodType" ;
+    rdfs:domain :EvaluationMethod ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range :EvaluationMethodTypeCode ;
+    skos:definition "type of method used to evaluate quality of the data" ;
+.
+
+:EvaluationMethod.evaluationProcedure
+    a owl:ObjectProperty ;
+    rdfs:label "evaluationProcedure" ;
+    rdfs:domain :EvaluationMethod ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7977:CI_Citation ;
+    skos:definition "reference to the procedure information " ;
+.
+
+:EvaluationMethod.name
+    a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain :EvaluationMethod ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "Name of the evaluation method" ;
+.
+
+:IndirectEvaluation.deductiveSource
+    a owl:DatatypeProperty ;
+    rdfs:label "deductiveSource" ;
+    rdfs:domain :IndirectEvaluation ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "information on which data are used as sources in deductive evaluation method" ;
+.
+
+:SampleBasedInspection.lotDescription
+    a owl:DatatypeProperty ;
+    rdfs:label "lotDescription" ;
+    rdfs:domain :SampleBasedInspection ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "information of how lots are defined" ;
+.
+
+:SampleBasedInspection.samplingRatio
+    a owl:DatatypeProperty ;
+    rdfs:label "samplingRatio" ;
+    rdfs:domain :SampleBasedInspection ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "information on how many samples on average are extracted for inspection from each lot of population" ;
+.
+
+:SampleBasedInspection.samplingScheme
+    a owl:DatatypeProperty ;
+    rdfs:label "samplingScheme" ;
+    rdfs:domain :SampleBasedInspection ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "information of the type of sampling scheme and description of the sampling procedure" ;
+.
+
+:DataEvaluation
+    a owl:Class ;
+    rdfs:label "DataEvaluation" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :EvaluationMethod ;
+    skos:definition "data evaluation method" ;
+.
+
+:SampleBasedInspection
+    a owl:Class ;
+    rdfs:label "SampleBasedInspection" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :SampleBasedInspection.lotDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :SampleBasedInspection.samplingRatio
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :SampleBasedInspection.samplingScheme
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :SampleBasedInspection.lotDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :SampleBasedInspection.samplingRatio
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :SampleBasedInspection.samplingScheme
+        ] ,
+        :DataEvaluation ;
+    skos:definition "sample based inspection" ;
+.
+
+iso19157-1Code:EvaluationMethodTypeCode
+    a skos:ConceptScheme ;
+    dcterms:isFormatOf :EvaluationMethodTypeCode ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    skos:prefLabel "EvaluationMethodTypeCode - ConceptScheme" ;
+.
+
+:EvaluationMethodTypeCode
+    a owl:Class ;
+    rdfs:label "EvaluationMethodTypeCode" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf skos:Concept ;
+.
+
+:EvaluationMethod
+    a owl:Class ;
+    rdfs:label "EvaluationMethod" ;
+    iso19150-2:constraint "evaluationMethodType.oclAsType(indirect) implies count(deductiveSource).gt.0" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :EvaluationMethod.name
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:dateTime ;
+            owl:onProperty :EvaluationMethod.dateTime
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :EvaluationMethod.evaluationMethodDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :EvaluationMethod.deductiveSource
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :EvaluationMethod.evaluationMethodDescription
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :EvaluationMethod.evaluationProcedure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :EvaluationMethod.evaluationMethodType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7977:CI_Citation ;
+            owl:onProperty :EvaluationMethod.evaluationProcedure
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom :EvaluationMethodTypeCode ;
+            owl:onProperty :EvaluationMethod.evaluationMethodType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :EvaluationMethod.deductiveSource
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7977:CI_Citation ;
+            owl:onProperty :EvaluationMethod.referenceDoc
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :EvaluationMethod.name
+        ] ;
+    skos:definition "Description of the evaluation method and procedure applied" ;
+.
+

@@ -1,0 +1,314 @@
+PREFIX : <http://def.isotc211.org/iso19157/-1/20yy/DataQualityResult#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso19103_5902: <http://def.isotc211.org/iso19103/2015/RecordTypes#>
+PREFIX iso19103_5905: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>
+PREFIX iso19115-1_7972: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>
+PREFIX iso19115-1_7977: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>
+PREFIX iso19115-1_7979: <http://def.isotc211.org/iso19115/-1/2014/ContentInformation#>
+PREFIX iso19115-1_7981: <http://def.isotc211.org/iso19115/-1/2014/DistributionInformation#>
+PREFIX iso19115-1_7983: <http://def.isotc211.org/iso19115/-1/2014/IdentificationInformation#>
+PREFIX iso19115-1_7990: <http://def.isotc211.org/iso19115/-1/2014/SpatialRepresentationInformation#>
+PREFIX iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://def.isotc211.org/iso19157/-1/20yy/DataQualityResult>
+    a owl:Ontology ;
+    rdfs:label "ISO 19157-1:20yy Data quality result" ;
+    dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    owl:imports <http://def.isotc211.org/iso19150/-2/2012/base> ;
+    owl:versionInfo "20yy-mm" ;
+.
+
+:CoverageResult.resultContent
+    a owl:ObjectProperty ;
+    rdfs:label "resultContent" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :CoverageResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7979:MD_RangeDimension ;
+.
+
+:DescriptiveResult
+    a owl:Class ;
+    rdfs:label "DescriptiveResult" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :DescriptiveResult.statement
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :DescriptiveResult.statement
+        ] ,
+        :QualityResult ;
+    skos:definition "data quality descriptive result" ;
+.
+
+:ConformanceResult.explanation
+    a owl:DatatypeProperty ;
+    rdfs:label "explanation" ;
+    rdfs:domain :ConformanceResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "explanation of the meaning of conformance for this result" ;
+.
+
+:ConformanceResult.pass
+    a owl:DatatypeProperty ;
+    rdfs:label "pass" ;
+    rdfs:domain :ConformanceResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:boolean ;
+    skos:definition "indication of the conformance result where 0 .eq. fail and 1 .eq. pass" ;
+.
+
+:ConformanceResult.specification
+    a owl:ObjectProperty ;
+    rdfs:label "specification" ;
+    rdfs:domain :ConformanceResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7977:CI_Citation ;
+    skos:definition "citation of data product specification or user requirement against which data is being evaluated" ;
+.
+
+:CoverageResult.resultFormat
+    a owl:ObjectProperty ;
+    rdfs:label "resultFormat" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :CoverageResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7981:MD_Format ;
+.
+
+:CoverageResult.resultSpatialRepresentation
+    a owl:ObjectProperty ;
+    rdfs:label "resultSpatialRepresentation" ;
+    iso19150-2:aggregationType "partOfSharedAggregation" ;
+    rdfs:domain :CoverageResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7990:MD_SpatialRepresentation ;
+.
+
+:CoverageResult.spatialRepresentationType
+    a owl:ObjectProperty ;
+    rdfs:label "spatialRepresentationType" ;
+    rdfs:domain :CoverageResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7983:MD_SpatialRepresentationTypeCode ;
+    skos:definition "Description: method used to spatially represent the coverage resultshortName: spaRepType" ;
+.
+
+:DescriptiveResult.statement
+    a owl:DatatypeProperty ;
+    rdfs:label "statement" ;
+    rdfs:domain :DescriptiveResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:string ;
+    skos:definition "textual expression of the descriptive result" ;
+.
+
+:QualityResult.dateTime
+    a owl:DatatypeProperty ;
+    rdfs:label "dateTime" ;
+    rdfs:domain :QualityResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "date when the result was generated " ;
+.
+
+:QualityResult.resultScope
+    a owl:ObjectProperty ;
+    rdfs:label "resultScope" ;
+    rdfs:domain :QualityResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19115-1_7972:MD_Scope ;
+    skos:definition "scope of the result" ;
+.
+
+:QuantitativeResult.value
+    a owl:ObjectProperty ;
+    rdfs:label "value" ;
+    rdfs:domain :QuantitativeResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19103_5902:Record ;
+    skos:definition "quantitative value or values, content determined by the evaluation procedure used, accordingly with the value type and valueStructure defined for the measure" ;
+.
+
+:QuantitativeResult.valueRecordType
+    a owl:ObjectProperty ;
+    rdfs:label "valueRecordType" ;
+    rdfs:domain :QuantitativeResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19103_5902:RecordType ;
+    skos:definition "value type for reporting a data quality result, depends of the implementation" ;
+.
+
+:QuantitativeResult.valueUnit
+    a owl:ObjectProperty ;
+    rdfs:label "valueUnit" ;
+    rdfs:domain :QuantitativeResult ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19103_5905:UnitOfMeasure ;
+    skos:definition "value unit for reporting a data quality result" ;
+.
+
+:ConformanceResult
+    a owl:Class ;
+    rdfs:label "ConformanceResult" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :ConformanceResult.explanation
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty :ConformanceResult.explanation
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :ConformanceResult.specification
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7977:CI_Citation ;
+            owl:onProperty :ConformanceResult.specification
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :ConformanceResult.pass
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:boolean ;
+            owl:onProperty :ConformanceResult.pass
+        ] ,
+        :QualityResult ;
+    skos:definition "information about the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level " ;
+.
+
+:QuantitativeResult
+    a owl:Class ;
+    rdfs:label "QuantitativeResult" ;
+    iso19150-2:constraint "if value is a number, valueUnit .gt. 1" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QuantitativeResult.valueRecordType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QuantitativeResult.value
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19103_5902:Record ;
+            owl:onProperty :QuantitativeResult.value
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19103_5905:UnitOfMeasure ;
+            owl:onProperty :QuantitativeResult.valueUnit
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19103_5902:RecordType ;
+            owl:onProperty :QuantitativeResult.valueRecordType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QuantitativeResult.valueUnit
+        ] ,
+        :QualityResult ;
+    skos:definition "the values or information about the value(s) (or set of values) obtained from applying a data quality measure" ;
+.
+
+:CoverageResult
+    a owl:Class ;
+    rdfs:label "CoverageResult" ;
+    iso19150-2:constraint ".gu.resultContent.gu. + .gu.resultFormat.gu. .gt. 0" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :CoverageResult.resultFormat
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :CoverageResult.resultSpatialRepresentation
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7983:MD_SpatialRepresentationTypeCode ;
+            owl:onProperty :CoverageResult.spatialRepresentationType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7990:MD_SpatialRepresentation ;
+            owl:onProperty :CoverageResult.resultSpatialRepresentation
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7981:MD_Format ;
+            owl:onProperty :CoverageResult.resultFormat
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :CoverageResult.spatialRepresentationType
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7979:MD_RangeDimension ;
+            owl:onProperty :CoverageResult.resultContent
+        ] ,
+        :QualityResult ;
+    skos:definition "result of a data quality measure organising the measured values as a coverage" ;
+.
+
+:QualityResult
+    a owl:Class ;
+    rdfs:label "QualityResult" ;
+    iso19150-2:constraint "resultScope shall be a subset of DataQuality.scope" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityResult.resultScope
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :QualityResult.dateTime
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19115-1_7972:MD_Scope ;
+            owl:onProperty :QualityResult.resultScope
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom xsd:dateTime ;
+            owl:onProperty :QualityResult.dateTime
+        ] ;
+    skos:definition "generalization of more specific result classes" ;
+.
+

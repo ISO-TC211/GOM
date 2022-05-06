@@ -1,0 +1,71 @@
+PREFIX : <http://def.isotc211.org/iso19157/-1/20yy/Metaquality#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#>
+PREFIX iso19157-1_8268: <http://def.isotc211.org/iso19157/-1/20yy/DataQuality#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://def.isotc211.org/iso19157/-1/20yy/Metaquality>
+    a owl:Ontology ;
+    rdfs:label "ISO 19157-1:20yy Metaquality" ;
+    dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    owl:imports
+        <http://def.isotc211.org/iso19150/-2/2012/base> ,
+        <http://def.isotc211.org/iso19157/-1/20yy/DataQuality> ;
+    owl:versionInfo "20yy-mm" ;
+.
+
+:Confidence
+    a owl:Class ;
+    rdfs:label "Confidence" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :Metaquality ;
+    skos:definition "trustworthiness of a data quality result" ;
+.
+
+:Homogeneity
+    a owl:Class ;
+    rdfs:label "Homogeneity" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :Metaquality ;
+    skos:definition "expected or tested uniformity of the results obtained for a data quality evaluation" ;
+.
+
+:Representativity
+    a owl:Class ;
+    rdfs:label "Representativity" ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf :Metaquality ;
+    skos:definition "degree to which the sample used has produced a result which is representative of the data within the data quality scope" ;
+.
+
+:Metaquality.relatedQualityElement
+    a owl:ObjectProperty ;
+    rdfs:label "relatedQualityElement" ;
+    rdfs:domain :Metaquality ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:range iso19157-1_8268:QualityElement ;
+.
+
+:Metaquality
+    a owl:Class ;
+    rdfs:label "Metaquality" ;
+    iso19150-2:isAbstract true ;
+    rdfs:isDefinedBy "http://standards.iso.org/iso/19157/-1/ed-1/en/" ;
+    rdfs:subClassOf
+        [
+            a owl:Restriction ;
+            owl:allValuesFrom iso19157-1_8268:QualityElement ;
+            owl:onProperty :Metaquality.relatedQualityElement
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :Metaquality.relatedQualityElement
+        ] ,
+        iso19157-1_8268:QualityElement ;
+    skos:definition "information about the reliability of data quality results" ;
+.
+

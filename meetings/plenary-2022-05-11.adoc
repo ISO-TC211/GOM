@@ -1,0 +1,42 @@
+= May 2022 Plenary 
+
+== Informal Agenda
+
+This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
+
+. Reminder of the purpose of GOM
+.. purpose as it has been to date
+.. purpose continuing
+. Evidence continuation of GOM UL-to-OWL conversion
+.. GOM has recently produced an OWL version of DIS ISO19157-1 [1] (thanks to Jean)
+.. ISO19157-1 was conducted as part of an assessment process that is being formalised, as per next section
+. Introduction of a formalised Standard Semantic Web assessment procedure
+.. Procedure document at [2]
+.. Tested with DIS ISO19157-1 with results at [3]
+.. Future Procedure tests are expected for 2 - 3 Standards, June+
+.. Future results will also be listed at [3]
+. New Assessment outcome #1 - codelist vocabularies
+.. Stand-alone expressions of Standards' codelists as Semantic Web vocabularies are presented at [4]
+... Includes the populat ISO19115 codelists
+... Includes ISO19107 codelists from recent UML-to-OWL
+
+The Procedure for Standards assessment [2] indicates that codelists 
+  * demo vocabs
+    * using a formal data model (vocab profile)
+    * allowing for codelist extension
+      * double demo: 19135 extension and new statuses
+. New Assessment outcome #2 - proposed TC211 bibliography in SemWeb form
+
+[1] https://github.com/ISO-TC211/GOM/tree/master/isotc211_GOM_harmonizedOntology/dis_iso19157/-1/20yy
+
+[2] https://github.com/ISO-TC211/GOM/tree/master/standards-assessment
+
+[3] https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+
+[4] http://115.146.86.155/vocab
+
+## Briefing Note
+
+* ISO/TC211 ontologies (example - work in progress - to be introduced and discussed is here: https://github.com/ISO-TC211/GOM/tree/master/experimental/codelist-vocabularies)
+* ISO/TC211 AG6 (GOM) review process (draft to be presented and discussed in the meeting is available here: https://github.com/ISO-TC211/GOM/blob/master/standards-assessment/procedure.adoc)
+

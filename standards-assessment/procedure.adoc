@@ -128,7 +128,7 @@ The types of sections and the forms of their assessment are given in <<Table 1>>
 
 |Terms & Definitions |
 |Codelists |
-|Domain Model |
+|Domain Model | https://iso-tc211.github.io/GOM/standards-assessment/procedure-domain-model.html
 |Bibliography |
 |===
 
