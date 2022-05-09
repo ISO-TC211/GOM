@@ -91,7 +91,7 @@ SOURCE: https://www.w3.org/standards/semanticweb/
 Upon invitation to review a proposed Standard, GOM will follow the workflow show in <<procedure-overview>>
 
 [id=procedure-overview]
-image::img/procedure-overview.png[title="Standards Assessment Procedure Overview Workflow Diagram"]
+image::images/procedure-overview.png[title="Standards Assessment Procedure Overview Workflow Diagram"]
 
 The essence of the workflow is that Standards documents comprise multiple sections which require related but separate Semantic Web assessments. The rationale for this assessment is that Standards documents are highly regular in that they consist of common and predictable sections and that no one Semantic Web model can sensibly represent all the concerns of a Standard, other than at a superficial structural level - a document structural, not a content, model.
 
