@@ -37,7 +37,7 @@ The sections in this standard relevant for semantic assessment are determined to
 ** contains a vocabulary of tests
 * *Annex C - Data dictionary for data quality*
 ** contains two codelists, for "Evaluation method type" and "Value structure"
-** _see demonstration delivery of these codelists at..._
+** _see demonstration delivery of these codelists at http://115.146.86.155/vocab/EvaluationMethodTypeCode & http://115.146.86.155/vocab/ValueStructure_
 * *Bibiligraphy*
 ** contains a structured bibligraphy, members of which may be referred to by multiple Standards
 
