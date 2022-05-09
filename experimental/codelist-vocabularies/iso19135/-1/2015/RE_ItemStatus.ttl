@@ -105,7 +105,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
-    dcterms:identifier "CI_DateTypeCode"^^xsd:token ;
+    dcterms:identifier "RE_ItemStatus"^^xsd:token ;
     dcterms:issued "2000-01-01"^^xsd:date ;
     dcterms:modified "2000-01-01"^^xsd:date ;
     dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
