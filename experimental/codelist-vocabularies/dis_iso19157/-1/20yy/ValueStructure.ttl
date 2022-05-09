@@ -1,4 +1,5 @@
-PREFIX cs: <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/>
+PREFIX : <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure/>
+PREFIX cs: <http://def.isotc211.org/iso19157/-1/20yy/DataQualityMeasures/code/ValueStructure>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
@@ -7,75 +8,75 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs:bag
+:bag
     a skos:Concept ;
     dcterms:identifier "bag"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "finite, unordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)" ;
+    skos:definition "finite, unordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "bag" ;
+    skos:prefLabel "bag"@en ;
     skos:topConceptOf cs: ;
 .
 
-cs:coverage
+:coverage
     a skos:Concept ;
     dcterms:identifier "coverage"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "feature that acts as a function to return values from its range for any direct position within its spatial, temporal or spatiotemporal domain (ISO 19123:2005)" ;
+    skos:definition "feature that acts as a function to return values from its range for any direct position within its spatial, temporal or spatiotemporal domain (ISO 19123:2005)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "coverage" ;
+    skos:prefLabel "coverage"@en ;
     skos:topConceptOf cs: ;
 .
 
-cs:matrix
+:matrix
     a skos:Concept ;
     dcterms:identifier "matrix"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "rectangular array of numbers (ISO.sl.TS 19129:2009)" ;
+    skos:definition "rectangular array of numbers (ISO.sl.TS 19129:2009)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "matrix" ;
+    skos:prefLabel "matrix"@en ;
     skos:topConceptOf cs: ;
 .
 
-cs:sequence
+:sequence
     a skos:Concept ;
     dcterms:identifier "sequence"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "finite, ordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)" ;
+    skos:definition "finite, ordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sequence" ;
+    skos:prefLabel "sequence"@en ;
     skos:topConceptOf cs: ;
 .
 
-cs:set
+:set
     a skos:Concept ;
     dcterms:identifier "set"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "unordered collection of related items (objects or values) with no repetition (ISO 19107:2003)" ;
+    skos:definition "unordered collection of related items (objects or values) with no repetition (ISO 19107:2003)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "set" ;
+    skos:prefLabel "set"@en ;
     skos:topConceptOf cs: ;
 .
 
-cs:table
+:table
     a skos:Concept ;
     dcterms:identifier "table"^^xsd:token ;
     dcterms:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "an arrangement of data in which each item may be identified by means of arguments or keys (ISO.sl.IEC 2382-4:1999)" ;
+    skos:definition "an arrangement of data in which each item may be identified by means of arguments or keys (ISO.sl.IEC 2382-4:1999)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "table" ;
+    skos:prefLabel "table"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -99,11 +100,11 @@ cs:
     dcterms:source "http://standards.iso.org/iso/19157/-1/ed-1/en/"^^xsd:anyURI ;
     skos:definition "An ISO standard's ConceptScheme"@en ;
     skos:hasTopConcept
-        cs:bag ,
-        cs:coverage ,
-        cs:matrix ,
-        cs:sequence ,
-        cs:set ,
-        cs:table ;
-    skos:prefLabel "Value Structure Code list"@en ;
+        :bag ,
+        :coverage ,
+        :matrix ,
+        :sequence ,
+        :set ,
+        :table ;
+    skos:prefLabel "Value Structure Code"@en ;
 .

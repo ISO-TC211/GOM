@@ -10,11 +10,11 @@ GOM believes ISO19135's <<ISO19135>> `RE_ItemStatus` 'status' enumeration is the
 |===
 | Code | Definition
 
-| `submitted` | The item has been entered into the register, but the control body has not accepted the proposal to add it. 
-| `valid` | The item has been accepted, is recommended for use, and has not been superseded or retired.
-| `superseded` |The item has been superseded by another item and is no longer recommended for use.
-| `retired` | A decision has been made that the item is no longer recommended for use. It has not been superseded by another item.
-| `invalid` | A decision has been made that a previously valid register item contains a substantial error and is invalid, and will normally have been replaced by a corrected item.
+| `submitted` | The item has been entered into the register, but the control body has not accepted the proposal to add it
+| `valid` | The item has been accepted, is recommended for use, and has not been superseded or retired
+| `superseded` | The item has been superseded by another item and is no longer recommended for use
+| `retired` | A decision has been made that the item is no longer recommended for use. It has not been superseded by another item
+| `invalid` | A decision has been made that a previously valid register item contains a substantial error and is invalid, and will normally have been replaced by a corrected item
 |===
 
 == Extensible vocabulary needs
