@@ -9,7 +9,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. purpose continuing
 . *Evidence continuation of GOM UL-to-OWL conversion*
 .. GOM has recently produced an OWL version of ISO/CD 19157-1 [1] (thanks to Jean)
-.. ISO 19157-1 was conducted as part of an assessment process that is being formalised, as per next section
+.. ISO/CD 19157-1 review was conducted as part of an assessment process that is being formalised, as per next section
 . *Introduction of a formalised Standard Semantic Web assessment procedure*
 .. Procedure document at [2]
 .. Tested with ISO/CD 19157-1 with results at [3]
