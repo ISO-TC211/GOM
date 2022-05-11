@@ -19,7 +19,12 @@ Please contact GOM/TC211 if you wish to use this content.
 ## Contact
 The following persons are the contact points for this GOM content and GOM work in general:
 
-**Nicholas J. Car**                     **Ivana Ivánová**
-*GOM Convenor*                          *GOM Convenor*  
-ISO Technical Committee 211             ISO Technical Committee 211
-<nicholas.car@surroundaustralia.com>    <ivana.ivanova@curtin.edu.au>
+**Nicholas J. Car**                     
+*GOM Convenor*                           
+ISO Technical Committee 211             
+<nicholas.car@surroundaustralia.com> 
+
+**Ivana Ivánová**
+*GOM Convenor* 
+ISO Technical Committee 211
+<ivana.ivanova@curtin.edu.au>
