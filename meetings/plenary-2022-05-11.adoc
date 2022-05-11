@@ -7,7 +7,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 . *Reminder of the purpose of GOM*
 .. purpose as it has been to date
 .. purpose continuing
-. *Evidence continuation of GOM UL-to-OWL conversion*
+. *Evidence continuation of GOM UML-to-OWL conversion*
 .. GOM has recently produced an OWL version of ISO/CD 19157-1 [1] (thanks to Jean)
 .. ISO/CD 19157-1 review was conducted as part of an assessment process that is being formalised, as per next section
 . *Introduction of a formalised Standard Semantic Web assessment procedure*
