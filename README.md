@@ -24,7 +24,8 @@ The following persons are the contact points for this GOM content and GOM work i
 ISO Technical Committee 211             
 <nicholas.car@surroundaustralia.com> 
 
-**Ivana Ivánová**
-*GOM Convenor* 
-ISO Technical Committee 211
-<ivana.ivanova@curtin.edu.au>
+
+**ivana Ivánová**                     
+*GOM Convenor*                           
+ISO Technical Committee 211             
+<ivana.ivanova@curtin.edu.au> 
