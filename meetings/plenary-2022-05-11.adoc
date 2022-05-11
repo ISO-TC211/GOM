@@ -4,6 +4,18 @@
 
 This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
 
+=== Agenda Outline
+
+. *Welcome*
+. *Reminder of the purpose of GOM*
+. *Evidence continuation of GOM UML-to-OWL conversion*
+. *Introduction of a formalised Standard Semantic Web assessment procedure*
+. *Outcomes of new Standard Semantic Web assessment procedure*
+. *Codelist Vocabulary Publication Proposal*
+. *Next Meeting*
+
+=== Agenda Details
+
 . *Welcome*
 .. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
 .. Meeting protocols
