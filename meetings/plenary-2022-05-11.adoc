@@ -8,6 +8,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
 .. Meeting protocols
 .. Roll call
+... (re)introduction of co-chairs: Ivana & Nicholas
 .. How to contribute/ammend Agenda/Minutes
 .. Start Recording
 . *Reminder of the purpose of GOM*
