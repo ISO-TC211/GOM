@@ -8,6 +8,8 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
 .. Meeting protocols
 .. Roll call
+.. How to contribute/ammend Agenda/Minutes
+.. Start Recording
 . *Reminder of the purpose of GOM*
 .. purpose as it has been to date
 .. purpose continuing
@@ -34,6 +36,9 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. A formal vocabulary profile has been created to define a data model for TC vocabs that covers off on perceived requirements [5]
 ... An extension to the ISO 19135 _Item Status_ codelist has been proposed [6] to provide specialised statuses for TC codelists
 .... this codelist [7] exemplifies an extended ISO codelist
+. *Next Meeting*
+.. When
+.. Proposed Agenda
 
 
 [1] https://github.com/ISO-TC211/GOM/tree/master/isotc211_GOM_harmonizedOntology/dis_iso19157/-1/20yy
