@@ -17,9 +17,9 @@ The content for this repository is not licensed for use independently of the sta
 Please contact GOM/TC211 if you wish to use this content.
 
 ## Contact
-The following person is the contact point for this GOM content and GOM work in general:
+The following persons are the contact points for this GOM content and GOM work in general:
 
-**Nicholas J. Car**  
-*GOM Convenor*  
-ISO Technical Committee 211  
-<nicholas.car@surroundaustralia.com>
+**Nicholas J. Car**                     **Ivana Ivánová**
+*GOM Convenor*                          *GOM Convenor*  
+ISO Technical Committee 211             ISO Technical Committee 211
+<nicholas.car@surroundaustralia.com>    <ivana.ivanova@curtin.edu.au>
