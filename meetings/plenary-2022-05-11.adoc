@@ -4,6 +4,10 @@
 
 This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
 
+. *Welcome*
+.. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
+.. Meeting protocols
+.. Roll call
 . *Reminder of the purpose of GOM*
 .. purpose as it has been to date
 .. purpose continuing
