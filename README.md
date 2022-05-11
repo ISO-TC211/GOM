@@ -25,7 +25,7 @@ ISO Technical Committee 211
 <nicholas.car@surroundaustralia.com> 
 
 
-**ivana Ivánová**                     
+**Ivana Ivánová**                     
 *GOM Convenor*                           
 ISO Technical Committee 211             
 <ivana.ivanova@curtin.edu.au> 
