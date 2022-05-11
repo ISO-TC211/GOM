@@ -39,7 +39,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. *Outcome #2* - codelist publication as vocabularies
 ... Stand-alone expressions of Standards' codelists as Semantic Web vocabularies are presented at [4]
 .... Includes the popular ISO 19115-1 and ISO 19115-2 codelists
-.... Includes ISO 19107 codelists from recent UML-to-OWL
+.... Includes ISO 19157-1 codelists from recent UML-to-OWL
 .. *Outcome #3* - future semantic artifacts
 ... GOM proposes a Bibliography for TC211 in Semantic Web form
 .... Idea to be tested with other TC AGs
