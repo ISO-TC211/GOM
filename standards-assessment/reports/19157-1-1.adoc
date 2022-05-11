@@ -1,4 +1,4 @@
-= GOM Assessment Report
+= GOM Standard Assessment Report
 
 == 19157-1 - For Geographic information — Data quality - Part 1: General requirements
 
@@ -11,6 +11,7 @@
 | IRI | allocated: `https://standards.isotc211.org/19157/-1/1/` for the Standard's document, suggested `https://def.isotc211.org/iso19157/-1` for the model and `https://def.isotc211.org/iso19157/-1/1` for v1 of the model
 | Title | Geographic information — Data quality - Part 1: General requirements (_Information géographique — Qualité des données - Partie 1: Exigences générales_)
 | Edition | 1
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
 
 _incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
@@ -50,8 +51,8 @@ The sections in this standard relevant for semantic assessment are determined to
 | A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
 | None: pending a TC 211 references library
 
-| *3 Terms and definitions* | Refer to GeoLexica | Contact GeoLexca for review
-| *4.1 Abbreviations* | Refer to GeoLexica | Check whether abbreviations used here are present in GeoLexica
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4.1 Abbreviations* | Placement within GeoLexica | Ensure item noted in TMG Review
 | *6 General requirements for geographic information quality* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *8 Components of data quality* | Auto-generation of OWL model form | Confirm GOM can generate
 | *9 Data quality measures* | See *Annex C* | -
