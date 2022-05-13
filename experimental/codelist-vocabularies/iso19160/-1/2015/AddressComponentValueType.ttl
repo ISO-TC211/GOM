@@ -1,0 +1,98 @@
+PREFIX : <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressComponentValueType/>
+PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressComponentValueType>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:abbreviatedAlternative
+    a skos:Concept ;
+    dcterms:identifier "abbreviatedAlternative"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The alternative component value is an abbreviation." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "abbreviated alternative"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:colloquialAlternative
+    a skos:Concept ;
+    dcterms:identifier "colloquialAlternative"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The alternative component value is a colloquial alternative for the component value." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "colloquial alternative"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:defaultValue
+    a skos:Concept ;
+    dcterms:identifier "defaultValue"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The default component value (i.e. the one that is not an alternative)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "default value"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:lifecycleAlternative
+    a skos:Concept ;
+    dcterms:identifier "lifecycleAlternative"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The alternative component value was used in a different lifecycle stage." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lifecycle alternative"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:localeAlternative
+    a skos:Concept ;
+    dcterms:identifier "localeAlternative"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The alternative component value is in a different locale." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "locale alternative"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "AddressComponentValueType"^^xsd:token ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressComponentValueType> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :abbreviatedAlternative ,
+        :colloquialAlternative ,
+        :defaultValue ,
+        :lifecycleAlternative ,
+        :localeAlternative ;
+    skos:prefLabel "Address Component Value Type"@en ;
+.
+

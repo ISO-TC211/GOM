@@ -16,6 +16,14 @@ def pretty_title(title: str):
 
 
 def main():
+    ont_dir = Path(__file__).parent.parent.parent / "isotc211_GOM_harmonizedOntology" / "iso19160" / "-1" / "2015"
+    voc_dir = Path(__file__).parent.parent.parent / "experimental" / "codelist-vocabularies" / "iso19160" / "-1" / "2015"
+    excluded_files = [
+        "Profile_Minimal.rdf",
+        "Profile_Other.rdf",
+        "Profile_Sample.rdf",
+    ]
+
     tc_graph = Graph()
 
     tc = URIRef("http://def.isotc211.org/org/tc211")
@@ -24,17 +32,16 @@ def main():
     tc_graph.add((tc, SDO.description, Literal("The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information", lang="en")))
     tc_graph.add((tc, SDO.url, Literal("https://www.iso.org/committee/54904.html", datatype=XSD.anyURI)))
 
-    ont_dir = Path(__file__).parent.parent.parent / "isotc211_GOM_harmonizedOntology" / "iso19115" / "-1" / "2018"
-    voc_dir = Path(__file__).parent.parent.parent / "experimental" / "codelist-vocabularies" / "iso19115" / "-1" / "2018"
     voc_dir.mkdir(parents=True, exist_ok=True)
 
     rdf_files = ont_dir.glob("*.rdf")
 
     g = Graph()
     for f in rdf_files:
-        print(f"parsing {f}")
-        g.parse(f)
-        print(len(g))
+        if str(f.name) not in excluded_files:
+            print(f"parsing {f}")
+            g.parse(f)
+            print(len(g))
 
     for cs in g.subjects(RDF.type, SKOS.ConceptScheme):
         g2 = Graph()
@@ -77,7 +84,7 @@ def main():
             g2.add((c, DCTERMS.provenance, Literal("Presented in the original standard's codelist", lang="en")))
             g2.add((c, SKOS.topConceptOf, cs))
             g2.add((c, DCTERMS.identifier, Literal(str(c).split("/")[-1], datatype=XSD.token)))
-            g2.add((c, REG.status, STATUS.stable))
+            g2.add((c, REG.status, STATUS.original))
 
             g2.add((cs, SKOS.hasTopConcept, c))
 

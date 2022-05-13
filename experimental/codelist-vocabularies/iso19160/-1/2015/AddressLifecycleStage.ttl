@@ -1,0 +1,111 @@
+PREFIX : <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressLifecycleStage/>
+PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressLifecycleStage>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:current
+    a skos:Concept ;
+    dcterms:identifier "current"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The address or address component is currently in use." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "current"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:proposed
+    a skos:Concept ;
+    dcterms:identifier "proposed"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The address or address component has been proposed, i.e. the relevant authority has initiated approval procedures for the use of the address or address component." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "proposed"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:rejected
+    a skos:Concept ;
+    dcterms:identifier "rejected"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The address or address component was proposed but rejected." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "rejected"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:reserved
+    a skos:Concept ;
+    dcterms:identifier "reserved"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The address or address component has been reserved for future use." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "reserved"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:retired
+    a skos:Concept ;
+    dcterms:identifier "retired"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The address or address component was in use at some stage, but not anymore." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "retired"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:unknown
+    a skos:Concept ;
+    dcterms:identifier "unknown"^^xsd:token ;
+    dcterms:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The lifecycle stage of the address or address component is unknown." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "unknown"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://def.isotc211.org/org/tc211>
+    a schema:Organization ;
+    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
+    schema:name "ISO's Technical Committee 211" ;
+    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2000-01-01"^^xsd:date ;
+    dcterms:creator <http://def.isotc211.org/org/tc211> ;
+    dcterms:identifier "AddressLifecycleStage"^^xsd:token ;
+    dcterms:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressLifecycleStage> ;
+    dcterms:issued "2000-01-01"^^xsd:date ;
+    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    dcterms:publisher <http://def.isotc211.org/org/tc211> ;
+    dcterms:source "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:hasTopConcept
+        :current ,
+        :proposed ,
+        :rejected ,
+        :reserved ,
+        :retired ,
+        :unknown ;
+    skos:prefLabel "Address Lifecycle Stage"@en ;
+.
+
