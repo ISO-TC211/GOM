@@ -7,7 +7,7 @@ authors = ["nicholascar <nicholas.car@surroundaustralia.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 rdflib = "^6.1.1"
-httpx = "^0.22.0"
+httpx = "^0.23.0"
 pyshacl = "^0.18.1"
 
 [tool.poetry.dev-dependencies]
