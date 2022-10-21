@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<title>ISO SKOS Vocabulary Profile</title>
+<title>YYYY Report</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,155 +438,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>ISO SKOS Vocabulary Profile</h1>
+<h1>YYYY Report</h1>
 </div>
 <div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Warning</div>
-</td>
-<td class="content">
-This is a proposed profile for ISO TC 211 use, it is not officially released
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
-<p>This is a <em>profile</em> of the <a href="https://www.w3.org/TR/skos-reference/">Simple Knowledge Organization System (SKOS)</a> data model for vocabularies (taxonomies) that is designed to cater for the special needs of the <a href="https://www.iso.org">International Organization for Standardization (ISO</a>.</p>
-</div>
-<div class="paragraph">
-<p>By <em>profile</em>, what is meant here is "A specification that constrains, extends, combines, or provides guidance or explanation about the usage of other specification" - from the <a href="https://www.w3.org/TR/dx-prof/#definitions">Profiles Vocabulary (PROF)</a> and, here the <em>other specification</em> is SKOS.</p>
-</div>
-<div class="paragraph">
-<p>This <em>profile</em> is presented in several resources with differing roles:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>specification</strong> - a document containing the normative requirements for data claiming conformance to this profile</p>
-</li>
-<li>
-<p><strong>validator</strong> - a machine-actionable code file that can be used to validate data files against the requirements. This profile contains two validators.</p>
-</li>
-<li>
-<p><strong>examples</strong> - data files, some valid and others invalid, according to this profile. This profile contains several</p>
-</li>
-<li>
-<p><strong>guidance</strong> - a starting point that contains general information about a profile. This document</p>
-</li>
-<li>
-<p><strong>vocabulary</strong> - controlled terms lists to be used by data claiming conformance to this profile</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The roles of the various resources are formalised in the <a href="https://www.w3.org/TR/dx-prof/:">Profiles Vocabulary (PROF)</a>. PROF also defines how profiles technically related to other standards. The example data that this profile gives is formulated using the <a href="https://www.w3.org/RDF/">Resource Description Framework (RDF)</a> and the validator using the <a href="https://www.w3.org/TR/shacl/">Shapes Constraint Language (SHACL)</a>.</p>
-</div>
-<div class="paragraph">
-<p>This profile is hosted online in <a href="https://www.w3.org/standards/semanticweb/data:">Linked Data</a> form using the following web address for testing purposes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://iso-tc211.github.io/GOM/vocab-profile/" class="bare">https://iso-tc211.github.io/GOM/vocab-profile/</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_profile_resources">Profile Resources</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This profile consists of several resources that play different roles, as described above. This profile&#8217;s specific resources are:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Resource</th>
-<th class="tableblock halign-left valign-top">Role</th>
-<th class="tableblock halign-left valign-top">IRI</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This document</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>guidance</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://iso-tc211.github.io/GOM/vocab-profile/" class="bare">https://iso-tc211.github.io/GOM/vocab-profile/</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This profile overview document</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specification Document</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>specification</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://iso-tc211.github.io/GOM/vocab-profile/specification.html" class="bare">https://iso-tc211.github.io/GOM/vocab-profile/specification.html</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lists the normative requirements for data aiming to conform to this profile</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Validator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>validation</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://iso-tc211.github.io/GOM/vocab-profile/validator.shacl.ttl" class="bare">https://iso-tc211.github.io/GOM/vocab-profile/validator.shacl.ttl</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A machine-executable data validator for this profile&#8217;s requirements</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Compounded Validator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>validation</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://iso-tc211.github.io/GOM/vocab-profile/compounded-validator.shacl.ttl" class="bare">https://iso-tc211.github.io/GOM/vocab-profile/compounded-validator.shacl.ttl</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A machine-executable data validator for this profile&#8217;s requirements that also contains all the validators that this profile inherits from the things that it profiles</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Status Vocabulary</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>vocabulary</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>to be established</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An extended ISO19135 statuses vocabulary used for vocabulary and vocabulary element status indication. Currently a temporary vocabulary is given at <a href="https://iso-tc211.github.io/GOM/vocab-profile/statuses.html" class="bare">https://iso-tc211.github.io/GOM/vocab-profile/statuses.html</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Example data files</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>example</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://github.com/ISO-TC211/GOM/tree/master/experimental/vocab-profile/examples" class="bare">https://github.com/ISO-TC211/GOM/tree/master/experimental/vocab-profile/examples</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A directory of example data files, some valid and others invalid, according to this profile</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_license_rights">License &amp; Rights</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The contents of this repository is not licensed for use as it is experimental and not officially published.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_contacts">Contacts</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Initial development of this work is being undertaken by the following, for the Technical Committee 211 of the ISO:</p>
-</div>
-<div class="paragraph">
-<p><strong>Nicholas J. Car</strong><br>
-<em>Advisory Group 6 (Group on Ontology Management) Co-chair</em><br>
-Technical Committee 211, International Organization for Standardization<br>
-<a href="mailto:nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Ivana Ivanova</strong><br>
-<em>Advisory Group 6 (Group on Ontology Management) Co-chair</em><br>
-Technical Committee 211, International Organization for Standardization<br>
-<a href="mailto:ivana.ivanova@curtin.edu.au">ivana.ivanova@curtin.edu.au</a></p>
-</div>
-</div>
+<p>This is another fake report.</p>
 </div>
 </div>
 <div id="footer">
