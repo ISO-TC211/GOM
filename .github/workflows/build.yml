@@ -29,6 +29,7 @@ jobs:
         asciidoctor standards-assessment/reports/readme.adoc -o docs/standards-assessment/reports/index.html
         asciidoctor standards-assessment/reports/19157-1-1.adoc -o docs/standards-assessment/reports/19157-1-1.html
         asciidoctor standards-assessment/reports/19160-2.adoc -o docs/standards-assessment/reports/19160-2.html
+        asciidoctor standards-assessment/reports/xxxx.adoc -o docs/standards-assessment/reports/xxxx.html
 
         # vocab-profile
         mkdir -p docs/vocab-profile/images        
