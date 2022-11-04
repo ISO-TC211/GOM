@@ -25,8 +25,9 @@ jobs:
         echo "Replace img links in standards-assessment procedure HTML"
         sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/standards-assessment/#' docs/standards-assessment/procedure.html
         mkdir -p docs/standards-assessment/reports
-        for file in standards-assessment/reports/*.adoc; do
-          new_file=docs/${${file}/.adoc/.html}
+        for file in standards-assessment/reports/*.adoc;
+        do
+          new_file=docs/${${file}/.adoc/.html};
           asciidoctor $file -o $new_file;
         done
 
