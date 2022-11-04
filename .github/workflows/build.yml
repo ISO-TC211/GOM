@@ -27,7 +27,7 @@ jobs:
         mkdir -p docs/standards-assessment/reports
         for file in standards-assessment/reports/*.adoc;
         do
-          new_file=docs/${${file}/.adoc/.html};
+          new_file="docs/${${file}/.adoc/.html}";
           asciidoctor $file -o $new_file;
         done
 
