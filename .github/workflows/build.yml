@@ -24,13 +24,11 @@ jobs:
         asciidoctor standards-assessment/procedure.adoc -o docs/standards-assessment/procedure.html
         echo "Replace img links in standards-assessment procedure HTML"
         sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/standards-assessment/#' docs/standards-assessment/procedure.html
-        cp -r standards-assessment/images docs/standards-assessment/
         mkdir -p docs/standards-assessment/reports
-        asciidoctor standards-assessment/reports/readme.adoc -o docs/standards-assessment/reports/index.html
-        asciidoctor standards-assessment/reports/19157-1-1.adoc -o docs/standards-assessment/reports/19157-1-1.html
-        asciidoctor standards-assessment/reports/19160-2.adoc -o docs/standards-assessment/reports/19160-2.html
-        asciidoctor standards-assessment/reports/xxxx.adoc -o docs/standards-assessment/reports/xxxx.html
-        asciidoctor standards-assessment/reports/yyyy.adoc -o docs/standards-assessment/reports/yyyy.html
+        for file in standards-assessment/reports/*.adoc; do
+          new_file=docs/${${file}/.adoc/.html}
+          asciidoctor $file -o $new_file;
+        done
 
         # vocab-profile
         mkdir -p docs/vocab-profile/images        
