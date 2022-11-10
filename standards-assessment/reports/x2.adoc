@@ -1,4 +1,4 @@
-= XXXX Fake Report
+= X2 Fake Report
 
 This is a fake report
 

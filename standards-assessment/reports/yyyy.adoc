@@ -1,3 +1,0 @@
-= YYYY Report
-
-This is another fake report.
