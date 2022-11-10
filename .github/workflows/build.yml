@@ -27,7 +27,7 @@ jobs:
         sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/standards-assessment/#' docs/standards-assessment/procedure.html
         mkdir -p docs/standards-assessment/reports
         # process all *.adoc files in standards-assessment/reports/
-        find standards-assessment/reports/ -name '*.adoc' | while read file; do asciidoctor $file -o "docs/${${file}/.adoc/.html}"; done
+        find standards-assessment/reports/ -name '*.adoc' | while read file; do asciidoctor $file -o "docs/$(sed "s/.adoc/.html/" <<< "$file")"; done
 
         # vocab-profile
         mkdir -p docs/vocab-profile/images        
