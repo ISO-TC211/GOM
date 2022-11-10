@@ -28,6 +28,7 @@ jobs:
         mkdir -p docs/standards-assessment/reports
         # process all *.adoc files in standards-assessment/reports/
         find standards-assessment/reports/ -name '*.adoc' | while read file; do asciidoctor $file -o "docs/$(sed "s/.adoc/.html/" <<< "$file")"; done
+        mv docs/standards-assessment/reports/readme.html docs/standards-assessment/reports/index.html
 
         # vocab-profile
         mkdir -p docs/vocab-profile/images        
