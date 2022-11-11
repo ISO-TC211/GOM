@@ -1,0 +1,73 @@
+= December 2022 Plenary 
+
+== Agenda
+
+This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
+
+=== Agenda Outline
+
+. *Welcome*
+. *Reminder of the purpose of GOM*
+. *Update on GOM standards review process*
+. *Demonstration of governance and technical aspects of ISO/TC211 codelists publication*
+. *Next Meeting*
+
+=== Agenda Details
+
+. *Welcome*
+.. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
+.. Meeting protocols
+.. Roll call
+... (re)introduction of co-chairs: Ivana & Nicholas
+.. How to contribute/ammend Agenda/Minutes
+.. Start Recording
+. *Reminder of the purpose of GOM*
+.. purpose as it has been to date
+.. purpose continuing
+. *Update on GOM standards review process*
+.. GOM is reviwing the standards using the standards assessment procedure introduced to the ISO/TC211 in May'22 
+.. standards reviewed to date: ....[_Ivana to update_]
+. *Demonstration of governance and technical aspects of ISO/TC211 codelists publication* [_Nick to update - content below is from the May'22 plenary_]
+.. Procedure document at [2]
+.. Tested with ISO/CD 19157-1 with results at [3]
+.. Future Procedure tests are expected for 2 - 3 Standards, June+
+.. Future results will also be listed at [3]
+. *Outcomes of new Standard Semantic Web assessment procedure*
+.. *Outcome #1* - reuse of GeoLexica work
+.. *Outcome #2* - codelist publication as vocabularies
+... Stand-alone expressions of Standards' codelists as Semantic Web vocabularies are presented at [4]
+.... Includes the popular ISO 19115-1 and ISO 19115-2 codelists
+.... Includes ISO 19157-1 codelists from recent UML-to-OWL
+.. *Outcome #3* - future semantic artifacts
+... GOM proposes a Bibliography for TC211 in Semantic Web form
+.... Idea to be tested with other TC AGs
+.... Potential reuse of Zotero SW bibliography model
+. *Codelist Vocabulary Publication Proposal*
+.. Motivated by _Outcome #1_ above & community requests
+.. A formal vocabulary profile has been created to define a data model for TC vocabs that covers off on perceived requirements [5]
+... An extension to the ISO 19135 _Item Status_ codelist has been proposed [6] to provide specialised statuses for TC codelists
+.... this codelist [7] exemplifies an extended ISO codelist
+. *Next Meeting*
+.. When
+.. Proposed Agenda
+
+
+[1] https://github.com/ISO-TC211/GOM/tree/master/isotc211_GOM_harmonizedOntology/dis_iso19157/-1/20yy
+
+[2] https://github.com/ISO-TC211/GOM/tree/master/standards-assessment
+
+[3] https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+
+[4] http://115.146.86.155/vocab
+
+[5] https://iso-tc211.github.io/GOM/vocab-profile/
+
+[6] https://iso-tc211.github.io/GOM/vocab-profile/statuses.html
+
+[7] http://115.146.86.155/vocab/RE_ItemStatus
+
+## Briefing Note
+
+* ISO/TC211 ontologies (example - work in progress - to be introduced and discussed is here: https://github.com/ISO-TC211/GOM/tree/master/experimental/codelist-vocabularies)
+* ISO/TC211 AG6 (GOM) review process (draft to be presented and discussed in the meeting is available here: https://github.com/ISO-TC211/GOM/blob/master/standards-assessment/procedure.adoc)
+
