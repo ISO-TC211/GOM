@@ -8,9 +8,8 @@
 |===
 | Element | Value
 
-| IRI | allocated: `https://standards.isotc211.org/19157/-1/1/` for the Standard's document, suggested `https://def.isotc211.org/iso19157/-1` for the model and `https://def.isotc211.org/iso19157/-1/1` for v1 of the model
-| Title | Geographic information — Data quality - Part 1: General requirements (_Information géographique — Qualité des données - Partie 1: Exigences générales_)
-| Edition | 1
+| IRI | allocated: `https://standards.isotc211.org/test-standard/` for the Standard's document, suggested `https://def.isotc211.org/iso19157/-1` for the model and `https://def.isotc211.org/test-standard` for v1 of the model
+| Title |test standard
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
 
