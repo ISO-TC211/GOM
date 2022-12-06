@@ -25,13 +25,32 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. purpose as it has been to date
 .. purpose continuing
 . *Update on GOM standards review process*
-.. GOM is reviwing the standards using the standards assessment procedure introduced to the ISO/TC211 in May'22 
+.. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in May'22 
 .. standards reviewed to date: ....[_Ivana to update_]
-. *Demonstration of governance and technical aspects of ISO/TC211 codelists publication* [_Nick to update - content below is from the May'22 plenary_]
-.. Procedure document at [2]
-.. Tested with ISO/CD 19157-1 with results at [3]
-.. Future Procedure tests are expected for 2 - 3 Standards, June+
-.. Future results will also be listed at [3]
+. *Update on codelists publication*
+.. Reminder of codelist publication demonstration as of May, 2022
+.. Further demonstrations of technical approach
+... Persistent IRIs
+.... Users are desperate for fixity in reference - PID IRIs
+.... We have created a PID demo for 2 vocabs
+.... ref <<Redirection Examples>>
+.... PIDs can easily be implemented for all vocabs, if terget system is assured
+.. Vocab model refinements
+... Vocab Statuses
+.... ref <<Statuses Example>>
+... Derivation modes
+.... Users are unsure of how to indicate codelist reuse/derivation
+.... This is particularly important for standardised vocabs until/unless effective dynamic registries can be established
+.... ref <<Derivation Modes>>
+.. Continuing issues
+... Handling Enumerations
+.... Users want Enumerations as vocabularies too
+.... ref <<Enumeration Example>>
+.... Do we indicate Enumeration fixedness or allow extension, as per codelists?
+.. ISO/TC intentions
+... Modeling issues either are or can be addressed
+... Technical system issues either are or can be addressed
+... What does the ISO/TC want to do?
 . *Outcomes of new Standard Semantic Web assessment procedure*
 .. *Outcome #1* - reuse of GeoLexica work
 .. *Outcome #2* - codelist publication as vocabularies
@@ -70,4 +89,42 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 
 * ISO/TC211 ontologies (example - work in progress - to be introduced and discussed is here: https://github.com/ISO-TC211/GOM/tree/master/experimental/codelist-vocabularies)
 * ISO/TC211 AG6 (GOM) review process (draft to be presented and discussed in the meeting is available here: https://github.com/ISO-TC211/GOM/blob/master/standards-assessment/procedure.adoc)
+
+## Examples
+
+### Redirection Examples
+
+|===
+| Item | PID IRI | Notes
+
+3+| *Role Codes*
+| Role Codes codelist | http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode] | 
+| Role Codes _author_ code | http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author] | 
+3+| *Item Status*
+| Item Status codelist | http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus | 
+| Item Status _addition_ code | http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/addition | 
+3+| *Profiles & Formats*
+| Role Codes _author_ via profile, default | http://iso.kurrawong.net/vocab/CI_RoleCode/author?_profile=vocpub&_mediatype=application/rdf+xml[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=vocpub] | any and multiple profiles can be implemented, if we have the data
+| Role Codes _author_ Alternate profiles listing  | http://iso.kurrawong.net/vocab/CI_RoleCode/author?_profile=alt[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=alt] | any and multiple profiles can be implemented, if we have the data
+| A05 vocabulary profiles | http://vocab.nerc.ac.uk/collection/A05/current/?_profile=alt | Note the non-RDF profiles, e.g. http://vocab.nerc.ac.uk/collection/A05/current/?_profile=dd&_mediatype=application/json[dd]
+| Role Codes _author_ via profile & format  | http://iso.kurrawong.net/vocab/CI_RoleCode/author?_profile=vocpub&_mediatype=application/ld+json[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=vocpub&_mediatype=application/ld+json] | 
+|===
+
+### Statuses Example
+
+.Vocabularies from the Grological Survey of South Australia showing per-vocab status https://gssa-prez-linux-web-app.azurewebsites.net/vocab/[GSSA Vocabs]
+image::files/vocab-statuses.png[]
+
+### Enumeration Example
+
+.An example Enumeration from ISO19115, re-implemented as a SKOS vocab at https://gssa-prez-linux-web-app.azurewebsites.net/vocab/topic-categories[GSSA Topic Categories]
+image::files/enumerations.png[]
+
+### Derivation Modes
+
+A vocabulary of derivation modes:
+
+.The current modes listed in the https://gssa-prez-linux-web-app.azurewebsites.net/vocab/vocab-derivation-modes[Vocab Derivation Modes] vocabulary
+image::files/derivation-modes.png[]
+
 
