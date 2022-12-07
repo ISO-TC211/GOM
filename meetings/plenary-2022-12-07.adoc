@@ -9,7 +9,9 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 . *Welcome*
 . *Reminder of the purpose of GOM*
 . *Update on GOM standards review process*
-. *Demonstration of governance and technical aspects of ISO/TC211 codelists publication*
+. *Update on codelists publication*
+. *Outcomes of improved Standard Semantic Web assessment procedure*
+. *Proposed Next Steps*
 . *Next Meeting*
 
 === Agenda Details
@@ -72,7 +74,8 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 ... Formalise Vocab model Requirements and handling
 ... Establish and cater for Enumeration requirements in Vocab model
 .. Semantic Assessment
-... Complete revitalisation of UML -> OWL tooling
+... Formally review several more standards
+... Complete the revitalisation of UML -> OWL tooling
 ... Create/reuse a demo Bibliography for TC211 in Semantic Web form
 . *Next Meeting*
 .. When
