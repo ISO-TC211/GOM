@@ -26,7 +26,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. purpose continuing
 . *Update on GOM standards review process*
 .. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in May'22 
-.. standards reviewed to date: ....[_Ivana to update_]
+.. standards reviewed to date: ISO/DTS 19124-1, ISO/CD 19152-1, ISO/CD 19152-3, ISO/CD 19144-2
 . *Update on codelists publication*
 .. Reminder of codelist publication demonstration as of May, 2022
 ... VocPub Profile of SKOS https://iso-tc211.github.io/GOM/vocab-profile/[[1]] used as a model to cater for TC needs
