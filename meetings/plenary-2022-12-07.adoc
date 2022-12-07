@@ -29,6 +29,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. standards reviewed to date: ....[_Ivana to update_]
 . *Update on codelists publication*
 .. Reminder of codelist publication demonstration as of May, 2022
+... VocPub Profile of SKOS https://iso-tc211.github.io/GOM/vocab-profile/[[1]] used as a model to cater for TC needs
 .. Further demonstrations of technical approach
 ... Persistent IRIs
 .... Users are desperate for fixity in reference - PID IRIs
@@ -36,12 +37,18 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .... ref <<Redirection Examples>>
 .... PIDs can easily be implemented for all vocabs, if terget system is assured
 .. Vocab model refinements
-... Vocab Statuses
-.... ref <<Statuses Example>>
-... Derivation modes
+... Requirements checkoff
+.... ref <<Vocab Model Requirements>>
+... Vocab Derivation Modes
+.... Status per Concept are handled with _Registry Item Status_ as per May Plenary demo
+.... _Registry Item Status_ per vocab, ref <<Statuses Example>>
+.... GOM vocabs need to indicate derivation status, from original Standard codelist, not registry item status
+.... Proposed status vocab: <<Vocabulary Derivation Modes Example>>
+... Downstream Derivation modes
 .... Users are unsure of how to indicate codelist reuse/derivation
 .... This is particularly important for standardised vocabs until/unless effective dynamic registries can be established
-.... ref <<Derivation Modes>>
+.... Some variant of the same Standards Vocab Derivation Modes statuses can be indicated for use
+.... ref <<Vocabulary Derivation Modes Example>>
 .. Continuing issues
 ... Handling Enumerations
 .... Users want Enumerations as vocabularies too
@@ -51,48 +58,52 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 ... Modeling issues either are or can be addressed
 ... Technical system issues either are or can be addressed
 ... What does the ISO/TC want to do?
-. *Outcomes of new Standard Semantic Web assessment procedure*
-.. *Outcome #1* - reuse of GeoLexica work
-.. *Outcome #2* - codelist publication as vocabularies
-... Stand-alone expressions of Standards' codelists as Semantic Web vocabularies are presented at [4]
-.... Includes the popular ISO 19115-1 and ISO 19115-2 codelists
-.... Includes ISO 19157-1 codelists from recent UML-to-OWL
-.. *Outcome #3* - future semantic artifacts
-... GOM proposes a Bibliography for TC211 in Semantic Web form
-.... Idea to be tested with other TC AGs
-.... Potential reuse of Zotero SW bibliography model
-. *Codelist Vocabulary Publication Proposal*
-.. Motivated by _Outcome #1_ above & community requests
-.. A formal vocabulary profile has been created to define a data model for TC vocabs that covers off on perceived requirements [5]
-... An extension to the ISO 19135 _Item Status_ codelist has been proposed [6] to provide specialised statuses for TC codelists
-.... this codelist [7] exemplifies an extended ISO codelist
+. *Outcomes of improved Standard Semantic Web assessment procedure*
+.. *Outcome #1* - testing of documented procedure https://iso-tc211.github.io/GOM/standards-assessment/[[2]]
+.. *Outcome #2* - Automated reporting https://iso-tc211.github.io/GOM/standards-assessment/reports/[[3]]
+.. *Outcome #3* - revitalisation of UML -> OWL tooling
+... incomplete but proceeding!
+.. *Outcome #4* - confirmed specific suggestions for semantic artifact delivery
+... Codelist vocabularies http://iso.kurrawong.net/vocab[[4]]
+... Ontologies https://github.com/ISO-TC211/GOM/tree/master/isotc211_GOM_harmonizedOntology[[5]]
+.. *Proposal:* (from May Plenary) A Bibliography for TC211 in Semantic Web form
+. *Proposed Next Steps*
+.. Codelists
+... Formalise Vocab model Requirements and handling
+... Establish and cater for Enumeration requirements in Vocab model
+.. Semantic Assessment
+... Complete revitalisation of UML -> OWL tooling
+... Create/reuse a demo Bibliography for TC211 in Semantic Web form
 . *Next Meeting*
 .. When
 .. Proposed Agenda
 
+[1] https://iso-tc211.github.io/GOM/vocab-profile/
 
-[1] https://github.com/ISO-TC211/GOM/tree/master/isotc211_GOM_harmonizedOntology/dis_iso19157/-1/20yy
+[2] https://iso-tc211.github.io/GOM/standards-assessment/
 
-[2] https://github.com/ISO-TC211/GOM/tree/master/standards-assessment
+[3] https://iso-tc211.github.io/GOM/standards-assessment/reports/
 
-[3] https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+[4] http://iso.kurrawong.net/vocab
 
-[4] http://115.146.86.155/vocab
+[5] https://github.com/ISO-TC211/GOM/tree/master/isotc211_GOM_harmonizedOntology
 
-[5] https://iso-tc211.github.io/GOM/vocab-profile/
+[6] https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
 
-[6] https://iso-tc211.github.io/GOM/vocab-profile/statuses.html
+== Vocab Model Requirements
 
-[7] http://115.146.86.155/vocab/RE_ItemStatus
+These are Requirements _not_ already catered for by the https://iso-tc211.github.io/GOM/vocab-profile/specification.html[ISO SKOS Vocabulary Profile]:
+|===
+| ID | Requirement | Model elements
 
-## Briefing Note
+| New 1 | Vocabularies must indicate their status with respect to differences from the original list of Concepts in their defining standard | Use of a derivation status marker at the `ConceptScheme` level
+| New 2 | Vocabularies and Concepts must indicate their initial definition, reuse and any altered definitions in Standards' versions | Extended use of `rdfs:isDefinedBy` & versioning properties
+| New 3 | Enumerations must be differentiated from Codelists at the vocabulary level | Subclass or status marker for `ConceptScheme`
+|===
 
-* ISO/TC211 ontologies (example - work in progress - to be introduced and discussed is here: https://github.com/ISO-TC211/GOM/tree/master/experimental/codelist-vocabularies)
-* ISO/TC211 AG6 (GOM) review process (draft to be presented and discussed in the meeting is available here: https://github.com/ISO-TC211/GOM/blob/master/standards-assessment/procedure.adoc)
+== Examples
 
-## Examples
-
-### Redirection Examples
+=== Redirection Examples
 
 |===
 | Item | PID IRI | Notes
@@ -110,21 +121,22 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 | Role Codes _author_ via profile & format  | http://iso.kurrawong.net/vocab/CI_RoleCode/author?_profile=vocpub&_mediatype=application/ld+json[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=vocpub&_mediatype=application/ld+json] | 
 |===
 
-### Statuses Example
+=== Statuses Example
 
-.Vocabularies from the Grological Survey of South Australia showing per-vocab status https://gssa-prez-linux-web-app.azurewebsites.net/vocab/[GSSA Vocabs]
+.Vocabularies from the Geological Survey of South Australia showing per-vocab status https://gssa-prez-linux-web-app.azurewebsites.net/vocab/[GSSA Vocabs]
 image::files/vocab-statuses.png[]
 
-### Enumeration Example
+* Here the status of vocabularies within a register using https://linked.data.gov.au/def/reg-statuses[an extension] of http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus [ISO19135 _Item Status_ codes] are shown.
+* GOM Semantic Web vocabularies need to indicate derivation status, not registered item status
 
-.An example Enumeration from ISO19115, re-implemented as a SKOS vocab at https://gssa-prez-linux-web-app.azurewebsites.net/vocab/topic-categories[GSSA Topic Categories]
-image::files/enumerations.png[]
+=== Vocabulary Derivation Modes Example
 
-### Derivation Modes
-
-A vocabulary of derivation modes:
+From https://gssa-prez-linux-web-app.azurewebsites.net/vocab/vocab-derivation-modes[GSSA's Vocabulary Derivation Modes vocabulary]:
 
 .The current modes listed in the https://gssa-prez-linux-web-app.azurewebsites.net/vocab/vocab-derivation-modes[Vocab Derivation Modes] vocabulary
 image::files/derivation-modes.png[]
 
+=== Enumeration Example
 
+.Part of an Enumeration from ISO19115, re-implemented as a SKOS vocab at https://gssa-prez-linux-web-app.azurewebsites.net/vocab/topic-categories[GSSA Topic Categories]
+image::files/enumerations.png[]
