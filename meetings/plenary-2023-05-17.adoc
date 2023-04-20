@@ -143,3 +143,9 @@ image::files/derivation-modes.png[]
 
 .Part of an Enumeration from ISO19115, re-implemented as a SKOS vocab at https://gssa-prez-linux-web-app.azurewebsites.net/vocab/topic-categories[GSSA Topic Categories]
 image::files/enumerations.png[]
+
+
+Nick TODO:
+* produce OWL for each assesed Standard
+* turn back on the vocab server
+* list ISO vocabs with derivation status, as per GSSA
