@@ -1,4 +1,4 @@
-= List of assessd Standards
+= List of Assessed Standards
 
 This list is of reports by GOM on ISO TC 211 Standards that GOM has reviewed for Semantic Web alignment:
 
