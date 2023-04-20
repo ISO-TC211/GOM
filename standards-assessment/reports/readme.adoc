@@ -6,7 +6,7 @@ This list is of reports by GOM on ISO TC 211 Standards that GOM has reviewed for
 |===
 | Date | Standard
 
-| 2023-04-20 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19124-1.html[ISO/DTS 19124-1]
+| 2023-04-20 | https://github.com/ISO-TC211/GOM/blob/master/standards-assessment/reports/19124-1.adoc[ISO/DTS 19124-1]
 | 2022-04-22 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19157-1-1.html[ISO19157-1 (1) Geographic information — Data quality - Part 1: General requirements]
 | 2022-05-11 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19160-2.html[19160-2 - Addressing — Part 2: Assigning and maintaining addresses for objects in the physical world]
 | 2022-11-11 | https://iso-tc211.github.io/GOM/standards-assessment/reports/test-standard-report.html[test-standard report - _to be completed - work in progress_]
