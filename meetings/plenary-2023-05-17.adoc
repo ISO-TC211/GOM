@@ -145,7 +145,22 @@ image::files/derivation-modes.png[]
 image::files/enumerations.png[]
 
 
-Nick TODO:
+== TODO for plenary:
+
+Nick:
+
 * produce OWL for each assesed Standard
+** on the Azure VM
+** ensure I do 19157-1
+** see the source fo Jean's script
+** Ivana to indicate whether others are ready
 * turn back on the vocab server
+** use old web address of iso.kurrawong.net
+** ensure two demo vocabs work
 * list ISO vocabs with derivation status, as per GSSA
+** these will be auto displayed in Prez at iso.kurrawong.net
+
+Ivana:
+
+* update Standards Assessment at https://github.com/ISO-TC211/GOM/tree/master/standards-assessment
+* check status of reviewed standards for OWL production
