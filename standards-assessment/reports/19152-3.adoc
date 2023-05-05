@@ -1,6 +1,6 @@
 = GOM Standard Assessment Report
 
-== test-standard-report
+== ISO 19152-3 Geographic information - Land Administration Domain Model (LADM) -- Part 3: Marine georegulation
 
 == Document Metadata Assessment
 
