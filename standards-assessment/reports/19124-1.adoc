@@ -1,6 +1,6 @@
 = GOM Standard Assessment Report
 
-== 19124-1
+== test-standard-report
 
 == Document Metadata Assessment
 
@@ -8,10 +8,9 @@
 |===
 | Element | Value
 
-| IRI | 
-| Title | 
-| Edition | 1
-| Reviewer(s) | Ivana Ivánová
+| IRI | allocated: `https://standards.isotc211.org/19124-1/` for the Standard's document, suggested `https://def.isotc211.org/19124/-1` for the model and `https://def.isotc211.org/test-standard` for v1 of the model
+| Title |test standard
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
 
 _incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
@@ -20,7 +19,7 @@ _incomplete_... perhaps the metadata required for ConceptSchemes should be requi
 
 === Determine Document Sections
 
-The sections in this standard relevant for semantic assessment are determined to be:
+The sections in this technical specification relevant for semantic assessment are determined to be:
 
 * *2 Normative references*
 ** contains a structured bibligraphy, members of which may be referred to by multiple Standards
@@ -28,16 +27,17 @@ The sections in this standard relevant for semantic assessment are determined to
 ** these form a vocabulary and vocabulary elements may be used in multiple Standards
 * *4.1 Abbreviations*
 ** these form a vocabulary and vocabulary elements may be used in multiple Standards
-* *6 General requirements for geographic information quality*
-** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
-* *8 Components of data quality*
-** this contains the formalized data model of the Standard
-* *9 Data quality measures*
-** contains a code list for "Value structure"
+* *5 Calibration of remote sensing data*
+** this contains the formalized data model of the technical specification
+* *8 Calibration of reference sources
+** the list of requirements given here form vocabularies
+* *10 Validation of derived products*
+** contains an enumeration for "CA_StatisticComputation"
+** the list of recommendations given here form vocabularies
 * *Annex A - Abstract test suites*
 ** contains a vocabulary of tests
-* *Annex C - Data dictionary for data quality*
-** contains two codelists, for "Evaluation method type" and "Value structure"
+* *Annex B - Data dictionary*
+** contains one enumeration for "domain codes"
 ** _see demonstration delivery of these codelists at http://115.146.86.155/vocab/EvaluationMethodTypeCode & http://115.146.86.155/vocab/ValueStructure_
 * *Bibliography*
 ** contains a structured bibligraphy, members of which may be referred to by multiple Standards
@@ -53,10 +53,10 @@ The sections in this standard relevant for semantic assessment are determined to
 
 | *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
 | *4.1 Abbreviations* | Placement within GeoLexica | Ensure item noted in TMG Review
-| *6 General requirements for geographic information quality* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
-| *8 Components of data quality* | Auto-generation of OWL model form | Confirm GOM can generate
-| *9 Data quality measures* | See *Annex C* | -
+| *5 Calibration of remote sensing data* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *8 Calibration of reference sources* | Auto-generation of OWL model form | Confirm GOM can generate
+| *10 Validation of derived products | See *Annex B* | -
 | *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
-| *Annex C - Data dictionary for data quality* | Establish SW vocabularies for these codelists | Confirm GOM can generate
+| *Annex B - Data dictionary for data quality* | Establish SW vocabularies for these enumerations | Confirm GOM can generate
 | *Bibliography* | As per *2 Normative references* | -
 |===
