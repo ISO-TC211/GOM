@@ -1,4 +1,4 @@
-= ISO SKOS Vocabulary Profile
+= ISO/TC 211 SKOS Vocabulary Profile
 
 WARNING: This is a proposed profile for ISO TC 211 use, it is not officially released
 

@@ -1,4 +1,4 @@
-= ISO SKOS Vocabulary Profile - Specification
+= ISO/TC 211 SKOS Vocabulary Profile - Specification
 :toc: left
 :table-stripes: even
 :sectnums:
