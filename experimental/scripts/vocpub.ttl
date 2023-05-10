@@ -1,14 +1,39 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sdo: <https://schema.org/> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@base <https://w3id.org/profile/vocpub/validator/> .
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <https://w3id.org/profile/vocpub/validator/>
 
+
+<https://w3id.org/profile/vocpub/validator>
+    a owl:Ontology ;
+    skos:prefLabel "VocPub Validator"@en ;
+    skos:definition "SHACL validator for the VocPub Profile"@en ;
+    dcterms:creator <https://orcid.org/0000-0002-8742-7730> ;
+    dcterms:publisher <https://linked.data.gov.au/org/agldwg> ;
+    dcterms:created "2020-06-14"^^xsd:date ;
+    dcterms:modified "2023-02-24"^^xsd:date ;
+    owl:versionIRI <https://w3id.org/profile/vocpub/validator/3.0> ;
+    owl:versionInfo "3.0: Removed Requirement-2.3.5 (identifiers) as these are auto-generated in systems like VocPrez; Added Requirement-2.1.10 & 2.1.11 and sub parts to test for qualifiedDerivation and status of a ConceptScheme" ;
+.
+
+<https://linked.data.gov.au/org/agldwg> a sdo:Organization ;
+    sdo:name "Australian Government Linked Data Working Group" ;
+    sdo:url "https://www.linked.data.gov.au"^^xsd:anyURI ;
+.
+
+<https://orcid.org/0000-0002-8742-7730> a sdo:Person ;
+    sdo:name "Nicholas J. Car" ;
+    sdo:email "nicholas.car@anu.edu.au"^^xsd:anyURI ;
+    sdo:identifier "https://orcid.org/0000-0002-8742-7730"^^xsd:anyURI ;
+.
 
 #
 #   ConceptScheme
@@ -31,7 +56,7 @@
 <Requirement-2.1.4a>
 	a sh:NodeShape ;
 	sh:targetClass skos:ConceptScheme ;
-        sh:message "Requirement 2.1.4 Each vocabulary _MUST_ have one and only one title, a text literal, indicated using the skos:prefLabel property" ;
+        sh:message "Requirement 2.1.4 Each vocabulary _MUST_ have one and only one title, a text literal, indicated using the skos:prefLabel predicate" ;
         sh:property [
         sh:path skos:prefLabel ;
         sh:minCount 1 ;
@@ -43,7 +68,7 @@
 <Requirement-2.1.4b>
 	a sh:NodeShape ;
 	sh:targetClass skos:ConceptScheme ;
-        sh:message "Requirement 2.1.4 Each vocabulary _MUST_ have one and only one definition, a text literal text, indicated using the skos:definition property" ;
+        sh:message "Requirement 2.1.4 Each vocabulary _MUST_ have one and only one definition, a text literal text, indicated using the skos:definition predicate" ;
         sh:property [
         sh:path skos:definition ;
         sh:minCount 1 ;
@@ -70,7 +95,7 @@
                 sh:datatype xsd:dateTimeStamp ;
             ]
         ) ;
-        sh:message "Requirement 2.1.5 Each vocabulary _MUST_ have one and only one created date indicated using the dcterms:created property that must be either an `xsd:date`, `xsd:dateTime` or `xsd:dateTimeStamp` literal value" ;
+        sh:message "Requirement 2.1.5 Each vocabulary _MUST_ have one and only one created date indicated using the dcterms:created predicate that must be either an `xsd:date`, `xsd:dateTime` or `xsd:dateTimeStamp` literal value" ;
     ] ;
     sh:property [
         sh:path dcterms:modified ;
@@ -87,7 +112,7 @@
                 sh:datatype xsd:dateTimeStamp ;
             ]
         ) ;
-        sh:message "Requirement 2.1.5 Each vocabulary _MUST_ have one and only one modified date indicated using the dcterms:modified property that must be either an `xsd:date`, `xsd:dateTime or `xsd:dateTimeStamp` literal value" ;
+        sh:message "Requirement 2.1.5 Each vocabulary _MUST_ have one and only one modified date indicated using the dcterms:modified predicate that must be either an `xsd:date`, `xsd:dateTime or `xsd:dateTimeStamp` literal value" ;
     ] ;
 .
 
@@ -122,12 +147,12 @@
 <Requirement-2.1.7a>
     a sh:NodeShape ;
     sh:message "Requirement 2.1.7 Provenance for a ConceptScheme _MUST_ be indicated by at least one of the following properties: dcterms:provenance, dcterms:source or prov:wasDerivedFrom." ;
-    sh:or ( 
-        [ 
+    sh:or (
+        [
             sh:minCount 1 ;
             sh:path prov:wasDerivedFrom ;
             sh:message "This is a message about prov:wasDerivedFrom" ;
-        ] 
+        ]
         [
             sh:minCount 1 ;
             sh:path dcterms:source ;
@@ -137,41 +162,41 @@
             sh:minCount 1 ;
             sh:path dcterms:provenance ;
             sh:message "This is a message about dcterms:provenance" ;
-        ] 
+        ]
     ) ;
     sh:targetClass skos:ConceptScheme ;
 .
 
 <Requirement-2.1.7b>
     a sh:NodeShape ;
-    sh:targetSubjectsOf dcterms:provenance ;    
+    sh:targetSubjectsOf dcterms:provenance ;
     sh:property [
         a sh:PropertyShape ;
         sh:maxCount 1 ;
         sh:path dcterms:provenance ;
-        sh:message "You _MUST NOT_ use dcterms:provenance property more than once on any object." ;
+        sh:message "You _MUST NOT_ use dcterms:provenance predicate more than once on any object." ;
     ] ;
 .
 
 <Requirement-2.1.7c>
     a sh:NodeShape ;
-    sh:targetSubjectsOf dcterms:source ;    
+    sh:targetSubjectsOf dcterms:source ;
     sh:property [
         a sh:PropertyShape ;
         sh:maxCount 1 ;
         sh:path dcterms:source ;
-        sh:message "You _MUST NOT_ use dcterms:source property more than once on any object." ;
+        sh:message "You _MUST NOT_ use dcterms:source predicate more than once on any object." ;
     ] ;
 .
 
 <Requirement-2.1.7d>
     a sh:NodeShape ;
-    sh:targetSubjectsOf prov:wasDerivedFrom ;    
+    sh:targetSubjectsOf prov:wasDerivedFrom ;
     sh:property [
         a sh:PropertyShape ;
         sh:maxCount 1 ;
         sh:path prov:wasDerivedFrom ;
-        sh:message "You _MUST NOT_ use prov:wasDerivedFrom property more than once on any object." ;
+        sh:message "You _MUST NOT_ use prov:wasDerivedFrom predicate more than once on any object." ;
     ] ;
 .
 
@@ -182,7 +207,7 @@
         a sh:PropertyShape ;
         sh:path dcterms:source ;
         sh:datatype xsd:anyURI ;
-        sh:message "Whenever dcterms:source is used, it must be a datatype property indicating an object of type xsd:anyURI" ;
+        sh:message "Whenever dcterms:source is used, it must be a datatype predicate indicating an object of type xsd:anyURI" ;
     ] ;
 .
 
@@ -193,7 +218,7 @@
         a sh:PropertyShape ;
         sh:path dcterms:provenance ;
         sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
-        sh:message "Whenever dcterms:provenance is used, it must be a datatype property indicating an object of type xsd:string or rdf:LangString" ;
+        sh:message "Whenever dcterms:provenance is used, it must be a datatype predicate indicating an object of type xsd:string or rdf:LangString" ;
     ] ;
 .
 
@@ -204,7 +229,7 @@
         a sh:PropertyShape ;
         sh:path prov:wasDerivedFrom ;
         sh:nodeKind sh:IRI ;
-        sh:message "Whenever prov:wasDerivedFrom is used, it must be an object property indicating an IRI" ;
+        sh:message "Whenever prov:wasDerivedFrom is used, it must be an object predicate indicating an IRI" ;
     ] ;
 .
 
@@ -219,7 +244,51 @@
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
     ] ;
-    sh:message "Requirement 2.1.9 Each vocabulary's skos:ConceptScheme _MUST_ link to at least one skos:Concept within the vocabulary as with the property skos:hasTopConcept" ;
+    sh:message "Requirement 2.1.9 Each vocabulary's skos:ConceptScheme _MUST_ link to at least one skos:Concept within the vocabulary as with the predicate skos:hasTopConcept" ;
+.
+
+<Requirement-2.1.10>
+	a sh:NodeShape ;
+	sh:targetClass skos:ConceptScheme ;
+    sh:property [
+        sh:path prov:qualifiedDerivation ;
+        sh:nodeKind sh:BlankNodeOrIRI ;
+    ] ;
+    sh:message "Requirement 2.1.10 Each vocabulary's skos:ConceptScheme _MAY_ indicate a qualified derivation from another vocabulary" ;
+.
+
+<Requirement-2.1.10b>
+	a sh:NodeShape ;
+	sh:targetObjectsOf prov:qualifiedDerivation ;
+    sh:property [
+        sh:path prov:entity ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:message "Requirement 2.1.10b IF a skos:ConceptScheme indicates that it is derived from another object via use of the prov:qualifiedDerivation predicate, it must then indicate a prov:Entity for that derivation by use of the predicate prov:entity" ;
+.
+
+<Requirement-2.1.10c>
+	a sh:NodeShape ;
+	sh:targetObjectsOf prov:qualifiedDerivation ;
+    sh:property [
+        sh:path prov:hadRole ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:message "Requirement 2.1.10c IF a skos:ConceptScheme indicates that it is derived from another object via use of the prov:qualifiedDerivation predicate, it must then indicate a role for the derivation by use of the predicate prov:hadRole" ;
+.
+
+<Requirement-2.1.11>
+	a sh:NodeShape ;
+	sh:targetClass skos:ConceptScheme ;
+    sh:property [
+        sh:path reg:status ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+    sh:message "Requirement 2.1.11 Each vocabulary's skos:ConceptScheme _MAY_ indicate a status with respect to its existence in a register and, if it does it MUST do so by referencing an IRI for a skos:Concept with the reg:status predicate" ;
 .
 
 #
@@ -228,7 +297,7 @@
 <Requirement-2.2.1a>
 	a sh:NodeShape ;
 	sh:targetClass skos:Collection ;
-    sh:message "Requirement 2.2.1 Each skos:Collection instance _MUST_ have one and only one title indicated using the skos:prefLabel property that must be a text literal value" ;
+    sh:message "Requirement 2.2.1 Each skos:Collection instance _MUST_ have one and only one title indicated using the skos:prefLabel predicate that must be a text literal value" ;
     sh:property [
         sh:path skos:prefLabel ;
         sh:minCount 1 ;
@@ -240,7 +309,7 @@
 <Requirement-2.2.1b>
 	a sh:NodeShape ;
 	sh:targetClass skos:Collection ;
-    sh:message "Requirement 2.2.1 Each skos:Collection instance _MUST_ have one and only one definition indicated using the skos:definition property that must be a text literal value" ;
+    sh:message "Requirement 2.2.1 Each skos:Collection instance _MUST_ have one and only one definition indicated using the skos:definition predicate that must be a text literal value" ;
     sh:property [
         sh:path skos:definition ;
         sh:minCount 1 ;
@@ -252,12 +321,12 @@
 <Requirement-2.2.2>
     a sh:NodeShape ;
     sh:message "Requirement 2.1.7 Provenance for a Collection _SHOULD_ be indicated by at least one of the following properties: dcterms:provenance, dcterms:source or prov:wasDerivedFrom." ;
-    sh:or ( 
-        [ 
+    sh:or (
+        [
             sh:minCount 1 ;
             sh:path prov:wasDerivedFrom ;
             sh:message "This is a message about prov:wasDerivedFrom" ;
-        ] 
+        ]
         [
             sh:minCount 1 ;
             sh:path dcterms:source ;
@@ -267,7 +336,7 @@
             sh:minCount 1 ;
             sh:path dcterms:provenance ;
             sh:message "This is a message about dcterms:provenance" ;
-        ] 
+        ]
     ) ;
     sh:targetClass skos:Collection ;
     sh:severity sh:Warning ;
@@ -279,7 +348,7 @@
 <Requirement-2.3.1a>
 	a sh:NodeShape ;
 	sh:targetClass skos:Concept ;
-    sh:message "Requirement 2.3.1 Each skos:Concept instance _MUST_ have one and only one title indicated using the `skos:prefLabel` property that must be a text literal value" ;
+    sh:message "Requirement 2.3.1 Each skos:Concept instance _MUST_ have one and only one title indicated using the `skos:prefLabel` predicate that must be a text literal value" ;
     sh:property [
         sh:path skos:prefLabel ;
         sh:minCount 1 ;
@@ -291,7 +360,7 @@
 <Requirement-2.3.1b>
 	a sh:NodeShape ;
 	sh:targetClass skos:Concept ;
-    sh:message "Requirement 2.3.1 Each skos:Concept instance _MUST_ have one and only one definition indicated using the `skos:definition` property that must be a text literal value" ;
+    sh:message "Requirement 2.3.1 Each skos:Concept instance _MUST_ have one and only one definition indicated using the `skos:definition` predicate that must be a text literal value" ;
     sh:property [
         sh:path skos:definition ;
         sh:minCount 1 ;
@@ -303,7 +372,7 @@
 <Requirement-2.3.2>
 	a sh:NodeShape ;
 	sh:targetClass skos:Concept ;
-    sh:message "Requirement 2.3.2 Each skos:Concept in a vocabulary _MAY_ indicate the vocabulary that defines it by use of the `rdfs:isDefinedBy` property indicating a `skos:ConceptScheme` instance" ;
+    sh:message "Requirement 2.3.2 Each skos:Concept in a vocabulary _MAY_ indicate the vocabulary that defines it by use of the `rdfs:isDefinedBy` predicate indicating a `skos:ConceptScheme` instance" ;
     sh:property [
         sh:path rdfs:isDefinedBy ;
         sh:minCount 0 ;
@@ -337,12 +406,12 @@
 <Requirement-2.3.4>
     a sh:NodeShape ;
     sh:message "Requirement 2.1.7 Provenance for a Concept _SHOULD_ be indicated by at least one of the following properties: dcterms:provenance, dcterms:source or prov:wasDerivedFrom." ;
-    sh:or ( 
-        [ 
+    sh:or (
+        [
             sh:minCount 1 ;
             sh:path prov:wasDerivedFrom ;
             sh:message "This is a message about prov:wasDerivedFrom" ;
-        ] 
+        ]
         [
             sh:minCount 1 ;
             sh:path dcterms:source ;
@@ -352,23 +421,10 @@
             sh:minCount 1 ;
             sh:path dcterms:provenance ;
             sh:message "This is a message about dcterms:provenance" ;
-        ] 
+        ]
     ) ;
     sh:targetClass skos:Concept ;
     sh:severity sh:Warning ;
-.
-
-<Requirement-2.3.5>
-	a sh:NodeShape ;
-	sh:targetClass skos:Concept ;
-        sh:message "Requirement 2.3.5 Each skos:Concept in a vocabulary _SHOULD_ indicate its permanent identifier as the value of a `dcterms:identifier` property. If the permanent identifier is a URI, the value may have the datatype `xsd:anyURI`" ;
-        sh:property [
-            sh:path dcterms:identifier ;
-            sh:minCount 0 ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-        ] ;
-        sh:severity sh:Info ;
 .
 
 #
@@ -384,7 +440,7 @@
             sh:minCount 1 ;
             sh:maxCount 1 ;
             sh:datatype xsd:string ;
-            sh:message "Requirement 2.4.2 Each agent _MUST_ indicate at least one name property with the `sdo:name` property that must be a text literal value"
+            sh:message "Requirement 2.4.2 Each agent _MUST_ indicate at least one name predicate with the `sdo:name` predicate that must be a text literal value"
         ] ;
 .
 
@@ -396,7 +452,7 @@
             sh:minCount 1 ;
             sh:datatype xsd:anyURI ;
         ] ;
-        sh:message "Requirement 2.4.3 Each agent _MUST_ indicate either a `sdo:url` (for organizations) or a `sdo:email` (for people) property with a URL or email value"
+        sh:message "Requirement 2.4.3 Each agent _MUST_ indicate either a `sdo:url` (for organizations) or a `sdo:email` (for people) predicate with a URL or email value"
 .
 
 <Requirement-2.4.3b>
@@ -407,5 +463,5 @@
             sh:minCount 1 ;
             sh:datatype xsd:anyURI ;
         ] ;
-        sh:message "Requirement 2.4.3 Each agent _MUST_ indicate either a sdo:url (for organizations) or a sdo:email (for people) property with a URL or email value"
+        sh:message "Requirement 2.4.3 Each agent _MUST_ indicate either a sdo:url (for organizations) or a sdo:email (for people) predicate with a URL or email value"
 .

@@ -1,0 +1,16 @@
+@prefix : <https://linked.data.gov.au/def/vocab-derivation-modes/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:direct rdfs:label "Direct" .
+
+:extension rdfs:label "Extension" .
+
+:none rdfs:label "None" .
+
+:not-applicable rdfs:label "Not Applicable" .
+
+:relabelling rdfs:label "Relabelling" .
+
+:subsetting rdfs:label "Subsetting" .
+
+:subsetting-and-extension rdfs:label "Subset & Extension" .
