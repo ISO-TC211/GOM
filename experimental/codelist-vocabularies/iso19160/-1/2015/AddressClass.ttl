@@ -1,5 +1,6 @@
 PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressClass>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -17,12 +18,8 @@ cs:
     dcterms:source "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
     skos:definition "An ISO standard's ConceptScheme"@en ;
     skos:prefLabel "Address Class"@en ;
-.
-
-<http://def.isotc211.org/org/tc211>
-    a schema:Organization ;
-    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
-    schema:name "ISO's Technical Committee 211" ;
-    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+    prov:qualifiedDerivation [
+            prov:hadRole <http://linked.data.gov.au/def/vocab-derivation-modes/none>
+        ] ;
 .
 

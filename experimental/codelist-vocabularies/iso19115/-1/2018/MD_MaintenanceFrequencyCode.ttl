@@ -1,6 +1,7 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -188,13 +189,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<http://def.isotc211.org/org/tc211>
-    a schema:Organization ;
-    schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
-    schema:name "ISO's Technical Committee 211" ;
-    schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
-.
-
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2000-01-01"^^xsd:date ;
@@ -224,5 +218,8 @@ cs:
         :unknown ,
         :weekly ;
     skos:prefLabel "MD Maintenance Frequency Code"@en ;
+    prov:qualifiedDerivation [
+            prov:hadRole <http://linked.data.gov.au/def/vocab-derivation-modes/none>
+        ] ;
 .
 
