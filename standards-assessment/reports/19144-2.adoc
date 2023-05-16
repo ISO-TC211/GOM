@@ -8,7 +8,7 @@
 |===
 | Element | Value
 
-| IRI | allocated: `https://standards.isotc211.org/19144-2/` for the Standard's document, suggested `https://def.isotc211.org/19144/-2` for the model and `https://def.isotc211.org/19144/-2` for v1 of the model
+| IRI | allocated: `https://standards.isotc211.org/19144-2/` for the Standard's document, suggested `https://def.isotc211.org/19144/-2` for the model and `https://def.isotc211.org/19144/-2/1` for v1 of the model
 | Title |Geographic information — Classification systems — Part 2: Land Cover Meta Language (LCML)
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
