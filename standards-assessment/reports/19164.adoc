@@ -8,7 +8,7 @@
 |===
 | Element | Value
 
-| IRI | allocated: `https://standards.isotc211.org/19164/-/` for the Standard's document, suggested `https://def.isotc211.org/iso19164/-` for the model and `https://def.isotc211.org/iso1964/-` for v1 of the model
+| IRI | allocated: `https://standards.isotc211.org/19164/-/` for the Standard's document, suggested `https://def.isotc211.org/iso19164/-` for the model and `https://def.isotc211.org/iso1964/-/1` for v1 of the model
 | Title | 19164 Geographic information - Indoor Feature Model
 | Edition | 1
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
