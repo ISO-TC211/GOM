@@ -21,7 +21,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. Meeting protocols
 .. Roll call
 ... (re)introduction of co-chairs: Ivana & Nicholas
-.. How to contribute/ammend Agenda/Minutes
+.. How to contribute/amend Agenda/Minutes
 .. Start Recording
 . *Reminder of the purpose of GOM*
 .. purpose as it has been to date
@@ -37,7 +37,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .... Users are desperate for fixity in reference - PID IRIs
 .... We have created a PID demo for 2 vocabs
 .... ref <<Redirection Examples>>
-.... PIDs can easily be implemented for all vocabs, if terget system is assured
+.... PIDs can easily be implemented for all vocabs, if target system is assured
 .. Vocab model refinements
 ... Requirements checkoff
 .... ref <<Vocab Model Requirements>>
@@ -51,6 +51,10 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .... This is particularly important for standardised vocabs until/unless effective dynamic registries can be established
 .... Some variant of the same Standards Vocab Derivation Modes statuses can be indicated for use
 .... ref <<Vocabulary Derivation Modes Example>>
+... More Item Statuses required
+.... "experimental", "stable"
+.... As per ISO11179 / Registry Ontology
+.... Demonstrated for the updated Reg Item Status vocab itself
 .. Continuing issues
 ... Handling Enumerations
 .... Users want Enumerations as vocabularies too
@@ -112,16 +116,16 @@ These are Requirements _not_ already catered for by the https://iso-tc211.github
 | Item | PID IRI | Notes
 
 3+| *Role Codes*
-| Role Codes codelist | http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode] | 
-| Role Codes _author_ code | http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author] | 
+| Role Codes codelist | https://iso.dev.kurrawong.ai/v/vocab/ns2:CI_RoleCode[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode] |
+| Role Codes _author_ code | https://iso.dev.kurrawong.ai/v/vocab/ns2:CI_RoleCode/c_rlcd:author[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author] |
 3+| *Item Status*
-| Item Status codelist | http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus | 
-| Item Status _addition_ code | http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/addition | 
+| Item Status codelist | https://iso.dev.kurrawong.ai/v/vocab/code:RE_ItemStatus[http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus] |
+| Item Status _addition_ code | https://iso.dev.kurrawong.ai/v/vocab/code:RE_ItemStatus/r_tmstts:addition[http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/addition] |
 3+| *Profiles & Formats*
-| Role Codes _author_ via profile, default | http://iso.kurrawong.net/vocab/CI_RoleCode/author?_profile=vocpub&_mediatype=application/rdf+xml[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=vocpub] | any and multiple profiles can be implemented, if we have the data
-| Role Codes _author_ Alternate profiles listing  | http://iso.kurrawong.net/vocab/CI_RoleCode/author?_profile=alt[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=alt] | any and multiple profiles can be implemented, if we have the data
+| Role Codes _author_ via profile, default | https://api.iso.dev.kurrawong.ai/v/vocab/ns2:CI_RoleCode?_profile=prfl:vocpub&_mediatype=application/rdf%20xml[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=vocpub] | any and multiple profiles can be implemented, if we have the data
+| Role Codes _author_ Alternate profiles listing  | https://iso.dev.kurrawong.ai/v/vocab/ns2:CI_RoleCode?_profile=alt[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=alt] | any and multiple profiles can be implemented, if we have the data
 | A05 vocabulary profiles | http://vocab.nerc.ac.uk/collection/A05/current/?_profile=alt | Note the non-RDF profiles, e.g. http://vocab.nerc.ac.uk/collection/A05/current/?_profile=dd&_mediatype=application/json[dd]
-| Role Codes _author_ via profile & format  | http://iso.kurrawong.net/vocab/CI_RoleCode/author?_profile=vocpub&_mediatype=application/ld+json[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=vocpub&_mediatype=application/ld+json] | 
+| Role Codes _author_ via profile & format  | https://api.iso.dev.kurrawong.ai/v/vocab/ns2:CI_RoleCode?_profile=prfl:vocpub&_mediatype=application/ld%20json[http://def.isotc211.org/iso19115/-1/2018/ CitationAndResponsiblePartyInformation/code/CI_RoleCode/author?_profile=vocpub&_mediatype=application/ld+json] |
 |===
 
 === Statuses Example
