@@ -1,6 +1,6 @@
 = GOM Standard Assessment Report
 
-== 19157-1 - For Geographic information — Data quality - Part 1: General requirements
+== 19157-1 - Geographic information — Data quality - Part 1: General requirements
 
 == Document Metadata Assessment
 
