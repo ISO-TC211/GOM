@@ -8,7 +8,7 @@
 |===
 | Element | Value
 
-| IRI | allocated: `https://standards.isotc211.org/19124-1/` for the Standard's document, suggested `https://def.isotc211.org/19124/-1` for the model and `https://def.isotc211.org/19124/-1` for v1 of the model
+| IRI | allocated: `https://standards.isotc211.org/19124-1/` for the Standard's document, suggested `https://def.isotc211.org/19124/-1` for the model and `https://def.isotc211.org/19124/-1/1` for v1 of the model
 | Title |ISO/TS 19124-1 Geographic information — Calibration and validation of remote sensing data and derived products — Part 1: Fundamentals
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
