@@ -8,8 +8,8 @@
 |===
 | Element | Value
 
-| IRI | allocated: `https://standards.isotc211.org/19152-3/` for the Standard's document, suggested `https://def.isotc211.org/19152/-3` for the model and `https://def.isotc211.org/test-standard` for v1 of the model
-| Title |test standard
+| IRI | allocated: `https://standards.isotc211.org/19152-3/` for the Standard's document, suggested `https://def.isotc211.org/19152/-3` for the model and `https://def.isotc211.org/1952/-3` for v1 of the model
+| Title |ISO 19152-2 Geographic information - Land Administration Domain Model (LADM) -- Part 3: Marine georegulation
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
 
