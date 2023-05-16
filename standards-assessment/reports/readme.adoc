@@ -11,4 +11,6 @@ This list is of reports by GOM on ISO TC 211 Standards that GOM has reviewed for
 | 2022-10-05 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19152-3.html[ISO/TS 19152-3 Geographic information - Land Administration Domain Model (LADM) -- Part 3: Marine georegulation]
 | 2022-10-05 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19144-2.html[ISO 19144-2 Geographic information — Classification systems — Part 2: Land Cover Meta Language (LCML)]
 | 2022-10-25 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19124-1.html[ISO/TS 19124-1 Geographic information — Calibration and validation of remote sensing data and derived products — Part 1: Fundamentals]
+| 2023-04-20 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19164.html[ISO 19164 Geographic information — Indoor Feature Model]
+| 2023-05-16 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19168-1.html[ISO 19168-1 Geographic Information – Geospatial API for Features – Part 1: Core]
 |===
