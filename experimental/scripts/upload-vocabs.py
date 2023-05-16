@@ -55,9 +55,13 @@ def upload_vocab(p: Path):
         print(f"Skipping {p.name}, invalid")
 
 
-def upload_vocab_via_sparql_insert(p: Path):
+def upload_vocab_via_sparql_insert(p: Path, graph: str = None):
+    print(p)
     g = Graph().parse(p)
-    iri = g.value(predicate=RDF.type, object=SKOS.ConceptScheme)
+    if graph is not None:
+        iri = graph
+    else:
+        iri = g.value(predicate=RDF.type, object=SKOS.ConceptScheme)
     print(f"Uploading file {p.name} to graph <{iri}>")
 
     nt = g.serialize(format="ntriples")
@@ -95,9 +99,22 @@ def drop_all_vocabs():
 def list_all_vocabs():
     vs = []
     for v in Path(Path(__file__).parent.parent / "codelist-vocabularies").rglob("*.ttl"):
-        if "_reference-ontologie" not in str(v):
+        if "_reference-ontologies" not in str(v):
             vs.append(v)
     return vs
+
+
+def list_reference_onts():
+    vs = []
+    for v in Path(Path(__file__).parent.parent / "codelist-vocabularies" / "_reference-ontologies").rglob("*.ttl"):
+        vs.append(v)
+    return vs
+
+
+def upload_reference_onts():
+    g = Graph()
+    for ont in list_reference_onts():
+        upload_vocab_via_sparql_insert(ont, "http://background")
 
 
 if __name__ == "__main__":
@@ -106,5 +123,8 @@ if __name__ == "__main__":
     DB_USERNAME = os.environ.get("DB_USERNAME", None)
     DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
 
-    # drop_all_vocabs()
+    drop_all_vocabs()
+
     upload_all_vocabs()
+
+    upload_reference_onts()

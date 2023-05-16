@@ -1,8 +1,9 @@
 PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/ReferenceObjectType>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX schema: <https://schema.org/>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
@@ -16,10 +17,12 @@ cs:
     dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     dcterms:publisher <http://def.isotc211.org/org/tc211> ;
     dcterms:source "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
+    reg:status status:valid ;
     skos:definition "An ISO standard's ConceptScheme"@en ;
     skos:prefLabel "Reference Object Type"@en ;
     prov:qualifiedDerivation [
-            prov:hadRole <http://linked.data.gov.au/def/vocab-derivation-modes/none>
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
         ] ;
 .
 

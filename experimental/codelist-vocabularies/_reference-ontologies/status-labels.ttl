@@ -1,0 +1,38 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+
+status:addition
+    rdfs:label "addition" ;
+.
+
+status:experimental
+    rdfs:label "experimental" ;
+.
+
+status:invalid
+    rdfs:label "invalid" ;
+.
+
+status:original
+    rdfs:label "original" ;
+.
+
+status:retired
+    rdfs:label "retired" ;
+.
+
+status:stable
+    rdfs:label "stable" ;
+.
+
+status:submitted
+    rdfs:label "submitted" ;
+.
+
+status:superseded
+    rdfs:label "superseded" ;
+.
+
+status:valid
+    rdfs:label "valid" ;
+.

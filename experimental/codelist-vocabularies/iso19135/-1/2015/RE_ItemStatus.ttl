@@ -3,15 +3,24 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+status:stable
+    a skos:Concept ;
+    dcterms:provenance "Added to this codelist by GOM, 2023"@en ;
+    reg:status status:experimental ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader status:valid ;
+    skos:definition "The item valid and expected to remain unchanged. It may be used widely"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "stable"@en ;
+.
+
 status:invalid
     a skos:Concept ;
-    dcterms:identifier "invalid"^^xsd:token ;
-    dcterms:provenance "The item is valid and was supplied within the original issuance of the vocabulary"@en ;
+    dcterms:provenance "Supplied within the original issuance of the vocabulary"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A decision has been made that a previously valid register item contains a substantial error and is invalid, and will normally have been replaced by a corrected item"@en ;
@@ -22,8 +31,7 @@ status:invalid
 
 status:retired
     a skos:Concept ;
-    dcterms:identifier "retired"^^xsd:token ;
-    dcterms:provenance "The item is valid and was supplied within the original issuance of the vocabulary"@en ;
+    dcterms:provenance "Supplied within the original issuance of the vocabulary"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A decision has been made that the item is no longer recommended for use. It has not been superseded by another item"@en ;
@@ -34,8 +42,7 @@ status:retired
 
 status:submitted
     a skos:Concept ;
-    dcterms:identifier "submitted"^^xsd:token ;
-    dcterms:provenance "The item is valid and was supplied within the original issuance of the vocabulary"@en ;
+    dcterms:provenance "Supplied within the original issuance of the vocabulary"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The item has been entered into the register, but the control body has not accepted the proposal to add it"@en ;
@@ -46,8 +53,7 @@ status:submitted
 
 status:superseded
     a skos:Concept ;
-    dcterms:identifier "superseded"^^xsd:token ;
-    dcterms:provenance "The item is valid and was supplied within the original issuance of the vocabulary"@en ;
+    dcterms:provenance "Supplied within the original issuance of the vocabulary"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The item has been superseded by another item and is no longer recommended for use"@en ;
@@ -56,10 +62,31 @@ status:superseded
     skos:topConceptOf cs: ;
 .
 
+status:addition
+    a skos:Concept ;
+    dcterms:provenance "Added to this codelist by GOM, 2022"@en ;
+    reg:status status:addition ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader status:valid ;
+    skos:definition "The item is valid and was supplied to the vocabulary after initial creation"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "addition"@en ;
+.
+
+status:experimental
+    a skos:Concept ;
+    dcterms:provenance "Added to this codelist by GOM, 2023"@en ;
+    reg:status status:experimental ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader status:valid ;
+    skos:definition "The item is valid but is experimental in nature and should be used with caution"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "valid"@en ;
+.
+
 status:valid
     a skos:Concept ;
-    dcterms:identifier "valid"^^xsd:token ;
-    dcterms:provenance "The item is valid and was supplied within the original issuance of the vocabulary"@en ;
+    dcterms:provenance "Supplied within the original issuance of the vocabulary"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The item has been accepted, is recommended for use, and has not been superseded or retired"@en ;
@@ -68,28 +95,15 @@ status:valid
     skos:topConceptOf cs: ;
 .
 
-status:addition
-    a skos:Concept ;
-    dcterms:identifier "addition"^^xsd:token ;
-    dcterms:provenance "The item is valid and was supplied to the vocabulary after initial creation"@en ;
-    reg:status status:addition ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "The item is valid and was supplied to the vocabulary after initial creation"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "addition"@en ;
-    skos:topConceptOf cs: ;
-.
-
 status:original
     a skos:Concept ;
-    dcterms:identifier "original"^^xsd:token ;
-    dcterms:provenance "The item is valid and was supplied to the vocabulary after initial creation"@en ;
+    dcterms:provenance "Added to this codelist by GOM, 2022"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The item is valid and was supplied within the original issuance of the vocabulary"@en ;
+    skos:broader status:valid ;
+    skos:definition "Supplied within the original issuance of the vocabulary"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "original"@en ;
-    skos:topConceptOf cs: ;
 .
 
 cs:
@@ -98,11 +112,12 @@ cs:
     dcterms:creator <http://def.isotc211.org/org/tc211> ;
     dcterms:identifier "RE_ItemStatus"^^xsd:token ;
     dcterms:issued "2000-01-01"^^xsd:date ;
-    dcterms:modified "2000-01-01"^^xsd:date ;
+    dcterms:modified "2023-05-16"^^xsd:date ;
     dcterms:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     dcterms:publisher <http://def.isotc211.org/org/tc211> ;
     dcterms:source "http://standards.iso.org/iso/19135/-1/ed-1/en/"^^xsd:anyURI ;
-    skos:definition "An ISO standard's ConceptScheme"@en ;
+    reg:status status:experimental ;
+    skos:definition "Instances of RE_ItemStatus that identify the registration status of a RegisterItem"@en ;
     skos:hasTopConcept
         status:addition ,
         status:invalid ,
@@ -113,7 +128,8 @@ cs:
         status:valid ;
     skos:prefLabel "Register Item Status Codes"@en ;
     prov:qualifiedDerivation [
-            prov:hadRole <http://linked.data.gov.au/def/vocab-derivation-modes/none>
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
         ] ;
 .
 
