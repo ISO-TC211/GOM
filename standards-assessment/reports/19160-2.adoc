@@ -1,6 +1,6 @@
 = GOM Standard Assessment Report
 
-== 19160-2 - Addressing — Part 2: Assigning and maintaining addresses for objects in the physical world
+== 19160-2 Geographic information — Addressing — Part 2: Assigning and maintaining addresses for objects in the physical world
 
 == Document Metadata Assessment
 
@@ -9,7 +9,7 @@
 | Element | Value
 
 | IRI | allocated: `https://standards.isotc211.org/19160/-2/` for the Standard's document, suggested `https://def.isotc211.org/iso19160/-2` for the model and `https://def.isotc211.org/iso19/-1/1` for v1 of the model
-| Title | 19160-2 - Addressing — Part 2: Assigning and maintaining addresses for objects in the physical world
+| Title | 19160-2 Geographic information — Addressing — Part 2: Assigning and maintaining addresses for objects in the physical world
 | Edition | 1
 | Reviewer(s) | Nicholas Car
 |===
