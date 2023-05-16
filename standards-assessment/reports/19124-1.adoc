@@ -29,7 +29,7 @@ The sections in this technical specification relevant for semantic assessment ar
 ** these form a vocabulary and vocabulary elements may be used in multiple Standards
 * *5 Calibration of remote sensing data*
 ** this contains the formalized data model of the technical specification
-* *8 Calibration of reference sources
+** 8 Calibration of reference sources
 ** the list of requirements given here form vocabularies
 * *10 Validation of derived products*
 ** contains an enumeration for "CA_StatisticComputation"
