@@ -1,0 +1,54 @@
+= GOM Standard Assessment Report
+
+== 19144-3 Geographic information — Classification systems — Part 3: Land Use Meta Language (LUML)
+
+== Document Metadata Assessment
+
+[cols="1,8"]
+|===
+| Element | Value
+
+| IRI | allocated: `https://standards.isotc211.org/19144/-3/` for the Standard's document, suggested `https://def.isotc211.org/iso19144/-3` for the model and `https://def.isotc211.org/iso1944/-3/1` for v1 of the model
+| Title | 19144-3 Geographic information — Classification systems — Part 3: Land Use Meta Language (LUML)
+| Edition | 1
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
+|===
+
+_incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this standard relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *4 Conformance*
+** the list of Conformance Classes here form vocabularies
+* *8 LUML design concepts*
+** contains codelists that form vocabularies
+* *9 Landuse activities*
+** contains codelists that form vocabularies
+* *Annex A - Abstract test suites*
+** contains a vocabulary of Conformance Tests
+* *Bibiligraphy*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *8 LUML design concepts* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *9 Landuse activities* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Bibliography* | As per *2 Normative references* | -
+|===
