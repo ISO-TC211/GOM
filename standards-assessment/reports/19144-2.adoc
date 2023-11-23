@@ -1,6 +1,6 @@
 = GOM Standard Assessment Report
 
-== test-standard-report
+== ISO 19144-2 Geographic information — Classification systems — Part 2: Land Cover Meta Language (LCML)
 
 == Document Metadata Assessment
 
