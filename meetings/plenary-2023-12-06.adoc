@@ -27,7 +27,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. purpose continuing
 . *Update on GOM standards review process*
 .. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
-.. standards reviewed since the last meeting: ISO 19144-3, ISO 19152-3
+.. standards reviewed since the last meeting: ISO 19144-3
 . *Cost of establishing and maintaining ISO/TC211 Harmonized Resources' Registry*
 .. ....
 . *Discussion*
