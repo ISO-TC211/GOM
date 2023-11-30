@@ -29,7 +29,40 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
 .. standards reviewed since the last meeting: ISO 19144-3
 . *Cost of establishing and maintaining ISO/TC211 Harmonized Resources' Registry*
-.. ....
++
+--
+Based on the experience of operating registries for organisations similar requirements to TC-211, in particular the http://defs.opengis.net/vocprez/[Open Geospatial Consortium's Naming Authority] and the https://cgi.vocabs.ga.gov.au/[Commission for Geoscience Information], we can estimate the following tasks and _rough order of magnitude_ costs for TC-211 to run a registry if using similar tools. 
+
+The tool considered for use is [Prez](https://prez.dev), an open-source product developed for vocab can catalogue information and partly mantained by the OGC for use in its 'Rainbow'. Prez was used to demonstrate a codelists vocabulary register in Dec '22 and May'23. It is currently used widely and it is free.
+
+The costs below are entirly labour and cloud computing costs with labour being by far the greatest component. Labour is priced at CHF900 per day - the NGO rate of [KurrawongAI](https://kurrawong.ai) who supports Prez.
+
+The following is a task and cost breakdown.
+
+[width=75%, cols="1,3,1,1"]
+|===
+| Task  | Description | Effort | Cost
+
+| Establish a Registry system | Create an instance of the Registry software in a public cloud | 1 week | CHF4500
+| Customise the Registry | Implement TC-211s particular Registers (models, codelists etc) with customised item properties | 2 weeks | CHF9000
+| Establish workflows | Create version control system workflows to maintain the state of data in the Registry | 2 weeks | CHF9000
+| Train users | Online live training sessions and support for TC-211 staff/volunteers to learn to use the system | 5 day equivalent | CHF4500
+|===
+
+After the tasks above, TC-211 could continue to use the Registry system in the public cloud it established within as a managed service or it could "in-house" the system onto its own cloud or on-prem IT infrastructure:
+
+[width=75%, cols="1,3,1,2"]
+|===
+| Task  | Description | Effort | Cost
+
+| Operate Register as managed service | Cloud operating costs (perhaps 1000 p.a.) + 900 to 450 per month | ongoing | CHF10800 1st year, expected to reduce to CHF5400
+| Hand over system | Work with ISO IT to in-house system | 2 weeks effort, elapsed over timeframe needed | CHF9000 (one-time)
+|===
+
+Thus a total system establishmnt, customisation, traiing and one year managed service operation cost could be:
+
+* 4500 + 9000 + 9000 + 4500 + 10800 = *CHF37,800*
+--
 . *Discussion*
 .. Which resources will ISO/TC Harmonized Maintenance Agency curate?
 ... HM from https://github.com/ISO-TC211/HMMG
@@ -46,7 +79,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 | ISO 19127: https://geodetic.isotc211.org/ | UN-GGIM GGCE, ...  
 | ISO 19157-3 https://dqm.isotc211.org  | EVERYBODY, ... 
 | ... | ...
-| ===
+|===
 
 . *Next Meeting*
 .. When
