@@ -33,9 +33,11 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 --
 Based on the experience of operating registries for organisations similar requirements to TC-211, in particular the http://defs.opengis.net/vocprez/[Open Geospatial Consortium's Naming Authority] and the https://cgi.vocabs.ga.gov.au/[Commission for Geoscience Information], we can estimate the following tasks and _rough order of magnitude_ costs for TC-211 to run a registry if using similar tools. 
 
-The tool considered for use is [Prez](https://prez.dev), an open-source product developed for vocab can catalogue information and partly mantained by the OGC for use in its 'Rainbow'. Prez was used to demonstrate a codelists vocabulary register in Dec '22 and May'23. It is currently used widely and it is free.
+The tool considered for use is https://prez.dev[Prez], an open-source product developed for vocab can catalogue information and partly mantained by the OGC for use in its 'Rainbow'. Prez was used to demonstrate a codelists vocabulary register in Dec '22 and May'23. It is currently used widely and it is free.
 
-The costs below are entirly labour and cloud computing costs with labour being by far the greatest component. Labour is priced at CHF900 per day - the NGO rate of [KurrawongAI](https://kurrawong.ai) who supports Prez.
+A TC-211 Registry could support multiple registers for HMMG content and a specialised "vocabs" register for codelist vocabularies.
+
+The costs below are entirly labour and cloud computing costs with labour being by far the greatest component. Labour is priced at CHF900 per day - the NGO rate of https://kurrawong.ai[KurrawongAI] who supports Prez.
 
 The following is a task and cost breakdown.
 
