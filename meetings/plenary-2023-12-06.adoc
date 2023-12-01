@@ -62,8 +62,8 @@ After the tasks above, TC211 could continue to use the Registry system in the pu
 |===
 | Task  | Description | Effort | Cost
 
-| Operate Register as managed service | Cloud operating costs (perhaps 1000 p.a.) + 900 to 450 per month | ongoing | CHF10800 1st year, expected to reduce to CHF5400
-| Hand over system | Work with ISO IT to in-house system | 2 weeks effort, elapsed over timeframe needed | CHF9000 (one-time)
+| Operate Register as managed service | Cloud operating costs (perhaps CFH1000 p.a.) + CFH900 to CFH450 per month | ongoing | CHF10800 1st year, expected to reduce to CHF5400
+| Hand over system | Work with ISO/TC211 IT support to bring system in-house | 2 weeks effort, elapsed over the timeframe needed | CHF9000 (one-time)
 |===
 
 Thus, a total system establishment, customisation, training and one year managed service operation cost could be:
