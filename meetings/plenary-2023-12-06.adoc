@@ -77,7 +77,7 @@ Thus, a total system establishment, customisation, training and one year managed
 ... OWL from https://github.com/ISO-TC211/GOM
 ... codelists
 ... links to registers together and where are they used:
-
++
 [width=50%, cols="1,2"]
 |===
 | Registry  | Used by
@@ -87,8 +87,30 @@ Thus, a total system establishment, customisation, training and one year managed
 | ISO 19157-3 https://dqm.isotc211.org  | EVERYBODY, ... 
 | ... | ...
 |===
-
++
 . *Next Meeting*
 .. When
 .. Proposed Agenda
 
+=== Annex: Proposed System screenshots
+
+.VocPrez listing of vocabularies
+image::files/2023-12-06/vocprez-vocabs.png[width="75%"]
+
+.CatPrez listing of catalogues
+image::files/2023-12-06/catprez-catalogues.png[width="75%"]
+
+.CatPrez resources in a catalogue
+image::files/2023-12-06/catprez-catalogued-resources.png[width="75%"]
+
+.A CatPrez Resource showing FAIR scores
+image::files/2023-12-06/catprez-resource-fair.png[width="75%"]
+
+.CatPrez resources data in GitHub
+image::files/2023-12-06/resources-sourcecode-files.png[width="75%"]
+
+.Source data for the AGIL Resource shown above
+image::files/2023-12-06/resource-source-data.png[width="75%"]
+
+.OGC VocPrez, soon to be *Prez
+image::files/2023-12-06/ogc-vocprez.png[width="75%"]
