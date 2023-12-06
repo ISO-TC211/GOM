@@ -92,15 +92,3 @@ Thus, a total system establishment, customisation, training and one year managed
 .. When
 .. Proposed Agenda
 
-
-== TODO for plenary:
-
-Nick:
-
-* produce a quote on costs to:
-** establish ISO/TC211 Harmonized Resources Registry
-** maintain ISO/TC211 Harmonized Resources Registry
-
-Ivana:
-
-* update Standards Assessment at https://github.com/ISO-TC211/GOM/tree/master/standards-assessment
