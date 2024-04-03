@@ -8,7 +8,7 @@
 |===
 | Element | Value
 
-| IRI | allocated: `https://standards.isotc211.org/19144/-3/` for the Standard's document, suggested `https://def.isotc211.org/iso19144/-3` for the model and `https://def.isotc211.org/iso1944/-3/1` for v1 of the model
+| IRI | allocated: `https://standards.isotc211.org/19144/-3/` for the Standard's document, suggested `https://def.isotc211.org/iso19144/-3/` for the model and `https://def.isotc211.org/iso1944/-3/1` for v1 of the model
 | Title | 19144-3 Geographic information — Classification systems — Part 3: Land Use Meta Language (LUML)
 | Edition | 1
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
@@ -34,8 +34,8 @@ The sections in this standard relevant for semantic assessment are determined to
 ** contains codelists that form vocabularies
 * *Annex A - Abstract test suites*
 ** contains a vocabulary of Conformance Tests
-* *Bibiligraphy*
-** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+* *Bibliography*
+** contains a structured bibliography, members of which may be referred to by multiple Standards
 
 === Recommendations per section
 
