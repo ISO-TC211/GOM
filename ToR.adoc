@@ -1,0 +1,79 @@
+= ISO/TC 211 N XXXX
+
+== Replaces N 3577
+
+=== 2024-06-26
+
+Number of pages: 3
+
+= ISO/TC 211 Geographic information/Geomatics Secretariat: SN (Norway)
+
+|===
+| *Document type:* | Other committee document
+| *Title:* | *Terms of reference, Group for ontology maintenance (GOM)*
+| *Source:* | ISO/TC 211/GOM conveors
+| *Expected action:* | Info
+| *Email to secretary:* | #?????@????#
+| *Committee URL: * | http://isotc.iso.org/livelink/livelink/open/tc211 & https://www.isotc211.org
+|===
+
+<<<
+
+== Group for Ontology Maintenance Terms of reference
+
+=== 1. Introduction
+
+ISO/TC 211 is responsible for the standardization in the field of geographic information and, as such, has developed and maintained conceptual models for geographic information concepts in UML. In order to benefit from the Semantic Web and the Linked Open Data, ontologies in OWL are now required for the ISO/TC 211 standards.
+
+=== 2. Scope
+
+This document defines the terms of reference of the permanent group for the maintenance of ISO/TC 211 ontologies, called hereafter the _Group for Ontology Mantenance_ or _GOM_.
+
+=== 3. Purpose
+
+The purpose of the Group for Ontology Management is to ensure the development, maintenance and accessibility on the Web of ISO/TC 211 ontologies.
+
+=== 4. Responsibilities
+
+==== 4.1 Set a well-defined system of dereferenceable HTTP URIs for ISO/TC 211 concepts and their representations.
+
+==== 4.2 Set practices about the use of ISO/TC 211 XML encodings (e.g. ISO 19136, ISO/TS 19139) in OWL for the description of data values of geographic information.
+
+==== 4.3 Ensure the development, maintenance and accessibility on the Web of OWL representations of geographic information concepts. This will address two components:
+̶
+* the ISO/TC 211 Multi-Lingual Glossary of Terms, and
+̶* the ISO/TC 211 harmonized concepts (based on the ISO/TC 211 Harmonized Mode).
+
+==== 5. Membership
+
+The convenor of GOM is appointed by ISO/TC 211.
+
+Ex officio members:
+
+- ISO/TC 211 Chair
+- ISO/TC 211 Working Group convenors (e.g., PMG, HMMG, TMG, XMG)
+- ISO/TC 211 Spetial Group convenors (e.g., ISO/TC 211 – OGC JAG, ISO/TC211 – ISO/TC 204)
+- ISO/TC 211 project leaders 
+
+Nominated members:
+
+- Each P-member can nominate one expert in the group.
+
+Observers:
+
+- The convenor of GOM may nominate or invite additional experts.
+̶  Members may nominate observers.
+
+The membership is reviewed every three years.
+
+==== 6. Process
+
+Decisions shall be made by consensus of the full membership. If a consensus cannot be reached, a decision will be made by simple majority of nominated members.
+
+==== 7. Report
+
+A summary report of GOM activities shall be presented to each ISO/TC 211 plenary.
+
+==== 8. Review of the terms of reference
+
+The terms of reference of the Group for Ontology Maintenance shall be revisited every three years. The process shall be initiated by the Group for Ontology Maintenance Convenor and shall include the nominated members.
