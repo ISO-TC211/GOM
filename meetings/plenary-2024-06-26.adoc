@@ -32,9 +32,9 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 +
 --
 . *Progress on vocabulary publication*
-. *OGC support of ISO/TC211 resource publication
-. *Proposed next generation ontology publication
-. *Demonstration of OGC GeoSPARQL publication
+. *OGC support of ISO/TC211 resource publication*
+. *Proposed next generation ontology publication*
+. *Demonstration of OGC GeoSPARQL publication*
 . *Discussion*
 .. Which resources will ISO/TC Harmonized Maintenance Agency curate?
 ... HM from https://github.com/ISO-TC211/HMMG
