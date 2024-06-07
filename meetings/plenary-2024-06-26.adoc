@@ -26,10 +26,10 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 . *Reminder of the purpose of GOM*
 .. purpose as it has been to date
 .. purpose continuing
+. *Updated Terms of Reference*
 . *Update on GOM standards review process*
 .. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
 .. standards reviewed since the last meeting: ISO 19109, ISO 19178-1, ISO 19177-1
-. *Updated Terms of Reference*
 . *Progress on vocabulary publication*
 . *OGC support of ISO/TC211 resource publication*
 . *Proposed next generation ontology publication*
