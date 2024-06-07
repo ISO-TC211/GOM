@@ -14,7 +14,7 @@ Number of pages: 3
 | *Source:* | ISO/TC 211/GOM conveors
 | *Expected action:* | Info
 | *Email to secretary:* | #?????@????#
-| *Committee URL: * | http://isotc.iso.org/livelink/livelink/open/tc211 & https://www.isotc211.org
+| *Committee URL:* | http://isotc.iso.org/livelink/livelink/open/tc211 & https://www.isotc211.org
 |===
 
 <<<
@@ -40,9 +40,9 @@ The purpose of the Group for Ontology Management is to ensure the development, m
 ==== 4.2 Set practices about the use of ISO/TC 211 XML encodings (e.g. ISO 19136, ISO/TS 19139) in OWL for the description of data values of geographic information.
 
 ==== 4.3 Ensure the development, maintenance and accessibility on the Web of OWL representations of geographic information concepts. This will address two components:
-̶
-* the ISO/TC 211 Multi-Lingual Glossary of Terms, and
-̶* the ISO/TC 211 harmonized concepts (based on the ISO/TC 211 Harmonized Mode).
+
+- the ISO/TC 211 Multi-Lingual Glossary of Terms, and
+- the ISO/TC 211 harmonized concepts (based on the ISO/TC 211 Harmonized Mode).
 
 ==== 5. Membership
 
