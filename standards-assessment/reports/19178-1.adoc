@@ -1,0 +1,51 @@
+= GOM Standard Assessment Report
+
+== 19178-1 Geographic Information – Training Data Markup Language for Artificial Intelligence — Part 1: Conceptual Model Standard
+
+== Document Metadata Assessment
+
+[cols="1,8"]
+|===
+| Element | Value
+
+| IRI | allocated: `https://standards.isotc211.org/19178/1/` for the Standard's document, suggested `https://def.isotc211.org/iso19178/1/` for the model and `https://def.isotc211.org/iso19109/-/1` for v1 of the model
+| Title | 19178-1 Geographic Information – Training Data Markup Language for Artificial Intelligence — Part 1: Conceptual Model Standard
+| Edition | 1
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
+|===
+
+_incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this standard relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple standards
+* *4 Conformance*
+** the list of Conformance Classes here form vocabularies
+* *7 7	TrainingDML-AI UML Model*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *Annex A - Abstract test suites*
+** contains a vocabulary of Conformance Tests
+* *Bibliography*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *7 7	TrainingDML-AI UML Model* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Bibliography* | As per *2 Normative references* | -
+|===
