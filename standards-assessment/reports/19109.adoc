@@ -28,7 +28,7 @@ The sections in this standard relevant for semantic assessment are determined to
 ** these form a vocabulary and vocabulary elements may be used in multiple standards
 * *4 Conformance*
 ** the list of Conformance Classes here form vocabularies
-* *7 General Feature Model"*
+* *7 General Feature Model*
 ** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
 * *8 Rules for Application Schema*
 ** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
@@ -47,7 +47,7 @@ The sections in this standard relevant for semantic assessment are determined to
 | None: pending a TC 211 references library
 | *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
 | *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
-| *7 General Feature Model"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *7 General Feature Model* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *9 Rules for Application Schema* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *Bibliography* | As per *2 Normative references* | -
