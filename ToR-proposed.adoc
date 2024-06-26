@@ -43,7 +43,7 @@ The purpose of the Group for Ontology Management is to ensure the development, m
 
 - the ISO/TC 211 Multi-Lingual Glossary of Terms, and
 - vocabulary forms of ISO/TC 211 standards' codelists
-- harmonized ontology forms of ISO/TC 211 standards' data models (a reimplementation of ISO/TC 211 Harmonized Mode in Semantci Web form).
+- harmonized ontology forms of ISO/TC 211 standards' data models (a reimplementation of ISO/TC 211 Harmonized Mode in Semantic Web form).
 
 ==== 5. Membership
 
