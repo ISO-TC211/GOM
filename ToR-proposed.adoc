@@ -23,7 +23,7 @@ Number of pages: 3
 
 === 1. Introduction
 
-ISO/TC 211 is responsible for the standardization in the field of geographic information and, as such, has developed and maintained conceptual models for geographic information concepts in UML. In order to benefit from the Semantic Web and the Linked Open Data, ontologies in OWL are now required for the ISO/TC 211 standards.
+ISO/TC 211 is responsible for the standardization in the field of geographic information and, as such, has developed and maintained conceptual models for geographic information concepts in UML. In order to benefit from the Semantic Web and the Linked Open Data, ontologies in OWL are now required for these conceptual models.
 
 === 2. Scope
 
@@ -31,18 +31,19 @@ This document defines the terms of reference of the permanent group for the main
 
 === 3. Purpose
 
-The purpose of the Group for Ontology Management is to ensure the development, maintenance and accessibility on the Web of ISO/TC 211 ontologies.
+The purpose of the Group for Ontology Management is to ensure the development, maintenance and accessibility on the Web of ISO/TC 211 Semantic Web artifacts.
 
 === 4. Responsibilities
 
 ==== 4.1 Set a well-defined system of dereferenceable HTTP URIs for ISO/TC 211 concepts and their representations.
 
-==== 4.2 Set practices about the use of ISO/TC 211 XML encodings (e.g. ISO 19136, ISO/TS 19139) in OWL for the description of data values of geographic information.
+==== 4.2 Set practices about the development of OWL versions of ISO/TC 211 standards' data models.
 
-==== 4.3 Ensure the development, maintenance and accessibility on the Web of OWL representations of geographic information concepts. This will address two components:
+==== 4.3 Ensure the development, maintenance and accessibility on the Web of OWL representations of geographic information concepts. This will address several components:
 
 - the ISO/TC 211 Multi-Lingual Glossary of Terms, and
-- the ISO/TC 211 harmonized concepts (based on the ISO/TC 211 Harmonized Mode).
+- vocabulary forms of ISO/TC 211 standards' codelists
+- harmonized ontology forms of ISO/TC 211 standards' data models (a reimplementation of ISO/TC 211 Harmonized Mode in Semantci Web form).
 
 ==== 5. Membership
 
