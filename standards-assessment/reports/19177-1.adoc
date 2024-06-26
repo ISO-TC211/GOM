@@ -1,0 +1,78 @@
+= GOM Standard Assessment Report
+
+== 19177-1 Geographic Information – Geospatial API for Tiles — Part 1: Core
+
+== Document Metadata Assessment
+
+[cols="1,8"]
+|===
+| Element | Value
+
+| IRI | allocated: `https://standards.isotc211.org/19177/1/` for the Standard's document, suggested `https://def.isotc211.org/iso19177/1/` for the model and `https://def.isotc211.org/iso19109/-/1` for v1 of the model
+| Title | 19177-1 Geographic Information – Geospatial API for Tiles — Part 1: Core
+| Edition | 1
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
+|===
+
+_incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this standard relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple standards
+* *4 Conformance*
+** the list of Conformance Classes here form vocabularies
+* *7	Requirements Class "Core"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *8	Requirements Class "Tilesets"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *9	Requirements Class "Tilesets List"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *10	Requirements Class "Dataset Tilesets"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *11	Requirements Class "GeoData Tilesets"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *12	Requirements Class "Collections Selection"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *13	Requirements Class "DateTime"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *14	Requirements Class "OpenAPI Specification 3.0"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *15	Requirements Class "XML Tilesets Metadata"*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *16	Requirements classes for tile encodings*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *Annex A - Abstract test suites*
+** contains a vocabulary of Conformance Tests
+* *Bibliography*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *7 Requirements Class "Core"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *8 Requirements Class "Tilesets"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *9 Requirements Class "Tilesets List"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *10 Requirements Class "Dataset Tilesets* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *11 Requirements Class "GeoData Tilesets* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *12 Requirements Class "Colections Selections* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *13 Requirements Class "DateTime"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *14 Requirements Class "OpenAPI Specification 3.0"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *15 Requirements Class "XML Tileset Metadata* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *16 Requirements classes for tile encodings* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Bibliography* | As per *2 Normative references* | -
+|===
