@@ -30,6 +30,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 . *Update on GOM standards review process*
 .. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
 .. standards reviewed since the last meeting: ISO 19109, ISO 19178-1, ISO 19177-1
+... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
 . *Progress on vocabulary publication*
 . *OGC support of ISO/TC211 resource publication*
 . *Proposed next generation ontology publication*
