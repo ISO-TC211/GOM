@@ -28,7 +28,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. purpose continuing
 . *Updated Terms of Reference*:
 .. CIB Resolution 2024-07
-.. GOM Revised ToR approved - see N6027
+.. GOM Revised ToR approved - see N6056
 . *Update on GOM standards review process*
 .. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
 .. standards reviewed since the last meeting: none since Jun'24 plenary
