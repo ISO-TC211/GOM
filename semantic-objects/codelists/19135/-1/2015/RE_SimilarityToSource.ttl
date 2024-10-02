@@ -1,11 +1,10 @@
 PREFIX : <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_SimilarityToSource/>
 PREFIX cs: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_SimilarityToSource>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
-PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :1
@@ -13,9 +12,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "No change has been made to the specification"@en ;
+    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "No change"@en ;
-    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
 .
 
 :2
@@ -23,9 +22,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The style of the specification has been changed to match the style and structure of other specifications in the register that has imported the specification"@en ;
+    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Style"@en ;
-    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
 .
 
 :3
@@ -33,9 +32,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The specification includes information about its context that is not explicit in the specification in the external source"@en ;
+    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Extra not explict"@en ;
-    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
 .
 
 :4
@@ -43,9 +42,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The specification of the register item has been generalized to have a broader meaning than the item specified in the external source"@en ;
+    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Generalized"@en ;
-    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
 .
 
 :5
@@ -53,9 +52,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The specification of the register item has been specialized to have a narrower meaning than the item specified in the external source"@en ;
+    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Narrower"@en ;
-    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
 .
 
 :6
@@ -63,11 +62,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The nature of the differences between the register item and the similar item in the external source is unspecified"@en ;
+    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Unspecified"@en ;
-    skos:historyNote "From page 52, ISO19135-1:2014"@en ;
 .
-
 
 cs:
     a skos:ConceptScheme ;
@@ -80,17 +78,12 @@ cs:
         :4 ,
         :5 ,
         :6 ;
+    skos:historyNote "Created manually by GOM staff directly from the ISO19135-1:2014 document"@en ;
     skos:prefLabel "Similarity To Source Codes"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19135/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2014-09-18"^^xsd:date ;
     schema:dateModified "2024-10-02"^^xsd:date ;
     schema:identifier "RE_SimilarityToSource"^^xsd:token ;
-    skos:historyNote "Created manually by GOM staff directly from the ISO19135-1:2014 document"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_TelephoneTypeCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_TelephoneTypeCode>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -13,11 +12,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "telephone provides facsimile service" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "facsimile"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "facsimile"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :sms
@@ -25,11 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "telephone provides sms service" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sms"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "sms"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :voice
@@ -37,11 +36,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "telephone provides voice service" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "voice"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "voice"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -52,19 +51,13 @@ cs:
         :facsimile ,
         :sms ,
         :voice ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     skos:prefLabel "CI Telephone Type Code"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2000-01-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "CI_TelephoneTypeCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_TelephoneTypeCode> ;
     schema:issued "2000-01-01"^^xsd:date ;
-    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

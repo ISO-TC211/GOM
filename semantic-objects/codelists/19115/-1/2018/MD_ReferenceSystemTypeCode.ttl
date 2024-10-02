@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -13,11 +12,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering parametric"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundEngineeringParametric"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringParametricTemporal
@@ -25,11 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering parametric temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundEngineeringParametricTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringTemporal
@@ -37,11 +36,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundEngineeringTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringVertical
@@ -49,11 +48,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering vertical"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundEngineeringVertical"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringVerticalTemporal
@@ -61,11 +60,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering vertical temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundEngineeringVerticalTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DParametric
@@ -73,11 +72,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dparametric"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundGeographic2DParametric"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DParametricTemporal
@@ -85,11 +84,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dparametric temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundGeographic2DParametricTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DTemporal
@@ -97,11 +96,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dtemporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundGeographic2DTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DVertical
@@ -109,11 +108,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dvertical"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundGeographic2DVertical"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DVerticalTemporal
@@ -121,11 +120,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dvertical temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundGeographic2DVerticalTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic3DTemporal
@@ -133,11 +132,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic3dtemporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundGeographic3DTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjected2DParametric
@@ -145,11 +144,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected2dparametric"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundProjected2DParametric"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjected2DParametricTemporal
@@ -157,11 +156,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected2dparametric temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundProjected2DParametricTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjectedTemporal
@@ -169,11 +168,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundProjectedTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjectedVertical
@@ -181,11 +180,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected vertical"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundProjectedVertical"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjectedVerticalTemporal
@@ -193,11 +192,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected vertical temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "compoundProjectedVerticalTemporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :engineering
@@ -205,11 +204,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "engineering"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "engineering"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :engineeringDesign
@@ -217,11 +216,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "engineering design"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "engineeringDesign"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :engineeringImage
@@ -229,11 +228,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "engineering image"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "engineeringImage"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :geodeticGeocentric
@@ -241,11 +240,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geodetic geocentric"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "geodeticGeocentric"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :geodeticGeographic2D
@@ -253,11 +252,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geodetic geographic2d"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "geodeticGeographic2D"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :geodeticGeographic3D
@@ -265,11 +264,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geodetic geographic3d"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "geodeticGeographic3D"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :geographicIdentifier
@@ -277,11 +276,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geographic identifier"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "geographicIdentifier"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :linear
@@ -289,11 +288,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "linear"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "linear"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :parametric
@@ -301,11 +300,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "parametric"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "parametric"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :projected
@@ -313,11 +312,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "projected"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "projected"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :temporal
@@ -325,11 +324,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "temporal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "temporal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :vertical
@@ -337,11 +336,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "vertical"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "vertical"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -377,19 +376,13 @@ cs:
         :projected ,
         :temporal ,
         :vertical ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     skos:prefLabel "MD Reference System Type Code"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2000-01-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "MD_ReferenceSystemTypeCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#MD_ReferenceSystemTypeCode> ;
     schema:issued "2000-01-01"^^xsd:date ;
-    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

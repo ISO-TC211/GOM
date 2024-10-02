@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_DimensionNameTypeCode>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -13,11 +12,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "abscissa (x) axis" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "column"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "column"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :crossTrack
@@ -25,11 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "perpendicular to the direction of motion of the scan point" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "cross track"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "crossTrack"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :line
@@ -37,11 +36,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "scan line of a sensor" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "line"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "line"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :row
@@ -49,11 +48,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "ordinate (y) axis" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "row"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "row"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :sample
@@ -61,11 +60,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "element along a scan line" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sample"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "sample"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :time
@@ -73,11 +72,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "duration" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "time"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "time"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :track
@@ -85,11 +84,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "along the direction of motion of the scan point" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "track"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "track"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :vertical
@@ -97,11 +96,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "vertical (z) axis" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "vertical"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "vertical"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -117,19 +116,13 @@ cs:
         :time ,
         :track ,
         :vertical ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     skos:prefLabel "MD Dimension Name Type Code"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2000-01-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "MD_DimensionNameTypeCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation#MD_DimensionNameTypeCode> ;
     schema:issued "2000-01-01"^^xsd:date ;
-    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

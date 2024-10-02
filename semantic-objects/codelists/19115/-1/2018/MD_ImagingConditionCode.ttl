@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_ImagingConditionCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_ImagingConditionCode>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -13,11 +12,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is blurred" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "blurred image"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "blurredImage"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :cloud
@@ -25,11 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is partially obscured by cloud cover" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "cloud"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "cloud"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :degradingObliquity
@@ -37,11 +36,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "acute angle between the plane of the ecliptic (the plane of the Earth's orbit) and the plane of the celestial equator" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "degrading obliquity"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "degradingObliquity"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :fog
@@ -49,11 +48,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is partially obscured by fog" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "fog"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "fog"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :heavySmokeOrDust
@@ -61,11 +60,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is partially obscured by heavy smoke or dust" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "heavy smoke or dust"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "heavySmokeOrDust"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :night
@@ -73,11 +72,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "image was taken at night" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "night"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "night"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :rain
@@ -85,11 +84,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "image was taken during rainfall" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "rain"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "rain"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :semiDarkness
@@ -97,11 +96,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "image was taken during semi-dark conditions-twilight conditions" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "semi darkness"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "semiDarkness"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :shadow
@@ -109,11 +108,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is obscured by shadow" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "shadow"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "shadow"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :snow
@@ -121,11 +120,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "portion of the image is obscured by snow" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "snow"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "snow"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :terrainMasking
@@ -133,11 +132,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest" ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "terrain masking"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "terrainMasking"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -156,19 +155,13 @@ cs:
         :shadow ,
         :snow ,
         :terrainMasking ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     skos:prefLabel "MD Imaging Condition Code"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2000-01-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "MD_ImagingConditionCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/ContentInformation#MD_ImagingConditionCode> ;
     schema:issued "2000-01-01"^^xsd:date ;
-    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

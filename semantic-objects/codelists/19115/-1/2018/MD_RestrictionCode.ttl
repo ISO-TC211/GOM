@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -13,11 +12,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "confidential"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "confidential"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :copyright
@@ -25,11 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "copyright"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "copyright"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :in-confidence
@@ -37,11 +36,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "in-confidence"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "in-confidence"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :intellectualPropertyRights
@@ -49,11 +48,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "intellectual property rights"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "intellectualPropertyRights"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :licence
@@ -61,11 +60,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "licence"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "licence"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :licenceDistributor
@@ -73,11 +72,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "licence distributor"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "licenceDistributor"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :licenceEndUser
@@ -85,11 +84,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "licence end user"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "licenceEndUser"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :licenceUnrestricted
@@ -97,11 +96,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "licence unrestricted"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "licenceUnrestricted"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :otherRestrictions
@@ -109,11 +108,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "other restrictions"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "otherRestrictions"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :patent
@@ -121,11 +120,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "patent"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "patent"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :patentPending
@@ -133,11 +132,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "patent pending"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "patentPending"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :private
@@ -145,11 +144,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "private"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "private"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :restricted
@@ -157,11 +156,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "restricted"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "restricted"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :sensitiveButUnclassified
@@ -169,11 +168,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sensitive but unclassified"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "sensitiveButUnclassified"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :statutory
@@ -181,11 +180,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "statutory"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "statutory"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :trademark
@@ -193,11 +192,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "trademark"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "trademark"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :unrestricted
@@ -205,11 +204,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "unrestricted"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "unrestricted"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -234,19 +233,13 @@ cs:
         :statutory ,
         :trademark ,
         :unrestricted ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     skos:prefLabel "MD Restriction Code"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2000-01-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "MD_RestrictionCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ConstraintInformation#MD_RestrictionCode> ;
     schema:issued "2000-01-01"^^xsd:date ;
-    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

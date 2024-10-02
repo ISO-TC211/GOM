@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressComponentValueType/>
 PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressComponentValueType>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -68,7 +67,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:identifier "localeAlternative"^^xsd:token ;
 .
 
-
 cs:
     a skos:ConceptScheme ;
     reg:status status:stable ;
@@ -81,11 +79,6 @@ cs:
         :localeAlternative ;
     skos:historyNote "This codelist vocabulary was extracted directly from the defining standard: ISO19160-1:205"@en ;
     skos:prefLabel "Address Component Value Type"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
     schema:contributor <https://www.ogc.org> ;
     schema:creator <https://committee.iso.org/home/tc211> ;

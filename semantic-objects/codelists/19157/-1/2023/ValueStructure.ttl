@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19157/-1/2023/DataQualityMeasures/code/ValueStructure/>
 PREFIX cs: <http://def.isotc211.org/iso19157/-1/2023/DataQualityMeasures/code/ValueStructure>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -13,11 +12,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "finite, unordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "bag"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "bag"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :coverage
@@ -25,11 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "feature that acts as a function to return values from its range for any direct position within its spatial, temporal or spatiotemporal domain (ISO 19123:2005)"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "coverage"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "coverage"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :matrix
@@ -37,11 +36,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "rectangular array of numbers (ISO.sl.TS 19129:2009)"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "matrix"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "matrix"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :sequence
@@ -49,11 +48,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "finite, ordered collection of related items (objects or values) that may be repeated (ISO 19107:2003)"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sequence"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "sequence"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :set
@@ -61,11 +60,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "unordered collection of related items (objects or values) with no repetition (ISO 19107:2003)"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "set"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "set"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :table
@@ -73,11 +72,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "an arrangement of data in which each item may be identified by means of arguments or keys (ISO.sl.IEC 2382-4:1999)"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "table"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "table"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -91,17 +90,12 @@ cs:
         :sequence ,
         :set ,
         :table ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     skos:prefLabel "Value Structure Code"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19157/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2023-12-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "ValueStructure"^^xsd:token ;
-    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

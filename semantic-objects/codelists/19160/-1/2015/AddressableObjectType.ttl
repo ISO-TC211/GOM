@@ -1,5 +1,4 @@
 PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressableObjectType>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -13,11 +12,6 @@ cs:
     skos:historyNote "This codelist vocabulary was extracted directly from the defining standard: ISO19160-1:205"@en ;
     skos:prefLabel "Addressable Object Type"@en ;
     skos:scopeNote "This codelist has no values provided in the specifying standard. It may be added to through standard TC-211 codelist extension practices"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
     schema:contributor <https://www.ogc.org> ;
     schema:creator <https://committee.iso.org/home/tc211> ;
@@ -27,4 +21,3 @@ cs:
     schema:issued "2000-01-01"^^xsd:date ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .
-

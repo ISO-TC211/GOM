@@ -46,12 +46,10 @@ testdata_19157 = [
     CODELISTS_DIR / "19157" / "-1" / "2023" / "ValueStructure.ttl",
 ]
 
-
 @pytest.mark.parametrize("vocab", testdata_19157)
 def test_19157(vocab):
     data_graph = Graph().parse(vocab) + agents_graph
     valid, results_graph, results_text = validate(data_graph, shacl_graph=validator_graph, allow_warnings=True)
-    # allow vocabs to have no Concepts
     if not valid:
         print(f"{vocab} is not valid: {results_text}")
 
@@ -66,14 +64,58 @@ testdata_19135 = [
     CODELISTS_DIR / "19135" / "-1" / "2015" / "RE_SimilarityToSource.ttl",
 ]
 
-
 @pytest.mark.parametrize("vocab", testdata_19135)
 def test_19135(vocab):
     data_graph = Graph().parse(vocab) + agents_graph
     valid, results_graph, results_text = validate(data_graph, shacl_graph=validator_graph, allow_warnings=True)
-    # allow vocabs to have no Concepts
     if not valid:
         print(f"{vocab} is not valid: {results_text}")
 
     assert valid
 
+
+testdata_19115 = [
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "CI_DateTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "CI_OnLineFunctionCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "CI_PresentationFormCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "CI_RoleCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "CI_TelephoneTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "CountryCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "DCPList.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "DS_AssociationTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "DS_InitiativeTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "KeywordTypeCode-Bio.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "LanguageCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_CellGeometryCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_CharacterSetCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_ClassificationCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_CoverageContentTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_DatatypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_DimensionNameTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_GeometricObjectTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_ImagingConditionCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_KeywordTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_MaintenanceFrequencyCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_MediumFormatCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_ProgressCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_ReferenceSystemTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_RestrictionCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_ScopeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_SpatialRepresentationTypeCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "MD_TopologyLevelCode.ttl",
+    CODELISTS_DIR / "19115" / "-1" / "2018" / "SV_CouplingType.ttl",
+]
+
+@pytest.mark.parametrize("vocab", testdata_19115)
+def test_19115(vocab):
+    data_graph = Graph().parse(vocab) + agents_graph
+    valid, results_graph, results_text = validate(data_graph, shacl_graph=validator_graph, allow_warnings=True)
+    # allow vocabs to have no Concepts
+    if not valid:
+        results_graph: Graph
+        for s in results_graph.subjects(predicate=RDF.type, object=SH.ValidationReport):
+            for o in results_graph.objects(subject=s, predicate=SH.result):
+                for o2 in results_graph.objects(subject=o, predicate=SH.resultMessage):
+                    assert "Requirement 2.1.9 " in str(o2), f"Vocab {vocab} is invalid: {o2}"
+    else:
+        assert valid

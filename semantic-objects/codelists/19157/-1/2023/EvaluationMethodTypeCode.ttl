@@ -1,6 +1,5 @@
 PREFIX : <http://def.isotc211.org/iso19157/-1/2023/DataQualityEvaluation/code/EvaluationMethodTypeCode/>
 PREFIX cs: <http://def.isotc211.org/iso19157/-1/2023/DataQualityEvaluation/code/EvaluationMethodTypeCode>
-PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
@@ -13,11 +12,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "direct external"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "directExternal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :directInternal
@@ -25,11 +24,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "method of evaluating the quality of a dataset based on inspection of items within the dataset, where all data required is internal to the dataset being evaluated"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "direct internal"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "directInternal"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :indirect
@@ -37,11 +36,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "method of evaluating the quality of a dataset based on external knowledge"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "indirect"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "indirect"^^xsd:token ;
-    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -52,17 +51,12 @@ cs:
         :directExternal ,
         :directInternal ,
         :indirect ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     skos:prefLabel "Evaluation Method Type Code"@en ;
-    prov:qualifiedDerivation
-        [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
-        ] ;
     schema:citation "http://standards.iso.org/iso/19157/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2023-12-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "EvaluationMethodTypeCode"^^xsd:token ;
-    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .
