@@ -1,0 +1,50 @@
+= June 2024 Plenary 
+
+== Agenda
+
+This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
+
+=== Agenda Outline
+
+. *Welcome*
+. *Reminder of the purpose of GOM*
+.. Updated Terms of Reference
+. *Update on GOM standards review process*
+. *ISO/TC211 Harmonized Resources Registry*
+. *Discussion*
+. *Next Meeting*
+
+=== Agenda Details
+
+. *Welcome*
+.. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
+.. Meeting protocols
+.. Roll call
+... (re)introduction of co-chairs: Ivana & Nicholas
+.. How to contribute/amend Agenda/Minutes
+.. Start Recording
+. *Reminder of the purpose of GOM*
+.. purpose as it has been to date
+.. purpose continuing
+. *Updated Terms of Reference*
+. *Update on GOM standards review process*
+.. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
+.. standards reviewed since the last meeting: ISO 19109, ISO 19178-1, ISO 19177-1
+... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+. *Progress on vocabulary publication*
+. *OGC support of ISO/TC211 resource publication*
+. *Proposed next generation ontology publication*
+. *Demonstration of OGC GeoSPARQL publication*
+. *Discussion*
+.. Which resources will ISO/TC Harmonized Maintenance Agency curate?
+... HM from https://github.com/ISO-TC211/HMMG
+... XML from https://github.com/ISO-TC211/XMG
+... OWL from https://github.com/ISO-TC211/GOM
+... codelists
+... links to registers together and where are they used:
+
+. *Next Meeting*
+.. When: Likely on 13 November 2024 in Sydney, AU
+.. Proposed Agenda:
+... Update on standards assessment - not only which, but also how
+... Demonstration of ISO GeoSPARQL publication

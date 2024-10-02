@@ -1,6 +1,6 @@
 = GOM Standard Assessment Report
 
-== 19168-1 Geographic Information – Geospatial API for Features – Part 1: Core
+== 19109 Geographic Information – General Feature Model and rules for application schemas
 
 == Document Metadata Assessment
 
@@ -8,8 +8,8 @@
 |===
 | Element | Value
 
-| IRI | allocated: `https://standards.isotc211.org/19168/-1/` for the Standard's document, suggested `https://def.isotc211.org/iso19168/-1/` for the model and `https://def.isotc211.org/iso19168/-1/1` for v1 of the model
-| Title | 19168-1 Geographic Information – Geospatial API for Features – Part 1: Core
+| IRI | allocated: `https://standards.isotc211.org/19109/-/` for the Standard's document, suggested `https://def.isotc211.org/iso19109/-/` for the model and `https://def.isotc211.org/iso19109/-/1` for v1 of the model
+| Title | 19109 Geographic Information – General Feature Model and rules for application schemas
 | Edition | 1
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
@@ -23,21 +23,19 @@ _incomplete_... perhaps the metadata required for ConceptSchemes should be requi
 The sections in this standard relevant for semantic assessment are determined to be:
 
 * *2 Normative references*
-** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+** contains a structured bibligraphy, members of which may be referred to by multiple standards
 * *3 Terms and definitions*
-** these form a vocabulary and vocabulary elements may be used in multiple Standards
+** these form a vocabulary and vocabulary elements may be used in multiple standards
 * *4 Conformance*
 ** the list of Conformance Classes here form vocabularies
-* *7 Requirements Class "Core"*
+* *7 General Feature Model*
 ** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
-* *8 Requirements classes for encoding*
-** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
-* *9 Requirements Class "OpenAPI 3.0"*
+* *8 Rules for Application Schema*
 ** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
 * *Annex A - Abstract test suites*
 ** contains a vocabulary of Conformance Tests
 * *Bibliography*
-** contains a structured bibliography, members of which may be referred to by multiple Standards
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
 
 === Recommendations per section
 
@@ -49,9 +47,8 @@ The sections in this standard relevant for semantic assessment are determined to
 | None: pending a TC 211 references library
 | *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
 | *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
-| *7 Requirements Class "Core"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
-| *8 Requirements classes for encoding* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
-| *9 Requirements Class "OpenAPI 3.0"* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *7 General Feature Model* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *9 Rules for Application Schema* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *Bibliography* | As per *2 Normative references* | -
 |===

@@ -14,4 +14,7 @@ This list is of reports by GOM on ISO TC 211 Standards that GOM has reviewed for
 | 2023-04-20 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19164.html[ISO 19164 Geographic information — Indoor Feature Model]
 | 2023-05-16 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19168-1.html[ISO 19168-1 Geographic Information – Geospatial API for Features – Part 1: Core]
 | 2023-11-23 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19144-3.html[ISO 19144-3 Geographic Information – Classification systems — Part 3: Land Use Meta Language (LUML)]
+| 2024-03-28 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19109.html[ISO 19109 Geographic Information – General Feature Model and rules for application schemas]
+| 2024-06-26 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19177-1.html[19177-1 Geographic Information – Geospatial API for Tiles — Part 1: Core]
+| 2024-06-26 | https://iso-tc211.github.io/GOM/standards-assessment/reports/19178-1.html[19178-1 Geographic Information – Training Data Markup Language for Artificial Intelligence — Part 1: Conceptual Model Standard]
 |===

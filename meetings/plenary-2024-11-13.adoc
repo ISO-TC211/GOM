@@ -1,0 +1,43 @@
+= November 2024 Plenary 
+
+== Agenda
+
+This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
+
+=== Agenda Outline
+
+. *Welcome*
+. *Reminder of the purpose of GOM*
+.. Updated Terms of Reference
+. *Update on GOM standards review process*
+. *ISO/TC211 Harmonized Resources Registry*
+. *Discussion*
+. *Next Meeting*
+
+=== Agenda Details
+
+. *Welcome*
+.. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
+.. Meeting protocols
+.. Roll call
+... (re)introduction of co-chairs: Ivana & Nicholas
+.. How to contribute/amend Agenda/Minutes
+.. Start Recording
+. *Reminder of the purpose of GOM*
+.. purpose as it has been to date
+.. purpose continuing
+. *Updated Terms of Reference*:
+.. CIB Resolution 2024-07
+.. GOM Revised ToR approved - see N6056
+. *Update on GOM standards review process*
+.. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
+.. standards reviewed since the last meeting: none since Jun'24 plenary
+... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+. *Progress on vocabulary publication*
+. *Discussion*
+
+
+. *Next Meeting*
+.. When: 
+.. Proposed Agenda:
+... TBD
