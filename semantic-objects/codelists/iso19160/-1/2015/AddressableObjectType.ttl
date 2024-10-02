@@ -24,19 +24,7 @@ cs:
     schema:dateCreated "2015-12-15"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "AddressableObjectType"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressableObjectType> ;
     schema:issued "2000-01-01"^^xsd:date ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .
 
-<https://www.ogc.org>
-    a schema:Organization ;
-    schema:name "Open Geospatial Consortium" ;
-    schema:url "https://www.ogc.org"^^xsd:anyURI ;
-.
-
-<https://committee.iso.org/home/tc211>
-    a schema:Organization ;
-    schema:name "ISO Technical Committee 211" ;
-    schema:url "https://committee.iso.org/home/tc211"^^xsd:anyURI ;
-.

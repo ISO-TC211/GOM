@@ -29,14 +29,3 @@ cs:
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .
 
-<https://www.ogc.org>
-    a schema:Organization ;
-    schema:name "Open Geospatial Consortium" ;
-    schema:url "https://www.ogc.org"^^xsd:anyURI ;
-.
-
-<https://committee.iso.org/home/tc211>
-    a schema:Organization ;
-    schema:name "ISO Technical Committee 211" ;
-    schema:url "https://committee.iso.org/home/tc211"^^xsd:anyURI ;
-.
