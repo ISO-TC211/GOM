@@ -1,32 +1,34 @@
-@prefix : <http://purl.org/pav> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@PREFIX schema: <https://schema.org/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pav: <http://purl.org/pav/> .
-@prefix pav1: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX pav: <http://purl.org/pav/>
+PREFIX pav1: <http://swan.mindinformatics.org/ontologies/1.2/pav/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-pav:createdWith a owl:ObjectProperty ;
+pav:createdWith
+    a owl:ObjectProperty ;
     rdfs:label "Created with"@en ;
     rdfs:comment """The software/tool used by the creator (pav:createdBy) when making the digital resource, for instance a word processor or an annotation tool. A more independent software agent that creates the resource without direct interaction by a human creator should instead should instead by indicated using pav:createdBy.
 """@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:seeAlso pav:createdBy ;
-    rdfs:subPropertyOf prov:wasAttributedTo .
+    rdfs:subPropertyOf prov:wasAttributedTo ;
+.
 
-pav:curates a owl:ObjectProperty ;
+pav:curates
+    a owl:ObjectProperty ;
     rdfs:label "Curates"@en ;
     rdfs:comment "Provided for backwards compatibility. Use instead the inverse pav:curatedBy."@en ;
     rdfs:isDefinedBy pav: ;
     owl:deprecated true ;
-    owl:inverseOf pav:curatedBy .
+    owl:inverseOf pav:curatedBy ;
+.
 
-pav:lastRefreshedOn a owl:DatatypeProperty ;
+pav:lastRefreshedOn
+    a owl:DatatypeProperty ;
     rdfs:label "Last refreshed on"@en ;
     rdfs:comment """The date of the last re-import of the resource. This property is used in addition to pav:importedOn if this version has been updated due to a re-import. If the re-import created a new resource rather than refreshing an existing resource, then instead use pav:importedOn together with pav:previousVersion.
 
@@ -35,13 +37,16 @@ This property is normally used in a functional way, although PAV does not formal
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
-    rdfs:seeAlso pav:importedBy,
-        pav:importedFrom,
-        pav:importedOn,
+    rdfs:seeAlso
+        pav:importedBy ,
+        pav:importedFrom ,
+        pav:importedOn ,
         pav:previousVersion ;
-    owl:equivalentProperty pav1:importedLastOn .
+    owl:equivalentProperty pav1:importedLastOn ;
+.
 
-pav:lastUpdateOn a owl:DatatypeProperty ;
+pav:lastUpdateOn
+    a owl:DatatypeProperty ;
     rdfs:label "Last updated on"@en ;
     rdfs:comment """The date of the last update of the resource. An update is a change which did not warrant making a new resource related using pav:previousVersion, for instance correcting a spelling mistake.
 
@@ -50,60 +55,80 @@ This property is normally used in a functional way, although PAV does not formal
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
-    rdfs:seeAlso pav:createdOn,
+    rdfs:seeAlso
+        pav:createdOn ,
         pav:previousVersion ;
-    owl:equivalentProperty pav1:lastUpdateOn .
+    owl:equivalentProperty pav1:lastUpdateOn ;
+.
 
-pav:providedBy a owl:ObjectProperty ;
+pav:providedBy
+    a owl:ObjectProperty ;
     rdfs:label "Provided by"@en ;
     rdfs:comment """The original provider of the encoded information (e.g. PubMed, UniProt, Science Commons).
 
 The provider might not coincide with the dct:publisher, which would describe the current publisher of the resource. For instance if the resource was retrieved, imported or derived from a source, that source was published by the original provider. pav:providedBy provides a shortcut to indicate that original provider on the new resource.  """@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso schema:publisher .
+    rdfs:seeAlso schema:publisher ;
+.
 
-foaf:isPrimaryTopicOf a owl:AnnotationProperty ;
+foaf:isPrimaryTopicOf
+    a owl:AnnotationProperty ;
     rdfs:label "foaf:isPrimaryTopicOf"@en ;
-    rdfs:isDefinedBy foaf: .
+    rdfs:isDefinedBy foaf: ;
+.
 
-foaf:name a owl:AnnotationProperty ;
+foaf:name
+    a owl:AnnotationProperty ;
     rdfs:label "foaf:name"@en ;
-    rdfs:isDefinedBy foaf: .
+    rdfs:isDefinedBy foaf: ;
+.
 
-<http://orcid.org/0000-0001-6938-0820> a owl:NamedIndividual,
+<http://orcid.org/0000-0001-6938-0820>
+    a
+        owl:NamedIndividual ,
         foaf:Person ;
     rdfs:label "Khalid Belhajjame" ;
-    foaf:name "Khalid Belhajjame" .
+    foaf:name "Khalid Belhajjame" ;
+.
 
-<http://orcid.org/0000-0001-9842-9718> a owl:NamedIndividual,
-        prov:Person,
+<http://orcid.org/0000-0001-9842-9718>
+    a
+        owl:NamedIndividual ,
+        prov:Person ,
         foaf:Person ;
     rdfs:label "Stian Soiland-Reyes" ;
     owl:sameAs <http://soiland-reyes.com/stian/#me> ;
-    foaf:name "Stian Soiland-Reyes" .
+    foaf:name "Stian Soiland-Reyes" ;
+.
 
-<http://orcid.org/0000-0002-0643-3144> a owl:NamedIndividual,
+<http://orcid.org/0000-0002-0643-3144>
+    a
+        owl:NamedIndividual ,
         foaf:Person ;
     rdfs:label "Simon Jupp" ;
-    foaf:name "Simon Jupp" .
+    foaf:name "Simon Jupp" ;
+.
 
-<http://orcid.org/0000-0002-5156-2703> a owl:NamedIndividual,
-        prov:Person,
+<http://orcid.org/0000-0002-5156-2703>
+    a
+        owl:NamedIndividual ,
+        prov:Person ,
         foaf:Person ;
     rdfs:label "Paolo Ciccarese" ;
     owl:sameAs <http://www.hcklab.org/foaf.rdf#me> ;
-    foaf:name "Paolo Ciccarese" .
+    foaf:name "Paolo Ciccarese" ;
+.
 
-<http://orcid.org/0000-0002-5711-4872> a owl:NamedIndividual,
+<http://orcid.org/0000-0002-5711-4872>
+    a
+        owl:NamedIndividual ,
         foaf:Person ;
     rdfs:label "Alasdair J G Gray" ;
-    foaf:name "Alasdair J G Gray" .
+    foaf:name "Alasdair J G Gray" ;
+.
 
-schema:hasVersion a owl:ObjectProperty ;
-    rdfs:label "schema:hasVersion"@en ;
-    rdfs:isDefinedBy schema: .
-
-pav:authoredOn a owl:DatatypeProperty ;
+pav:authoredOn
+    a owl:DatatypeProperty ;
     rdfs:label "Authored on"@en ;
     rdfs:comment """The date this resource was authored.
 
@@ -115,12 +140,15 @@ This property is normally used in a functional way, indicating the last time of 
 
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:authoredBy,
-        pav:createdBy,
+    rdfs:seeAlso
+        pav:authoredBy ,
+        pav:createdBy ,
         pav:createdOn ;
-    rdfs:subPropertyOf pav:contributedOn .
+    rdfs:subPropertyOf pav:contributedOn ;
+.
 
-pav:curatedOn a owl:DatatypeProperty ;
+pav:curatedOn
+    a owl:DatatypeProperty ;
     rdfs:label "Curated on"@en ;
     rdfs:comment """The date this resource was curated.
 
@@ -131,9 +159,11 @@ This property is normally used in a functional way, indicating the last curation
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:seeAlso pav:curatedBy ;
-    rdfs:subPropertyOf pav:contributedOn .
+    rdfs:subPropertyOf pav:contributedOn ;
+.
 
-pav:hasCurrentVersion a owl:ObjectProperty ;
+pav:hasCurrentVersion
+    a owl:ObjectProperty ;
     rdfs:label "Has current version"@en ;
     rdfs:comment """This resource has a more specific, versioned resource with equivalent content.
 
@@ -156,10 +186,13 @@ Similarly, it would normally be incorrect to indicate a pav:hasCurrentVersion fr
 
 This property is normally used in a functional way, although PAV does not formally restrict this."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:subPropertyOf pav:hasVersion .
+    rdfs:subPropertyOf pav:hasVersion ;
+.
 
-pav:hasEarlierVersion a owl:AsymmetricProperty,
-        owl:ObjectProperty,
+pav:hasEarlierVersion
+    a
+        owl:AsymmetricProperty ,
+        owl:ObjectProperty ,
         owl:TransitiveProperty ;
     rdfs:label "Has earlier version"@en ;
     rdfs:comment """This versioned resource has an earlier version.
@@ -178,11 +211,13 @@ The subproperty pav:previousVersion SHOULD be used if the earlier version is the
 This property is transitive, so it should not be necessary to repeat the earlier versions of an earlier version. A chain of previous versions can be declared using the subproperty pav:previousVersion, implying that the previous previous version is also an earlier version. It might however still be useful to declare an earlier version explicitly, for instance because it is an earlier version of high relevance or because the complete chain of pav:previousVersion is not available.
 
 
-To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today" vs. "Weather Today on 2013-12-07", see pav:hasVersion.""";
+To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today" vs. "Weather Today on 2013-12-07", see pav:hasVersion.""" ;
     rdfs:isDefinedBy pav: ;
-    rdfs:subPropertyOf prov:alternateOf .
+    rdfs:subPropertyOf prov:alternateOf ;
+.
 
-pav:retrievedOn a owl:DatatypeProperty ;
+pav:retrievedOn
+    a owl:DatatypeProperty ;
     rdfs:label "Retrieved on"@en ;
     rdfs:comment """The date the source for this resource was retrieved.
 
@@ -193,10 +228,13 @@ This property is normally used in a functional way, although PAV does not formal
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
-    rdfs:seeAlso pav:retrievedBy,
-        pav:retrievedFrom .
+    rdfs:seeAlso
+        pav:retrievedBy ,
+        pav:retrievedFrom ;
+.
 
-pav:sourceAccessedOn a owl:DatatypeProperty ;
+pav:sourceAccessedOn
+    a owl:DatatypeProperty ;
     rdfs:label "Source accessed on"@en ;
     rdfs:comment """The resource is related to a source which was originally accessed or consulted on the given date as part of creating or authoring the resource. The source(s) should be specified using pav:sourceAccessedAt.
 
@@ -209,60 +247,73 @@ In the case multiple sources being accessed at different times or by different a
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
-    rdfs:seeAlso pav:createdAt,
-        pav:sourceAccessedAt,
-        pav:sourceAccessedBy,
+    rdfs:seeAlso
+        pav:createdAt ,
+        pav:sourceAccessedAt ,
+        pav:sourceAccessedBy ,
         pav:sourceLastAccessedOn ;
-    owl:equivalentProperty pav1:sourceAccessedOn,
-        pav1:sourceFirstAccessedOn .
+    owl:equivalentProperty
+        pav1:sourceAccessedOn ,
+        pav1:sourceFirstAccessedOn ;
+.
 
-pav:version a owl:DatatypeProperty ;
+pav:version
+    a owl:DatatypeProperty ;
     rdfs:label "Version"@en ;
     rdfs:comment """The version number of a resource. This is a freetext string, typical values are "1.5" or "21". The URI identifying the previous version can be provided using prov:previousVersion.
 
-This property is normally used in a functional way, although PAV does not formally restrict this."""^^xsd:string;
+This property is normally used in a functional way, although PAV does not formally restrict this."""^^xsd:string ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:string ;
     rdfs:seeAlso pav:previousVersion ;
-    owl:equivalentProperty pav1:versionNumber .
+    owl:equivalentProperty pav1:versionNumber ;
+.
 
-<http://www.paolociccarese.info/foaf.rdf#marco-ocana> a owl:NamedIndividual,
-        prov:Person,
+<http://www.paolociccarese.info/foaf.rdf#marco-ocana>
+    a
+        owl:NamedIndividual ,
+        prov:Person ,
         foaf:Person ;
     rdfs:label "Marco Ocana" ;
-    foaf:name "Marco Ocana" .
+    foaf:name "Marco Ocana" ;
+.
 
-prov:alternateOf a owl:ObjectProperty,
+prov:alternateOf
+    a
+        owl:ObjectProperty ,
         owl:SymmetricProperty ;
     rdfs:label "prov:alternateOf"@en ;
-    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+.
 
-prov:generalizationOf a owl:ObjectProperty ;
+prov:generalizationOf
+    a owl:ObjectProperty ;
     rdfs:label "prov:generalizationOf"@en ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o-inverses#> ;
-    owl:inverseOf prov:specializationOf .
+    owl:inverseOf prov:specializationOf ;
+.
 
-prov:specializationOf a owl:ObjectProperty ;
+prov:specializationOf
+    a owl:ObjectProperty ;
     rdfs:label "prov:specializationOf"@en ;
-    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+.
 
-prov:wasRevisionOf a owl:ObjectProperty ;
+prov:wasRevisionOf
+    a owl:ObjectProperty ;
     rdfs:label "prov:wasRevisionOf"@en ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
-    rdfs:subPropertyOf prov:wasDerivedFrom .
+    rdfs:subPropertyOf prov:wasDerivedFrom ;
+.
 
-schema:contributor a owl:AnnotationProperty,
-        owl:ObjectProperty ;
-    rdfs:label "schema:contributor"@en ;
-    rdfs:isDefinedBy schema: .
-
-schema:creator a owl:AnnotationProperty,
-        owl:ObjectProperty ;
-    rdfs:label "schema:creator"@en ;
+schema:hasVersion
+    a owl:ObjectProperty ;
+    rdfs:label "schema:hasVersion"@en ;
     rdfs:isDefinedBy schema: ;
-    rdfs:subPropertyOf schema:contributor .
+.
 
-pav:authoredBy a owl:ObjectProperty ;
+pav:authoredBy
+    a owl:ObjectProperty ;
     rdfs:label "Authored by"@en ;
     rdfs:comment """An agent that originated or gave existence to the work that is expressed by the digital resource.
 
@@ -274,13 +325,17 @@ The author is usually not a software agent (which would be indicated with pav:cr
 
 The date of authoring can be expressed using pav:authoredOn - note however in the case of multiple authors that there is no relationship in PAV identifying which agent contributed when or what. If capturing such lineage is desired, it should be additionally expressed using PROV relationships like prov:qualifiedAttribution or prov:wasGeneratedBy."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:authoredOn,
+    rdfs:seeAlso
+        pav:authoredOn ,
         pav:createdBy ;
-    rdfs:subPropertyOf schema:creator,
-        pav:contributedBy ;
-    owl:equivalentProperty pav1:authoredBy .
+    rdfs:subPropertyOf
+        pav:contributedBy ,
+        schema:creator ;
+    owl:equivalentProperty pav1:authoredBy ;
+.
 
-pav:derivedFrom a owl:ObjectProperty ;
+pav:derivedFrom
+    a owl:ObjectProperty ;
     rdfs:label "Derived from"@en ;
     rdfs:comment """Derived from a different resource.
 
@@ -289,11 +344,14 @@ Derivation conserns itself with derived knowledge. If this resource has the same
 Details about who performed the derivation (e.g. who did the refining or modifications) may be indicated with pav:contributedBy and its subproperties.
 """@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:importedFrom,
+    rdfs:seeAlso
+        pav:importedFrom ,
         pav:previousVersion ;
-    rdfs:subPropertyOf prov:wasDerivedFrom .
+    rdfs:subPropertyOf prov:wasDerivedFrom ;
+.
 
-pav:hasVersion a owl:ObjectProperty ;
+pav:hasVersion
+    a owl:ObjectProperty ;
     rdfs:label "Has version"@en ;
     rdfs:comment """This resource has a more specific, versioned resource.
 
@@ -317,12 +375,16 @@ pav:hasVersion is a subproperty of schema:hasVersion to more strongly define thi
 
 To indicate the existence of other, non-hierarchical kind of editions and adaptations of this resource that are not versioned snapshots (e.g. Powerpoint slides has a video recording version), use instead schema:hasVersion or prov:alternateOf."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:hasCurrentVersion,
+    rdfs:seeAlso
+        pav:hasCurrentVersion ,
         pav:previousVersion ;
-    rdfs:subPropertyOf schema:hasVersion,
-        prov:generalizationOf .
+    rdfs:subPropertyOf
+        prov:generalizationOf ,
+        schema:hasVersion ;
+.
 
-pav:importedOn a owl:DatatypeProperty ;
+pav:importedOn
+    a owl:DatatypeProperty ;
     rdfs:label "Imported on"@en ;
     rdfs:comment """The date this resource was imported from a source (pav:importedFrom).
 
@@ -337,11 +399,14 @@ See pav:importedFrom for a discussion about import vs. retrieval.
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
-    rdfs:seeAlso pav:importedBy,
+    rdfs:seeAlso
+        pav:importedBy ,
         pav:importedFrom ;
-    owl:equivalentProperty pav1:importedOn .
+    owl:equivalentProperty pav1:importedOn ;
+.
 
-pav:retrievedBy a owl:ObjectProperty ;
+pav:retrievedBy
+    a owl:ObjectProperty ;
     rdfs:label "Retrieved by"@en ;
     rdfs:comment """An entity responsible for retrieving the data from an external source.
 
@@ -352,9 +417,11 @@ The source that was retrieved should be given with pav:retrievedFrom. The time o
 See pav:importedFrom for a discussion of import vs. retrieve vs. derived."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:seeAlso pav:importedFrom ;
-    rdfs:subPropertyOf prov:wasAttributedTo .
+    rdfs:subPropertyOf prov:wasAttributedTo ;
+.
 
-pav:sourceLastAccessedOn a owl:DatatypeProperty ;
+pav:sourceLastAccessedOn
+    a owl:DatatypeProperty ;
     rdfs:label "Source last accessed on"@en ;
     rdfs:comment """The resource is related to a source which was last accessed or consulted on the given date. The source(s) should be specified using pav:sourceAccessedAt. Usage of this property indicates that the source has been checked previously, which the initial time should be indicated with pav:sourceAccessedOn.
 
@@ -365,12 +432,32 @@ This property is normally used in a functional way, although PAV does not formal
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
-    rdfs:seeAlso pav:createdAt,
-        pav:sourceAccessedAt,
+    rdfs:seeAlso
+        pav:createdAt ,
+        pav:sourceAccessedAt ,
         pav:sourceAccessedBy ;
-    owl:equivalentProperty pav1:sourceLastAccessedOn .
+    owl:equivalentProperty pav1:sourceLastAccessedOn ;
+.
 
-pav:contributedBy a owl:ObjectProperty ;
+schema:contributor
+    a
+        owl:AnnotationProperty ,
+        owl:ObjectProperty ;
+    rdfs:label "schema:contributor"@en ;
+    rdfs:isDefinedBy schema: ;
+.
+
+schema:creator
+    a
+        owl:AnnotationProperty ,
+        owl:ObjectProperty ;
+    rdfs:label "schema:creator"@en ;
+    rdfs:isDefinedBy schema: ;
+    rdfs:subPropertyOf schema:contributor ;
+.
+
+pav:contributedBy
+    a owl:ObjectProperty ;
     rdfs:label "Contributed by"@en ;
     rdfs:comment """The resource was contributed to by the given agent.
 
@@ -385,13 +472,17 @@ pav:contributedBy is more specific than its superproperty dct:contributor - whic
 
 The date of contribution can be expressed using pav:contributedOn - note however in the case of multiple contributors that there is no relationship in PAV identifying which agent contributed when or what. If capturing such lineage is desired, it should be additionally expressed using PROV relationships like prov:qualifiedAttribution or prov:wasGeneratedBy."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:contributedOn,
+    rdfs:seeAlso
+        pav:contributedOn ,
         pav:createdBy ;
-    rdfs:subPropertyOf schema:contributor,
-        prov:wasAttributedTo ;
-    owl:equivalentProperty pav1:contributedBy .
+    rdfs:subPropertyOf
+        prov:wasAttributedTo ,
+        schema:contributor ;
+    owl:equivalentProperty pav1:contributedBy ;
+.
 
-pav:contributedOn a owl:DatatypeProperty ;
+pav:contributedOn
+    a owl:DatatypeProperty ;
     rdfs:label "Contributed on"@en ;
     rdfs:comment """The date this resource was contributed to.
 
@@ -400,15 +491,19 @@ pav:contributedBy provides the agent(s) that contributed.
 The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use "1983-09-01T00:00:00Z"^^xsd:dateTime."""@en ;
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
-    rdfs:seeAlso pav:contributedBy .
+    rdfs:seeAlso pav:contributedBy ;
+.
 
-pav:createdAt a owl:ObjectProperty ;
+pav:createdAt
+    a owl:ObjectProperty ;
     rdfs:label "Created at"@en ;
     rdfs:comment "The geo-location of the agents when creating the resource (pav:createdBy). For instance  a photographer takes a picture of the Eiffel Tower while standing in front of it."@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:createdBy .
+    rdfs:seeAlso pav:createdBy ;
+.
 
-pav:createdOn a owl:DatatypeProperty ;
+pav:createdOn
+    a owl:DatatypeProperty ;
     rdfs:label "Created on"@en ;
     rdfs:comment """The date of creation of the resource representation.
 
@@ -420,9 +515,11 @@ The value is of type xsd:dateTime, for instance "2013-03-26T14:49:00+01:00"^^xsd
     rdfs:isDefinedBy pav: ;
     rdfs:range xsd:dateTime ;
     rdfs:seeAlso pav:createdBy ;
-    owl:equivalentProperty pav1:createdOn .
+    owl:equivalentProperty pav1:createdOn ;
+.
 
-pav:curatedBy a owl:ObjectProperty ;
+pav:curatedBy
+    a owl:ObjectProperty ;
     rdfs:label "Curated by"@en ;
     rdfs:comment """Specifies an agent specialist responsible for shaping the expression in an appropriate format. Often the primary agent responsible for ensuring the quality of the representation.
 
@@ -432,12 +529,15 @@ The curator may in some cases be a software agent, for instance text mining soft
 
 The date of curating can be expressed using pav:curatedOn - note however in the case of multiple curators that there is no relationship in PAV identifying which agent contributed when or what. If capturing such lineage is desired, it should be additionally expressed using PROV relationships like prov:qualifiedAttribution or prov:wasGeneratedBy."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:createdBy,
+    rdfs:seeAlso
+        pav:createdBy ,
         pav:curatedOn ;
     rdfs:subPropertyOf pav:contributedBy ;
-    owl:equivalentProperty pav1:curatedBy .
+    owl:equivalentProperty pav1:curatedBy ;
+.
 
-pav:importedBy a owl:ObjectProperty ;
+pav:importedBy
+    a owl:ObjectProperty ;
     rdfs:label "Imported by"@en ;
     rdfs:comment """An entity responsible for importing the data.
 
@@ -451,9 +551,11 @@ See pav:importedFrom for a discussion of import vs. retrieve vs. derived."""@en 
     rdfs:isDefinedBy pav: ;
     rdfs:seeAlso pav:importedFrom ;
     rdfs:subPropertyOf prov:wasAttributedTo ;
-    owl:equivalentProperty pav1:importedBy .
+    owl:equivalentProperty pav1:importedBy ;
+.
 
-pav:retrievedFrom a owl:ObjectProperty ;
+pav:retrievedFrom
+    a owl:ObjectProperty ;
     rdfs:label "Retrieved from"@en ;
     rdfs:comment """The URI where a resource has been retrieved from.
 
@@ -463,11 +565,14 @@ Retrieval indicates that this resource has the same representation as the origin
 
 The time of the retrieval should be indicated using pav:retrievedOn. The agent may be indicated with pav:retrievedBy."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:retrievedBy,
+    rdfs:seeAlso
+        pav:retrievedBy ,
         pav:retrievedOn ;
-    rdfs:subPropertyOf prov:wasDerivedFrom .
+    rdfs:subPropertyOf prov:wasDerivedFrom ;
+.
 
-pav:sourceAccessedAt a owl:ObjectProperty ;
+pav:sourceAccessedAt
+    a owl:ObjectProperty ;
     rdfs:label "Source accessed at"@en ;
     rdfs:comment """The resource is related to a given source which was accessed or consulted (but not retrieved, imported or derived from). This access can be detailed with pav:sourceAccessedBy and pav:sourceAccessedOn.
 
@@ -475,32 +580,41 @@ For instance, a curator (pav:curatedBy) might have consulted figures in a publis
 
 Another example: I can access the page for tomorrow weather in Boston (http://www.weather.com/weather/tomorrow/Boston+MA+02143)  and I can blog ‘tomorrow is going to be nice’. The source does not make any claims about the nice weather, that is my interpretation; therefore the blog post has pav:sourceAccessedAt the weather page. """@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:importedFrom,
-        pav:retrievedFrom,
-        pav:sourceAccessedBy,
-        pav:sourceAccessedOn,
+    rdfs:seeAlso
+        pav:importedFrom ,
+        pav:retrievedFrom ,
+        pav:sourceAccessedBy ,
+        pav:sourceAccessedOn ,
         pav:sourceLastAccessedOn ;
-    rdfs:subPropertyOf prov:wasInfluencedBy .
+    rdfs:subPropertyOf prov:wasInfluencedBy ;
+.
 
-pav:sourceAccessedBy a owl:ObjectProperty ;
+pav:sourceAccessedBy
+    a owl:ObjectProperty ;
     rdfs:label "Source accessed by"@en ;
     rdfs:comment """The resource is related to a source which was accessed or consulted
 by the given agent. The source(s) should be specified using pav:sourceAccessedAt, and the time with pav:sourceAccessedOn.
 
 For instance, the given agent could be a curator (also pav:curatedBy) which consulted figures in a published paper to confirm that a dataset was correctly pav:importedFrom the paper's supplementary CSV file."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:sourceAccessedAt .
+    rdfs:seeAlso pav:sourceAccessedAt ;
+.
 
-prov:wasInfluencedBy a owl:ObjectProperty ;
+prov:wasInfluencedBy
+    a owl:ObjectProperty ;
     rdfs:label "prov:wasInfluencedBy"@en ;
-    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+.
 
-prov:wasDerivedFrom a owl:ObjectProperty ;
+prov:wasDerivedFrom
+    a owl:ObjectProperty ;
     rdfs:label "prov:wasDerivedFrom"@en ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
-    rdfs:subPropertyOf prov:wasInfluencedBy .
+    rdfs:subPropertyOf prov:wasInfluencedBy ;
+.
 
-pav:previousVersion a owl:ObjectProperty ;
+pav:previousVersion
+    a owl:ObjectProperty ;
     rdfs:label "Previous version"@en ;
     rdfs:comment """The previous version of a resource in a lineage. For instance a news article updated to correct factual information would point to the previous version of the article with pav:previousVersion. If however the content has significantly changed so that the two resources no longer share lineage (say a new article that talks about the same facts), they can instead be related using pav:derivedFrom.
 
@@ -512,19 +626,25 @@ To indicate that this version is a snapshot of a more general, non-versioned res
 
 Note that it might be confusing to indicate pav:previousVersion from a resource that also has pav:hasVersion or pav:hasCurrentVersion relations, as such resources are intended to be a long-living and "unversioned", while pav:previousVersion is intended for use between permalink-like "snapshots" arranged in a linear history.  """@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:derivedFrom,
-        pav:hasVersion,
+    rdfs:seeAlso
+        pav:derivedFrom ,
+        pav:hasVersion ,
         pav:version ;
-    rdfs:subPropertyOf pav:hasEarlierVersion,
+    rdfs:subPropertyOf
+        pav:hasEarlierVersion ,
         prov:wasRevisionOf ;
-    owl:equivalentProperty pav1:previousVersion .
+    owl:equivalentProperty pav1:previousVersion ;
+.
 
-prov:wasAttributedTo a owl:ObjectProperty ;
+prov:wasAttributedTo
+    a owl:ObjectProperty ;
     rdfs:label "prov:wasAttributedTo"@en ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
-    rdfs:subPropertyOf prov:wasInfluencedBy .
+    rdfs:subPropertyOf prov:wasInfluencedBy ;
+.
 
-pav:importedFrom a owl:ObjectProperty ;
+pav:importedFrom
+    a owl:ObjectProperty ;
     rdfs:label "Imported from"@en ;
     rdfs:comment """The original source of imported information.
 
@@ -538,14 +658,17 @@ If the resource has been copied verbatim from the original representation (e.g. 
 
 To indicate which agent(s) performed the import, use pav:importedBy. Use pav:importedOn to indicate when it happened. """@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:derivedFrom,
-        pav:importedBy,
-        pav:importedOn,
+    rdfs:seeAlso
+        pav:derivedFrom ,
+        pav:importedBy ,
+        pav:importedOn ,
         pav:retrievedFrom ;
     rdfs:subPropertyOf prov:wasDerivedFrom ;
-    owl:equivalentProperty pav1:importedFromSource .
+    owl:equivalentProperty pav1:importedFromSource ;
+.
 
-pav:createdBy a owl:ObjectProperty ;
+pav:createdBy
+    a owl:ObjectProperty ;
     rdfs:label "Created by"@en ;
     rdfs:comment """An agent primary responsible for making the digital artifact or resource representation.
 
@@ -563,23 +686,31 @@ The date the digital resource was created can be indicated with pav:createdOn.
 
 The location the agent was at when creating the digital resource can be made using pav:createdAt."""@en ;
     rdfs:isDefinedBy pav: ;
-    rdfs:seeAlso pav:authoredBy,
-        pav:createdAt,
-        pav:createdOn,
+    rdfs:seeAlso
+        pav:authoredBy ,
+        pav:createdAt ,
+        pav:createdOn ,
         pav:curatedBy ;
-    rdfs:subPropertyOf schema:creator,
-        prov:wasAttributedTo ;
-    owl:equivalentProperty pav1:createdBy .
+    rdfs:subPropertyOf
+        prov:wasAttributedTo ,
+        schema:creator ;
+    owl:equivalentProperty pav1:createdBy ;
+.
 
-pav: a owl:Ontology ;
+pav:
+    a owl:Ontology ;
     rdfs:label "Provenance, Authoring and Versioning (PAV)"@en ;
-    dc:contributor "Alasdair J G Gray"^^xsd:string,
-        "Khalid Belhajjame"^^xsd:string,
-        "Marco Ocana"^^xsd:string,
+    dc:contributor
+        "Alasdair J G Gray"^^xsd:string ,
+        "Khalid Belhajjame"^^xsd:string ,
+        "Marco Ocana"^^xsd:string ,
         "Simon Jupp"^^xsd:string ;
-    dc:creator "Paolo Ciccarese"^^xsd:string,
+    dc:creator
+        "Paolo Ciccarese"^^xsd:string ,
         "Stian Soiland-Reyes"^^xsd:string ;
-    dc:description <http://pav-ontology.googlecode.com/svn/branches/2.3/images/pav-overview.svg>,"""PAV supplies terms for distinguishing between the different roles of the agents contributing content in current web based systems: contributors, authors, curators and digital artifact creators. The ontology also provides terms for tracking provenance of digital entities that are published on the web and then accessed, transformed and consumed. In order to support broader interoperability, PAV specializes the general purpose W3C PROV provenance model (PROV-O).
+    dc:description
+        <http://pav-ontology.googlecode.com/svn/branches/2.3/images/pav-overview.svg> ,
+        """PAV supplies terms for distinguishing between the different roles of the agents contributing content in current web based systems: contributors, authors, curators and digital artifact creators. The ontology also provides terms for tracking provenance of digital entities that are published on the web and then accessed, transformed and consumed. In order to support broader interoperability, PAV specializes the general purpose W3C PROV provenance model (PROV-O).
 
 PAV distinguishes between the data related to the digital artifact - named Provenance - and those related to the actual knowledge creation and therefore to the intellectual property aspects – named Authoring. The Versioning axis describes the evolution of digital entities in time.
 
@@ -611,41 +742,47 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.
 """@en ;
-    schema:contributor <http://orcid.org/0000-0001-6938-0820>,
-        <http://orcid.org/0000-0002-0643-3144>,
-        <http://orcid.org/0000-0002-5711-4872>,
-        <http://www.paolociccarese.info/foaf.rdf#marco-ocana> ;
-    schema:creator <http://orcid.org/0000-0001-9842-9718>,
-        <http://orcid.org/0000-0002-5156-2703> ;
-    schema:format "application/rdf+xml"^^xsd:string ;
-    schema:issued "2014-08-28T15:00:00+00:00"^^xsd:dateTime ;
-    schema:language "en"^^xsd:language ;
-    schema:license <http://www.apache.org/licenses/LICENSE-2.0> ;
-    schema:dateModified "2014-08-28T14:41:00+00:00"^^xsd:dateTime ;
-    schema:publisher <http://www.mindinformatics.org/> ;
-    schema:title "PAV - Provenance, Authoring and Versioning"@en ;
     rdfs:comment """PAV is a lightweight ontology for tracking Provenance, Authoring and Versioning. PAV specializes the W3C provenance ontology PROV-O in order to describe authorship, curation and digital creation of online resources.
 
           This ontology describes the defined PAV properties and their usage. Note that PAV does not define any explicit classes or domain/ranges, as every property is meant to be used directly on the described online resource.
 
           Cite as: Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG Gray, Carole Goble, Tim Clark (2013): PAV ontology: provenance, authoring and versioning. Journal of biomedical semantics 4 (1), 37. doi:10.1186/2041-1480-4-37
         """@en ;
-    rdfs:seeAlso <http://code.google.com/p/pav-ontology/>,
-        <http://pav-ontology.googlecode.com/svn/trunk/1.2/pav.owl>,
-        pav:doc,
-        prov:,
+    rdfs:seeAlso
+        <http://code.google.com/p/pav-ontology/> ,
+        <http://pav-ontology.googlecode.com/svn/trunk/1.2/pav.owl> ,
+        pav:doc ,
+        prov: ,
         <https://code.google.com/p/pav-ontology/wiki/Versions> ;
-    owl:backwardCompatibleWith <http://purl.org/pav/2.0/>,
-        <http://purl.org/pav/2.1>,
-        <http://purl.org/pav/2.2>,
-        <http://purl.org/pav/authoring/2.0/>,
-        <http://purl.org/pav/provenance/2.0/>,
+    owl:backwardCompatibleWith
+        <http://purl.org/pav/2.0/> ,
+        pav:2.1 ,
+        pav:2.2 ,
+        <http://purl.org/pav/authoring/2.0/> ,
+        <http://purl.org/pav/provenance/2.0/> ,
         <http://purl.org/pav/versioning/2.0/> ;
     owl:incompatibleWith <http://swan.mindinformatics.org/ontologies/1.2/pav.owl> ;
-    owl:priorVersion <http://purl.org/pav/2.2> ;
-    owl:versionIRI <http://purl.org/pav/2.3> ;
+    owl:priorVersion pav:2.2 ;
+    owl:versionIRI pav:2.3 ;
     owl:versionInfo "2.3.1"^^xsd:string ;
     prov:has_provenance pav:provenance.ttl ;
     foaf:homepage pav:home ;
-    foaf:isPrimaryTopicOf <http://arxiv.org/abs/1304.7224>,
-        <http://dx.doi.org/10.1186/2041-1480-4-37> .
+    foaf:isPrimaryTopicOf
+        <http://arxiv.org/abs/1304.7224> ,
+        <http://dx.doi.org/10.1186/2041-1480-4-37> ;
+    schema:contributor
+        <http://orcid.org/0000-0001-6938-0820> ,
+        <http://orcid.org/0000-0002-0643-3144> ,
+        <http://orcid.org/0000-0002-5711-4872> ,
+        <http://www.paolociccarese.info/foaf.rdf#marco-ocana> ;
+    schema:creator
+        <http://orcid.org/0000-0001-9842-9718> ,
+        <http://orcid.org/0000-0002-5156-2703> ;
+    schema:dateModified "2014-08-28T14:41:00+00:00"^^xsd:dateTime ;
+    schema:format "application/rdf+xml"^^xsd:string ;
+    schema:issued "2014-08-28T15:00:00+00:00"^^xsd:dateTime ;
+    schema:language "en"^^xsd:language ;
+    schema:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+    schema:publisher <http://www.mindinformatics.org/> ;
+    schema:title "PAV - Provenance, Authoring and Versioning"@en ;
+.

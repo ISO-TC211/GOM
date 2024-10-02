@@ -1,203 +1,396 @@
-@prefix :     <http://www.w3.org/2006/time#> .
-@prefix dct:  <http://purl.org/dc/terms/> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-
-:TemporalDuration  rdfs:label  "Temporal duration" .
-
-:DateTimeDescription  rdfs:label  "Date-Time description" .
-
-:minute  rdfs:label  "minute" .
-
-:unitType  rdfs:label  "temporal unit type" .
-
-:days   rdfs:label  "days duration" .
-
-:hasDateTimeDescription
-        rdfs:label  "has Date-Time description" .
-
-:numericDuration  rdfs:label  "Numeric value of temporal duration" .
-
-:intervalIn  rdfs:label  "interval in" .
-
-:TimeZone  rdfs:label  "Time Zone" .
-
-:unitDay  rdfs:label  "Day (unit of temporal duration)" , "day" .
-
-:timeZone  rdfs:label  "in time zone" .
+PREFIX : <http://www.w3.org/2006/time#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <http://www.w3.org/2006/time>
-        rdfs:label  "OWL-Time" .
+    rdfs:label "OWL-Time" ;
+.
 
-:hasXSDDuration  rdfs:label  "has XSD duration" .
+:DateTimeDescription
+    rdfs:label "Date-Time description" ;
+.
 
-:hour   rdfs:label  "hour" .
+:DateTimeInterval
+    rdfs:label "Date-time interval" ;
+.
 
-:generalMonth  rdfs:label  "Generalized month" .
+:DayOfWeek
+    rdfs:label "Day of week" ;
+.
 
-:Instant  rdfs:label  "Time instant" .
+:Duration
+    rdfs:label "Time duration" ;
+.
 
-:month  rdfs:label  "month" .
+:DurationDescription
+    rdfs:label "Duration description" ;
+.
 
-:intervalStarts  rdfs:label  "interval starts" .
-
-:unitHour  rdfs:label  "Hour (unit of temporal duration)" , "hour" .
-
-:dayOfWeek  rdfs:label  "day of week" .
-
-:inXSDDate  rdfs:label  "in XSD date" .
-
-:hasDuration  rdfs:label  "has duration" .
-
-:ProperInterval  rdfs:label  "Proper interval" .
-
-:hasTime  rdfs:label  "has time" .
-
-:hasBeginning  rdfs:label  "has beginning" .
-
-:Friday  rdfs:label  "Friday" .
-
-:unitMonth  rdfs:label  "Month (unit of temporal duration)" , "month" .
-
-:unitSecond  rdfs:label  "Second (unit of temporal duration)" , "second" .
-
-:intervalEquals  rdfs:label  "interval equals" .
-
-:MonthOfYear  rdfs:label  "Month of year" .
-
-:seconds  rdfs:label  "seconds duration" .
-
-:Wednesday  rdfs:label  "Wednesday" .
-
-:intervalOverlappedBy
-        rdfs:label  "interval overlapped by" .
-
-:minutes  rdfs:label  "minutes" .
-
-:unitWeek  rdfs:label  "Week (unit of temporal duration)" , "week" .
-
-:Monday  rdfs:label  "Monday" .
-
-:inXSDgYear  rdfs:label  "in XSD g-Year" .
-
-:intervalDuring  rdfs:label  "interval during" .
-
-:intervalStartedBy  rdfs:label  "interval started by" .
-
-:intervalFinishedBy  rdfs:label  "interval finished by" .
-
-:Duration  rdfs:label  "Time duration" .
-
-:xsdDateTime  rdfs:label  "has XSD date-time" .
-
-:second  rdfs:label  "second" .
-
-:week   rdfs:label  "week" .
-
-:intervalMeets  rdfs:label  "interval meets" .
-
-:inDateTime  rdfs:label  "in date-time description" .
-
-:unitMinute  rdfs:label  "Minute (unit of temporal duration)" , "minute" .
-
-:intervalFinishes  rdfs:label  "interval finishes" .
-
-:intervalMetBy  rdfs:label  "interval met by" .
-
-:years  rdfs:label  "years duration" .
-
-:day    rdfs:label  "day" .
-
-:inXSDDateTime  rdfs:label  "in XSD Date-Time" .
-
-:TimePosition  rdfs:label  "Time position" .
-
-:intervalBefore  rdfs:label  "interval before" .
-
-:Thursday  rdfs:label  "Thursday" .
-
-:TemporalEntity  rdfs:label  "Temporal entity" .
-
-:intervalDisjoint  rdfs:label  "interval disjoint" .
-
-:intervalAfter  rdfs:label  "interval after" .
-
-:TRS    rdfs:label  "Temporal Reference System" .
-
-:nominalPosition  rdfs:label  "Name of temporal position" .
-
-:hasEnd  rdfs:label  "has end" .
-
-:numericPosition  rdfs:label  "Numeric value of temporal position" .
-
-:GeneralDurationDescription
-        rdfs:label  "Generalized duration description" .
-
-:weeks  rdfs:label  "weeks duration" .
-
-:inXSDDateTimeStamp  rdfs:label  "in XSD Date-Time-Stamp" .
-
-:intervalContains  rdfs:label  "interval contains" .
-
-:Tuesday  rdfs:label  "Tuesday" .
-
-:DateTimeInterval  rdfs:label  "Date-time interval" .
-
-:monthOfYear  rdfs:label  "month of year" .
-
-:dayOfYear  rdfs:label  "day of year" .
-
-:hasTRS  rdfs:label  "Temporal reference system used" .
-
-:Interval  rdfs:label  "Time interval" .
+:Friday
+    rdfs:label "Friday" ;
+.
 
 :GeneralDateTimeDescription
-        rdfs:label  "Generalized date-time description" .
+    rdfs:label "Generalized date-time description" ;
+.
 
-:inTimePosition  rdfs:label  "Time position" .
+:GeneralDurationDescription
+    rdfs:label "Generalized duration description" ;
+.
 
-:Sunday  rdfs:label  "Sunday" .
+:Instant
+    rdfs:label "Time instant" ;
+.
 
-:year   rdfs:label  "year" .
+:Interval
+    rdfs:label "Time interval" ;
+.
 
-:Saturday  rdfs:label  "Saturday" .
+:Monday
+    rdfs:label "Monday" ;
+.
 
-:DayOfWeek  rdfs:label  "Day of week" .
+:MonthOfYear
+    rdfs:label "Month of year" ;
+.
 
-:generalDay  rdfs:label  "Generalized day" .
+:ProperInterval
+    rdfs:label "Proper interval" ;
+.
 
-:Year   rdfs:label  "Year" .
+:Saturday
+    rdfs:label "Saturday" ;
+.
 
-:hasTemporalDuration  rdfs:label  "has temporal duration" .
+:Sunday
+    rdfs:label "Sunday" ;
+.
 
-:DurationDescription  rdfs:label  "Duration description" .
+:TRS
+    rdfs:label "Temporal Reference System" ;
+.
 
-:TemporalPosition  rdfs:label  "Temporal position" .
+:TemporalDuration
+    rdfs:label "Temporal duration" ;
+.
 
-:generalYear  rdfs:label  "Generalized year" .
+:TemporalEntity
+    rdfs:label "Temporal entity" ;
+.
 
-:hours  rdfs:label  "hours duration" .
+:TemporalPosition
+    rdfs:label "Temporal position" ;
+.
 
-:TemporalUnit  rdfs:label  "Temporal unit" .
+:TemporalUnit
+    rdfs:label "Temporal unit" ;
+.
+
+:Thursday
+    rdfs:label "Thursday" ;
+.
+
+:TimePosition
+    rdfs:label "Time position" ;
+.
+
+:TimeZone
+    rdfs:label "Time Zone" ;
+.
+
+:Tuesday
+    rdfs:label "Tuesday" ;
+.
+
+:Wednesday
+    rdfs:label "Wednesday" ;
+.
+
+:Year
+    rdfs:label "Year" ;
+.
+
+:after
+    rdfs:label "after" ;
+.
+
+:before
+    rdfs:label "before" ;
+.
+
+:day
+    rdfs:label "day" ;
+.
+
+:dayOfWeek
+    rdfs:label "day of week" ;
+.
+
+:dayOfYear
+    rdfs:label "day of year" ;
+.
+
+:days
+    rdfs:label "days duration" ;
+.
+
+:generalDay
+    rdfs:label "Generalized day" ;
+.
+
+:generalMonth
+    rdfs:label "Generalized month" ;
+.
+
+:generalYear
+    rdfs:label "Generalized year" ;
+.
+
+:hasBeginning
+    rdfs:label "has beginning" ;
+.
+
+:hasDateTimeDescription
+    rdfs:label "has Date-Time description" ;
+.
+
+:hasDuration
+    rdfs:label "has duration" ;
+.
 
 :hasDurationDescription
-        rdfs:label  "has duration description" .
+    rdfs:label "has duration description" ;
+.
 
-:unitYear  rdfs:label  "Year (unit of temporal duration)" , "year" .
+:hasEnd
+    rdfs:label "has end" ;
+.
 
-:intervalOverlaps  rdfs:label  "interval overlaps" .
+:hasTRS
+    rdfs:label "Temporal reference system used" ;
+.
 
-:before  rdfs:label  "before" .
+:hasTemporalDuration
+    rdfs:label "has temporal duration" ;
+.
 
-:after  rdfs:label  "after" .
+:hasTime
+    rdfs:label "has time" ;
+.
 
-:inside  rdfs:label  "has time instant inside" .
+:hasXSDDuration
+    rdfs:label "has XSD duration" ;
+.
 
-:inTemporalPosition  rdfs:label  "Temporal position" .
+:hour
+    rdfs:label "hour" ;
+.
 
-:months  rdfs:label  "months duration" .
+:hours
+    rdfs:label "hours duration" ;
+.
 
-:inXSDgYearMonth  rdfs:label  "in XSD g-YearMonth" .
+:inDateTime
+    rdfs:label "in date-time description" ;
+.
+
+:inTemporalPosition
+    rdfs:label "Temporal position" ;
+.
+
+:inTimePosition
+    rdfs:label "Time position" ;
+.
+
+:inXSDDate
+    rdfs:label "in XSD date" ;
+.
+
+:inXSDDateTime
+    rdfs:label "in XSD Date-Time" ;
+.
+
+:inXSDDateTimeStamp
+    rdfs:label "in XSD Date-Time-Stamp" ;
+.
+
+:inXSDgYear
+    rdfs:label "in XSD g-Year" ;
+.
+
+:inXSDgYearMonth
+    rdfs:label "in XSD g-YearMonth" ;
+.
+
+:inside
+    rdfs:label "has time instant inside" ;
+.
+
+:intervalAfter
+    rdfs:label "interval after" ;
+.
+
+:intervalBefore
+    rdfs:label "interval before" ;
+.
+
+:intervalContains
+    rdfs:label "interval contains" ;
+.
+
+:intervalDisjoint
+    rdfs:label "interval disjoint" ;
+.
+
+:intervalDuring
+    rdfs:label "interval during" ;
+.
+
+:intervalEquals
+    rdfs:label "interval equals" ;
+.
+
+:intervalFinishedBy
+    rdfs:label "interval finished by" ;
+.
+
+:intervalFinishes
+    rdfs:label "interval finishes" ;
+.
+
+:intervalIn
+    rdfs:label "interval in" ;
+.
+
+:intervalMeets
+    rdfs:label "interval meets" ;
+.
+
+:intervalMetBy
+    rdfs:label "interval met by" ;
+.
+
+:intervalOverlappedBy
+    rdfs:label "interval overlapped by" ;
+.
+
+:intervalOverlaps
+    rdfs:label "interval overlaps" ;
+.
+
+:intervalStartedBy
+    rdfs:label "interval started by" ;
+.
+
+:intervalStarts
+    rdfs:label "interval starts" ;
+.
+
+:minute
+    rdfs:label "minute" ;
+.
+
+:minutes
+    rdfs:label "minutes" ;
+.
+
+:month
+    rdfs:label "month" ;
+.
+
+:monthOfYear
+    rdfs:label "month of year" ;
+.
+
+:months
+    rdfs:label "months duration" ;
+.
+
+:nominalPosition
+    rdfs:label "Name of temporal position" ;
+.
+
+:numericDuration
+    rdfs:label "Numeric value of temporal duration" ;
+.
+
+:numericPosition
+    rdfs:label "Numeric value of temporal position" ;
+.
+
+:second
+    rdfs:label "second" ;
+.
+
+:seconds
+    rdfs:label "seconds duration" ;
+.
+
+:timeZone
+    rdfs:label "in time zone" ;
+.
+
+:unitDay
+    rdfs:label
+        "Day (unit of temporal duration)" ,
+        "day" ;
+.
+
+:unitHour
+    rdfs:label
+        "Hour (unit of temporal duration)" ,
+        "hour" ;
+.
+
+:unitMinute
+    rdfs:label
+        "Minute (unit of temporal duration)" ,
+        "minute" ;
+.
+
+:unitMonth
+    rdfs:label
+        "Month (unit of temporal duration)" ,
+        "month" ;
+.
+
+:unitSecond
+    rdfs:label
+        "Second (unit of temporal duration)" ,
+        "second" ;
+.
+
+:unitType
+    rdfs:label "temporal unit type" ;
+.
+
+:unitWeek
+    rdfs:label
+        "Week (unit of temporal duration)" ,
+        "week" ;
+.
+
+:unitYear
+    rdfs:label
+        "Year (unit of temporal duration)" ,
+        "year" ;
+.
+
+:week
+    rdfs:label "week" ;
+.
+
+:weeks
+    rdfs:label "weeks duration" ;
+.
+
+:xsdDateTime
+    rdfs:label "has XSD date-time" ;
+.
+
+:year
+    rdfs:label "year" ;
+.
+
+:years
+    rdfs:label "years duration" ;
+.

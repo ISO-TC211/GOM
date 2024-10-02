@@ -1,99 +1,77 @@
 PREFIX : <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressComponentValueType/>
 PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressComponentValueType>
-PREFIX schema: <https://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :abbreviatedAlternative
     a skos:Concept ;
-    schema:identifier "abbreviatedAlternative"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The alternative component value is an abbreviation." ;
     skos:inScheme cs: ;
     skos:prefLabel "abbreviated alternative"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "abbreviatedAlternative"^^xsd:token ;
 .
 
 :colloquialAlternative
     a skos:Concept ;
-    schema:identifier "colloquialAlternative"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The alternative component value is a colloquial alternative for the component value." ;
     skos:inScheme cs: ;
     skos:prefLabel "colloquial alternative"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "colloquialAlternative"^^xsd:token ;
 .
 
 :defaultValue
     a skos:Concept ;
-    schema:identifier "defaultValue"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The default component value (i.e. the one that is not an alternative)." ;
     skos:inScheme cs: ;
     skos:prefLabel "default value"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "defaultValue"^^xsd:token ;
 .
 
 :lifecycleAlternative
     a skos:Concept ;
-    schema:identifier "lifecycleAlternative"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The alternative component value was used in a different lifecycle stage." ;
     skos:inScheme cs: ;
     skos:prefLabel "lifecycle alternative"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "lifecycleAlternative"^^xsd:token ;
 .
 
 :localeAlternative
     a skos:Concept ;
-    schema:identifier "localeAlternative"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The alternative component value is in a different locale." ;
     skos:inScheme cs: ;
     skos:prefLabel "locale alternative"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "localeAlternative"^^xsd:token ;
 .
 
-cs:
-    a skos:ConceptScheme ;
-    schema:dateCreated "2015-12-15"^^xsd:date ;
-    schema:creator <https://committee.iso.org/home/tc211> ;
-    schema:identifier "AddressComponentValueType"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressComponentValueType> ;
-    schema:issued "2000-01-01"^^xsd:date ;
-    schema:dateModified "2000-01-01"^^xsd:date ;
-    schema:citation "Derived from TC211-produced RDF versions of the standard's UML"@en ;
-    schema:publisher <https://committee.iso.org/home/tc211> ;
-    schema:contributor <https://www.ogc.org> ;
-    schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
-    reg:status status:stable ;
-    skos:definition "AddressComponentValueType specifies the type of address component value"@en ;
-    skos:hasTopConcept
-        :abbreviatedAlternative ,
-        :colloquialAlternative ,
-        :defaultValue ,
-        :lifecycleAlternative ,
-        :localeAlternative ;
-    skos:prefLabel "Address Component Value Type"@en ;
-    prov:qualifiedDerivation [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
-        ] ;
-        skos:historyNote "This codelist vocabulary was extracted directly from the defining standard: ISO19160-1:205"@en ;
+<https://www.ogc.org>
+    a schema:Organization ;
+    schema:name "Open Geospatial Consortium" ;
+    schema:url "https://www.ogc.org"^^xsd:anyURI ;
 .
 
 <https://committee.iso.org/home/tc211>
@@ -102,8 +80,30 @@ cs:
     schema:url "https://committee.iso.org/home/tc211"^^xsd:anyURI ;
 .
 
-<https://www.ogc.org>
-    a schema:Organization ;
-    schema:name "Open Geospatial Consortium" ;
-    schema:url "https://www.ogc.org"^^xsd:anyURI ;
+cs:
+    a skos:ConceptScheme ;
+    reg:status status:stable ;
+    skos:definition "AddressComponentValueType specifies the type of address component value"@en ;
+    skos:hasTopConcept
+        :abbreviatedAlternative ,
+        :colloquialAlternative ,
+        :defaultValue ,
+        :lifecycleAlternative ,
+        :localeAlternative ;
+    skos:historyNote "This codelist vocabulary was extracted directly from the defining standard: ISO19160-1:205"@en ;
+    skos:prefLabel "Address Component Value Type"@en ;
+    prov:qualifiedDerivation
+        [
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
+        ] ;
+    schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
+    schema:contributor <https://www.ogc.org> ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:dateCreated "2015-12-15"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:identifier "AddressComponentValueType"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressComponentValueType> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
 .

@@ -1,97 +1,99 @@
 PREFIX : <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressableObjectLifecycleStage/>
 PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressableObjectLifecycleStage>
-PREFIX schema: <https://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :approved
     a skos:Concept ;
-    schema:identifier "approved"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The establishment or construction of the addressable object has been approved, i.e. the relevant authority has given approval for the establishment or construction of the addressable object." ;
     skos:inScheme cs: ;
     skos:prefLabel "approved"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "approved"^^xsd:token ;
 .
 
 :ceasedToExist
     a skos:Concept ;
-    schema:identifier "ceasedToExist"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The addressable object does not exist anymore (e.g. it has been demolished)." ;
     skos:inScheme cs: ;
     skos:prefLabel "ceased to exist"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "ceasedToExist"^^xsd:token ;
 .
 
 :exists
     a skos:Concept ;
-    schema:identifier "exists"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The addressable object exists." ;
     skos:inScheme cs: ;
     skos:prefLabel "exists"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "exists"^^xsd:token ;
 .
 
 :proposed
     a skos:Concept ;
-    schema:identifier "proposed"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The establishment or construction of the addressable object has been proposed, i.e. the relevant authority has initiated approval procedures." ;
     skos:inScheme cs: ;
     skos:prefLabel "proposed"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "proposed"^^xsd:token ;
 .
 
 :underConstruction
     a skos:Concept ;
-    schema:identifier "underConstruction"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The establishment or construction of the addressable object is in progress." ;
     skos:inScheme cs: ;
     skos:prefLabel "under construction"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "underConstruction"^^xsd:token ;
 .
 
 :unknown
     a skos:Concept ;
-    schema:identifier "unknown"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The lifecycle stage of the addressable object is unknown." ;
     skos:inScheme cs: ;
     skos:prefLabel "unknown"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "unknown"^^xsd:token ;
+.
+
+<https://www.ogc.org>
+    a schema:Organization ;
+    schema:name "Open Geospatial Consortium" ;
+    schema:url "https://www.ogc.org"^^xsd:anyURI ;
+.
+
+<https://committee.iso.org/home/tc211>
+    a schema:Organization ;
+    schema:name "ISO Technical Committee 211" ;
+    schema:url "https://committee.iso.org/home/tc211"^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    schema:dateCreated "2015-12-15"^^xsd:date ;
-    schema:creator <https://committee.iso.org/home/tc211> ;
-    schema:identifier "AddressableObjectLifecycleStage"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressableObjectLifecycleStage> ;
-    schema:issued "2000-01-01"^^xsd:date ;
-    schema:dateModified "2000-01-01"^^xsd:date ;
-    schema:citation "Derived from TC211-produced RDF versions of the standard's UML"@en ;
-    schema:publisher <https://committee.iso.org/home/tc211> ;
-    schema:contributor <https://www.ogc.org> ;
-    schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
     reg:status status:stable ;
     skos:definition "AddressableObjectLifecycleStage represents the different lifecycle stages of an AddressableObject"@en ;
     skos:hasTopConcept
@@ -101,22 +103,20 @@ cs:
         :proposed ,
         :underConstruction ,
         :unknown ;
-    skos:prefLabel "Addressable Object Lifecycle Stage"@en ;
-    prov:qualifiedDerivation [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
-        ] ;
     skos:historyNote "This codelist vocabulary was extracted directly from the defining standard: ISO19160-1:205"@en ;
-.
-
-<https://committee.iso.org/home/tc211>
-    a schema:Organization ;
-    schema:name "ISO Technical Committee 211" ;
-    schema:url "https://committee.iso.org/home/tc211"^^xsd:anyURI ;
-.
-
-<https://www.ogc.org>
-    a schema:Organization ;
-    schema:name "Open Geospatial Consortium" ;
-    schema:url "https://www.ogc.org"^^xsd:anyURI ;
+    skos:prefLabel "Addressable Object Lifecycle Stage"@en ;
+    prov:qualifiedDerivation
+        [
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
+        ] ;
+    schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
+    schema:contributor <https://www.ogc.org> ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:dateCreated "2015-12-15"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:identifier "AddressableObjectLifecycleStage"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressableObjectLifecycleStage> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
 .

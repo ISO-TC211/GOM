@@ -9,12 +9,12 @@ tasks:
   onthtml:
     desc: Regenerate Ontology HTML
     cmds:
-      - python scripts/make_html.py
+      - python semantic-objects/make_html.py
       - echo "HTML remade"
   tidy:
     desc: Reformat all turtle files
     cmds:
-      - python vocabularies/_scripts/tidy.py
+      - python semantic-objects/_scripts/tidy.py
       - echo "RDF tidied"
   tests:
     desc: Run pytest tests

@@ -1,120 +1,111 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_CoverageContentTypeCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/ContentInformation/code/MD_CoverageContentTypeCode>
-PREFIX schema: <https://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :auxilliaryInformation
     a skos:Concept ;
-    schema:identifier "auxilliaryInformation"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "data, usually a physical measurement, used to support the calculation of the primary physicalMeasurement coverages in the dataset (e.g. grid of aerosol optical thickness used in the calculation of a sea surface temperature product)." ;
     skos:inScheme cs: ;
     skos:prefLabel "auxilliary information"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "auxilliaryInformation"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :coordinate
     a skos:Concept ;
-    schema:identifier "coordinate"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "data used to provide coordinate axis values " ;
     skos:inScheme cs: ;
     skos:prefLabel "coordinate"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "coordinate"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :image
     a skos:Concept ;
-    schema:identifier "image"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "meaningful numerical representation of a physical parameter that is not the actual value of the physical parameter" ;
     skos:inScheme cs: ;
     skos:prefLabel "image"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "image"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :modelResult
     a skos:Concept ;
-    schema:identifier "modelResult"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "resources with values that are calculated using a model rather than being observed or calculated from observations." ;
     skos:inScheme cs: ;
     skos:prefLabel "model result"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "modelResult"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :physicalMeasurement
     a skos:Concept ;
-    schema:identifier "physicalMeasurement"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "value in physical units of the quantity being measured" ;
     skos:inScheme cs: ;
     skos:prefLabel "physical measurement"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "physicalMeasurement"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :qualityInformation
     a skos:Concept ;
-    schema:identifier "qualityInformation"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "data used to characterize the quality of the physicalMeasurement coverages in the dataset. Typically included in a gmi:QE_CoverageResult." ;
     skos:inScheme cs: ;
     skos:prefLabel "quality information"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "qualityInformation"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :referenceInformation
     a skos:Concept ;
-    schema:identifier "referenceInformation"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "reference information used to support the calculation or use of the physicalMeasurement coverages in the dataset (e.g. grids of latitude.sl.longitude used to geolocate the physical measurements)." ;
     skos:inScheme cs: ;
     skos:prefLabel "reference information"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "referenceInformation"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :thematicClassification
     a skos:Concept ;
-    schema:identifier "thematicClassification"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "code value with no quantitative meaning, used to represent a physical quantity" ;
     skos:inScheme cs: ;
     skos:prefLabel "thematic classification"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "thematicClassification"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    schema:dateCreated "2000-01-01"^^xsd:date ;
-    schema:creator <https://committee.iso.org/home/tc211> ;
-    schema:identifier "MD_CoverageContentTypeCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/ContentInformation#MD_CoverageContentTypeCode> ;
-    schema:issued "2000-01-01"^^xsd:date ;
-    schema:dateModified "2000-01-01"^^xsd:date ;
-    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
-    schema:publisher <https://committee.iso.org/home/tc211> ;
-    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     reg:status status:valid ;
     skos:definition "specific type of information represented in the cell"@en ;
     skos:hasTopConcept
@@ -127,9 +118,18 @@ cs:
         :referenceInformation ,
         :thematicClassification ;
     skos:prefLabel "MD Coverage Content Type Code"@en ;
-    prov:qualifiedDerivation [
+    prov:qualifiedDerivation
+        [
             prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
         ] ;
+    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:dateCreated "2000-01-01"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:identifier "MD_CoverageContentTypeCode"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/ContentInformation#MD_CoverageContentTypeCode> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
 .
-

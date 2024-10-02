@@ -1,204 +1,195 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation/code/MD_MaintenanceFrequencyCode>
-PREFIX schema: <https://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :annually
     a skos:Concept ;
-    schema:identifier "annually"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "annually"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "annually"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :asNeeded
     a skos:Concept ;
-    schema:identifier "asNeeded"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "as needed"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "asNeeded"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :biannually
     a skos:Concept ;
-    schema:identifier "biannually"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "biannually"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "biannually"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :biennially
     a skos:Concept ;
-    schema:identifier "biennially"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "biennially"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "biennially"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :continual
     a skos:Concept ;
-    schema:identifier "continual"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "continual"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "continual"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :daily
     a skos:Concept ;
-    schema:identifier "daily"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "daily"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "daily"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :fortnightly
     a skos:Concept ;
-    schema:identifier "fortnightly"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "fortnightly"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "fortnightly"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :irregular
     a skos:Concept ;
-    schema:identifier "irregular"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "irregular"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "irregular"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :monthly
     a skos:Concept ;
-    schema:identifier "monthly"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "monthly"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "monthly"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :notPlanned
     a skos:Concept ;
-    schema:identifier "notPlanned"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "not planned"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "notPlanned"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :periodic
     a skos:Concept ;
-    schema:identifier "periodic"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "periodic"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "periodic"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :quarterly
     a skos:Concept ;
-    schema:identifier "quarterly"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "quarterly"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "quarterly"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :semimonthly
     a skos:Concept ;
-    schema:identifier "semimonthly"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "semimonthly"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "semimonthly"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :unknown
     a skos:Concept ;
-    schema:identifier "unknown"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "unknown"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "unknown"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :weekly
     a skos:Concept ;
-    schema:identifier "weekly"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "weekly"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "weekly"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    schema:dateCreated "2000-01-01"^^xsd:date ;
-    schema:creator <https://committee.iso.org/home/tc211> ;
-    schema:identifier "MD_MaintenanceFrequencyCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceFrequencyCode> ;
-    schema:issued "2000-01-01"^^xsd:date ;
-    schema:dateModified "2000-01-01"^^xsd:date ;
-    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
-    schema:publisher <https://committee.iso.org/home/tc211> ;
-    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     reg:status status:valid ;
     skos:definition "frequency with which modifications and deletions  are made to the data after it is first produced"@en ;
     skos:hasTopConcept
@@ -218,9 +209,18 @@ cs:
         :unknown ,
         :weekly ;
     skos:prefLabel "MD Maintenance Frequency Code"@en ;
-    prov:qualifiedDerivation [
+    prov:qualifiedDerivation
+        [
             prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
         ] ;
+    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:dateCreated "2000-01-01"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:identifier "MD_MaintenanceFrequencyCode"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/MaintenanceInformation#MD_MaintenanceFrequencyCode> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
 .
-

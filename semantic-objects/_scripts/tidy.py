@@ -7,6 +7,7 @@ SEM_OBS_DIR = THIS_FILE.parent.parent
 all_ttl_files = SEM_OBS_DIR.glob("**/*.ttl")
 
 for f in sorted(all_ttl_files):
+    print(f"Tidying {f}")
     g = Graph().parse(f)
     open(f, "w").write(g.serialize(format="longturtle"))
 

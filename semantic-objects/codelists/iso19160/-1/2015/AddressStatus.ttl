@@ -1,73 +1,53 @@
 PREFIX : <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressStatus/>
 PREFIX cs: <http://def.isotc211.org/iso19160/-1/2015/Address/code/AddressStatus>
-PREFIX schema: <https://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :official
     a skos:Concept ;
-    schema:identifier "official"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "An official addressing authority assigned the address." ;
     skos:inScheme cs: ;
     skos:prefLabel "official"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "official"^^xsd:token ;
 .
 
 :unknown
     a skos:Concept ;
-    schema:identifier "unknown"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The status of the address is unknown." ;
     skos:inScheme cs: ;
     skos:prefLabel "unknown"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "unknown"^^xsd:token ;
 .
 
 :unofficial
     a skos:Concept ;
-    schema:identifier "unofficial"^^xsd:token ;
-    schema:citation "Presented in the original standard's codelist"@en ;
     reg:status status:original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The address was not assigned by an official addressing authority." ;
     skos:inScheme cs: ;
     skos:prefLabel "unofficial"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "Presented in the original standard's codelist"@en ;
+    schema:identifier "unofficial"^^xsd:token ;
 .
 
-cs:
-    a skos:ConceptScheme ;
-    schema:dateCreated "2015-12-15"^^xsd:date ;
-    schema:creator <https://committee.iso.org/home/tc211> ;
-    schema:identifier "AddressStatus"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressStatus> ;
-    schema:issued "2000-01-01"^^xsd:date ;
-    schema:dateModified "2000-01-01"^^xsd:date ;
-    schema:citation "Derived from TC211-produced RDF versions of the standard's UML"@en ;
-    schema:publisher <https://committee.iso.org/home/tc211> ;
-    schema:contributor <https://www.ogc.org> ;
-    schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
-    reg:status status:stable ;
-    skos:definition "AddressStatus contains values to specify the status of an address"@en ;
-    skos:hasTopConcept
-        :official ,
-        :unknown ,
-        :unofficial ;
-    skos:prefLabel "Address Status"@en ;
-    prov:qualifiedDerivation [
-            prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
-        ] ;
-        skos:historyNote "This codelist vocabulary was extracted directly from the defining standard: ISO19160-1:205"@en ;
+<https://www.ogc.org>
+    a schema:Organization ;
+    schema:name "Open Geospatial Consortium" ;
+    schema:url "https://www.ogc.org"^^xsd:anyURI ;
 .
 
 <https://committee.iso.org/home/tc211>
@@ -76,8 +56,28 @@ cs:
     schema:url "https://committee.iso.org/home/tc211"^^xsd:anyURI ;
 .
 
-<https://www.ogc.org>
-    a schema:Organization ;
-    schema:name "Open Geospatial Consortium" ;
-    schema:url "https://www.ogc.org"^^xsd:anyURI ;
+cs:
+    a skos:ConceptScheme ;
+    reg:status status:stable ;
+    skos:definition "AddressStatus contains values to specify the status of an address"@en ;
+    skos:hasTopConcept
+        :official ,
+        :unknown ,
+        :unofficial ;
+    skos:historyNote "This codelist vocabulary was extracted directly from the defining standard: ISO19160-1:205"@en ;
+    skos:prefLabel "Address Status"@en ;
+    prov:qualifiedDerivation
+        [
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
+        ] ;
+    schema:citation "http://standards.iso.org/iso/19160/-1/ed-1/en/"^^xsd:anyURI ;
+    schema:contributor <https://www.ogc.org> ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:dateCreated "2015-12-15"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:identifier "AddressStatus"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19160/-1/2015/Address#AddressStatus> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
 .

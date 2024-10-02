@@ -1,360 +1,351 @@
 PREFIX : <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode/>
 PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation/code/MD_ReferenceSystemTypeCode>
-PREFIX schema: <https://schema.org/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :compoundEngineeringParametric
     a skos:Concept ;
-    schema:identifier "compoundEngineeringParametric"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering parametric"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundEngineeringParametric"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringParametricTemporal
     a skos:Concept ;
-    schema:identifier "compoundEngineeringParametricTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering parametric temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundEngineeringParametricTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringTemporal
     a skos:Concept ;
-    schema:identifier "compoundEngineeringTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundEngineeringTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringVertical
     a skos:Concept ;
-    schema:identifier "compoundEngineeringVertical"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering vertical"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundEngineeringVertical"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundEngineeringVerticalTemporal
     a skos:Concept ;
-    schema:identifier "compoundEngineeringVerticalTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound engineering vertical temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundEngineeringVerticalTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DParametric
     a skos:Concept ;
-    schema:identifier "compoundGeographic2DParametric"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dparametric"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundGeographic2DParametric"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DParametricTemporal
     a skos:Concept ;
-    schema:identifier "compoundGeographic2DParametricTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dparametric temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundGeographic2DParametricTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DTemporal
     a skos:Concept ;
-    schema:identifier "compoundGeographic2DTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dtemporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundGeographic2DTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DVertical
     a skos:Concept ;
-    schema:identifier "compoundGeographic2DVertical"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dvertical"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundGeographic2DVertical"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic2DVerticalTemporal
     a skos:Concept ;
-    schema:identifier "compoundGeographic2DVerticalTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic2dvertical temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundGeographic2DVerticalTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundGeographic3DTemporal
     a skos:Concept ;
-    schema:identifier "compoundGeographic3DTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound geographic3dtemporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundGeographic3DTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjected2DParametric
     a skos:Concept ;
-    schema:identifier "compoundProjected2DParametric"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected2dparametric"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundProjected2DParametric"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjected2DParametricTemporal
     a skos:Concept ;
-    schema:identifier "compoundProjected2DParametricTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected2dparametric temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundProjected2DParametricTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjectedTemporal
     a skos:Concept ;
-    schema:identifier "compoundProjectedTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundProjectedTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjectedVertical
     a skos:Concept ;
-    schema:identifier "compoundProjectedVertical"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected vertical"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundProjectedVertical"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :compoundProjectedVerticalTemporal
     a skos:Concept ;
-    schema:identifier "compoundProjectedVerticalTemporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compound projected vertical temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "compoundProjectedVerticalTemporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :engineering
     a skos:Concept ;
-    schema:identifier "engineering"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "engineering"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "engineering"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :engineeringDesign
     a skos:Concept ;
-    schema:identifier "engineeringDesign"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "engineering design"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "engineeringDesign"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :engineeringImage
     a skos:Concept ;
-    schema:identifier "engineeringImage"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "engineering image"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "engineeringImage"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :geodeticGeocentric
     a skos:Concept ;
-    schema:identifier "geodeticGeocentric"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geodetic geocentric"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "geodeticGeocentric"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :geodeticGeographic2D
     a skos:Concept ;
-    schema:identifier "geodeticGeographic2D"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geodetic geographic2d"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "geodeticGeographic2D"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :geodeticGeographic3D
     a skos:Concept ;
-    schema:identifier "geodeticGeographic3D"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geodetic geographic3d"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "geodeticGeographic3D"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :geographicIdentifier
     a skos:Concept ;
-    schema:identifier "geographicIdentifier"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "geographic identifier"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "geographicIdentifier"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :linear
     a skos:Concept ;
-    schema:identifier "linear"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "linear"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "linear"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :parametric
     a skos:Concept ;
-    schema:identifier "parametric"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "parametric"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "parametric"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :projected
     a skos:Concept ;
-    schema:identifier "projected"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "projected"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "projected"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :temporal
     a skos:Concept ;
-    schema:identifier "temporal"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "temporal"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "temporal"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 :vertical
     a skos:Concept ;
-    schema:identifier "vertical"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
     reg:status status:stable ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Missing"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "vertical"@en ;
     skos:topConceptOf cs: ;
+    schema:identifier "vertical"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    schema:dateCreated "2000-01-01"^^xsd:date ;
-    schema:creator <https://committee.iso.org/home/tc211> ;
-    schema:identifier "MD_ReferenceSystemTypeCode"^^xsd:token ;
-    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#MD_ReferenceSystemTypeCode> ;
-    schema:issued "2000-01-01"^^xsd:date ;
-    schema:dateModified "2000-01-01"^^xsd:date ;
-    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
-    schema:publisher <https://committee.iso.org/home/tc211> ;
-    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
     reg:status status:valid ;
     skos:definition "defines type of reference system used"@en ;
     skos:hasTopConcept
@@ -387,9 +378,18 @@ cs:
         :temporal ,
         :vertical ;
     skos:prefLabel "MD Reference System Type Code"@en ;
-    prov:qualifiedDerivation [
+    prov:qualifiedDerivation
+        [
             prov:entity <http://example.com/none> ;
-            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none> ;
         ] ;
+    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:dateCreated "2000-01-01"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:identifier "MD_ReferenceSystemTypeCode"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ReferenceSystemInformation#MD_ReferenceSystemTypeCode> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
 .
-
