@@ -1,0 +1,23 @@
+version: '3'
+
+tasks:
+  all:
+    desc: Regenerate model.html
+    deps: [tidy, tests, onthtml]
+    cmds:
+      - echo "all tasks done"
+  onthtml:
+    desc: Regenerate Ontology HTML
+    cmds:
+      - python scripts/make_html.py
+      - echo "HTML remade"
+  tidy:
+    desc: Reformat all turtle files
+    cmds:
+      - python vocabularies/_scripts/tidy.py
+      - echo "RDF tidied"
+  tests:
+    desc: Run pytest tests
+    cmds:
+      - pytest --disable-warnings
+      - echo "Python tests run"
