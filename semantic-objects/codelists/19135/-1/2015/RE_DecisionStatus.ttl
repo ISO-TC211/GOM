@@ -1,0 +1,57 @@
+PREFIX : <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_DecisionStatus/>
+PREFIX cs: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_DecisionStatus>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:pending
+    a skos:Concept ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "No decision has been made"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pending"@en ;
+    skos:historyNote "From page 49, ISO19135-1:2014"@en ;
+.
+
+:tentative
+    a skos:Concept ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A decision has been made, but it is still subject to appeal"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tentative"@en ;
+    skos:historyNote "From page 49, ISO19135-1:2014"@en ;
+.
+
+:final
+    a skos:Concept ;
+    reg:status status:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A decision has been made and the time limit for appeal has run out or an appeal has been resolved"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Final"@en ;
+    skos:historyNote "From page 49, ISO19135-1:2014"@en ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    reg:status status:experimental ;
+    skos:definition "Instances of RE_DecisionStatus that identify the standing of the proposed change within the approval process"@en ;
+    skos:hasTopConcept
+        :pending ,
+        :tentative ,
+        :final ;
+    skos:prefLabel "Decision Status Codes"@en ;
+    schema:citation "http://standards.iso.org/iso/19135/-1/ed-1/en/"^^xsd:anyURI ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:dateCreated "2014-09-18"^^xsd:date ;
+    schema:dateModified "2024-10-02"^^xsd:date ;
+    schema:identifier "RE_DecisionStatus"^^xsd:token ;
+    skos:historyNote "Created manually by GOM staff directly from the ISO19132-1:2014 document"@en ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
+.

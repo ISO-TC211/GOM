@@ -1,123 +1,121 @@
+PREFIX : <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX cs: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-status:stable
+:stable
     a skos:Concept ;
-    reg:status status:experimental ;
+    reg:status :experimental ;
     rdfs:isDefinedBy cs: ;
-    skos:broader status:valid ;
+    skos:broader :valid ;
     skos:definition "The item valid and expected to remain unchanged. It may be used widely"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "stable"@en ;
-    schema:provenance "Added to this codelist by GOM, 2023"@en ;
+    skos:historyNote "Added to this codelist by GOM, 2023"@en ;
 .
 
-status:invalid
+:invalid
     a skos:Concept ;
-    reg:status status:original ;
+    reg:status :original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A decision has been made that a previously valid register item contains a substantial error and is invalid, and will normally have been replaced by a corrected item"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "invalid"@en ;
     skos:topConceptOf cs: ;
-    schema:provenance "Supplied within the original issuance of the vocabulary"@en ;
+    skos:historyNote "Supplied within the original issuance of the vocabulary"@en ;
 .
 
-status:retired
+:retired
     a skos:Concept ;
-    reg:status status:original ;
+    reg:status :original ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :invalid ;
     skos:definition "A decision has been made that the item is no longer recommended for use. It has not been superseded by another item"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "retired"@en ;
     skos:topConceptOf cs: ;
-    schema:provenance "Supplied within the original issuance of the vocabulary"@en ;
+    skos:historyNote "Supplied within the original issuance of the vocabulary"@en ;
 .
 
-status:submitted
+:submitted
     a skos:Concept ;
-    reg:status status:original ;
+    reg:status :original ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :invalid ;
     skos:definition "The item has been entered into the register, but the control body has not accepted the proposal to add it"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "submitted"@en ;
     skos:topConceptOf cs: ;
-    schema:provenance "Supplied within the original issuance of the vocabulary"@en ;
+    skos:historyNote "Supplied within the original issuance of the vocabulary"@en ;
 .
 
-status:superseded
+:superseded
     a skos:Concept ;
-    reg:status status:original ;
+    reg:status :original ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :invalid ;
     skos:definition "The item has been superseded by another item and is no longer recommended for use"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "superseded"@en ;
     skos:topConceptOf cs: ;
-    schema:provenance "Supplied within the original issuance of the vocabulary"@en ;
+    skos:historyNote "Supplied within the original issuance of the vocabulary"@en ;
 .
 
-status:addition
+:addition
     a skos:Concept ;
-    reg:status status:addition ;
+    reg:status :addition ;
     rdfs:isDefinedBy cs: ;
-    skos:broader status:valid ;
+    skos:broader :valid ;
     skos:definition "The item is valid and was supplied to the vocabulary after initial creation"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "addition"@en ;
-    schema:provenance "Added to this codelist by GOM, 2022"@en ;
+    skos:historyNote "Added to this codelist by GOM, 2022"@en ;
 .
 
-status:experimental
+:experimental
     a skos:Concept ;
-    reg:status status:experimental ;
+    reg:status :experimental ;
     rdfs:isDefinedBy cs: ;
-    skos:broader status:valid ;
+    skos:broader :invalid ;
     skos:definition "The item is valid but is experimental in nature and should be used with caution"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "valid"@en ;
-    schema:provenance "Added to this codelist by GOM, 2023"@en ;
+    skos:historyNote "Added to this codelist by GOM, 2023"@en ;
 .
 
-status:valid
+:valid
     a skos:Concept ;
-    reg:status status:original ;
+    reg:status :original ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The item has been accepted, is recommended for use, and has not been superseded or retired"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "valid"@en ;
     skos:topConceptOf cs: ;
-    schema:provenance "Supplied within the original issuance of the vocabulary"@en ;
+    skos:historyNote "Supplied within the original issuance of the vocabulary"@en ;
 .
 
-status:original
+:original
     a skos:Concept ;
-    reg:status status:addition ;
+    reg:status :addition ;
     rdfs:isDefinedBy cs: ;
-    skos:broader status:valid ;
+    skos:broader :valid ;
     skos:definition "Supplied within the original issuance of the vocabulary"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "original"@en ;
-    schema:provenance "Added to this codelist by GOM, 2022"@en ;
+    skos:historyNote "Added to this codelist by GOM, 2022"@en ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    reg:status status:experimental ;
+    reg:status :experimental ;
     skos:definition "Instances of RE_ItemStatus that identify the registration status of a RegisterItem"@en ;
     skos:hasTopConcept
-        status:addition ,
-        status:invalid ,
-        status:original ,
-        status:retired ,
-        status:submitted ,
-        status:superseded ,
-        status:valid ;
+        :invalid ,
+        :valid ;
     skos:prefLabel "Register Item Status Codes"@en ;
     prov:qualifiedDerivation
         [
@@ -127,9 +125,9 @@ cs:
     schema:citation "http://standards.iso.org/iso/19135/-1/ed-1/en/"^^xsd:anyURI ;
     schema:creator <https://committee.iso.org/home/tc211> ;
     schema:dateCreated "2000-01-01"^^xsd:date ;
-    schema:dateModified "2023-05-16"^^xsd:date ;
+    schema:dateModified "2024-10-02"^^xsd:date ;
     schema:identifier "RE_ItemStatus"^^xsd:token ;
     schema:issued "2000-01-01"^^xsd:date ;
-    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

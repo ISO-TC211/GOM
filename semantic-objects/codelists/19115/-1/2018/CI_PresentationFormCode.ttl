@@ -17,7 +17,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "audio digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "audioDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :audioHardcopy
@@ -29,7 +29,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "audio hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "audioHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :diagramDigital
@@ -41,7 +41,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "diagram digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "diagramDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :diagramHardcopy
@@ -53,7 +53,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "diagram hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "diagramHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :documentDigital
@@ -65,7 +65,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "document digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "documentDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :documentHardcopy
@@ -77,7 +77,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "document hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "documentHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :imageDigital
@@ -89,7 +89,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "image digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "imageDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :imageHardcopy
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "image hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "imageHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :mapDigital
@@ -113,7 +113,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "map digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "mapDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :mapHardcopy
@@ -125,7 +125,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "map hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "mapHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :modelDigital
@@ -137,7 +137,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "model digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "modelDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :modelHardcopy
@@ -149,7 +149,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "model hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "modelHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :multimediaDigital
@@ -161,7 +161,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "multimedia digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "multimediaDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :multimediaHardcopy
@@ -173,7 +173,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "multimedia hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "multimediaHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :physicalObject
@@ -185,7 +185,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "physical object"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "physicalObject"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :profileDigital
@@ -197,7 +197,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "profile digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "profileDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :profileHardcopy
@@ -209,7 +209,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "profile hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "profileHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :tableDigital
@@ -221,7 +221,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "table digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "tableDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :tableHardcopy
@@ -233,7 +233,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "table hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "tableHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :videoDigital
@@ -245,7 +245,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "video digital"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "videoDigital"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 :videoHardcopy
@@ -257,7 +257,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "video hardcopy"@en ;
     skos:topConceptOf cs: ;
     schema:identifier "videoHardcopy"^^xsd:token ;
-    schema:provenance "Presented in the original standard's codelist"@en ;
+    skos:historyNote "Presented in the original standard's codelist"@en ;
 .
 
 cs:
@@ -299,6 +299,6 @@ cs:
     schema:identifier "CI_PresentationFormCode"^^xsd:token ;
     schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_PresentationFormCode> ;
     schema:issued "2000-01-01"^^xsd:date ;
-    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    skos:historyNote "Derived from TC211-produced RDF versions of the standard's UML"@en ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

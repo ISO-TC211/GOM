@@ -39,3 +39,41 @@ def test_19160(vocab):
                     assert "Requirement 2.1.9 " in str(o2), f"Vocab {vocab} is invalid: {o2}"
     else:
         assert valid
+
+
+testdata_19157 = [
+    CODELISTS_DIR / "19157" / "-1" / "2023" / "EvaluationMethodTypeCode.ttl",
+    CODELISTS_DIR / "19157" / "-1" / "2023" / "ValueStructure.ttl",
+]
+
+
+@pytest.mark.parametrize("vocab", testdata_19157)
+def test_19157(vocab):
+    data_graph = Graph().parse(vocab) + agents_graph
+    valid, results_graph, results_text = validate(data_graph, shacl_graph=validator_graph, allow_warnings=True)
+    # allow vocabs to have no Concepts
+    if not valid:
+        print(f"{vocab} is not valid: {results_text}")
+
+    assert valid
+
+
+testdata_19135 = [
+    CODELISTS_DIR / "19135" / "-1" / "2015" / "RE_AmendmentType.ttl",
+    CODELISTS_DIR / "19135" / "-1" / "2015" / "RE_DecisionStatus.ttl",
+    CODELISTS_DIR / "19135" / "-1" / "2015" / "RE_Disposition.ttl",
+    CODELISTS_DIR / "19135" / "-1" / "2015" / "RE_ItemStatus.ttl",
+    CODELISTS_DIR / "19135" / "-1" / "2015" / "RE_SimilarityToSource.ttl",
+]
+
+
+@pytest.mark.parametrize("vocab", testdata_19135)
+def test_19135(vocab):
+    data_graph = Graph().parse(vocab) + agents_graph
+    valid, results_graph, results_text = validate(data_graph, shacl_graph=validator_graph, allow_warnings=True)
+    # allow vocabs to have no Concepts
+    if not valid:
+        print(f"{vocab} is not valid: {results_text}")
+
+    assert valid
+
