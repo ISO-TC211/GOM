@@ -1,10 +1,10 @@
-PREFIX : <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode/>
-PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses/code/MD_ScopeCode>
+PREFIX : <http://def.isotc211.org/19115/-1/2014/CommonClasses/code/MD_ScopeCode/>
+PREFIX cs: <http://def.isotc211.org/19115/-1/2014/CommonClasses/code/MD_ScopeCode>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX status: <http://def.isotc211.org/19135/-1/2015/CoreModel/code/RE_ItemStatus/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :aggregate

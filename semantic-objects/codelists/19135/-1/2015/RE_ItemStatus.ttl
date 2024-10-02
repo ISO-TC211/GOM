@@ -1,5 +1,5 @@
-PREFIX : <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
-PREFIX cs: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus>
+PREFIX : <http://def.isotc211.org/19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX cs: <http://def.isotc211.org/19135/-1/2015/CoreModel/code/RE_ItemStatus>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
