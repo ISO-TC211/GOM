@@ -19,5 +19,5 @@ tasks:
   tests:
     desc: Run pytest tests
     cmds:
-      - pytest --disable-warnings
+      - pytest --disable-warnings -s
       - echo "Python tests run"
