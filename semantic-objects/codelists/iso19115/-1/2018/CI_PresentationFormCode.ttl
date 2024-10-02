@@ -1,0 +1,304 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_PresentationFormCode>
+PREFIX schema: <https://schema.org/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:audioDigital
+    a skos:Concept ;
+    schema:identifier "audioDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "digital audio recording" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "audio digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:audioHardcopy
+    a skos:Concept ;
+    schema:identifier "audioHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "audio recording delivered by analog media, such as a magnetic tape" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "audio hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:diagramDigital
+    a skos:Concept ;
+    schema:identifier "diagramDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "diagram digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:diagramHardcopy
+    a skos:Concept ;
+    schema:identifier "diagramHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "diagram hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:documentDigital
+    a skos:Concept ;
+    schema:identifier "documentDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "digital representation of a primarily textual item (can contain illustrations also)" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "document digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:documentHardcopy
+    a skos:Concept ;
+    schema:identifier "documentHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "document hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:imageDigital
+    a skos:Concept ;
+    schema:identifier "imageDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "image digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:imageHardcopy
+    a skos:Concept ;
+    schema:identifier "imageHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "image hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mapDigital
+    a skos:Concept ;
+    schema:identifier "mapDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "map represented in raster or vector form" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "map digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mapHardcopy
+    a skos:Concept ;
+    schema:identifier "mapHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "map printed on paper, photographic material, or other media for use directly by the human user" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "map hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:modelDigital
+    a skos:Concept ;
+    schema:identifier "modelDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "multi-dimensional digital representation of a feature, process, etc." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "model digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:modelHardcopy
+    a skos:Concept ;
+    schema:identifier "modelHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "3-dimensional, physical model" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "model hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:multimediaDigital
+    a skos:Concept ;
+    schema:identifier "multimediaDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "information representation using simultaneously various digital modes for text, sound, image" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "multimedia digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:multimediaHardcopy
+    a skos:Concept ;
+    schema:identifier "multimediaHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "information representation using simultaneously various analog modes for text, sound, image" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "multimedia hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:physicalObject
+    a skos:Concept ;
+    schema:identifier "physicalObject"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "a physical object. Eg. Rock or mineral sample, microscope slide" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "physical object"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:profileDigital
+    a skos:Concept ;
+    schema:identifier "profileDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "vertical cross-section in digital form" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "profile digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:profileHardcopy
+    a skos:Concept ;
+    schema:identifier "profileHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "vertical cross-section printed on paper, etc." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "profile hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tableDigital
+    a skos:Concept ;
+    schema:identifier "tableDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "digital representation of facts or figures systematically displayed, especially in columns" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "table digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tableHardcopy
+    a skos:Concept ;
+    schema:identifier "tableHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "table hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:videoDigital
+    a skos:Concept ;
+    schema:identifier "videoDigital"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "digital video recording" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "video digital"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:videoHardcopy
+    a skos:Concept ;
+    schema:identifier "videoHardcopy"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "video recording on film" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "video hardcopy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    schema:dateCreated "2000-01-01"^^xsd:date ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:identifier "CI_PresentationFormCode"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation#CI_PresentationFormCode> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
+    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    reg:status status:valid ;
+    skos:definition "mode in which the data are represented"@en ;
+    skos:hasTopConcept
+        :audioDigital ,
+        :audioHardcopy ,
+        :diagramDigital ,
+        :diagramHardcopy ,
+        :documentDigital ,
+        :documentHardcopy ,
+        :imageDigital ,
+        :imageHardcopy ,
+        :mapDigital ,
+        :mapHardcopy ,
+        :modelDigital ,
+        :modelHardcopy ,
+        :multimediaDigital ,
+        :multimediaHardcopy ,
+        :physicalObject ,
+        :profileDigital ,
+        :profileHardcopy ,
+        :tableDigital ,
+        :tableHardcopy ,
+        :videoDigital ,
+        :videoHardcopy ;
+    skos:prefLabel "CI Presentation Form Code"@en ;
+    prov:qualifiedDerivation [
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
+        ] ;
+.
+

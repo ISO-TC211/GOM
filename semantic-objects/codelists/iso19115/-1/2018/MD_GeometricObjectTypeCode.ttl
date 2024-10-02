@@ -1,0 +1,109 @@
+PREFIX : <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode/>
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation/code/MD_GeometricObjectTypeCode>
+PREFIX schema: <https://schema.org/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:complex
+    a skos:Concept ;
+    schema:identifier "complex"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "set of geometric primitives such that their boundaries can be represented as a union of other primitives" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "complex"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:composite
+    a skos:Concept ;
+    schema:identifier "composite"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "connected set of curves, solids or surfaces" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "composite"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:curve
+    a skos:Concept ;
+    schema:identifier "curve"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "bounded, 1-dimensional geometric primitive, representing the continuous image of a line" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "curve"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:point
+    a skos:Concept ;
+    schema:identifier "point"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "zero-dimensional geometric primitive, representing a position but not having an extent" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "point"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:solid
+    a skos:Concept ;
+    schema:identifier "solid"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "solid"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:surface
+    a skos:Concept ;
+    schema:identifier "surface"^^xsd:token ;
+    schema:provenance "Presented in the original standard's codelist"@en ;
+    reg:status status:stable ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "bounded, connected 2-dimensional geometric primitive, representing the continuous image of a region of a plane" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "surface"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    schema:dateCreated "2000-01-01"^^xsd:date ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:identifier "MD_GeometricObjectTypeCode"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2018/SpatialRepresentationInformation#MD_GeometricObjectTypeCode> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
+    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    reg:status status:valid ;
+    skos:definition "name of point or vector objects used to locate zero-, one-, two-, or three-dimensional spatial locations in the dataset"@en ;
+    skos:hasTopConcept
+        :complex ,
+        :composite ,
+        :curve ,
+        :point ,
+        :solid ,
+        :surface ;
+    skos:prefLabel "MD Geometric Object Type Code"@en ;
+    prov:qualifiedDerivation [
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
+        ] ;
+.
+

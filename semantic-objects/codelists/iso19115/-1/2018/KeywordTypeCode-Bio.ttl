@@ -1,0 +1,28 @@
+PREFIX cs: <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata/code/KeywordTypeCode-Bio>
+PREFIX schema: <https://schema.org/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX status: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:
+    a skos:ConceptScheme ;
+    schema:dateCreated "2000-01-01"^^xsd:date ;
+    schema:creator <https://committee.iso.org/home/tc211> ;
+    schema:identifier "KeywordTypeCode-Bio"^^xsd:token ;
+    schema:isFormatOf <http://def.isotc211.org/iso19115/-1/2014/ExampleOfExtendedMatadata#KeywordTypeCode-Bio> ;
+    schema:issued "2000-01-01"^^xsd:date ;
+    schema:dateModified "2000-01-01"^^xsd:date ;
+    schema:provenance "Derived from TC211-produced RDF versions of the standard's UML"@en ;
+    schema:publisher <https://committee.iso.org/home/tc211> ;
+    schema:citation "http://standards.iso.org/iso/19115/-1/ed-1/en/"^^xsd:anyURI ;
+    reg:status status:valid ;
+    skos:definition "An ISO standard's ConceptScheme"@en ;
+    skos:prefLabel "Keyword Type Code -Bio"@en ;
+    prov:qualifiedDerivation [
+            prov:entity <http://example.com/none> ;
+            prov:hadRole <https://linked.data.gov.au/def/vocab-derivation-modes/none>
+        ] ;
+.
+
