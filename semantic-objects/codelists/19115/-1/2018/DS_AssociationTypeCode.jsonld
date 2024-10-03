@@ -1,0 +1,376 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "c": "http://def.isotc211.org/19115/-1/2014/IdentificationInformation/code/DS_AssociationTypeCode/",
+    "cs": "http://def.isotc211.org/19115/-1/2014/IdentificationInformation/code/",
+    "reg": "http://purl.org/linked-data/registry#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "status": "http://def.isotc211.org/19135/-1/2015/CoreModel/code/RE_ItemStatus/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "c:isComposedOf",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "is composed of"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "isComposedOf"
+      }
+    },
+    {
+      "@id": "c:largerWorkCitation",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "larger work citation"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "largerWorkCitation"
+      }
+    },
+    {
+      "@id": "c:partOfSeamlessDatabase",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "part of seamless database"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "partOfSeamlessDatabase"
+      }
+    },
+    {
+      "@id": "c:stereoMate",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "stereo mate"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "stereoMate"
+      }
+    },
+    {
+      "@id": "cs:DS_AssociationTypeCode",
+      "@type": "skos:ConceptScheme",
+      "reg:status": {
+        "@id": "status:valid"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "justification for the correlation of two resources"
+      },
+      "skos:hasTopConcept": [
+        {
+          "@id": "c:collectiveTitle"
+        },
+        {
+          "@id": "c:crossReference"
+        },
+        {
+          "@id": "c:dependency"
+        },
+        {
+          "@id": "c:isComposedOf"
+        },
+        {
+          "@id": "c:largerWorkCitation"
+        },
+        {
+          "@id": "c:partOfSeamlessDatabase"
+        },
+        {
+          "@id": "c:revisionOf"
+        },
+        {
+          "@id": "c:series"
+        },
+        {
+          "@id": "c:stereoMate"
+        }
+      ],
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Derived from TC211-produced RDF versions of the standard's UML"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DS Association Type Code"
+      },
+      "schema:citation": {
+        "@type": "xsd:anyURI",
+        "@value": "http://standards.iso.org/iso/19115/-1/ed-1/en/"
+      },
+      "schema:creator": {
+        "@id": "https://committee.iso.org/home/tc211"
+      },
+      "schema:dateCreated": {
+        "@type": "xsd:date",
+        "@value": "2000-01-01"
+      },
+      "schema:dateModified": {
+        "@type": "xsd:date",
+        "@value": "2000-01-01"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "DS_AssociationTypeCode"
+      },
+      "schema:issued": {
+        "@type": "xsd:date",
+        "@value": "2000-01-01"
+      },
+      "schema:publisher": {
+        "@id": "https://committee.iso.org/home/tc211"
+      }
+    },
+    {
+      "@id": "c:dependency",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "dependency"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "dependency"
+      }
+    },
+    {
+      "@id": "c:crossReference",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "cross reference"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "crossReference"
+      }
+    },
+    {
+      "@id": "c:collectiveTitle",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "collective title"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "collectiveTitle"
+      }
+    },
+    {
+      "@id": "c:series",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "series"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "series"
+      }
+    },
+    {
+      "@id": "c:revisionOf",
+      "@type": "skos:Concept",
+      "reg:status": {
+        "@id": "status:stable"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Missing"
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Presented in the original standard's codelist"
+      },
+      "skos:inScheme": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "revision of"
+      },
+      "skos:topConceptOf": {
+        "@id": "cs:DS_AssociationTypeCode"
+      },
+      "schema:identifier": {
+        "@type": "xsd:token",
+        "@value": "revisionOf"
+      }
+    }
+  ]
+}
