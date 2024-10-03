@@ -10,7 +10,7 @@ The role of this directory is to act as the data point-of-truth for Semantic Web
 
 == Codelists in Semantic Web form
 
-These codelist versions are encoded using the human- and machine-readable https://www.w3.org/RDF/[Resource Description Framework] and according to the https://www.w3.org/TR/skos-reference/[Simple Knowledge Organization System (SKOS)] data model for taxonomies. This allows for simple enough human reading - RDF files are text files - but also automated validating, automated absorption into databases, multi-codelist indexing, searching and so on.
+These codelist versions are encoded using the human- and machine-readable https://www.w3.org/RDF/[Resource Description Framework] conforming to the https://www.w3.org/TR/skos-reference/[Simple Knowledge Organization System (SKOS)] data model for taxonomies. This allows for simple enough human reading - RDF files are text files - but also automated validating, automated absorption into databases, multi-codelist indexing, searching and so on.
 
 This directory is monitored by automated tools which provide validation reports of new codelists to the GOM managers of it. Codelists RDF files are also able to be automatically loaded into the vocabulary server which delivers published vocabularies at their namespace-based web page locations online.
 
@@ -30,7 +30,7 @@ Some codelists were also produced by GOM manually, from reading source standards
 
 == Codelist Content
 
-TC211 standards are the ISO 19* series of standards related to "Geographic information/Geomatics". Many of those standards contain codelists of terms that are used within the standards' data models. For example, the standard https://www.iso.org/standard/53798.html[ISO 19115-1:2014
+TC-211 standards are the ISO 19* series are about "Geographic information/Geomatics". Many of those standards contain codelists of terms that are used within the standards' data models. For example, the standard https://www.iso.org/standard/53798.html[ISO 19115-1:2014
 Geographic information — Metadata — Part 1: Fundamentals (ISO19115-1)] contains the codelist _Association Type Codes_ (`DS_AssociationTypeCode`) which gives values for the _associationType_ property defined as identifying the "type of relation between the resources" (Table B.3.6 — Association information). Terms in this codelist are presented in Table B.3.8 in the ISO19115 standard document, p 48, which is reproduced below:
 
 image::DS_AssociationTypeCodes.png[Screenshot of the Association Type Codes as they are in the 19115 PDF,align="center"]
@@ -39,7 +39,7 @@ image::DS_AssociationTypeCodes.png[Screenshot of the Association Type Codes as t
 
 The _Association Type Codes_ codelist above has previously been delivered online several times as a non-ISO-sponsored publication in Semantic Web form. One such form was delivered by CSIRO, Australia's national scientific research agency, that is now offline but a catalogue entry for is still exists at https://vocabs.ardc.edu.au/viewById/272. Note that the CSIRO copy indicates that its source was this GOM repository's isotc211_GOM_harmonizedOntology directory contents.
 
-Such unauthorised republications of ISO content are not allowed. We encourage people wanting more ISO material delivered as machine-readable objects to contact the Group on Ontology mantenance, see https://github.com/ISO-TC211/GOM#contact[GOM's contact info].
+Such unauthorised republications of ISO content are not allowed by ISO licensing. We encourage people wanting more ISO material delivered as machine-readable objects to contact the Group on Ontology maintenance, see https://github.com/ISO-TC211/GOM#contact[GOM's contact info].
 
 == Current publication
 

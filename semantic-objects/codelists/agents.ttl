@@ -6,6 +6,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:description "The International Organization for Standardization's Technical Committee on \"Geographic information/Geomatics\", charged with standardization in the field of digital geographic information"@en ;
     schema:name "ISO's Technical Committee 211" ;
     schema:url "https://www.iso.org/committee/54904.html"^^xsd:anyURI ;
+    schema:email "nick@kurrawong.ai" , "ivana.ivanova@curtin.edu.au" ;
 .
 
 <https://www.ogc.org>
