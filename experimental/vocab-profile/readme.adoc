@@ -46,7 +46,7 @@ Initial development of this work is being undertaken by the following, for the T
 *Nicholas J. Car* +
 _Advisory Group 6 (Group on Ontology Management) Co-chair_ +
 Technical Committee 211, International Organization for Standardization +
-nicholas.car@surroundaustralia.com
+nick@kurrawong.ai
 
 *Ivana Ivanova* +
 _Advisory Group 6 (Group on Ontology Management) Co-chair_ +

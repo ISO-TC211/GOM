@@ -22,7 +22,7 @@ The following persons are the contact points for this GOM content and GOM work i
 **Nicholas J. Car**                     
 *GOM Convenor*                           
 ISO Technical Committee 211             
-<nicholas.car@surroundaustralia.com> 
+<nick@kurrawong.ai> 
 
 
 **Ivana Ivánová**                     
