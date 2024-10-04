@@ -16,6 +16,6 @@ cs:
     schema:dateCreated "2000-01-01"^^xsd:date ;
     schema:dateModified "2000-01-01"^^xsd:date ;
     schema:identifier "CountryCode"^^xsd:token ;
-    schema:issued "2000-01-01"^^xsd:date ;
+    schema:dateIssued "2000-01-01"^^xsd:date ;
     schema:publisher <https://committee.iso.org/home/tc211> ;
 .

@@ -37,7 +37,7 @@
     <schema:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</schema:dateCreated>
     <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</schema:dateModified>
     <schema:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#token">DS_AssociationTypeCode</schema:identifier>
-    <schema:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</schema:issued>
+    <schema:dateIssued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</schema:dateIssued>
     <schema:publisher rdf:resource="https://committee.iso.org/home/tc211"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://def.isotc211.org/19115/-1/2014/IdentificationInformation/code/DS_AssociationTypeCode/dependency">

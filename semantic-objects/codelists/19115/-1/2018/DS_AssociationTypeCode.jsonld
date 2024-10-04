@@ -204,7 +204,7 @@
         "@type": "xsd:token",
         "@value": "DS_AssociationTypeCode"
       },
-      "schema:issued": {
+      "schema:dateIssued": {
         "@type": "xsd:date",
         "@value": "2000-01-01"
       },
