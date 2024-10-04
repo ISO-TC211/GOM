@@ -53,7 +53,6 @@ For demonstration only, the _Association Type Codes_ codelist is also presented 
 
 Other codelists will only be delivered here in the Turtle format. Many tools exist to convert from one format to another.
 
-
 === Differences with original GOM OWL publication
 
 The _Association Type Codes_ codelist's first interpretation into Semantic Web form is as a SKOS `ConceptScheme` and `Collection` with the https://github.com/ISO-TC211/GOM/blob/master/isotc211_GOM_harmonizedOntology/iso19115/-1/2014/IdentificationInformation.rdf[Identification Information] module of ISO19115-1 in OWL form which is available here:
@@ -69,3 +68,14 @@ Differences between that original form and that presented here are:
 . `skos:Collection` instnaces are not given for all the `skos:Concept` instances in a `skos:ConceptScheme` as flat lists of `skos:Concept` instances can be made easily with queries
 
 Codelists presented here as `skos:ConceptScheme` instances conform to the [_VocPub Profile_ of SKOS](https://w3id.org/profile/vocpub) which defines the minimum set of properties that these Semantic Web codelist all have.
+
+== Prez resources
+
+|===
+| Resource | Location | Notes
+
+| Catalogue Definition | `catalogue.ttl` |
+| Items | `./19*/\**/*.ttl` | Multiple ttl files in 19* subfolders
+| Profile Definition | https://github.com/RDFLib/prez/blob/main/prez/reference_data/profiles/ogc_records_profile.ttl[Prez Records Profile] | Default Prez profile for vocabs
+| Context Resources | `../_background/*.ttl` | Multiple labels files for ontologies, licenses & agents
+|===
