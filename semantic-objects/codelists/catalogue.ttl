@@ -1,5 +1,6 @@
 PREFIX cat: <http://def.isotc211.org/codelists/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -24,7 +25,7 @@ Many of the codelist vocabularies were initially produced in [Web Ontology Langu
 The _Association Type Codes_ codelist above has previously been delivered online several times as a non-ISO-sponsored publication in Semantic Web form. One such form was delivered by CSIRO, Australia's national scientific research agency, that is now offline but a catalogue entry for is still exists at https://vocabs.ardc.edu.au/viewById/272. Note that the CSIRO copy indicates that its source was this GOM repository's `isotc211_GOM_harmonizedOntology` directory contents.
 
 Such unauthorised republications of ISO content are not allowed by ISO licensing. We encourage people wanting more ISO material delivered as machine-readable objects to contact the Group on Ontology maintenance, see this catalogue's publisher details for contact information.""" ;
-    schema:hasPart
+    dcterms:hasPart
         <http://def.isotc211.org/19115/-1/2014/CommonClasses/code/MD_ScopeCode> ,
         <http://def.isotc211.org/19115/-1/2014/ConstraintInformation/code/MD_ClassificationCode> ,
         <http://def.isotc211.org/19115/-1/2014/ConstraintInformation/code/MD_RestrictionCode> ,
