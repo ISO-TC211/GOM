@@ -76,6 +76,6 @@ Codelists presented here as `skos:ConceptScheme` instances conform to the [_VocP
 
 | Catalogue Definition | `catalogue.ttl` |
 | Items | `./19*/\**/*.ttl` | Multiple ttl files in 19* subfolders
-| Profile Definition | https://github.com/RDFLib/prez/blob/main/prez/reference_data/profiles/ogc_records_profile.ttl[Prez Records Profile] | Default Prez profile for vocabs
+| Profile Definition | https://github.com/RDFLib/prez/blob/main/prez/reference_data/profiles/ogc_records_profile.ttl[Prez Records Profile] | Default Prez profile for Records API
 | Context Resources | `../_background/*.ttl` | Multiple labels files for ontologies, licenses & agents
 |===
