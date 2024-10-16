@@ -65,7 +65,7 @@ Differences between that original form and that presented here are:
 . Here, codelists are presented in their own files, not embedded within stnadards' ontologies
 . Codelist terms here have descriptions provided, not just labels
 . The `rdfs:isDefinedBy` property is now used to indicate the original `skos:ConceptScheme` defining the resources, not a link to the original standard. That task is now performed by the `schema:citation` property
-. `skos:Collection` instnaces are not given for all the `skos:Concept` instances in a `skos:ConceptScheme` as flat lists of `skos:Concept` instances can be made easily with queries
+. `skos:Collection` instances are not given for all the `skos:Concept` instances in a `skos:ConceptScheme` as flat lists of `skos:Concept` instances can be made easily with queries
 
 Codelists presented here as `skos:ConceptScheme` instances conform to the [_VocPub Profile_ of SKOS](https://w3id.org/profile/vocpub) which defines the minimum set of properties that these Semantic Web codelist all have.
 
