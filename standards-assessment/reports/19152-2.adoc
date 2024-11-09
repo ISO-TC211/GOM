@@ -1,0 +1,62 @@
+= GOM Standard Assessment Report
+
+== ISO 19152-2 Geographic information - Land Administration Domain Model (LADM) -- Part 2: Land registration
+
+== Document Metadata Assessment
+
+[cols="1,8"]
+|===
+| Element | Value
+
+| IRI | allocated: `https://standards.isotc211.org/19152/-2/` for the Standard's document, suggested `https://def.isotc211.org/19152/-3/` for the model and `https://def.isotc211.org/1952/-3` for v1 of the model
+| Title |ISO 19152-2 Geographic information - Land Administration Domain Model (LADM) -- Part 2: Land registration
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
+|===
+
+_incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this standard relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *3.1 Abbreviations*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *4 Conformance*
+** the list of Conformance classes given here form vocabularies
+* *6 Overview of the LADM conceptual information model*
+** this contains the formalized data model of the Standard
+** contains codelists
+* *7 Content of classes of the LADM and their associations*
+** this contains the formalized data model of the Standard
+** contains codelists
+* *Annex A - Abstract test suites*
+** contains a vocabulary of tests
+* *Annex G - Codelists*
+** contain codelists
+* *Bibliography*
+** contains a structured bibliography, members of which may be referred to by multiple Standards
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *3.1 Abbreviations* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *6 Overview of the LADM conceptual information model* | Auto-generation of OWL model form | Confirm GOM can generate
+| *7 Content of classes of the LADM and their associations* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex G - Codelists* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Bibliography* | As per *2 Normative references* | -
+|===
