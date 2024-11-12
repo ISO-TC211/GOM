@@ -52,7 +52,10 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .... ISO-specific content display - e.g. codelists' stnadards' applicability
 ... redirect PIDs to new system
 ... enable more export options - OASIS?
+... replacement of shadow vocabs with these official published forms
+.... Australian government, initial example https://linked.data.gov.au/def/data-roles[Data Role / ISO19115 Role Codes]
 ... publish ISO19115 ontology
+... harmonisation of ISO19153 (DQ Measures) register of definitions with codelists
 . *Discussion*
 
 
