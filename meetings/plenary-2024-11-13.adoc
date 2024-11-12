@@ -46,7 +46,8 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .... OGC will publish their own ontologies via the system, e.g. GeoSPARQL & CRS Ontology
 .. proposed next steps
 ... complete publication of all codelists
-... improve codelists & term display
+... improve codelists' metadata & term display
+.... consider better statuses, building on http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:/collections/ns45:RE_ItemStatus[ISO19135 Status Codes]
 ... demo ISO-specific UI elements
 .... ISO branding
 .... ISO-specific content display - e.g. codelists' stnadards' applicability
