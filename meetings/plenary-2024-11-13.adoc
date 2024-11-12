@@ -34,6 +34,14 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. standards reviewed since the last meeting: ISO 19152-2, ISO 19177-1
 ... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
 . *Progress on vocabulary publication*
+.. ISO Codelists now [test published on the OGC Rainbow's test system](http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:)
+... ~50 codelists (of 200+) published for demo
+... coidelist (vocabulary) level metadata needs improvement for governance and display
+... new metadata at the element (codelist item) level such as `status` already demonstrated, e.g. [Association Type code: collective title](http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:/collections/ns35:DS_AssociationTypeCode/items/dsassociationtypecode:collectiveTitle)
+... TC-211 PIDs not yet in place - will proceed after plenary 
+... Ontology publication - ISO19115 - not yet demonstrated
+.... Ontology ready but system OGC system not ready
+.... OGC will publish their own ontologies via the system, e.g. GeoSPARQL & CRS Ontology
 . *Discussion*
 
 
