@@ -50,13 +50,13 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .... consider better statuses, building on http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:/collections/ns45:RE_ItemStatus[ISO19135 Status Codes]
 ... demo ISO-specific UI elements
 .... ISO branding
-.... ISO-specific content display - e.g. codelists' stnadards' applicability
+.... ISO-specific content display - e.g. codelists' standards' applicability
 ... redirect PIDs to new system
 ... enable more export options - OASIS?
 ... replacement of shadow vocabs with these official published forms
 .... Australian government, initial example https://linked.data.gov.au/def/data-roles[Data Role / ISO19115 Role Codes]
 ... publish ISO19115 ontology
-... harmonisation of ISO19153 (DQ Measures) register of definitions with codelists
+... harmonisation of ISO19157-3 (DQ Measures) register of definitions with codelists
 . *Discussion*
 
 
