@@ -1,0 +1,57 @@
+= GOM Standard Assessment Report
+
+== 19166 Geographic Information – BIM to GIS conceptual mapping (B2GM)
+
+== Document Metadata Assessment
+
+[cols="1,8"]
+|===
+| Element | Value
+
+| IRI | allocated: `https://standards.isotc211.org/19166/-/` for the Standard's document, suggested `https://def.isotc211.org/iso19166/-/` for the model and `https://def.isotc211.org/iso19166/-/1` for v1 of the model
+| Title | 19166 Geographic Information – BIM to GIS conceptual mapping (B2GM)
+| Edition | 1
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
+|===
+
+_incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this standard relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple standards
+* *5 Conformance*
+** the list of Conformance Classes here form vocabularies
+* *6 Conceptual Framework for BIM to GIS mapping*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *7 BIM to GIS perspective definition*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *8 BIM to GIS element mapping*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *9 BIM to GIS LOD mapping*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *Annex A - Abstract test suites*
+** contains a vocabulary of Conformance Tests
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *6 Conceptual Framework for BIM to GIS mapping* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *7 BIM to GIS perspective definition* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *8 BIM to GIS element mapping* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *9 BIM to GIS LOD mapping* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary| -
+|===
