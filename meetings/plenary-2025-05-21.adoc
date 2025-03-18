@@ -34,7 +34,7 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 .. standards reviewed since the last meeting: ISO 19166
 ... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
 // CONTENT FROM NOV'24 - NEEDS TO BE UPDATED
-. *Progress on vocabulary publication* 
+. *Progress on vocabulary publication (..will be updated..)* 
 .. ISO Codelists now test published http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:[on the OGC Rainbow's test system]
 ... ~50 codelists (of 200+) published for demo
 ... alongside other OGC vocabs and non-vocabs Semantic objects
