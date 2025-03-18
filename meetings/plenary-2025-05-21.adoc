@@ -1,0 +1,67 @@
+= May 2025 Plenary 
+
+== Agenda
+
+This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
+
+=== Agenda Outline
+
+. *Welcome*
+. *Reminder of the purpose of GOM*
+.. Updated Terms of Reference
+. *Update on GOM standards review process*
+. *ISO/TC211 Harmonized Resources Registry*
+. *Discussion*
+. *Next Meeting*
+
+=== Agenda Details
+
+. *Welcome*
+.. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
+.. Meeting protocols
+.. Roll call
+... (re)introduction of co-chairs: Ivana & Nicholas
+.. How to contribute/amend Agenda/Minutes
+.. Start Recording
+. *Reminder of the purpose of GOM*
+.. purpose as it has been to date
+.. purpose continuing
+. *Updated Terms of Reference*:
+.. CIB Resolution 2024-07
+.. GOM Revised ToR approved - see N6056
+. *Update on GOM standards review process*
+.. GOM is reviewing the standards using the standards assessment procedure introduced to the ISO/TC211 in December'22 
+.. standards reviewed since the last meeting: ISO 19166
+... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+// CONTENT FROM NOV'24 - NEEDS TO BE UPDATED
+. *Progress on vocabulary publication* 
+.. ISO Codelists now test published http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:[on the OGC Rainbow's test system]
+... ~50 codelists (of 200+) published for demo
+... alongside other OGC vocabs and non-vocabs Semantic objects
+.... example non-vocab object: https://demo.dev.kurrawong.ai/catalogs/phcat:buildingblocks/collections/ogcgh:ogc.geo.json-fg.feature[OGC Building Blocks Register: JSON-FG 'Feature']
+... codelist (vocabulary) level metadata needs improvement for governance and display
+... new metadata at the element (codelist item) level such as `status` already demonstrated, e.g. http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:/collections/ns35:DS_AssociationTypeCode/items/dsassociationtypecode:collectiveTitle[Association Type code: collective title]
+... TC-211 PIDs not yet in place - will proceed after plenary 
+... Ontology publication - ISO19115 - not yet demonstrated
+.... Ontology ready but system OGC system not ready
+.... OGC will publish their own ontologies via the system, e.g. GeoSPARQL & CRS Ontology
+.. proposed next steps
+... complete publication of all codelists
+... improve codelists' metadata & term display
+.... consider better statuses, building on http://defs-dev.opengis.net/prez-hosted/catalogs/tc211:/collections/ns45:RE_ItemStatus[ISO19135 Status Codes]
+... demo ISO-specific UI elements
+.... ISO branding
+.... ISO-specific content display - e.g. codelists' standards' applicability
+... redirect PIDs to new system
+... enable more export options - OASIS?
+... replacement of shadow vocabs with these official published forms
+.... Australian government, initial example https://linked.data.gov.au/def/data-roles[Data Role / ISO19115 Role Codes]
+... publish ISO19115 ontology
+... harmonisation of ISO19157-3 (DQ Measures) register of definitions with codelists
+. *Discussion*
+
+
+. *Next Meeting*
+.. When: 
+.. Proposed Agenda:
+... TBD
