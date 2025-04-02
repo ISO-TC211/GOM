@@ -11,8 +11,8 @@
 | Reviewer(s) | Nicholas Car & Ivana Ivánová
 |===
 
-{@comment _incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard}
-// comment
+// _incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
 == Section Assessment
 
 === Determine Document Sections
