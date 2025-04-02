@@ -1,0 +1,65 @@
+= GOM Standard Assessment Report
+
+== 19157-3 - Geographic information — Data quality - Part 3: Data quality measures register
+
+== Document Metadata Assessment
+
+[cols="1,8"]
+|===
+| Element | Value
+
+| IRI | allocated: `https://standards.isotc211.org/19157/-3/1/` for the Standard's document, suggested `https://def.isotc211.org/iso19157/-3` for the model and `https://def.isotc211.org/iso19157/-3/1` for v1 of the model
+| Title | Geographic information — Data quality - Part 3: Data quality measures register
+| Edition | 1
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
+|===
+
+// _incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this standard relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *4 Abbreviated terms*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *6 General requirements for data quality measures register*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *7 Registration of data quality measures*
+** this contains the formalized data model of the Standard
+** the list of provisions given here form vocabularies
+* *8 ISO Data quality measures register roles and responsibilities*
+** the list of provisions given here form vocabularies
+* *9 ISO Data quality measures register management rules and procedures*
+** the list of provisions given here form vocabularies
+* *Annex A - Abstract test suites*
+** contains a vocabulary of tests
+* *Annex B - ISO data quality measures register metadata*
+** contains a vocabulary of metadata
+* *Bibliography*
+** contains a structured bibliography, members of which may be referred to by multiple Standards
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4.1 Abbreviations* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *6 General requirements for data quality measures register* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *7 CRegistration of data quality measures* | Auto-generation of OWL model form | Confirm GOM can generate
+| *8 ISO Data quality measures register roles and responsibilities* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *8 ISO Data quality measures register management rules and procedures* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex B - ISO data quality measure register metadata* | Establish SW vocabularies for these codelists | Confirm GOM can generate
+| *Bibliography* | As per *2 Normative references* | -
+|===
