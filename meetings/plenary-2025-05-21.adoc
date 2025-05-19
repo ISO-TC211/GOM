@@ -25,15 +25,29 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 . *Reminder of the purpose of GOM*
 . *Standards' Semantic Web review progress*
 .. review process has been a placholder for the last 12 months
+.. Standards reviewed: 
+... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+... 19166, 19124-2, 19157-3
 .. process to start becomeing "real" now that TC-211 Semantic Web publishing facility is available
 .. ontology publication next step
 .. Reg. Maintenance Group & GOM need to work together maintaining ongoing SemWeb publication
 . *Standards' Semantic Web resource publication progress*
+.. ISO Codelists now published in production
+... see http://def.isotc211.org/codelists/
+... first ~50 published - the ones test published previously
+... Persistent IRIs in place, e.g. http://def.isotc211.org/19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode
+.... redirects in place from `def.isotc211.org` namespace location to https://defs.opengis.net/prez/[OGC Rainbow Infrastructure]
 
 
 . *Discussion*
-.. ISO Codelists now published in production
-... see http://def.isotc211.org/codelists/
+
+.. Immediate Next Steps
+... remaining ~150 codelists to be published by next meeting
+... full Linked Data redirects to be implemented, not just HTML
+.... we will ask OGC to reuse their redirection infrastructure
+.. Ontology publication
+... soon to be supported by the Rainbow
+.. Larger Steps
 
 
 
