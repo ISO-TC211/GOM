@@ -58,6 +58,8 @@ _These points are not locked in and we want input, that's why they are listed he
 .... Test ontology publication
 ..... soon to be teehncially supported by the Rainbow
 ..... joint ISO/OGC test with GeoSPARQL
+... Nedium-term Steps
+.... Formalise Enumeration v. codelist publication
 ... Longer-term Steps
 .... Codelist governance
 ..... all standards editors need to be involved
