@@ -1,4 +1,4 @@
-= ISO/TC 211 N XXXX
+= ISO/TC211 N 6056
 
 == Replaces N 3577
 
@@ -6,14 +6,13 @@
 
 Number of pages: 3
 
-= ISO/TC 211 Geographic information/Geomatics Secretariat: SN (Norway)
+= ISO/TC211 Geographic information/Geomatics Secretariat: SN (Norway)
 
 |===
 | *Document type:* | Other committee document
 | *Title:* | *Terms of reference, Group for ontology maintenance (GOM)*
-| *Source:* | ISO/TC 211/GOM conveors
+| *Source:* | ISO/TC 211/GOM convenors
 | *Expected action:* | Info
-| *Email to secretary:* | #?????@????#
 | *Committee URL:* | http://isotc.iso.org/livelink/livelink/open/tc211 & https://www.isotc211.org
 |===
 
@@ -27,7 +26,7 @@ ISO/TC 211 is responsible for the standardization in the field of geographic inf
 
 === 2. Scope
 
-This document defines the terms of reference of the permanent group for the maintenance of ISO/TC 211 ontologies, called hereafter the _Group for Ontology Mantenance_ or _GOM_.
+This document defines the terms of reference of the permanent group for the maintenance of ISO/TC 211 ontologies, called hereafter the _Group for Ontology Maintenance_ or _GOM_.
 
 === 3. Purpose
 
@@ -50,10 +49,10 @@ The convenor of GOM is appointed by ISO/TC 211.
 
 Ex officio members:
 
-- ISO/TC 211 Chair
-- ISO/TC 211 Working Group convenors (e.g., PMG, HMMG, TMG, XMG)
-- ISO/TC 211 Spetial Group convenors (e.g., ISO/TC 211 – OGC JAG, ISO/TC211 – ISO/TC 204)
-- ISO/TC 211 project leaders 
+- ISO/TC211 Chair
+- ISO/TC211 Working Group convenors (e.g., PMG, HMMG, TMG, XMG)
+- ISO/TC211 Spatial Group convenors (e.g., ISO/TC 211 – OGC JAG, ISO/TC211 – ISO/TC 204)
+- ISO/TC211 project leaders
 
 Nominated members:
 
@@ -72,7 +71,7 @@ Decisions shall be made by consensus of the full membership. If a consensus cann
 
 ==== 7. Report
 
-A summary report of GOM activities shall be presented to each ISO/TC 211 plenary.
+A summary report of GOM activities shall be presented to each ISO/TC211 plenary.
 
 ==== 8. Review of the terms of reference
 
