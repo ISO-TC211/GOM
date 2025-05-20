@@ -4,16 +4,32 @@
 
 The Group for Ontology Maintenance (GOM) is an *Advisory Group* of the [International Organization for Standardization (ISO)](https://www.iso.org)'s [Technical Committee 211 (TC 211)](https://committee.iso.org/home/tc211) which focuses on Geographic information/Geomatics.
 
-This repository contains outputs from GOM in the form of [Web ontology Language (OWL)](https://www.w3.org/OWL/) versions of ISO's 19* family of standards.
+This repository contains some technical outputs from GOM and meeting notes.
 
-Published output from GOM is provided at https://def.isotc211.org/ .
+GOM maintains the majority of its technical outputs in other ISO/TC211 version control repositories:
 
-* list other GOM-maintend repos
-    * codelist vocabularies
-    * def.isotc211.org namespace / website
+* [codelist vocabularies](https://github.com/ISO-TC211/codelist-vocabs)
+    * 19* series standard's codelists extracted from XML into Semantic Web form
+* [def.isotc211.org namespace / website source](https://github.com/ISO-TC211/def-isotc211.github.io/)
+    * source code for the https://def.isotc211.org/ website, including namespace redirect
 
-## Experimental works
-The folder [experimental/](experimental/) contains alternate forms of TC211 ontology content extracted from standards' ontologies to test potential delivery mechanisms.
+> [!NOTE] 
+> All of GOM's published output can be accessed from the ICO/TC211 Semantic Web webpage: https://def.isotc211.org/ .
+
+## Repository content
+
+The folders of this repository contain the following:
+
+* `GOM_Technologies`
+    * an [Enterprise Architect](https://sparxsystems.com/) script developed by GOm to create OWL ontologies from XMI file
+* `isotc211_GOM_harmonizedOntology`
+    * ontology content extracted from 19* standards' harmonised models' XMI files
+* `meetings`
+    * GOM meeting minutes
+* `standards-assessment`
+    * GOM's outputs fo standards assessment processes
+    * note that so far, as of May 2025, this is test output only
+
 
 ## License
 The content for this repository is not licensed for use independently of the standards that contain their sources.
@@ -27,7 +43,6 @@ The following persons are the contact points for this GOM content and GOM work i
 *GOM Convenor*                           
 ISO Technical Committee 211             
 <nick@kurrawong.ai> 
-
 
 **Ivana Ivánová**                     
 *GOM Convenor*                           
