@@ -1,3 +1,0 @@
-pyshacl
-httpx
-pyshacl

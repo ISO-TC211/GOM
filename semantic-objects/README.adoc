@@ -1,3 +1,0 @@
-= GOM's Semantic Objects
-
-GOM's Semantic Objects: vocabularies and ontologies
