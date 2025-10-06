@@ -1,0 +1,83 @@
+= November 2025 Plenary 
+
+== Agenda
+
+This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
+
+=== Agenda Outline
+
+. *Welcome*
+. *Reminder of the purpose of GOM*
+. *Standards' Semantic Web review progress*
+. *Standards' Semantic Web resource publication progress*
+. *Discussion*
+. *Next Meeting*
+
+=== Agenda Details
+
+. *Welcome*
+.. Reminder of https://www.iso.org/publication/PUB100397.html[ISO Code of Conduct]
+.. Meeting protocols
+.. Roll call
+... (re)introduction of co-chairs: Ivana & Nicholas
+.. How to contribute/amend Agenda/Minutes
+.. Start Recording
+. *Reminder of the purpose of GOM*
+. *Standards' Semantic Web review progress*
+.. review process has been a placholder for the last 12 months
+.. Standards reviewed: 
+... see https://github.com/ISO-TC211/GOM/tree/master/standards-assessment/reports
+... none
+.. process to start becoming "real" now that TC/211 Semantic Web publishing facility is available
+.... commencing with 19115 revision: aiming to involve GOM earlier in the development process
+.. ontology publication next step
+... 19115 to be evaluated for automated ontology generation
+... GOM's original ontology generation scripts will need to be revised
+. *Standards' Semantic Web resource publication progress*
+.. ISO Codelists now published in a production system
+... see http://def.isotc211.org/codelists/
+... first ~50 published - the ones test published previously
+... Persistent IRIs under test place, e.g. http://def.isotc211.org/19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode
+.... redirects in place from `def.isotc211.org` namespace location to https://defs.opengis.net/prez/[OGC Rainbow Infrastructure] using GOM website established in 2018
+..... long-term redirection infrastructure needed
+.... IRI consistency check with `schema.isotc211.org` etc needed
+... codelist content managed as a Knowledge Graph catalogue at https://github.com/ISO-TC211/codelist-vocabs
+
+
+. *Discussion*
+
+_These points are not locked in and we want input, that's why they are listed here in "Discussion"._
+
+.. *Standards' Semantic Web review progress*
+... start to require codelist publication as vocabularies
+... Formalise Enumeration v. codelist publication
+.... GOM can assist in vocabulary creation
+... test the review of 19115 revision's UML for ontology generation
+.... test publish ontologies via Rainbow - as below
+.. *Standards' Semantic Web resource publication progress*
+... Immediate Next Steps
+.... ISO branding to be applied
+.... remaining ~150 codelists to be published by next meeting
+.... IRI pattern finalised - for `defs.isotc211.org/*`
+.... full Linked Data redirects to be implemented, not just HTML
+..... we will ask OGC to reuse their redirection infrastructure
+.... allow additional formats - e.g. Genericode
+.... Test ontology publication
+..... soon to be technically supported by the Rainbow
+..... joint ISO/OGC test with GeoSPARQL
+... Medium-term Steps
+.... Start revising previously auto-generated ontologies
+..... use updated IRI patterns
+..... looking for any anti-patterns
+...... e.g. extraction of already-published codelists
+.... Codelist governance
+..... all standards editors need to be involved
+..... Reg. Main. Group & GOM need to work together maintaining ongoing SemWeb publication
+... Longer-term Steps
+.... Consider codelists v. total potential vocabulary scope
+.... Removal of pirate publications e.g.:
+..... Can we meet all their delivery needs?
+...... SKOS form: https://linked.data.gov.au/def/maintenancefrequencycode
+...... from our XML: https://wiki.esipfed.org/ISO_19115_and_19115-2_CodeList_Dictionaries
+...... extended form: https://linked.data.gov.au/def/data-roles
+...... ontology hack: https://linked.data.gov.au/def/iso-19157-data-quality-dimension - ontology publication issue
