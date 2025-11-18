@@ -23,6 +23,29 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 ... (re)introduction of co-chairs: Ivana & Nicholas
 .. How to contribute/amend Agenda/Minutes
 .. Start Recording
+. *Standards' Semantic Web reviews report*
+.. No standards assessed since last plenary
+.. Coming up: 19115 & GeosPARQL
+. *Codelist vocabularies report*
 
+==== Progress to date
 
+* ~50 codelists are now publish in production on the OGC's Rainbow at https://defs.opengis.net/prez/catalogs/ogc-cat:hosted/col/defisotc211org:codesets
+* PIDs have been allocated using `def.isotc211.org`, e.g. https://def.isotc211.org/common/DateTypeCode
+* all new 19115 codelists and some older codelists have been publised in the `/common/` register
+* legacy registers of `/CI/`, `/DS/`, `/MD/`, `/RE/` & `/SV/` retained for now
+** detailed codelist versioning is implemented
+** we propose to deprecate legacy registers
+* codelists/sets are linked to their defining standards via a https://defs.opengis.net/prez/object?iri=https://def.isotc211.org/common/standard[supplementary vocab of standards]
+** this is the only non-codelist/set vocab so far implemented
+* Extended `Role Codes` allow for the indicateion of `original` & `addition` variants of `stable`
+** to show stable terms as being from the standard `original` or additions
+* several voccabs - from 19137 - are SKOS+ vocabs, indicating OWL classing
+** e.g. https://defs.opengis.net/prez/object?uri=https://def.isotc211.org/common/ValueStructure/bag[ValueStructure]
 
+Initial production publication is now complete.
+
+==== Next steps
+
+1. completion of publication all 19* codelists
+2. 
