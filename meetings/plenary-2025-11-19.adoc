@@ -80,7 +80,7 @@ Initial production publication is now complete.
 ** will aim for automation from HM, after testing manual creations
 *** will implement UML as per the HM in documentation
 
-It is feasable to implement _all_ 19* models by next plenary.
+It is feasable to implement _all_ 19* models by next plenary, now that publication infrastructuer is in place - from codelists.
 
 ===== Lessons from renewed ont. generation
 
@@ -94,7 +94,7 @@ From a test generation of 19157-1 ontology, we believe we are mostly still in li
 ** like implemented for codelists
 ** still using `def.isotc211.org`
 
-We will demo allthese things for 19157-1 before next plenary
+We will demo all these things for 19157-1 before next plenary
 
 ==== 5. Proposed GeoSPARQL standard review
 
