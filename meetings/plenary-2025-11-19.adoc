@@ -76,6 +76,8 @@ Initial production publication is now complete.
 ** will aim for automation from HM, after testing manual creations
 *** will implement UML as per the HM in documentation
 
+It is feasable to implement _all_ 19* models by next plenary.
+
 ===== Lessons from renewed ont. generation
 
 From a test generation of 19157-1 ontology, we believe we are mostly still in line with issues raised on previous ontology generation process in 2023:
