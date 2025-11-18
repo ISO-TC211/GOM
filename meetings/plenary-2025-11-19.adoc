@@ -47,6 +47,10 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 ** to show stable terms as being from the standard `original` or additions
 * several voccabs - from 19137 - are SKOS+ vocabs, indicating OWL classing
 ** e.g. https://defs.opengis.net/prez/object?uri=https://def.isotc211.org/common/ValueStructure/bag[ValueStructure]
+* technical content management procedures almost complete
+** sync from managed repo to Rainbow ready for complete automation - little OGC effort
+** validation & annotation built in
+** follow vocab procedures elsewhere
 
 Initial production publication is now complete.
 
