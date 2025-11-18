@@ -34,11 +34,12 @@ This Agenda will be lead by the GOM convenors with a brief discussion on each po
 * PIDs have been allocated using `def.isotc211.org`, e.g. https://def.isotc211.org/common/DateTypeCode
 * all new 19115 codelists and some older codelists have been publised in the `/common/` register
 * legacy registers of `/CI/`, `/DS/`, `/MD/`, `/RE/` & `/SV/` retained for now
-** detailed codelist versioning is implemented
+** detailed codelist versioning is implemented to handle legacy & new
+** e.g. `isDefinedBy` for terms' defining vocab v. `inScheme` for reuse
 ** we propose to deprecate legacy registers
 * codelists/sets are linked to their defining standards via a https://defs.opengis.net/prez/object?iri=https://def.isotc211.org/common/standard[supplementary vocab of standards]
 ** this is the only non-codelist/set vocab so far implemented
-* Extended `Role Codes` allow for the indicateion of `original` & `addition` variants of `stable`
+* Extended https://def.isotc211.org/RE/ItemStatus[Register Item Status Codes] allow for the indicateion of `original` & `addition` variants of `stable`
 ** to show stable terms as being from the standard `original` or additions
 * several voccabs - from 19137 - are SKOS+ vocabs, indicating OWL classing
 ** e.g. https://defs.opengis.net/prez/object?uri=https://def.isotc211.org/common/ValueStructure/bag[ValueStructure]
@@ -48,4 +49,17 @@ Initial production publication is now complete.
 ==== Next steps
 
 1. completion of publication all 19* codelists
-2. 
+2. outreach to codelist users
+** encourage users to move to official versions and provide feedback
+** guage apetite for extended ontology and alternate forms
+3. how to use
+** documentation - on patterns used for versioning, statuses, codelist extension
+** training - within TC & beyond. Engagement with WGs and individuals to best use the vocabs
+4. exercise governance
+** probably for 19115 codesets
+5. demo of vocabs within ontology context - next item
+6. demo of further SKOS+ vocabs
+** to demo creeping semantics
+** inc. https://defs-hosted.opengis.net/prez-hosted/catalogs/hosted:iso-19157-3/collections/ns10:qualityMeasure[19157 already test published on the Rainbow 'Hosted']
+
+4. *Ontology production proposal*
