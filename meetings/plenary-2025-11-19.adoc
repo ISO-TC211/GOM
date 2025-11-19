@@ -30,7 +30,7 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 ==== 2. Standards' Semantic Web reviews report
 
 . No new standards assessed since last plenary
-. Coming up: GeosPARQL - see below
+. Coming up: GeoSPARQL - see below
 . Re-review of 19157-* in progress
 
 GOM can now make further recommendations for semantic registers since:
