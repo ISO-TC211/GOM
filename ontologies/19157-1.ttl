@@ -1,0 +1,706 @@
+@prefix : <http://www.semanticweb.org/nick/ontologies/2025/10/untitled-ontology-8/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/nick/ontologies/2025/10/untitled-ontology-8/> .
+
+<http://www.semanticweb.org/nick/ontologies/2025/10/untitled-ontology-8> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://def.isotc211.org/model/19115-1/authority
+<https://def.isotc211.org/model/19115-1/authority> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://def.isotc211.org/model/19115-1/MD_Identifier> ;
+                                                   rdfs:range <https://def.isotc211.org/model/19115-1/CI_Citation> .
+
+
+###  https://def.isotc211.org/model/19115-1/describes
+<https://def.isotc211.org/model/19115-1/describes> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://def.isotc211.org/model/19115-1/MD_Metadata> ;
+                                                   rdfs:range <https://def.isotc211.org/model/19115-1/DS_Resource> .
+
+
+###  https://def.isotc211.org/model/19137-1/evaluationProcedure
+<https://def.isotc211.org/model/19137-1/evaluationProcedure> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <https://def.isotc211.org/model/19157-1/EvaluationMethod> ;
+                                                             rdfs:range <https://def.isotc211.org/model/19115-1/CI_Citation> .
+
+
+###  https://def.isotc211.org/model/19137-1/extendedDescription
+<https://def.isotc211.org/model/19137-1/extendedDescription> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <https://def.isotc211.org/model/19157-1/MeasureDescription> ;
+                                                             rdfs:range <https://def.isotc211.org/model/19115-1/MD_BrowseGraphic> .
+
+
+###  https://def.isotc211.org/model/19137-1/has
+<https://def.isotc211.org/model/19137-1/has> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://def.isotc211.org/model/19115-1/DS_Resource> ;
+                                             rdfs:range <https://def.isotc211.org/model/19115-1/MD_Metadata> .
+
+
+###  https://def.isotc211.org/model/19137-1/onlineResource
+<https://def.isotc211.org/model/19137-1/onlineResource> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> ;
+                                                        rdfs:range <https://def.isotc211.org/model/19115-1/DS_Resource> .
+
+
+###  https://def.isotc211.org/model/19137-1/referenceDoc
+<https://def.isotc211.org/model/19137-1/referenceDoc> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <https://def.isotc211.org/model/19157-1/EvaluationMethod> ;
+                                                      rdfs:range <https://def.isotc211.org/model/19115-1/CI_Citation> .
+
+
+###  https://def.isotc211.org/model/19137-1/reportReference
+<https://def.isotc211.org/model/19137-1/reportReference> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> ;
+                                                         rdfs:range <https://def.isotc211.org/model/19115-1/CI_Citation> .
+
+
+###  https://def.isotc211.org/model/19137-1/resultScope
+<https://def.isotc211.org/model/19137-1/resultScope> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <https://def.isotc211.org/model/19157-1/QualityResult> ;
+                                                     rdfs:range <https://def.isotc211.org/model/19115-1/MD_Scope> .
+
+
+###  https://def.isotc211.org/model/19137-1/value
+<https://def.isotc211.org/model/19137-1/value> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://def.isotc211.org/model/19157-1/QuantatitiveResult> ;
+                                               rdfs:range <https://def.isotc211.org/model/19115-1/Record> .
+
+
+###  https://def.isotc211.org/model/19137-1/valueRecordType
+<https://def.isotc211.org/model/19137-1/valueRecordType> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <https://def.isotc211.org/model/19157-1/QuantatitiveResult> ;
+                                                         rdfs:range <https://def.isotc211.org/model/19103/RecordType> .
+
+
+###  https://def.isotc211.org/model/19137-1/valueUnit
+<https://def.isotc211.org/model/19137-1/valueUnit> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://def.isotc211.org/model/19157-1/QuantatitiveResult> ;
+                                                   rdfs:range <https://def.isotc211.org/model/19137-1/UnitOfMeasure> .
+
+
+###  https://def.isotc211.org/model/19137-1/citation
+<https://def.isotc211.org/model/19137-1/citation> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <https://def.isotc211.org/model/19157-1/SourceReference> ;
+                                                  rdfs:range <https://def.isotc211.org/model/19115-1/CI_Citation> .
+
+
+###  https://def.isotc211.org/model/19137-1/dataQualityInfo
+<https://def.isotc211.org/model/19137-1/dataQualityInfo> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://def.isotc211.org/model/19115-1/MD_Metadata> ;
+                                                         rdfs:range <https://def.isotc211.org/model/19157-1/DataQuality> .
+
+
+###  https://def.isotc211.org/model/19137-1/evaluationMethodType
+<https://def.isotc211.org/model/19137-1/evaluationMethodType> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <https://def.isotc211.org/model/19157-1/EvaluationMethod> ;
+                                                              rdfs:range <https://def.isotc211.org/model/19137-1/EvaluationMethodTypeCode> .
+
+
+###  https://def.isotc211.org/model/19137-1/language
+<https://def.isotc211.org/model/19137-1/language> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <https://def.isotc211.org/model/19157-1/FormulaType> ;
+                                                  rdfs:range <https://def.isotc211.org/model/19157-1/FormulaLanguage> .
+
+
+###  https://def.isotc211.org/model/19137-1/measureIdentification
+<https://def.isotc211.org/model/19137-1/measureIdentification> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <https://def.isotc211.org/model/19157-1/MeasureReference> ;
+                                                               rdfs:range <https://def.isotc211.org/model/19115-1/MD_Identifier> .
+
+
+###  https://def.isotc211.org/model/19137-1/qualityElement
+<https://def.isotc211.org/model/19137-1/qualityElement> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://def.isotc211.org/model/19157-1/DataQuality> ;
+                                                        rdfs:range <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19137-1/report2
+<https://def.isotc211.org/model/19137-1/report2> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://def.isotc211.org/model/19115-1/DS_Resource> ;
+                                                 rdfs:range <https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> .
+
+
+###  https://def.isotc211.org/model/19157-1/derivedElement
+<https://def.isotc211.org/model/19157-1/derivedElement> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://def.isotc211.org/model/19157-1/QualityElement> ;
+                                                        rdfs:range <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/description
+<https://def.isotc211.org/model/19157-1/description> rdf:type owl:ObjectProperty ;
+                                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                                     rdfs:domain <https://def.isotc211.org/model/19157-1/QualityMeasure> ;
+                                                     rdfs:range <https://def.isotc211.org/model/19157-1/MeasureDescription> .
+
+
+###  https://def.isotc211.org/model/19157-1/elementName
+<https://def.isotc211.org/model/19157-1/elementName> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <https://def.isotc211.org/model/19157-1/QualityMeasure> ;
+                                                     rdfs:range <https://def.isotc211.org/model/19157-1/TypeName> .
+
+
+###  https://def.isotc211.org/model/19157-1/elementReport
+<https://def.isotc211.org/model/19157-1/elementReport> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> ;
+                                                       rdfs:range <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/evaluationMethod
+<https://def.isotc211.org/model/19157-1/evaluationMethod> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://def.isotc211.org/model/19157-1/QualityElement> ;
+                                                          rdfs:range <https://def.isotc211.org/model/19157-1/EvaluationMethod> .
+
+
+###  https://def.isotc211.org/model/19157-1/example
+<https://def.isotc211.org/model/19157-1/example> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf owl:topObjectProperty ;
+                                                 rdfs:domain <https://def.isotc211.org/model/19157-1/QualityMeasure> ;
+                                                 rdfs:range <https://def.isotc211.org/model/19157-1/MeasureDescription> .
+
+
+###  https://def.isotc211.org/model/19157-1/formula
+<https://def.isotc211.org/model/19157-1/formula> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://def.isotc211.org/model/19157-1/MeasureDescription> ;
+                                                 rdfs:range <https://def.isotc211.org/model/19157-1/FormulaType> .
+
+
+###  https://def.isotc211.org/model/19157-1/measure
+<https://def.isotc211.org/model/19157-1/measure> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://def.isotc211.org/model/19157-1/QualityElement> ;
+                                                 rdfs:range <https://def.isotc211.org/model/19157-1/MeasureReference> .
+
+
+###  https://def.isotc211.org/model/19157-1/measureIdentifier
+<https://def.isotc211.org/model/19157-1/measureIdentifier> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <https://def.isotc211.org/model/19157-1/QualityMeasure> ;
+                                                           rdfs:range <https://def.isotc211.org/model/19115-1/MD_Identifier> .
+
+
+###  https://def.isotc211.org/model/19157-1/qualityEvaluationReport
+<https://def.isotc211.org/model/19157-1/qualityEvaluationReport> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <https://def.isotc211.org/model/19157-1/DataQuality> ;
+                                                                 rdfs:range <https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> .
+
+
+###  https://def.isotc211.org/model/19157-1/relatedQualityElement
+<https://def.isotc211.org/model/19157-1/relatedQualityElement> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <https://def.isotc211.org/model/19157-1/Metaquality> ;
+                                                               rdfs:range <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/report
+<https://def.isotc211.org/model/19157-1/report> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://def.isotc211.org/model/19157-1/DataQuality> ;
+                                                rdfs:range <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/result
+<https://def.isotc211.org/model/19157-1/result> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://def.isotc211.org/model/19157-1/QualityElement> ;
+                                                rdfs:range <https://def.isotc211.org/model/19157-1/QualityResult> .
+
+
+###  https://def.isotc211.org/model/19157-1/scope
+<https://def.isotc211.org/model/19157-1/scope> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                               rdfs:domain <https://def.isotc211.org/model/19157-1/DataQuality> ;
+                                               rdfs:range <https://def.isotc211.org/model/19115-1/MD_Scope> .
+
+
+###  https://def.isotc211.org/model/19157-1/spatialRepresentationType
+<https://def.isotc211.org/model/19157-1/spatialRepresentationType> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <https://def.isotc211.org/model/19157-1/CoverageResult> ;
+                                                                   rdfs:range <https://def.isotc211.org/model/19157-1/MD_SpatialRepresentationTypeCode> .
+
+
+###  https://def.isotc211.org/model/19157-1/specification
+<https://def.isotc211.org/model/19157-1/specification> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://def.isotc211.org/model/19157-1/QuantatitiveResult> ;
+                                                       rdfs:range <https://def.isotc211.org/model/19115-1/CI_Citation> .
+
+
+###  https://def.isotc211.org/model/19157-1/valueStructure
+<https://def.isotc211.org/model/19157-1/valueStructure> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain [ rdf:type owl:Class ;
+                                                                      owl:unionOf ( <https://def.isotc211.org/model/19157-1/MeasureParameter>
+                                                                                    <https://def.isotc211.org/model/19157-1/QualityMeasure>
+                                                                                  )
+                                                                    ] ;
+                                                        rdfs:range <https://def.isotc211.org/model/19157-1/ValueStructure> .
+
+
+###  https://def.isotc211.org/model/19157-1/valueType
+<https://def.isotc211.org/model/19157-1/valueType> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( <https://def.isotc211.org/model/19157-1/BasicMeasure>
+                                                                               <https://def.isotc211.org/model/19157-1/MeasureParameter>
+                                                                               <https://def.isotc211.org/model/19157-1/QualityMeasure>
+                                                                             )
+                                                               ] ;
+                                                   rdfs:range <https://def.isotc211.org/model/19157-1/TypeName> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain <https://def.isotc211.org/model/19157-1/MeasureDescription> ;
+                    rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19115-1/code
+<https://def.isotc211.org/model/19115-1/code> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://def.isotc211.org/model/19115-1/MD_Identifier> ;
+                                              rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19115-1/codeSpace
+<https://def.isotc211.org/model/19115-1/codeSpace> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <https://def.isotc211.org/model/19115-1/MD_Identifier> ;
+                                                   rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/dateTime
+<https://def.isotc211.org/model/19137-1/dateTime> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                  rdfs:domain [ rdf:type owl:Class ;
+                                                                owl:unionOf ( <https://def.isotc211.org/model/19157-1/EvaluationMethod>
+                                                                              <https://def.isotc211.org/model/19157-1/QualityResult>
+                                                                            )
+                                                              ] ;
+                                                  rdfs:range xsd:dateTime .
+
+
+###  https://def.isotc211.org/model/19137-1/deductiveSource
+<https://def.isotc211.org/model/19137-1/deductiveSource> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://def.isotc211.org/model/19157-1/EvaluationMethod> ;
+                                                         rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19115-1/description
+<https://def.isotc211.org/model/19115-1/description> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://def.isotc211.org/model/19115-1/MD_Identifier> ;
+                                                     rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19115-1/version
+<https://def.isotc211.org/model/19115-1/version> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://def.isotc211.org/model/19115-1/MD_Identifier> ;
+                                                 rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/abstract
+<https://def.isotc211.org/model/19137-1/abstract> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> ;
+                                                  rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/evaluationMethodDescription
+<https://def.isotc211.org/model/19137-1/evaluationMethodDescription> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain <https://def.isotc211.org/model/19157-1/EvaluationMethod> ;
+                                                                     rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/key
+<https://def.isotc211.org/model/19137-1/key> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://def.isotc211.org/model/19157-1/FormulaType> ;
+                                             rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/languageVersion
+<https://def.isotc211.org/model/19137-1/languageVersion> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://def.isotc211.org/model/19157-1/FormulaType> ;
+                                                         rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/lotDescription
+<https://def.isotc211.org/model/19137-1/lotDescription> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://def.isotc211.org/model/19157-1/SampleBasedInspection> ;
+                                                        rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/mathematicalFormula
+<https://def.isotc211.org/model/19137-1/mathematicalFormula> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                             rdfs:domain <https://def.isotc211.org/model/19157-1/FormulaType> ;
+                                                             rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/measureDescription
+<https://def.isotc211.org/model/19137-1/measureDescription> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:subPropertyOf owl:topDataProperty ;
+                                                            rdfs:domain <https://def.isotc211.org/model/19157-1/MeasureReference> ;
+                                                            rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/name
+<https://def.isotc211.org/model/19137-1/name> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf owl:topDataProperty ;
+                                              rdfs:domain [ rdf:type owl:Class ;
+                                                            owl:unionOf ( <https://def.isotc211.org/model/19157-1/BasicMeasure>
+                                                                          <https://def.isotc211.org/model/19157-1/EvaluationMethod>
+                                                                          <https://def.isotc211.org/model/19157-1/MeasureParameter>
+                                                                          <https://def.isotc211.org/model/19157-1/QualityMeasure>
+                                                                        )
+                                                          ] ;
+                                              rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/nameOfMeasure
+<https://def.isotc211.org/model/19137-1/nameOfMeasure> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                                       rdfs:domain <https://def.isotc211.org/model/19157-1/MeasureReference> ;
+                                                       rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/qualityEvaluationReportDetails
+<https://def.isotc211.org/model/19137-1/qualityEvaluationReportDetails> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> ;
+                                                                        rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/samplingRatio
+<https://def.isotc211.org/model/19137-1/samplingRatio> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://def.isotc211.org/model/19157-1/SampleBasedInspection> ;
+                                                       rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19137-1/samplingScheme
+<https://def.isotc211.org/model/19137-1/samplingScheme> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://def.isotc211.org/model/19157-1/SampleBasedInspection> ;
+                                                        rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19157-1/alias
+<https://def.isotc211.org/model/19157-1/alias> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://def.isotc211.org/model/19157-1/QualityMeasure> ;
+                                               rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19157-1/definition
+<https://def.isotc211.org/model/19157-1/definition> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                                    rdfs:domain [ rdf:type owl:Class ;
+                                                                  owl:unionOf ( <https://def.isotc211.org/model/19157-1/BasicMeasure>
+                                                                                <https://def.isotc211.org/model/19157-1/MeasureParameter>
+                                                                                <https://def.isotc211.org/model/19157-1/QualityMeasure>
+                                                                              )
+                                                                ] ;
+                                                    rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19157-1/explanation
+<https://def.isotc211.org/model/19157-1/explanation> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://def.isotc211.org/model/19157-1/ConformanceResult> ;
+                                                     rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19157-1/pass
+<https://def.isotc211.org/model/19157-1/pass> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://def.isotc211.org/model/19157-1/ConformanceResult> ;
+                                              rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19157-1/statement
+<https://def.isotc211.org/model/19157-1/statement> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <https://def.isotc211.org/model/19157-1/DescriptiveResult> ;
+                                                   rdfs:range xsd:string .
+
+
+###  https://def.isotc211.org/model/19157-1/textDescription
+<https://def.isotc211.org/model/19157-1/textDescription> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19103/RecordType
+<https://def.isotc211.org/model/19103/RecordType> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19115-1/CI_Citation
+<https://def.isotc211.org/model/19115-1/CI_Citation> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19115-1/DS_Resource
+<https://def.isotc211.org/model/19115-1/DS_Resource> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19137-1/EvaluationMethodTypeCode
+<https://def.isotc211.org/model/19137-1/EvaluationMethodTypeCode> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  https://def.isotc211.org/model/19115-1/MD_BrowseGraphic
+<https://def.isotc211.org/model/19115-1/MD_BrowseGraphic> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19115-1/MD_Identifier
+<https://def.isotc211.org/model/19115-1/MD_Identifier> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19115-1/MD_Metadata
+<https://def.isotc211.org/model/19115-1/MD_Metadata> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19115-1/MD_Metdata
+<https://def.isotc211.org/model/19115-1/MD_Metdata> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19115-1/MD_Scope
+<https://def.isotc211.org/model/19115-1/MD_Scope> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19137-1/Record
+<https://def.isotc211.org/model/19137-1/Record> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19137-1/UnitOfMeasure
+<https://def.isotc211.org/model/19137-1/UnitOfMeasure> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/AbsolutePositionalAccuracy
+<https://def.isotc211.org/model/19157-1/AbsolutePositionalAccuracy> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <https://def.isotc211.org/model/19157-1/PositionalAccuracy> .
+
+
+###  https://def.isotc211.org/model/19157-1/AccuracyOfATimeMeasurement
+<https://def.isotc211.org/model/19157-1/AccuracyOfATimeMeasurement> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <https://def.isotc211.org/model/19157-1/TemporalQuality> .
+
+
+###  https://def.isotc211.org/model/19157-1/AggregationDeviation
+<https://def.isotc211.org/model/19157-1/AggregationDeviation> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://def.isotc211.org/model/19157-1/EvaluationMethod> .
+
+
+###  https://def.isotc211.org/model/19157-1/BasicMeasure
+<https://def.isotc211.org/model/19157-1/BasicMeasure> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/Commission
+<https://def.isotc211.org/model/19157-1/Commission> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://def.isotc211.org/model/19157-1/Completeness> .
+
+
+###  https://def.isotc211.org/model/19157-1/Completeness
+<https://def.isotc211.org/model/19157-1/Completeness> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/ConceptualConsistency
+<https://def.isotc211.org/model/19157-1/ConceptualConsistency> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://def.isotc211.org/model/19157-1/LogicalConsistency> .
+
+
+###  https://def.isotc211.org/model/19157-1/Confidence
+<https://def.isotc211.org/model/19157-1/Confidence> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://def.isotc211.org/model/19157-1/Metaquality> .
+
+
+###  https://def.isotc211.org/model/19157-1/ConformanceResult
+<https://def.isotc211.org/model/19157-1/ConformanceResult> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityResult> .
+
+
+###  https://def.isotc211.org/model/19157-1/CoverageResult
+<https://def.isotc211.org/model/19157-1/CoverageResult> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityResult> .
+
+
+###  https://def.isotc211.org/model/19157-1/DataEvaluation
+<https://def.isotc211.org/model/19157-1/DataEvaluation> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://def.isotc211.org/model/19157-1/EvaluationMethod> .
+
+
+###  https://def.isotc211.org/model/19157-1/DataQuality
+<https://def.isotc211.org/model/19157-1/DataQuality> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/DescriptiveResult
+<https://def.isotc211.org/model/19157-1/DescriptiveResult> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityResult> .
+
+
+###  https://def.isotc211.org/model/19157-1/DomainConsistency
+<https://def.isotc211.org/model/19157-1/DomainConsistency> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://def.isotc211.org/model/19157-1/LogicalConsistency> .
+
+
+###  https://def.isotc211.org/model/19157-1/EvaluationMethod
+<https://def.isotc211.org/model/19157-1/EvaluationMethod> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/FormatConsistency
+<https://def.isotc211.org/model/19157-1/FormatConsistency> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://def.isotc211.org/model/19157-1/LogicalConsistency> .
+
+
+###  https://def.isotc211.org/model/19157-1/FormulaLanguage
+<https://def.isotc211.org/model/19157-1/FormulaLanguage> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  https://def.isotc211.org/model/19157-1/FormulaType
+<https://def.isotc211.org/model/19157-1/FormulaType> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/FullInspection
+<https://def.isotc211.org/model/19157-1/FullInspection> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://def.isotc211.org/model/19157-1/DataEvaluation> .
+
+
+###  https://def.isotc211.org/model/19157-1/GriddedDataPositionalAccuracy
+<https://def.isotc211.org/model/19157-1/GriddedDataPositionalAccuracy> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <https://def.isotc211.org/model/19157-1/PositionalAccuracy> .
+
+
+###  https://def.isotc211.org/model/19157-1/Homogeneity
+<https://def.isotc211.org/model/19157-1/Homogeneity> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://def.isotc211.org/model/19157-1/Metaquality> .
+
+
+###  https://def.isotc211.org/model/19157-1/IndirectEvaluation
+<https://def.isotc211.org/model/19157-1/IndirectEvaluation> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://def.isotc211.org/model/19157-1/DataEvaluation> .
+
+
+###  https://def.isotc211.org/model/19157-1/LogicalConsistency
+<https://def.isotc211.org/model/19157-1/LogicalConsistency> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/MD_SpatialRepresentationTypeCode
+<https://def.isotc211.org/model/19157-1/MD_SpatialRepresentationTypeCode> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  https://def.isotc211.org/model/19157-1/MeasureDescription
+<https://def.isotc211.org/model/19157-1/MeasureDescription> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/MeasureParameter
+<https://def.isotc211.org/model/19157-1/MeasureParameter> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/MeasureReference
+<https://def.isotc211.org/model/19157-1/MeasureReference> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/Metaquality
+<https://def.isotc211.org/model/19157-1/Metaquality> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/NonQuantatitiveAttributeCorrectness
+<https://def.isotc211.org/model/19157-1/NonQuantatitiveAttributeCorrectness> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <https://def.isotc211.org/model/19157-1/ThematicQuality> .
+
+
+###  https://def.isotc211.org/model/19157-1/Omission
+<https://def.isotc211.org/model/19157-1/Omission> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://def.isotc211.org/model/19157-1/Completeness> .
+
+
+###  https://def.isotc211.org/model/19157-1/PositionalAccuracy
+<https://def.isotc211.org/model/19157-1/PositionalAccuracy> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/QualityElement
+<https://def.isotc211.org/model/19157-1/QualityElement> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation
+<https://def.isotc211.org/model/19157-1/QualityEvaluationReportInformation> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/QualityMeasure
+<https://def.isotc211.org/model/19157-1/QualityMeasure> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/QualityResult
+<https://def.isotc211.org/model/19157-1/QualityResult> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/QuantatitiveAttributeAccuracy
+<https://def.isotc211.org/model/19157-1/QuantatitiveAttributeAccuracy> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <https://def.isotc211.org/model/19157-1/ThematicQuality> .
+
+
+###  https://def.isotc211.org/model/19157-1/QuantatitiveResult
+<https://def.isotc211.org/model/19157-1/QuantatitiveResult> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityResult> .
+
+
+###  https://def.isotc211.org/model/19157-1/RelativePositionalAccuracy
+<https://def.isotc211.org/model/19157-1/RelativePositionalAccuracy> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <https://def.isotc211.org/model/19157-1/PositionalAccuracy> .
+
+
+###  https://def.isotc211.org/model/19157-1/Representativity
+<https://def.isotc211.org/model/19157-1/Representativity> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://def.isotc211.org/model/19157-1/Metaquality> .
+
+
+###  https://def.isotc211.org/model/19157-1/SampleBasedInspection
+<https://def.isotc211.org/model/19157-1/SampleBasedInspection> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://def.isotc211.org/model/19157-1/DataEvaluation> .
+
+
+###  https://def.isotc211.org/model/19157-1/SourceReference
+<https://def.isotc211.org/model/19157-1/SourceReference> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/TemporalConsistency
+<https://def.isotc211.org/model/19157-1/TemporalConsistency> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://def.isotc211.org/model/19157-1/TemporalQuality> .
+
+
+###  https://def.isotc211.org/model/19157-1/TemporalQuality
+<https://def.isotc211.org/model/19157-1/TemporalQuality> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/TemporalValidity
+<https://def.isotc211.org/model/19157-1/TemporalValidity> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://def.isotc211.org/model/19157-1/TemporalQuality> .
+
+
+###  https://def.isotc211.org/model/19157-1/ThematicClassificationCorrectness
+<https://def.isotc211.org/model/19157-1/ThematicClassificationCorrectness> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <https://def.isotc211.org/model/19157-1/ThematicQuality> .
+
+
+###  https://def.isotc211.org/model/19157-1/ThematicQuality
+<https://def.isotc211.org/model/19157-1/ThematicQuality> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://def.isotc211.org/model/19157-1/QualityElement> .
+
+
+###  https://def.isotc211.org/model/19157-1/TopologicalConsistency
+<https://def.isotc211.org/model/19157-1/TopologicalConsistency> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://def.isotc211.org/model/19157-1/LogicalConsistency> .
+
+
+###  https://def.isotc211.org/model/19157-1/TypeName
+<https://def.isotc211.org/model/19157-1/TypeName> rdf:type owl:Class .
+
+
+###  https://def.isotc211.org/model/19157-1/ValueStructure
+<https://def.isotc211.org/model/19157-1/ValueStructure> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
