@@ -4,6 +4,8 @@
 
 This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
 
+It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-2025-11-19.adoc
+
 === Agenda Outline
 
 . *Welcome*
@@ -91,10 +93,11 @@ Initial production publication is now complete.
 
 1. implement a better PID redirection mecahnism for `def.isotc211.org`
 2. completion of publication all 19* codelists
+** investigate technical delivery options - Genericode, XML etc.
 3. outreach to codelist users
 ** encourage users to move to official versions and provide feedback
-** guage apetite for extended ontology and alternate forms
-4. how to use
+** gauge appetite for extended ontology and alternate forms
+4. how to use help
 ** documentation - on patterns used for versioning, statuses, codelist extension
 ** training - within TC & beyond. Engagement with WGs and individuals to best use the vocabs
 5. exercise governance
@@ -164,3 +167,5 @@ Some implications are not yet clear:
 ==== 7. Next Meeting
 
 May Plenary?
+
+Nick will not be able to attend in person.
