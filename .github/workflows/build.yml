@@ -29,16 +29,6 @@ jobs:
         # process all *.adoc files in standards-assessment/reports/
         find standards-assessment/reports/ -name '*.adoc' | while read file; do asciidoctor $file -o "docs/$(sed "s/.adoc/.html/" <<< "$file")"; done
         mv docs/standards-assessment/reports/readme.html docs/standards-assessment/reports/index.html
-
-        # vocab-profile
-        mkdir -p docs/vocab-profile/images        
-        asciidoctor experimental/vocab-profile/readme.adoc -o docs/vocab-profile/index.html
-        asciidoctor experimental/vocab-profile/specification.adoc -o docs/vocab-profile/specification.html
-        asciidoctor experimental/vocab-profile/statuses.adoc -o docs/vocab-profile/statuses.html
-        echo "Replace img links in vocab-profile specification HTML"
-        sed -i 's#img src="#img src="https://iso-tc211.github.io/GOM/vocab-profile/#' docs/vocab-profile/specification.html
-        cp -r experimental/vocab-profile/images docs/vocab-profile/images
-        cp experimental/vocab-profile/*.ttl docs/vocab-profile
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
