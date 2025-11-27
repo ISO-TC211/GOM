@@ -62,10 +62,10 @@ The sections in this technical specification relevant for semantic assessment ar
 | *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *5 Coverages* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
 | *6 Multi-point coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
-| *7 General grid coverages | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *7 General grid coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
 | *8 Mulit-curve coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
 | *9 Mulit-surface coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
-| *Mulit-solid coverages | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *10 Mulit-solid coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
 | *11 Coverage partitionings* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
 | *12 Coverage encodings* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
 | *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
