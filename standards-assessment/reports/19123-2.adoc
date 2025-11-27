@@ -1,0 +1,74 @@
+= GOM Standard Assessment Report
+
+== test-standard-report
+
+== Document Metadata Assessment
+
+[cols="1,8"]
+|===
+| Element | Value
+
+| IRI | allocated: `https://standards.isotc211.org/19123-2/` for the Standard's document, suggested `https://def.isotc211.org/19123/-2/2` for the model and `https://def.isotc211.org/19123/-2/2` for v2 of the model
+| Title |ISO 19123-2 Geographic information — Schema for coverage geometry and functions — Part 2: coverage implementation schema
+| Reviewer(s) | Nicholas Car & Ivana Ivánová
+|===
+
+// _incomplete_... perhaps the metadata required for ConceptSchemes should be required for the Standard
+
+== Section Assessment
+
+=== Determine Document Sections
+
+The sections in this technical specification relevant for semantic assessment are determined to be:
+
+* *2 Normative references*
+** contains a structured bibligraphy, members of which may be referred to by multiple Standards
+* *3 Terms and definitions*
+** these form a vocabulary and vocabulary elements may be used in multiple Standards
+* *4 Conformance*
+** the lsit of conformance classes here form vocabularies
+* *5 Coverages*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *6 Multi-point coverages*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *7 General grid coverages*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *8 Mulit-curve coverages*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *9 Multi-surface coverages*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *10 Multi-solid coverages*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *11 Coverage partitionings*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *12 coverage encodings*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *Annex A - Abstract test suites*
+** contains a vocabulary of tests
+* *Annex B - Rectified and referenceable grid coverages*
+** the list of Conformance classes, Requirements Recommendations & Permissions given here form vocabularies
+* *Bibliography*
+** contains a structured bibliography, members of which may be referred to by multiple Standards
+
+=== Recommendations per section
+
+|===
+| Section | Recommendation | Next action for this Standard
+
+| *2 Normative references* 
+| A Semantic Web form of an ISO TC 211 bibliographic references library should be created and authoratitive references to elements within it used instead of textual references
+| None: pending a TC 211 references library
+| *3 Terms and definitions* | Placement within GeoLexica | Ensure item noted in TMG Review
+| *4 Conformance* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *5 Coverages* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *6 Multi-point coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *7 General grid coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *8 Mulit-curve coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *9 Mulit-surface coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *10 Mulit-solid coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *11 Coverage partitionings* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *12 Coverage encodings* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *Annex A - Abstract test suites* | Establish SW vocabularies for these elements | Talk with GOM regarding this new form of vocabulary
+| *Annex B - Rectified and referenceable grid coverages* | Auto-generation of OWL model form; Establish SW vocabularies for these elements | Confirm GOM can generate and consult GOM to form vocabularies
+| *Bibliography* | As per *2 Normative references* | -
+|===
