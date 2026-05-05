@@ -36,11 +36,11 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 
 ===== Re-review of 19157-*
 
-_These points were presented the same in Dec 2025 but will be revisited briefly here, unchanged, for discussion_
+_These points were presented the same in Nov 2025 but will be revisited briefly here, unchanged, for discussion_
 
 19157-* ontology in progress
 
-19157 re-review is motivated by 19157-3's register of complex objects preset on the Rainbow - https://defs-hosted.opengis.net/prez-hosted/catalogs/hosted:iso-19157-3/collections/ns10:qualityMeasure[ISO19157-3 quality measures] - and Ivana's involvement.
+19157 re-review is motivated by 19157-3's register of complex objects presnted on the Rainbow - https://defs-hosted.opengis.net/prez-hosted/catalogs/hosted:iso-19157-3/collections/ns10:qualityMeasure[ISO19157-3 quality measures] - and Ivana's involvement.
 
 *RECOMMENDATION*: Extend the skill of existing codelists to remove need for custom information. Here, use a new _Collection_ within https://def.isotc211.org/RE/ItemStatus[Registered Item Status Codes] to contain 19157-3 allowed statuses, rather than custom statuses
 
@@ -58,15 +58,15 @@ _These points were presented the same in Dec 2025 but will be revisited briefly 
 
 image::files/2025-11-19/rainbow-codelists.png[width="50%"]
 
-* ~50 codelists are now publish in production on the OGC's Rainbow at https://defs.opengis.net/prez/catalogs/ogc-cat:hosted/col/defisotc211org:codesets
+* ~50 codelists are now publish in production on the OGC RAINBOW at https://defs.opengis.net/prez/catalogs/ogc-cat:hosted/col/defisotc211org:codesets
 * PIDs have been allocated using `def.isotc211.org`
 ** note we are using `/codeset/` as the type register for Code Sets, not the originally proposed `/common/` which has less obvious meaning, e.g. https://def.isotc211.org/codeset/DateTypeCode
-** PID redirection mechanism improved since December
+** PID redirection mechanism improved since NOvember
 *** as needed
 *** a full proxy server is in place for `def.isotc211.org`
 ** legacy registers (`/CI/`, `/DS/` etc.) deprecated
 * technical content management procedures almost complete
-** sync from managed repo to Defs Server still in place as per Dec but OGC not yet automated
+** sync from managed repo to Defs Server still in place as per Nov but OGC not yet automated
 
 Initial _technical_ production publication is now complete: we are awaiting on-going governance arrangements.
 
@@ -85,7 +85,7 @@ Initial _technical_ production publication is now complete: we are awaiting on-g
 4. demo of further SKOS+ vocabs*
 ** to demo creeping semantics
 
-&nbsp;* items carried over from December 2025 Plenary
+&nbsp;* items carried over from November 2025 Plenary
 
 ==== 4. Code sets Interim Governance plan
 
@@ -123,7 +123,7 @@ image::files/2026-05-05/19135-19160.png[width="90%"]
 plus any volunteers
 | Jun -> Sep | Harmonised governance discussion with HMMG, RMG
 | Oct -> Nov | Governance testing
-| Dec | Plenary presentation
+| Nov | Plenary presentation
 |===
 
 ==== 5. Ontology production progress
@@ -131,7 +131,7 @@ plus any volunteers
 ===== Status
 
 * production of a "Harmonised Ontology" has started
-** as proposed in Dec 2025 Plenary
+** as proposed in Nov 2025 Plenary
 ** picking up and extending on 2020 work by Jean Brodeur
 
 ===== What's different now
@@ -179,7 +179,7 @@ e.g. W3C PROV for provenance, perhaps schema.org
 | Jun -> Sep | Ontology style consultation
 | Jun -> Sep | Spatial value assessment publication
 | Oct -> Nov | Ontology testing
-| Dec | Plenary presentation
+| Nov | Plenary presentation
 | Dec+ | Governance arrangements +
 building on Code Sets
 |===
@@ -219,4 +219,4 @@ and related to above, in general:
 
 ==== 8. Next Meeting
 
-December Plenary
+Nov/Dec Plenary
