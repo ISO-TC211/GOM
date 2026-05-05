@@ -133,8 +133,9 @@ image::files/2026-05-05/19135-19160.png[width="90%"]
 ** higher quality output
 ** Team Lead: Nicholas Car
 ** Consultants:
+*** TC211: Ivana Ivanova (RMG), Kut Jetland (HM)
 *** Ontology: Profs Tim French (U Western Australia)
-*** ISO//Ont: Prof Melinda Hodkiewicz (ISO/TC 251)
+*** ISO/Ont: Prof Melinda Hodkiewicz (ISO/TC 251)
 *** Spatial: Prof Matt Duckham (RMIT)
 ** Students
 *** Adib Rohani - ontology production assistance & verification
