@@ -29,9 +29,8 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 
 ==== 2. Standards' Semantic Web reviews report
 
-. New standards assessed since last plenary:...tbc
-. Coming up: GeoSPARQL - see below
-. 19157-* ontology in progress
+. New standards assessed since last plenary: ISO/DTR 19115-4, ISO/FDIS 19127, ISO/FDIS 19157-3, ISO/DIS 19163-2, ISO/DTS 124-4, ISO/DTS 19123-4, ISO/DIS 19186-1, ISO/DIS 19161-2
+. Standards assessment procedures are being reviewed; revised procedures to be presented at next plenary
 
 GOM can now make further recommendations for semantic registers since:
 
@@ -42,6 +41,7 @@ GOM can now make further recommendations for semantic registers since:
 ** see *4.* below
 
 ===== Re-review of 19157-*
+19157-* ontology in progress
 
 19157 re-review is motivated by 19157-3's register of complex objects preset on the Rainbow - https://defs-hosted.opengis.net/prez-hosted/catalogs/hosted:iso-19157-3/collections/ns10:qualityMeasure[ISO19157-3 quality measures] - and Ivana's involvement.
 
