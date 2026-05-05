@@ -11,6 +11,7 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 . *Welcome*
 . *Standards' Semantic Web reviews report*
 . *Code sets publication report*
+. *Code sets Interim Governance plan*
 . *Ontology production proposal*
 . *Proposed GeoSPARQL standard review*
 . *Discussion*
@@ -30,17 +31,13 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 ==== 2. Standards' Semantic Web reviews report
 
 . New standards assessed since last plenary: ISO/DTR 19115-4, ISO/FDIS 19127, ISO/FDIS 19157-3, ISO/DIS 19163-2, ISO/DTS 124-4, ISO/DTS 19123-4, ISO/DIS 19186-1, ISO/DIS 19161-2
-. Standards assessment procedures are being reviewed; revised procedures to be presented at next plenary
-
-GOM can now make further recommendations for semantic registers since:
-
-. the code sets vocabs are live
-. the Rainbow can delivery arbitrary semantic content
-** not restricted to SKOS
-. ontologies may be live soon
-** see *4.* below
+. Standards assessment procedures are being reviewed in light of expected ontology production and existing code set publication
+** new, experimental procedures to be presented at next plenary
 
 ===== Re-review of 19157-*
+
+_These points were presented the same in Dec 2025 but will be revisited briefly here, unchanged, for discussion_
+
 19157-* ontology in progress
 
 19157 re-review is motivated by 19157-3's register of complex objects preset on the Rainbow - https://defs-hosted.opengis.net/prez-hosted/catalogs/hosted:iso-19157-3/collections/ns10:qualityMeasure[ISO19157-3 quality measures] - and Ivana's involvement.
@@ -55,13 +52,6 @@ GOM can now make further recommendations for semantic registers since:
 * see SKOS+ reference below
 * will need to work with Register-involved maintenance AGs
 
-===== Next Steps
-
-. Formulate a new set of review points
-** since we have new possibilities and as prototyped for 19157.
-. Produce a new review report for 19157-*
-. Re-reun new review for ??
-
 ==== 3. Code sets vocabularies report + CIB result
 
 ===== Progress to date
@@ -69,65 +59,63 @@ GOM can now make further recommendations for semantic registers since:
 image::files/2025-11-19/rainbow-codelists.png[width="50%"]
 
 * ~50 codelists are now publish in production on the OGC's Rainbow at https://defs.opengis.net/prez/catalogs/ogc-cat:hosted/col/defisotc211org:codesets
-* PIDs have been allocated using `def.isotc211.org`, e.g. https://def.isotc211.org/common/DateTypeCode
-** PID redirection mechanism needs improvement
+* PIDs have been allocated using `def.isotc211.org`
+** note we are using `/codeset/` as the type register for Code Sets, not the originally proposed `/common/` which has less obvious meaning, e.g. https://def.isotc211.org/codeset/DateTypeCode
+** PID redirection mechanism improved since December
+*** as needed
+*** a full proxy server is in place for `def.isotc211.org`
+** legacy registers (`/CI/`, `/DS/` etc.) deprecated
 * technical content management procedures almost complete
-** sync from managed repo to Rainbow ready for complete automation - little OGC effort
-** validation & annotation built in
-** follow vocab procedures elsewhere
+** sync from managed repo to Defs Server still in place as per Dec but OGC not yet automated
 
-Manifest-based content management:
-
-image::files/2025-11-19/manifest-content.png[width="25%"]
-
-image::files/2025-11-19/manifest-file.png[width="75%"]
-
-* all new 19115 codelists and some older codelists have been published in the `/common/` register
-* legacy registers of `/CI/`, `/DS/`, `/MD/`, `/RE/` & `/SV/` retained for now
-** detailed codelist versioning is implemented to handle legacy & new
-** e.g. `isDefinedBy` for terms' defining vocab v. `inScheme` for reuse
-** we propose to deprecate legacy registers
-
-[#imgRevisionCode,link="files/2025-11-19/revision-code.png"]
-image::files/2025-11-19/revision-code.png[width="40%"]
-
-* codelists/sets are linked to their defining standards via a https://defs.opengis.net/prez/object?iri=https://def.isotc211.org/common/standard[supplementary vocab of standards]
-** this is the only non-codelist/set vocab so far implemented
-* Extended https://def.isotc211.org/RE/ItemStatus[Register Item Status Codes] allow for the indicateion of `original` & `addition` variants of `stable`
-** to show stable terms as being from the standard `original` or additions
-
-[#imgRevisionCode,link="files/2025-11-19/date-type-code-ifdefinedby.png"]
-image::files/2025-11-19/date-type-code-ifdefinedby.png[width="30%"]
-
-See https://def.isotc211.org/common/DateTypeCode[Date Type Code]
-
-* several vocabs - from 19137 - are SKOS+ vocabs, indicating OWL classing
-** e.g. https://defs.opengis.net/prez/object?uri=https://def.isotc211.org/common/ValueStructure/bag[ValueStructure]
-
-
-Initial production publication is now complete.
+Initial _technical_ production publication is now complete: we are awaiting on-going governance arrangements.
 
 ===== CIB result
 
+??
+
 ===== Next steps
 
-1. implement a better PID redirection mecahnism for `def.isotc211.org`
-2. completion of publication all 19* codelists
-** investigate technical delivery options - Genericode, XML etc.
-3. outreach to codelist users
-** encourage users to move to official versions and provide feedback
-** gauge appetite for extended ontology and alternate forms
-4. how to use help
+1. Implement interim governance procedures
+** see Section 4. below.
+2. how to use help*
 ** documentation - on patterns used for versioning, statuses, codelist extension
 ** training - within TC & beyond. Engagement with WGs and individuals to best use the vocabs
-5. exercise governance
-** probably for 19115 codesets
-6. demo of vocabs within ontology context - next item
-7. demo of further SKOS+ vocabs
+3. demo of vocabs within ontology context - next item*
+4. demo of further SKOS+ vocabs*
 ** to demo creeping semantics
-** inc. https://defs-hosted.opengis.net/prez-hosted/catalogs/hosted:iso-19157-3/collections/ns10:qualityMeasure[19157 already test published on the Rainbow 'Hosted']
 
-==== 4. Ontology production proposal - redux
+&nbsp;* items carried over from December 2025 Plenary
+
+==== 4. Code sets Interim Governance plan
+
+GOM will undertake management of Code Sets as per ISO 19135 by:
+
+* acting as _Register Manager_ for ISO/TC 211 (_Register Owner_)
+* acting as _Registry Manager_
+* acting as interim _Control Body_
+** until a suitable _Control Body_ can be found for each Code Set
+** preferably naming no changes as interim
+* attempting to find/create _Control Bodies_ per standard or other Code Set grouping
+** stating with Code Sets already produced and WGs in progress
+* working with HMMG & RMG
+
+General 19135 roles:
+
+[#img19135,link="files/2026-05-05/19135.png"]
+image::files/2026-05-05/19135.png[width="90%"]
+
+Proposal for 19115 code sets:
+
+[#img19135,link="files/2026-05-05/19135-19115.png"]
+image::files/2026-05-05/19135-19115.png[width="90%"]
+
+Proposal for 19160 code sets:
+
+[#img19135,link="files/2026-05-05/19135-19160.png"]
+image::files/2026-05-05/19135-19160.png[width="90%"]
+
+==== 5. Ontology production proposal - redux
 
 * we propose a renewed attempt to create ontologies for all 19* data models
 ** that have been brought into the Harmonised Model
@@ -138,6 +126,9 @@ Initial production publication is now complete.
 *** will implement UML as per the HM in documentation
 
 It is feasable to implement _all_ 19* models by next plenary, now that publication infrastructuer is in place - from codelists.
+
+* several vocabs - from 19137 - are SKOS+ vocabs, indicating OWL classing
+** e.g. https://defs.opengis.net/prez/object?uri=https://def.isotc211.org/codeset/ValueStructure/bag[ValueStructure]
 
 ===== Lessons from renewed ont. generation
 
@@ -164,7 +155,7 @@ We will demo all these things for 19157-1 before next plenary
 ** with a log of changes from UML -> OWL
 * enhance the 19157-3 QM Register using new ontology content
 
-==== 5. Proposed GeoSPARQL standard review
+==== 6. Proposed GeoSPARQL standard review
 
 image::files/2025-11-19/geosparql-doc.png[width="50%"]
 
@@ -182,8 +173,8 @@ Some implications are not yet clear:
 ** an OGC ongoing body has been determined: Geosemantics DWG
 ** does the TC accept governance of technical assets without involvement?
 
-==== 6. Discussion
+==== 7. Discussion
 
-==== 7. Next Meeting
+==== 8. Next Meeting
 
-May Plenary?
+December Plenary
