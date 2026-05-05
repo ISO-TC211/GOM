@@ -1,23 +1,23 @@
 = AG6 Group on Ontology Maintenance - May 2026 Plenary
 
-== DRAFT Agenda
+== Agenda
 
 This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
 
 It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-2026-05-06.adoc
 
-=== Agenda Outline
+=== Outline
 
 . *Welcome*
 . *Standards' Semantic Web reviews report*
 . *Code sets publication report*
 . *Code sets Interim Governance plan*
-. *Ontology production proposal*
-. *Proposed GeoSPARQL standard review*
+. *Ontology production progress*
+. *GeoSPARQL standard review*
 . *Discussion*
 . *Next Meeting*
 
-=== Agenda Details
+=== Details
 
 ==== 1. Welcome
 
@@ -115,63 +115,93 @@ Proposal for 19160 code sets:
 [#img19135,link="files/2026-05-05/19135-19160.png"]
 image::files/2026-05-05/19135-19160.png[width="90%"]
 
-==== 5. Ontology production proposal - redux
+==== 5. Ontology production progress
 
-* we propose a renewed attempt to create ontologies for all 19* data models
-** that have been brought into the Harmonised Model
-** we will aim for good documentation as well as machine-readable ontologies
-*** publication via the OGC Rainbow too - capability arriving soon
-** we have tested hand-generation of 19157-1
-** will aim for automation from HM, after testing manual creations
-*** will implement UML as per the HM in documentation
+===== Status
 
-It is feasable to implement _all_ 19* models by next plenary, now that publication infrastructuer is in place - from codelists.
+* production of a "Harmonised Ontology" has started
+** as proposed in Dec 2025 Plenary
+** picking up and extending on 2020 work by Jean Brodeur
 
-* several vocabs - from 19137 - are SKOS+ vocabs, indicating OWL classing
-** e.g. https://defs.opengis.net/prez/object?uri=https://def.isotc211.org/codeset/ValueStructure/bag[ValueStructure]
+===== What's different now
 
-===== Lessons from renewed ont. generation
+* build on the Harmonised Model
+* not touching code sets
+* proposing several "styles" of ontology patterning for delivery
+** see styles table below
+* work being conducted by a team
+** higher quality output
+** Team Lead: Nicholas Car
+** Consultants:
+*** Ontology: Profs Tim French (U Western Australia)
+*** ISO//Ont: Prof Melinda Hodkiewicz (ISO/TC 251)
+*** Spatial: Prof Matt Duckham (RMIT)
+** Students
+*** Adib Rohani - ontology production assistance & verification
+*** Mirabdulla Mirsodikov - spatial domain value proposition testing
 
-[#img19157ont,link="files/2025-11-19/19157-ont.png"]
-image::files/2025-11-19/19157-ont.png[width="50%"]
+.Ontology Styles
+[cols="35%,75%"]
+|===
+| Name | Description
 
-From a test generation of 19157-1 ontology, we believe we are mostly still in line with issues raised on previous ontology generation process in 2023:
+| 1:1 | UML -> OWL, no alterations. As per 2020
+| Predicate deduplication only | Keep classes as-is, deduplicate `name`, `className`, `nameOfMeature` etc
+| Generic ontology reuse | reuse well-regarded non-ISO ontologies for non-spatial elements only, +
+e.g. W3C PROV for provenance, perhaps schema.org
+| Maximal ontology reuse | Use well-regarded ontologies (from W3C, OGC?, others?) as much as possible
+|===
 
-* issues relating to embedded codelists no longer exist
-* we need to be able to vary the ontology from the UML to meet ontology Good Practice
-** e.g. property reuse, viz in 19157-1: `report` & `report` with different constraints; `name` & `nameOfMeasure` and `description` & `evaluationMethodDescription`
-** changes will be very minor
-* we need better IRIs
-** like implemented for codelists
-** still using `def.isotc211.org`
+===== Timeline
 
-We will demo all these things for 19157-1 before next plenary
+* things resolved since last plenary:
+** IRI patterns resolved & redirection mechanism in place
+** Defs Server is ontology HTML capable
+** verification methods determined: OWL reasoning & SHACL
+
+[cols="1,3", width="65%"]
+|===
+| Pre Apr | 19157 Ont test case
+| Apr -> Jun | Initial ontology production
+| Apr -> Jun | Expected spatial value
+| Jun -> Sep | Ontology style consultation
+| Jun -> Sep | Spatial value assessment publication
+| Oct -> Nov | Ontology testing
+| Dec | Plenary presentation
+| Dec+ | Governance arrangements +
+building on Code Sets
+|===
 
 ===== Next Steps
 
-* Finalise 19157-1 model -> ontology extraction
-* (test) publish the ontology
-** as HTML, with images
-** with a log of changes from UML -> OWL
-* enhance the 19157-3 QM Register using new ontology content
+* revitalisation of the HM ontology production script
+* comparison of script v. other extraction code
+* script output comparison
+** v. 19137 hand-made ontology
+** v. 19186 (GeoSPARQL!)
+** 19108 v Time Ontology in OWL
 
-==== 6. Proposed GeoSPARQL standard review
+==== 6. GeoSPARQL standard review
 
-image::files/2025-11-19/geosparql-doc.png[width="50%"]
+http://www.opengis.net/doc/IS/geosparql/1.1[OCG GeoPSARQL 1.1] is now DIS 19186.
 
-OGC's GeoSPARQL is proposed for co-adoption by TC-211 via _fast track_.
-
-Known tasks:
-
-* GOM wants to re-run the updated evaluation process as developed above
-* terminology must be harmonised into TMG
-
-Some implications are not yet clear:
+Q's about GeoSPARQL from previous Plenary:
 
 * is the GeoSPARQL ontology 'part of' a future 19* series, based on HM?
+** Yes
 * what does ongoing governance look like?
-** an OGC ongoing body has been determined: Geosemantics DWG
-** does the TC accept governance of technical assets without involvement?
+** As per Code sets
+
+Open Qs:
+
+* does the TC accept governance of technical assets without involvement?
+** so far, yes, but perhaps not for Harmonised Ontology onwards
+
+and related to above, in general:
+
+* What does a future OGC & ISO GeoSPARQL look like
+** when some GeoSPARQL mappings/dependencies have TC ontologies
+*** esp. OWL Time (v. 19108)
 
 ==== 7. Discussion
 
