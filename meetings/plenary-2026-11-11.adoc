@@ -1,0 +1,46 @@
+= AG6 Group on Ontology Maintenance - Nov 2026 Plenary
+
+== Agenda
+
+This Agenda will be lead by the GOM convenors with a brief discussion on each point and showing of online resources where indicated.
+
+It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-2026-11-11.adoc
+
+=== Outline
+
+. *Welcome*
+. *Semantic Web Reviews*
+. *Code Sets Developments*
+. *Ontology Production Progress*
+.. Presentation by Adib Rohani on the implementation of Ontology Desing Patterns for the Harmonized Ontology
+. *Future Semantic Web-native Standards*
+.. *ISO 19186* - GeoSAPRQL
+.. *ISO 19161-1* - Addressing
+. *Discussion*
+. *Next Meeting*
+
+=== Details
+
+==== 1. Welcome
+
+==== 2. Semantic Web Reviews
+
+==== 3. Code Sets Developments
+
+==== 4. Ontology Production Progress
+
+==== 5. Future Semantic Web-native Standards
+
+===== ISO 19186
+
+How do we mesh an external ontology into the Harmonised Ontology?
+
+===== ISO 19160-1
+
+How does a `-1` _do_ Semantic Web?
+
+==== 6. Discussion
+
+==== 7. Next Meeting
+
+May 2027 Plenary
