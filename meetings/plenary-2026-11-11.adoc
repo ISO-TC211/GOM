@@ -40,6 +40,7 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 * Ryan Ryu
 * Sebastian Norén
 * Åsmund Tjora
+* Yu Jinsongdi
 
 ==== 1. Welcome
 
@@ -75,13 +76,15 @@ Adib Rohani, University of Western Australia, presented on _Evaluating Quality o
 
 ===== ISO 19186
 
-How do we mesh an external ontology into the Harmonised Ontology?
+How do we mesh an external ontology into the Harmonized Ontology?
 
-===== Time Ontology in OWL and ISO 19108.
+===== Time Ontology in OWL and ISO 19108
+
+What do we do about widely-used, ISO knock-off ontologies?
 
 ===== ISO 19160-1
 
-How does a `-1` _do_ Semantic Web?
+How does a `-1` _do_ Semantic Web? What do the other parts contain?
 
 ==== 6. Discussion
 
