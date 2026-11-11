@@ -21,6 +21,26 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 
 === Details
 
+==== 0. Attendees
+
+Nicholas Car
+Adib Rohani
+Ashish Kaushai
+Avanish Kumar
+Heidi Vanparys
+Ivana Ivanova
+Johannes Echterhoff
+Kut Jetland
+Magnus Karge
+Marie Lambois
+Markus Seifert
+Paul Janssen
+Peter Parslow
+Reese Plews
+Ryan Ryu
+Sebastian Norén
+Åsmund Tjora
+
 ==== 1. Welcome
 
 ==== 2. Semantic Web Reviews
