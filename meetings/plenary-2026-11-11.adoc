@@ -23,7 +23,7 @@ It is online at https://github.com/ISO-TC211/GOM/blob/master/meetings/plenary-20
 
 ==== 0. Attendees
 
-* Nicholas Car  
+* Nicholas Car
 * Adib Rohani  
 * Ashish Kaushai  
 * Avanish Kumar  
